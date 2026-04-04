@@ -29,6 +29,11 @@
   <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/seo.html">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body class="theme-dark">
 
@@ -41,7 +46,7 @@
   <header class="site-header">
     <div class="container header__inner">
       <a href="/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
       </a>
 
       <nav class="main-nav" aria-label="Navigation principale">
@@ -247,6 +252,96 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://nextiweb.ca/seo.html#service",
+        "name": "Référencement naturel SEO Montréal",
+        "alternateName": "SEO Montréal",
+        "description": "Services de référencement naturel (SEO) à Montréal : audit SEO, optimisation on-page, création de contenu, netlinking et suivi de positionnement pour PME.",
+        "url": "https://nextiweb.ca/seo.html",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "NEXTIWEB",
+          "url": "https://nextiweb.ca",
+          "telephone": "+15147910591",
+          "address": { "@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA" }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Montréal" },
+          { "@type": "AdministrativeArea", "name": "Québec" },
+          { "@type": "Country", "name": "Canada" }
+        ],
+        "serviceType": "SEO / Référencement naturel",
+        "category": "Digital Marketing",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://nextiweb.ca/contact.html"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nextiweb.ca/seo.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Combien de temps faut-il pour voir des résultats SEO ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les premiers résultats SEO sont généralement visibles en 3 à 6 mois. Une stratégie complète avec audit, optimisation technique et contenu peut positionner votre site en première page Google en 6 à 12 mois selon la concurrence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le coût d'un service SEO à Montréal ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le coût d'un service SEO à Montréal varie selon les besoins : audit ponctuel à partir de 500 $, accompagnement mensuel entre 800 $ et 3 000 $ selon la taille du site et la compétitivité des mots-clés. NEXTIWEB offre un audit gratuit pour évaluer votre situation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'un audit SEO ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un audit SEO est une analyse complète de votre site web qui identifie les problèmes techniques, les lacunes de contenu et les opportunités de croissance organique. Il couvre la vitesse de chargement, la structure des URLs, les balises méta, les backlinks et la pertinence du contenu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le SEO local est-il différent du SEO classique ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Le SEO local cible des requêtes géographiques (ex. : 'agence web Montréal'). Il inclut l'optimisation de la fiche Google Business Profile, des citations locales cohérentes (NAP), et du contenu spécifique aux zones desservies. C'est essentiel pour les PME qui servent une clientèle locale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelle est la différence entre SEO et Google Ads ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le SEO génère du trafic organique gratuit à long terme, tandis que Google Ads génère du trafic payant immédiat. Le SEO prend plus de temps mais offre un meilleur retour sur investissement à long terme. Les deux stratégies sont complémentaires."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nextiweb.ca/seo.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nextiweb.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://nextiweb.ca/services.html" },
+          { "@type": "ListItem", "position": 3, "name": "SEO Montréal", "item": "https://nextiweb.ca/seo.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

@@ -29,6 +29,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body class="theme-dark">
 
@@ -41,7 +46,7 @@
   <header class="site-header">
     <div class="container header__inner">
       <a href="/en/index.html" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Web agency in Montreal" width="160" height="40" loading="eager">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Web agency in Montreal" width="160" height="40" loading="eager">
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <div class="nav__item">
@@ -243,6 +248,9 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Digital Marketing Montreal","description":"Digital marketing services in Montreal: content strategy, Google Ads, Meta Ads, social media management and AI automation for SMBs.","url":"https://nextiweb.ca/en/marketing-digital.html","provider":{"@type":"LocalBusiness","name":"NEXTIWEB","telephone":"+15147910591"},"areaServed":"Montreal, Quebec, Canada","serviceType":"Digital Marketing","offers":{"@type":"Offer","priceCurrency":"CAD","url":"https://nextiweb.ca/en/contact.html"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is digital marketing for a small business?","acceptedAnswer":{"@type":"Answer","text":"Digital marketing for SMBs covers all online actions to attract, convert and retain customers: SEO, Google Ads, social media, email marketing and automation. The goal is to generate qualified leads cost-effectively."}},{"@type":"Question","name":"What budget do I need for digital marketing in Montreal?","acceptedAnswer":{"@type":"Answer","text":"A digital marketing budget for a Montreal SMB typically ranges from $1,000 to $5,000/month depending on channels used. Google Ads alone can start at $500/month."}},{"@type":"Question","name":"How do you measure digital marketing results?","acceptedAnswer":{"@type":"Answer","text":"Key metrics include cost per acquisition (CPA), return on ad spend (ROAS), conversion rate, number of leads and cost per click (CPC). NEXTIWEB provides monthly reports with these KPIs."}},{"@type":"Question","name":"Can AI improve my digital marketing?","acceptedAnswer":{"@type":"Answer","text":"Yes. In 2026, AI automates content creation, personalizes ad campaigns, optimizes bids in real time and analyzes visitor behavior. NEXTIWEB integrates AI tools to maximize campaign performance."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/index.html"},{"@type":"ListItem","position":2,"name":"Services","item":"https://nextiweb.ca/en/services.html"},{"@type":"ListItem","position":3,"name":"Digital Marketing","item":"https://nextiweb.ca/en/marketing-digital.html"}]}]}
+  </script>
 </body>
 </html>

@@ -28,7 +28,7 @@
   --color-border: #1a1a1a;
   --color-border-strong: #262626;
   --color-border-soft: #333333;
-  --color-header-bg: rgba(0, 0, 0, 0.9);
+  --color-header-bg: rgba(0, 0, 0, 1);
   --color-topbar-bg: #101010;
   --color-menu-bg: rgba(0, 0, 0, 0.95);
   --color-footer-bg: #000000;
@@ -72,7 +72,7 @@ body.theme-light {
   --color-border: #ded1c0;
   --color-border-strong: #cdbda9;
   --color-border-soft: #baa892;
-  --color-header-bg: rgba(255, 250, 244, 0.94);
+  --color-header-bg: rgba(255, 255, 255, 0.97);
   --color-topbar-bg: #efe1cf;
   --color-menu-bg: rgba(255, 250, 244, 0.98);
   --color-footer-bg: #ead9c5;
@@ -105,6 +105,14 @@ body.theme-light .top-bar__phone {
 
 body.theme-light .top-bar__phone:hover {
   color: #004d27;
+}
+
+/* Logo: swap géré par JS selon le thème */
+
+body.theme-light .assurance-icon {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
 
 a {

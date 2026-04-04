@@ -29,6 +29,11 @@
   <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/marketing-digital.html">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body class="theme-dark">
 
@@ -41,7 +46,7 @@
   <header class="site-header">
     <div class="container header__inner">
       <a href="/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
       </a>
 
       <nav class="main-nav" aria-label="Navigation principale">
@@ -247,6 +252,96 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://nextiweb.ca/marketing-digital.html#service",
+        "name": "Marketing digital Montréal",
+        "alternateName": "Marketing en ligne Montréal",
+        "description": "Services de marketing digital à Montréal : stratégie de contenu, publicité en ligne (Google Ads, Meta Ads), gestion des réseaux sociaux et automatisation IA pour PME.",
+        "url": "https://nextiweb.ca/marketing-digital.html",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "NEXTIWEB",
+          "url": "https://nextiweb.ca",
+          "telephone": "+15147910591",
+          "address": { "@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA" }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Montréal" },
+          { "@type": "AdministrativeArea", "name": "Québec" },
+          { "@type": "Country", "name": "Canada" }
+        ],
+        "serviceType": "Marketing digital",
+        "category": "Digital Marketing",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://nextiweb.ca/contact.html"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nextiweb.ca/marketing-digital.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce que le marketing digital pour une PME ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le marketing digital pour une PME regroupe toutes les actions en ligne pour attirer, convertir et fidéliser des clients : SEO, publicité Google Ads, réseaux sociaux, email marketing et automatisation. L'objectif est de générer des leads qualifiés à moindre coût."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel budget prévoir pour le marketing digital à Montréal ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un budget marketing digital adapté à une PME à Montréal se situe entre 1 000 $ et 5 000 $ par mois, selon les canaux utilisés. Google Ads seul peut démarrer à 500 $/mois. NEXTIWEB propose des stratégies optimisées selon votre budget disponible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment mesure-t-on les résultats d'une campagne marketing digital ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les principaux indicateurs (KPIs) sont : le coût par acquisition (CPA), le retour sur investissement publicitaire (ROAS), le taux de conversion, le nombre de leads générés et le coût par clic (CPC). NEXTIWEB fournit des rapports mensuels clairs avec ces métriques."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "L'intelligence artificielle peut-elle améliorer mon marketing digital ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. En 2026, l'IA permet d'automatiser la création de contenu, personnaliser les campagnes publicitaires, optimiser les enchères en temps réel et analyser le comportement des visiteurs. NEXTIWEB intègre des outils IA pour maximiser l'efficacité de vos campagnes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelle est la différence entre Google Ads et le SEO ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Ads génère du trafic immédiat mais payant (vous payez par clic). Le SEO génère du trafic gratuit et durable mais prend 3 à 6 mois avant les premiers résultats. La stratégie optimale combine les deux : Ads pour des résultats rapides, SEO pour la croissance long terme."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nextiweb.ca/marketing-digital.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nextiweb.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://nextiweb.ca/services.html" },
+          { "@type": "ListItem", "position": 3, "name": "Marketing digital", "item": "https://nextiweb.ca/marketing-digital.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

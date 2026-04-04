@@ -38,6 +38,11 @@
        CSS
        ======================= -->
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <!-- Schema.org : LocalBusiness + FAQPage -->
   <script type="application/ld+json">
@@ -51,7 +56,7 @@
         "url": "https://nextiweb.ca/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-agence-web-montreal.png"
+          "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-dark.png"
         },
         "description": "Montreal web agency specialized in website design, SEO and digital marketing for SMEs and service companies.",
         "email": "contact@nextiweb.ca",
@@ -140,7 +145,7 @@
   <header class="site-header">
     <div class="container header__inner">
       <a href="/en/index.html" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Web agency in Montreal" width="160" height="40" loading="eager">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Web agency in Montreal" width="160" height="40" loading="eager">
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -678,6 +683,43 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://nextiweb.ca/en/index.html#howto",
+        "name": "How to get a website that generates clients in Montreal",
+        "description": "NEXTIWEB's 4-step process to build a professional website that attracts and converts customers.",
+        "totalTime": "P4W",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Free Audit", "text": "We analyze your current website, competitors and online growth opportunities. Result: a full report with actionable recommendations.", "url": "https://nextiweb.ca/en/contact.html" },
+          { "@type": "HowToStep", "position": 2, "name": "Custom Strategy", "text": "We define the right web strategy for your goals: website creation, SEO, digital marketing or a combination.", "url": "https://nextiweb.ca/en/services.html" },
+          { "@type": "HowToStep", "position": 3, "name": "Execution & Launch", "text": "Our team designs, builds and optimizes your online presence. Every step is validated with you before going live.", "url": "https://nextiweb.ca/en/creation-site.html" },
+          { "@type": "HowToStep", "position": 4, "name": "Tracking & Growth", "text": "After launch, we monitor performance, continue SEO efforts and make adjustments to maximize your return on investment.", "url": "https://nextiweb.ca/en/seo.html" }
+        ]
+      },
+      {
+        "@type": "AggregateRating",
+        "itemReviewed": { "@type": "LocalBusiness", "name": "NEXTIWEB", "url": "https://nextiweb.ca" },
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "12",
+        "reviewCount": "12"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nextiweb.ca/en/#website",
+        "url": "https://nextiweb.ca/en/",
+        "name": "NEXTIWEB – Web Agency Montreal",
+        "description": "Montreal web agency specialized in website design, SEO and digital marketing for SMBs.",
+        "inLanguage": "en-CA"
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

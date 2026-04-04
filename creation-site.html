@@ -29,6 +29,11 @@
   <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/creation-site.html">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body class="theme-dark">
 
@@ -41,7 +46,7 @@
   <header class="site-header">
     <div class="container header__inner">
       <a href="/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
       </a>
 
       <nav class="main-nav" aria-label="Navigation principale">
@@ -246,6 +251,96 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://nextiweb.ca/creation-site.html#service",
+        "name": "Création de site web Montréal",
+        "alternateName": "Développement web Montréal",
+        "description": "Création de sites web professionnels, rapides et optimisés SEO à Montréal. Sites vitrines, e-commerce, landing pages pour PME et entreprises de services.",
+        "url": "https://nextiweb.ca/creation-site.html",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "NEXTIWEB",
+          "url": "https://nextiweb.ca",
+          "telephone": "+15147910591",
+          "address": { "@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA" }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Montréal" },
+          { "@type": "AdministrativeArea", "name": "Québec" },
+          { "@type": "Country", "name": "Canada" }
+        ],
+        "serviceType": "Création de site web",
+        "category": "Web Development",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://nextiweb.ca/contact.html"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nextiweb.ca/creation-site.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Combien coûte la création d'un site web à Montréal ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le coût d'un site web à Montréal varie selon la complexité : site vitrine entre 1 500 $ et 5 000 $, site e-commerce entre 3 000 $ et 10 000 $. NEXTIWEB propose un audit gratuit pour évaluer votre projet et vous fournir un devis précis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps faut-il pour créer un site web ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La création d'un site web professionnel prend généralement 3 à 6 semaines : 1 semaine pour la conception, 2 à 3 semaines pour le développement, et 1 semaine pour les tests et la mise en ligne. Les délais varient selon la complexité du projet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mon site sera-t-il optimisé pour Google dès le départ ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Tous les sites créés par NEXTIWEB incluent une optimisation SEO de base : structure HTML sémantique, balises méta, vitesse de chargement optimisée, compatibilité mobile et HTTPS. L'objectif est que votre site soit indexable dès le lancement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mon site sera-t-il adapté aux mobiles ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolument. Tous nos sites sont développés en responsive design et testés sur mobile, tablette et ordinateur. Google privilégie les sites mobile-first dans son indexation — c'est une priorité absolue pour notre équipe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Puis-je modifier le contenu de mon site moi-même ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Selon votre projet, nous intégrons un système de gestion de contenu (CMS) simple pour que vous puissiez mettre à jour textes, images et pages sans connaissances techniques. Une formation est incluse à la livraison."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nextiweb.ca/creation-site.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nextiweb.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://nextiweb.ca/services.html" },
+          { "@type": "ListItem", "position": 3, "name": "Création de site web", "item": "https://nextiweb.ca/creation-site.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

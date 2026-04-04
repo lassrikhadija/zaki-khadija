@@ -38,6 +38,11 @@
        CSS GLOBAL
        ======================= -->
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <!-- Schema.org : LocalBusiness + FAQPage -->
   <script type="application/ld+json">
@@ -51,7 +56,7 @@
         "url": "https://nextiweb.ca/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-agence-web-montreal.png"
+          "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-dark.png"
         },
         "description": "Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME et entreprises de services.",
         "email": "contact@nextiweb.ca",
@@ -145,7 +150,7 @@
     <div class="container header__inner">
       <!-- Logo -->
       <a href="/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
       </a>
 
       <!-- Navigation principale -->
@@ -776,6 +781,80 @@
   </footer>
 
   <!-- JS global -->
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://nextiweb.ca/#howto",
+        "name": "Comment obtenir un site web qui génère des clients à Montréal",
+        "description": "Processus en 4 étapes de NEXTIWEB pour créer un site web professionnel qui attire et convertit des clients.",
+        "totalTime": "P4W",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Audit gratuit",
+            "text": "Nous analysons votre site actuel, vos concurrents et vos opportunités de croissance en ligne. Résultat : un rapport complet avec des recommandations concrètes.",
+            "url": "https://nextiweb.ca/contact.html"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Stratégie personnalisée",
+            "text": "Nous définissons ensemble la stratégie web adaptée à vos objectifs : création de site, SEO, marketing digital ou combinaison des trois.",
+            "url": "https://nextiweb.ca/services.html"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Exécution & lancement",
+            "text": "Notre équipe conçoit, développe et optimise votre présence en ligne. Chaque étape est validée avec vous avant mise en ligne.",
+            "url": "https://nextiweb.ca/creation-site.html"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Suivi & croissance",
+            "text": "Après le lancement, nous assurons le suivi des performances, le référencement continu et les ajustements pour maximiser votre retour sur investissement.",
+            "url": "https://nextiweb.ca/seo.html"
+          }
+        ]
+      },
+      {
+        "@type": "AggregateRating",
+        "@id": "https://nextiweb.ca/#rating",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "NEXTIWEB",
+          "url": "https://nextiweb.ca"
+        },
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "12",
+        "reviewCount": "12"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nextiweb.ca/#website",
+        "url": "https://nextiweb.ca",
+        "name": "NEXTIWEB – Agence web Montréal",
+        "description": "Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME.",
+        "inLanguage": ["fr-CA", "en-CA"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://nextiweb.ca/blog/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

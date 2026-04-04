@@ -225,6 +225,13 @@ function applyTheme(theme, shouldStoreTheme = true) {
   document.documentElement.style.colorScheme = theme === 'theme-light' ? 'light' : 'dark';
   updateThemeButtons(theme);
 
+  const isLight = theme === 'theme-light';
+  document.querySelectorAll('.logo img').forEach(img => {
+    const base = img.src.substring(0, img.src.lastIndexOf('/') + 1);
+    img.src = base + (isLight ? 'logo-nextiweb-light.png' : 'logo-nextiweb-dark.png');
+    img.style.filter = '';
+  });
+
   if (shouldStoreTheme) {
     storeTheme(theme);
   }

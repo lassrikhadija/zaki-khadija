@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =======================
+       META & SEO
+       ======================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Agency Montreal | Website Design, SEO & Digital Marketing | NEXTIWEB</title>
+  <meta name="description" content="NEXTIWEB is a Montreal web agency specialized in fast website design, SEO and digital marketing to help SMEs and service companies generate more qualified leads.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Web Agency Montreal | Website Design, SEO & Digital Marketing | NEXTIWEB">
+  <meta property="og:description" content="Montreal web agency specialized in website design, SEO and digital marketing for SMEs. Free audit, response within 24 h.">
+  <meta property="og:url" content="https://nextiweb.ca/en/index.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Agency Montreal | Website Design, SEO & Digital Marketing | NEXTIWEB">
+  <meta name="twitter:description" content="Montreal web agency for SMEs: websites, local SEO and digital marketing. Free audit, no commitment.">
+
+  <link rel="canonical" href="https://nextiweb.ca/en/index.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/">
+
+  <!-- =======================
+       FAVICONS
+       ======================= -->
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <!-- =======================
+       CSS
+       ======================= -->
+  <link rel="stylesheet" href="/assets/css/styles.min.css">
+
+  <!-- Schema.org : LocalBusiness + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://nextiweb.ca/#organization",
+        "name": "NEXTIWEB",
+        "url": "https://nextiweb.ca/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-agence-web-montreal.png"
+        },
+        "description": "Montreal web agency specialized in website design, SEO and digital marketing for SMEs and service companies.",
+        "email": "contact@nextiweb.ca",
+        "telephone": "+15147910591",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montreal",
+          "addressRegion": "QC",
+          "addressCountry": "CA"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Montreal" },
+          { "@type": "City", "name": "Quebec City" },
+          { "@type": "Country", "name": "Canada" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Web services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Design" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing" } }
+          ]
+        },
+        "inLanguage": ["fr", "en"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a website cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The budget depends on the project size, features and level of support. We offer solutions adapted to SMEs and growing businesses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to build a website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On average between 4 and 8 weeks, depending on complexity and approval speed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will my site be mobile-friendly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all the sites we create are fully responsive and designed mobile-first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I update my site myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We can set up a simple interface to update the main content, or support you on an ongoing basis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer local SEO in Montreal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we optimize your site for local SEO: page structure, geo-targeted content and technical best practices to improve your visibility in Montreal and surrounding areas."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="theme-dark">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <p class="top-bar__message" id="top-bar-message"></p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Web agency in Montreal" width="160" height="40" loading="eager">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav__item">
+          <a href="/en/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
+            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
+            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+          </div>
+        </div>
+        <a href="/en/secteurs.html" class="nav__link">Industries</a>
+        <a href="/en/ressources.html" class="nav__link">Resources</a>
+        <a href="/en/blog/" class="nav__link">Blog</a>
+        <a href="/en/a-propos.html" class="nav__link">About</a>
+        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-bg">
+      <div class="hero-bg__overlay"></div>
+
+      <div class="container hero-bg__inner">
+
+        <!-- Left column: text -->
+        <div class="hero-bg__content">
+
+          <span class="hero-bg__kicker">
+            <span class="hero-bg__kicker-dot"></span>
+            Web Agency in Montreal
+          </span>
+
+          <h1 class="hero-bg__headline">
+            Your website should<br>
+            <span class="hero-bg__highlight-word">sell</span>,<br>
+            not just exist.
+          </h1>
+
+          <p class="hero-bg__subtitle">We build fast, SEO-optimized websites designed to turn your visitors into real clients.</p>
+
+          <div class="hero-bg__actions">
+            <a href="/en/contact.html" class="btn btn--primary hero-bg__cta-main hero-bg__cta--glow">
+              Claim My Free Audit
+            </a>
+            <a href="/en/services.html" class="btn btn--ghost hero-bg__cta-secondary">How It Works</a>
+          </div>
+
+        </div>
+
+        <!-- Right column: metric cards -->
+        <div class="hero-bg__metrics">
+          <div class="hero-metric hero-metric--1">
+            <span class="hero-metric__number hero-metric__number--concept">1<span class="hero-metric__on">-on-</span>1</span>
+            <span class="hero-metric__label">Personal support</span>
+            <span class="hero-metric__check">✓</span>
+          </div>
+          <div class="hero-metric hero-metric--2">
+            <span class="hero-metric__number">24<span class="hero-metric__unit">h</span></span>
+            <span class="hero-metric__label">Response guaranteed</span>
+            <span class="hero-metric__check">✓</span>
+          </div>
+          <div class="hero-metric hero-metric--3">
+            <span class="hero-metric__number">100<span class="hero-metric__unit">%</span></span>
+            <span class="hero-metric__label">Mobile-first</span>
+            <span class="hero-metric__check">✓</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-bg__scroll-indicator" aria-hidden="true">
+        <span class="hero-bg__scroll-line"></span>
+      </div>
+
+    </section>
+
+    <!-- ASSURANCE BAR -->
+    <section class="assurance-bar section section--alt-bg">
+      <div class="container assurance-grid">
+        <div class="assurance-item">
+          <span class="assurance-icon">1</span>
+          <strong>Full Audit — Free</strong>
+        </div>
+        <div class="assurance-item">
+          <span class="assurance-icon">2</span>
+          <strong>Response within 24&nbsp;h</strong>
+        </div>
+        <div class="assurance-item">
+          <span class="assurance-icon">3</span>
+          <strong>No commitment</strong>
+        </div>
+        <div class="assurance-item">
+          <span class="assurance-icon">4</span>
+          <strong>Optimized for Google &amp; AI</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE INTRO -->
+    <section class="expertise-intro section section--alt-bg">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Your website should generate calls. Not just visits.</h2>
+        </header>
+        <p class="expertise-intro__text">
+          Your next client is searching for you on Google right now. Does your site convince them
+          in 10&nbsp;seconds to call you — or do they leave and go to a competitor?
+          At NEXTIWEB, every design, structure and content decision serves one goal:
+          turning your visitors into real clients.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY NEXTIWEB -->
+    <section class="section section--dark section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Why choose NEXTIWEB</h2>
+        </header>
+        <div class="features">
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Modern websites</h3>
+            <p class="feature__text">Fast, responsive sites built for how people browse today.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Integrated SEO optimization</h3>
+            <p class="feature__text">Keyword research, structure, markup and technical performance.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Digital strategy</h3>
+            <p class="feature__text">A site aligned with your visibility and conversion goals.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Personalized approach</h3>
+            <p class="feature__text">Support tailored to your industry and business reality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOUR SITE CAN CHANGE -->
+    <section class="section section--alt-bg">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">What your website can change — concretely</h2>
+        </header>
+        <div class="features">
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Your prospects request a quote — without follow-up</h3>
+            <p class="feature__text">Clear calls to action, placed at the right spot, that trigger contact without friction.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Your name shows up when it counts</h3>
+            <p class="feature__text">When an ideal client searches for your industry in Montreal or Quebec, it's your site that appears — not a competitor's.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>Your prospects trust you before speaking to you</h3>
+            <p class="feature__text">A professional site filters out poor leads and attracts serious clients — those who are already ready to buy.</p>
+          </article>
+          <article class="feature">
+            <h3 class="feature__title"><span class="feature__icon">✓</span>You recover hours every week</h3>
+            <p class="feature__text">Your site answers frequent questions, qualifies leads and reduces time wasted on untargeted prospects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN SERVICES -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Three levers to find clients online</h2>
+        </header>
+        <div class="services">
+          <article class="service-card">
+            <h3 class="service-card__title">A site that sells while you work</h3>
+            <p class="service-card__text">
+              Every page designed with one goal: turn a visitor into a call, a quote, a client — even overnight.
+            </p>
+            <a href="/en/services.html#creation-sites" class="service-card__link">
+              Get a site that generates clients
+            </a>
+          </article>
+          <article class="service-card">
+            <h3 class="service-card__title">Your name at the top of Google for the right keywords</h3>
+            <p class="service-card__text">
+              Prospects searching for exactly what you offer — and landing on your site, not a competitor's.
+            </p>
+            <a href="/en/services.html#seo" class="service-card__link">
+              Improve my Google ranking
+            </a>
+          </article>
+          <article class="service-card">
+            <h3 class="service-card__title">A complete strategy for steady clients</h3>
+            <p class="service-card__text">
+              SEO, content and conversion coordinated to feed your client pipeline every month — without relying on word of mouth.
+            </p>
+            <a href="/en/services.html#marketing-digital" class="service-card__link">
+              Grow my client acquisition
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION -->
+    <section class="section problem-solution">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Your site exists. But is it working for you?</h2>
+        </header>
+        <div class="split">
+          <div class="split__column">
+            <h3 class="split__title">The real problem</h3>
+            <p>
+              Your site is online — but it might be slow, vague about your offer, or simply
+              impossible to find on Google. A prospect arrives, doesn't understand what you do in 10&nbsp;seconds, and leaves.
+              Without contacting you.
+            </p>
+            <p style="margin-top: 1rem; color: var(--color-accent);">
+              Meanwhile, your competitors — sometimes less skilled than you — are collecting those leads because their
+              site is better positioned. These are lost contracts you'll never see.
+            </p>
+          </div>
+          <div class="split__column">
+            <h3 class="split__title">What changes with us</h3>
+            <ul class="split__list">
+              <li>A clear site that convinces your ideal client from the first page</li>
+              <li>SEO that positions you on the right keywords</li>
+              <li>A reassuring design that triggers contact</li>
+              <li>Ongoing support — not a deliverable we abandon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARGET CLIENTS -->
+    <section class="section section--alt-bg">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">This site is for you if&hellip;</h2>
+          <p class="section__subtitle">
+            No need for a big budget or a marketing team — just a site that truly reflects your value and works for you.
+          </p>
+        </header>
+        <ul class="audiences audiences--grid">
+          <li class="audiences__item">You have a service to sell and your site doesn't reflect it</li>
+          <li class="audiences__item">You're great at your craft, but invisible on Google</li>
+          <li class="audiences__item">You want qualified leads without spending everything on ads</li>
+          <li class="audiences__item">Your site generates little — or no — contact requests</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--dark">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Your result in 4 steps</h2>
+        </header>
+        <ol class="steps">
+          <li class="steps__item">
+            <h3 class="steps__title">You tell us about your business</h3>
+            <p>We understand your target clients, your goals and what's really blocking you online.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">You receive a clear strategy</h3>
+            <p>Site map, target keywords and conversion path — nothing vague, everything justified.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Your site comes to life</h3>
+            <p>Design, code and SEO delivered cleanly. You validate at each step, we adjust without friction.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">Your clients find you</h3>
+            <p>Post-launch monitoring, rankings and continuous improvements — your site gets stronger over time.</p>
+          </li>
+        </ol>
+        <div class="section__actions">
+          <a href="/en/contact.html" class="btn btn--primary">Start My Project Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL EXPERTISE -->
+    <section class="section section--alt-bg">
+      <div class="container expertise-block">
+        <header class="section__header section__header--center">
+          <h2 class="section__title">What you truly gain with NEXTIWEB</h2>
+          <p class="section__subtitle">
+            Your site shouldn't just look good — it should bring you clients. We act on the
+            three levers that make the difference: visibility, trust and conversion.
+          </p>
+        </header>
+        <div class="expertise-card">
+          <p class="expertise-card__text">
+            Your site is built to be fast on every device, found on Google by your real clients,
+            and clear enough to turn a stranger into a lead in seconds — in Montreal, Quebec and across Canada.
+          </p>
+          <ul class="expertise-tags">
+            <li class="expertise-tags__item">Converting website</li>
+            <li class="expertise-tags__item">Integrated SEO</li>
+            <li class="expertise-tags__item">Technical performance</li>
+            <li class="expertise-tags__item">Acquisition strategy</li>
+          </ul>
+          <div class="expertise-card__actions">
+            <a href="/en/services.html" class="btn btn--ghost">See how we build your success</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER MESSAGE -->
+    <section class="founder-message">
+      <div class="container">
+        <h2>You do exceptional work. Your clients deserve to find you.</h2>
+        <p class="founder-intro">I may be describing your exact situation right now.</p>
+        <p>
+          You offer a quality service. You have satisfied clients. But online, you're almost
+          invisible — and you don't know exactly why. Meanwhile, competitors sometimes less skilled than you
+          are landing contracts simply because their site is better positioned.
+        </p>
+        <p>It's not fair. And it's entirely fixable.</p>
+        <p>
+          My name is Khadija AitLassri, founder of NEXTIWEB. Before creating this agency, I went through
+          that same frustration myself: a good service, little online visibility, and the question
+          that kept coming back — "Why are my competitors finding clients online and I'm not?"
+        </p>
+        <p>
+          The answer? It wasn't a question of talent or budget. It was a question of method:
+          a site structured to convert, optimized for Google, and aligned with the message my clients
+          needed to hear. Once that foundation was in place, the requests started coming in.
+        </p>
+        <p>
+          That's exactly what I build for my clients at NEXTIWEB.
+          Not a "pretty website." Not unrealistic promises. A concrete, traceable and measurable acquisition system —
+          adapted to your industry and your market in Quebec.
+        </p>
+        <p>
+          If you're tired of having a site that exists without generating anything, let's talk about your project.
+          I'll tell you honestly what's blocking you — and how we fix it.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONCEPT EXAMPLES -->
+    <section class="section section--dark">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Website concept examples</h2>
+          <p class="section__subtitle">
+            A few types of projects for which we design structures ready to convert your visitors into clients.
+          </p>
+        </header>
+        <div class="projects">
+          <article class="project-card">
+            <h3 class="project-card__title">Local restaurant</h3>
+            <p class="project-card__text">
+              Showcasing the menu, reservations and customer reviews to fill your tables.
+            </p>
+            <p class="project-card__meta">Goal: more reservations and online orders.</p>
+          </article>
+          <article class="project-card">
+            <h3 class="project-card__title">Service company</h3>
+            <p class="project-card__text">
+              Clear service pages, credibility proof and visible calls to action.
+            </p>
+            <p class="project-card__meta">Goal: more qualified quote requests.</p>
+          </article>
+          <article class="project-card">
+            <h3 class="project-card__title">Online store</h3>
+            <p class="project-card__text">
+              E-commerce structure optimized for SEO and conversion (product pages, filters, cart).
+            </p>
+            <p class="project-card__meta">Goal: increase conversion rate and average order value.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="section section--alt-bg">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Tips to improve your online presence</h2>
+        </header>
+        <div class="resources">
+          <article class="resource-card">
+            <h3 class="resource-card__title">Website design resources</h3>
+            <p class="resource-card__text">Guides and benchmarks to structure a clearer, more credible and conversion-oriented site.</p>
+            <a href="/en/ressources.html#ressources-creation-sites" class="resource-card__link">
+              Explore website design resources
+            </a>
+          </article>
+          <article class="resource-card">
+            <h3 class="resource-card__title">Local SEO resources</h3>
+            <p class="resource-card__text">Methods, internal linking and editorial logic to improve your Google visibility.</p>
+            <a href="/en/ressources.html#ressources-seo-local" class="resource-card__link">
+              Explore local SEO resources
+            </a>
+          </article>
+          <article class="resource-card">
+            <h3 class="resource-card__title">Digital marketing resources</h3>
+            <p class="resource-card__text">Content to better connect your messages, pages and business goals.</p>
+            <a href="/en/ressources.html#ressources-marketing-digital" class="resource-card__link">
+              Explore digital marketing resources
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--dark faq">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Frequently asked questions</h2>
+        </header>
+        <div class="faq__list">
+          <article class="faq__item">
+            <button class="faq__trigger" type="button" aria-expanded="false">
+              <span class="faq__question">How much does a website cost?</span>
+              <span class="faq__arrow" aria-hidden="true">▾</span>
+            </button>
+            <p class="faq__answer" hidden>
+              The budget depends on the project size, features and level of support.
+              We offer solutions adapted to SMEs and growing businesses.
+            </p>
+          </article>
+          <article class="faq__item">
+            <button class="faq__trigger" type="button" aria-expanded="false">
+              <span class="faq__question">How long does it take to build a website?</span>
+              <span class="faq__arrow" aria-hidden="true">▾</span>
+            </button>
+            <p class="faq__answer" hidden>
+              On average between 4 and 8 weeks, depending on complexity and approval speed.
+            </p>
+          </article>
+          <article class="faq__item">
+            <button class="faq__trigger" type="button" aria-expanded="false">
+              <span class="faq__question">Will my site be mobile-friendly?</span>
+              <span class="faq__arrow" aria-hidden="true">▾</span>
+            </button>
+            <p class="faq__answer" hidden>
+              Yes, all the sites we create are fully responsive and designed mobile-first.
+            </p>
+          </article>
+          <article class="faq__item">
+            <button class="faq__trigger" type="button" aria-expanded="false">
+              <span class="faq__question">Can I update my site myself?</span>
+              <span class="faq__arrow" aria-hidden="true">▾</span>
+            </button>
+            <p class="faq__answer" hidden>
+              We can set up a simple interface to update the main content, or support you on an ongoing basis.
+            </p>
+          </article>
+          <article class="faq__item">
+            <button class="faq__trigger" type="button" aria-expanded="false">
+              <span class="faq__question">Do you offer local SEO in Montreal?</span>
+              <span class="faq__arrow" aria-hidden="true">▾</span>
+            </button>
+            <p class="faq__answer" hidden>
+              Yes, we optimize your site for local SEO: page structure, geo-targeted content
+              and technical best practices to improve your visibility in Montreal and surrounding areas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Ready to grow your online presence?</h2>
+        <p class="section__text">
+          Let's talk about your project and see how to turn your website into a real tool for attracting clients.
+        </p>
+        <a href="/en/contact.html" class="btn btn--primary">Request a Quote</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Web agency specialized in website design, SEO and digital marketing.</p>
+        <address class="footer__address">
+          Montreal, Quebec, Canada<br>
+          <a href="tel:+15147910591">514-791-0591</a><br>
+          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/en/index.html">Home</a></li>
+          <li><a href="/en/services.html">Services</a></li>
+          <li><a href="/en/secteurs.html">Industries</a></li>
+          <li><a href="/en/ressources.html">Resources</a></li>
+          <li><a href="/en/blog/">Blog</a></li>
+          <li><a href="/en/a-propos.html">About</a></li>
+          <li><a href="/en/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Services</h3>
+        <ul class="footer__list">
+          <li><a href="/en/creation-site.html">Website Design</a></li>
+          <li><a href="/en/seo.html">SEO</a></li>
+          <li><a href="/en/marketing-digital.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Areas Served</h3>
+        <ul class="footer__list">
+          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
+          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
+          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.min.js"></script>
+</body>
+</html>

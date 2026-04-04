@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://nextiweb.ca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services hub -->
+  <url>
+    <loc>https://nextiweb.ca/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/services.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/services.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Website Design service -->
+  <url>
+    <loc>https://nextiweb.ca/creation-site.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/creation-site.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/creation-site.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/creation-site.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/creation-site.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/creation-site.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/creation-site.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/creation-site.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SEO service -->
+  <url>
+    <loc>https://nextiweb.ca/seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/seo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/seo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/seo.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/seo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/seo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/seo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/seo.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Digital Marketing service -->
+  <url>
+    <loc>https://nextiweb.ca/marketing-digital.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/marketing-digital.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/marketing-digital.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/marketing-digital.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/marketing-digital.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/marketing-digital.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/marketing-digital.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/marketing-digital.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Industries -->
+  <url>
+    <loc>https://nextiweb.ca/secteurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/secteurs.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/secteurs.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/secteurs.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Resources -->
+  <url>
+    <loc>https://nextiweb.ca/ressources.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/ressources.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/ressources.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/ressources.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/ressources.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/ressources.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/ressources.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/ressources.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://nextiweb.ca/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/a-propos.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/a-propos.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://nextiweb.ca/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/contact.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/contact.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Areas Served hub -->
+  <url>
+    <loc>https://nextiweb.ca/zones-desservies/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/index.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/zones-desservies/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/index.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Montreal area -->
+  <url>
+    <loc>https://nextiweb.ca/zones-desservies/montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/zones-desservies/montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Quebec City area -->
+  <url>
+    <loc>https://nextiweb.ca/zones-desservies/quebec.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/quebec.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/quebec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/quebec.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/zones-desservies/quebec.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/quebec.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/quebec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/quebec.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Canada area -->
+  <url>
+    <loc>https://nextiweb.ca/zones-desservies/canada.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/canada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/canada.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/canada.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/zones-desservies/canada.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/zones-desservies/canada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/zones-desservies/canada.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/canada.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Local: Website Design Montreal -->
+  <url>
+    <loc>https://nextiweb.ca/local/creation-site-web-montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/creation-site-web-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/creation-site-web-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/creation-site-web-montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/local/creation-site-web-montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/creation-site-web-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/creation-site-web-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/creation-site-web-montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Local: SEO Montreal -->
+  <url>
+    <loc>https://nextiweb.ca/local/seo-montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/seo-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/seo-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/seo-montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/local/seo-montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/seo-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/seo-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/seo-montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Local: Digital Marketing Montreal -->
+  <url>
+    <loc>https://nextiweb.ca/local/marketing-digital-montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/marketing-digital-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/marketing-digital-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/marketing-digital-montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/local/marketing-digital-montreal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/marketing-digital-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/marketing-digital-montreal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/marketing-digital-montreal.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Legal pages (FR only indexed, EN excluded from priority) -->
+  <url>
+    <loc>https://nextiweb.ca/politique-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/politique-confidentialite.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/politique-confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/politique-confidentialite.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://nextiweb.ca/politique-cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/politique-cookies.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/politique-cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/politique-cookies.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://nextiweb.ca/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/mentions-legales.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/mentions-legales.html"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Blog FR -->
+  <url>
+    <loc>https://nextiweb.ca/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/blog/creation-site/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/creation-site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/website-design/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/blog/seo/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/blog/marketing-digital/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/marketing-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/marketing-digital/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/blog/ia-automatisation/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog EN -->
+  <url>
+    <loc>https://nextiweb.ca/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/website-design/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/creation-site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/website-design/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/seo/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/digital-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/marketing-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/digital-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/marketing-digital/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/ai-automation/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/"/>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

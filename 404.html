@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable | NEXTIWEB</title>
+  <meta name="description" content="La page que vous cherchez n'existe pas ou a été déplacée.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css">
+
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    .error-page__code {
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--color-primary), #00a86b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0;
+    }
+    .error-page__title {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .error-page__text {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .error-page__actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body class="theme-dark">
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <p class="top-bar__message" id="top-bar-message"></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-agence-web-montreal.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="error-page">
+      <div>
+        <p class="error-page__code">404</p>
+        <h1 class="error-page__title">Page introuvable</h1>
+        <p class="error-page__text">La page que vous cherchez n'existe pas ou a été déplacée. Mais votre visibilité en ligne, elle, mérite d'être trouvée.</p>
+        <div class="error-page__actions">
+          <a href="/" class="btn btn--primary">Retour à l'accueil</a>
+          <a href="/contact.html" class="btn btn--ghost">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Agence web spécialisée en création de sites web, SEO et marketing digital.</p>
+        <address class="footer__address">
+          Montréal, Québec, Canada<br>
+          <a href="tel:+15147910591">514-791-0591</a><br>
+          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/secteurs.html">Secteurs</a></li>
+          <li><a href="/ressources.html">Ressources</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Services</h3>
+        <ul class="footer__list">
+          <li><a href="/creation-site.html">Création de sites web</a></li>
+          <li><a href="/seo.html">Référencement SEO</a></li>
+          <li><a href="/marketing-digital.html">Marketing digital</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Zones desservies</h3>
+        <ul class="footer__list">
+          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
+          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
+          <li><a href="/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.min.js"></script>
+</body>
+</html>

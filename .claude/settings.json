@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -name \"*.html\" ! -name \"*.backup\" -exec sed -i 's|logo-nextiweb-agence-web-montreal\\\\.png|logo-nextiweb-transparent.png|g' {} +)"
+    ]
+  }
+}

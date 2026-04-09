@@ -230,13 +230,14 @@ body {
 .top-bar__inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
   min-height: 1.25rem;
-  padding-right: 10rem;
+  padding: 0;
+  gap: 1rem;
 }
 
 .top-bar__message {
+  flex: 1;
   color: var(--color-text-muted);
   margin: 0;
   font-size: 0.85rem;
@@ -249,11 +250,17 @@ body {
   font-weight: 600;
 }
 
+/* WhatsApp : extrême gauche */
+.top-bar__whatsapp {
+  order: -1;
+  flex-shrink: 0;
+}
+
+/* Téléphone : extrême droite */
 .top-bar__phone {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
+  transform: none;
+  flex-shrink: 0;
   color: var(--color-primary);
   font-weight: 700;
   font-size: 0.9rem;
@@ -1852,17 +1859,21 @@ body.mobile-nav-active {
     background: transparent;
   }
 
-  /* ── Top Bar : texte masqué, seul le téléphone centré reste ── */
+  /* ── Top Bar mobile : WhatsApp + téléphone centrés côte à côte ── */
   .top-bar__inner {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-right: 0;
-    gap: 0;
+    padding: 0;
+    gap: 1.25rem;
   }
 
   .top-bar__message {
     display: none;
+  }
+
+  .top-bar__whatsapp {
+    order: 0;
   }
 
   .top-bar__phone {
@@ -1870,7 +1881,7 @@ body.mobile-nav-active {
     transform: none;
     font-size: 0.85rem;
     white-space: nowrap;
-    text-align: center;
+    order: 0;
   }
 
   /* ── Logo : 38px max, pas d'espace vide vertical ── */
@@ -1879,6 +1890,11 @@ body.mobile-nav-active {
     max-height: 38px;
     width: auto;
     display: block;
+  }
+
+  /* ── Hero métriques (1-on-1, 24h, 100%) : cachées sur mobile ── */
+  .hero-bg__metrics {
+    display: none;
   }
 
   .hero-bg {

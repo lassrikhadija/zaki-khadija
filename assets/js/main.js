@@ -1,4 +1,14 @@
 // =============================
+// MASQUER MÉTRIQUES EN MOBILE
+// =============================
+if (window.innerWidth <= 768) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var metrics = document.querySelector('.hero-bg__metrics');
+    if (metrics) metrics.style.display = 'none';
+  });
+}
+
+// =============================
 // TOP BAR MESSAGE ROTATION
 // =============================
 

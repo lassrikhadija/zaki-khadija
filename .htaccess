@@ -64,7 +64,7 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # ---- 7. Bloquer l'accès aux fichiers sensibles ----
-<FilesMatch "(^\.htaccess|\.htpasswd|build-blog\.js|README\.md|\.json$)">
+<FilesMatch "(^\.htaccess|\.htpasswd|build-blog\.js|README\.md)">
   Order Allow,Deny
   Deny from all
 </FilesMatch>

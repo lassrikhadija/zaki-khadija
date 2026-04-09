@@ -27,3 +27,11 @@
 .top-bar__whatsapp{display:inline-flex;align-items:center;color:#25d366;margin-left:.5rem;line-height:1;transition:opacity .2s ease}.top-bar__whatsapp:hover{opacity:.75}.top-bar__whatsapp svg{display:block}
 
 .top-bar{position:fixed !important;top:0;left:0;right:0;width:100%;z-index:25}.site-header{position:fixed !important;top:34px;left:0;right:0;width:100%;z-index:20}body{padding-top:106px}
+
+@media(max-width:768px){.hero-metric{display:none !important}}
+
+@media(max-width:768px){.hero-metric--1,.hero-metric--2,.hero-metric--3{display:none !important;visibility:hidden !important;height:0 !important;overflow:hidden !important;padding:0 !important;margin:0 !important;border:0 !important}}
+
+@media(max-width:768px){.hero-metric,.hero-metric--1,.hero-metric--2,.hero-metric--3{display:none !important;animation:none !important;visibility:hidden !important;opacity:0 !important;position:absolute !important;pointer-events:none !important;width:0 !important;height:0 !important;overflow:hidden !important;padding:0 !important;margin:0 !important;border:0 !important;min-width:0 !important}}
+
+@media(max-width:768px){.hero-bg__metrics{display:none !important}}

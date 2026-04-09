@@ -67,3 +67,4 @@ body{padding-top:90px !important}
 .faq__item{padding:1.1rem !important}
 .section__title{font-size:1.55rem !important}
 }
+.breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.6rem 0 .4rem;list-style:none}.breadcrumb__item{display:flex;align-items:center;gap:.35rem}.breadcrumb__item:not(:last-child)::after{content:"›";color:var(--color-text-light);font-size:1rem;line-height:1}.breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}.breadcrumb__link:hover{color:var(--color-accent)}.breadcrumb__current{color:var(--color-accent);font-weight:500}

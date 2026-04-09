@@ -2293,3 +2293,45 @@ body.theme-light .blog-cat-card {
 .whatsapp-float svg {
   display: block;
 }
+
+/* =========================
+   FIL D'ARIANE (BREADCRUMB)
+   ========================= */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  padding: 0.6rem 0 0.4rem;
+  list-style: none;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: "›";
+  color: var(--color-text-light);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.breadcrumb__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb__link:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumb__current {
+  color: var(--color-accent);
+  font-weight: 500;
+}

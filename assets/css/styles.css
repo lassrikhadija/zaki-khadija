@@ -278,6 +278,7 @@ a:hover {
 
 .logo img {
   height: 70px;
+  max-height: 70px;
 }
 
 .main-nav {
@@ -1781,46 +1782,92 @@ body.mobile-nav-active {
 }
 
 @media (max-width: 768px) {
+  /* ── Navigation ── */
   .main-nav {
     display: none;
   }
 
   .nav-toggle {
     display: flex;
+    order: 4;
+    flex-shrink: 0;
   }
 
+  /* ── Header : Logo gauche | [lang + icône + burger] droite ── */
   .header__inner {
     flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 0.65rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0;
+  }
+
+  .logo {
+    order: 1;
+    flex: 0 0 auto;
+    margin-right: auto; /* pousse tout le reste vers la droite */
+    line-height: 1;
   }
 
   .language-switcher {
     order: 2;
+    flex-shrink: 0;
   }
 
+  /* ── Theme toggle : icône seule 28×28px, visible et contrasté ── */
   .theme-toggle {
     order: 3;
-    min-width: auto;
+    flex-shrink: 0;
+    min-width: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0;
+    gap: 0;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-primary);
+    background: rgba(0, 230, 118, 0.12);
+    box-shadow: none;
+    justify-content: center;
   }
 
+  .theme-toggle__text {
+    display: none;
+  }
+
+  .theme-toggle__icon {
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.78rem;
+    background: transparent;
+  }
+
+  /* ── Top Bar : texte masqué, seul le téléphone centré reste ── */
   .top-bar__inner {
-    flex-direction: column;
-    gap: 0.4rem;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-right: 0;
+    gap: 0;
   }
 
   .top-bar__message {
-    font-size: 0.8rem;
-    text-align: left;
+    display: none;
   }
 
   .top-bar__phone {
     position: static;
     transform: none;
-    margin-left: auto;
     font-size: 0.85rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  /* ── Logo : 38px max, pas d'espace vide vertical ── */
+  .logo img {
+    height: auto;
+    max-height: 38px;
+    width: auto;
+    display: block;
   }
 
   .hero-bg {
@@ -2149,4 +2196,34 @@ body.theme-light .blog-cat-card {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* =========================
+   BOUTON FLOTTANT WHATSAPP
+   ========================= */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  width: 52px;
+  height: 52px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float svg {
+  display: block;
 }

@@ -1951,15 +1951,34 @@ body.mobile-nav-active {
     bottom: 0.75rem;
     width: auto;
   }
+
+  /* ── Founder & Problem-Solution : correction débordement mobile ── */
+  .founder-message,
+  .problem-solution {
+    margin: 2rem 1rem;
+  }
+
+  /* ── Audiences grid : 2 colonnes max ── */
+  .audiences--grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ── Footer : 2 colonnes sur tablette ── */
+  .footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 480px) {
+  /* ── Hero kicker : garder petite taille cohérente ── */
   .hero-bg__title {
-    font-size: 1.9rem;
-    line-height: 1.2;
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
 
-  .btn {
+  /* ── Boutons CTA principaux : pleine largeur sur petits écrans ── */
+  .hero-bg__actions .btn,
+  .section--cta .btn {
     padding: 0.75rem 1.2rem;
     font-size: 0.85rem;
     width: 100%;
@@ -1967,6 +1986,26 @@ body.mobile-nav-active {
 
   .hero-bg__actions {
     flex-direction: column;
+  }
+
+  /* ── Audiences grid : 1 colonne sur très petits écrans ── */
+  .audiences--grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Footer : 1 colonne sur mobile ── */
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Section title : réduction sur très petits écrans ── */
+  .section__title {
+    font-size: 1.55rem;
+  }
+
+  /* ── FAQ padding réduit ── */
+  .faq__item {
+    padding: 1.1rem 1.1rem;
   }
 }
 

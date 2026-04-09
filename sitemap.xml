@@ -8,7 +8,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/"/>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,7 +17,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/"/>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -98,6 +98,26 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/marketing-digital.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/marketing-digital.html"/>
     <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AI Visibility / AEO service -->
+  <url>
+    <loc>https://nextiweb.ca/visibilite-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/visibilite-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/visibilite-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/visibilite-ia.html"/>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/visibilite-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/visibilite-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/visibilite-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/visibilite-ia.html"/>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

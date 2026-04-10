@@ -556,6 +556,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // =============================
+// HIDE TOP BAR ON SCROLL
+// =============================
+(function () {
+  const THRESHOLD = 60;
+  function onScroll() {
+    if (window.scrollY > THRESHOLD) {
+      document.body.classList.add('scrolled');
+    } else {
+      document.body.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+// =============================
 // FAQ ACCORDION
 // =============================
 

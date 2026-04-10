@@ -2374,6 +2374,115 @@ body.theme-light .blog-cat-card {
 }
 
 /* =========================
+   IA COMPARE (before/after)
+   ========================= */
+
+.ia-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.ia-compare__card {
+  border-radius: 0.875rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ia-compare__card--danger {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-top: 3px solid rgba(239, 68, 68, 0.6);
+}
+
+.ia-compare__card--success {
+  background: rgba(0, 230, 118, 0.05);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+  border-top: 3px solid var(--color-primary);
+}
+
+.ia-compare__head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ia-compare__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.ia-compare__icon--danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.ia-compare__icon--success {
+  background: rgba(0, 230, 118, 0.15);
+  color: var(--color-primary);
+}
+
+.ia-compare__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.ia-compare__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+.ia-compare__card--danger .ia-compare__list li {
+  color: var(--color-text-muted);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.ia-compare__card--danger .ia-compare__list li::before {
+  content: "✗";
+  position: absolute;
+  left: 0;
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.ia-compare__card--success .ia-compare__list li {
+  color: var(--color-text-muted);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.ia-compare__card--success .ia-compare__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .ia-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
    BOUTON FLOTTANT WHATSAPP
    ========================= */
 

@@ -40,6 +40,23 @@
   <link rel="stylesheet" href="/assets/css/styles.min.css">
   <link rel="manifest" href="/manifest.json">
   <style>
+    /* IA Compare */
+    .ia-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+    .ia-compare__card{border-radius:.875rem;padding:2rem;display:flex;flex-direction:column;gap:1.25rem}
+    .ia-compare__card--danger{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.25);border-top:3px solid rgba(239,68,68,.6)}
+    .ia-compare__card--success{background:rgba(0,230,118,.05);border:1px solid rgba(0,230,118,.2);border-top:3px solid var(--color-primary)}
+    .ia-compare__head{display:flex;align-items:center;gap:.75rem}
+    .ia-compare__icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;flex-shrink:0}
+    .ia-compare__icon--danger{background:rgba(239,68,68,.15);color:#ef4444}
+    .ia-compare__icon--success{background:rgba(0,230,118,.15);color:var(--color-primary)}
+    .ia-compare__title{font-size:1.05rem;font-weight:700;margin:0}
+    .ia-compare__list{list-style:none;display:flex;flex-direction:column;gap:.75rem;padding:0;margin:0}
+    .ia-compare__card--danger .ia-compare__list li{color:var(--color-text-muted);padding-left:1.5rem;position:relative;line-height:1.5}
+    .ia-compare__card--danger .ia-compare__list li::before{content:"✗";position:absolute;left:0;color:#ef4444;font-weight:700}
+    .ia-compare__card--success .ia-compare__list li{color:var(--color-text-muted);padding-left:1.5rem;position:relative;line-height:1.5}
+    .ia-compare__card--success .ia-compare__list li::before{content:"✓";position:absolute;left:0;color:var(--color-primary);font-weight:700}
+    @media(max-width:640px){.ia-compare{grid-template-columns:1fr}}
+
     /* Cacher le bouton WhatsApp flottant généré par JS */
     .whatsapp-float { display: none !important; }
 
@@ -484,29 +501,39 @@
         <header class="section__header section__header--center">
           <h2 class="section__title">Le web de 2026&nbsp;: vos clients vous cherchent aussi sur l'IA</h2>
           <p class="section__subtitle">
-            ChatGPT, Perplexity, Google AI Overview — ces nouveaux moteurs recommandent des entreprises directement à leurs utilisateurs. Si votre contenu n'est pas structuré pour eux, vous n'existez pas dans leurs réponses.
+            ChatGPT, Perplexity et Google IA recommandent directement des entreprises. Êtes-vous dans leurs réponses&nbsp;?
           </p>
         </header>
-        <div class="split">
-          <div class="split__column">
-            <h3 class="split__title">Ce qui se passe sans vous</h3>
-            <ul class="split__list">
-              <li>Un client demande à ChatGPT «&nbsp;meilleure agence web à Montréal&nbsp;» — votre concurrent est nommé, pas vous</li>
-              <li>Google affiche une réponse IA directe — votre site n'est pas cité</li>
-              <li>Perplexity recommande un fournisseur — vous êtes absent des résultats</li>
+        <div class="ia-compare">
+          <div class="ia-compare__card ia-compare__card--danger">
+            <div class="ia-compare__head">
+              <span class="ia-compare__icon ia-compare__icon--danger">✗</span>
+              <h3 class="ia-compare__title">Sans visibilité IA</h3>
+            </div>
+            <ul class="ia-compare__list">
+              <li>Votre concurrent est nommé par ChatGPT — pas vous</li>
+              <li>Google IA affiche une réponse directe sans citer votre site</li>
+              <li>Perplexity recommande un fournisseur — vous êtes absent</li>
             </ul>
           </div>
-          <div class="split__column">
-            <h3 class="split__title">Ce qu'on fait pour vous</h3>
-            <ul class="split__list">
-              <li>Structurer votre contenu pour répondre aux vraies questions de vos clients</li>
-              <li>Renforcer votre autorité en ligne pour être cité comme référence</li>
-              <li>Adapter votre site aux critères AEO / GEO des moteurs IA</li>
+          <div class="ia-compare__card ia-compare__card--success">
+            <div class="ia-compare__head">
+              <span class="ia-compare__icon ia-compare__icon--success">✓</span>
+              <h3 class="ia-compare__title">Avec NEXTIWEB</h3>
+            </div>
+            <ul class="ia-compare__list">
+              <li>Contenu structuré pour répondre aux vraies questions de vos clients</li>
+              <li>Autorité renforcée pour être cité comme référence</li>
+              <li>Site adapté aux critères AEO&nbsp;/ GEO des moteurs IA</li>
             </ul>
           </div>
         </div>
-        <div class="section__actions">
-          <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
+        <div class="expertise-intro__cta">
+          <a href="/contact.html" class="expertise-intro__link">
+            Vérifier ma visibilité IA
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <span class="expertise-intro__hint">Audit gratuit · sans engagement</span>
         </div>
       </div>
     </section>

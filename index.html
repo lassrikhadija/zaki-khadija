@@ -40,6 +40,21 @@
   <link rel="stylesheet" href="/assets/css/styles.min.css">
   <link rel="manifest" href="/manifest.json">
   <style>
+    /* FOMO Block */
+    .fomo-block{background:rgba(251,146,60,.06);border:1px solid rgba(251,146,60,.2);border-left:4px solid #fb923c;border-radius:.75rem;padding:1.75rem 2rem;margin:2rem auto;max-width:720px;display:flex;flex-direction:column;gap:.75rem}
+    .fomo-block__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0}
+    .fomo-block__text strong{color:var(--color-text)}
+    .fomo-block__punch{color:var(--color-text);font-weight:700;font-size:1.05rem;line-height:1.5;margin:0}
+    .fomo-pivot{text-align:center;font-size:1.25rem;font-weight:700;color:var(--color-primary);margin:1.75rem 0 2rem}
+
+    /* Solution Cards */
+    .solution-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:2rem}
+    .solution-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+    .solution-card__title{font-size:.95rem;font-weight:700;margin:0}
+    .solution-card__text{font-size:.875rem;color:var(--color-text-muted);line-height:1.6;margin:0}
+    @media(max-width:900px){.solution-cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.solution-cards{grid-template-columns:1fr}}
+
     /* IA Compare */
     .ia-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
     .ia-compare__card{border-radius:.875rem;padding:2rem;display:flex;flex-direction:column;gap:1.25rem}
@@ -545,29 +560,57 @@
       <div class="container">
         <header class="section__header section__header--center">
           <h2 class="section__title">Votre site existe. Mais est-ce qu'il travaille pour vous&nbsp;?</h2>
+          <p class="section__subtitle">Il est peut-être lent, flou sur votre offre, ou tout simplement introuvable sur Google.</p>
         </header>
-        <div class="split">
-          <div class="split__column">
-            <h3 class="split__title">Le vrai problème</h3>
-            <p>
-              Votre site est en ligne — mais il est peut-être lent, flou sur votre offre, ou tout simplement
-              introuvable sur Google. Un prospect arrive, ne comprend pas ce que vous faites en 10&nbsp;secondes, et repart.
-              Sans vous avoir contacté.
-            </p>
-            <p style="margin-top: 1rem; color: var(--color-accent);">
-              Pendant ce temps, vos concurrents — parfois moins bons que vous — récoltent ces leads parce que leur
-              site est mieux positionné. Ce sont des contrats perdus que vous ne verrez jamais.
-            </p>
+
+        <!-- Bloc jalousie / FOMO -->
+        <div class="fomo-block">
+          <p class="fomo-block__text">
+            Pendant ce temps, votre concurrent — peut-être moins expérimenté que vous — a refait son site.
+            Il reçoit des demandes. Il ferme des contrats. <strong>Pas vous.</strong>
+          </p>
+          <p class="fomo-block__punch">
+            Pas parce qu'il est meilleur.<br>Parce que son site, lui, travaille.
+          </p>
+        </div>
+
+        <!-- Pivot -->
+        <p class="fomo-pivot">Alors pourquoi pas vous&nbsp;?</p>
+
+        <!-- 4 cartes solution -->
+        <div class="solution-cards">
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </span>
+            <h3 class="solution-card__title">Site clair qui convainc</h3>
+            <p class="solution-card__text">Votre client idéal comprend ce que vous faites dès la 1re page — et passe à l'action.</p>
           </div>
-          <div class="split__column">
-            <h3 class="split__title">Ce qui change avec nous</h3>
-            <ul class="split__list">
-              <li>Un site clair qui convainc votre client idéal dès la 1re page</li>
-              <li>Un référencement qui vous positionne sur les bons mots-clés</li>
-              <li>Un design rassurant qui déclenche la prise de contact</li>
-              <li>Un suivi continu — pas un livrable qu'on abandonne</li>
-            </ul>
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <h3 class="solution-card__title">Référencement ciblé</h3>
+            <p class="solution-card__text">Positionné sur les bons mots-clés pour attirer des visiteurs qui cherchent exactement ce que vous offrez.</p>
           </div>
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="solution-card__title">Design qui déclenche</h3>
+            <p class="solution-card__text">Un parcours rassurant qui transforme un visiteur hésitant en prise de contact réelle.</p>
+          </div>
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </span>
+            <h3 class="solution-card__title">Suivi continu</h3>
+            <p class="solution-card__text">Pas un livrable qu'on abandonne. On reste avec vous pour mesurer, ajuster et progresser.</p>
+          </div>
+        </div>
+
+        <div class="section__actions section__actions--center">
+          <a href="/contact.html" class="btn btn--primary">Je veux un site qui travaille pour moi</a>
         </div>
       </div>
     </section>

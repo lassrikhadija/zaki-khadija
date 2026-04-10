@@ -40,6 +40,14 @@
   <link rel="stylesheet" href="/assets/css/styles.min.css">
   <link rel="manifest" href="/manifest.json">
   <style>
+    /* Founder teaser */
+    .founder-teaser{padding:3rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+    .founder-teaser__inner{display:flex;align-items:center;gap:1.5rem;max-width:720px;margin:0 auto}
+    .founder-teaser__avatar{width:56px;height:56px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .founder-teaser__content{display:flex;flex-direction:column;gap:.75rem}
+    .founder-teaser__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0;font-style:italic}
+    @media(max-width:540px){.founder-teaser__inner{flex-direction:column;text-align:center}}
+
     /* Steps visual */
     .steps--visual{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;padding:0;margin:2rem 0}
     .steps--visual .steps__item{position:relative;padding:0 1.5rem 0 0;display:flex;flex-direction:column;gap:.75rem}
@@ -696,55 +704,23 @@
     </section>
 
     <!-- =======================
-         MESSAGE DU FONDATEUR
+         MESSAGE DU FONDATEUR (teaser)
          ======================= -->
-    <section class="founder-message">
+    <section class="founder-teaser">
       <div class="container">
-        <h2>Vous faites un travail exceptionnel. Vos clients méritent de vous trouver.</h2>
-
-        <p class="founder-intro">
-          Je suis peut-être en train de décrire votre situation exacte.
-        </p>
-
-        <p>
-          Vous offrez un service de qualité. Vous avez des clients satisfaits. Mais en ligne, vous êtes presque
-          invisible — et vous ne savez pas exactement pourquoi. Pendant ce temps, des concurrents parfois moins
-          compétents que vous décrochent des contrats simplement parce que leur site est mieux positionné.
-        </p>
-
-        <p>
-          Ce n'est pas juste. Et c'est entièrement réparable.
-        </p>
-
-        <p>
-          Je m'appelle Khadija AitLassri, fondatrice de NEXTIWEB. J'ai fait mes études en développement web.
-          J'ai créé mon propre site — techniquement correct, bien construit. Et j'ai attendu.
-          Zéro visiteur. Zéro client. Le site existait, mais il était invisible.
-        </p>
-
-        <p>
-          Ce n'était pas un problème de code. C'était un problème de méthode.
-          Je suis repartie étudier — cette fois le e-commerce, le comportement client, le référencement,
-          et l'impact de l'intelligence artificielle sur la façon dont les gens cherchent et achètent en ligne.
-          C'est là que tout s'est éclairé.
-        </p>
-
-        <p>
-          Un site qui génère des clients, ce n'est pas qu'une question de design ou de technologie.
-          C'est la combinaison d'une structure pensée pour convertir, d'un contenu optimisé pour être trouvé —
-          sur Google comme sur les moteurs IA — et d'une compréhension réelle de ce que votre client cherche
-          avant même de vous contacter.
-        </p>
-
-        <p>
-          C'est cette double expertise — développement web et stratégie d'acquisition — que j'apporte
-          à chaque projet chez NEXTIWEB. Pas un beau site. Un système qui travaille pour vous.
-        </p>
-
-        <p>
-          Si vous en avez assez d'avoir un site qui existe sans rien générer, parlons de votre projet.
-          Je vous dirai honnêtement ce qui bloque — et comment on règle ça.
-        </p>
+        <div class="founder-teaser__inner">
+          <div class="founder-teaser__avatar" aria-hidden="true">K</div>
+          <div class="founder-teaser__content">
+            <p class="founder-teaser__text">
+              Je m'appelle Khadija. J'ai vécu exactement ce que vous vivez — un site techniquement solide, zéro trafic, zéro client.
+              Ce que j'ai appris en reconstruisant tout a donné naissance à NEXTIWEB.
+            </p>
+            <a href="/a-propos.html" class="expertise-intro__link">
+              Lire mon histoire
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 

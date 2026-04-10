@@ -388,14 +388,11 @@ body.theme-light .logo img {
   padding: 0.75rem 1rem;
   color: var(--color-text);
   font-size: 0.9rem;
-  transition: color 0.2s ease, background-color 0.2s ease;
-  border-left: 3px solid transparent;
+  transition: color 0.3s ease;
 }
 
 .nav__submenu-link:hover {
   color: var(--color-primary);
-  background-color: rgba(0, 230, 118, 0.05);
-  border-left-color: var(--color-primary);
 }
 
 .nav__submenu-link:first-child {

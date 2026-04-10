@@ -68,7 +68,7 @@ body.theme-light {
   --color-surface-soft: #fff8ef;
   --color-text: #171717;
   --color-text-muted: #4f4f4f;
-  --color-text-light: #6e6e6e;
+  --color-text-light: #5e5e5e;
   --color-border: #ded1c0;
   --color-border-strong: #cdbda9;
   --color-border-soft: #baa892;
@@ -745,7 +745,7 @@ body.theme-light .hero-bg__microcopy {
   border-radius: 999px;
   background: rgba(0, 230, 118, 0.18);
   color: var(--color-primary);
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -842,7 +842,7 @@ body.theme-light .hero-bg__microcopy {
 }
 
 .assurance-item__desc {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--color-text-light);
   display: block;
   margin-top: 0.15rem;
@@ -1452,13 +1452,13 @@ body.theme-light .hero-bg__microcopy {
 .footer__bottom {
   border-top: 1px solid #222222;
   padding-top: 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--color-text-muted);
 }
 
 .footer__legal {
   margin-top: 0.55rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--color-text-muted);
   line-height: 1.55;
 }
@@ -1473,7 +1473,7 @@ body.theme-light .hero-bg__microcopy {
   background: transparent;
   color: var(--color-primary);
   font: inherit;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   cursor: pointer;
   padding: 0;
 }
@@ -2038,7 +2038,7 @@ body.mobile-nav-active {
 
 .blog-hero__kicker {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;

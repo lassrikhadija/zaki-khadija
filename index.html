@@ -43,11 +43,12 @@
     /* Steps visual */
     .steps--visual{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;padding:0;margin:2rem 0}
     .steps--visual .steps__item{position:relative;padding:0 1.5rem 0 0;display:flex;flex-direction:column;gap:.75rem}
-    .steps__number{width:48px;height:48px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .steps__arrow{position:absolute;top:12px;right:-6px;color:var(--color-primary);font-size:1.4rem;font-weight:700;z-index:1}
+    .steps__number{width:48px;height:48px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1}
+    .steps--visual .steps__item{position:relative}
+    .steps--visual .steps__item:not(:last-child)::after{content:'';position:absolute;top:24px;left:calc(48px + 12px);right:-12px;height:2px;background:linear-gradient(90deg,var(--color-primary) 60%,transparent 100%);background-image:repeating-linear-gradient(90deg,var(--color-primary) 0,var(--color-primary) 8px,transparent 8px,transparent 16px)}
     .steps__title{font-size:1rem;font-weight:700;margin:0;line-height:1.4}
     .steps__text{font-size:.9rem;color:var(--color-text-muted);line-height:1.6;margin:0}
-    @media(max-width:768px){.steps--visual{grid-template-columns:1fr 1fr}.steps__arrow{display:none}}
+    @media(max-width:768px){.steps--visual{grid-template-columns:1fr 1fr}.steps--visual .steps__item:not(:last-child)::after{display:none}}
     @media(max-width:480px){.steps--visual{grid-template-columns:1fr}}
 
     /* FOMO Block */
@@ -636,19 +637,16 @@
         <ol class="steps steps--visual">
           <li class="steps__item">
             <div class="steps__number">1</div>
-            <div class="steps__arrow" aria-hidden="true">→</div>
             <h3 class="steps__title">Vous nous parlez de votre business</h3>
             <p class="steps__text">On comprend vos clients cibles, vos objectifs et ce qui vous bloque réellement en ligne.</p>
           </li>
           <li class="steps__item">
             <div class="steps__number">2</div>
-            <div class="steps__arrow" aria-hidden="true">→</div>
             <h3 class="steps__title">Vous recevez une stratégie claire</h3>
             <p class="steps__text">Plan du site, mots-clés cibles et parcours de conversion — rien de flou, tout est justifié.</p>
           </li>
           <li class="steps__item">
             <div class="steps__number">3</div>
-            <div class="steps__arrow" aria-hidden="true">→</div>
             <h3 class="steps__title">Votre site prend vie</h3>
             <p class="steps__text">Design, code et SEO livrés proprement. Vous validez à chaque étape, on ajuste sans friction.</p>
           </li>

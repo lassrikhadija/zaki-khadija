@@ -295,8 +295,8 @@ body {
 }
 
 .logo img {
-  height: 70px;
-  max-height: 70px;
+  height: 52px;
+  max-height: 52px;
 }
 body.theme-light .logo img {
   mix-blend-mode: multiply;
@@ -1890,7 +1890,7 @@ body.mobile-nav-active {
   /* ── Logo : 38px max, pas d'espace vide vertical ── */
   .logo img {
     height: auto;
-    max-height: 38px;
+    max-height: 48px;
     width: auto;
     display: block;
   }

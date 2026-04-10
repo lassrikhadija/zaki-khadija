@@ -29,6 +29,18 @@
   <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/marketing-digital-montreal.html">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <style>
+    /* Fil d'Ariane */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+  </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
@@ -40,7 +52,29 @@
   <header class="site-header"><div class="container header__inner"><a href="/" class="logo"><img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager"></a><nav class="main-nav" aria-label="Navigation principale"><div class="nav__item"><a href="/services.html" class="nav__link">Services</a><div class="nav__submenu"><a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a><a href="/seo.html" class="nav__submenu-link">Référencement SEO</a><a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a></div></div><a href="/secteurs.html" class="nav__link">Secteurs</a><a href="/ressources.html" class="nav__link">Ressources</a>
         <a href="/blog/" class="nav__link">Blog</a><a href="/a-propos.html" class="nav__link">À propos</a><a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a></nav><button class="theme-toggle" type="button" aria-label="Changer de thème"></button></div></header>
   <main>
-    <section class="section section--dark"><div class="container section__header section__header--center"><h1 class="section__title">Marketing digital à Montréal pour PME et entreprises de services</h1><p class="section__text">Cette page locale relie stratégie digitale, contenus et conversion pour les PME, entreprises de services et organisations B2B à Montréal qui veulent une croissance plus structurée.</p></div></section>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+          <li class="breadcrumb__item">
+            <a href="/" class="breadcrumb__link breadcrumb__link--home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              NEXTIWEB
+            </a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="/zones-desservies/" class="breadcrumb__link">Zones desservies</a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current">Montréal – Marketing digital</span>
+          </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+<section class="section section--dark"><div class="container section__header section__header--center"><h1 class="section__title">Marketing digital à Montréal pour PME et entreprises de services</h1><p class="section__text">Cette page locale relie stratégie digitale, contenus et conversion pour les PME, entreprises de services et organisations B2B à Montréal qui veulent une croissance plus structurée.</p></div></section>
     <section class="section section--alt-bg"><div class="container"><header class="section__header"><h2 class="section__title">Ce que nous cherchons à aligner</h2><p class="section__subtitle">Le marketing digital n'est utile que s'il relie la bonne offre, la bonne page et la bonne action de conversion.</p></header><div class="projects"><article class="project-card"><h3 class="project-card__title">Stratégie et priorités</h3><p class="project-card__text">Clarifier où investir pour obtenir un impact court et moyen terme à Montréal.</p><p class="project-card__meta"><a href="/marketing-digital.html">Voir la page service</a></p></article><article class="project-card"><h3 class="project-card__title">Contenu orienté conversion</h3><p class="project-card__text">Messages, pages et CTA alignés avec les besoins des prospects et les étapes du parcours.</p><p class="project-card__meta"><a href="/ressources.html#ressources-marketing-digital">Voir les ressources</a></p></article><article class="project-card"><h3 class="project-card__title">Maillage local</h3><p class="project-card__text">Connexion entre pages services, secteurs, zones desservies et prise de contact.</p><p class="project-card__meta"><a href="/zones-desservies/montreal.html">Voir Montréal</a></p></article></div></div></section>
     <section class="section"><div class="container"><header class="section__header"><h2 class="section__title">Pourquoi cette page compte dans l'architecture</h2><p class="section__subtitle">Elle évite de faire porter toute l'intention locale sur la seule page service principale.</p></header><div class="features"><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Précision géographique</h3><p class="feature__text">Le moteur comprend mieux le lien entre marketing digital et Montréal.</p></article><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Lecture plus concrète</h3><p class="feature__text">Le visiteur comprend que l'accompagnement est pensé pour son marché local.</p></article><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Chaîne de maillage</h3><p class="feature__text">La page relie <a href="/services.html">Services</a>, <a href="/secteurs.html">Secteurs</a>, <a href="/zones-desservies/index.html">Zones</a> et <a href="/contact.html">Contact</a>.</p></article><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Préparation éditoriale</h3><p class="feature__text">Elle prépare de futurs contenus sur acquisition locale, offres et conversion à Montréal.</p></article></div></div></section>
   </main>

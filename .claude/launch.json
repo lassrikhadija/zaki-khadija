@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "nextiweb",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "3456", "--directory", "C:\\Users\\Chaki\\Downloads\\e-commerce-khadija\\Khadija marketing\\Projet-khadija\\projet_Nextiweb\\zaki-khadija"],
+      "port": 3456
+    }
+  ]
+}

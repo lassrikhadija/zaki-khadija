@@ -29,6 +29,18 @@
   <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/zones-desservies/quebec.html">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <style>
+    /* Fil d'Ariane */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+  </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
@@ -40,7 +52,29 @@
   <header class="site-header"><div class="container header__inner"><a href="/" class="logo"><img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager"></a><nav class="main-nav" aria-label="Navigation principale"><div class="nav__item"><a href="/services.html" class="nav__link">Services</a><div class="nav__submenu"><a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a><a href="/seo.html" class="nav__submenu-link">Référencement SEO</a><a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a></div></div><a href="/secteurs.html" class="nav__link">Secteurs</a><a href="/ressources.html" class="nav__link">Ressources</a>
         <a href="/blog/" class="nav__link">Blog</a><a href="/a-propos.html" class="nav__link">À propos</a><a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a></nav><button class="theme-toggle" type="button" aria-label="Changer de thème"></button></div></header>
   <main>
-    <section class="section section--dark"><div class="container section__header section__header--center"><h1 class="section__title">Services web, SEO et marketing digital à Québec</h1><p class="section__text">Cette page s'adresse aux PME, entreprises de services et organisations B2B de la ville de Québec. Elle clarifie les priorités locales et relie vos besoins aux bons services pour accélérer la conversion.</p></div></section>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+          <li class="breadcrumb__item">
+            <a href="/" class="breadcrumb__link breadcrumb__link--home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              NEXTIWEB
+            </a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="/zones-desservies/" class="breadcrumb__link">Zones desservies</a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current">Québec</span>
+          </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+<section class="section section--dark"><div class="container section__header section__header--center"><h1 class="section__title">Services web, SEO et marketing digital à Québec</h1><p class="section__text">Cette page s'adresse aux PME, entreprises de services et organisations B2B de la ville de Québec. Elle clarifie les priorités locales et relie vos besoins aux bons services pour accélérer la conversion.</p></div></section>
     <section class="section section--alt-bg"><div class="container"><header class="section__header"><h2 class="section__title">Comment cette page soutient le maillage</h2><p class="section__subtitle">Une page ville claire permet d'éviter une structure trop générique et aide à distribuer l'autorité entre les services et les zones.</p></header><div class="features"><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Ville identifiée</h3><p class="feature__text">Québec devient une page d'entrée cohérente pour les visiteurs et les moteurs.</p></article><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Services reliés</h3><p class="feature__text">La page oriente vers <a href="/creation-site.html">création de sites web</a>, <a href="/seo.html">SEO</a> et <a href="/marketing-digital.html">marketing digital</a>.</p></article><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Architecture lisible</h3><p class="feature__text">Elle complète le hub <a href="/zones-desservies/index.html">zones desservies</a> et prépare d'éventuelles pages locales plus fines.</p></article><article class="feature"><h3 class="feature__title"><span class="feature__icon">✓</span>Sortie claire</h3><p class="feature__text">La conversion finale reste orientée vers la <a href="/contact.html">prise de contact</a>.</p></article></div></div></section>
     <section class="section"><div class="container"><header class="section__header"><h2 class="section__title">Accès aux services principaux</h2><p class="section__subtitle">À ce stade, la structure la plus utile consiste à connecter la ville aux pages services piliers, puis à la prise de contact.</p></header><div class="services"><article class="service-card"><h3 class="service-card__title">Création de sites web</h3><p class="service-card__text">Structure claire, design orienté conversion et base SEO propre.</p><a class="service-card__link" href="/creation-site.html">Voir le service</a></article><article class="service-card"><h3 class="service-card__title">Référencement SEO</h3><p class="service-card__text">SEO local, technique et contenu pour renforcer votre visibilité.</p><a class="service-card__link" href="/seo.html">Voir le service</a></article><article class="service-card"><h3 class="service-card__title">Marketing digital</h3><p class="service-card__text">Acquisition et conversion adaptées à vos objectifs commerciaux.</p><a class="service-card__link" href="/marketing-digital.html">Voir le service</a></article></div></div></section>
     <section class="section section--cta"><div class="container section__header section__header--center"><h2 class="section__title">Vous ciblez la ville de Québec ?</h2><p class="section__text">Le bon levier n'est pas toujours plus de pages, mais une meilleure cohérence entre votre zone, vos services et votre parcours utilisateur.</p><a href="/contact.html" class="btn btn--primary">Parler de votre marché</a></div></section>

@@ -29,6 +29,18 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <style>
+    /* Fil d'Ariane */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+  </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
@@ -68,7 +80,26 @@
   </header>
 
   <main>
-    <section class="section section--dark">
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+          <li class="breadcrumb__item">
+            <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              NEXTIWEB
+            </a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current">Legal Notice</span>
+          </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+<section class="section section--dark">
       <div class="container section__header section__header--center">
         <h1 class="section__title">Legal Notice</h1>
         <p class="section__text">Information about the site publisher, hosting and conditions of use.</p>

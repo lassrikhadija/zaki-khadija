@@ -1051,6 +1051,27 @@ body.theme-light .hero-bg__microcopy {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.split--cards .split__column {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.split--cards .split__column p:last-child {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.split__icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .split__check {
   color: var(--color-primary);
   font-weight: 700;

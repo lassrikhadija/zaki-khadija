@@ -82,13 +82,24 @@ body.theme-light {
   --theme-toggle-bg: #ffffff;
 }
 
-/* Correctifs de contraste WCAG en mode light */
-body.theme-light a {
+/* Correctifs de contraste WCAG en mode light — liens uniquement, pas les boutons */
+body.theme-light a:not(.btn) {
   color: #006837;
 }
 
-body.theme-light a:hover {
+body.theme-light a:not(.btn):hover {
   color: #004d27;
+}
+
+/* Hero toujours sombre — boutons sur fond foncé */
+body.theme-light .hero-bg .btn--ghost {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+body.theme-light .hero-bg .btn--ghost:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
 }
 
 body.theme-light .section--cta {

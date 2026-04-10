@@ -232,9 +232,9 @@ body.scrolled .site-header {
   transition: top 0.3s ease;
 }
 
-/* Compensation pour top-bar + header fixe (~34px + ~72px) */
+/* Compensation pour top-bar + header fixe (39px + 80px) */
 body {
-  padding-top: 106px;
+  padding-top: 119px;
 }
 
 .top-bar__inner {
@@ -288,7 +288,8 @@ body {
 
 .site-header {
   position: fixed;
-  top: 34px; /* sous le top-bar */
+  top: 39px; /* sous le top-bar (hauteur réelle : 38.5px) */
+  transition: top 0.3s ease;
   left: 0;
   right: 0;
   width: 100%;

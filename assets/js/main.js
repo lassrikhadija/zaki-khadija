@@ -559,14 +559,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // HIDE TOP BAR ON SCROLL
 // =============================
 (function () {
+  const topBar = document.querySelector('.top-bar');
+  const header = document.querySelector('.site-header');
+
+  function setLayout() {
+    const tbH = topBar ? topBar.offsetHeight : 0;
+    const hH = header ? header.offsetHeight : 0;
+    if (header) header.style.top = tbH + 'px';
+    let s = document.getElementById('nw-layout-pad');
+    if (!s) { s = document.createElement('style'); s.id = 'nw-layout-pad'; document.head.appendChild(s); }
+    s.textContent = 'body{padding-top:' + (tbH + hH) + 'px!important}';
+  }
+
   const THRESHOLD = 60;
   function onScroll() {
     if (window.scrollY > THRESHOLD) {
       document.body.classList.add('scrolled');
+      if (header) header.style.top = '0';
     } else {
       document.body.classList.remove('scrolled');
+      setLayout();
     }
   }
+
+  setLayout();
+  window.addEventListener('DOMContentLoaded', setLayout);
+  window.addEventListener('load', setLayout);
+  window.addEventListener('resize', setLayout, { passive: true });
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
 

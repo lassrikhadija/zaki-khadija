@@ -848,6 +848,21 @@
 
   <!-- JS global -->
   <script src="/assets/js/main.min.js" defer></script>
+  <script>
+    (function(){
+      function nwLayout(){
+        var tb=document.querySelector('.top-bar'),h=document.querySelector('.site-header');
+        if(!tb||!h)return;
+        var tbH=tb.offsetHeight,hH=h.offsetHeight;
+        h.style.top=tbH+'px';
+        var s=document.getElementById('nw-layout-pad');
+        if(!s){s=document.createElement('style');s.id='nw-layout-pad';document.head.appendChild(s);}
+        s.textContent='body{padding-top:'+(tbH+hH)+'px!important}';
+      }
+      document.addEventListener('DOMContentLoaded',nwLayout);
+      window.addEventListener('load',nwLayout);
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

@@ -222,6 +222,11 @@ a:hover {
   margin-top: 1.5rem;
 }
 
+.section__actions--center {
+  display: flex;
+  justify-content: center;
+}
+
 /* =========================
    TOP BAR (ENGAGEMENT)
    ========================= */

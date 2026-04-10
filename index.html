@@ -40,6 +40,16 @@
   <link rel="stylesheet" href="/assets/css/styles.min.css">
   <link rel="manifest" href="/manifest.json">
   <style>
+    /* Steps visual */
+    .steps--visual{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;padding:0;margin:2rem 0}
+    .steps--visual .steps__item{position:relative;padding:0 1.5rem 0 0;display:flex;flex-direction:column;gap:.75rem}
+    .steps__number{width:48px;height:48px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .steps__arrow{position:absolute;top:12px;right:-6px;color:var(--color-primary);font-size:1.4rem;font-weight:700;z-index:1}
+    .steps__title{font-size:1rem;font-weight:700;margin:0;line-height:1.4}
+    .steps__text{font-size:.9rem;color:var(--color-text-muted);line-height:1.6;margin:0}
+    @media(max-width:768px){.steps--visual{grid-template-columns:1fr 1fr}.steps__arrow{display:none}}
+    @media(max-width:480px){.steps--visual{grid-template-columns:1fr}}
+
     /* FOMO Block */
     .fomo-block{background:rgba(251,146,60,.06);border:1px solid rgba(251,146,60,.2);border-left:4px solid #fb923c;border-radius:.75rem;padding:1.75rem 2rem;margin:2rem auto;max-width:720px;display:flex;flex-direction:column;gap:.75rem}
     .fomo-block__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0}
@@ -623,25 +633,32 @@
         <header class="section__header section__header--center">
           <h2 class="section__title">Votre résultat en 4 étapes</h2>
         </header>
-        <ol class="steps">
+        <ol class="steps steps--visual">
           <li class="steps__item">
+            <div class="steps__number">1</div>
+            <div class="steps__arrow" aria-hidden="true">→</div>
             <h3 class="steps__title">Vous nous parlez de votre business</h3>
-            <p>On comprend vos clients cibles, vos objectifs et ce qui vous bloque réellement en ligne.</p>
+            <p class="steps__text">On comprend vos clients cibles, vos objectifs et ce qui vous bloque réellement en ligne.</p>
           </li>
           <li class="steps__item">
+            <div class="steps__number">2</div>
+            <div class="steps__arrow" aria-hidden="true">→</div>
             <h3 class="steps__title">Vous recevez une stratégie claire</h3>
-            <p>Plan du site, mots-clés cibles et parcours de conversion — rien de flou, tout est justifié.</p>
+            <p class="steps__text">Plan du site, mots-clés cibles et parcours de conversion — rien de flou, tout est justifié.</p>
           </li>
           <li class="steps__item">
+            <div class="steps__number">3</div>
+            <div class="steps__arrow" aria-hidden="true">→</div>
             <h3 class="steps__title">Votre site prend vie</h3>
-            <p>Design, code et SEO livrés proprement. Vous validez à chaque étape, on ajuste sans friction.</p>
+            <p class="steps__text">Design, code et SEO livrés proprement. Vous validez à chaque étape, on ajuste sans friction.</p>
           </li>
           <li class="steps__item">
+            <div class="steps__number">4</div>
             <h3 class="steps__title">Vos clients vous trouvent</h3>
-            <p>Suivi post-lancement, positions et améliorations continues — votre site progresse dans le temps.</p>
+            <p class="steps__text">Suivi post-lancement, positions et améliorations continues — votre site progresse dans le temps.</p>
           </li>
         </ol>
-        <div class="section__actions">
+        <div class="section__actions section__actions--center">
           <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
         </div>
       </div>

@@ -32,6 +32,7 @@
   <link rel="manifest" href="/manifest.json">
   <style>
     /* ── Fil d'Ariane ── */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
     .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
     .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
     .breadcrumb__item:not(:last-child)::after{content:"›";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
@@ -84,7 +85,8 @@
   <main>
 
     <!-- FIL D'ARIANE -->
-    <div class="container">
+    <div class="breadcrumb-bar">
+      <div class="container">
       <nav aria-label="Fil d'Ariane">
         <ol class="breadcrumb">
           <li class="breadcrumb__item">
@@ -98,6 +100,7 @@
           </li>
         </ol>
       </nav>
+      </div>
     </div>
 
     <!-- =======================

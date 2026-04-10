@@ -39,13 +39,20 @@
        ======================= -->
   <link rel="stylesheet" href="/assets/css/styles.min.css">
   <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <style>
     /* Founder teaser */
     .founder-teaser{padding:3rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
-    .founder-teaser__inner{display:flex;align-items:center;gap:1.5rem;max-width:720px;margin:0 auto}
+    .founder-teaser__inner{display:flex;align-items:center;gap:1.75rem;max-width:720px;margin:0 auto}
     .founder-teaser__avatar{width:56px;height:56px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .founder-teaser__content{display:flex;flex-direction:column;gap:.75rem}
     .founder-teaser__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0;font-style:italic}
+    /* Signature manuscrite */
+    .founder-teaser__sig{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:0}
+    .sig-text{font-family:'Dancing Script',cursive;font-size:38px;font-weight:700;fill:var(--color-primary)}
+    .sig-flourish{stroke:var(--color-primary);stroke-width:1.5;fill:none;opacity:.55}
     @media(max-width:540px){.founder-teaser__inner{flex-direction:column;text-align:center}}
 
     /* Steps visual */
@@ -301,9 +308,7 @@
        ======================= -->
   <main>
 
-    <!-- =======================
-         HERO IMMERSIF
-         ======================= -->
+    <!-- ① HERO IMMERSIF -->
     <section class="hero-bg">
       <div class="hero-bg__overlay"></div>
 
@@ -362,9 +367,7 @@
 
     </section>
 
-    <!-- =======================
-         BARRE DE RASSURANCE
-         ======================= -->
+    <!-- ② BARRE DE RASSURANCE -->
     <section class="assurance-bar section section--alt-bg">
       <div class="container assurance-grid">
         <div class="assurance-item">
@@ -386,40 +389,13 @@
       </div>
     </section>
 
-    <!-- =======================
-         EXPERTISE / RÉASSURANCE (PALIER 2)
-         ======================= -->
-    <section class="expertise-intro section section--alt-bg">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Votre site devrait générer des appels. Pas juste des visites.</h2>
-        </header>
-        <p class="expertise-intro__text">
-          Votre prochain client vous cherche sur Google en ce moment. Est-ce que votre site le convainc
-          en 10&nbsp;secondes de vous appeler — ou de repartir chez un concurrent&nbsp;?
-          Chez NEXTIWEB, chaque décision de design, de structure et de contenu sert un seul objectif&nbsp;:
-          transformer vos visiteurs en vrais clients.
-        </p>
-        <div class="expertise-intro__cta">
-          <a href="/contact.html" class="expertise-intro__link">
-            Voir si mon site génère des clients
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <span class="expertise-intro__hint">Audit gratuit · sans engagement</span>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- =======================
-         CLIENTS CIBLÉS
-         ======================= -->
+    <!-- ③ QUALIFICATION — Ce site est fait pour vous si… -->
     <section class="section section--alt-bg">
       <div class="container">
         <header class="section__header section__header--center">
           <h2 class="section__title">Ce site est fait pour vous si&hellip;</h2>
           <p class="section__subtitle">
-            Vous n'avez peut-être pas un grand budget ni une équipe marketing — vous avez juste besoin d'un site qui reflète vraiment vos valeurs et qui travaille pour vous.
+            Vous n’avez peut-être pas un grand budget ni une équipe marketing — vous avez juste besoin d’un site qui reflète vraiment vos valeurs et qui travaille pour vous.
           </p>
         </header>
         <ul class="audiences audiences--grid">
@@ -434,9 +410,67 @@
       </div>
     </section>
 
-    <!-- =======================
-         CE QUE VOTRE SITE PEUT CHANGER
-         ======================= -->
+    <!-- ④ AMPLIFICATION — FOMO / Problème + Solution -->
+    <section class="section problem-solution">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <h2 class="section__title">Votre site existe. Mais est-ce qu’il travaille pour vous&nbsp;?</h2>
+          <p class="section__subtitle">Il est peut-être lent, flou sur votre offre, ou tout simplement introuvable sur Google.</p>
+        </header>
+
+        <!-- Bloc jalousie / FOMO -->
+        <div class="fomo-block">
+          <p class="fomo-block__text">
+            Pendant ce temps, votre concurrent — peut-être moins expérimenté que vous — a refait son site.
+            Il reçoit des demandes. Il ferme des contrats. <strong>Pas vous.</strong>
+          </p>
+          <p class="fomo-block__punch">
+            Pas parce qu’il est meilleur.<br>Parce que son site, lui, travaille.
+          </p>
+        </div>
+
+        <!-- Pivot -->
+        <p class="fomo-pivot">Alors pourquoi pas vous&nbsp;?</p>
+
+        <!-- 4 cartes solution -->
+        <div class="solution-cards">
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </span>
+            <h3 class="solution-card__title">Site clair qui convainc</h3>
+            <p class="solution-card__text">Votre client idéal comprend ce que vous faites dès la 1re page — et passe à l’action.</p>
+          </div>
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <h3 class="solution-card__title">Référencement ciblé</h3>
+            <p class="solution-card__text">Positionné sur les bons mots-clés pour attirer des visiteurs qui cherchent exactement ce que vous offrez.</p>
+          </div>
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="solution-card__title">Design qui déclenche</h3>
+            <p class="solution-card__text">Un parcours rassurant qui transforme un visiteur hésitant en prise de contact réelle.</p>
+          </div>
+          <div class="solution-card">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </span>
+            <h3 class="solution-card__title">Suivi continu</h3>
+            <p class="solution-card__text">Pas un livrable qu’on abandonne. On reste avec vous pour mesurer, ajuster et progresser.</p>
+          </div>
+        </div>
+
+        <div class="section__actions section__actions--center">
+          <a href="/contact.html" class="btn btn--primary">Commencer mon audit gratuit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ BÉNÉFICES — Ce que votre site peut changer -->
     <section class="section section--dark">
       <div class="container">
         <header class="section__header section__header--center">
@@ -448,14 +482,14 @@
               <span class="feature__icon">✓</span>
               Vos prospects demandent un devis — sans relance
             </h3>
-            <p class="feature__text">Des appels à l'action clairs, positionnés au bon endroit, qui déclenchent la prise de contact sans friction.</p>
+            <p class="feature__text">Des appels à l’action clairs, positionnés au bon endroit, qui déclenchent la prise de contact sans friction.</p>
           </article>
           <article class="feature">
             <h3 class="feature__title">
               <span class="feature__icon">✓</span>
-              Votre nom s'affiche quand ça compte
+              Votre nom s’affiche quand ça compte
             </h3>
-            <p class="feature__text">Quand un client idéal cherche votre secteur à Montréal ou au Québec, c'est votre site qui apparaît — pas celui d'un concurrent.</p>
+            <p class="feature__text">Quand un client idéal cherche votre secteur à Montréal ou au Québec, c’est votre site qui apparaît — pas celui d’un concurrent.</p>
           </article>
           <article class="feature">
             <h3 class="feature__title">
@@ -472,12 +506,17 @@
             <p class="feature__text">Votre site répond aux questions fréquentes, qualifie les leads et réduit le temps perdu avec des prospects non ciblés.</p>
           </article>
         </div>
+        <div class="expertise-intro__cta" style="margin-top:2.5rem">
+          <a href="/contact.html" class="expertise-intro__link">
+            Voir comment on peut y arriver
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <span class="expertise-intro__hint">Audit gratuit · sans engagement</span>
+        </div>
       </div>
     </section>
 
-    <!-- =======================
-         SERVICES PRINCIPAUX
-         ======================= -->
+    <!-- ⑥ SERVICES PRINCIPAUX -->
     <section class="section">
       <div class="container">
         <header class="section__header section__header--center">
@@ -497,7 +536,7 @@
           <article class="service-card">
             <h3 class="service-card__title">Votre nom en tête de Google pour les bons mots-clés</h3>
             <p class="service-card__text">
-              Des prospects qui cherchent exactement ce que vous offrez — et qui arrivent sur votre site, pas sur celui d'un concurrent.
+              Des prospects qui cherchent exactement ce que vous offrez — et qui arrivent sur votre site, pas sur celui d’un concurrent.
             </p>
             <a href="/services.html#seo" class="service-card__link">
               Améliorer mon classement sur Google
@@ -517,7 +556,7 @@
           <article class="service-card">
             <h3 class="service-card__title">Votre nom cité par ChatGPT, Perplexity et Google IA</h3>
             <p class="service-card__text">
-              En 2026, vos clients cherchent aussi sur l'IA — pas seulement sur Google. On structure votre contenu pour que vous soyez recommandé par ces nouveaux moteurs.
+              En 2026, vos clients cherchent aussi sur l’IA — pas seulement sur Google. On structure votre contenu pour que vous soyez recommandé par ces nouveaux moteurs.
             </p>
             <a href="/services.html#visibilite-ia" class="service-card__link">
               Être visible sur les moteurs IA
@@ -527,13 +566,11 @@
       </div>
     </section>
 
-    <!-- =======================
-         VISIBILITÉ IA
-         ======================= -->
+    <!-- ⑦ DIFFÉRENCIATEUR IA -->
     <section class="section section--alt-bg">
       <div class="container">
         <header class="section__header section__header--center">
-          <h2 class="section__title">Le web de 2026&nbsp;: vos clients vous cherchent aussi sur l'IA</h2>
+          <h2 class="section__title">Le web de 2026&nbsp;: vos clients vous cherchent aussi sur l’IA</h2>
           <p class="section__subtitle">
             ChatGPT, Perplexity et Google IA recommandent directement des entreprises. Êtes-vous dans leurs réponses&nbsp;?
           </p>
@@ -572,71 +609,7 @@
       </div>
     </section>
 
-    <!-- =======================
-         PROBLÈME / SOLUTION
-         ======================= -->
-    <section class="section problem-solution">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Votre site existe. Mais est-ce qu'il travaille pour vous&nbsp;?</h2>
-          <p class="section__subtitle">Il est peut-être lent, flou sur votre offre, ou tout simplement introuvable sur Google.</p>
-        </header>
-
-        <!-- Bloc jalousie / FOMO -->
-        <div class="fomo-block">
-          <p class="fomo-block__text">
-            Pendant ce temps, votre concurrent — peut-être moins expérimenté que vous — a refait son site.
-            Il reçoit des demandes. Il ferme des contrats. <strong>Pas vous.</strong>
-          </p>
-          <p class="fomo-block__punch">
-            Pas parce qu'il est meilleur.<br>Parce que son site, lui, travaille.
-          </p>
-        </div>
-
-        <!-- Pivot -->
-        <p class="fomo-pivot">Alors pourquoi pas vous&nbsp;?</p>
-
-        <!-- 4 cartes solution -->
-        <div class="solution-cards">
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-            </span>
-            <h3 class="solution-card__title">Site clair qui convainc</h3>
-            <p class="solution-card__text">Votre client idéal comprend ce que vous faites dès la 1re page — et passe à l'action.</p>
-          </div>
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </span>
-            <h3 class="solution-card__title">Référencement ciblé</h3>
-            <p class="solution-card__text">Positionné sur les bons mots-clés pour attirer des visiteurs qui cherchent exactement ce que vous offrez.</p>
-          </div>
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </span>
-            <h3 class="solution-card__title">Design qui déclenche</h3>
-            <p class="solution-card__text">Un parcours rassurant qui transforme un visiteur hésitant en prise de contact réelle.</p>
-          </div>
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-            </span>
-            <h3 class="solution-card__title">Suivi continu</h3>
-            <p class="solution-card__text">Pas un livrable qu'on abandonne. On reste avec vous pour mesurer, ajuster et progresser.</p>
-          </div>
-        </div>
-
-        <div class="section__actions section__actions--center">
-          <a href="/contact.html" class="btn btn--primary">Je veux un site qui travaille pour moi</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================
-         PROCESSUS
-         ======================= -->
+    <!-- ⑧ PROCESSUS — Votre résultat en 4 étapes -->
     <section class="section section--dark">
       <div class="container">
         <header class="section__header section__header--center">
@@ -665,55 +638,26 @@
           </li>
         </ol>
         <div class="section__actions section__actions--center">
-          <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
+          <a href="/contact.html" class="btn btn--primary">Lancer mon projet maintenant</a>
         </div>
       </div>
     </section>
 
-    <!-- =======================
-         NOTRE EXPERTISE DIGITALE
-         ======================= -->
-    <section class="section section--alt-bg">
-      <div class="container expertise-block">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Ce que vous gagnez vraiment avec NEXTIWEB</h2>
-          <p class="section__subtitle">
-            Votre site ne doit pas être juste beau — il doit vous apporter des clients. On intervient sur
-            les quatre leviers qui font la différence&nbsp;: visibilité, confiance, conversion et présence IA.
-          </p>
-        </header>
-
-        <div class="expertise-card">
-          <p class="expertise-card__text">
-            Votre site est conçu pour être rapide sur tous les appareils, trouvé sur Google par vos vrais clients,
-            et assez clair pour transformer un inconnu en lead en quelques secondes — à Montréal, au Québec et partout au Canada.
-          </p>
-
-          <ul class="expertise-tags">
-            <li class="expertise-tags__item">Site qui convertit</li>
-            <li class="expertise-tags__item">SEO intégré</li>
-            <li class="expertise-tags__item">Performance technique</li>
-            <li class="expertise-tags__item">Stratégie d'acquisition</li>
-          </ul>
-
-          <div class="expertise-card__actions">
-            <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================
-         MESSAGE DU FONDATEUR (teaser)
-         ======================= -->
+    <!-- ⑨ CONFIANCE — Fondatrice + Engagements -->
     <section class="founder-teaser">
       <div class="container">
         <div class="founder-teaser__inner">
-          <div class="founder-teaser__avatar" aria-hidden="true">K</div>
+          <div class="founder-teaser__sig" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 62" width="148" height="62">
+              <text x="6" y="46" class="sig-text">Khadija</text>
+              <!-- Trait de soulignement avec courbe élégante -->
+              <path class="sig-flourish" d="M 4 54 C 30 59 80 57 144 51"/>
+            </svg>
+          </div>
           <div class="founder-teaser__content">
             <p class="founder-teaser__text">
-              Je m'appelle Khadija. J'ai vécu exactement ce que vous vivez — un site techniquement solide, zéro trafic, zéro client.
-              Ce que j'ai appris en reconstruisant tout a donné naissance à NEXTIWEB.
+              Je m’appelle Khadija. J’ai vécu exactement ce que vous vivez — un site techniquement solide, zéro trafic, zéro client.
+              Ce que j’ai appris en reconstruisant tout a donné naissance à NEXTIWEB.
             </p>
             <a href="/a-propos.html" class="expertise-intro__link">
               Lire mon histoire
@@ -724,9 +668,45 @@
       </div>
     </section>
 
-    <!-- =======================
-         EXEMPLES DE CONCEPTS
-         ======================= -->
+    <section class="section section--alt-bg">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <h2 class="section__title">Pas encore d’avis clients — mais des engagements concrets.</h2>
+          <p class="section__subtitle">
+            Nous démarrons. Ce que nous offrons à la place des témoignages, c’est une transparence totale
+            et des garanties que vous pouvez tenir pour acquises dès le premier jour.
+          </p>
+        </header>
+        <div class="split split--3col">
+          <div>
+            <h3 class="split__title"><span class="split__check">✓</span> 3 cycles de révisions inclus</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Trois allers-retours complets inclus dans le cadre du brief initial. Chaque cycle = vous envoyez tous vos retours en une fois, on corrige. Au-delà, un tarif horaire s’applique.</p>
+          </div>
+          <div>
+            <h3 class="split__title"><span class="split__check">✓</span> Délai respecté, garanti</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Nous nous engageons sur une date de livraison dès le départ. Si nous la dépassons sans raison valable, vous êtes remboursé.</p>
+          </div>
+          <div>
+            <h3 class="split__title"><span class="split__check">✓</span> Réponse sous 24&nbsp;h</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Chaque question reçoit une réponse en moins de 24 heures ouvrables. Votre projet n’attend jamais dans un couloir de support.</p>
+          </div>
+          <div>
+            <h3 class="split__title"><span class="split__check">✓</span> Suivi 30 jours après lancement</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Une fois le site en ligne, on reste disponibles pour les ajustements pendant 30 jours. Vous n’êtes pas seul après la remise.</p>
+          </div>
+          <div>
+            <h3 class="split__title"><span class="split__check">✓</span> Zéro jargon</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Chaque décision vous est expliquée simplement. Vous comprenez ce que vous payez, pourquoi, et ce que ça vous rapporte.</p>
+          </div>
+          <div>
+            <h3 class="split__title"><span class="split__check">✓</span> Prix transparent dès le départ</h3>
+            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Aucune surprise en cours de route. Le budget est fixé lors de l’audit gratuit — et il ne bouge pas sans votre accord.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑩ PREUVE SOCIALE — Projets clients fondateurs -->
     <section class="section section--dark">
       <div class="container">
         <header class="section__header section__header--center">
@@ -769,92 +749,8 @@
       </div>
     </section>
 
-    <!-- =======================
-         NOS ENGAGEMENTS
-         ======================= -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Pas encore d'avis clients — mais des engagements concrets.</h2>
-          <p class="section__subtitle">
-            Nous démarrons. Ce que nous offrons à la place des témoignages, c'est une transparence totale
-            et des garanties que vous pouvez tenir pour acquises dès le premier jour.
-          </p>
-        </header>
-        <div class="split split--3col">
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> 3 cycles de révisions inclus</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Trois allers-retours complets inclus dans le cadre du brief initial. Chaque cycle = vous envoyez tous vos retours en une fois, on corrige. Au-delà, un tarif horaire s'applique.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Délai respecté, garanti</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Nous nous engageons sur une date de livraison dès le départ. Si nous la dépassons sans raison valable, vous êtes remboursé.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Réponse sous 24&nbsp;h</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Chaque question reçoit une réponse en moins de 24 heures ouvrables. Votre projet n'attend jamais dans un couloir de support.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Suivi 30 jours après lancement</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Une fois le site en ligne, on reste disponibles pour les ajustements pendant 30 jours. Vous n'êtes pas seul après la remise.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Zéro jargon</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Chaque décision vous est expliquée simplement. Vous comprenez ce que vous payez, pourquoi, et ce que ça vous rapporte.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Prix transparent dès le départ</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Aucune surprise en cours de route. Le budget est fixé lors de l'audit gratuit — et il ne bouge pas sans votre accord.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================
-         MINE D'OR / RESSOURCES
-         ======================= -->
-    <section class="section">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Tout ce que vous devez savoir sur le web — gratuit, en français, au Québec</h2>
-          <p class="section__subtitle">
-            Création de sites web, SEO, marketing digital, visibilité IA — chaque sujet expliqué clairement,
-            sans jargon, sans intention cachée. <span style="color:var(--color-accent)">Que vous vouliez apprendre ou déléguer</span> : vous êtes au bon endroit.
-          </p>
-        </header>
-        <div class="split split--cards">
-          <div class="split__column">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
-              </svg>
-            </span>
-            <h3 class="split__title">Vous voulez apprendre et le faire vous-même</h3>
-            <p>Nos blogs et nos ressources sont là pour vous. Des guides pratiques, des méthodes concrètes et des réponses honnêtes aux vraies questions que vous posez sur Google — ou sur ChatGPT. Prenez ce qui vous est utile, gratuitement.</p>
-            <p style="margin-top:1.5rem;">
-              <a href="/ressources.html" class="btn btn--ghost">Explorer les ressources gratuites →</a>
-            </p>
-          </div>
-          <div class="split__column">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
-              </svg>
-            </span>
-            <h3 class="split__title">Vous préférez vous concentrer sur votre métier</h3>
-            <p>Votre temps a de la valeur. Si vous voulez des résultats sans tout apprendre vous-même, NEXTIWEB devient votre partenaire d'affaires — de la stratégie à l'exécution, avec des livrables mesurables.</p>
-            <p style="margin-top:1.5rem;">
-              <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================
-         FAQ
-         ======================= -->
-    <section class="section section--dark faq">
+    <!-- ⑪ FAQ -->
+    <section class="section section--alt-bg faq">
       <div class="container">
         <header class="section__header section__header--center">
           <h2 class="section__title">Questions fréquentes</h2>
@@ -918,16 +814,53 @@
       </div>
     </section>
 
-    <!-- =======================
-         CTA FINAL
-         ======================= -->
+    <!-- ⑫ RESSOURCES -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <h2 class="section__title">Tout ce que vous devez savoir sur le web — gratuit, en français, au Québec</h2>
+          <p class="section__subtitle">
+            Création de sites web, SEO, marketing digital, visibilité IA — chaque sujet expliqué clairement,
+            sans jargon, sans intention cachée. <span style="color:var(--color-accent)">Que vous vouliez apprendre ou déléguer</span> : vous êtes au bon endroit.
+          </p>
+        </header>
+        <div class="split split--cards">
+          <div class="split__column">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </span>
+            <h3 class="split__title">Vous voulez apprendre et le faire vous-même</h3>
+            <p>Nos blogs et nos ressources sont là pour vous. Des guides pratiques, des méthodes concrètes et des réponses honnêtes aux vraies questions que vous posez sur Google — ou sur ChatGPT. Prenez ce qui vous est utile, gratuitement.</p>
+            <p style="margin-top:1.5rem;">
+              <a href="/ressources.html" class="btn btn--ghost">Explorer les ressources gratuites →</a>
+            </p>
+          </div>
+          <div class="split__column">
+            <span class="split__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+              </svg>
+            </span>
+            <h3 class="split__title">Vous préférez vous concentrer sur votre métier</h3>
+            <p>Votre temps a de la valeur. Si vous voulez des résultats sans tout apprendre vous-même, NEXTIWEB devient votre partenaire d’affaires — de la stratégie à l’exécution, avec des livrables mesurables.</p>
+            <p style="margin-top:1.5rem;">
+              <a href="/contact.html" class="btn btn--ghost">Discutons de votre projet →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑬ CTA FINAL -->
     <section class="section section--cta">
       <div class="container section__header section__header--center">
         <h2 class="section__title">Prêt à développer votre présence en ligne&nbsp;?</h2>
         <p class="section__text">
           Parlons de votre projet et voyons comment transformer votre site web en un véritable outil pour attirer des clients.
         </p>
-        <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
       </div>
     </section>
 

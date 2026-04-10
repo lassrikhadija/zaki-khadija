@@ -148,6 +148,78 @@
     }
     .whatsapp-pill:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,.6); }
 
+    /* ============================================================
+       RESPONSIVE MOBILE — correctifs critiques (styles.min.css
+       s'arrête à la règle 287, ces règles ne s'appliquent pas)
+       ============================================================ */
+
+    /* Empêche le débordement horizontal sur toute la page */
+    html, body { overflow-x: hidden; }
+
+    @media (max-width: 768px) {
+      /* Hero : passage en colonne unique */
+      .hero-bg__inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 3rem 0 2rem !important;
+        gap: 1.5rem !important;
+      }
+      .hero-bg__content {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      /* Cacher les métriques sur mobile */
+      .hero-bg__metrics { display: none !important; }
+
+      /* Titre hero plus petit */
+      .hero-bg__headline { font-size: 2rem !important; }
+      .hero-bg__subtitle  { font-size: 0.95rem !important; }
+
+      /* Sections */
+      .section { padding: 3.5rem 0 !important; }
+      .section__title { font-size: 1.7rem !important; }
+
+      /* Grille assurance 2 colonnes */
+      .assurance-grid { grid-template-columns: repeat(2,1fr) !important; gap: 1rem !important; }
+
+      /* Services : 1 colonne */
+      .services { grid-template-columns: 1fr !important; }
+
+      /* Features : 1 colonne */
+      .features { grid-template-columns: 1fr !important; }
+
+      /* Split 3 colonnes → 1 */
+      .split--3col { grid-template-columns: 1fr !important; }
+
+      /* Projects : 1 colonne */
+      .projects { grid-template-columns: 1fr !important; }
+
+      /* IA compare : 1 colonne */
+      .ia-compare { grid-template-columns: 1fr !important; }
+
+      /* Footer : 2 colonnes */
+      .footer__inner { grid-template-columns: repeat(2,1fr) !important; }
+
+      /* Audiences : 2 colonnes */
+      .audiences--grid { grid-template-columns: repeat(2,1fr) !important; }
+    }
+
+    @media (max-width: 480px) {
+      /* Hero headline encore plus petit */
+      .hero-bg__headline { font-size: 1.75rem !important; }
+
+      /* Boutons pleine largeur */
+      .hero-bg__actions { flex-direction: column !important; }
+      .hero-bg__actions .btn { width: 100% !important; text-align: center !important; }
+
+      /* Audiences : 1 colonne */
+      .audiences--grid { grid-template-columns: 1fr !important; }
+
+      /* Footer : 1 colonne */
+      .footer__inner { grid-template-columns: 1fr !important; }
+    }
+
     /* Masquer la barre flottante sur mobile */
     @media(max-width:768px){.float-bar{display:none!important}}
 

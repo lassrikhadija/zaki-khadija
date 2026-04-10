@@ -156,6 +156,11 @@
     /* Empêche le débordement horizontal sur toute la page */
     html, body { overflow-x: hidden; }
 
+    /* Padding horizontal symétrique sur mobile */
+    @media (max-width: 768px) {
+      .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+    }
+
     @media (max-width: 768px) {
       /* Hero : passage en colonne unique */
       .hero-bg__inner {

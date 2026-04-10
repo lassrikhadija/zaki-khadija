@@ -38,17 +38,242 @@
        CSS
        ======================= -->
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <style>
-    /* Barre flottante telephone + WhatsApp */
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .phone-float{display:flex;align-items:center;gap:.5rem;background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.12);border-radius:2rem;padding:.6rem 1.1rem;text-decoration:none;color:var(--color-text);font-size:.875rem;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s ease,box-shadow .2s ease}
-    .phone-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.45)}
-    .phone-float svg{color:var(--color-primary);flex-shrink:0}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    /* Founder teaser */
+    .founder-teaser{padding:3rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+    .founder-teaser__inner{display:flex;align-items:center;gap:1.75rem;max-width:720px;margin:0 auto}
+    .founder-teaser__avatar{width:56px;height:56px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .founder-teaser__content{display:flex;flex-direction:column;gap:.75rem}
+    .founder-teaser__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0;font-style:italic}
+    /* Handwritten signature */
+    .founder-teaser__sig{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:0}
+    .sig-text{font-family:'Dancing Script',cursive;font-size:38px;font-weight:700;fill:var(--color-primary)}
+    .sig-flourish{stroke:var(--color-primary);stroke-width:1.5;fill:none;opacity:.55}
+    @media(max-width:540px){.founder-teaser__inner{flex-direction:column;text-align:center}}
+
+    /* Steps visual */
+    .steps--visual{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;padding:0;margin:2rem 0}
+    .steps--visual .steps__item{position:relative;padding:0 1.5rem 0 0;display:flex;flex-direction:column;gap:.75rem}
+    .steps__number{width:48px;height:48px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1}
+    .steps--visual .steps__item{position:relative}
+    .steps--visual .steps__item:not(:last-child)::after{content:'';position:absolute;top:24px;left:calc(48px + 12px);right:-12px;height:2px;background:linear-gradient(90deg,var(--color-primary) 60%,transparent 100%);background-image:repeating-linear-gradient(90deg,var(--color-primary) 0,var(--color-primary) 8px,transparent 8px,transparent 16px)}
+    .steps__title{font-size:1rem;font-weight:700;margin:0;line-height:1.4}
+    .steps__text{font-size:.9rem;color:var(--color-text-muted);line-height:1.6;margin:0}
+    @media(max-width:768px){.steps--visual{grid-template-columns:1fr 1fr}.steps--visual .steps__item:not(:last-child)::after{display:none}}
+    @media(max-width:480px){.steps--visual{grid-template-columns:1fr}}
+
+    /* FOMO Block */
+    .fomo-block{background:rgba(251,146,60,.06);border:1px solid rgba(251,146,60,.2);border-left:4px solid #fb923c;border-radius:.75rem;padding:1.75rem 2rem;margin:2rem auto;max-width:720px;display:flex;flex-direction:column;gap:.75rem}
+    .fomo-block__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0}
+    .fomo-block__text strong{color:var(--color-text)}
+    .fomo-block__punch{color:var(--color-text);font-weight:700;font-size:1.05rem;line-height:1.5;margin:0}
+    .fomo-pivot{text-align:center;font-size:1.25rem;font-weight:700;color:var(--color-primary);margin:1.75rem 0 2rem}
+
+    /* Solution Cards */
+    .solution-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:2rem}
+    .solution-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+    .solution-card__title{font-size:.95rem;font-weight:700;margin:0}
+    .solution-card__text{font-size:.875rem;color:var(--color-text-muted);line-height:1.6;margin:0}
+    @media(max-width:900px){.solution-cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.solution-cards{grid-template-columns:1fr}}
+
+    /* IA Compare */
+    .ia-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+    .ia-compare__card{border-radius:.875rem;padding:2rem;display:flex;flex-direction:column;gap:1.25rem}
+    .ia-compare__card--danger{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.25);border-top:3px solid rgba(239,68,68,.6)}
+    .ia-compare__card--success{background:rgba(0,230,118,.05);border:1px solid rgba(0,230,118,.2);border-top:3px solid var(--color-primary)}
+    .ia-compare__head{display:flex;align-items:center;gap:.75rem}
+    .ia-compare__icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;flex-shrink:0}
+    .ia-compare__icon--danger{background:rgba(239,68,68,.15);color:#ef4444}
+    .ia-compare__icon--success{background:rgba(0,230,118,.15);color:var(--color-primary)}
+    .ia-compare__title{font-size:1.05rem;font-weight:700;margin:0}
+    .ia-compare__list{list-style:none;display:flex;flex-direction:column;gap:.75rem;padding:0;margin:0}
+    .ia-compare__card--danger .ia-compare__list li{color:var(--color-text-muted);padding-left:1.5rem;position:relative;line-height:1.5}
+    .ia-compare__card--danger .ia-compare__list li::before{content:"✗";position:absolute;left:0;color:#ef4444;font-weight:700}
+    .ia-compare__card--success .ia-compare__list li{color:var(--color-text-muted);padding-left:1.5rem;position:relative;line-height:1.5}
+    .ia-compare__card--success .ia-compare__list li::before{content:"✓";position:absolute;left:0;color:var(--color-primary);font-weight:700}
+    @media(max-width:640px){.ia-compare{grid-template-columns:1fr}}
+
+    /* Hide JS-generated WhatsApp float */
+    .whatsapp-float { display: none !important; }
+
+    /* Floating bar bottom right */
+    .float-bar {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    /* Phone pill */
+    .phone-float {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--color-bg-alt);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 2rem;
+      padding: .6rem 1.1rem;
+      text-decoration: none;
+      color: var(--color-text);
+      font-size: .875rem;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(0,0,0,.35);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .phone-float:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.45); }
+    .phone-float svg { color: var(--color-primary); flex-shrink: 0; }
+
+    /* WhatsApp pill */
+    .whatsapp-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: #25d366;
+      border-radius: 50%;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(37,211,102,.45);
+      transition: transform .2s ease, box-shadow .2s ease;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .whatsapp-pill:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,.6); }
+
+    /* ============================================================
+       MOBILE RESPONSIVE — critical fixes (styles.min.css
+       stops at rule 287, these rules never apply from there)
+       ============================================================ */
+
+    /* Prevent horizontal overflow on entire page */
+    html, body { overflow-x: hidden; max-width: 100vw; }
+
+    @media (max-width: 768px) {
+      /* Reset animations on mobile */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        animation-duration: 0.01ms !important;
+        animation-delay: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+      /* Reset transforms EXCEPT mobile-nav, float-bar and buttons */
+      *:not(.mobile-nav):not(.mobile-nav-overlay):not(.phone-float):not(.whatsapp-pill):not(.btn):not(.float-bar) {
+        transform: none !important;
+      }
+      /* Restore hidden mobile nav by default */
+      .mobile-nav { transform: translateX(100%) !important; transition: transform 0.35s cubic-bezier(0.4,0,0.2,1) !important; }
+      .mobile-nav.is-open { transform: translateX(0) !important; }
+      .mobile-nav-overlay { opacity: 0 !important; pointer-events: none !important; }
+      .mobile-nav-overlay.is-open { opacity: 1 !important; pointer-events: all !important; }
+      section, main, .section, .container, header, footer {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+      }
+      /* Symmetric horizontal padding */
+      .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+
+      /* Hero: single column, auto height */
+      .hero-bg { min-height: auto !important; height: auto !important; }
+      .hero-bg__inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 2.5rem 1rem 2.5rem 0.5rem !important;
+        gap: 1.5rem !important;
+        width: 100% !important;
+      }
+      .hero-bg__content {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .hero-bg__metrics { display: none !important; }
+      .hero-bg__headline { font-size: 2rem !important; }
+      .hero-bg__subtitle  { font-size: 0.95rem !important; }
+
+      /* General sections */
+      .section { padding: 3.5rem 0 !important; }
+      .section__title { font-size: 1.7rem !important; }
+
+      /* Problem-solution: reset large margins */
+      .problem-solution { margin: 1.5rem 0 !important; border-radius: .75rem !important; }
+
+      /* Grids → 1 column */
+      .assurance-grid    { grid-template-columns: repeat(2,1fr) !important; }
+      .services          { grid-template-columns: 1fr !important; }
+      .features          { grid-template-columns: 1fr !important; }
+      .split--3col       { grid-template-columns: 1fr !important; }
+      .projects          { grid-template-columns: 1fr !important; }
+      .ia-compare        { grid-template-columns: 1fr !important; }
+      .split--cards      { grid-template-columns: 1fr !important; }
+      .footer__inner     { grid-template-columns: repeat(2,1fr) !important; }
+      .audiences--grid   { grid-template-columns: repeat(2,1fr) !important; }
+
+      /* Hero scroll indicator: hidden on mobile */
+      .hero-bg__scroll-indicator { display: none !important; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-bg__headline { font-size: 1.75rem !important; }
+      .hero-bg__actions  { flex-direction: column !important; }
+      .hero-bg__actions .btn { width: 100% !important; text-align: center !important; }
+      .audiences--grid   { grid-template-columns: 1fr !important; }
+      .footer__inner     { grid-template-columns: 1fr !important; }
+    }
+
+    @media (max-width: 768px) {
+      /* Hero: single column */
+      .hero-bg__inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 3rem 1rem 2rem 0.5rem !important;
+        gap: 1.5rem !important;
+      }
+      .hero-bg__content {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .hero-bg__metrics { display: none !important; }
+      .hero-bg__headline { font-size: 2rem !important; }
+      .hero-bg__subtitle  { font-size: 0.95rem !important; }
+      .section { padding: 3.5rem 0 !important; }
+      .section__title { font-size: 1.7rem !important; }
+      .assurance-grid { grid-template-columns: repeat(2,1fr) !important; gap: 1rem !important; }
+      .services { grid-template-columns: 1fr !important; }
+      .features { grid-template-columns: 1fr !important; }
+      .split--3col { grid-template-columns: 1fr !important; }
+      .projects { grid-template-columns: 1fr !important; }
+      .ia-compare { grid-template-columns: 1fr !important; }
+      .footer__inner { grid-template-columns: repeat(2,1fr) !important; }
+      .audiences--grid { grid-template-columns: repeat(2,1fr) !important; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-bg__headline { font-size: 1.75rem !important; }
+      .hero-bg__actions { flex-direction: column !important; }
+      .hero-bg__actions .btn { width: 100% !important; text-align: center !important; }
+      .audiences--grid { grid-template-columns: 1fr !important; }
+      .footer__inner { grid-template-columns: 1fr !important; }
+    }
+
+    /* Hide floating bar on mobile */
     @media(max-width:768px){.float-bar{display:none!important}}
-    body.theme-light .phone-float{background:#fff;border-color:rgba(0,0,0,.1);color:#1a1a1a;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+
+    /* Light theme */
+    body.theme-light .phone-float {
+      background: #fff;
+      border-color: rgba(0,0,0,.1);
+      color: #1a1a1a;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    }
   </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
@@ -344,7 +569,7 @@
             <p class="service-card__text">
               Every page designed with one goal: turn a visitor into a call, a quote, a client — even overnight.
             </p>
-            <a href="/en/services.html#creation-sites" class="service-card__link">
+            <a href="/en/creation-site.html" class="service-card__link">
               Get a site that generates clients
             </a>
           </article>
@@ -353,7 +578,7 @@
             <p class="service-card__text">
               Prospects searching for exactly what you offer — and landing on your site, not a competitor's.
             </p>
-            <a href="/en/services.html#seo" class="service-card__link">
+            <a href="/en/seo.html" class="service-card__link">
               Improve my Google ranking
             </a>
           </article>
@@ -362,7 +587,7 @@
             <p class="service-card__text">
               SEO, content and conversion coordinated to feed your client pipeline every month — without relying on word of mouth.
             </p>
-            <a href="/en/services.html#marketing-digital" class="service-card__link">
+            <a href="/en/marketing-digital.html" class="service-card__link">
               Grow my client acquisition
             </a>
           </article>
@@ -478,36 +703,27 @@
       </div>
     </section>
 
-    <!-- FOUNDER MESSAGE -->
-    <section class="founder-message">
+    <!-- FOUNDER TEASER — Trust + Signature -->
+    <section class="founder-teaser">
       <div class="container">
-        <h2>You do exceptional work. Your clients deserve to find you.</h2>
-        <p class="founder-intro">I may be describing your exact situation right now.</p>
-        <p>
-          You offer a quality service. You have satisfied clients. But online, you're almost
-          invisible — and you don't know exactly why. Meanwhile, competitors sometimes less skilled than you
-          are landing contracts simply because their site is better positioned.
-        </p>
-        <p>It's not fair. And it's entirely fixable.</p>
-        <p>
-          My name is Khadija AitLassri, founder of NEXTIWEB. Before creating this agency, I went through
-          that same frustration myself: a good service, little online visibility, and the question
-          that kept coming back — "Why are my competitors finding clients online and I'm not?"
-        </p>
-        <p>
-          The answer? It wasn't a question of talent or budget. It was a question of method:
-          a site structured to convert, optimized for Google, and aligned with the message my clients
-          needed to hear. Once that foundation was in place, the requests started coming in.
-        </p>
-        <p>
-          That's exactly what I build for my clients at NEXTIWEB.
-          Not a "pretty website." Not unrealistic promises. A concrete, traceable and measurable acquisition system —
-          adapted to your industry and your market in Quebec.
-        </p>
-        <p>
-          If you're tired of having a site that exists without generating anything, let's talk about your project.
-          I'll tell you honestly what's blocking you — and how we fix it.
-        </p>
+        <div class="founder-teaser__inner">
+          <div class="founder-teaser__sig" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 62" width="148" height="62">
+              <text x="6" y="46" class="sig-text">Khadija</text>
+              <path class="sig-flourish" d="M 4 54 C 30 59 80 57 144 51"/>
+            </svg>
+          </div>
+          <div class="founder-teaser__content">
+            <p class="founder-teaser__text">
+              My name is Khadija. I've been through exactly what you're experiencing — a technically solid site, zero traffic, zero clients.
+              What I learned rebuilding everything gave birth to NEXTIWEB.
+            </p>
+            <a href="/en/a-propos.html" class="expertise-intro__link">
+              Read my story
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -1067,9 +1067,16 @@ body.theme-light .hero-bg__microcopy {
 }
 
 .split__icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 230, 118, 0.1);
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+  flex-shrink: 0;
 }
 
 .split__check {

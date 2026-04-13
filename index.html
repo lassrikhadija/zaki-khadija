@@ -67,11 +67,11 @@
     @media(max-width:480px){.steps--visual{grid-template-columns:1fr}}
 
     /* FOMO Block */
-    .fomo-block{background:rgba(251,146,60,.06);border:1px solid rgba(251,146,60,.2);border-left:4px solid #fb923c;border-radius:.75rem;padding:1.75rem 2rem;margin:2rem auto;max-width:720px;display:flex;flex-direction:column;gap:.75rem}
-    .fomo-block__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0}
-    .fomo-block__text strong{color:var(--color-text)}
-    .fomo-block__punch{color:var(--color-text);font-weight:700;font-size:1.05rem;line-height:1.5;margin:0}
-    .fomo-pivot{text-align:center;font-size:1.25rem;font-weight:700;color:var(--color-primary);margin:1.75rem 0 2rem}
+    .fomo-block{background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.35);border-left:5px solid #fb923c;border-radius:.875rem;padding:2rem 2.25rem;margin:2.5rem auto;max-width:760px;display:flex;flex-direction:column;gap:1rem;box-shadow:0 4px 32px rgba(251,146,60,.12)}
+    .fomo-block__text{color:#d1cfc9;font-size:1.05rem;line-height:1.75;margin:0}
+    .fomo-block__text strong{color:#fff;font-weight:700}
+    .fomo-block__punch{color:#fff;font-weight:800;font-size:1.2rem;line-height:1.55;margin:0;border-top:1px solid rgba(251,146,60,.2);padding-top:.875rem}
+    .fomo-pivot{text-align:center;font-size:1.4rem;font-weight:800;color:var(--color-primary);margin:2rem 0 2.25rem;letter-spacing:-.01em}
 
     /* Solution Cards */
     .solution-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:2rem}
@@ -99,16 +99,17 @@
     @media(max-width:640px){.ia-compare{grid-template-columns:1fr}}
 
     /* Hero metric cards — redesign avec icônes */
-    .hero-bg__metrics{display:flex;flex-direction:column;gap:1rem}
-    .hero-metric{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-left:3px solid var(--color-primary);border-radius:.75rem;padding:1rem 1.25rem;backdrop-filter:blur(8px);transition:background .2s}
-    .hero-metric:hover{background:rgba(0,230,118,.05)}
-    .hero-metric__icon{width:40px;height:40px;border-radius:10px;background:rgba(0,230,118,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-primary)}
-    .hero-metric__body{display:flex;flex-direction:column;gap:.2rem}
-    .hero-metric__number{font-size:1.5rem;font-weight:800;color:#fff;line-height:1}
-    .hero-metric__on{font-size:.875rem;font-weight:600;color:var(--color-primary)}
-    .hero-metric__unit{font-size:1rem;color:var(--color-primary)}
-    .hero-metric__label{font-size:.8rem;color:var(--color-text-muted);font-weight:500}
-    .hero-metric__check{margin-left:auto;color:var(--color-primary);font-size:1rem;font-weight:700}
+    .hero-bg__metrics{display:flex;flex-direction:column;gap:.875rem;width:320px}
+    .hero-metric{display:flex !important;flex-direction:row !important;align-items:center !important;flex-wrap:nowrap !important;gap:.75rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-left:3px solid var(--color-primary);border-radius:.875rem;padding:.875rem 1.1rem;backdrop-filter:blur(8px);transition:background .2s,box-shadow .2s;width:100%}
+    .hero-metric:hover{background:rgba(0,230,118,.05);box-shadow:0 4px 20px rgba(0,230,118,.1)}
+    .hero-metric__top{display:none}
+    .hero-metric__body{display:none}
+    .hero-metric__icon{width:34px;height:34px;border-radius:8px;background:rgba(0,230,118,.12);display:flex;align-items:center;justify-content:center;color:var(--color-primary);flex-shrink:0}
+    .hero-metric__number{font-size:1.25rem;font-weight:800;color:#fff;line-height:1;flex-shrink:0;white-space:nowrap}
+    .hero-metric__on{font-size:.75rem;font-weight:600;color:var(--color-primary)}
+    .hero-metric__unit{font-size:.8rem;color:var(--color-primary)}
+    .hero-metric__label{font-size:.8rem;color:var(--color-text-muted);font-weight:500;flex:1;white-space:nowrap}
+    .hero-metric__check{margin-left:auto;width:22px;height:22px;border-radius:50%;background:rgba(0,230,118,.15);display:flex;align-items:center;justify-content:center;color:var(--color-primary);font-size:.75rem;font-weight:700;flex-shrink:0}
 
     /* Badge client fondateur */
     .hero-bg__founder-badge{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--color-text-muted);margin-top:.75rem}
@@ -527,7 +528,7 @@
           </div>
           <p class="hero-bg__founder-badge">
             <span class="hero-bg__founder-dot"></span>
-            <strong>3 places client fondateur</strong> disponibles — tarif préférentiel
+            <strong>3 places client fondateur</strong> disponibles — tarif préférentiel et suivi ultra-personnalisé
           </p>
 
         </div>
@@ -538,31 +539,25 @@
             <div class="hero-metric__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </div>
-            <div class="hero-metric__body">
-              <span class="hero-metric__number hero-metric__number--concept">1<span class="hero-metric__on">-on-</span>1</span>
-              <span class="hero-metric__label">Accompagnement personnel</span>
-            </div>
-            <span class="hero-metric__check">✓</span>
+            <span class="hero-metric__number hero-metric__number--concept">1<span class="hero-metric__on">-on-</span>1</span>
+            <span class="hero-metric__label">Accompagnement personnel</span>
+            <div class="hero-metric__check">✓</div>
           </div>
           <div class="hero-metric hero-metric--2">
             <div class="hero-metric__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div class="hero-metric__body">
-              <span class="hero-metric__number">24<span class="hero-metric__unit">h</span></span>
-              <span class="hero-metric__label">Réponse garantie</span>
-            </div>
-            <span class="hero-metric__check">✓</span>
+            <span class="hero-metric__number">24<span class="hero-metric__unit">h</span></span>
+            <span class="hero-metric__label">Réponse garantie</span>
+            <div class="hero-metric__check">✓</div>
           </div>
           <div class="hero-metric hero-metric--3">
             <div class="hero-metric__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
             </div>
-            <div class="hero-metric__body">
-              <span class="hero-metric__number">100<span class="hero-metric__unit">%</span></span>
-              <span class="hero-metric__label">Mobile-first</span>
-            </div>
-            <span class="hero-metric__check">✓</span>
+            <span class="hero-metric__number">100<span class="hero-metric__unit">%</span></span>
+            <span class="hero-metric__label">Mobile-first</span>
+            <div class="hero-metric__check">✓</div>
           </div>
         </div>
 

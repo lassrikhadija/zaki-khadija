@@ -97,6 +97,24 @@
     .ia-compare__card--success .ia-compare__list li::before{content:"✓";position:absolute;left:0;color:var(--color-primary);font-weight:700}
     @media(max-width:640px){.ia-compare{grid-template-columns:1fr}}
 
+    /* Hero metric cards — redesign with icons */
+    .hero-bg__metrics{display:flex;flex-direction:column;gap:1rem}
+    .hero-metric{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-left:3px solid var(--color-primary);border-radius:.75rem;padding:1rem 1.25rem;backdrop-filter:blur(8px);transition:background .2s}
+    .hero-metric:hover{background:rgba(0,230,118,.05)}
+    .hero-metric__icon{width:40px;height:40px;border-radius:10px;background:rgba(0,230,118,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-primary)}
+    .hero-metric__body{display:flex;flex-direction:column;gap:.2rem}
+    .hero-metric__number{font-size:1.5rem;font-weight:800;color:#fff;line-height:1}
+    .hero-metric__on{font-size:.875rem;font-weight:600;color:var(--color-primary)}
+    .hero-metric__unit{font-size:1rem;color:var(--color-primary)}
+    .hero-metric__label{font-size:.8rem;color:var(--color-text-muted);font-weight:500}
+    .hero-metric__check{margin-left:auto;color:var(--color-primary);font-size:1rem;font-weight:700}
+
+    /* Founder badge */
+    .hero-bg__founder-badge{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--color-text-muted);margin-top:.75rem}
+    .hero-bg__founder-dot{width:8px;height:8px;border-radius:50%;background:var(--color-primary);flex-shrink:0;animation:pulse-dot 2s infinite}
+    @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.85)}}
+    .hero-bg__founder-badge strong{color:var(--color-primary)}
+
     /* Hide JS-generated WhatsApp float */
     .whatsapp-float { display: none !important; }
 
@@ -398,7 +416,7 @@
         <a href="/en/ressources.html" class="nav__link">Resources</a>
         <a href="/en/blog/" class="nav__link">Blog</a>
         <a href="/en/a-propos.html" class="nav__link">About</a>
-        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+        <a href="/en/contact.html" class="nav__link nav__link--cta">Claim My Free Audit</a>
       </nav>
 
       <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
@@ -435,24 +453,43 @@
             </a>
             <a href="/en/services.html" class="btn btn--ghost hero-bg__cta-secondary">How It Works</a>
           </div>
+          <p class="hero-bg__founder-badge">
+            <span class="hero-bg__founder-dot"></span>
+            <strong>3 founding client spots</strong> available — preferred rate
+          </p>
 
         </div>
 
         <!-- Right column: metric cards -->
         <div class="hero-bg__metrics">
           <div class="hero-metric hero-metric--1">
-            <span class="hero-metric__number hero-metric__number--concept">1<span class="hero-metric__on">-on-</span>1</span>
-            <span class="hero-metric__label">Personal support</span>
+            <div class="hero-metric__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="hero-metric__body">
+              <span class="hero-metric__number hero-metric__number--concept">1<span class="hero-metric__on">-on-</span>1</span>
+              <span class="hero-metric__label">Personal support</span>
+            </div>
             <span class="hero-metric__check">✓</span>
           </div>
           <div class="hero-metric hero-metric--2">
-            <span class="hero-metric__number">24<span class="hero-metric__unit">h</span></span>
-            <span class="hero-metric__label">Response guaranteed</span>
+            <div class="hero-metric__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="hero-metric__body">
+              <span class="hero-metric__number">24<span class="hero-metric__unit">h</span></span>
+              <span class="hero-metric__label">Response guaranteed</span>
+            </div>
             <span class="hero-metric__check">✓</span>
           </div>
           <div class="hero-metric hero-metric--3">
-            <span class="hero-metric__number">100<span class="hero-metric__unit">%</span></span>
-            <span class="hero-metric__label">Mobile-first</span>
+            <div class="hero-metric__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <div class="hero-metric__body">
+              <span class="hero-metric__number">100<span class="hero-metric__unit">%</span></span>
+              <span class="hero-metric__label">Mobile-first</span>
+            </div>
             <span class="hero-metric__check">✓</span>
           </div>
         </div>
@@ -564,7 +601,7 @@
         </div>
 
         <div class="section__actions section__actions--center">
-          <a href="/en/contact.html" class="btn btn--primary">Start my free audit</a>
+          <a href="/en/contact.html" class="btn btn--primary">Claim My Free Audit</a>
         </div>
       </div>
     </section>

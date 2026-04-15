@@ -10,61 +10,271 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
   <!-- End Google Tag Manager -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Contact | Agence web à Montréal — NEXTIWEB</title>
-  <meta name="description" content="Contactez NEXTIWEB pour votre site web, SEO ou marketing digital. Réponse sous 24 h. Audit gratuit pour PME et entreprises de services.">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="NEXTIWEB">
-  <meta property="og:locale" content="fr_CA">
-  <meta property="og:title" content="Contact agence web à Montréal | Audit SEO gratuit | NEXTIWEB">
-  <meta property="og:description" content="Contactez NEXTIWEB pour un audit gratuit de votre site web, SEO local ou stratégie de marketing digital à Montréal.">
-  <meta property="og:url" content="https://nextiweb.ca/contact.html">
-  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact agence web à Montréal | Audit SEO gratuit | NEXTIWEB">
-  <meta name="twitter:description" content="Contactez NEXTIWEB pour un audit gratuit de votre site web, SEO local ou stratégie de marketing digital à Montréal.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demander mon audit gratuit | NEXTIWEB</title>
+  <meta name="description" content="Demandez votre audit web gratuit chez NEXTIWEB. Réponse sous 24h. Pour les PME à Montréal qui veulent un site qui génère des clients.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
-
   <link rel="canonical" href="https://nextiweb.ca/contact.html">
-  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/contact.html">
-  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/contact.html">
-  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/contact.html">
-
   <link rel="stylesheet" href="/assets/css/styles.min.css">
   <style>
-    /* Fil d'Ariane */
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
-  
-    /* Barre flottante telephone + WhatsApp */
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .phone-float{display:flex;align-items:center;gap:.5rem;background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.12);border-radius:2rem;padding:.6rem 1.1rem;text-decoration:none;color:var(--color-text);font-size:.875rem;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s ease,box-shadow .2s ease}
-    .phone-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.45)}
-    .phone-float svg{color:var(--color-primary);flex-shrink:0}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{display:none!important}}
-    body.theme-light .phone-float{background:#fff;border-color:rgba(0,0,0,.1);color:#1a1a1a;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    /* ── Tunnel layout ── */
+    body { display:flex; flex-direction:column; min-height:100vh; }
+
+    .tunnel-header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tunnel-header__logo img { height: 36px; width: auto; }
+    .tunnel-header__back {
+      font-size: .82rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: color .2s;
+    }
+    .tunnel-header__back:hover { color: var(--color-primary); }
+
+    .tunnel-main {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .tunnel-wrap {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .tunnel-intro {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .tunnel-intro__label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: .75rem;
+    }
+    .tunnel-intro__title {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: var(--color-text);
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+    .tunnel-intro__sub {
+      font-size: .95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── Form card ── */
+    .tunnel-card {
+      background: var(--color-surface);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+      box-shadow: 0 8px 40px rgba(0,0,0,.45);
+    }
+
+    .tform__field { margin-bottom: 1.25rem; }
+    .tform__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media(max-width:560px){ .tform__row { grid-template-columns: 1fr; } }
+
+    .tform__label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      margin-bottom: .4rem;
+      letter-spacing: .01em;
+    }
+    .tform__label span { color: var(--color-primary); margin-left: .2rem; }
+
+    .tform__input,
+    .tform__select,
+    .tform__textarea {
+      width: 100%;
+      background: rgba(255,255,255,.04);
+      border: 1.5px solid rgba(255,255,255,.1);
+      border-radius: .625rem;
+      padding: .75rem 1rem;
+      color: var(--color-text);
+      font-size: .95rem;
+      font-family: inherit;
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .tform__input::placeholder,
+    .tform__textarea::placeholder { color: rgba(255,255,255,.3); }
+    .tform__input:focus,
+    .tform__select:focus,
+    .tform__textarea:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(0,230,118,.12);
+    }
+    .tform__input.valid,
+    .tform__select.valid,
+    .tform__textarea.valid {
+      border-color: var(--color-primary);
+    }
+    .tform__input.error,
+    .tform__select.error,
+    .tform__textarea.error {
+      border-color: #f87171;
+      box-shadow: 0 0 0 3px rgba(248,113,113,.12);
+    }
+    .tform__select { cursor: pointer; }
+    .tform__select option { background: #111; color: #fff; }
+    .tform__textarea { resize: vertical; min-height: 110px; }
+
+    /* Budget radio */
+    .tform__radio-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5rem;
+      margin-top: .25rem;
+    }
+    @media(max-width:480px){ .tform__radio-group { grid-template-columns: 1fr; } }
+    .tform__radio-label {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      background: rgba(255,255,255,.04);
+      border: 1.5px solid rgba(255,255,255,.1);
+      border-radius: .625rem;
+      padding: .65rem .9rem;
+      cursor: pointer;
+      font-size: .875rem;
+      color: var(--color-text-muted);
+      transition: border-color .2s, color .2s, background .2s;
+    }
+    .tform__radio-label:hover { border-color: var(--color-primary); color: var(--color-text); }
+    .tform__radio-label input[type="radio"] { accent-color: var(--color-primary); }
+    .tform__radio-label:has(input:checked) {
+      border-color: var(--color-primary);
+      background: rgba(0,230,118,.08);
+      color: var(--color-text);
+    }
+
+    /* Consent */
+    .tform__consent {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      margin: 1.5rem 0 1.75rem;
+      font-size: .82rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+    .tform__consent input[type="checkbox"] {
+      margin-top: .15rem;
+      accent-color: var(--color-primary);
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .tform__consent a { color: var(--color-primary); text-decoration: none; }
+
+    /* Submit */
+    .tform__submit {
+      width: 100%;
+      background: var(--color-primary);
+      color: #000;
+      border: none;
+      border-radius: .75rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 20px rgba(0,230,118,.3);
+      letter-spacing: .01em;
+    }
+    .tform__submit:hover {
+      background: #00c853;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 28px rgba(0,230,118,.45);
+    }
+    .tform__submit:active { transform: translateY(0); }
+
+    /* Secondary link */
+    .tunnel-secondary {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: .875rem;
+      color: var(--color-text-muted);
+    }
+    .tunnel-secondary a {
+      color: var(--color-text-muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color .2s;
+    }
+    .tunnel-secondary a:hover { color: var(--color-text); }
+
+    /* Reassurance */
+    .tunnel-reassurance {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .tunnel-reassurance__item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .8rem;
+      color: var(--color-text-muted);
+    }
+    .tunnel-reassurance__item svg { color: var(--color-primary); flex-shrink: 0; }
+
+    /* Footer legal */
+    .tunnel-footer {
+      text-align: center;
+      padding: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .tunnel-footer a { color: rgba(255,255,255,.4); text-decoration: none; }
+    .tunnel-footer a:hover { color: var(--color-text-muted); }
+
+    /* Light theme */
+    body.theme-light .tunnel-card {
+      background: #fff;
+      border-color: rgba(0,0,0,.08);
+      box-shadow: 0 8px 40px rgba(0,0,0,.1);
+    }
+    body.theme-light .tform__input,
+    body.theme-light .tform__select,
+    body.theme-light .tform__textarea {
+      background: #f8f8f8;
+      border-color: rgba(0,0,0,.12);
+      color: #111;
+    }
+    body.theme-light .tform__radio-label {
+      background: #f5f5f5;
+      border-color: rgba(0,0,0,.12);
+      color: #555;
+    }
+    body.theme-light .tform__input::placeholder,
+    body.theme-light .tform__textarea::placeholder { color: rgba(0,0,0,.3); }
   </style>
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#00e676">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body class="theme-dark">
   <!-- Google Tag Manager (noscript) -->
@@ -72,300 +282,201 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="top-bar">
-    <div class="container top-bar__inner">
-      <p class="top-bar__message" id="top-bar-message"></p>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="/" class="logo">
-        <picture>
-          <source srcset="/assets/img/logo/logo-nextiweb-dark.webp" type="image/webp">
-          <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
-        </picture>
-      </a>
-
-      <nav class="main-nav" aria-label="Navigation principale">
-        <div class="nav__item">
-          <a href="/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
-            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
-            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
-          </div>
-        </div>
-        <a href="/secteurs.html" class="nav__link">Secteurs</a>
-        <a href="/ressources.html" class="nav__link">Ressources</a>
-        <a href="/blog/" class="nav__link">Blog</a>
-        <a href="/a-propos.html" class="nav__link">À propos</a>
-        <a href="/contact.html" class="nav__link nav__link--cta nav__link--active">Demander mon audit gratuit</a>
-      </nav>
-
-      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
-    </div>
+  <!-- ── Tunnel header : logo only ── -->
+  <header class="tunnel-header">
+    <a href="/" class="tunnel-header__logo" aria-label="Retour à l'accueil NEXTIWEB">
+      <picture>
+        <source srcset="/assets/img/logo/logo-nextiweb-dark.webp" type="image/webp">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB" width="140" height="35" loading="eager">
+      </picture>
+    </a>
+    <a href="/" class="tunnel-header__back" aria-label="Retour au site">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      Retour au site
+    </a>
   </header>
 
-  <main>
+  <!-- ── Main ── -->
+  <main class="tunnel-main">
+    <div class="tunnel-wrap">
 
-    <!-- FIL D'ARIANE -->
-    <div class="breadcrumb-bar">
-      <div class="container">
-        <nav aria-label="Fil d'Ariane">
-          <ol class="breadcrumb">
-          <li class="breadcrumb__item">
-            <a href="/" class="breadcrumb__link breadcrumb__link--home">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              NEXTIWEB
-            </a>
-          </li>
-          <li class="breadcrumb__item">
-            <span class="breadcrumb__current">Contact</span>
-          </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-<section class="section section--dark">
-      <div class="container section__header section__header--center">
-        <h1 class="section__title">Contactez NEXTIWEB — Site web, SEO & Marketing digital</h1>
-        <p class="section__text">
-          Vous avez un projet de création de site web, une refonte, un besoin en SEO local ou une stratégie de marketing digital à clarifier ?
-          Cette page de contact s'adresse surtout aux PME et entreprises de services à Montréal et au Québec qui veulent passer d'une présence en ligne floue à une acquisition plus structurée.
+      <div class="tunnel-intro">
+        <span class="tunnel-intro__label">Audit gratuit · Sans engagement</span>
+        <h1 class="tunnel-intro__title">Parlez-nous de votre projet</h1>
+        <p class="tunnel-intro__sub">
+          On prend 2 minutes pour lire votre message, et on vous répond sous 24h avec une première lecture honnête de votre situation.
         </p>
       </div>
-    </section>
 
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Demandez un audit ou présentez votre projet</h2>
-          <p class="section__subtitle">Le formulaire ci-dessous structure correctement les demandes et peut être connecté à votre outil d'envoi ou à votre CRM. En phase actuelle, il sert de maquette fonctionnelle de conversion.</p>
-        </header>
-        <div class="contact-grid">
-          <form class="contact-form" action="/contact.html" method="get">
-            <div class="contact-form__row">
-              <div class="contact-form__field">
-                <label class="contact-form__label" for="name">Nom</label>
-                <input class="contact-form__input" id="name" name="name" type="text" placeholder="Votre nom" required>
-              </div>
-              <div class="contact-form__field">
-                <label class="contact-form__label" for="company">Entreprise</label>
-                <input class="contact-form__input" id="company" name="company" type="text" placeholder="Nom de votre entreprise">
-              </div>
+      <div class="tunnel-card">
+        <form
+          name="audit-gratuit"
+          method="POST"
+          action="/merci.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          id="audit-form"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="audit-gratuit">
+          <input type="hidden" name="bot-field" style="display:none">
+
+          <div class="tform__row">
+            <div class="tform__field">
+              <label class="tform__label" for="prenom">Votre prénom<span>*</span></label>
+              <input class="tform__input" id="prenom" name="prenom" type="text" placeholder="Marie" required autocomplete="given-name">
             </div>
-
-            <div class="contact-form__row">
-              <div class="contact-form__field">
-                <label class="contact-form__label" for="email">Email</label>
-                <input class="contact-form__input" id="email" name="email" type="email" placeholder="vous@entreprise.com" required>
-              </div>
-              <div class="contact-form__field">
-                <label class="contact-form__label" for="phone">Téléphone</label>
-                <input class="contact-form__input" id="phone" name="phone" type="tel" placeholder="Votre numéro">
-              </div>
+            <div class="tform__field">
+              <label class="tform__label" for="entreprise">Votre entreprise<span>*</span></label>
+              <input class="tform__input" id="entreprise" name="entreprise" type="text" placeholder="Nom de votre entreprise" required>
             </div>
+          </div>
 
-            <div class="contact-form__row">
-              <div class="contact-form__field">
-                <label class="contact-form__label" for="need">Type de besoin</label>
-                <select class="contact-form__select" id="need" name="need">
-                  <option value="">Choisir un besoin</option>
-                  <option value="site-web">Création de site web</option>
-                  <option value="refonte">Refonte de site</option>
-                  <option value="seo">Référencement SEO</option>
-                  <option value="marketing">Marketing digital</option>
-                  <option value="audit">Audit global</option>
-                </select>
-              </div>
-              <div class="contact-form__field">
-                <label class="contact-form__label" for="zone">Zone principale</label>
-                <select class="contact-form__select" id="zone" name="zone">
-                  <option value="">Choisir une zone</option>
-                  <option value="montreal">Montréal</option>
-                  <option value="quebec">Québec</option>
-                  <option value="canada">Canada</option>
-                  <option value="autre">Autre</option>
-                </select>
-              </div>
-            </div>
+          <div class="tform__field">
+            <label class="tform__label" for="email">Votre courriel<span>*</span></label>
+            <input class="tform__input" id="email" name="email" type="email" placeholder="vous@entreprise.com" required autocomplete="email">
+          </div>
 
-            <div class="contact-form__field">
-              <label class="contact-form__label" for="message">Décrivez votre projet</label>
-              <textarea class="contact-form__textarea" id="message" name="message" placeholder="Expliquez votre contexte, vos objectifs, votre secteur et ce que vous attendez du site ou de la stratégie digitale."></textarea>
-            </div>
+          <div class="tform__field">
+            <label class="tform__label" for="site">Vous avez déjà un site ?</label>
+            <input class="tform__input" id="site" name="site" type="url" placeholder="https://votresite.com (laissez vide si non)">
+          </div>
 
-            <div class="contact-form__consent">
-              <input id="privacy-consent" name="privacy-consent" type="checkbox" required>
-              <label for="privacy-consent">
-                J'accepte que les informations transmises soient utilisees pour traiter ma demande, conformement a la
-                <a href="/politique-confidentialite.html">politique de confidentialite</a>.
+          <div class="tform__field">
+            <label class="tform__label" for="besoin">Qu'est-ce que vous cherchez ?<span>*</span></label>
+            <select class="tform__select" id="besoin" name="besoin" required>
+              <option value="">Choisissez ce qui vous ressemble le plus</option>
+              <option value="nouveau-site">Un nouveau site web</option>
+              <option value="refonte">Refaire mon site actuel</option>
+              <option value="seo">Être mieux trouvé sur Google</option>
+              <option value="clients">Attirer plus de clients en ligne</option>
+              <option value="sais-pas">Je ne sais pas encore — j'ai besoin d'un avis</option>
+            </select>
+          </div>
+
+          <div class="tform__field">
+            <label class="tform__label" for="budget">Budget approximatif <em style="font-weight:400;opacity:.6">(optionnel — aucun minimum requis)</em></label>
+            <div class="tform__radio-group">
+              <label class="tform__radio-label">
+                <input type="radio" name="budget" value="moins-2000"> Moins de 2 000 $
+              </label>
+              <label class="tform__radio-label">
+                <input type="radio" name="budget" value="2000-5000"> 2 000 $ – 5 000 $
+              </label>
+              <label class="tform__radio-label">
+                <input type="radio" name="budget" value="5000-plus"> 5 000 $ et plus
+              </label>
+              <label class="tform__radio-label">
+                <input type="radio" name="budget" value="sais-pas" checked> Je ne sais pas encore
               </label>
             </div>
+          </div>
 
-            <p class="contact-form__help">Conseil : plus votre demande est précise, plus l'audit initial sera utile pour identifier les priorités SEO, conversion et structure. Le connecteur d'envoi définitif sera branché avant mise en production.</p>
-            <button class="btn btn--primary" type="submit">Préparer ma demande d'audit</button>
-          </form>
+          <div class="tform__field">
+            <label class="tform__label" for="details">Dites-nous en plus <em style="font-weight:400;opacity:.6">(optionnel)</em></label>
+            <textarea class="tform__textarea" id="details" name="details" placeholder="Votre secteur, vos clients cibles, ce qui ne fonctionne pas aujourd'hui, ce que vous voulez changer..."></textarea>
+          </div>
 
-          <aside class="contact-panel">
-            <div>
-              <h3 class="contact-panel__title">Pourquoi nous contacter maintenant ?</h3>
-              <p class="contact-panel__text">Si votre site manque de clarté, génère peu de demandes ou reste invisible sur Google, il faut d'abord clarifier la priorité la plus rentable.</p>
-            </div>
+          <div class="tform__consent">
+            <input id="consent" name="consent" type="checkbox" required>
+            <label for="consent">
+              J'accepte que mes informations soient utilisées pour traiter ma demande, conformément à la
+              <a href="/politique-confidentialite.html" target="_blank">politique de confidentialité</a>.
+            </label>
+          </div>
 
-            <ul class="contact-panel__list">
-              <li>
-                <strong>Pour un projet de site web</strong>
-                Idéal si vous partez de zéro ou si votre site actuel ne reflète plus votre niveau de gamme.
-              </li>
-              <li>
-                <strong>Pour un besoin SEO local</strong>
-                Utile si vous voulez gagner en visibilité à Montréal et au Québec sur des requêtes liées à vos services.
-              </li>
-              <li>
-                <strong>Pour une stratégie de conversion</strong>
-                Pertinent si vous avez du trafic mais trop peu de prises de contact qualifiées.
-              </li>
-            </ul>
+          <button class="tform__submit" type="submit">
+            Je veux mon audit gratuit →
+          </button>
+        </form>
+      </div>
 
-            <div>
-              <h3 class="contact-panel__title">Pages utiles avant de nous écrire</h3>
-              <div class="contact-panel__actions">
-                <a href="/creation-site.html" class="btn btn--ghost">Création de sites web</a>
-                <a href="/seo.html" class="btn btn--ghost">Référencement SEO</a>
-                <a href="/marketing-digital.html" class="btn btn--ghost">Marketing digital</a>
-              </div>
-            </div>
-          </aside>
+      <!-- Secondary -->
+      <p class="tunnel-secondary">
+        Pas prêt pour un audit ? <a href="/question.html">J'ai juste une question →</a>
+      </p>
+
+      <!-- Reassurance -->
+      <div class="tunnel-reassurance">
+        <div class="tunnel-reassurance__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Réponse sous 24h
+        </div>
+        <div class="tunnel-reassurance__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          100% gratuit
+        </div>
+        <div class="tunnel-reassurance__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Sans engagement
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Ce que nous regardons en priorité</h2>
-          <p class="section__subtitle">Avant de proposer quoi que ce soit, nous cherchons le point de friction principal dans votre acquisition.</p>
-        </header>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Clarté de l'offre</h3>
-            <p class="feature__text">Votre site dit-il clairement ce que vous faites, pour qui et pourquoi vous êtes crédible ?</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Structure SEO</h3>
-            <p class="feature__text">Vos pages sont-elles alignées avec les requêtes locales, les services prioritaires et le maillage interne ?</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Parcours de conversion</h3>
-            <p class="feature__text">Un visiteur comprend-il rapidement quelle action faire et pourquoi il devrait vous faire confiance ?</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Priorité business</h3>
-            <p class="feature__text">Nous cherchons d'abord ce qui peut générer un effet concret pour une PME ou une entreprise de services.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Comment se déroule la prise de contact</h2>
-          <p class="section__subtitle">L'objectif n'est pas de multiplier les appels inutiles, mais d'aller rapidement vers les bonnes décisions.</p>
-        </header>
-        <ol class="steps">
-          <li class="steps__item">
-            <h3 class="steps__title">1. Vous décrivez votre contexte</h3>
-            <p>Votre activité, votre zone, votre besoin et le résultat que vous cherchez à obtenir.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">2. Nous identifions le vrai sujet</h3>
-            <p>Site à revoir, SEO à structurer, offre à clarifier ou conversion à renforcer.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">3. Nous cadrons les priorités</h3>
-            <p>Vous obtenez une lecture plus nette des actions utiles à court terme et de la logique de croissance à moyen terme.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">4. Nous passons à l'exécution</h3>
-            <p>Si l'alignement est bon, nous traduisons cela en plan concret de site, SEO ou marketing digital.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section section--cta">
-      <div class="container section__header section__header--center">
-        <h2 class="section__title">Parlons d'un projet utile, pas d'un site de plus</h2>
-        <p class="section__text">Si vous voulez une présence web plus claire, plus visible et plus rentable à Montréal ou au Québec, cette page est le bon point de départ.</p>
-        <a href="/services.html" class="btn btn--ghost">Voir nos services</a>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Agence web spécialisée en création de sites web, SEO et marketing digital.</p>
-        <address class="footer__address">
-          Montréal, Québec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/secteurs.html">Secteurs</a></li>
-          <li><a href="/ressources.html">Ressources</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/a-propos.html">À propos</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/creation-site.html">Création de sites web</a></li>
-          <li><a href="/seo.html">Référencement SEO</a></li>
-          <li><a href="/marketing-digital.html">Marketing digital</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Zones desservies</h3>
-        <ul class="footer__list">
-          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
-          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
-          <li><a href="/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB. Tous droits réservés.</p>
-    </div>
+  <!-- ── Tunnel footer : mentions légales only ── -->
+  <footer class="tunnel-footer">
+    © 2026 NEXTIWEB ·
+    <a href="/politique-confidentialite.html">Confidentialité</a> ·
+    <a href="/mentions-legales.html">Mentions légales</a>
   </footer>
 
   <script src="/assets/js/main.min.js" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://nextiweb.ca/contact.html"}]}</script>
+  <script>
+  // ── Real-time validation ──────────────────────────────────────────────
+  (function() {
+    const form = document.getElementById('audit-form');
+    if (!form) return;
 
-  <!-- Barre flottante bas droite : telephone + WhatsApp -->
-  <div class="float-bar">
-    <a href="tel:+15147910591" class="phone-float" aria-label="Appeler NEXTIWEB au 514-791-0591">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-      </svg>
-      514-791-0591
-    </a>
-    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-    </a>
-  </div>
+    const inputs = form.querySelectorAll('.tform__input, .tform__select, .tform__textarea');
+
+    inputs.forEach(function(input) {
+      input.addEventListener('blur', function() { validate(input); });
+      input.addEventListener('input', function() {
+        if (input.classList.contains('error')) validate(input);
+      });
+    });
+
+    function validate(input) {
+      if (!input.required && !input.value) { clear(input); return; }
+      const ok = input.checkValidity() && input.value.trim() !== '';
+      input.classList.toggle('valid', ok);
+      input.classList.toggle('error', !ok);
+    }
+
+    function clear(input) {
+      input.classList.remove('valid', 'error');
+    }
+
+    form.addEventListener('submit', function(e) {
+      let valid = true;
+      inputs.forEach(function(input) {
+        if (input.required) {
+          validate(input);
+          if (input.classList.contains('error') || !input.value.trim()) valid = false;
+        }
+      });
+      const consent = form.querySelector('#consent');
+      if (!consent.checked) { valid = false; consent.focus(); }
+      if (!valid) { e.preventDefault(); }
+    });
+  })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Demander un audit gratuit — NEXTIWEB",
+    "url": "https://nextiweb.ca/contact.html",
+    "description": "Formulaire de demande d'audit web gratuit pour PME à Montréal.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "NEXTIWEB",
+      "url": "https://nextiweb.ca"
+    }
+  }
+  </script>
 </body>
 </html>

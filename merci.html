@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message envoyé | NEXTIWEB</title>
+  <meta name="description" content="Votre message a bien été reçu. L'équipe NEXTIWEB vous répond sous 24h.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100vh; }
+
+    .tunnel-header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tunnel-header__logo img { height: 36px; width: auto; }
+    .tunnel-header__back {
+      font-size: .82rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: color .2s;
+    }
+    .tunnel-header__back:hover { color: var(--color-primary); }
+
+    .tunnel-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .tunnel-wrap { width: 100%; max-width: 540px; text-align: center; }
+
+    /* Icon circle */
+    .merci-icon {
+      width: 72px;
+      height: 72px;
+      background: rgba(0,230,118,.1);
+      border: 1.5px solid rgba(0,230,118,.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.75rem;
+      color: var(--color-primary);
+    }
+
+    .merci-title {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: var(--color-text);
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+    .merci-sub {
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 2.25rem;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Next steps card */
+    .merci-steps {
+      background: var(--color-surface);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 1.25rem;
+      padding: 1.75rem 2rem;
+      box-shadow: 0 8px 40px rgba(0,0,0,.35);
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .merci-steps__title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .merci-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .merci-step:last-child { margin-bottom: 0; }
+    .merci-step__num {
+      width: 26px;
+      height: 26px;
+      background: rgba(0,230,118,.12);
+      border: 1px solid rgba(0,230,118,.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .75rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .merci-step__text {
+      font-size: .875rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+    .merci-step__text strong { color: var(--color-text); font-weight: 600; }
+
+    /* CTA group */
+    .merci-ctas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .875rem;
+    }
+    .merci-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--color-primary);
+      color: #000;
+      font-weight: 800;
+      font-size: .95rem;
+      padding: .85rem 2rem;
+      border-radius: .75rem;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+      box-shadow: 0 4px 20px rgba(0,230,118,.3);
+      width: 100%;
+      justify-content: center;
+    }
+    .merci-btn-primary:hover { background: #00c853; transform: translateY(-1px); }
+
+    .merci-btn-secondary {
+      font-size: .85rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .merci-btn-secondary:hover { color: var(--color-primary); }
+
+    .tunnel-footer {
+      text-align: center;
+      padding: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .tunnel-footer a { color: rgba(255,255,255,.4); text-decoration: none; }
+    .tunnel-footer a:hover { color: var(--color-text-muted); }
+
+    body.theme-light .merci-steps {
+      background: #fff;
+      border-color: rgba(0,0,0,.08);
+      box-shadow: 0 8px 40px rgba(0,0,0,.1);
+    }
+  </style>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="tunnel-header">
+    <a href="/" class="tunnel-header__logo" aria-label="Retour à l'accueil NEXTIWEB">
+      <picture>
+        <source srcset="/assets/img/logo/logo-nextiweb-dark.webp" type="image/webp">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB" width="140" height="35" loading="eager">
+      </picture>
+    </a>
+    <a href="/" class="tunnel-header__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      Retour au site
+    </a>
+  </header>
+
+  <main class="tunnel-main">
+    <div class="tunnel-wrap">
+
+      <div class="merci-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+
+      <h1 class="merci-title">Message bien reçu !</h1>
+      <p class="merci-sub">
+        Merci de nous avoir contactés. On vous répond personnellement dans les prochaines 24 heures.
+      </p>
+
+      <div class="merci-steps">
+        <p class="merci-steps__title">Prochaines étapes</p>
+        <div class="merci-step">
+          <div class="merci-step__num">1</div>
+          <p class="merci-step__text"><strong>On lit votre message</strong> et on prépare une réponse adaptée à votre situation.</p>
+        </div>
+        <div class="merci-step">
+          <div class="merci-step__num">2</div>
+          <p class="merci-step__text"><strong>Vous recevez un courriel</strong> de notre part dans les 24 heures (vérifiez vos indésirables si nécessaire).</p>
+        </div>
+        <div class="merci-step">
+          <div class="merci-step__num">3</div>
+          <p class="merci-step__text"><strong>On échange ensemble</strong> pour voir comment on peut vous aider concrètement.</p>
+        </div>
+      </div>
+
+      <div class="merci-ctas">
+        <a href="/" class="merci-btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          Retourner sur le site
+        </a>
+        <a href="/ressources.html" class="merci-btn-secondary">En attendant, explorer nos ressources gratuites &rarr;</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="tunnel-footer">
+    © 2026 NEXTIWEB ·
+    <a href="/politique-confidentialite.html">Confidentialité</a> ·
+    <a href="/mentions-legales.html">Mentions légales</a>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+</body>
+</html>

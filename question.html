@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J'ai une question | NEXTIWEB</title>
+  <meta name="description" content="Une question rapide sur nos services web, SEO ou marketing digital ? On vous répond sous 24h.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <style>
+    body { display:flex; flex-direction:column; min-height:100vh; }
+
+    .tunnel-header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tunnel-header__logo img { height: 36px; width: auto; }
+    .tunnel-header__back {
+      font-size: .82rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: color .2s;
+    }
+    .tunnel-header__back:hover { color: var(--color-primary); }
+
+    .tunnel-main {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .tunnel-wrap { width: 100%; max-width: 560px; }
+
+    .tunnel-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .tunnel-intro__label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: .75rem;
+    }
+    .tunnel-intro__title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 800;
+      color: var(--color-text);
+      line-height: 1.2;
+      margin-bottom: .6rem;
+    }
+    .tunnel-intro__sub {
+      font-size: .9rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* Audit nudge banner */
+    .tunnel-nudge {
+      background: rgba(0,230,118,.06);
+      border: 1px solid rgba(0,230,118,.2);
+      border-radius: .875rem;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: .875rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+    .tunnel-nudge svg { color: var(--color-primary); flex-shrink: 0; }
+    .tunnel-nudge a {
+      color: var(--color-primary);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .tunnel-nudge a:hover { text-decoration: underline; }
+
+    /* Form card */
+    .tunnel-card {
+      background: var(--color-surface);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 1.25rem;
+      padding: 2.25rem;
+      box-shadow: 0 8px 40px rgba(0,0,0,.45);
+    }
+
+    .tform__field { margin-bottom: 1.25rem; }
+    .tform__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media(max-width:480px){ .tform__row { grid-template-columns: 1fr; } }
+
+    .tform__label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      margin-bottom: .4rem;
+    }
+    .tform__label span { color: var(--color-primary); margin-left:.2rem; }
+
+    .tform__input,
+    .tform__textarea {
+      width: 100%;
+      background: rgba(255,255,255,.04);
+      border: 1.5px solid rgba(255,255,255,.1);
+      border-radius: .625rem;
+      padding: .75rem 1rem;
+      color: var(--color-text);
+      font-size: .95rem;
+      font-family: inherit;
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    .tform__input::placeholder,
+    .tform__textarea::placeholder { color: rgba(255,255,255,.3); }
+    .tform__input:focus,
+    .tform__textarea:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(0,230,118,.12);
+    }
+    .tform__input.valid,
+    .tform__textarea.valid { border-color: var(--color-primary); }
+    .tform__input.error,
+    .tform__textarea.error {
+      border-color: #f87171;
+      box-shadow: 0 0 0 3px rgba(248,113,113,.12);
+    }
+    .tform__textarea { resize: vertical; min-height: 130px; }
+
+    .tform__consent {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      margin: 1.5rem 0 1.75rem;
+      font-size: .82rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+    .tform__consent input[type="checkbox"] {
+      margin-top: .15rem;
+      accent-color: var(--color-primary);
+      flex-shrink: 0;
+      width: 16px; height: 16px;
+      cursor: pointer;
+    }
+    .tform__consent a { color: var(--color-primary); text-decoration: none; }
+
+    .tform__submit {
+      width: 100%;
+      background: rgba(255,255,255,.06);
+      color: var(--color-text);
+      border: 1.5px solid rgba(255,255,255,.15);
+      border-radius: .75rem;
+      padding: .9rem 2rem;
+      font-size: .95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, border-color .2s, transform .15s;
+    }
+    .tform__submit:hover {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(255,255,255,.3);
+      transform: translateY(-1px);
+    }
+
+    /* Upgrade CTA */
+    .tunnel-upgrade {
+      text-align: center;
+      margin-top: 1.75rem;
+    }
+    .tunnel-upgrade__text {
+      font-size: .82rem;
+      color: var(--color-text-muted);
+      margin-bottom: .75rem;
+    }
+    .tunnel-upgrade__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--color-primary);
+      color: #000;
+      font-weight: 800;
+      font-size: .875rem;
+      padding: .7rem 1.5rem;
+      border-radius: .625rem;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+      box-shadow: 0 4px 16px rgba(0,230,118,.25);
+    }
+    .tunnel-upgrade__btn:hover {
+      background: #00c853;
+      transform: translateY(-1px);
+    }
+
+    .tunnel-footer {
+      text-align: center;
+      padding: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+    }
+    .tunnel-footer a { color: rgba(255,255,255,.4); text-decoration: none; }
+    .tunnel-footer a:hover { color: var(--color-text-muted); }
+
+    body.theme-light .tunnel-card {
+      background: #fff;
+      border-color: rgba(0,0,0,.08);
+      box-shadow: 0 8px 40px rgba(0,0,0,.1);
+    }
+    body.theme-light .tform__input,
+    body.theme-light .tform__textarea {
+      background: #f8f8f8;
+      border-color: rgba(0,0,0,.12);
+      color: #111;
+    }
+    body.theme-light .tform__input::placeholder,
+    body.theme-light .tform__textarea::placeholder { color: rgba(0,0,0,.3); }
+    body.theme-light .tunnel-nudge { background: rgba(0,150,70,.05); }
+  </style>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="tunnel-header">
+    <a href="/" class="tunnel-header__logo" aria-label="Retour à l'accueil NEXTIWEB">
+      <picture>
+        <source srcset="/assets/img/logo/logo-nextiweb-dark.webp" type="image/webp">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB" width="140" height="35" loading="eager">
+      </picture>
+    </a>
+    <a href="/" class="tunnel-header__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      Retour au site
+    </a>
+  </header>
+
+  <main class="tunnel-main">
+    <div class="tunnel-wrap">
+
+      <div class="tunnel-intro">
+        <span class="tunnel-intro__label">Réponse sous 24h</span>
+        <h1 class="tunnel-intro__title">Vous êtes au bon endroit 👋</h1>
+        <p class="tunnel-intro__sub">
+          Une question simple ? On vous répond directement, sans jargon et sans pression.
+        </p>
+      </div>
+
+      <!-- Nudge vers l'audit -->
+      <div class="tunnel-nudge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Vous avez un projet en tête ? <a href="/contact.html">Demandez votre audit gratuit →</a> On analyse votre situation en détail.</span>
+      </div>
+
+      <div class="tunnel-card">
+        <form
+          name="question-rapide"
+          method="POST"
+          action="/merci.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          id="question-form"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="question-rapide">
+          <input type="hidden" name="bot-field" style="display:none">
+
+          <div class="tform__row">
+            <div class="tform__field">
+              <label class="tform__label" for="prenom">Votre prénom<span>*</span></label>
+              <input class="tform__input" id="prenom" name="prenom" type="text" placeholder="Marie" required autocomplete="given-name">
+            </div>
+            <div class="tform__field">
+              <label class="tform__label" for="email">Votre courriel<span>*</span></label>
+              <input class="tform__input" id="email" name="email" type="email" placeholder="vous@exemple.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="tform__field">
+            <label class="tform__label" for="question">Comment pouvons-nous vous aider ?<span>*</span></label>
+            <textarea class="tform__textarea" id="question" name="question" placeholder="Posez votre question ici — pas besoin d'être précis, on comprend même les questions floues 😊" required></textarea>
+          </div>
+
+          <div class="tform__consent">
+            <input id="consent" name="consent" type="checkbox" required>
+            <label for="consent">
+              J'accepte que mes informations soient utilisées pour répondre à ma demande, conformément à la
+              <a href="/politique-confidentialite.html" target="_blank">politique de confidentialité</a>.
+            </label>
+          </div>
+
+          <button class="tform__submit" type="submit">
+            Envoyer ma question →
+          </button>
+        </form>
+      </div>
+
+      <!-- Upgrade -->
+      <div class="tunnel-upgrade">
+        <p class="tunnel-upgrade__text">Finalement, vous avez un projet concret ?</p>
+        <a href="/contact.html" class="tunnel-upgrade__btn">
+          Je veux mon audit gratuit
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="tunnel-footer">
+    © 2026 NEXTIWEB ·
+    <a href="/politique-confidentialite.html">Confidentialité</a> ·
+    <a href="/mentions-legales.html">Mentions légales</a>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+  <script>
+  (function() {
+    const form = document.getElementById('question-form');
+    if (!form) return;
+    const inputs = form.querySelectorAll('.tform__input, .tform__textarea');
+    inputs.forEach(function(input) {
+      input.addEventListener('blur', function() { validate(input); });
+      input.addEventListener('input', function() {
+        if (input.classList.contains('error')) validate(input);
+      });
+    });
+    function validate(input) {
+      if (!input.required && !input.value) { clear(input); return; }
+      const ok = input.checkValidity() && input.value.trim() !== '';
+      input.classList.toggle('valid', ok);
+      input.classList.toggle('error', !ok);
+    }
+    function clear(input) { input.classList.remove('valid','error'); }
+    form.addEventListener('submit', function(e) {
+      let valid = true;
+      inputs.forEach(function(input) {
+        if (input.required) { validate(input); if (!input.value.trim()) valid = false; }
+      });
+      if (!form.querySelector('#consent').checked) valid = false;
+      if (!valid) e.preventDefault();
+    });
+  })();
+  </script>
+</body>
+</html>

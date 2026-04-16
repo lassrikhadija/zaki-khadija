@@ -330,9 +330,10 @@ body {
 .logo img {
   height: 52px;
   max-height: 52px;
+  filter: saturate(2.2) brightness(1.55);
 }
 body.theme-light .logo img {
-  mix-blend-mode: multiply;
+  filter: saturate(2.2) brightness(1.55);
 }
 
 .main-nav {

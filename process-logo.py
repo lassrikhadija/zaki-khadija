@@ -6,67 +6,80 @@ from collections import deque
 
 logo_dir = r'C:\Users\Chaki\Downloads\e-commerce-khadija\Khadija marketing\Projet-khadija\projet_Nextiweb\zaki-khadija\assets\img\logo'
 
-def flood_remove_bg(path, tolerance=28):
+def remove_bg_grow_from_green(path, green_threshold=80, grow_dark_limit=160):
     """
-    Flood-fill from all 4 corners to find background pixels,
-    then make them transparent. Stops at logo content.
+    Two-step approach:
+    1. Seed from clearly-green pixels (G > R*1.4 AND G > green_threshold).
+    2. BFS outward: expand to neighbouring pixels as long as they are
+       'logo-like' (not neutral gray, AND not too bright/flat).
+       Stop expanding through obviously neutral-gray background pixels.
+    Everything unreached = background → transparent.
+
+    grow_dark_limit: maximum brightness to allow growing into (dark logo pixels).
+                     Bright neutral pixels (the medium-gray checkerboard) stop growth.
     """
     img = Image.open(path).convert('RGBA')
     data = np.array(img, dtype=np.int32)
     h, w = data.shape[:2]
-    r, g, b = data[...,0], data[...,1], data[...,2]
+    r_ch, g_ch, b_ch = data[...,0], data[...,1], data[...,2]
 
-    # Sample background color from multiple corner points
-    corner_pts = [(0,0),(0,w-1),(h-1,0),(h-1,w-1),
-                  (0,w//2),(h-1,w//2),(h//2,0),(h//2,w-1),
-                  (5,5),(5,w-6),(h-6,5),(h-6,w-6)]
-    bg_r = int(np.median([data[y,x,0] for y,x in corner_pts]))
-    bg_g = int(np.median([data[y,x,1] for y,x in corner_pts]))
-    bg_b = int(np.median([data[y,x,2] for y,x in corner_pts]))
-    print(f'  Background color sampled: RGB({bg_r},{bg_g},{bg_b})')
+    # ── Seed mask: definitely green logo pixels ───────────────────────────────
+    green_seed = (
+        (g_ch > green_threshold) &
+        (g_ch.astype(float) > r_ch * 1.35) &
+        (g_ch.astype(float) > b_ch * 1.35)
+    )
+    print(f'  Green seed pixels: {green_seed.sum():,}')
 
-    def is_bg(y, x):
-        dr = abs(int(data[y,x,0]) - bg_r)
-        dg = abs(int(data[y,x,1]) - bg_g)
-        db = abs(int(data[y,x,2]) - bg_b)
-        return (dr + dg + db) < tolerance * 3
+    # ── BFS grow from seeds ───────────────────────────────────────────────────
+    def is_neutral(y, x):
+        """True = obvious background (neutral gray or light), don't grow through it."""
+        r, g, b = int(r_ch[y,x]), int(g_ch[y,x]), int(b_ch[y,x])
+        diff = max(abs(r-g), abs(r-b), abs(g-b))
+        brightness = max(r, g, b)
+        # neutral gray (checkerboard) or bright patch = background
+        return diff < 18 and brightness > 30
 
-    # BFS flood fill from all edge pixels
-    visited = np.zeros((h, w), dtype=bool)
+    kept = np.zeros((h, w), dtype=bool)
     queue = deque()
-
-    # Seed from all border pixels that match background
-    for x in range(w):
-        for y in [0, h-1]:
-            if not visited[y,x] and is_bg(y,x):
-                visited[y,x] = True
-                queue.append((y,x))
-    for y in range(h):
-        for x in [0, w-1]:
-            if not visited[y,x] and is_bg(y,x):
-                visited[y,x] = True
-                queue.append((y,x))
+    ys, xs = np.where(green_seed)
+    for y, x in zip(ys.tolist(), xs.tolist()):
+        if not kept[y, x]:
+            kept[y, x] = True
+            queue.append((y, x))
 
     while queue:
         cy, cx = queue.popleft()
         for dy, dx in [(-1,0),(1,0),(0,-1),(0,1)]:
             ny, nx = cy+dy, cx+dx
-            if 0 <= ny < h and 0 <= nx < w and not visited[ny,nx] and is_bg(ny,nx):
-                visited[ny,nx] = True
-                queue.append((ny,nx))
+            if 0 <= ny < h and 0 <= nx < w and not kept[ny,nx]:
+                # Don't cross obviously neutral-gray background pixels
+                if is_neutral(ny, nx):
+                    continue
+                # Don't grow into very bright neutral patches
+                if int(data[ny,nx,0]) > 200 and int(data[ny,nx,1]) > 200 and int(data[ny,nx,2]) > 200:
+                    continue
+                kept[ny, nx] = True
+                queue.append((ny, nx))
 
-    print(f'  Background pixels removed: {visited.sum():,}')
+    print(f'  Logo pixels kept: {kept.sum():,}')
+    print(f'  Background pixels removed: {(~kept).sum():,}')
 
     result = data.astype(np.uint8)
-    result[visited, 3] = 0
+    result[~kept, 3] = 0
 
     out = Image.fromarray(result, 'RGBA')
     bbox = out.getbbox()
     print(f'  Bbox: {bbox}')
     return out.crop(bbox) if bbox else out
 
+
 print('Processing...')
-icon = flood_remove_bg(os.path.join(logo_dir, 'logo-nextiweb-lumiere.png'), tolerance=30)
+icon = remove_bg_grow_from_green(
+    os.path.join(logo_dir, 'logo-nextiweb-lumiere.png'),
+    green_threshold=80,
+    grow_dark_limit=160
+)
 
 # Save at 2x retina
 iw, ih = icon.size

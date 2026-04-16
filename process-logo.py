@@ -9,7 +9,7 @@ def extract_green(path):
     img = Image.open(path).convert('RGBA')
     data = np.array(img, dtype=np.int32)
     r, g, b = data[...,0], data[...,1], data[...,2]
-    is_green = (g > 90) & (g > r * 1.3) & (g > b * 1.3)
+    is_green = (g > 80) & (g > r * 1.1) & (g > b * 1.1)
     result = np.zeros_like(data)
     result[is_green] = data[is_green]
     result[is_green, 3] = 255

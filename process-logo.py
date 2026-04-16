@@ -19,7 +19,7 @@ def extract_green(path):
     return icon.crop(bbox)
 
 print('Extracting icon...')
-icon = extract_green(os.path.join(logo_dir, 'logo-nextiweb-infini-sans texte.png'))
+icon = extract_green(os.path.join(logo_dir, 'logo-nextiweb-lumiere.png'))
 
 # Save at 2x retina: display 48px height → save 96px
 iw, ih = icon.size

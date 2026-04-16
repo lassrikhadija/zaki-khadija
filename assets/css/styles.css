@@ -1788,8 +1788,8 @@ body.theme-light .hero-bg__microcopy {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
   background: transparent;
   border: 1px solid var(--color-border-soft);
   border-radius: 0.5rem;
@@ -1985,8 +1985,8 @@ body.mobile-nav-active {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.45rem 0;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
   }
 
   .logo {
@@ -2001,13 +2001,13 @@ body.mobile-nav-active {
     flex-shrink: 0;
   }
 
-  /* ── Theme toggle : icône seule 28×28px, visible et contrasté ── */
+  /* ── Theme toggle : icône seule 35×35px, alignée avec burger ── */
   .theme-toggle {
     order: 3;
     flex-shrink: 0;
-    min-width: 1.75rem;
-    width: 1.75rem;
-    height: 1.75rem;
+    min-width: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     padding: 0;
     gap: 0;
     border-radius: 50%;
@@ -2053,10 +2053,10 @@ body.mobile-nav-active {
     order: 0;
   }
 
-  /* ── Logo : 38px max, pas d'espace vide vertical ── */
+  /* ── Logo : 44px max, pas d'espace vide vertical ── */
   .logo img {
     height: auto;
-    max-height: 48px;
+    max-height: 44px;
     width: auto;
     display: block;
   }

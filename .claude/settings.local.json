@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx serve:*)"
+      "Bash(npx serve:*)",
+      "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i -e 's|logo-nextiweb-dark\\\\.png|favicon-nextiweb-infini.png|g' -e 's|logo-nextiweb-dark\\\\.webp|favicon-nextiweb-infini.png|g' -e 's|logo-nextiweb-light\\\\.png|favicon-nextiweb-infini.png|g' -e 's|logo-nextiweb-light\\\\.webp|favicon-nextiweb-infini.png|g' '{}' ';')",
+      "Bash(grep -r \"logo-nextiweb-dark\\\\|logo-nextiweb-light\" \"c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija\" --include=\"*.html\" --include=\"*.js\" ! -path \"*/.git/*\")",
+      "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i -e 's|<picture>||g' -e 's|</picture>||g' -e 's|<source srcset=\"/assets/img/logo/favicon-nextiweb-infini\\\\.png\" type=\"image/webp\">||g' -e 's|<source srcset=\"/assets/img/logo/favicon-nextiweb-infini\\\\.png\" type=\"image/png\">||g' '{}' ';')",
+      "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i 's|favicon-nextiweb-infini\\\\.png|logo-nextiweb-dark.png|g' '{}' ';')",
+      "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i 's|href=\"/assets/css/styles\\\\.min\\\\.css\"|href=\"/assets/css/styles.min.css?v=2\"|g' '{}' ';')"
     ]
   }
 }

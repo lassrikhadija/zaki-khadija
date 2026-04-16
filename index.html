@@ -5,7 +5,7 @@
        META & SEO DE BASE
        ======================= -->
   <meta charset="UTF-8">
-  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,7 +45,7 @@
   <!-- =======================
        CSS GLOBAL
        ======================= -->
-  <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=2">
   <link rel="manifest" href="/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,23 +140,23 @@
       gap: .5rem;
     }
 
-    /* Pilule "J'ai une question" */
+    /* Bouton question rond */
     .question-float {
       display: flex;
       align-items: center;
-      gap: .5rem;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
       background: var(--color-bg-alt);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 2rem;
-      padding: .6rem 1.1rem;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
       text-decoration: none;
-      color: var(--color-text);
-      font-size: .875rem;
-      font-weight: 600;
+      color: var(--color-primary);
       box-shadow: 0 4px 16px rgba(0,0,0,.35);
       transition: transform .2s ease, box-shadow .2s ease;
+      flex-shrink: 0;
     }
-    .question-float:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.45); color: var(--color-primary); }
+    .question-float:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.45); }
 
     /* Pilule WhatsApp */
     .whatsapp-pill {
@@ -347,9 +347,9 @@
 
     /* Mode clair */
     body.theme-light .question-float {
-      background: #fff;
-      border-color: rgba(0,0,0,.1);
-      color: #1a1a1a;
+      background: #f0f0f0;
+      border-color: rgba(0,0,0,.12);
+      color: var(--color-primary);
       box-shadow: 0 4px 16px rgba(0,0,0,.15);
     }
   </style>
@@ -477,10 +477,10 @@
     <div class="container header__inner">
       <!-- Logo -->
       <a href="/" class="logo">
-        <picture>
-          <source srcset="/assets/img/logo/logo-nextiweb-dark.webp" type="image/webp">
+        
+          
           <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="160" height="40" loading="eager">
-        </picture>
+        
       </a>
 
       <!-- Navigation principale -->
@@ -1232,7 +1232,6 @@
   <div class="float-bar">
     <a href="/question.html" class="question-float" aria-label="Poser une question à NEXTIWEB">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-      J'ai une question
     </a>
     <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

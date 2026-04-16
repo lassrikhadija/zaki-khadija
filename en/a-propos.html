@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -36,7 +36,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=2">
   <style>
     /* Fil d'Ariane */
     .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
@@ -52,13 +52,13 @@
     /* Barre flottante telephone + WhatsApp */
     .whatsapp-float{display:none!important}
     .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .question-float{display:flex;align-items:center;gap:.5rem;background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.12);border-radius:2rem;padding:.6rem 1.1rem;text-decoration:none;color:var(--color-text);font-size:.875rem;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s ease,box-shadow .2s ease}
-    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.45);color:var(--color-primary)}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.18);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,0,0,.35);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.45)}
     .question-float svg{color:var(--color-primary);flex-shrink:0}
     .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
     .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
     @media(max-width:768px){.float-bar{display:none!important}}
-    body.theme-light .question-float{background:#fff;border-color:rgba(0,0,0,.1);color:#1a1a1a;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    body.theme-light .question-float{background:#f0f0f0;border-color:rgba(0,0,0,.12);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,0,0,.15)}
   </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
@@ -81,10 +81,10 @@
   <header class="site-header">
     <div class="container header__inner">
       <a href="/en/index.html" class="logo">
-        <picture>
-          <source srcset="/assets/img/logo/logo-nextiweb-dark.webp" type="image/webp">
+        
+          
           <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Web agency in Montreal" width="160" height="40" loading="eager">
-        </picture>
+        
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <div class="nav__item">
@@ -323,7 +323,6 @@
   <div class="float-bar">
     <a href="/question.html" class="question-float" aria-label="Ask NEXTIWEB a question">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-      I have a question
     </a>
     <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

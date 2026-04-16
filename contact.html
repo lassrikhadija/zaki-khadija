@@ -140,7 +140,7 @@
     .tform__select option { background: #111; color: #fff; }
     .tform__textarea { resize: vertical; min-height: 110px; }
 
-    /* Budget radio */
+    /* Objectif radio */
     .tform__radio-group {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -342,32 +342,20 @@
             <input class="tform__input" id="site" name="site" type="url" placeholder="https://votresite.com (laissez vide si non)">
           </div>
 
-          <div class="tform__field">
-            <label class="tform__label" for="besoin">Qu'est-ce que vous cherchez ?<span>*</span></label>
-            <select class="tform__select" id="besoin" name="besoin" required>
-              <option value="">Choisissez ce qui vous ressemble le plus</option>
-              <option value="nouveau-site">Un nouveau site web</option>
-              <option value="refonte">Refaire mon site actuel</option>
-              <option value="seo">Être mieux trouvé sur Google</option>
-              <option value="clients">Attirer plus de clients en ligne</option>
-              <option value="sais-pas">Je ne sais pas encore — j'ai besoin d'un avis</option>
-            </select>
-          </div>
-
-          <div class="tform__field">
-            <label class="tform__label" for="budget">Budget approximatif <em style="font-weight:400;opacity:.6">(optionnel — aucun minimum requis)</em></label>
-            <div class="tform__radio-group">
+          <div class="tform__field" id="field-objectif">
+            <label class="tform__label">Votre objectif principal<span>*</span></label>
+            <div class="tform__radio-group" id="objectif-group">
               <label class="tform__radio-label">
-                <input type="radio" name="budget" value="moins-2000"> Moins de 2 000 $
+                <input type="radio" name="objectif" value="leads"> Multiplier mes leads qualifiés
               </label>
               <label class="tform__radio-label">
-                <input type="radio" name="budget" value="2000-5000"> 2 000 $ – 5 000 $
+                <input type="radio" name="objectif" value="seo"> Dépasser mes concurrents sur Google
               </label>
               <label class="tform__radio-label">
-                <input type="radio" name="budget" value="5000-plus"> 5 000 $ et plus
+                <input type="radio" name="objectif" value="conversion"> Avoir un site qui vend 24h/24
               </label>
               <label class="tform__radio-label">
-                <input type="radio" name="budget" value="sais-pas" checked> Je ne sais pas encore
+                <input type="radio" name="objectif" value="lancement"> Lancer ou refondre mon site
               </label>
             </div>
           </div>
@@ -429,7 +417,8 @@
     const form = document.getElementById('audit-form');
     if (!form) return;
 
-    const inputs = form.querySelectorAll('.tform__input, .tform__select, .tform__textarea');
+    const inputs = form.querySelectorAll('.tform__input, .tform__textarea');
+    const objectifGroup = form.querySelector('#objectif-group');
 
     inputs.forEach(function(input) {
       input.addEventListener('blur', function() { validate(input); });
@@ -449,6 +438,14 @@
       input.classList.remove('valid', 'error');
     }
 
+    // Radio group visual error state
+    function setObjectifError(hasError) {
+      if (!objectifGroup) return;
+      objectifGroup.querySelectorAll('.tform__radio-label').forEach(function(lbl) {
+        lbl.style.borderColor = hasError ? '#f87171' : '';
+      });
+    }
+
     form.addEventListener('submit', function(e) {
       let valid = true;
       inputs.forEach(function(input) {
@@ -457,10 +454,23 @@
           if (input.classList.contains('error') || !input.value.trim()) valid = false;
         }
       });
+      // Validate objectif radio group
+      const objectifChecked = form.querySelector('input[name="objectif"]:checked');
+      if (!objectifChecked) {
+        valid = false;
+        setObjectifError(true);
+      } else {
+        setObjectifError(false);
+      }
       const consent = form.querySelector('#consent');
       if (!consent.checked) { valid = false; consent.focus(); }
       if (!valid) { e.preventDefault(); }
     });
+
+    // Clear radio error on selection
+    if (objectifGroup) {
+      objectifGroup.addEventListener('change', function() { setObjectifError(false); });
+    }
   })();
   </script>
 

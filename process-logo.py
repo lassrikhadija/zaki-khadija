@@ -5,30 +5,38 @@ import numpy as np
 
 logo_dir = r'C:\Users\Chaki\Downloads\e-commerce-khadija\Khadija marketing\Projet-khadija\projet_Nextiweb\zaki-khadija\assets\img\logo'
 
-def extract_green(path):
-    img = Image.open(path).convert('RGBA')
-    data = np.array(img, dtype=np.int32)
-    r, g, b = data[...,0], data[...,1], data[...,2]
-    is_green = (g > 80) & (g > r * 1.1) & (g > b * 1.1)
-    result = np.zeros_like(data)
-    result[is_green] = data[is_green]
-    result[is_green, 3] = 255
-    icon = Image.fromarray(result.astype(np.uint8), 'RGBA')
-    bbox = icon.getbbox()
-    print(f'  bbox: {bbox}  green px: {is_green.sum():,}')
-    return icon.crop(bbox)
+print('Processing logo-nextiweb-lumiere.png...')
+src = Image.open(os.path.join(logo_dir, 'logo-nextiweb-lumiere.png')).convert('RGBA')
+data = np.array(src, dtype=np.int32)
+r, g, b, a = data[...,0], data[...,1], data[...,2], data[...,3]
 
-print('Extracting icon...')
-icon = extract_green(os.path.join(logo_dir, 'logo-nextiweb-lumiere.png'))
+# Remove only pure checkerboard squares (neutral gray, NOT the dark logo shadow)
+# Checkerboard: R≈G≈B AND mid-bright (120-220) AND NOT dark green content
+is_neutral  = (np.abs(r-g) <= 10) & (np.abs(g-b) <= 10)
+is_midgray  = ((r+g+b)//3).astype(np.int32)
+is_checker  = is_neutral & (is_midgray >= 120) & (is_midgray <= 215)
 
-# Save at 2x retina: display 48px height → save 96px
-iw, ih = icon.size
-ratio = iw / ih
+# Protect dark logo shadow: pixels where green is dominant (even slightly)
+# or where it's very dark (logo shadow/glow area)
+is_logo_dark = ((r+g+b)//3 < 80)   # very dark = logo shadow
+is_green_tint = (g.astype(float) > r * 1.05)  # slightly green = logo content
+
+keep = ~is_checker | is_logo_dark | is_green_tint
+
+result = data.astype(np.uint8)
+result[~keep, 3] = 0
+
+icon = Image.fromarray(result, 'RGBA')
+bbox = icon.getbbox()
+print(f'  bbox: {bbox}')
+icon_cropped = icon.crop(bbox) if bbox else icon
+
+# Save at 2x retina — 96px height
+iw, ih = icon_cropped.size
 save_h = 96
-save_w = int(ratio * save_h)
-print(f'  Output size: {save_w}x{save_h}')
-
-icon_rs = icon.resize((save_w, save_h), Image.LANCZOS)
+save_w = int(iw * save_h / ih)
+icon_rs = icon_cropped.resize((save_w, save_h), Image.LANCZOS)
+print(f'  Output: {save_w}x{save_h}  (display {save_w//2}x{save_h//2})')
 
 for name in ['logo-nextiweb-dark', 'logo-nextiweb-light', 'logo-nextiweb-transparent']:
     icon_rs.save(os.path.join(logo_dir, f'{name}.png'))
@@ -36,5 +44,5 @@ for name in ['logo-nextiweb-dark', 'logo-nextiweb-light', 'logo-nextiweb-transpa
     kb = os.path.getsize(os.path.join(logo_dir, f'{name}.webp')) // 1024
     print(f'  {name}.webp  {kb}KB')
 
-print(f'\nDisplay size in HTML: width="{save_w//2}" height="{save_h//2}"')
+print(f'\nHTML: width="{save_w//2}" height="{save_h//2}"')
 print('Done.')

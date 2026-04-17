@@ -106,10 +106,15 @@
     .article-table tr:hover td{background:rgba(255,255,255,.02)}
 
     /* FAQ */
-    .article-faq{display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem}
-    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;padding:1.1rem 1.3rem}
-    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin-bottom:.5rem}
-    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0}
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
 
     /* Sidebar layout */
     .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
@@ -265,7 +270,7 @@
 
             <div class="callout">
               <strong>Le saviez-vous ?</strong>
-              Selon l'étude <a href="https://www.deloittedigital.com/us/en/insights/perspective/milliseconds-make-millions.html" target="_blank" rel="noopener">Milliseconds Make Millions de Deloitte Digital</a>, une amélioration de 0,1 seconde de la vitesse de chargement sur mobile peut augmenter les taux de conversion de 8,4 % pour les sites de vente. Au Québec, où le trafic mobile domine, la lenteur est votre premier ennemi financier.
+              Selon l'étude <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="noopener">Think with Google sur la vitesse mobile</a>, une amélioration de 0,1 seconde de la vitesse de chargement sur mobile peut augmenter les taux de conversion de 8,4 % pour les sites de vente. Au Québec, où le trafic mobile domine, la lenteur est votre premier ennemi financier.
             </div>
 
             <hr>
@@ -376,35 +381,59 @@
             <h2 id="faq">FAQ : 8 questions essentielles sur la création de site web</h2>
             <div class="article-faq">
               <div class="article-faq__item">
-                <p class="article-faq__q">1. Combien coûte réellement un site vitrine en 2026 ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">1. Combien coûte réellement un site vitrine en 2026 ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">Pour un travail professionnel incluant stratégie et design, prévoyez entre 6 500 $ et 10 000 $ CAD.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">2. Dois-je héberger mon site au Canada ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">2. Dois-je héberger mon site au Canada ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">Oui. Pour la vitesse (proximité physique) et pour la conformité à la Loi 25 sur la protection des données personnelles au Québec.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">3. C'est quoi un CMS ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">3. C'est quoi un CMS ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">Un Système de Gestion de Contenu (comme WordPress) qui vous permet de modifier vos textes sans savoir coder.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">4. Pourquoi mon site actuel ne me rapporte aucun client ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">4. Pourquoi mon site actuel ne me rapporte aucun client ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">C'est probablement une "coquille vide" : beau design, mais pas de tunnel de conversion ni d'appel à l'action clair.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">5. Est-ce que je peux gérer mon site seul après ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">5. Est-ce que je peux gérer mon site seul après ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">Oui, si votre agence inclut une formation de prise en main. C'est un standard chez NEXTIWEB.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">6. C'est quoi la différence entre HTTP et HTTPS ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">6. C'est quoi la différence entre HTTP et HTTPS ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">Le "S" signifie sécurisé. Il protège les données échangées entre votre client et votre serveur grâce à un certificat SSL.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">7. Combien de temps faut-il pour créer un site ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">7. Combien de temps faut-il pour créer un site ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">Comptez 6 à 10 semaines pour un projet sérieux incluant phase de stratégie, design et tests.</p>
               </div>
               <div class="article-faq__item">
-                <p class="article-faq__q">8. C'est quoi le SEO ?</p>
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">8. C'est quoi le SEO ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
                 <p class="article-faq__a">L'Optimisation pour les Moteurs de Recherche — l'art d'apparaître en haut des résultats Google sans payer de publicité.</p>
               </div>
             </div>
@@ -520,5 +549,15 @@
     </a>
   </div>
 
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.article-faq__item');
+        const isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    });
+  </script>
 </body>
 </html>

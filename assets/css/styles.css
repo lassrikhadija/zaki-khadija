@@ -11,6 +11,28 @@
   padding: 0;
 }
 
+/* Empêche le scroll horizontal global (causes: tables larges, grilles, images) */
+html {
+  overflow-x: clip;
+}
+
+/* Fix CSS Grid overflow sur mobile — 1fr peut s'étirer si le contenu est plus large */
+.article-layout {
+  min-width: 0;
+}
+
+/* Fix débordement texte et tables dans les articles blog */
+.article-body {
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.article-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 /* VARIABLES & THEME */
 :root {
   --color-bg: #0f0f0f;

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>HTML, CSS et JavaScript : guide pour dirigeant de PME — Pilotez votre site sans coder | NEXTIWEB</title>
+  <meta name="description" content="Comprendre HTML, CSS et JavaScript sans coder : le guide pratique pour les dirigeants de PME québécoises. Repérez les pièges techniques, posez les bonnes questions, protégez votre investissement.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="HTML, CSS et JavaScript : guide pour dirigeant de PME — Pilotez votre site sans coder">
+  <meta property="og:description" content="Comprendre HTML, CSS et JavaScript sans coder : repérez les pièges techniques, posez les bonnes questions à votre prestataire et protégez votre investissement web.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/creation-site/html-css-js-guide-dirigeant.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HTML, CSS, JavaScript : guide dirigeant PME — pilotez sans coder">
+  <meta name="twitter:description" content="Le guide technique pour non-techniciens — comprenez votre site web et protégez votre budget.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/creation-site/html-css-js-guide-dirigeant.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/creation-site/html-css-js-guide-dirigeant.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/html-css-js-guide-dirigeant.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=2">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body code{background:rgba(0,230,118,.1);color:var(--color-primary);padding:.15em .4em;border-radius:.25rem;font-size:.88em;font-family:monospace}
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "HTML, CSS et JavaScript : guide pour dirigeant de PME — Pilotez votre site sans coder",
+    "description": "Comprendre HTML, CSS et JavaScript sans coder : le guide pratique pour les dirigeants de PME québécoises. Repérez les pièges techniques, posez les bonnes questions, protégez votre investissement.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-04-22",
+    "dateModified": "2026-04-22",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/creation-site/html-css-js-guide-dirigeant.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "HTML CSS JavaScript PME, guide technique dirigeant, code site web, HTML sémantique, vitesse site web, Loi 25 Québec"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"Création de sites web","item":"https://nextiweb.ca/blog/creation-site/"},
+    {"@type":"ListItem","position":4,"name":"HTML, CSS et JavaScript : guide pour dirigeant","item":"https://nextiweb.ca/blog/creation-site/html-css-js-guide-dirigeant.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"WordPress me protège-t-il du mauvais code ?","acceptedAnswer":{"@type":"Answer","text":"Pas du tout. WordPress est un excellent moteur, mais si votre thème est mal codé, vous aurez les mêmes problèmes qu'un site amateur. Le CMS ne compense pas un code de mauvaise qualité."}},
+    {"@type":"Question","name":"C'est quoi un framework JavaScript comme React ou Vue ?","acceptedAnswer":{"@type":"Answer","text":"C'est une bibliothèque JavaScript avancée, utile pour les applications complexes, mais souvent inutile et coûteuse pour un site vitrine de PME. Ne payez pas pour un avion de chasse si vous avez besoin d'une berline fiable."}},
+    {"@type":"Question","name":"Les IA peuvent-elles corriger mon code automatiquement ?","acceptedAnswer":{"@type":"Answer","text":"Les outils IA peuvent identifier des problèmes de code et suggérer des corrections. Mais ils ne remplacent pas un audit stratégique : savoir quoi corriger en priorité selon l'impact sur votre rentabilité reste une décision humaine."}},
+    {"@type":"Question","name":"Qu'est-ce que le HTML sémantique et pourquoi est-ce important ?","acceptedAnswer":{"@type":"Answer","text":"Le HTML sémantique utilise des balises descriptives (H1, H2, article, nav) plutôt que des balises génériques (div). Google et les moteurs IA lisent ces balises pour comprendre la structure de votre contenu. Un HTML propre améliore votre référencement organique."}},
+    {"@type":"Question","name":"Comment vérifier rapidement si mon site a un problème de code ?","acceptedAnswer":{"@type":"Answer","text":"Trois tests rapides : 1) Votre page doit avoir un seul titre H1 (vérifiable avec l'extension navigateur HeadingsMap). 2) Votre score Google PageSpeed Insights mobile doit dépasser 70. 3) La console navigateur (F12) ne doit afficher aucune erreur en rouge."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/creation-site/" class="breadcrumb__link">Création de sites web</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">HTML, CSS et JS : guide dirigeant</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Création de sites web
+          </p>
+          <h1 class="article-hero__title">HTML, CSS et JavaScript&nbsp;: guide pour dirigeant de PME — Pilotez votre site sans coder</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              22 avril 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min de lecture
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <div class="article-body">
+
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li><strong>Comprendre, pas coder</strong> : HTML (squelette), CSS (habillage), JavaScript (comportement). Maîtriser ces bases vous permet de poser les bonnes questions — et d'éviter de payer pour du travail inutile.</li>
+                <li><strong>Test en 3 minutes</strong> : un site bien construit doit avoir un seul titre H1, un score <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed mobile</a> supérieur à 70, et zéro erreur dans la console (F12).</li>
+                <li><strong>Enjeu IA 2026</strong> : les moteurs de recherche par IA (ChatGPT, Gemini) lisent votre HTML avant votre design. Un code désorganisé vous rend invisible aux yeux de l'intelligence artificielle.</li>
+                <li><strong>Règle d'or</strong> : ne payez jamais au prix fort une modification de couleurs ou de polices — sur un site bien conçu, cela prend moins de 15 minutes.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="pourquoi">Pourquoi le code est un sujet de gestion (et non de technique)</h2>
+            <p>Pour un dirigeant, ignorer le HTML et le CSS de son site est aussi risqué que de signer un bail commercial sans le lire. Vous n'avez pas besoin d'être expert — mais vous devez savoir si votre prestataire vous construit une structure solide ou une façade fragile qui s'écroulera au premier changement d'algorithme Google.</p>
+            <p>En 2026, la propreté de votre code influence directement votre <strong>vitesse de chargement</strong>, votre <strong>position dans les résultats de recherche</strong> et votre <strong>conformité à la Loi 25</strong> (protection des données au Québec).</p>
+
+            <hr>
+
+            <h2 id="traduction">Parlez le langage des résultats à votre développeur</h2>
+            <p>Ces phrases vous permettent de montrer que vous pilotez votre actif numérique — sans avoir besoin de coder vous-même.</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Ce que vous voulez</th>
+                    <th>La phrase à dire à votre développeur</th>
+                    <th>Pourquoi ça change tout</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>"Je veux être bien classé sur Google."</td>
+                    <td>"Je veux un <strong>HTML sémantique</strong> (H1–H6) et des données structurées Schema.org."</td>
+                    <td>Force une indexation propre par Google et les moteurs IA.</td>
+                  </tr>
+                  <tr>
+                    <td>"Le site est trop lent."</td>
+                    <td>"Réduisez le poids du <strong>CSS critique</strong> et différez le JavaScript non essentiel."</td>
+                    <td>Améliore votre score PageSpeed mobile immédiatement.</td>
+                  </tr>
+                  <tr>
+                    <td>"Je veux changer de logo ou de couleurs."</td>
+                    <td>"Le site utilise-t-il un <strong>Design System</strong> ou des variables CSS centralisées ?"</td>
+                    <td>Évite de payer pour des modifications page par page.</td>
+                  </tr>
+                  <tr>
+                    <td>"Est-ce que mon site est sécuritaire ?"</td>
+                    <td>"Le JavaScript respecte-t-il les normes de la <strong>Loi 25</strong> ?"</td>
+                    <td>Protège votre PME contre les fuites de données et les amendes.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr>
+
+            <h2 id="signaux">3 signaux invisibles à l'œil — mais fatals pour votre profit</h2>
+
+            <h3>1. La "soupe de balises" — HTML désorganisé</h3>
+            <p>Certains prestataires utilisent des balises génériques (<code>&lt;div&gt;</code>) pour tout structurer. C'est l'équivalent de construire une maison avec des briques toutes identiques sans plan : c'est possible, mais Google ne sait pas où se trouve votre offre principale et où se trouve votre blog. Un HTML bien construit utilise des <strong>balises sémantiques</strong> : <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>.</p>
+
+            <h3>2. Le CSS alourdi</h3>
+            <p>Si votre fichier de style pèse plus de 200 Ko pour un site vitrine, vous payez pour du code inutile. Un CSS trop lourd ralentit le chargement sur mobile, vide la batterie de vos visiteurs et dégrade leur expérience — ce qui se traduit directement par un taux de rebond plus élevé.</p>
+
+            <h3>3. Le JavaScript mal optimisé</h3>
+            <p>Chaque ajout (chat en direct, animations, scripts de suivi) introduit du JavaScript supplémentaire. Quand ces scripts ne sont pas différés ou optimisés, ils <strong>bloquent l'affichage</strong> de votre contenu avant même que la page soit visible.</p>
+
+            <div class="callout">
+              <strong>Le saviez-vous ?</strong>
+              Selon l'étude <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="noopener">Think with Google sur la vitesse mobile</a>, chaque seconde de délai supplémentaire au chargement entraîne une perte significative de conversions — et une amélioration de seulement 0,1 seconde peut augmenter les ventes de 8,4 %. La vitesse n'est pas un détail technique : c'est une variable financière.
+            </div>
+
+            <hr>
+
+            <!-- CTA inline -->
+            <div class="article-cta-inline">
+              <p>Vous recevez un devis technique et vous avez un doute sur ce qui est inclus ?</p>
+              <a href="/contact.html?utm_source=blog&utm_medium=article&utm_campaign=html-css-js-guide-dirigeant&utm_content=pause-cta" class="btn btn--primary">Demandez un audit gratuit →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="test">Le test de 3 minutes pour évaluer votre site aujourd'hui</h2>
+            <p>Pas besoin de coder pour effectuer ces vérifications. Elles prennent moins de 3 minutes et révèlent la qualité réelle du travail de votre prestataire.</p>
+            <ol>
+              <li><strong>Un seul H1 par page.</strong> Installez l'extension <a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiapkjizaadli" target="_blank" rel="noopener">HeadingsMap</a> dans votre navigateur. Chaque page de votre site doit avoir exactement un titre H1 — pas zéro, pas deux.</li>
+              <li><strong>Score PageSpeed mobile supérieur à 70.</strong> Allez sur <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a>, entrez votre URL, et regardez le score mobile. En dessous de 70, votre site perd des visiteurs — et des clients — à cause de la lenteur.</li>
+              <li><strong>Zéro erreur dans la console.</strong> Ouvrez votre site dans Chrome, appuyez sur <kbd>F12</kbd>, cliquez sur l'onglet "Console". S'il y a des lignes en rouge, votre JavaScript a des problèmes actifs que vous payez peut-être depuis des mois.</li>
+            </ol>
+
+            <div class="callout">
+              <strong>À retenir</strong>
+              Ces trois vérifications sont gratuites, ne demandent aucune compétence technique, et peuvent révéler des problèmes que votre prestataire n'a jamais mentionnés. Faites-les avant votre prochain appel avec lui.
+            </div>
+
+            <hr>
+
+            <h2 id="faq">FAQ : questions fréquentes des dirigeants sur le code de leur site</h2>
+            <div class="article-faq">
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">1. WordPress me protège-t-il du mauvais code ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Pas du tout. WordPress est un excellent moteur, mais si votre thème est mal codé ou si trop d'extensions sont installées, vous aurez les mêmes problèmes de lenteur et de sécurité qu'un site amateur. Le CMS ne compense pas un code de mauvaise qualité.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">2. C'est quoi un "framework" JavaScript comme React ou Vue ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">C'est une bibliothèque JavaScript avancée, conçue pour construire des applications web complexes (tableaux de bord, applications interactives). Pour un site vitrine ou un e-commerce standard de PME, c'est généralement inutile — et ça alourdit inutilement le chargement. Ne payez pas pour un outil de développeur d'application si vous avez besoin d'un site web.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">3. Les outils IA peuvent-ils corriger mon code automatiquement ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Les outils IA peuvent identifier des problèmes de code et suggérer des corrections. Mais ils ne remplacent pas un audit stratégique : savoir <em>quoi</em> corriger en priorité selon l'impact sur votre rentabilité reste une décision humaine qui dépend de votre contexte business.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">4. Qu'est-ce que le HTML sémantique et pourquoi est-ce important ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Le HTML sémantique utilise des balises qui décrivent leur contenu (<code>&lt;nav&gt;</code> pour la navigation, <code>&lt;article&gt;</code> pour un article, <code>&lt;h1&gt;</code> pour le titre principal) plutôt que des balises neutres (<code>&lt;div&gt;</code> pour tout). Google et les moteurs IA lisent ces balises pour comprendre la structure de votre contenu. Un HTML propre améliore directement votre référencement organique et votre visibilité dans les résultats IA.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">5. Comment vérifier rapidement si mon site a un problème de code ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Trois tests gratuits sans compétence technique : 1) Un seul H1 par page (vérifiable avec l'extension HeadingsMap). 2) Score <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">Google PageSpeed Insights</a> mobile supérieur à 70. 3) Aucune erreur rouge dans la console navigateur (F12 → onglet Console). Ces trois points révèlent la majorité des problèmes courants.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">6. Mon prestataire dit que "refaire le design" nécessite de tout reconstruire — est-ce normal ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Non, si le site a été bien construit au départ. Un site utilisant des variables CSS centralisées (couleurs, polices, espacements définis en un seul endroit) permet de modifier l'apparence globale en quelques heures, pas en semaines. Si votre prestataire dit que changer une couleur prend plusieurs jours de travail, c'est souvent le signe que le code initial n'était pas structuré pour évoluer.</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="cta-final">Reprenez les rênes de votre technologie</h2>
+            <p>Votre site web est votre vendeur le plus disponible — il travaille 24h/24. Assurez-vous qu'il a les bonnes fondations pour le faire efficacement.</p>
+
+            <div class="article-cta-inline">
+              <p>Audit technique honnête — 30 min, 12 points vérifiés, rapport sous 48 h.</p>
+              <a href="/contact.html?utm_source=blog&utm_medium=article&utm_campaign=html-css-js-guide-dirigeant&utm_content=cta-final" class="btn btn--primary">Je veux mon audit gratuit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Dans cet article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#pourquoi">Pourquoi c'est un sujet de gestion</a></li>
+                <li><a href="#traduction">Parlez le langage des résultats</a></li>
+                <li><a href="#signaux">3 signaux invisibles mais fatals</a></li>
+                <li><a href="#test">Test de 3 minutes</a></li>
+                <li><a href="#faq">FAQ (6 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Articles connexes</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/blog/creation-site/comment-fonctionne-site-web.html">Comment fonctionne un site web →</a></li>
+                <li><a href="/blog/creation-site/choisir-format-site-web.html">Quel format de site choisir →</a></li>
+                <li><a href="/creation-site.html">Nos services création web →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+        <address class="footer__address">
+          Montréal, Québec, Canada<br>
+          <a href="tel:+15147910591">514-791-0591</a><br>
+          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/secteurs.html">Secteurs</a></li>
+          <li><a href="/ressources.html">Ressources</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list">
+          <li><a href="/blog/creation-site/">Création de sites</a></li>
+          <li><a href="/blog/seo/">SEO</a></li>
+          <li><a href="/blog/marketing-digital/">Marketing digital</a></li>
+          <li><a href="/blog/ia-automatisation/">IA &amp; Automatisation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Zones desservies</h3>
+        <ul class="footer__list">
+          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
+          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
+          <li><a href="/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <div class="float-bar">
+    <a href="/question.html" class="question-float" aria-label="Poser une question à NEXTIWEB">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.article-faq__item');
+        const isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    });
+  </script>
+
+</body>
+</html>

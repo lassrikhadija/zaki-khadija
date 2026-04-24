@@ -87,6 +87,32 @@ body.theme-light a:not(.btn) {
   color: #006837;
 }
 
+/* WCAG 1.4.1 — liens dans le contenu texte distinguables autrement que par la couleur */
+.article-body a,
+.article-faq__a a,
+.callout a,
+p a:not(.btn),
+li a:not(.btn):not(.nav__link):not(.nav__submenu-link):not(.breadcrumb__link):not(.footer__list a) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Pas de soulignement sur les liens de navigation, boutons, cartes, sidebar */
+.main-nav a,
+.btn,
+.nav__link,
+.nav__submenu-link,
+.breadcrumb__link,
+.breadcrumb__current,
+.article-sidebar__toc a,
+.footer__list a,
+.blog-card__link,
+.blog-card__title a,
+.project-card__meta a,
+.float-bar a {
+  text-decoration: none;
+}
+
 body.theme-light a:not(.btn):hover {
   color: #004d27;
 }
@@ -710,7 +736,7 @@ body.theme-light .hero-bg__microcopy {
 }
 
 .hero-metric {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(0, 8, 18, 0.68);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -765,7 +791,7 @@ body.theme-light .hero-bg__microcopy {
 
 .hero-metric__label {
   font-size: 0.82rem;
-  color: rgba(200, 220, 255, 0.75);
+  color: #c8d8f0;
   font-weight: 500;
   letter-spacing: 0.02em;
 }

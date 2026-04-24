@@ -677,6 +677,7 @@ if (navLink && navSubmenu && navSubmenuLinks) {
     ]},
     { label: isEnglishLocale ? 'Industries' : 'Secteurs', href: isEnglishLocale ? '/en/secteurs.html' : '/secteurs.html' },
     { label: isEnglishLocale ? 'Resources' : 'Ressources', href: isEnglishLocale ? '/en/ressources.html' : '/ressources.html' },
+    { label: 'Blog', href: isEnglishLocale ? '/en/blog/' : '/blog/' },
     { label: isEnglishLocale ? 'About' : 'À propos', href: isEnglishLocale ? '/en/a-propos.html' : '/a-propos.html' },
     { label: isEnglishLocale ? 'Get My Free Audit' : 'Demander mon audit gratuit', href: isEnglishLocale ? '/en/contact.html' : '/contact.html', cta: true },
   ];

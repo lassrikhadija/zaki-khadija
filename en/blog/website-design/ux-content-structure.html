@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>UX and Content Structure: Is Your Website a Store or a Labyrinth? | NEXTIWEB</title>
+  <meta name="description" content="Site architecture, navigation, content hierarchy: how to structure your website to guide visitors and increase conversions. Practical guide for small businesses.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="UX and Content Structure: Is Your Website a Store or a Labyrinth?">
+  <meta property="og:description" content="Site architecture, navigation, content hierarchy: how to structure your website to guide visitors and increase conversions.">
+  <meta property="og:url" content="https://nextiweb.ca/en/blog/website-design/ux-content-structure.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UX and Content Structure: Is Your Website a Store or a Labyrinth?">
+  <meta name="twitter:description" content="Site architecture, navigation, content hierarchy: how to structure your SMB website for more conversions.">
+
+  <link rel="canonical" href="https://nextiweb.ca/en/blog/website-design/ux-content-structure.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/creation-site/ux-structure-contenu.html">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/website-design/ux-content-structure.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/ux-structure-contenu.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    /* Breadcrumb */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    /* Float bar */
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+
+    /* Article layout */
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+
+    /* Summary box */
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+
+    /* Article body */
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+
+    /* Callout box */
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+
+    /* CTA inline */
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+
+    /* Table */
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+
+    /* FAQ */
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+
+    /* Sidebar layout */
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+
+    @media(max-width:900px){
+      .article-layout{grid-template-columns:1fr}
+      .article-sidebar{display:none}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "UX and Content Structure: Is Your Website a Store or a Labyrinth?",
+    "description": "Site architecture, navigation, content hierarchy: how to structure your website to guide visitors and increase conversions. Practical guide for small businesses.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/en/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-04-22",
+    "dateModified": "2026-04-24",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/en/blog/website-design/ux-content-structure.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "en-CA",
+    "keywords": "UX website SMB, content structure, site architecture, navigation menu, user experience, conversion rate, siloing SEO"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/en/blog/"},
+    {"@type":"ListItem","position":3,"name":"Website Design","item":"https://nextiweb.ca/en/blog/website-design/"},
+    {"@type":"ListItem","position":4,"name":"UX and Content Structure","item":"https://nextiweb.ca/en/blog/website-design/ux-content-structure.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Does a clean, minimal website hurt SEO?","acceptedAnswer":{"@type":"Answer","text":"No, quite the opposite. Google prefers a site with fewer pages of high quality, well-linked together, rather than a cluttered site. Structural clarity is a positive indexing signal and actually improves ranking on targeted keywords."}},
+    {"@type":"Question","name":"How long does it take to redo a site architecture?","acceptedAnswer":{"@type":"Answer","text":"For a standard small business, a UX strategy and information architecture phase typically takes 1 to 2 weeks. It's often the most profitable step in a web project because it conditions all the design and development decisions that follow."}},
+    {"@type":"Question","name":"What is web accessibility (WCAG)?","acceptedAnswer":{"@type":"Answer","text":"WCAG (Web Content Accessibility Guidelines) are international standards ensuring that people with visual impairments, hearing loss, or motor disabilities can navigate your site. Beyond being ethical, improving accessibility also positively impacts your SEO through semantic structure, alt texts, and colour contrasts."}},
+    {"@type":"Question","name":"What is siloing in website architecture?","acceptedAnswer":{"@type":"Answer","text":"Siloing means grouping web pages into distinct, separate thematic sections. Each service or main topic has its own dedicated section with its own pages and internal links. This helps Google identify your specialization in each area and strengthens your ranking on the targeted keywords in each silo."}},
+    {"@type":"Question","name":"How many items should a navigation menu have?","acceptedAnswer":{"@type":"Answer","text":"Miller's Law (psychologist George Miller, 1956) suggests the human brain efficiently processes 7 items (plus or minus 2) at a time. In UX practice, a main menu of 5 to 7 items maximum is recommended. Beyond that, visitors experience cognitive overload and take longer to decide — or simply leave."}},
+    {"@type":"Question","name":"Why do visitors leave my site without visiting other pages?","acceptedAnswer":{"@type":"Answer","text":"This is often a sign of a broken user journey: either the page content doesn't match expectations created by the acquisition channel (e.g. ad or Google search), or the next step isn't clearly indicated. Review the consistency between the landing page message, what the visitor is looking for, and the call to action you're offering."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav__item">
+          <a href="/en/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
+            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
+            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+          </div>
+        </div>
+        <a href="/en/secteurs.html" class="nav__link">Industries</a>
+        <a href="/en/ressources.html" class="nav__link">Resources</a>
+        <a href="/en/blog/" class="nav__link">Blog</a>
+        <a href="/en/a-propos.html" class="nav__link">About</a>
+        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/en/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/en/blog/website-design/" class="breadcrumb__link">Website Design</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">UX and Content Structure</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ARTICLE HERO -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Website Design
+          </p>
+          <h1 class="article-hero__title">UX and Content Structure:<br>Is Your Website a Store or a Labyrinth?</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              April 22, 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              11 min read
+            </span>
+          </div>
+
+          <!-- SUMMARY -->
+          <div class="article-summary">
+            <p class="article-summary__title">⚡ 30-Second Summary</p>
+            <ul>
+              <li><strong>UX isn't a matter of taste</strong> — it's the science of reducing friction: fewer obstacles means more visitors guided toward action.</li>
+              <li><strong>The 3-click rule</strong> — if a visitor can't find what they're looking for quickly, they leave. Structure must anticipate their questions.</li>
+              <li><strong>Menu and site architecture</strong> — an overloaded menu creates cognitive confusion and pushes visitors away within the first few seconds.</li>
+              <li><strong>SEO &amp; Structure</strong> — a clear architecture helps Google understand your business priorities and rank you for the right keywords.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE BODY -->
+    <div class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- MAIN CONTENT -->
+          <article class="article-body">
+
+            <h2 id="architecture-revenue">Why Your Site Architecture Decides Your Revenue</h2>
+            <p>Having a website without a thoughtful UX structure is like opening a store without any shelving and throwing all your products in a pile in the middle of the room. Customers walk in, feel overwhelmed by the chaos, and immediately walk back out.</p>
+            <p>In 2026, attention is the scarcest resource. According to the <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group</a>, users leave most web pages in less than 10 to 20 seconds if nothing captures their interest. Your structure has one mission: <strong>reassure and guide instantly.</strong></p>
+            <p>This isn't an aesthetic question. It's an efficiency question: does your site help the visitor immediately understand what you do, for whom, and what action to take next?</p>
+
+            <h2 id="store-metaphor">The Store Metaphor: The Conversion Architecture</h2>
+            <p>Here's how the four key elements of a website translate into commercial strategy terms:</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Site Element</th>
+                    <th>Store Metaphor</th>
+                    <th>Strategic Role</th>
+                    <th>Business Objective</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Site Architecture</strong></td>
+                    <td>Store layout / floor plan</td>
+                    <td>Organizes your offer by theme</td>
+                    <td>Clarity of offer</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Menu (Navigation)</strong></td>
+                    <td>Aisle signs</td>
+                    <td>Lets visitors circulate without thinking</td>
+                    <td>Retention (time on site)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Content</strong></td>
+                    <td>Labels / Sales associate</td>
+                    <td>Explains value and usefulness</td>
+                    <td>Education &amp; Desire</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Button (CTA)</strong></td>
+                    <td>The checkout</td>
+                    <td>Shows where to complete the action</td>
+                    <td>Conversion (Sale / Lead)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 id="site-architecture">1. Site Architecture: Don't Mix Towels and Screwdrivers</h3>
+            <p>Good site structure relies on the concept of <strong>siloing</strong>: each major service or topic must have its own dedicated section. If you're a renovation company, don't mix "Kitchen" and "Roofing" on the same page. Google rewards specialization — and your visitors understand much faster what you can do for them.</p>
+            <p>Site architecture is planned on paper (or a whiteboard) before anyone touches code. It is the foundation for everything else.</p>
+
+            <h3 id="navigation-millers-law">2. Navigation: Miller's Law</h3>
+            <p>The human brain can only efficiently process <strong>7 items (plus or minus 2) at once</strong> — that's what psychologist George Miller established in 1956, and modern UX research continues to confirm it. A menu with 12 or 15 links creates cognitive overload: the visitor hesitates, gets discouraged, and leaves.</p>
+            <p>A good main menu is limited to 5 to 7 entries maximum, each representing a profitable "entry point" toward your services or key content.</p>
+
+            <h3 id="content-scanning">3. Content: Writing for Scanning</h3>
+            <p>Your customers don't read — they skim. Extensive user behaviour research (notably from <a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group</a>) shows that online reading follows an F or Z pattern — line beginnings and headings are read, the rest is scanned quickly.</p>
+            <p>Your content structure must use the <strong>inverted pyramid</strong>: most important information first (H1), followed by details (H2, H3). Each section should be understandable in a single sentence.</p>
+
+            <div class="callout">
+              <strong>💡 Did You Know</strong>
+              The Nielsen Norman Group documented that users spend an average of 74% of their time looking at the left side of a web page. Your main message and CTA must therefore be in this high-visibility zone — not buried in the right column.
+              <br><br>Source: <a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/" target="_blank" rel="noopener noreferrer">NNgroup.com — F-Shaped Pattern for Reading Content</a>
+            </div>
+
+            <!-- CTA inline -->
+            <div class="article-cta-inline">
+              <p>Are visitors landing on your homepage but not visiting any other pages? That's usually the sign of a gap in your navigation funnel.</p>
+              <a href="/en/contact.html?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=ux-content-structure" class="btn btn--primary">Let's Analyze Your Customer Journey for Free →</a>
+            </div>
+
+            <h2 id="ux-checks">3 Non-Negotiable UX Checks</h2>
+            <p>Before any redesign or new project, verify these three fundamental points:</p>
+
+            <h3 id="thumb-test">The Thumb Test</h3>
+            <p>On mobile, are your action buttons (CTAs, important links, forms) reachable with a thumb without contortion? The majority of users hold their phone with one hand. Clickable zones at the top of mobile screens are the least accessible — that's where many sites lose conversions.</p>
+
+            <h3 id="one-click-one-action">The "One Click, One Action" Rule</h3>
+            <p>Each page must offer <strong>one single clear objective</strong>. If you're asking a visitor to sign up for your newsletter, like your Facebook page, buy a product, AND book an appointment on the same page, they will likely do none of those things. Focusing on a single call to action per page is a fundamental principle of conversion rate optimization.</p>
+
+            <h3 id="breadcrumbs">Breadcrumbs</h3>
+            <p>Do your visitors always know where they are and how to go back? Breadcrumbs aren't just a navigation aid — they are also an important structural signal for Google. Proper implementation (with the corresponding Schema.org markup) helps both the user and search engines understand your site's hierarchy.</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Observed Symptom</th>
+                    <th>Likely Cause</th>
+                    <th>Priority Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>High bounce rate on homepage</td>
+                    <td>Unclear value proposition or overloaded menu</td>
+                    <td>Simplify menu, clarify the H1</td>
+                  </tr>
+                  <tr>
+                    <td>Lots of visits, few contacts</td>
+                    <td>CTAs missing or poorly placed</td>
+                    <td>Add a CTA above the fold on every key page</td>
+                  </tr>
+                  <tr>
+                    <td>Service pages rarely visited</td>
+                    <td>Architecture too deep or insufficient internal links</td>
+                    <td>Create internal links from homepage and blog</td>
+                  </tr>
+                  <tr>
+                    <td>Mobile visitors bouncing quickly</td>
+                    <td>Buttons too small or content not mobile-adapted</td>
+                    <td>Mobile audit with Chrome DevTools (responsive mode)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 id="seo-structure">How Content Structure Influences Your SEO</h2>
+            <p>Your site's architecture isn't just a user experience issue — it directly conditions your organic search ranking.</p>
+            <p>A well-planned structure helps Google to:</p>
+            <ul>
+              <li><strong>Understand your priorities</strong>: pages deeper in the architecture receive less "authority" than pages close to the root.</li>
+              <li><strong>Identify your topics</strong>: siloing signals to Google that you specialize in a given subject, which strengthens your ranking.</li>
+              <li><strong>Index efficiently</strong>: logical internal linking allows crawl bots to discover all your important pages.</li>
+            </ul>
+            <p>A practical rule: if an important page on your site is more than 3 clicks from the homepage, it will likely be less well indexed and ranked. This is one of the first diagnostics to run during an SEO audit.</p>
+
+            <div class="callout">
+              <strong>📚 Source</strong>
+              Google Search Central documents the importance of internal link structure for crawling and indexing: <a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable" target="_blank" rel="noopener noreferrer">developers.google.com — Crawlable links</a>
+            </div>
+
+            <h2 id="ux-checklist">Quick UX Checklist: 5 Minutes to Evaluate Your Site</h2>
+            <p>Open your site on mobile and ask yourself these questions:</p>
+            <ol>
+              <li>In less than 5 seconds, can a stranger understand what you do and for whom?</li>
+              <li>Is there an action button visible without scrolling?</li>
+              <li>Does your menu have more than 7 main items?</li>
+              <li>Are your most important service pages within 2 clicks of the homepage?</li>
+              <li>Does each page have one single objective and one single main call to action?</li>
+            </ol>
+            <p>If you answered "no" or "I'm not sure" to more than two of these questions, reviewing your site architecture is probably the most accessible growth lever you have right now.</p>
+
+            <!-- Final CTA -->
+            <div class="article-cta-inline">
+              <p>Clarity is the new luxury of the web. A customer who understands quickly is a customer who acts quickly.</p>
+              <a href="/en/contact.html?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=ux-content-structure" class="btn btn--primary">I Want to Turn My Site Into a Conversion Highway →</a>
+            </div>
+
+            <!-- FAQ -->
+            <h2 id="faq">Frequently Asked Questions about UX and Content Structure</h2>
+            <div class="article-faq" role="list">
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <span class="article-faq__q">Does a clean, minimal website hurt SEO?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">No, quite the opposite. Google prefers a site with fewer pages of high quality, well-linked together, rather than a cluttered site that's hard to navigate. Structural clarity is a positive signal for indexing and actually improves ranking on targeted keywords.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <span class="article-faq__q">How long does it take to redo a site architecture?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">For a standard small business, a UX strategy and information architecture phase typically takes 1 to 2 weeks. It's often the most profitable step in a web project because it conditions all the design and development decisions that follow.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <span class="article-faq__q">What is web accessibility (WCAG)?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">WCAG (Web Content Accessibility Guidelines) are international standards ensuring that people with visual impairments, hearing loss, or motor disabilities can navigate your site. Beyond being ethical, improving accessibility also positively impacts your SEO through semantic structure, alt texts, and colour contrasts.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <span class="article-faq__q">What is siloing in website architecture?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Siloing means grouping web pages into distinct, separate thematic sections. Each service or main topic has its own dedicated section with its own pages and internal links. This helps Google identify your specialization in each area and strengthens your ranking on the targeted keywords within each silo.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <span class="article-faq__q">How many items should a navigation menu have?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Miller's Law (psychologist George Miller, 1956) suggests the human brain efficiently processes 7 items (plus or minus 2) at a time. In UX practice, a main menu of 5 to 7 entries maximum is recommended. Beyond that, visitors experience cognitive overload and take more time to decide — or simply leave.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <span class="article-faq__q">Why do visitors leave my site without visiting other pages?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">This is often a sign of a broken user journey: either the page content doesn't match the expectations created by the acquisition channel (e.g. ad or Google search), or the next step isn't clearly indicated. Reviewing the consistency between the landing page message, what the visitor is looking for, and the call to action offered is the first diagnosis to run.</p>
+              </div>
+
+            </div>
+
+            <!-- Related articles -->
+            <h2 id="related-articles">Related Articles</h2>
+            <ul>
+              <li><a href="/en/blog/website-design/how-does-a-website-work.html">How Does a Website Work (for a Small Business Starting from Scratch)</a></li>
+              <li><a href="/en/blog/website-design/choose-website-format.html">Business Website, Landing Page or E-commerce: The Right Format for Your Budget</a></li>
+              <li><a href="/en/blog/website-design/html-css-js-guide-business-owner.html">HTML, CSS and JavaScript: What Every Business Owner Should Understand</a></li>
+              <li><a href="/en/blog/seo/core-web-vitals-guide.html">Core Web Vitals 2026: The Complete Guide for Small Businesses</a></li>
+            </ul>
+
+          </article>
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar" aria-label="Table of Contents">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Table of Contents</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#architecture-revenue">Why Architecture Decides Your Revenue</a></li>
+                <li><a href="#store-metaphor">The Store Metaphor</a></li>
+                <li><a href="#site-architecture">1. Site Architecture (siloing)</a></li>
+                <li><a href="#navigation-millers-law">2. Navigation and Miller's Law</a></li>
+                <li><a href="#content-scanning">3. Content and Scanning</a></li>
+                <li><a href="#ux-checks">3 UX Checks</a></li>
+                <li><a href="#seo-structure">Content Structure and SEO</a></li>
+                <li><a href="#ux-checklist">Quick UX Checklist</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Tools Referenced</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="https://www.nngroup.com/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group</a></li>
+                <li><a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable" target="_blank" rel="noopener noreferrer">Google Search Central — Links</a></li>
+                <li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a></li>
+                <li><a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console</a></li>
+              </ul>
+            </div>
+
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Need a UX Audit?</p>
+              <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.6">We analyze your architecture, menus, and user journeys to identify conversion blockers.</p>
+              <a href="/en/contact.html?utm_source=blog&amp;utm_medium=sidebar&amp;utm_campaign=ux-content-structure" class="btn btn--primary" style="width:100%;justify-content:center;font-size:.85rem">Request My UX Audit →</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA SECTION -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Ready to Turn Your Website Into a Sales Tool?</h2>
+        <p class="section__text">Let's talk about your project and see how better structure can transform your website into a real lever for attracting and converting clients.</p>
+        <a href="/en/contact.html?utm_source=blog&amp;utm_medium=cta-bottom&amp;utm_campaign=ux-content-structure" class="btn btn--primary">Request My Free Audit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Web agency specialized in website design, SEO and digital marketing.</p>
+        <address class="footer__address">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list"><li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li><li><a href="/en/contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list"><li><a href="/en/blog/website-design/">Website Design</a></li><li><a href="/en/blog/seo/">SEO</a></li><li><a href="/en/blog/digital-marketing/">Digital Marketing</a></li><li><a href="/en/blog/ai-automation/">AI &amp; Automation</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Areas Served</h3>
+        <ul class="footer__list"><li><a href="/en/zones-desservies/montreal.html">Montreal</a></li><li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li><li><a href="/en/zones-desservies/canada.html">Canada</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 NEXTIWEB. All rights reserved.</p></div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <!-- FAQ Accordion -->
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var item = this.closest('.article-faq__item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.article-faq__item').forEach(function(el){el.classList.remove('is-open');el.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
+        if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+      });
+    });
+  </script>
+
+  <!-- Floating bar: question + WhatsApp -->
+  <div class="float-bar">
+    <a href="/en/question.html" class="question-float" aria-label="Ask NEXTIWEB a question">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+</body>
+</html>

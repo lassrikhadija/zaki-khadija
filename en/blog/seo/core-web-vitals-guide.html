@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Core Web Vitals 2026: Know in 2 Min If Your Site Is Fast Enough — and What to Fix First | NEXTIWEB</title>
+  <meta name="description" content="LCP, INP, CLS: understand Core Web Vitals, test your site in 2 minutes with PageSpeed Insights, and fix the 5 most common causes of slowness for Canadian small businesses.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Core Web Vitals 2026: Test and Fix Your Website Speed">
+  <meta property="og:description" content="LCP, INP, CLS — the 3 metrics Google uses to rank your site. 2-minute test, 30-day fix plan, full FAQ.">
+  <meta property="og:url" content="https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Core Web Vitals 2026: SMB Guide to Test and Fix Your Speed">
+  <meta name="twitter:description" content="LCP, INP, CLS — 2-min test, 5 causes of slowness, 30-day plan. NEXTIWEB guide.">
+
+  <link rel="canonical" href="https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/performance-core-web-vitals.html">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/performance-core-web-vitals.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body code{background:rgba(0,230,118,.1);color:var(--color-primary);padding:.15em .4em;border-radius:.25rem;font-size:.88em;font-family:monospace}
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top;text-align:center}
+    .article-table td:first-child{text-align:left;font-weight:600}
+    .article-table .good{color:#00e676;font-weight:700}
+    .article-table .warn{color:#ffb300;font-weight:700}
+    .article-table .bad{color:#ff5252;font-weight:700}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Core Web Vitals 2026: Know in 2 Minutes If Your Site Is Fast Enough — and What to Fix First",
+    "description": "LCP, INP, CLS: understand Core Web Vitals, test your site with PageSpeed Insights, fix the 5 main causes of slowness. Complete guide for Canadian small businesses.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/en/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-04-24",
+    "dateModified": "2026-04-24",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "en-CA",
+    "keywords": "Core Web Vitals, LCP INP CLS, website speed SMB, PageSpeed Insights, technical SEO, web performance Canada 2026"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/en/blog/"},
+    {"@type":"ListItem","position":3,"name":"SEO","item":"https://nextiweb.ca/en/blog/seo/"},
+    {"@type":"ListItem","position":4,"name":"Core Web Vitals 2026","item":"https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What exactly are Core Web Vitals?","acceptedAnswer":{"@type":"Answer","text":"Core Web Vitals are 3 Google measurements that evaluate the technical user experience of a web page: LCP (time to display the main content), INP (reaction time after a click), CLS (visual stability). Since 2021, they are an official Google ranking factor, measured on real users via Chrome."}},
+    {"@type":"Question","name":"Why do my 3 numbers vary from one test to another?","acceptedAnswer":{"@type":"Answer","text":"Each PageSpeed Insights test runs a new lab measurement with its own simulated network and CPU context. Variations of 5-15% are normal. What matters to Google are the Field data (CrUX), measured over 28 rolling days on your real users — not an isolated lab measurement."}},
+    {"@type":"Question","name":"My LCP is 3.2 s. Is that urgent?","acceptedAnswer":{"@type":"Answer","text":"3.2 s is rated 'needs improvement' by Google (2.5-4 s range). It's not red/bad but it's below the 'good' threshold (≤ 2.5 s). Your organic traffic is measurably affected. Medium priority: fix within 60 days, not within 24 hours."}},
+    {"@type":"Question","name":"How can a WordPress site be fast?","acceptedAnswer":{"@type":"Answer","text":"A WordPress site can be fast with 4 combined choices: a lightweight theme (GeneratePress, Kadence, Astra), quality hosting (Kinsta, WP Engine, Pressable, Cloudways), a well-configured cache plugin (WP Rocket, LiteSpeed Cache) and images optimized in WebP. These 4 levers combined can achieve an LCP of 1.5 to 2.2 s."}},
+    {"@type":"Question","name":"Should I optimize mobile or desktop first?","acceptedAnswer":{"@type":"Answer","text":"Mobile, absolutely. Google has used mobile-first indexing since 2020: your mobile version determines your ranking. The majority of Canadian web traffic is on mobile. A slow mobile page penalizes even desktop visitors."}},
+    {"@type":"Question","name":"What is the budget to fix Core Web Vitals for an SMB?","acceptedAnswer":{"@type":"Answer","text":"$800 to $3,500 CAD for a 20-100 page small business depending on accumulated technical debt. Image and script fixes are the least expensive and deliver the majority of gains. A hosting upgrade ($30-100/month) can solve TTFB without development work."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav__item">
+          <a href="/en/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
+            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
+            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+          </div>
+        </div>
+        <a href="/en/secteurs.html" class="nav__link">Industries</a>
+        <a href="/en/ressources.html" class="nav__link">Resources</a>
+        <a href="/en/blog/" class="nav__link">Blog</a>
+        <a href="/en/a-propos.html" class="nav__link">About</a>
+        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/en/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/en/blog/seo/" class="breadcrumb__link">SEO</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Core Web Vitals 2026</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            SEO &amp; Performance
+          </p>
+          <h1 class="article-hero__title">Core Web Vitals 2026: Know in 2&nbsp;Min If Your Site Is Fast Enough — and What to Fix First</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              April 24, 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              9 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <div class="article-body">
+
+            <div class="article-summary">
+              <p class="article-summary__title">30-Second Summary</p>
+              <ul>
+                <li><strong>3 numbers that decide your ranking:</strong> LCP (display time), INP (click reaction time), CLS (visual stability). Google measures them, publishes them, and uses them to rank. Sources: <a href="https://developers.google.com/search/docs/appearance/core-web-vitals" target="_blank" rel="noopener">Google Search Central</a> · <a href="https://web.dev/vitals/" target="_blank" rel="noopener">web.dev/vitals</a>.</li>
+                <li><strong>The 2026 thresholds:</strong> LCP ≤ 2.5 s · INP ≤ 200 ms · CLS ≤ 0.1. Below these thresholds, your site loses measurable organic traffic.</li>
+                <li><strong>The test takes 2 minutes:</strong> <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a>, free — enter your URL, read 3 numbers. Red = urgent. Orange = needs fixing. Green = you're good.</li>
+                <li><strong>The first 3 fixes:</strong> unoptimized images, unnecessary third-party scripts, cheap hosting. They deliver the majority of gains for a cost between $0 and $300 CAD.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="metrics">The 3 Metrics That Decide Your Ranking</h2>
+            <p><strong>Core Web Vitals (CWV) are the 3 indicators Google uses to measure the technical user experience of your site.</strong> Officially added as ranking factors in June 2021 and strengthened in March 2024 with the replacement of FID by INP. Source: <a href="https://developers.google.com/search/docs/appearance/core-web-vitals" target="_blank" rel="noopener">Google Search Central — Core Web Vitals</a>.</p>
+            <ul>
+              <li><strong>LCP — Largest Contentful Paint.</strong> How long before the main element of your page (the hero image, the main heading) appears? Visitor feeling: <em>"Is it loading?"</em></li>
+              <li><strong>INP — Interaction to Next Paint.</strong> How long between a click and the first visible reaction of the page? Feeling: <em>"Does the button respond or not?"</em></li>
+              <li><strong>CLS — Cumulative Layout Shift.</strong> How much do your elements move during loading? A high CLS is the experience: <em>"I click a link, but it shifts and I open something else."</em></li>
+            </ul>
+
+            <div class="callout">
+              <strong>Did You Know?</strong>
+              According to the <a href="https://developer.chrome.com/docs/crux/" target="_blank" rel="noopener">Chrome User Experience Report</a>, more than half of all websites worldwide fail at least one of the 3 Core Web Vitals. Your site is probably in that half — the PageSpeed test below confirms it in 2 minutes.
+            </div>
+
+            <hr>
+
+            <h2 id="thresholds">Google 2026 Thresholds — What the Colours Mean</h2>
+            <p>Google defines 3 tiers for each metric. These are not marketing recommendations: they are the exact thresholds used by the ranking algorithm.</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>✅ Good (green)</th>
+                    <th>⚠️ Needs Improvement (orange)</th>
+                    <th>🔴 Poor (red)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>LCP</td>
+                    <td class="good">≤ 2.5 s</td>
+                    <td class="warn">2.5 – 4.0 s</td>
+                    <td class="bad">&gt; 4.0 s</td>
+                  </tr>
+                  <tr>
+                    <td>INP</td>
+                    <td class="good">≤ 200 ms</td>
+                    <td class="warn">200 – 500 ms</td>
+                    <td class="bad">&gt; 500 ms</td>
+                  </tr>
+                  <tr>
+                    <td>CLS</td>
+                    <td class="good">≤ 0.1</td>
+                    <td class="warn">0.1 – 0.25</td>
+                    <td class="bad">&gt; 0.25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.82rem;color:var(--color-text-muted);">Sources: <a href="https://web.dev/vitals/" target="_blank" rel="noopener">Google — web.dev/vitals</a> · <a href="https://developer.chrome.com/docs/crux/" target="_blank" rel="noopener">Chrome for Developers</a>.</p>
+
+            <div class="callout">
+              <strong>Important — Real Data vs Lab</strong>
+              Google uses measurements from <strong>real users</strong> (Chrome UX Report), not lab measurements. Your own computer on gigabit fibre doesn't reflect what your client experiences on 4G in a rural area.
+            </div>
+
+            <div class="callout">
+              <strong>Did You Know?</strong>
+              According to the <a href="https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html" target="_blank" rel="noopener">Deloitte — Milliseconds Make Millions</a> study, a 0.1 s improvement in LCP leads to an average of +8% e-commerce conversion and +10% time spent on lead-gen pages. Speed is not a technical detail — it's a direct revenue lever.
+            </div>
+
+            <hr>
+
+            <h2 id="test">How to Test Your Site in 2 Minutes</h2>
+            <p>No paid tool needed. 4-step procedure:</p>
+            <ol>
+              <li>Go to <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a>.</li>
+              <li>Paste your homepage URL. Click "Analyze".</li>
+              <li>Wait 30 to 60 seconds.</li>
+              <li>Read the 3 numbers in the <strong>"Discover what your real users are experiencing"</strong> section.</li>
+            </ol>
+            <p>You'll see a mobile card and a desktop card. <strong>Focus on mobile</strong>: the majority of Canadian web traffic is on mobile in 2026, and Google has used mobile-first indexing since 2020 to determine your ranking.</p>
+            <p>If your 3 numbers are green on mobile, your site passes the CWV exam. If even one is red or orange, you have work to do. Also run the test on your contact or quote page — that's often where slowness is most critical.</p>
+
+            <hr>
+
+            <h2 id="causes">The 5 Most Common Causes of Slowness on Small Business Sites</h2>
+            <p>These 5 problems appear regularly in performance audits — data from the <a href="https://almanac.httparchive.org/en/2024/" target="_blank" rel="noopener">HTTP Archive Web Almanac 2024</a> confirms their prevalence globally.</p>
+
+            <h3>1. Unoptimized Images — the Most Widespread Cause</h3>
+            <p>JPG or PNG files at 2–4 MB delivered uncompressed, not converted to WebP, loaded above the fold without a <code>fetchpriority</code> attribute. Direct impact: LCP drifting to 4–6 s. The <a href="https://almanac.httparchive.org/en/2024/media" target="_blank" rel="noopener">Web Almanac 2024</a> confirms images remain the #1 source of page weight on the web. Fix: <a href="https://squoosh.app/" target="_blank" rel="noopener">Squoosh</a> or <a href="https://tinypng.com/" target="_blank" rel="noopener">TinyPNG</a>, convert to WebP, resize to actual display dimensions. Cost: <strong>$0</strong>.</p>
+
+            <h3>2. Invasive Third-Party Scripts</h3>
+            <p>Messenger chat, Facebook pixel, Google Analytics, Hotjar, SEO trackers, exit popups — each third-party script is a black box that can block rendering. According to the <a href="https://almanac.httparchive.org/en/2024/third-parties" target="_blank" rel="noopener">Web Almanac 2024</a>, third-party scripts represent a median of <strong>45% of page load time</strong>. Fix: audit your scripts, remove unused ones, add deferred loading (<code>async</code>/<code>defer</code>) on the rest.</p>
+
+            <h3>3. Cheap Shared Hosting</h3>
+            <p>$4–5/month hosting shared with hundreds of other sites gives a TTFB (time to first byte) of 1–2 seconds, which drags down everything else. Fix: upgrade to VPS or managed hosting — Kinsta, WP Engine, Pressable, Cloudways — starting at <strong>$30/month CAD</strong>.</p>
+
+            <h3>4. Heavy Theme or Page Builder</h3>
+            <p>Some popular themes (Divi, Avada) with all options enabled generate 8–12 MB of CSS and JS per page. A lightweight theme (GeneratePress, Kadence, Astra) stays under 1 MB. Fix: theme change — a significant undertaking to plan, but one of the most durable performance gains.</p>
+
+            <h3>5. Elements That Jump During Loading (CLS)</h3>
+            <p>Banners, images without declared dimensions, web fonts loaded late. Impact: CLS explodes, visitors click in the wrong place. Fix: declare <code>width</code> and <code>height</code> on all images, preload critical fonts with <code>rel="preload"</code>.</p>
+
+            <hr>
+
+            <div class="article-cta-inline">
+              <p>Diagnosing takes 2 minutes. Prioritizing fixes takes 30 minutes. If you don't have time to untangle this yourself, we handle it.</p>
+              <a href="/en/contact.html?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=core-web-vitals-guide&amp;utm_content=pause-cta" class="btn btn--primary">Request a Free Audit →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="plan">The 30-Day Fix Plan</h2>
+
+            <h3>Week 1 — What You Do (2 h)</h3>
+            <ul>
+              <li>Test your homepage and the 5 most-visited pages in <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a>.</li>
+              <li>Write down the 3 numbers per page in a simple spreadsheet.</li>
+              <li>Identify which of the 5 causes (images, scripts, hosting, theme, CLS) is your main problem.</li>
+            </ul>
+
+            <h3>Week 2 — Delegated to Developer (8–12 h)</h3>
+            <ul>
+              <li>Compress and convert all images over 200 KB to WebP.</li>
+              <li>Audit third-party scripts, remove those with no real usage.</li>
+              <li>Add <code>async</code>/<code>defer</code> to non-critical scripts.</li>
+            </ul>
+
+            <h3>Week 3 — Delegated to Developer (4–8 h)</h3>
+            <ul>
+              <li>Check TTFB. If consistently above 800 ms, plan hosting migration.</li>
+              <li>Add <code>width</code>/<code>height</code> dimensions to all images.</li>
+              <li>Preload critical fonts.</li>
+            </ul>
+
+            <h3>Week 4 — What You Do (1 h)</h3>
+            <ul>
+              <li>Re-test PageSpeed Insights on the same pages.</li>
+              <li>Validate gains. Track impressions and CTR in <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console</a>.</li>
+            </ul>
+
+            <div class="callout">
+              <strong>Typical Budget</strong>
+              $800 to $3,500 CAD for a 20 to 100 page SMB depending on accumulated technical debt. If someone quotes you $8,000 without first showing you your current 3 numbers, get a second opinion.
+            </div>
+
+            <hr>
+
+            <h2 id="validation">How to Verify Your Fixes Are Working</h2>
+            <p><strong>CrUX data updates every 28 days.</strong> A real Google verdict therefore takes about 4 weeks. But you have faster intermediate signals:</p>
+            <ul>
+              <li><strong>PageSpeed Insights — Diagnostics tab:</strong> live lab measurement, useful to validate that a fix works technically.</li>
+              <li><strong><a href="https://www.webpagetest.org/" target="_blank" rel="noopener">WebPageTest</a>:</strong> detailed loading waterfall, identifies in 3 minutes which specific script is slowing everything down.</li>
+              <li><strong>Search Console — Core Web Vitals Report:</strong> <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Search Console</a> → Experience → Core Web Vitals. Updated weekly.</li>
+            </ul>
+
+            <div class="callout">
+              <strong>Did You Know?</strong>
+              According to <a href="https://developers.google.com/search/blog/2021/04/more-details-page-experience" target="_blank" rel="noopener">Google Search Central</a>, moving an LCP from "poor" to "good" increases average organic traffic by 6 to 18% over 60 to 90 days, all else being equal.
+            </div>
+
+            <hr>
+
+            <h2 id="faq">FAQ: 12 Questions to Manage Your Site Speed</h2>
+            <div class="article-faq">
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">1. What exactly are Core Web Vitals?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Core Web Vitals are 3 Google measurements that evaluate the technical user experience of a web page: LCP (time to display the main content), INP (reaction time after a click), CLS (visual stability). Since 2021, they are an official ranking factor. They are measured on real users via Chrome.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">2. Why do my 3 numbers vary from one test to another?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Each PageSpeed Insights test runs a new lab measurement with its own simulated network and CPU context. Variations of 5–15% are normal. What matters to Google are the Field data (CrUX), measured over 28 rolling days on your real users — not an isolated lab measurement.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">3. Is the PageSpeed "Performance" score the same as Core Web Vitals?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">No. The score out of 100 is a composite grade that includes other metrics (First Contentful Paint, Speed Index, Total Blocking Time). Core Web Vitals are the 3 specific metrics Google uses for ranking: LCP, INP, CLS. A score of 85/100 can coexist with a red LCP.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">4. My LCP is 3.2 s. Is that urgent?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">3.2 s is rated "needs improvement" by Google (2.5–4 s range). It's not red/poor but it's below the "good" threshold (≤ 2.5 s). Your organic traffic is measurably affected. Medium priority: fix within 60 days, not within 24 hours.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">5. How can a WordPress site be fast?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">A WordPress site can be fast with 4 combined choices: a lightweight theme (GeneratePress, Kadence, Astra), quality hosting (Kinsta, WP Engine, Pressable, Cloudways), a well-configured cache plugin (WP Rocket, LiteSpeed Cache) and images optimized in WebP. These 4 levers combined can achieve an LCP of 1.5 to 2.2 s.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">6. Do I need to change hosts to improve my TTFB?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Yes, if your TTFB (time to first byte) consistently exceeds 800 ms in PageSpeed. Budget shared hosting at $4–5/month is barely compatible with good Core Web Vitals. Recommended alternatives: Kinsta, WP Engine, Pressable, Cloudways — budget $30 to $100/month CAD depending on traffic.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">7. Are cache plugins (WP Rocket, W3 Total Cache) enough?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">They are necessary but not sufficient. A good cache plugin fixes many WordPress speed issues: cached HTML delivery, GZIP compression, lazy-loading images. But it can't compensate for a heavy theme, slow hosting, or 2 MB images. It's one lever among many, not a complete solution.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">8. Is a CDN useful for a Canadian small business?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Yes, especially if your clientele is spread across Canada or internationally. A CDN (Cloudflare, BunnyCDN) serves your static files from servers close to your visitors, reducing TTFB by 200 to 500 ms. For a local SMB (Montreal, Toronto, Vancouver), the impact is smaller but positive. <a href="https://www.cloudflare.com/plans/" target="_blank" rel="noopener">Cloudflare</a> offers a free plan that's sufficient to start.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">9. Do embedded YouTube videos slow down my page?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Yes, significantly. A YouTube iframe loads 1.2 to 1.8 MB of JavaScript even without playing. Solution: use lazy loading ("lite embed" — WP Feather plugin or lite-youtube-embed), which only shows the thumbnail and loads YouTube on click. Typical LCP gain: 0.8 to 1.5 s.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">10. How many third-party scripts are "acceptable"?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Ideally fewer than 5 third-party scripts total. Google Analytics + 1 or 2 business tools are sufficient for most SMBs. According to the <a href="https://almanac.httparchive.org/en/2024/third-parties" target="_blank" rel="noopener">Web Almanac 2024</a>, third-party scripts account for a median of 45% of load time. Beyond 8 scripts, a site becomes structurally slow.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">11. What is the real impact on conversions of a 4 s vs 2 s LCP?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">The <a href="https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html" target="_blank" rel="noopener">Deloitte — Milliseconds Make Millions</a> study confirms that a 0.1 s improvement improves conversions by an average of 8% in e-commerce and 10% in lead-gen. Going from 4 s to 2 s therefore represents a very significant gain — the exact impact depends on your sector and traffic, but it's one of the most accessible ROI levers available.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">12. Should I optimize mobile or desktop first?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Mobile, as an absolute priority. Google has used mobile-first indexing since 2020: your mobile version determines your ranking. The majority of Canadian web traffic is on mobile. A slow mobile page penalizes even visitors arriving on desktop.</p>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <h2 id="next-step">Your Next Step</h2>
+            <p>Your site is probably loading too slowly. The 2 minutes in PageSpeed Insights will confirm it. The 30-day plan above tells you what to do next.</p>
+
+            <div class="article-cta-inline">
+              <p>SEO + speed audit — 45 min, report prioritized by business impact, delivered within 48 h.</p>
+              <a href="/en/contact.html?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=core-web-vitals-guide&amp;utm_content=cta-final" class="btn btn--primary">I Want My Free Audit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">We don't sell you anything on the call — we start by helping you see clearly.</p>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">In This Article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#metrics">LCP, INP, CLS — the 3 metrics</a></li>
+                <li><a href="#thresholds">Google 2026 Thresholds</a></li>
+                <li><a href="#test">Test in 2 Minutes</a></li>
+                <li><a href="#causes">5 Causes of Slowness</a></li>
+                <li><a href="#plan">30-Day Fix Plan</a></li>
+                <li><a href="#validation">Verify Your Fixes</a></li>
+                <li><a href="#faq">FAQ (12 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Tools Referenced</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights →</a></li>
+                <li><a href="https://www.webpagetest.org/" target="_blank" rel="noopener">WebPageTest →</a></li>
+                <li><a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console →</a></li>
+                <li><a href="https://squoosh.app/" target="_blank" rel="noopener">Squoosh (images) →</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Related Articles</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/en/blog/website-design/html-css-js-guide-business-owner.html">HTML, CSS, JS — business owner guide →</a></li>
+                <li><a href="/en/blog/website-design/how-does-a-website-work.html">How does a website work →</a></li>
+                <li><a href="/en/seo.html">Our SEO Services →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Your Next Client Is Searching for You. Will They Find You?</h2>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility, and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <a href="/en/contact.html" class="btn btn--primary">I Want My Audit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
+        <address class="footer__address">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li>
+          <li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li>
+          <li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li>
+          <li><a href="/en/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list">
+          <li><a href="/en/blog/website-design/">Website Design</a></li>
+          <li><a href="/en/blog/seo/">SEO</a></li>
+          <li><a href="/en/blog/digital-marketing/">Digital Marketing</a></li>
+          <li><a href="/en/blog/ai-automation/">AI &amp; Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Areas Served</h3>
+        <ul class="footer__list">
+          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
+          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
+          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 NEXTIWEB. All rights reserved.</p></div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <div class="float-bar">
+    <a href="/en/question.html" class="question-float" aria-label="Ask NEXTIWEB a question">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var item = this.closest('.article-faq__item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.article-faq__item').forEach(function(el){el.classList.remove('is-open');el.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
+        if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -141,7 +141,16 @@
           <p class="section__subtitle">The form below properly structures requests and can be connected to your sending tool or CRM. In its current phase, it serves as a functional conversion mockup.</p>
         </header>
         <div class="contact-grid">
-          <form class="contact-form" action="/en/contact.html" method="get">
+          <form class="contact-form"
+            name="audit-gratuit-en"
+            action="/en/merci.html"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            id="audit-form-en"
+          >
+            <input type="hidden" name="form-name" value="audit-gratuit-en">
+            <input type="hidden" name="bot-field" style="display:none">
             <div class="contact-form__row">
               <div class="contact-form__field">
                 <label class="contact-form__label" for="name">Name</label>

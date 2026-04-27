@@ -4,6 +4,9 @@
 /creation-de-site-internet-et-conception-de-site-web/   /creation-site.html    301
 /contactez-nous/                                         /contact.html          301
 
+# Redirect article EN (mauvaise URL devinée par Google)
+/en/blog/seo/performance-core-web-vitals.html    /en/blog/seo/core-web-vitals-guide.html    301
+
 # URLs mortes — 410 Gone
 /feed/    /404    410
 /.html    /404    410

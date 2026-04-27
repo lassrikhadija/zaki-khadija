@@ -1,0 +1,9 @@
+# Redirections 301 — Anciennes URLs WordPress
+/agence-de-creation-de-site-e-commerce-performantes/    /creation-site.html    301
+/agence-de-creation-de-sites-internet-adaptes/          /creation-site.html    301
+/creation-de-site-internet-et-conception-de-site-web/   /creation-site.html    301
+/contactez-nous/                                         /contact.html          301
+
+# URLs mortes — 410 Gone
+/feed/    /404    410
+/.html    /404    410

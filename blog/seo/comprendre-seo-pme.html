@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Comprendre le SEO en 2026 : le guide du dirigeant PME | NEXTIWEB</title>
+  <meta name="description" content="SEO technique, contenu, autorité et moteurs IA — tout ce qu'une PME québécoise doit comprendre pour être visible en ligne en 2026. Guide complet NEXTIWEB.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Comprendre le SEO en 2026 : le guide du dirigeant PME">
+  <meta property="og:description" content="SEO technique, contenu, autorité et moteurs IA — tout ce qu'une PME québécoise doit comprendre pour être visible en ligne en 2026.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/seo/comprendre-seo-pme.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comprendre le SEO en 2026 : le guide du dirigeant PME">
+  <meta name="twitter:description" content="SEO technique, contenu, autorité et moteurs IA — guide complet NEXTIWEB pour les PME québécoises.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/seo/comprendre-seo-pme.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/comprendre-seo-pme.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/comprendre-seo-pme.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    /* Fil d'Ariane */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    /* Float bar */
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+
+    /* Article layout */
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+
+    /* Summary box */
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+
+    /* Article body */
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+
+    /* Callout box */
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+
+    /* CTA inline */
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+
+    /* Table */
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+
+    /* FAQ */
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+
+    /* Sidebar layout */
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+
+    @media(max-width:900px){
+      .article-layout{grid-template-columns:1fr}
+      .article-sidebar{display:none}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Comprendre le SEO en 2026 : le guide du dirigeant PME (search classique + moteurs IA)",
+    "description": "SEO technique, contenu, autorité et moteurs IA — tout ce qu'une PME québécoise doit comprendre pour être visible en ligne en 2026.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-04-28",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/seo/comprendre-seo-pme.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "SEO PME, référencement naturel Montréal, SEO technique, backlinks, moteurs IA ChatGPT SEO 2026, Google AI Overviews, différence SEO SEA, budget SEO Québec"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"SEO & Référencement","item":"https://nextiweb.ca/blog/seo/"},
+    {"@type":"ListItem","position":4,"name":"Comprendre le SEO en 2026 : le guide du dirigeant PME","item":"https://nextiweb.ca/blog/seo/comprendre-seo-pme.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Qu'est-ce que le SEO et comment fonctionne-t-il ?","acceptedAnswer":{"@type":"Answer","text":"Le SEO (Search Engine Optimization) est l'ensemble des méthodes qui font apparaître votre site dans les résultats gratuits de Google et des moteurs IA. Il fonctionne en optimisant 3 piliers : technique (vitesse, mobile, indexation), contenu (réponses précises aux questions clients), autorité (backlinks de sites crédibles vers votre domaine)."}},
+    {"@type":"Question","name":"Combien coûte le SEO pour une PME québécoise en 2026 ?","acceptedAnswer":{"@type":"Answer","text":"Entre 800 $ et 3 500 $ par mois selon le secteur et la concurrence. PME locale : 800–1 500 $/mois. PME B2B : 1 500–3 500 $/mois. E-commerce concurrentiel : 3 000 $+/mois. Sous 500 $/mois, les résultats sont difficiles à maintenir dans le temps."}},
+    {"@type":"Question","name":"En combien de temps voir des résultats SEO ?","acceptedAnswer":{"@type":"Answer","text":"4 à 9 mois pour les premiers résultats sérieux. Mois 1–3 : construction sans trafic visible. Mois 4–6 : premiers articles qui rankent sur longue traîne. Mois 7–12 : trafic organique devient un canal de leads fiable. Toute promesse de résultats en 30 jours sans publicité payante est un signal d'alarme."}},
+    {"@type":"Question","name":"Quelle est la différence entre SEO et SEA ?","acceptedAnswer":{"@type":"Answer","text":"SEO = résultats gratuits organiques (vous optimisez, vous ne payez pas Google). SEA = résultats payants (Google Ads, vous payez chaque clic). Dès que vous arrêtez de payer en SEA, le trafic disparaît. Le SEO construit un actif durable ; le SEA est un loyer mensuel."}},
+    {"@type":"Question","name":"Les moteurs IA comme ChatGPT remplacent-ils Google ?","acceptedAnswer":{"@type":"Answer","text":"Non — ils le complètent. Google reste dominant mais ChatGPT, Perplexity, Gemini et Google AI Overviews captent une part croissante. Une stratégie SEO 2026 optimise pour les deux simultanément."}},
+    {"@type":"Question","name":"Qu'est-ce qu'un backlink et pourquoi c'est important ?","acceptedAnswer":{"@type":"Answer","text":"Un backlink est un lien d'un autre site vers le vôtre — Google le considère comme un vote de confiance. Plus vous avez de backlinks de sites crédibles, plus votre autorité grimpe. Selon Backlinko, la page #1 sur Google a en moyenne 3,8 fois plus de backlinks que les positions 2–10."}},
+    {"@type":"Question","name":"Le SEO fonctionne-t-il pour une PME locale ?","acceptedAnswer":{"@type":"Answer","text":"Oui, et particulièrement bien grâce au local pack Google (les 3 résultats avec carte). Une PME locale bien optimisée sur Google Business Profile + SEO local capte une large part des recherches géographiques de son secteur. Budget de départ : 600–1 200 $/mois."}},
+    {"@type":"Question","name":"Faut-il un blog pour faire du SEO ?","acceptedAnswer":{"@type":"Answer","text":"Pas strictement — mais un blog accélère tout. Il permet de créer des articles ciblés sur les requêtes informatives de vos clients. Une PME sans blog peut ranker si ses pages commerciales sont approfondies (1 500–2 500 mots par page pilier)."}
+    }
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/seo/" class="breadcrumb__link">SEO &amp; Référencement</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Comprendre le SEO en 2026</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO ARTICLE -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            SEO &amp; Référencement
+          </p>
+          <h1 class="article-hero__title">Comprendre le SEO en 2026 : le guide du dirigeant PME<br>(search classique + moteurs IA)</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              28 avril 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min de lecture
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- BODY -->
+          <div class="article-body">
+
+            <!-- Résumé -->
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li>Le SEO, c'est l'art d'être trouvé gratuitement par Google <strong>et</strong> les moteurs IA (ChatGPT, Perplexity, Gemini, Google AI Overviews) quand un client tape une question liée à votre offre.</li>
+                <li>Le SEO repose sur <strong>3 piliers</strong> : technique (Google peut-il lire votre site ?), contenu (répondez-vous aux questions de vos clients ?), autorité (d'autres sites pointent-ils vers vous ?).</li>
+                <li>La grande majorité des expériences en ligne démarrent par un moteur de recherche — et en 2026, les moteurs IA captent une part croissante des recherches avant même Google.</li>
+                <li>Le SEO n'est pas gratuit (il coûte du temps et de la rigueur) mais c'est <strong>le seul canal digital qui devient un actif</strong> au lieu d'être un loyer mensuel comme la publicité payante.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="definition">Qu'est-ce que le SEO, concrètement, pour une PME ?</h2>
+            <p><strong>Le SEO (Search Engine Optimization), c'est l'ensemble des méthodes qui font apparaître votre site dans les résultats gratuits de Google, Bing et les moteurs IA quand votre client idéal tape une question.</strong> Résultats gratuits = non payés, par opposition aux annonces "Sponsorisé" en haut de page.</p>
+            <p>Imaginez Google et ChatGPT comme des bibliothécaires hyper-méthodiques. Des millions de pages web existent — leur travail est de trouver et présenter <strong>la meilleure</strong> en premier, pour chaque question posée. Le SEO, c'est l'art de convaincre ces bibliothécaires que <strong>votre page</strong> est la meilleure réponse possible. Ils évaluent 3 dimensions : est-ce que la page est techniquement accessible (elle charge vite, fonctionne sur mobile, n'est pas cassée) ? Est-ce que le contenu répond <strong>précisément</strong> à la question posée (avec la bonne profondeur et les bons mots) ? Est-ce que d'autres sites crédibles pointent vers cette page, signalant qu'elle fait autorité ? Quand ces 3 critères sont remplis, votre page monte. Quand ils sont absents, elle reste invisible même si elle est belle.</p>
+
+            <div class="callout">
+              <strong>Le saviez-vous ?</strong>
+              Selon BrightEdge, 53,3 % du trafic web mondial provient de la recherche organique (SEO) — contre 15 % pour la recherche payante et 5 % pour les réseaux sociaux. Le SEO reste le premier canal digital en volume. Source : <a href="https://www.brightedge.com/resources/research-reports" target="_blank" rel="noopener">BrightEdge — Organic Search Report</a>.
+            </div>
+
+            <hr>
+
+            <h2 id="piliers">Quels sont les 3 piliers du SEO en 2026 ?</h2>
+            <p><strong>Technique, contenu, autorité — trois piliers indissociables.</strong> Il suffit qu'un seul manque pour que tout votre SEO s'effondre. C'est pourquoi les agences qui vous promettent "des résultats avec 3 articles par mois" sans toucher au technique ni à l'autorité vous vendent du vent.</p>
+
+            <p><strong>Pilier 1 — Le SEO technique.</strong> Est-ce que Google et les IA peuvent <strong>lire</strong> votre site correctement ? Cela inclut la vitesse de chargement (Core Web Vitals), la version mobile, l'indexation (sitemap, robots.txt), la structure des URLs, les données structurées (schema.org), l'absence d'erreurs 404. Un site techniquement cassé peut avoir le meilleur contenu du monde — il restera invisible.</p>
+
+            <p><strong>Pilier 2 — Le SEO de contenu.</strong> Produisez-vous des <strong>réponses complètes</strong> aux questions réelles de vos clients ? Cela implique de faire une recherche de mots-clés, de comprendre l'intention derrière chaque requête (info, achat, local), de structurer vos pages en H1/H2/H3 logiques, d'écrire en profondeur (1 500–2 500 mots pour les articles piliers), de couvrir le sujet sous toutes ses facettes.</p>
+
+            <p><strong>Pilier 3 — Le SEO d'autorité (backlinks).</strong> D'autres sites crédibles pointent-ils vers le vôtre ? Chaque lien externe agit comme un vote de confiance. Pas n'importe quel vote : un lien d'un site référent vaut mille liens de fermes à spam. Les stratégies propres pour obtenir de l'autorité : contenu exceptionnel qui génère naturellement des liens, partenariats avec acteurs de votre secteur, relations presse, participations à des podcasts, interviews d'experts. <strong>Ce qui ne marche plus en 2026</strong> : l'achat de liens de masse, les échanges de liens artificiels, les annuaires à spam.</p>
+
+            <div class="callout">
+              <strong>Le saviez-vous ?</strong>
+              Selon Backlinko, la page #1 sur Google a en moyenne 3,8 fois plus de backlinks que les pages #2 à #10. L'autorité reste le facteur de classement le plus difficile à manipuler — donc le plus valorisé. Source : <a href="https://backlinko.com/search-engine-ranking" target="_blank" rel="noopener">Backlinko — Ranking Factors Study</a>.
+            </div>
+
+            <hr>
+
+            <h2 id="comment-google-lit">Comment Google et les moteurs IA lisent-ils votre site en 2026 ?</h2>
+            <p><strong>Ils crawlent (parcourent) votre site avec des robots automatisés, puis indexent (stockent) les pages dans leur base, et enfin classent (ordonnent) ces pages pour chaque requête.</strong> La différence entre 2024 et 2026, c'est que les IA ajoutent une 4e étape : <strong>synthétiser</strong> plusieurs pages en une seule réponse conversationnelle.</p>
+
+            <p><strong>Étape 1 — Crawl.</strong> Des robots (GoogleBot, BingBot, ChatGPTBot, ClaudeBot, PerplexityBot, Google-Extended) visitent votre site et suivent les liens de page en page. Ils ne peuvent indexer que ce qu'ils trouvent — d'où l'importance d'un maillage interne propre et d'un sitemap à jour.</p>
+
+            <p><strong>Étape 2 — Indexation.</strong> Les pages trouvées sont analysées et stockées. Google ne garde que ce qu'il juge pertinent — d'où l'importance de produire des pages utiles, originales et structurées. Une page mal balisée ou trop pauvre est simplement ignorée.</p>
+
+            <p><strong>Étape 3 — Classement.</strong> Quand un utilisateur tape une requête, l'algorithme choisit les 10 meilleures pages à afficher parmi des millions indexées. Google utilise plus de 200 signaux (pertinence, autorité, fraîcheur, vitesse, mobile, etc.) qu'il combine automatiquement.</p>
+
+            <p><strong>Étape 4 — Synthèse IA (nouveauté 2026).</strong> ChatGPT, Perplexity, Gemini et Google AI Overviews ne donnent plus 10 liens — ils donnent <strong>une réponse rédigée</strong> qui cite 3 à 5 sources. Votre objectif en 2026 : <strong>être cité comme source</strong> dans ces réponses IA. Cela demande un contenu ultra-structuré (FAQ autoporteuses, premier paragraphe qui répond directement, schema JSON-LD, entités nommées).</p>
+
+            <p>Cette 4e étape redistribue les cartes. Un site mal référencé sur Google mais bien structuré pour les IA peut soudainement apparaître dans une réponse ChatGPT devant un concurrent beaucoup plus gros. Pour la première fois depuis 15 ans, les PME rigoureuses ont une chance de devancer les gros acteurs paresseux.</p>
+
+            <hr>
+
+            <!-- CTA PAUSE — vers page service SEO -->
+            <div class="article-cta-inline">
+              <p>Vous voulez savoir où en est votre site face à ces 4 étapes ? C'est exactement ce qu'on diagnostique lors de notre audit.</p>
+              <a href="/seo.html" class="btn btn--primary">Voir notre service SEO →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="seo-sea-sem">Quelle est la différence entre SEO, SEA et SEM ?</h2>
+            <p><strong>SEO = résultats gratuits (organiques). SEA = résultats payants (Google Ads). SEM = les deux combinés.</strong> Cette confusion coûte chaque année des milliers de dollars aux PME qui pensent "faire du SEO" en payant des publicités.</p>
+
+            <p><strong>SEO (Search Engine Optimization)</strong> : vous optimisez votre site pour apparaître <strong>gratuitement</strong> dans les résultats organiques — ceux sans mention "Sponsorisé". Vous ne payez ni Google ni aucune plateforme. Vous investissez du temps et de la rigueur. Les résultats prennent 3 à 9 mois à apparaître, mais ils deviennent un actif durable.</p>
+
+            <p><strong>SEA (Search Engine Advertising)</strong> : vous payez Google Ads, Bing Ads ou équivalent pour apparaître <strong>instantanément</strong> en haut des résultats avec la mention "Sponsorisé". Dès que vous arrêtez de payer, le trafic disparaît. C'est un loyer, pas un actif.</p>
+
+            <p><strong>SEM (Search Engine Marketing)</strong> : le terme englobant qui regroupe SEO + SEA. Une vraie stratégie search combine les deux — le SEA pour les résultats immédiats, le SEO pour construire un patrimoine qui produira encore dans 3 ans.</p>
+
+            <p>L'erreur classique : un dirigeant entend "il faut faire du SEO" et paie une agence qui, en coulisses, lance uniquement des Google Ads. Il paie la pub + la marge de l'agence + les honoraires mensuels, pendant des années, sans construire aucun actif. Si votre "agence SEO" ne vous parle jamais de contenu, de backlinks et de technique — et que les résultats s'arrêtent dès que vous stoppez les factures — vous payez du SEA déguisé en SEO.</p>
+
+            <div class="callout">
+              <strong>Le saviez-vous ?</strong>
+              Une étude WordStream montre que le clic organique coûte <strong>0 $</strong> marginal, contre une moyenne de 2,69 $/clic en Google Ads (tous secteurs confondus) et jusqu'à 54 $/clic dans les secteurs juridiques. Le SEO est bien moins cher à long terme. Source : <a href="https://www.wordstream.com/blog/ws/2022/06/08/google-ads-benchmarks" target="_blank" rel="noopener">WordStream — Google Ads Benchmarks</a>.
+            </div>
+
+            <hr>
+
+            <h2 id="budget-delai">Combien de temps et quel budget pour voir des résultats SEO en 2026 ?</h2>
+            <p><strong>Comptez 4 à 9 mois pour voir les premiers résultats sérieux.</strong> Toute promesse de "résultats en 30 jours" sans publicité payante est un signal d'alarme.</p>
+
+            <p><strong>Calendrier réaliste.</strong> Mois 1–3 : audit, corrections techniques, recherche de mots-clés, production des 5 à 10 premiers articles piliers. <strong>Aucun trafic nouveau visible</strong> à ce stade — c'est la phase de construction. Mois 4–6 : Google indexe progressivement, les premiers articles montent sur des mots-clés longue traîne (peu concurrentiels), premiers leads organiques. Mois 7–12 : les articles piliers commencent à ranker sur des mots-clés moyennement concurrentiels, l'autorité du domaine grimpe, le trafic organique devient un canal de leads fiable.</p>
+
+            <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:.5rem;"><em>Fourchettes de budget estimées selon le marché québécois en 2026 — les prix varient selon l'agence, le secteur et la concurrence.</em></p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Type de PME</th>
+                    <th>Budget mensuel estimé</th>
+                    <th>Ce qui est inclus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>PME locale</strong></td>
+                    <td>800 $ – 1 500 $/mois</td>
+                    <td>SEO local + 2–3 articles/mois</td>
+                  </tr>
+                  <tr>
+                    <td><strong>PME B2B</strong></td>
+                    <td>1 500 $ – 3 500 $/mois</td>
+                    <td>Contenu approfondi + backlinks + technique</td>
+                  </tr>
+                  <tr>
+                    <td><strong>E-commerce concurrentiel</strong></td>
+                    <td>3 000 $+/mois</td>
+                    <td>SEO produits + contenu + autorité de domaine</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Ce qui coûte le plus cher dans le SEO, ce n'est pas les outils (Ahrefs, SEMrush, Screaming Frog — 100 à 400 $/mois). C'est <strong>le temps humain</strong> : rédiger des articles approfondis, faire de la recherche de mots-clés rigoureuse, construire des backlinks propres. Une PME qui délègue intégralement son SEO pour 500 $/mois reçoit rarement plus de 4 à 6 heures de vrai travail humain — et les résultats s'en ressentent.</p>
+
+            <hr>
+
+            <h2 id="faq">FAQ : 8 questions essentielles pour comprendre le SEO en 2026</h2>
+            <div class="article-faq">
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">1. Qu'est-ce que le SEO et comment fonctionne-t-il ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Le SEO (Search Engine Optimization) est l'ensemble des méthodes qui font apparaître votre site dans les résultats gratuits de Google et des moteurs IA. Il fonctionne en optimisant 3 piliers : technique (vitesse, mobile, indexation), contenu (réponses précises aux questions clients), autorité (backlinks de sites crédibles vers votre domaine).</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">2. Combien coûte le SEO pour une PME québécoise en 2026 ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Entre 800 $ et 3 500 $ par mois selon le secteur et la concurrence. PME locale : 800–1 500 $/mois. PME B2B : 1 500–3 500 $/mois. E-commerce concurrentiel : 3 000 $+/mois. Sous 500 $/mois, les résultats sont difficiles à maintenir dans le temps.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">3. En combien de temps voir des résultats SEO ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">4 à 9 mois pour les premiers résultats sérieux. Mois 1–3 : construction sans trafic visible. Mois 4–6 : premiers articles qui rankent sur longue traîne. Mois 7–12 : trafic organique devient un canal de leads fiable. Toute promesse de résultats en 30 jours sans publicité payante est un signal d'alarme à fuir.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">4. Quelle est la différence entre SEO et SEA ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">SEO = résultats gratuits organiques (vous optimisez, vous ne payez pas Google). SEA = résultats payants (Google Ads, vous payez chaque clic). Dès que vous arrêtez de payer en SEA, le trafic disparaît. Le SEO construit un actif durable ; le SEA est un loyer mensuel qui s'arrête avec votre carte de crédit.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">5. Les moteurs IA comme ChatGPT remplacent-ils Google ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Non — ils le complètent. Google reste le moteur dominant en volume de recherches mais ChatGPT, Perplexity, Gemini et Google AI Overviews captent une part croissante des recherches, particulièrement en B2B. Une stratégie SEO 2026 optimise pour les deux simultanément.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">6. Qu'est-ce qu'un backlink et pourquoi c'est important ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Un backlink est un lien d'un autre site vers le vôtre — Google le considère comme un vote de confiance. Plus vous avez de backlinks de sites crédibles, plus votre autorité grimpe. Selon Backlinko, la page #1 sur Google a en moyenne 3,8 fois plus de backlinks que les positions 2 à 10. C'est le facteur de classement le plus difficile à manipuler.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">7. Le SEO fonctionne-t-il pour une PME locale ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Oui, et particulièrement bien grâce au "local pack" Google (les 3 résultats avec carte). Une PME locale bien optimisée sur Google Business Profile + SEO local capte une large part des recherches géographiques de son secteur. Budget de départ estimé : 600–1 200 $/mois. C'est souvent le meilleur ratio investissement/résultat pour les services locaux.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">8. Faut-il un blog pour faire du SEO ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Pas strictement — mais un blog accélère tout. Il permet de créer des articles ciblés sur les requêtes informatives de vos clients (ce que vos pages commerciales ne peuvent pas faire). Une PME sans blog peut ranker, à condition de produire des pages piliers approfondies (1 500–2 500 mots par page commerciale).</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="cta-final">Votre prochain pas</h2>
+            <p>Vous voulez un diagnostic SEO honnête — état technique, contenu, autorité — avec un plan d'action priorisé ? C'est exactement ce qu'on fait.</p>
+
+            <div class="article-cta-inline">
+              <p>Audit SEO complet — 30 min, technique + contenu + autorité + visibilité IA, rapport sous 48 h.</p>
+              <a href="/contact.html?utm_source=blog&utm_medium=article&utm_campaign=comprendre-seo-pme&utm_content=cta-final" class="btn btn--primary">Je veux mon audit gratuit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Dans cet article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#definition">Qu'est-ce que le SEO ?</a></li>
+                <li><a href="#piliers">Les 3 piliers du SEO</a></li>
+                <li><a href="#comment-google-lit">Comment Google et les IA lisent votre site</a></li>
+                <li><a href="#seo-sea-sem">SEO vs SEA vs SEM</a></li>
+                <li><a href="#budget-delai">Budget et délais réalistes</a></li>
+                <li><a href="#faq">FAQ (8 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Articles connexes</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/seo.html">Notre service SEO →</a></li>
+                <li><a href="/blog/seo/performance-core-web-vitals.html">Core Web Vitals 2026 →</a></li>
+                <li><a href="/blog/seo/">Tous les articles SEO →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+    <!-- SECTION CTA FINAL -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+        <address class="footer__address">
+          Montréal, Québec, Canada<br>
+          <a href="tel:+15147910591">514-791-0591</a><br>
+          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/secteurs.html">Secteurs</a></li>
+          <li><a href="/ressources.html">Ressources</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list">
+          <li><a href="/blog/creation-site/">Création de sites</a></li>
+          <li><a href="/blog/seo/">SEO</a></li>
+          <li><a href="/blog/marketing-digital/">Marketing digital</a></li>
+          <li><a href="/blog/ia-automatisation/">IA &amp; Automatisation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Zones desservies</h3>
+        <ul class="footer__list">
+          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
+          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
+          <li><a href="/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <!-- Barre flottante bas droite -->
+  <div class="float-bar">
+    <a href="/question.html" class="question-float" aria-label="Poser une question à NEXTIWEB">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var item = this.closest('.article-faq__item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.article-faq__item').forEach(function(el){
+          el.classList.remove('is-open');
+          el.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');
+        });
+        if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Site invisible sur Google : 5 vérifications en 30 minutes | NEXTIWEB</title>
+  <meta name="description" content="Votre site n'apparaît pas sur Google ? Voici 5 vérifications gratuites à faire en 30 minutes : indexation, robots.txt, Search Console, Core Web Vitals, balises title.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Site invisible sur Google : 5 vérifications en 30 minutes">
+  <meta property="og:description" content="Votre site n'apparaît pas sur Google ? 5 vérifications gratuites à faire en 30 minutes avant de payer un audit SEO.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Site invisible sur Google : 5 vérifications en 30 minutes">
+  <meta name="twitter:description" content="5 vérifications gratuites pour diagnostiquer pourquoi votre site est invisible sur Google — guide NEXTIWEB.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    /* Fil d'Ariane */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    /* Float bar */
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+
+    /* Article layout */
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+
+    /* Summary box */
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+
+    /* Article body */
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body code{background:rgba(0,230,118,.1);color:var(--color-primary);padding:.15rem .4rem;border-radius:.3rem;font-size:.88rem;font-family:monospace}
+    .article-body pre{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-radius:.5rem;padding:1.25rem 1.5rem;overflow-x:auto;margin:1.5rem 0}
+    .article-body pre code{background:none;padding:0;font-size:.85rem;color:var(--color-text-muted)}
+
+    /* Callout box */
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+
+    /* CTA inline */
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+
+    /* Checklist numérotée */
+    .checklist{display:flex;flex-direction:column;gap:.75rem;margin:1.5rem 0}
+    .checklist__item{display:flex;align-items:flex-start;gap:.75rem;background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.06);border-radius:.5rem;padding:1rem 1.25rem}
+    .checklist__num{flex-shrink:0;width:28px;height:28px;background:var(--color-primary);color:#000;font-weight:800;font-size:.85rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+    .checklist__text{font-size:.92rem;line-height:1.6;color:var(--color-text)}
+
+    /* Table */
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+
+    /* FAQ */
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+
+    /* Sidebar layout */
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+
+    @media(max-width:900px){
+      .article-layout{grid-template-columns:1fr}
+      .article-sidebar{display:none}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Votre site n'apparaît pas sur Google : les 5 vérifications à faire en 30 minutes",
+    "description": "5 vérifications gratuites pour diagnostiquer pourquoi votre site est invisible sur Google : indexation, robots.txt, Search Console, Core Web Vitals, balises title.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-04-28",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "site invisible Google, site non indexé Google, robots.txt SEO, Google Search Console gratuit, Core Web Vitals PME, balises title SEO, diagnostic SEO gratuit"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"SEO & Référencement","item":"https://nextiweb.ca/blog/seo/"},
+    {"@type":"ListItem","position":4,"name":"Site invisible sur Google : 5 vérifications en 30 minutes","item":"https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Comment savoir si mon site est indexé par Google ?","acceptedAnswer":{"@type":"Answer","text":"Tapez site:votredomaine.com dans Google et comptez les résultats. Pour un site de plus d'un an avec 10-15 pages, vous devriez voir 8 à 15 résultats minimum. Moins de 5 résultats signale un problème d'indexation sérieux à corriger en priorité absolue."}},
+    {"@type":"Question","name":"Combien de temps avant qu'un nouveau site apparaisse sur Google ?","acceptedAnswer":{"@type":"Answer","text":"Entre 7 jours et 8 semaines. Un site soumis via Search Console avec sitemap et 1 à 2 backlinks apparaît en 1 à 2 semaines. Sans ces éléments, comptez 6 à 8 semaines, voire jamais."}},
+    {"@type":"Question","name":"Mon site est-il pénalisé par Google si je ne le trouve nulle part ?","acceptedAnswer":{"@type":"Answer","text":"Rarement — les vraies pénalités sont notifiées dans GSC → Actions manuelles. Dans la grande majorité des cas d'invisibilité, il s'agit d'un problème technique corrigeable : noindex oublié, robots.txt mal configuré, sitemap absent."}},
+    {"@type":"Question","name":"Combien coûte de corriger un site invisible ?","acceptedAnswer":{"@type":"Answer","text":"0 $ dans la plupart des cas si vous suivez les 5 vérifications vous-même. Les corrections plus complexes (migration SSL, désindexation suite à un hack) peuvent nécessiter une intervention technique ciblée."}},
+    {"@type":"Question","name":"Qu'est-ce que le fichier robots.txt et pourquoi est-il important ?","acceptedAnswer":{"@type":"Answer","text":"Le fichier robots.txt dit aux moteurs de recherche et aux IA où ils peuvent accéder sur votre site. Un fichier mal configuré avec Disallow: / bloque entièrement Google et tous les moteurs IA. Consultez-le en tapant votredomaine.com/robots.txt dans votre navigateur."}},
+    {"@type":"Question","name":"Qu'est-ce que les Core Web Vitals et comment les tester ?","acceptedAnswer":{"@type":"Answer","text":"Les Core Web Vitals sont 3 mesures de performance (LCP, INP, CLS) utilisées par Google comme signal de classement. Testez votre page d'accueil sur pagespeed.web.dev. Un score mobile sous 50/100 signale une pénalité active dans les classements."}},
+    {"@type":"Question","name":"La balise title influence-t-elle le classement Google ?","acceptedAnswer":{"@type":"Answer","text":"Oui — c'est l'un des signaux SEO les plus directs. Une balise title optimisée doit faire entre 50 et 60 caractères, inclure le mot-clé principal en début, et être unique pour chaque page. Des titres identiques sur plusieurs pages créent une cannibalisation qui nuit au classement."}},
+    {"@type":"Question","name":"Google Search Console est-il vraiment gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, entièrement gratuit. Il donne les données d'indexation, les requêtes qui affichent votre site, le CTR, les erreurs 404, les Core Web Vitals et bien plus. C'est l'outil SEO le plus utile disponible gratuitement — et sous-utilisé par beaucoup de PME."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/seo/" class="breadcrumb__link">SEO &amp; Référencement</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Site invisible sur Google</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO ARTICLE -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            SEO &amp; Référencement
+          </p>
+          <h1 class="article-hero__title">Votre site n'apparaît pas sur Google :<br>les 5 vérifications à faire en 30 minutes</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              28 avril 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min de lecture
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- BODY -->
+          <div class="article-body">
+
+            <!-- Résumé -->
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li>Selon Ahrefs, <strong>90,6 % des pages web</strong> ne reçoivent aucun trafic organique Google — et dans la plupart des cas, la cause est une erreur technique simple, pas un problème de contenu ni de concurrence.</li>
+                <li><strong>5 vérifications gratuites</strong> à faire vous-même en 30 minutes avant de payer pour un audit SEO : indexation, robots.txt, Google Search Console, Core Web Vitals, balises title.</li>
+                <li><strong>Test immédiat :</strong> tapez <code>site:votredomaine.com</code> dans Google. Moins de 5 résultats pour un site de plus d'un an = problème d'indexation à corriger avant tout autre travail SEO.</li>
+                <li>En 2026, un site invisible sur Google est aussi invisible pour ChatGPT, Perplexity, Gemini et Claude — ces IA puisent leurs sources dans l'index Google. Rendre visible = rendre visible partout.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="verification-1">Vérification #1 — Votre site est-il bien indexé par Google ?</h2>
+            <p><strong>Tapez <code>site:votredomaine.com</code> dans Google et comptez les résultats. Si vous voyez moins de 5 pages pour un site de plus d'un an, Google ignore votre site — aucun SEO ne peut fonctionner tant que ce problème n'est pas résolu.</strong></p>
+
+            <p>La commande <code>site:</code> est un test gratuit et immédiat. Elle demande à Google de lister toutes les pages qu'il a indexées pour votre domaine. Pour une PME avec 10 à 15 pages publiées depuis plus de 6 mois, vous devriez voir 8 à 15 résultats minimum. Moins de 5 résultats signale une catastrophe : Google ne peut pas accéder à votre contenu.</p>
+
+            <p><strong>Les 4 causes les plus fréquentes :</strong></p>
+            <ol>
+              <li>Balise <code>&lt;meta name="robots" content="noindex"&gt;</code> oubliée dans le code — souvent activée en développement et jamais retirée en production.</li>
+              <li>Fichier <code>robots.txt</code> qui bloque les robots avec <code>Disallow: /</code>.</li>
+              <li>Site trop récent (moins de 30 jours — le temps que Google le découvre).</li>
+              <li>Site avec 0 backlink externe — aucun site ne pointe vers vous, Google ne vous a jamais trouvé.</li>
+            </ol>
+
+            <p><strong>Action immédiate si votre site est absent.</strong> Vérifiez dans votre back-office (WordPress : Réglages → Lecture → décochez "Demander aux moteurs de recherche de ne pas indexer ce site"). Soumettez manuellement votre sitemap dans Google Search Console. Résultat visible en 48 heures à 2 semaines.</p>
+
+            <div class="callout">
+              <strong>Le saviez-vous ?</strong>
+              Selon <a href="https://ahrefs.com/blog/search-traffic-study/" target="_blank" rel="noopener">Ahrefs Research</a>, 16,7 % des sites web actifs ont au moins une page avec un noindex oublié — souvent sur leur page d'accueil, ce qui sabote tout le SEO du domaine.
+            </div>
+
+            <hr>
+
+            <h2 id="verification-2">Vérification #2 — Votre fichier robots.txt bloque-t-il Google sans que vous le sachiez ?</h2>
+            <p><strong>Tapez <code>votredomaine.com/robots.txt</code> dans votre navigateur. Si vous voyez la ligne <code>Disallow: /</code> sans aucune exception, vous bloquez activement Google et toutes les IA génératives d'accéder à votre site.</strong></p>
+
+            <p>Le fichier <code>robots.txt</code> est le panneau d'entrée de votre site pour les robots. Il leur dit où ils peuvent entrer et où ils ne doivent pas. Un fichier mal configuré peut dire par erreur "interdiction totale à tous". Voici à quoi doit ressembler un <code>robots.txt</code> sain pour une PME en 2026 :</p>
+
+            <pre><code>User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://votredomaine.com/sitemap.xml</code></pre>
+
+            <p>Ce fichier autorise tous les moteurs classiques (Google, Bing) <strong>et</strong> tous les moteurs IA (ChatGPT, Perplexity, Claude, Gemini) à lire votre contenu, et leur indique où trouver le plan de votre site. Un fichier sans les directives <code>GPTBot</code>, <code>PerplexityBot</code>, <code>ClaudeBot</code>, <code>Google-Extended</code> empêche les IA génératives de vous citer en 2026 — même si Google vous indexe normalement.</p>
+
+            <div class="callout">
+              <strong>Piège fréquent</strong>
+              Certains hébergeurs (Wix, Squarespace en mode développement) placent un <code>Disallow: /</code> par défaut que vous devez retirer manuellement avant publication. Selon <a href="https://www.semrush.com/blog/robots-txt/" target="_blank" rel="noopener">Semrush 2024</a>, près d'un quart des PME nord-américaines bloquent involontairement au moins un bot IA majeur dans leur robots.txt.
+            </div>
+
+            <hr>
+
+            <h2 id="verification-3">Vérification #3 — Avez-vous Google Search Console, et que dit-il vraiment ?</h2>
+            <p><strong>Google Search Console (GSC) est gratuit, prend 15 minutes à installer, et donne exactement les données qu'une agence SEO vous facture des centaines de dollars par mois. Si vous n'avez pas GSC, vous pilotez à l'aveugle depuis le début.</strong></p>
+
+            <p><strong>Installation en 4 étapes (gratuit, 15 min total) :</strong></p>
+            <div class="checklist">
+              <div class="checklist__item">
+                <span class="checklist__num">1</span>
+                <span class="checklist__text">Allez sur <a href="https://search.google.com/search-console" target="_blank" rel="noopener">search.google.com/search-console</a> et connectez-vous avec un compte Google.</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">2</span>
+                <span class="checklist__text">Ajoutez votre propriété (domaine complet).</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">3</span>
+                <span class="checklist__text">Vérifiez la propriété via DNS (la méthode la plus fiable) ou via un fichier HTML à uploader.</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">4</span>
+                <span class="checklist__text">Soumettez votre sitemap à l'URL <code>https://votredomaine.com/sitemap.xml</code>. Attendez 7 jours pour les premières données.</span>
+              </div>
+            </div>
+
+            <p><strong>Les 3 rapports à consulter en priorité :</strong></p>
+            <ul>
+              <li><strong>Couverture / Pages</strong> — combien de pages sont indexées vs rejetées, avec les raisons exactes du rejet (404, erreur serveur, noindex). Corrigez tout ce qui est dans "Non indexées" avec une cause technique.</li>
+              <li><strong>Performances</strong> — impressions, clics, CTR et position moyenne pour chaque requête. Filtrez sur "position 5 à 15" pour identifier vos quick wins à portée de main.</li>
+              <li><strong>Expérience / Core Web Vitals</strong> — vos pages passent-elles les seuils Google sur mobile ?</li>
+            </ul>
+
+            <p><strong>Erreur la plus fréquente :</strong> installer GSC puis ne jamais le consulter. Bloquez 45 minutes par mois dans votre agenda pour ouvrir GSC et prendre 3 décisions concrètes — publier, mettre à jour, corriger. Beaucoup de PME n'utilisent pas activement cet outil — un avantage compétitif immédiat pour celles qui le font.</p>
+
+            <hr>
+
+            <!-- CTA PAUSE — vers page service SEO -->
+            <div class="article-cta-inline">
+              <p>Vous venez de faire les 3 premières vérifications et votre site n'est pas indexé ou Search Console n'est pas installé ? C'est typiquement ce qu'on corrige ensemble lors de l'audit.</p>
+              <a href="/seo.html" class="btn btn--primary">Voir notre service SEO →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="verification-4">Vérification #4 — Votre site passe-t-il les Core Web Vitals sur mobile ?</h2>
+            <p><strong>Tapez l'URL de votre page d'accueil dans <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a> et regardez le score mobile. Sous 50/100, Google vous pénalise activement dans les classements — peu importe la qualité de votre contenu.</strong></p>
+
+            <p>Les Core Web Vitals sont 3 mesures techniques que Google utilise comme signal de classement depuis 2021 :</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Métrique</th>
+                    <th>Ce qu'elle mesure</th>
+                    <th>Cible Google</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>LCP</strong></td>
+                    <td>Temps d'affichage du plus gros élément (souvent l'image hero)</td>
+                    <td>Sous 2,5 secondes</td>
+                  </tr>
+                  <tr>
+                    <td><strong>INP</strong></td>
+                    <td>Délai entre un clic et la réponse visible de la page</td>
+                    <td>Sous 200 ms</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CLS</strong></td>
+                    <td>Décalage visuel pendant le chargement ("saut" des éléments)</td>
+                    <td>Sous 0,1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p><strong>Les 5 causes les plus fréquentes de mauvais score en 2026 :</strong></p>
+            <ol>
+              <li>Images non compressées (photos de 3 Mo au lieu de 150 Ko en WebP).</li>
+              <li>Trop de plugins WordPress (25+ extensions dont la moitié inutilisées).</li>
+              <li>Thème payant chargé en fonctionnalités qui force le navigateur à télécharger plusieurs Mo de JavaScript inutile.</li>
+              <li>Aucun système de cache activé (LiteSpeed Cache, WP Rocket).</li>
+              <li>Hébergement mutualisé bas de gamme où des centaines d'autres sites partagent le même serveur.</li>
+            </ol>
+
+            <p><strong>Action rapide :</strong> compressez vos images en WebP (plugin gratuit <a href="https://imagify.io/" target="_blank" rel="noopener">Imagify</a> ou ShortPixel), activez un cache (WP Rocket à 59 $ US/an ou LiteSpeed Cache gratuit), désactivez les plugins inutilisés. Résultat mesurable en 48 heures sur PageSpeed.</p>
+
+            <div class="callout">
+              <strong>Pour aller plus loin</strong>
+              Consultez notre guide complet : <a href="/blog/seo/performance-core-web-vitals.html">Core Web Vitals 2026 — diagnostiquer et corriger votre site en 30 jours →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="verification-5">Vérification #5 — Vos balises title et meta description sont-elles uniques et optimisées ?</h2>
+            <p><strong>Ouvrez 5 pages de votre site dans 5 onglets. Regardez le titre de chaque onglet (la balise <code>&lt;title&gt;</code>). Si ce sont toutes des variantes de "Accueil | Mon entreprise" ou si les titres sont identiques, Google ne sait pas quoi faire ranker — et vos pages se cannibalisent entre elles.</strong></p>
+
+            <p>La balise <code>&lt;title&gt;</code> et la meta description sont les 2 éléments SEO les plus rentables parce qu'ils contrôlent directement comment les internautes voient votre site dans les résultats. Quelques heures de travail peuvent nettement améliorer votre taux de clic.</p>
+
+            <p><strong>Règles 2026 pour une balise title efficace :</strong></p>
+            <ul>
+              <li>Entre 50 et 60 caractères (au-delà, Google tronque avec "…").</li>
+              <li>Mot-clé principal en début de titre.</li>
+              <li>Terminer par votre marque ("| NEXTIWEB" par exemple).</li>
+              <li>Unique pour chaque page — aucune duplication.</li>
+            </ul>
+            <p><em>Exemple faible :</em> "Accueil - Mon Entreprise"<br>
+            <em>Exemple fort :</em> "Audit SEO PME Québec : 12 points vérifiés | NEXTIWEB" (52 caractères, mot-clé devant, marque à la fin)</p>
+
+            <p><strong>Règles 2026 pour une meta description :</strong></p>
+            <ul>
+              <li>Entre 140 et 155 caractères.</li>
+              <li>Promettre un bénéfice clair avec un verbe d'action (découvrez, comprenez, obtenez).</li>
+              <li>Inclure une variante du mot-clé principal.</li>
+            </ul>
+            <p>La meta description n'influence pas directement le classement Google — mais une bonne meta description génère sensiblement plus de clics qu'une mauvaise.</p>
+
+            <p><strong>Vérifiez en 5 minutes :</strong> dans GSC → Performances, triez par "Impressions" décroissantes et regardez le CTR de vos 20 premières requêtes. Toute requête avec un CTR sous 3 % est candidate à une réécriture de title + meta description.</p>
+
+            <hr>
+
+            <h2 id="plan-action">Votre plan d'action — dans cet ordre</h2>
+            <div class="checklist">
+              <div class="checklist__item">
+                <span class="checklist__num">1</span>
+                <span class="checklist__text"><strong>Testez <code>site:votredomaine.com</code></strong> — règle le plus urgent s'il y a un <code>noindex</code> actif.</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">2</span>
+                <span class="checklist__text"><strong>Lisez votre <code>robots.txt</code></strong> — vérifiez que Google et les bots IA peuvent accéder à votre site.</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">3</span>
+                <span class="checklist__text"><strong>Installez Google Search Console</strong> si absent — soumettez votre sitemap.</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">4</span>
+                <span class="checklist__text"><strong>Testez PageSpeed</strong> sur mobile — ciblez un score de 70+ minimum.</span>
+              </div>
+              <div class="checklist__item">
+                <span class="checklist__num">5</span>
+                <span class="checklist__text"><strong>Auditez vos balises title</strong> — une balise unique et optimisée par page.</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="faq">FAQ — Diagnostic site invisible sur Google</h2>
+            <div class="article-faq">
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">1. Comment savoir si mon site est indexé par Google ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Tapez <code>site:votredomaine.com</code> dans Google et comptez les résultats. Pour un site de plus d'un an avec 10 à 15 pages, vous devriez voir 8 à 15 résultats minimum. Moins de 5 résultats signale un problème d'indexation sérieux.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">2. Combien de temps avant qu'un nouveau site apparaisse sur Google ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Entre 7 jours et 8 semaines. Un site soumis via Search Console avec sitemap et 1 à 2 backlinks apparaît en 1 à 2 semaines. Sans ces éléments, comptez 6 à 8 semaines, voire jamais.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">3. Mon site est-il pénalisé par Google si je ne le trouve nulle part ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Rarement. Les vraies pénalités sont notifiées dans GSC → Actions manuelles. Dans la grande majorité des cas d'invisibilité, il s'agit d'un problème technique corrigeable : noindex oublié, robots.txt mal configuré, sitemap absent.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">4. Combien coûte de corriger un site invisible ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">0 $ dans la plupart des cas si vous suivez les 5 vérifications vous-même. Les corrections plus complexes (migration SSL, désindexation suite à un hack, contenu dupliqué massif) peuvent nécessiter une intervention technique ciblée.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">5. Qu'est-ce que le fichier robots.txt et comment le vérifier ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Le fichier robots.txt dit aux moteurs de recherche où ils peuvent accéder sur votre site. Un fichier mal configuré avec <code>Disallow: /</code> bloque entièrement Google et tous les moteurs IA. Vérifiez-le en tapant <code>votredomaine.com/robots.txt</code> dans votre navigateur.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">6. Qu'est-ce que les Core Web Vitals et comment les tester ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Les Core Web Vitals sont 3 mesures de performance (LCP, INP, CLS) utilisées par Google comme signal de classement. Testez votre page d'accueil sur <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a>. Un score mobile sous 50/100 signale une pénalité active dans les classements.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">7. La balise title influence-t-elle le classement Google ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Oui — c'est l'un des signaux SEO les plus directs. Une balise title optimisée doit faire entre 50 et 60 caractères, inclure le mot-clé principal en début, et être unique pour chaque page. Des titres identiques créent une cannibalisation qui nuit au classement.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">8. Google Search Console est-il vraiment gratuit ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Oui, entièrement gratuit. Il donne les données d'indexation, les requêtes qui affichent votre site, le CTR, les erreurs 404, les Core Web Vitals et bien plus. C'est l'outil SEO le plus utile disponible sans frais — et sous-utilisé par beaucoup de PME.</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="cta-final">Et si après 30 minutes vous n'y arrivez pas ?</h2>
+            <p>Faites les 5 vérifications dans l'ordre. Notez ce qui bloque. Si vous voulez une seconde paire d'yeux — ou un rapport complet avec plan d'action priorisé — demandez un audit. C'est gratuit, on fait les 5 tests ensemble en 30 minutes, et vous repartez avec un diagnostic clair sous 48 heures.</p>
+
+            <div class="article-cta-inline">
+              <p>Audit SEO complet — 30 min, 12 points vérifiés (indexation + technique + contenu + autorité), rapport sous 48 h.</p>
+              <a href="/contact.html?utm_source=blog&utm_medium=article&utm_campaign=diagnostic-site-invisible&utm_content=cta-final" class="btn btn--primary">Je veux mon audit gratuit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Dans cet article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#verification-1">#1 — Vérifier l'indexation</a></li>
+                <li><a href="#verification-2">#2 — Vérifier robots.txt</a></li>
+                <li><a href="#verification-3">#3 — Google Search Console</a></li>
+                <li><a href="#verification-4">#4 — Core Web Vitals</a></li>
+                <li><a href="#verification-5">#5 — Balises title</a></li>
+                <li><a href="#plan-action">Plan d'action</a></li>
+                <li><a href="#faq">FAQ (8 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Articles connexes</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/seo.html">Notre service SEO →</a></li>
+                <li><a href="/blog/seo/performance-core-web-vitals.html">Core Web Vitals 2026 →</a></li>
+                <li><a href="/blog/seo/comprendre-seo-pme.html">Comprendre le SEO →</a></li>
+                <li><a href="/blog/seo/">Tous les articles SEO →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+    <!-- SECTION CTA FINAL -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+        <address class="footer__address">
+          Montréal, Québec, Canada<br>
+          <a href="tel:+15147910591">514-791-0591</a><br>
+          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
+        </address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/secteurs.html">Secteurs</a></li>
+          <li><a href="/ressources.html">Ressources</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list">
+          <li><a href="/blog/creation-site/">Création de sites</a></li>
+          <li><a href="/blog/seo/">SEO</a></li>
+          <li><a href="/blog/marketing-digital/">Marketing digital</a></li>
+          <li><a href="/blog/ia-automatisation/">IA &amp; Automatisation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Zones desservies</h3>
+        <ul class="footer__list">
+          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
+          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
+          <li><a href="/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <!-- Barre flottante bas droite -->
+  <div class="float-bar">
+    <a href="/question.html" class="question-float" aria-label="Poser une question à NEXTIWEB">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var item = this.closest('.article-faq__item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.article-faq__item').forEach(function(el){
+          el.classList.remove('is-open');
+          el.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');
+        });
+        if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+      });
+    });
+  </script>
+</body>
+</html>

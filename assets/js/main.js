@@ -358,7 +358,7 @@ function createCookieBanner(initialPreferences = null) {
     marketing: false
   };
 
-  const banner = document.createElement('aside');
+  const banner = document.createElement('div');
   banner.id = 'cookie-banner';
   banner.className = 'cookie-banner';
   banner.setAttribute('role', 'dialog');

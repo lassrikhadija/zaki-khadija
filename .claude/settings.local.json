@@ -6,7 +6,10 @@
       "Bash(grep -r \"logo-nextiweb-dark\\\\|logo-nextiweb-light\" \"c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija\" --include=\"*.html\" --include=\"*.js\" ! -path \"*/.git/*\")",
       "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i -e 's|<picture>||g' -e 's|</picture>||g' -e 's|<source srcset=\"/assets/img/logo/favicon-nextiweb-infini\\\\.png\" type=\"image/webp\">||g' -e 's|<source srcset=\"/assets/img/logo/favicon-nextiweb-infini\\\\.png\" type=\"image/png\">||g' '{}' ';')",
       "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i 's|favicon-nextiweb-infini\\\\.png|logo-nextiweb-dark.png|g' '{}' ';')",
-      "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i 's|href=\"/assets/css/styles\\\\.min\\\\.css\"|href=\"/assets/css/styles.min.css?v=2\"|g' '{}' ';')"
+      "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i 's|href=\"/assets/css/styles\\\\.min\\\\.css\"|href=\"/assets/css/styles.min.css?v=2\"|g' '{}' ';')",
+      "Read(//c/Users/Chaki/AppData/Local/Temp/**)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }

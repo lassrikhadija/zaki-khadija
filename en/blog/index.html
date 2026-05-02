@@ -30,7 +30,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=4">
   <style>
     /* Fil d'Ariane */
     .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
@@ -42,7 +42,9 @@
     .breadcrumb__current{color:var(--color-primary);font-weight:500}
     .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
     .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
-  
+    .blog-cat-card__icon{display:block;line-height:1}
+    .blog-cat-card__icon svg{display:block}
+
     /* Barre flottante telephone + WhatsApp */
     .whatsapp-float{display:none!important}
     .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
@@ -127,10 +129,10 @@
           <p class="section__subtitle">Four areas of expertise, hundreds of tips to come.</p>
         </header>
         <div class="blog-cat-grid">
-          <a href="/en/blog/website-design/" class="blog-cat-card blog-cat-card--site"><span class="blog-cat-card__icon">🖥</span><h3 class="blog-cat-card__title">Website Design</h3><p class="blog-cat-card__desc">Websites, landing pages, UX/UI and performance</p><span class="blog-cat-card__link">Explore →</span></a>
-          <a href="/en/blog/seo/" class="blog-cat-card blog-cat-card--seo"><span class="blog-cat-card__icon">🔍</span><h3 class="blog-cat-card__title">SEO &amp; Search</h3><p class="blog-cat-card__desc">Natural SEO, local SEO, technical optimization</p><span class="blog-cat-card__link">Explore →</span></a>
-          <a href="/en/blog/digital-marketing/" class="blog-cat-card blog-cat-card--marketing"><span class="blog-cat-card__icon">📈</span><h3 class="blog-cat-card__title">Digital Marketing</h3><p class="blog-cat-card__desc">Google Ads, social media, email marketing</p><span class="blog-cat-card__link">Explore →</span></a>
-          <a href="/en/blog/ai-automation/" class="blog-cat-card blog-cat-card--ia"><span class="blog-cat-card__icon">🤖</span><h3 class="blog-cat-card__title">AI &amp; Automation</h3><p class="blog-cat-card__desc">ChatGPT, automated workflows, AI tools</p><span class="blog-cat-card__link">Explore →</span></a>
+          <a href="/en/blog/website-design/" class="blog-cat-card blog-cat-card--site"><span class="blog-cat-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><h3 class="blog-cat-card__title">Website Design</h3><p class="blog-cat-card__desc">Websites, landing pages, UX/UI and performance</p><span class="blog-cat-card__link">Explore →</span></a>
+          <a href="/en/blog/seo/" class="blog-cat-card blog-cat-card--seo"><span class="blog-cat-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5cd8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><h3 class="blog-cat-card__title">SEO &amp; Search</h3><p class="blog-cat-card__desc">Natural SEO, local SEO, technical optimization</p><span class="blog-cat-card__link">Explore →</span></a>
+          <a href="/en/blog/digital-marketing/" class="blog-cat-card blog-cat-card--marketing"><span class="blog-cat-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffc400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><h3 class="blog-cat-card__title">Digital Marketing</h3><p class="blog-cat-card__desc">Google Ads, social media, email marketing</p><span class="blog-cat-card__link">Explore →</span></a>
+          <a href="/en/blog/ai-automation/" class="blog-cat-card blog-cat-card--ia"><span class="blog-cat-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c864ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="6" height="6"/><path d="M9 4h6M9 20h6M4 9v6M20 9v6M2 9h2M2 15h2M20 9h2M20 15h2M9 2v2M15 2v2M9 20v2M15 20v2"/></svg></span><h3 class="blog-cat-card__title">AI &amp; Automation</h3><p class="blog-cat-card__desc">ChatGPT, automated workflows, AI tools</p><span class="blog-cat-card__link">Explore →</span></a>
         </div>
       </div>
     </section>

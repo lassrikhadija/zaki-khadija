@@ -9,7 +9,8 @@
       "Bash(find 'c:/Users/Chaki/Downloads/e-commerce-khadija/Khadija marketing/Projet-khadija/projet_Nextiweb/zaki-khadija' -name '*.html' ! -path '*/.git/*' -exec sed -i 's|href=\"/assets/css/styles\\\\.min\\\\.css\"|href=\"/assets/css/styles.min.css?v=2\"|g' '{}' ';')",
       "Read(//c/Users/Chaki/AppData/Local/Temp/**)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

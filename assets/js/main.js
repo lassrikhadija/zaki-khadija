@@ -238,7 +238,7 @@ function applyTheme(theme, shouldStoreTheme = true) {
   const isLight = theme === 'theme-light';
   document.querySelectorAll('.logo img').forEach(img => {
     const base = img.src.substring(0, img.src.lastIndexOf('/') + 1);
-    img.src = base + (isLight ? 'logo-nextiweb-light.png' : 'logo-nextiweb-dark.png');
+    img.src = base + (isLight ? 'logo-nextiweb-light.webp' : 'logo-nextiweb-dark.webp');
     img.style.filter = '';
   });
 

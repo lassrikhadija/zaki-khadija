@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Measure SEO Performance: Search Console & GA4 Guide | NEXTIWEB</title>
+  <meta name="description" content="Learn which SEO KPIs actually matter and how to track them using Google Search Console and GA4. A practical measurement guide for SMBs." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.nextiweb.com/en/blog/seo/measure-seo-performance-search-console-ga4.html" />
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="fr" href="https://www.nextiweb.com/blog/seo/mesurer-performance-seo-search-console-ga4.html" />
+  <link rel="alternate" hreflang="en" href="https://www.nextiweb.com/en/blog/seo/measure-seo-performance-search-console-ga4.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.nextiweb.com/blog/seo/mesurer-performance-seo-search-console-ga4.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:title" content="How to Measure SEO Performance: Search Console & GA4 Guide" />
+  <meta property="og:description" content="Learn which SEO KPIs actually matter and how to track them using Google Search Console and GA4. A practical measurement guide for SMBs." />
+  <meta property="og:url" content="https://www.nextiweb.com/en/blog/seo/measure-seo-performance-search-console-ga4.html" />
+  <meta property="og:site_name" content="NEXTIWEB" />
+  <meta property="og:image" content="https://www.nextiweb.com/assets/images/blog/measure-seo-performance-search-console-ga4.webp" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Measure SEO Performance: Search Console & GA4 Guide" />
+  <meta name="twitter:description" content="The right SEO KPIs and how to track them in Search Console and GA4 — a practical guide for SMBs." />
+  <meta name="twitter:image" content="https://www.nextiweb.com/assets/images/blog/measure-seo-performance-search-console-ga4.webp" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3" />
+
+  <style>
+    .article-hero{background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#16213e 100%);padding:80px 20px 60px;text-align:center;color:#fff}
+    .article-hero .badge{display:inline-block;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.4);color:#818cf8;padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:20px}
+    .article-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;line-height:1.2;max-width:800px;margin:0 auto 20px}
+    .article-hero .meta{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;font-size:.85rem;opacity:.7}
+    .article-container{max-width:1100px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start}
+    @media(max-width:900px){.article-container{grid-template-columns:1fr}}
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.6rem;font-weight:800;margin:2.5rem 0 1rem;color:#1e293b;padding-bottom:.5rem;border-bottom:3px solid #6366f1}
+    .article-body h3{font-size:1.2rem;font-weight:700;margin:2rem 0 .8rem;color:#334155}
+    .article-body p{font-size:1.05rem;line-height:1.8;color:#475569;margin-bottom:1.2rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.2rem}
+    .article-body li{font-size:1.05rem;line-height:1.8;color:#475569;margin-bottom:.4rem}
+    .article-body strong{color:#1e293b}
+    .kpi-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
+    .kpi-table th{background:#6366f1;color:#fff;padding:12px 16px;text-align:left;font-weight:700}
+    .kpi-table td{padding:12px 16px;border-bottom:1px solid #e2e8f0;color:#475569;vertical-align:top}
+    .kpi-table tr:nth-child(even) td{background:#f8fafc}
+    .tool-card{background:#fff;border:2px solid #e2e8f0;border-radius:16px;padding:24px 28px;margin:1.5rem 0}
+    .tool-card .tool-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+    .tool-card .tool-icon{font-size:2rem}
+    .tool-card h3{font-size:1.15rem;font-weight:800;color:#1e293b;margin:0}
+    .tool-card p{font-size:.95rem;color:#475569;margin:0 0 12px}
+    .tool-card ul{padding-left:1.2rem;margin:0}
+    .tool-card li{font-size:.9rem;color:#475569;margin-bottom:.3rem}
+    .info-box{background:#f0f9ff;border-left:4px solid #6366f1;border-radius:0 12px 12px 0;padding:20px 24px;margin:1.5rem 0}
+    .info-box p{margin:0;color:#1e40af}
+    .warning-box{background:#fff7ed;border-left:4px solid #f59e0b;border-radius:0 12px 12px 0;padding:20px 24px;margin:1.5rem 0}
+    .warning-box p{margin:0;color:#92400e}
+    .routine-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
+    .routine-table th{background:#1e293b;color:#fff;padding:12px 16px;text-align:left;font-weight:700}
+    .routine-table td{padding:12px 16px;border-bottom:1px solid #e2e8f0;color:#475569;vertical-align:top}
+    .routine-table tr:nth-child(even) td{background:#f8fafc}
+    .pause-cta{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:2px solid #bae6fd;border-radius:20px;padding:36px;text-align:center;margin:3rem 0}
+    .pause-cta h3{font-size:1.4rem;font-weight:800;color:#0c4a6e;margin:0 0 12px}
+    .pause-cta p{color:#0369a1;margin:0 0 20px}
+    .pause-cta a{display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:14px 32px;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .2s,box-shadow .2s}
+    .pause-cta a:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(99,102,241,.4)}
+    .faq-section{margin:3rem 0}
+    .faq-item{border:2px solid #e2e8f0;border-radius:12px;margin-bottom:12px;overflow:hidden}
+    .faq-question{width:100%;background:#fff;border:none;padding:20px 24px;text-align:left;font-size:1rem;font-weight:700;color:#1e293b;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
+    .faq-question:hover{background:#f8fafc}
+    .faq-question .faq-icon{font-size:1.2rem;transition:transform .3s;color:#6366f1}
+    .faq-question[aria-expanded="true"] .faq-icon{transform:rotate(45deg)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+    .faq-answer.open{max-height:400px;padding:0 24px 20px}
+    .faq-answer p{margin:0;font-size:.95rem;line-height:1.7;color:#475569}
+    .final-cta{background:linear-gradient(135deg,#1e293b,#0f172a);color:#fff;border-radius:24px;padding:48px;text-align:center;margin:3rem 0}
+    .final-cta h2{font-size:1.8rem;font-weight:800;margin:0 0 16px}
+    .final-cta p{opacity:.8;margin:0 0 28px;font-size:1.1rem}
+    .final-cta a{display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:16px 40px;border-radius:14px;text-decoration:none;font-weight:800;font-size:1.1rem;transition:transform .2s,box-shadow .2s}
+    .final-cta a:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(99,102,241,.5)}
+    .article-sidebar{position:sticky;top:100px}
+    .sidebar-card{background:#fff;border:2px solid #e2e8f0;border-radius:16px;padding:24px;margin-bottom:20px}
+    .sidebar-card h3{font-size:1rem;font-weight:800;color:#1e293b;margin:0 0 16px;padding-bottom:12px;border-bottom:2px solid #6366f1}
+    .sidebar-toc{list-style:none;padding:0;margin:0}
+    .sidebar-toc li{margin-bottom:8px}
+    .sidebar-toc a{text-decoration:none;color:#475569;font-size:.9rem;display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;transition:background .2s,color .2s}
+    .sidebar-toc a:hover{background:#f0f9ff;color:#6366f1}
+    .sidebar-toc a::before{content:"→";color:#6366f1;font-weight:700}
+    .breadcrumb{padding:16px 20px;background:#f8fafc;border-bottom:1px solid #e2e8f0}
+    .breadcrumb-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:8px;font-size:.85rem;flex-wrap:wrap}
+    .breadcrumb a{color:#6366f1;text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:#94a3b8}
+    .float-bar{position:fixed;bottom:28px;right:28px;display:flex;flex-direction:column;align-items:flex-end;gap:12px;z-index:9999}
+    .float-btn-icon{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#6366f1,#8b5cf6);display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(99,102,241,.4);transition:transform .2s}
+    .float-btn-icon:hover{transform:scale(1.1)}
+    .float-btn-icon svg{width:24px;height:24px;fill:#fff}
+    .float-whatsapp{display:flex;align-items:center;gap:10px;background:#25d366;color:#fff;padding:10px 18px 10px 12px;border-radius:50px;text-decoration:none;font-weight:600;font-size:.9rem;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s}
+    .float-whatsapp:hover{transform:scale(1.05)}
+    .float-whatsapp svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Measure SEO Performance: Search Console & GA4 Guide",
+        "description": "Learn which SEO KPIs actually matter and how to track them using Google Search Console and GA4. A practical measurement guide for SMBs.",
+        "image": "https://www.nextiweb.com/assets/images/blog/measure-seo-performance-search-console-ga4.webp",
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "author": {"@type": "Organization","name": "NEXTIWEB","url": "https://www.nextiweb.com"},
+        "publisher": {"@type": "Organization","name": "NEXTIWEB","logo": {"@type": "ImageObject","url": "https://www.nextiweb.com/assets/images/logo.webp"}},
+        "mainEntityOfPage": {"@type": "WebPage","@id": "https://www.nextiweb.com/en/blog/seo/measure-seo-performance-search-console-ga4.html"},
+        "inLanguage": "en",
+        "keywords": "SEO KPIs, Google Search Console, GA4, measure SEO, organic traffic, CTR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem","position": 1,"name": "Home","item": "https://www.nextiweb.com/en/"},
+          {"@type": "ListItem","position": 2,"name": "Blog","item": "https://www.nextiweb.com/en/blog/"},
+          {"@type": "ListItem","position": 3,"name": "SEO","item": "https://www.nextiweb.com/en/blog/seo/"},
+          {"@type": "ListItem","position": 4,"name": "How to Measure SEO Performance","item": "https://www.nextiweb.com/en/blog/seo/measure-seo-performance-search-console-ga4.html"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the most important SEO KPIs?",
+            "acceptedAnswer": {"@type": "Answer","text": "The 5 most important SEO KPIs for SMBs are: (1) organic sessions (total visits from search), (2) average position for target keywords, (3) click-through rate (CTR), (4) organic conversions (leads, calls, purchases from organic traffic), and (5) index coverage (pages successfully indexed by Google)."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is Google Search Console used for in SEO?",
+            "acceptedAnswer": {"@type": "Answer","text": "Google Search Console shows how Google sees and interacts with your site. Key uses: monitoring which keywords trigger your pages (Queries report), checking which pages are indexed (Coverage report), identifying Core Web Vitals issues (Experience report), and submitting sitemaps for faster indexing."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Search Console and GA4?",
+            "acceptedAnswer": {"@type": "Answer","text": "Search Console shows what happens before the click — impressions, position, CTR. GA4 shows what happens after the click — sessions, engagement, conversions, bounce rate. Together they give a complete picture of your SEO performance from search to conversion."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good CTR in Google Search?",
+            "acceptedAnswer": {"@type": "Answer","text": "Average CTR varies significantly by position. Position 1 averages 27–39% CTR. Position 2–3: 10–15%. Position 4–10: 2–8%. Below position 10: under 1%. If your CTR is significantly below these benchmarks, your title tag or meta description may need improvement."}
+          },
+          {
+            "@type": "Question",
+            "name": "How do I track SEO conversions in GA4?",
+            "acceptedAnswer": {"@type": "Answer","text": "In GA4, set up conversion events for your key actions: contact form submissions, phone clicks, purchase completions. Then in Reports → Acquisition → Traffic Acquisition, filter by 'Organic Search' to see how many conversions came from SEO. Link Search Console to GA4 for a unified view."}
+          },
+          {
+            "@type": "Question",
+            "name": "How long should I track SEO before judging results?",
+            "acceptedAnswer": {"@type": "Answer","text": "SEO requires a minimum 90-day evaluation window before drawing conclusions. Initial changes (content updates, technical fixes) take 4–8 weeks to be fully crawled and reflected in rankings. Authority-building (backlinks, topical clusters) takes 6–12 months to reach full impact."}
+          },
+          {
+            "@type": "Question",
+            "name": "What is keyword cannibalization?",
+            "acceptedAnswer": {"@type": "Answer","text": "Keyword cannibalization occurs when two or more pages on your site compete for the same keyword. Google can't decide which page to rank, so it may rank neither well. Use Search Console's Queries report to identify pages competing for the same queries, then merge or differentiate them."}
+          },
+          {
+            "@type": "Question",
+            "name": "How do I find which keywords my site ranks for?",
+            "acceptedAnswer": {"@type": "Answer","text": "In Google Search Console, go to Performance → Search Results. The Queries tab shows every keyword your site appeared for in Google search, along with impressions, clicks, average position, and CTR for each query. Filter by page to see which keywords drive traffic to specific pages."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="float-bar">
+  <a href="/en/question.html" class="float-btn-icon" aria-label="Ask a question">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+  </a>
+  <a href="https://wa.me/15146578129?text=Hello%2C%20I%20would%20like%20to%20discuss%20my%20SEO%20project." class="float-whatsapp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="/en/" class="nav-logo">NEXTIWEB</a>
+    <ul class="nav-menu">
+      <li><a href="/en/" class="nav-link">Home</a></li>
+      <li><a href="/en/seo.html" class="nav-link">SEO</a></li>
+      <li><a href="/en/web-design.html" class="nav-link">Web Design</a></li>
+      <li><a href="/en/blog/" class="nav-link">Blog</a></li>
+      <li><a href="/en/contact.html" class="nav-link nav-cta">Free Audit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/en/">Home</a>
+    <span>›</span>
+    <a href="/en/blog/">Blog</a>
+    <span>›</span>
+    <a href="/en/blog/seo/">SEO</a>
+    <span>›</span>
+    <span>How to Measure SEO Performance</span>
+  </div>
+</div>
+
+<section class="article-hero">
+  <div class="badge">SEO — Analytics</div>
+  <h1>How to Measure SEO Performance:<br>Search Console & GA4 Guide for SMBs</h1>
+  <div class="meta">
+    <span>📅 April 28, 2026</span>
+    <span>⏱ 10 min read</span>
+    <span>✍️ NEXTIWEB</span>
+  </div>
+</section>
+
+<div class="article-container">
+  <main class="article-body">
+
+    <p>You've been doing SEO for months — but how do you know if it's working? Many SMBs track the wrong metrics (rankings without context) or ignore measurement entirely. This guide shows you the 5 KPIs that actually matter and exactly where to find them in Google Search Console and GA4.</p>
+
+    <div class="info-box">
+      <p><strong>The right mindset:</strong> SEO is not a sprint. A single ranking improvement tells you almost nothing. The metrics that matter track trends over 90-day and 12-month periods — not week-to-week fluctuations.</p>
+    </div>
+
+    <h2 id="five-kpis">The 5 SEO KPIs That Actually Matter</h2>
+
+    <table class="kpi-table">
+      <thead>
+        <tr>
+          <th>KPI</th>
+          <th>What It Measures</th>
+          <th>Where to Find It</th>
+          <th>Review Cadence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Organic Sessions</strong></td>
+          <td>Total visits from unpaid search</td>
+          <td>GA4 → Acquisition → Traffic</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td><strong>Average Position</strong></td>
+          <td>Where your pages rank for target keywords</td>
+          <td>Search Console → Queries</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td><strong>Click-Through Rate (CTR)</strong></td>
+          <td>% of impressions that result in a click</td>
+          <td>Search Console → Queries</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td><strong>Organic Conversions</strong></td>
+          <td>Leads/sales originating from organic search</td>
+          <td>GA4 → Conversions (filtered by Organic)</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td><strong>Index Coverage</strong></td>
+          <td>Pages successfully crawled and indexed</td>
+          <td>Search Console → Coverage</td>
+          <td>Quarterly</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="search-console">Google Search Console: Your SEO Command Center</h2>
+
+    <div class="tool-card">
+      <div class="tool-header">
+        <span class="tool-icon">🔍</span>
+        <h3>Google Search Console</h3>
+      </div>
+      <p>Free tool from Google that shows exactly how Googlebot sees, crawls, and indexes your site. Install it by adding a DNS record or HTML tag, then verify ownership.</p>
+      <p><strong>The 4 reports you need to check monthly:</strong></p>
+      <ul>
+        <li><strong>Performance → Queries:</strong> Which keywords trigger your pages, position, clicks, impressions, CTR</li>
+        <li><strong>Performance → Pages:</strong> Which URLs receive the most impressions and clicks from search</li>
+        <li><strong>Coverage (Index):</strong> Which pages are indexed, which have errors, which are excluded</li>
+        <li><strong>Experience → Core Web Vitals:</strong> LCP, INP, CLS scores for desktop and mobile</li>
+      </ul>
+    </div>
+
+    <h3>Finding Keyword Opportunities in Search Console</h3>
+    <p>The most underused Search Console feature: filter the Queries report to show keywords where your <strong>average position is 8–15</strong> and <strong>impressions are above 100/month</strong>. These are pages close to page 1 — a content update or internal link addition can push them into top 5 and significantly increase clicks.</p>
+
+    <h2 id="ga4">GA4: Tracking What Happens After the Click</h2>
+
+    <div class="tool-card">
+      <div class="tool-header">
+        <span class="tool-icon">📊</span>
+        <h3>Google Analytics 4 (GA4)</h3>
+      </div>
+      <p>GA4 measures user behavior on your site after they arrive from search. It complements Search Console by showing what organic visitors actually do — and whether they convert.</p>
+      <p><strong>Key GA4 reports for SEO:</strong></p>
+      <ul>
+        <li><strong>Reports → Acquisition → Traffic Acquisition:</strong> Sessions by channel. Filter "Organic Search" to isolate SEO traffic.</li>
+        <li><strong>Reports → Engagement → Landing Pages:</strong> Which pages users first land on from organic search, and their engagement rate.</li>
+        <li><strong>Reports → Conversions:</strong> Filter by Organic channel to see how many leads/purchases came from SEO.</li>
+        <li><strong>Explore → Funnel Exploration:</strong> Build funnels to see which organic landing pages lead to conversions.</li>
+      </ul>
+    </div>
+
+    <div class="warning-box">
+      <p><strong>GA4 setup requirement:</strong> Conversion events must be configured before you can track organic conversions. Set up events for: contact form submissions, phone click events, booking completions, and purchase completions. Without these, you'll see traffic data but no conversion data.</p>
+    </div>
+
+    <!-- Pause CTA -->
+    <div class="pause-cta">
+      <h3>Not Sure How to Interpret Your SEO Data?</h3>
+      <p>Our team configures Search Console and GA4 correctly and builds a monthly reporting dashboard for your business.</p>
+      <a href="/en/seo.html">See Our SEO Service →</a>
+    </div>
+
+    <h2 id="routine">Your Monthly SEO Review Routine (30 Minutes)</h2>
+
+    <table class="routine-table">
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Action</th>
+          <th>Tool</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td>Check organic sessions vs. prior month and prior year</td>
+          <td>GA4</td>
+          <td>5 min</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td>Review top 20 queries: position trend, CTR, opportunities at position 8–15</td>
+          <td>Search Console</td>
+          <td>10 min</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td>Check Coverage report for new errors or excluded pages</td>
+          <td>Search Console</td>
+          <td>5 min</td>
+        </tr>
+        <tr>
+          <td><strong>4</strong></td>
+          <td>Review organic conversions and conversion rate</td>
+          <td>GA4</td>
+          <td>5 min</td>
+        </tr>
+        <tr>
+          <td><strong>5</strong></td>
+          <td>Log 1–3 action items for the next month based on findings</td>
+          <td>Any</td>
+          <td>5 min</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="faq">FAQ — Measuring SEO Performance</h2>
+
+    <div class="faq-section">
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">What are the most important SEO KPIs?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>The 5 most important SEO KPIs for SMBs are: (1) organic sessions, (2) average position for target keywords, (3) click-through rate (CTR), (4) organic conversions, and (5) index coverage. Avoid focusing on rankings alone — they need context from the other four metrics.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">What is Google Search Console used for in SEO?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Google Search Console shows how Google sees and interacts with your site. Key uses: monitoring which keywords trigger your pages (Queries report), checking which pages are indexed (Coverage report), identifying Core Web Vitals issues (Experience report), and submitting sitemaps for faster indexing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">What is the difference between Search Console and GA4?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Search Console shows what happens before the click — impressions, position, CTR. GA4 shows what happens after the click — sessions, engagement, conversions, bounce rate. Together they give a complete picture of your SEO performance from search to conversion.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">What is a good CTR in Google Search?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Average CTR varies by position. Position 1 averages 27–39% CTR. Position 2–3: 10–15%. Position 4–10: 2–8%. Below position 10: under 1%. If your CTR is significantly below these benchmarks, your title tag or meta description may need improvement.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">How do I track SEO conversions in GA4?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>In GA4, set up conversion events for your key actions: contact form submissions, phone clicks, purchase completions. Then in Reports → Acquisition → Traffic Acquisition, filter by 'Organic Search' to see how many conversions came from SEO. Link Search Console to GA4 for a unified view.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">How long should I track SEO before judging results?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>SEO requires a minimum 90-day evaluation window before drawing conclusions. Initial changes (content updates, technical fixes) take 4–8 weeks to be fully crawled and reflected in rankings. Authority-building (backlinks, topical clusters) takes 6–12 months to reach full impact.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">What is keyword cannibalization?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Keyword cannibalization occurs when two or more pages on your site compete for the same keyword. Google can't decide which page to rank, so it may rank neither well. Use Search Console's Queries report to identify pages competing for the same queries, then merge or differentiate them.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">How do I find which keywords my site ranks for?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>In Google Search Console, go to Performance → Search Results. The Queries tab shows every keyword your site appeared for in Google search, along with impressions, clicks, average position, and CTR for each query. Filter by page to see which keywords drive traffic to specific pages.</p></div>
+      </div>
+    </div>
+
+    <div class="final-cta">
+      <h2>Your Next Client Is Searching for You. Will They Find You?</h2>
+      <p>Get a free SEO audit with a custom measurement dashboard setup — no commitment required.</p>
+      <a href="/en/contact.html?utm_source=blog&utm_medium=article&utm_campaign=measure-seo-performance-search-console-ga4&utm_content=cta-final">Get My Free Audit →</a>
+    </div>
+
+  </main>
+
+  <aside class="article-sidebar">
+    <div class="sidebar-card">
+      <h3>In This Article</h3>
+      <ul class="sidebar-toc">
+        <li><a href="#five-kpis">5 SEO KPIs That Matter</a></li>
+        <li><a href="#search-console">Google Search Console</a></li>
+        <li><a href="#ga4">GA4 for SEO</a></li>
+        <li><a href="#routine">Monthly Review Routine</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-card" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);border:none;color:#fff">
+      <h3 style="color:#fff;border-bottom-color:rgba(255,255,255,.3)">Free SEO Audit</h3>
+      <p style="font-size:.9rem;opacity:.9;margin:0 0 16px">We set up your measurement dashboard and explain exactly what your data means.</p>
+      <a href="/en/contact.html?utm_source=blog&utm_medium=article&utm_campaign=measure-seo-performance-search-console-ga4&utm_content=sidebar-cta" style="display:block;background:#fff;color:#6366f1;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem">Get My Free Audit →</a>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">NEXTIWEB</div>
+      <p class="footer-desc">Web agency specialized in website design, SEO and digital marketing.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/en/seo.html">SEO</a></li>
+        <li><a href="/en/web-design.html">Web Design</a></li>
+        <li><a href="/en/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Blog</h4>
+      <ul>
+        <li><a href="/en/blog/seo/">SEO Articles</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NEXTIWEB. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-question').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        b.nextElementSibling.classList.remove('open');
+      });
+      if (!expanded) {
+        btn.setAttribute('aria-expanded', 'true');
+        answer.classList.add('open');
+      }
+    });
+  });
+</script>
+</body>
+</html>

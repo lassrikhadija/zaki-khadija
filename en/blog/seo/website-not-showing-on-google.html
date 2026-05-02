@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>My Website Doesn't Show on Google: 5 Checks to Do Right Now | NEXTIWEB</title>
+  <meta name="description" content="Your website isn't appearing on Google? 5 concrete checks — site: command, robots.txt, Google Search Console, Core Web Vitals, title tags — to diagnose and fix the problem.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Website Not Showing on Google: 5 Checks to Do Right Now">
+  <meta property="og:description" content="site: command, robots.txt, Search Console, Core Web Vitals, title tags — 5 precise checks to diagnose why Google ignores your site. Action plan included.">
+  <meta property="og:url" content="https://nextiweb.ca/en/blog/seo/website-not-showing-on-google.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Website Not on Google: 5 Checks + Action Plan — NEXTIWEB">
+  <meta name="twitter:description" content="5 diagnostic checks to find out why your site doesn't rank on Google. Free tools, step-by-step action plan.">
+
+  <link rel="canonical" href="https://nextiweb.ca/en/blog/seo/website-not-showing-on-google.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/website-not-showing-on-google.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/diagnostic-site-invisible.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body code{background:rgba(0,230,118,.1);color:var(--color-primary);padding:.15em .4em;border-radius:.25rem;font-size:.88em;font-family:monospace}
+    .article-body pre{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1rem 1.25rem;margin:1.5rem 0;overflow-x:auto;font-size:.85rem;line-height:1.7;color:var(--color-text)}
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
+    .article-table td:first-child{font-weight:600}
+    .article-table .good{color:#00e676;font-weight:700}
+    .article-table .warn{color:#ffb300;font-weight:700}
+    .article-table .bad{color:#ff5252;font-weight:700}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+    .checklist{list-style:none;padding:0;margin:1.25rem 0;display:flex;flex-direction:column;gap:.6rem}
+    .checklist__item{display:flex;align-items:flex-start;gap:.75rem;font-size:.95rem;color:var(--color-text);line-height:1.6}
+    .checklist__num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;min-width:22px;background:rgba(0,230,118,.15);border:1px solid rgba(0,230,118,.3);border-radius:50%;font-size:.72rem;font-weight:700;color:var(--color-primary);margin-top:.15rem}
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "My Website Doesn't Show on Google: 5 Checks to Do Right Now",
+    "description": "5 concrete checks to diagnose why your site isn't appearing on Google: site: command, robots.txt, Search Console, Core Web Vitals, title tags. Action plan included.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/en/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-04-28",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/en/blog/seo/website-not-showing-on-google.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "en-CA",
+    "keywords": "website not showing on Google, site not indexed, Google Search Console setup, robots.txt SEO, Core Web Vitals fix, site invisible Google Canada"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/en/blog/"},
+    {"@type":"ListItem","position":3,"name":"SEO","item":"https://nextiweb.ca/en/blog/seo/"},
+    {"@type":"ListItem","position":4,"name":"Website Not Showing on Google","item":"https://nextiweb.ca/en/blog/seo/website-not-showing-on-google.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I know if Google has indexed my site?","acceptedAnswer":{"@type":"Answer","text":"Type site:yourdomain.ca in Google search (no spaces). If results appear, your site is indexed. If Google returns 'no results found', your site is either not yet indexed or has been excluded by a technical issue (robots.txt, noindex tag, or a crawl error in Search Console)."}},
+    {"@type":"Question","name":"How long does it take for Google to index a new site?","acceptedAnswer":{"@type":"Answer","text":"Between 1 day and 4 weeks for a new site. Google prioritizes sites with quality backlinks and regular content updates. To accelerate indexing: install Google Search Console, submit your sitemap.xml, and request indexing manually for your key pages using the URL Inspection tool."}},
+    {"@type":"Question","name":"What is robots.txt and can it block Google?","acceptedAnswer":{"@type":"Answer","text":"robots.txt is a text file at the root of your site that tells search engine bots which pages to crawl or ignore. A misconfigured robots.txt (for example, Disallow: /) can block all crawlers and make your entire site invisible to Google. Always check it at yourdomain.ca/robots.txt."}},
+    {"@type":"Question","name":"What is Google Search Console and is it free?","acceptedAnswer":{"@type":"Answer","text":"Google Search Console (GSC) is Google's free tool for webmasters. It shows you which pages are indexed, which keywords generate impressions and clicks, which technical errors need fixing (404s, Core Web Vitals, indexing issues), and lets you submit your sitemap and request manual indexing. It is 100% free and essential for any business with a website."}},
+    {"@type":"Question","name":"My site appears when I search my brand name, but not for my main keywords. Why?","acceptedAnswer":{"@type":"Answer","text":"This is normal for a new or young site. Google indexes brand name searches quickly (navigational intent) but needs more time and more authority signals (backlinks, content depth, E-E-A-T) to rank competitively for informational and commercial keywords. Check Search Console Impressions — if your target keywords appear with 0 clicks, you are being crawled but not ranked well enough yet."}},
+    {"@type":"Question","name":"How do I check if a page has a noindex tag?","acceptedAnswer":{"@type":"Answer","text":"Right-click on the page → View Page Source, then search for 'noindex' with Ctrl+F. If you find <meta name='robots' content='noindex'> or x-robots-tag: noindex in the HTTP headers, Google will crawl but not index the page. This tag is sometimes accidentally left on by developers after site launch."}},
+    {"@type":"Question","name":"My developer says the site is live. Why is it still not on Google?","acceptedAnswer":{"@type":"Answer","text":"A site can be technically live (accessible) without being indexed by Google. Common causes after launch: robots.txt still blocking crawlers (common in staging environments), no sitemap submitted, Search Console not yet installed, or simply not enough time elapsed — Google can take 1 to 4 weeks to crawl a new domain."}},
+    {"@type":"Question","name":"Can a slow website cause it not to appear on Google?","acceptedAnswer":{"@type":"Answer","text":"A very slow site (LCP above 4 s, TTFB above 2 s) is indexed by Google but ranked lower because speed is a ranking factor since 2021 (Core Web Vitals). It won't completely prevent indexing but will make it much harder to appear in the first 3 pages for competitive queries."}
+    }
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav__item">
+          <a href="/en/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
+            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
+            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+          </div>
+        </div>
+        <a href="/en/secteurs.html" class="nav__link">Industries</a>
+        <a href="/en/ressources.html" class="nav__link">Resources</a>
+        <a href="/en/blog/" class="nav__link">Blog</a>
+        <a href="/en/a-propos.html" class="nav__link">About</a>
+        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/en/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/en/blog/seo/" class="breadcrumb__link">SEO</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Website Not Showing on Google</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            SEO Diagnosis
+          </p>
+          <h1 class="article-hero__title">My Website Doesn't Show on Google: 5 Checks to Do Right Now</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              April 28, 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <div class="article-body">
+
+            <div class="article-summary">
+              <p class="article-summary__title">30-Second Summary</p>
+              <ul>
+                <li><strong>5 checks, all free:</strong> site: command, robots.txt, Google Search Console, Core Web Vitals, title tags.</li>
+                <li><strong>Most common cause:</strong> a blocking robots.txt or a missing sitemap — fixable in under 30 minutes.</li>
+                <li><strong>Tools needed:</strong> <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console</a> (free) + <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a> (free).</li>
+                <li><strong>After these 5 checks:</strong> you will know exactly what is blocking your site — and what to fix first.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="check1">Check #1 — The <code>site:</code> Command (2 minutes)</h2>
+            <p>Before anything else, verify that Google has indexed your site at all. Open a new Google tab and type:</p>
+            <pre>site:yourdomain.ca</pre>
+            <p>Replace <code>yourdomain.ca</code> with your actual domain. <strong>Two possible results:</strong></p>
+            <ul>
+              <li><strong>Results appear:</strong> Google knows your site exists and has indexed at least some pages. The problem is ranking, not indexing — continue with checks 2-5.</li>
+              <li><strong>No results:</strong> Google has never indexed your site, or all your pages have been removed from the index. This is a critical issue — go directly to check #3 (Search Console).</li>
+            </ul>
+            <p>Also note how many pages appear. A 50-page site showing only 3 results in <code>site:</code> means 47 pages are not indexed — a significant SEO problem.</p>
+
+            <hr>
+
+            <h2 id="check2">Check #2 — robots.txt (5 minutes)</h2>
+            <p>The <code>robots.txt</code> file tells Google's bots what they can and cannot crawl. A single misplaced line can block your entire site from Google. Open a new tab and go to:</p>
+            <pre>https://yourdomain.ca/robots.txt</pre>
+            <p><strong>What to look for:</strong> a line like <code>Disallow: /</code> under <code>User-agent: *</code> means you are blocking ALL crawlers from your entire site. This is the most common mistake on newly launched sites — developers often forget to remove the development environment's blocking rules before going live.</p>
+            <p><strong>A safe, recommended robots.txt for a Canadian SMB in 2026:</strong></p>
+            <pre>User-agent: *
+Disallow:
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://yourdomain.ca/sitemap.xml</pre>
+            <p>This configuration allows Google, Bing and other search engines to crawl freely, while blocking AI training bots that do not bring traffic. Adjust based on your preferences around AI training.</p>
+
+            <hr>
+
+            <h2 id="check3">Check #3 — Install Google Search Console (15 minutes)</h2>
+            <p><strong>Google Search Console (GSC) is the most important free tool for any business with a website.</strong> If it is not installed, you are flying blind — you have no data on how Google sees your site. Go to <a href="https://search.google.com/search-console" target="_blank" rel="noopener">search.google.com/search-console</a> and add your property.</p>
+            <p>Once installed and verified, check these 3 things immediately:</p>
+            <ul>
+              <li><strong>Coverage → Errors tab:</strong> lists pages that should be indexed but have crawl errors (404, redirect loops, server errors).</li>
+              <li><strong>Sitemaps:</strong> submit your sitemap.xml if not already done. A sitemap tells Google exactly which pages exist and should be prioritized for crawling.</li>
+              <li><strong>URL Inspection:</strong> paste any page URL to see if it is indexed, when it was last crawled, and whether any issues were detected.</li>
+            </ul>
+
+            <div class="callout">
+              <strong>Quick Win</strong>
+              If your key pages are not indexed, use URL Inspection → "Request Indexing" for each one. This typically speeds up indexing by several days.
+            </div>
+
+            <hr>
+
+            <h2 id="check4">Check #4 — Core Web Vitals (5 minutes)</h2>
+            <p>Speed is a direct Google ranking factor since June 2021. A site that passes the Core Web Vitals thresholds has a measurable advantage over slower competitors. Test your site at <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a> and check these 3 metrics:</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>What it measures</th>
+                    <th class="good">✅ Good</th>
+                    <th class="warn">⚠️ Needs Improvement</th>
+                    <th class="bad">🔴 Poor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>LCP</td>
+                    <td>Main content load time</td>
+                    <td class="good">≤ 2.5 s</td>
+                    <td class="warn">2.5–4.0 s</td>
+                    <td class="bad">&gt; 4.0 s</td>
+                  </tr>
+                  <tr>
+                    <td>INP</td>
+                    <td>Click reaction time</td>
+                    <td class="good">≤ 200 ms</td>
+                    <td class="warn">200–500 ms</td>
+                    <td class="bad">&gt; 500 ms</td>
+                  </tr>
+                  <tr>
+                    <td>CLS</td>
+                    <td>Visual stability (layout shifts)</td>
+                    <td class="good">≤ 0.1</td>
+                    <td class="warn">0.1–0.25</td>
+                    <td class="bad">&gt; 0.25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.82rem;color:var(--color-text-muted);">Source: <a href="https://web.dev/vitals/" target="_blank" rel="noopener">Google — web.dev/vitals</a></p>
+
+            <p>Focus on mobile results — Google uses mobile-first indexing since 2020. If all 3 numbers are red on mobile, fixing speed is a higher priority than any other SEO task.</p>
+
+            <hr>
+
+            <h2 id="check5">Check #5 — Title Tags and Meta Descriptions (10 minutes)</h2>
+            <p>Title tags are the clickable blue links in Google results. They are one of the strongest on-page signals. Check the top 5 pages of your site:</p>
+            <ul>
+              <li><strong>Is each page title unique?</strong> Duplicate title tags across multiple pages confuse Google and split ranking potential.</li>
+              <li><strong>Are titles under 60 characters?</strong> Longer titles are truncated in Google results.</li>
+              <li><strong>Does each title contain the target keyword?</strong> Specifically the term your clients actually type in Google.</li>
+              <li><strong>Does the homepage title clearly describe your business and location?</strong> Example: <em>"Plumber Montreal — Emergency Service 24/7 | CompanyName"</em> outperforms <em>"CompanyName — Welcome"</em>.</li>
+            </ul>
+            <p>To check your titles: right-click any page → View Page Source → Ctrl+F → search for <code>&lt;title&gt;</code>. Or use the URL Inspection tool in Search Console.</p>
+
+            <hr>
+
+            <div class="article-cta-inline">
+              <p>You've run the 5 checks and found several issues. Prioritizing what to fix first is exactly what the audit is designed for.</p>
+              <a href="/en/seo.html" class="btn btn--primary">See Our SEO Service →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="action-plan">Your Action Plan Checklist</h2>
+            <ul class="checklist">
+              <li class="checklist__item"><span class="checklist__num">1</span><span>Run <code>site:yourdomain.ca</code> — confirm Google has indexed your site and count indexed pages.</span></li>
+              <li class="checklist__item"><span class="checklist__num">2</span><span>Open <code>yourdomain.ca/robots.txt</code> — verify no accidental <code>Disallow: /</code> is blocking crawlers.</span></li>
+              <li class="checklist__item"><span class="checklist__num">3</span><span>Install Google Search Console (if not done) — submit sitemap, fix Coverage errors, request indexing for key pages.</span></li>
+              <li class="checklist__item"><span class="checklist__num">4</span><span>Test Core Web Vitals at <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a> — fix any red mobile metrics.</span></li>
+              <li class="checklist__item"><span class="checklist__num">5</span><span>Audit title tags — ensure each page has a unique, keyword-rich title under 60 characters.</span></li>
+            </ul>
+
+            <hr>
+
+            <h2 id="faq">FAQ: 8 Questions About Indexing and Visibility</h2>
+            <div class="article-faq">
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">1. How do I know if Google has indexed my site?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Type site:yourdomain.ca in Google search (no spaces). If results appear, your site is indexed. If Google returns "no results found", your site is either not yet indexed or has been excluded by a technical issue (robots.txt, noindex tag, or a crawl error in Search Console).</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">2. How long does it take for Google to index a new site?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Between 1 day and 4 weeks for a new site. To accelerate indexing: install Google Search Console, submit your sitemap.xml, and use URL Inspection to manually request indexing for your key pages.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">3. What is robots.txt and can it block Google?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">robots.txt is a text file at the root of your site that tells search engine bots which pages to crawl or ignore. A misconfigured robots.txt (e.g. Disallow: /) can block all crawlers and make your entire site invisible to Google. Always check it at yourdomain.ca/robots.txt.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">4. What is Google Search Console and is it free?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Google Search Console is Google's free tool for webmasters. It shows which pages are indexed, which keywords generate impressions and clicks, technical errors to fix, and lets you submit your sitemap. It is 100% free and essential for any business with a website.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">5. My site appears for my brand name but not my main keywords. Why?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">This is normal for a new or young site. Google indexes brand name searches quickly but needs more time and authority signals (backlinks, content depth, E-E-A-T) to rank for competitive keywords. Check Search Console Impressions — if your target keywords appear with 0 clicks, you are crawled but not ranked well enough yet.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">6. How do I check if a page has a noindex tag?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Right-click on the page → View Page Source, then search for "noindex" with Ctrl+F. If you find &lt;meta name="robots" content="noindex"&gt;, Google will crawl but not index the page. This is sometimes accidentally left on by developers after site launch.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">7. My developer says the site is live. Why isn't it on Google yet?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">A site can be technically live without being indexed. Common causes: robots.txt still blocking crawlers from staging, no sitemap submitted, Search Console not installed, or not enough time elapsed — Google can take 1 to 4 weeks to crawl a new domain.</p>
+              </div>
+
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false" type="button">
+                  <p class="article-faq__q">8. Can a slow website cause it not to appear on Google?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">A very slow site is indexed but ranked lower because speed is a ranking factor since 2021 (Core Web Vitals). It won't completely prevent indexing but makes it much harder to appear in the first 3 pages for competitive queries. Fix speed issues before investing in content.</p>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <h2 id="next-step">Your Next Step</h2>
+            <p>You now have 5 concrete checks and an action plan. Most indexing issues can be fixed in under an hour. If the problem persists after these checks, the issue is likely deeper — either in your content strategy, your authority profile, or your technical architecture.</p>
+
+            <div class="article-cta-inline">
+              <p>Full SEO audit — 18-point technical + content + authority diagnosis, delivered within 48 h.</p>
+              <a href="/en/contact.html?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=website-not-showing-on-google&amp;utm_content=cta-final" class="btn btn--primary">Get My Free Audit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">We don't sell you anything on the call — we start by helping you see clearly.</p>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">In This Article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#check1">Check #1 — site: command</a></li>
+                <li><a href="#check2">Check #2 — robots.txt</a></li>
+                <li><a href="#check3">Check #3 — Search Console</a></li>
+                <li><a href="#check4">Check #4 — Core Web Vitals</a></li>
+                <li><a href="#check5">Check #5 — Title Tags</a></li>
+                <li><a href="#action-plan">Action Plan</a></li>
+                <li><a href="#faq">FAQ (8 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Free Tools</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console →</a></li>
+                <li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights →</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Related Articles</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/en/blog/seo/understanding-seo-guide.html">Understanding SEO →</a></li>
+                <li><a href="/en/blog/seo/core-web-vitals-guide.html">Core Web Vitals Guide →</a></li>
+                <li><a href="/en/seo.html">Our SEO Services →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Your Next Client Is Searching for You. Will They Find You?</h2>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility, and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Web agency specialized in website design, SEO and digital marketing.</p>
+        <address class="footer__address">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li>
+          <li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li>
+          <li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li>
+          <li><a href="/en/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list">
+          <li><a href="/en/blog/website-design/">Website Design</a></li>
+          <li><a href="/en/blog/seo/">SEO</a></li>
+          <li><a href="/en/blog/digital-marketing/">Digital Marketing</a></li>
+          <li><a href="/en/blog/ai-automation/">AI &amp; Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Areas Served</h3>
+        <ul class="footer__list">
+          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
+          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
+          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 NEXTIWEB. All rights reserved.</p></div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <div class="float-bar">
+    <a href="/en/question.html" class="question-float" aria-label="Ask NEXTIWEB a question">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var item = this.closest('.article-faq__item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.article-faq__item').forEach(function(el){el.classList.remove('is-open');el.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
+        if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+      });
+    });
+  </script>
+
+</body>
+</html>

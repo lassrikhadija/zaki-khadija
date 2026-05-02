@@ -23,6 +23,36 @@
 
 # ── Redirections 301 — alias FR pour cohérence avec chemins EN
 [[redirects]]
+  from = "/en/blog/creation-site/"
+  to   = "/en/blog/website-design/"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/creation-site"
+  to   = "/en/blog/website-design/"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/marketing-digital/"
+  to   = "/en/blog/digital-marketing/"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/marketing-digital"
+  to   = "/en/blog/digital-marketing/"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/ia-automatisation/"
+  to   = "/en/blog/ai-automation/"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/ia-automatisation"
+  to   = "/en/blog/ai-automation/"
+  status = 301
+
+[[redirects]]
   from = "/blog/website-design/"
   to   = "/blog/creation-site/"
   status = 301

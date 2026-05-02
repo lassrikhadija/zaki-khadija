@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.png" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>SEO International : Comment exporter votre PME hors Québec — Guide hreflang 2026 | NEXTIWEB</title>
+  <meta name="description" content="Guide complet du SEO international pour PME : balises hreflang, choix de structure d'URL et localisation de contenu pour conquérir le Canada anglais et les USA.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="SEO International : Comment exporter votre PME hors Québec — Guide hreflang 2026">
+  <meta property="og:description" content="Balises hreflang, structure d'URL, localisation culturelle — le guide technique complet pour rendre votre site visible à Toronto, New York ou Paris.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/seo/seo-international-hreflang-export.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO International PME 2026 : hreflang, structure d'URL et localisation">
+  <meta name="twitter:description" content="Comment rendre votre site visible hors Québec : balises hreflang, sous-répertoires vs ccTLD, localisation culturelle. Guide NEXTIWEB.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/seo/seo-international-hreflang-export.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/seo-international-hreflang-export.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/seo-international-hreflang-export.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .question-float{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--color-bg-alt);border:2px solid var(--color-primary);border-radius:50%;text-decoration:none;color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.3);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .question-float:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.55)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .question-float{background:#f0f0f0;border-color:var(--color-primary);color:var(--color-primary);box-shadow:0 4px 16px rgba(0,230,118,.2)}
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+    .checklist{list-style:none;padding:0;margin:1.25rem 0;display:flex;flex-direction:column;gap:.6rem}
+    .checklist__item{display:flex;align-items:flex-start;gap:.75rem;font-size:.95rem;color:var(--color-text);line-height:1.6}
+    .checklist__num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;min-width:22px;background:rgba(0,230,118,.15);border:1px solid rgba(0,230,118,.3);border-radius:50%;font-size:.72rem;font-weight:700;color:var(--color-primary);margin-top:.15rem}
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SEO International : Comment exporter votre succès québécois (Guide hreflang PME 2026)",
+    "description": "Balises hreflang, structure d'URL (sous-répertoires vs ccTLD), localisation culturelle et recherche de mots-clés internationale — le guide technique complet pour les PME qui visent le Canada anglais, les USA ou la France.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html"},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-05-02",
+    "dateModified": "2026-05-02",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/seo/seo-international-hreflang-export.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "SEO international PME Québec, balises hreflang guide, exporter PME SEO, ciblage géographique Google, SEO multilingue, sous-répertoires vs ccTLD, localisation contenu"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"SEO & Référencement","item":"https://nextiweb.ca/blog/seo/"},
+    {"@type":"ListItem","position":4,"name":"SEO International — Guide hreflang PME 2026","item":"https://nextiweb.ca/blog/seo/seo-international-hreflang-export.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Qu'est-ce que la balise hreflang et pourquoi est-elle indispensable ?","acceptedAnswer":{"@type":"Answer","text":"La balise hreflang est un attribut HTML qui indique à Google quelle version linguistique ou régionale d'une page afficher selon l'emplacement et la langue de l'utilisateur. Sans elle, Google peut traiter vos différentes versions comme du contenu dupliqué, pénalisant votre référencement dans tous les marchés."}},
+    {"@type":"Question","name":"Sous-répertoires ou sous-domaines pour le SEO international ?","acceptedAnswer":{"@type":"Answer","text":"Pour la grande majorité des PME, les sous-répertoires (monsite.ca/en/) sont l'approche recommandée : ils conservent toute l'autorité du domaine principal et sont plus simples à maintenir. Les sous-domaines (en.monsite.ca) diluent l'autorité et nécessitent un travail SEO séparé pour chaque sous-domaine."}},
+    {"@type":"Question","name":"Quelle est la différence entre traduction et localisation de contenu ?","acceptedAnswer":{"@type":"Answer","text":"La traduction convertit les mots d'une langue à l'autre. La localisation va plus loin : elle adapte les unités de mesure, les devises, les expressions culturelles, les références locales, les numéros de téléphone locaux et les études de cas pertinentes pour le marché cible. Google évalue cette crédibilité locale via son algorithme E-E-A-T."}},
+    {"@type":"Question","name":"Peut-on utiliser Google Translate pour localiser un site ?","acceptedAnswer":{"@type":"Answer","text":"Non. Google détecte le contenu traduit automatiquement et peut le déclasser comme contenu de faible qualité. La traduction automatique produit des expressions non naturelles qui augmentent le taux de rebond. Pour chaque marché cible, une révision par un rédacteur natif est indispensable."}},
+    {"@type":"Question","name":"Les mots-clés sont-ils différents d'un marché à l'autre ?","acceptedAnswer":{"@type":"Answer","text":"Oui, considérablement. Un Québécois recherche « assurance auto » tandis qu'un Français tape « assurance voiture ». Un Américain tape « attorney » là où un Canadien anglais écrit « lawyer ». Chaque marché a ses expressions idiomatiques et ses volumes de recherche propres — une recherche de mots-clés distincte est nécessaire pour chaque territoire."}},
+    {"@type":"Question","name":"Faut-il un hébergement dans chaque pays pour le SEO international ?","acceptedAnswer":{"@type":"Answer","text":"Non. Avec les CDN (Content Delivery Networks) modernes, la localisation physique du serveur a un impact limité sur le classement. Ce qui compte davantage : la structure hreflang correcte, le ciblage géographique dans Google Search Console et la qualité du contenu localisé."}},
+    {"@type":"Question","name":"Comment configurer le ciblage géographique dans Google Search Console ?","acceptedAnswer":{"@type":"Answer","text":"Dans Google Search Console, accédez à Paramètres > Ciblage international. Pour les sous-répertoires ou sous-domaines, vous pouvez définir un pays cible pour chaque version. Notez que ce paramètre est secondaire par rapport aux balises hreflang — celles-ci ont la priorité."}},
+    {"@type":"Question","name":"Combien de temps pour voir des résultats SEO dans un nouveau marché ?","acceptedAnswer":{"@type":"Answer","text":"En général entre 3 et 6 mois pour des premières positions significatives dans un nouveau marché, à condition que la structure technique soit correcte (hreflang, URL, balisage), le contenu localisé et une stratégie de liens locaux (backlinks de médias ou partenaires du marché cible) en cours."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo"><img src="/assets/img/logo/logo-nextiweb-dark.png" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager"></a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a href="/" class="breadcrumb__link breadcrumb__link--home"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>NEXTIWEB</a></li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/seo/" class="breadcrumb__link">SEO &amp; Référencement</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">SEO International 2026</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>SEO &amp; Référencement</p>
+          <h1 class="article-hero__title">SEO International : Comment exporter votre succès québécois (Guide PME 2026)</h1>
+          <div class="article-meta">
+            <span><span class="article-meta__author">Khadija AitLassri</span></span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2 mai 2026</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>13 min de lecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+          <div class="article-body">
+
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li><strong>Traduire n'est pas positionner.</strong> Un site traduit en anglais sans stratégie SEO internationale restera invisible à Toronto, New York ou Londres.</li>
+                <li>La balise <strong><code>hreflang</code></strong> est le signal technique le plus critique : elle indique à Google quelle version afficher selon la langue et la localisation de l'utilisateur.</li>
+                <li>Le choix de la <strong>structure d'URL</strong> (sous-répertoires <code>/en/</code> vs sous-domaines vs ccTLD) impacte directement la force de votre autorité de domaine à l'export.</li>
+                <li>La <strong>localisation culturelle</strong> va bien au-delà de la traduction : en 2026, l'IA de Google évalue si votre contenu sonne naturellement pour le marché cible.</li>
+                <li>La <strong>recherche de mots-clés</strong> doit être refaite pour chaque territoire — les expressions varient significativement entre les marchés anglophones.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="mythe">Le mythe de la traduction automatique</h2>
+            <p>Beaucoup de PME québécoises pensent qu'il suffit d'installer un plugin de traduction automatique pour « conquérir le Canada anglais ». C'est l'une des erreurs les plus coûteuses en matière de SEO.</p>
+            <p>Google ne classe pas les pages traduites machinalement. Il classe les pages qui répondent à <strong>l'intention de recherche d'un utilisateur local</strong>. Un client à Toronto ne cherche pas de la même façon qu'un client à Montréal. Si votre contenu n'est pas <strong>localisé</strong> — unités de mesure, devises, expressions, références culturelles — votre taux de rebond explosera et Google vous déclassera.</p>
+            <p>L'internationalisation SEO est une démarche technique précise, pas une simple couche de peinture linguistique. Ce guide vous explique les 4 piliers à maîtriser pour rendre votre site réellement visible dans un nouveau marché.</p>
+
+            <div class="callout">
+              <strong>Rappel technique</strong>
+              Selon la documentation officielle de <a href="https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites" target="_blank" rel="noopener">Google — Gestion de sites multilingues</a>, les erreurs d'implémentation hreflang sont parmi les causes les plus fréquentes d'invisibilité internationale — et parmi les plus faciles à corriger une fois identifiées.
+            </div>
+
+            <hr>
+
+            <h2 id="hreflang">Levier 1 — La balise <code>hreflang</code> : votre passeport technique</h2>
+            <p>C'est le pivot du SEO international. La balise <code>hreflang</code> indique à Google : « Si l'internaute est en France, montre-lui la version <code>/fr-fr/</code>. S'il est au Québec, montre-lui <code>/fr-ca/</code>. S'il est aux USA, montre-lui <code>/en-us/</code>. »</p>
+            <p>Sans ces balises, Google peut considérer vos différentes versions linguistiques comme du <strong>contenu dupliqué</strong> et vous pénaliser. Ou pire : afficher la version québécoise à un client américain, qui repartira frustré en voyant des prix en CAD et des références culturelles qui ne lui parlent pas.</p>
+
+            <h3>La syntaxe correcte</h3>
+            <p>Les balises <code>hreflang</code> se placent dans le <code>&lt;head&gt;</code> de chaque page et doivent être <strong>réciproques</strong> : si la page A pointe vers la page B, la page B doit pointer vers la page A <em>et</em> vers elle-même.</p>
+            <p>Exemple pour un site québécois avec une version anglaise pour le Canada :</p>
+            <pre style="background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-radius:.5rem;padding:1rem 1.25rem;overflow-x:auto;font-size:.85rem;line-height:1.6;color:var(--color-text);margin-bottom:1.25rem;"><code>&lt;link rel="alternate" hreflang="fr-CA" href="https://monsite.ca/fr/" /&gt;
+&lt;link rel="alternate" hreflang="en-CA" href="https://monsite.ca/en/" /&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://monsite.ca/" /&gt;</code></pre>
+            <p>L'attribut <code>x-default</code> est la version de repli affichée quand aucune correspondance linguistique n'est trouvée. Il doit pointer vers votre page principale ou une page de sélection de langue.</p>
+
+            <h3>Les 3 erreurs hreflang les plus courantes</h3>
+            <ul>
+              <li><strong>Les balises non réciproques</strong> : chaque version doit mentionner toutes les autres versions ET elle-même.</li>
+              <li><strong>Les URLs relatives</strong> : utilisez toujours des URLs absolues complètes (avec <code>https://</code>).</li>
+              <li><strong>Les codes langue incorrects</strong> : utilisez le format ISO 639-1 pour la langue (<code>fr</code>, <code>en</code>) et ISO 3166-1 alpha-2 pour la région (<code>CA</code>, <code>US</code>, <code>FR</code>). <code>fr-ca</code> est correct ; <code>fr-QC</code> ne l'est pas.</li>
+            </ul>
+
+            <div class="callout">
+              <strong>Outil recommandé</strong>
+              L'outil d'inspection d'URL de <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console</a> permet de vérifier si Google a bien détecté vos balises hreflang pour chaque page. C'est le premier endroit à consulter après une mise en ligne internationale.
+            </div>
+
+            <hr>
+
+            <h2 id="structure">Levier 2 — Structure d'URL : où loger vos versions étrangères ?</h2>
+            <p>Il existe trois approches principales, chacune avec des compromis distincts entre autorité SEO, coût de gestion et signal géographique.</p>
+
+            <h3>Option 1 — Les ccTLD (extensions nationales)</h3>
+            <p>Exemples : <code>monsite.ca</code> pour le Canada, <code>monsite.us</code> pour les États-Unis, <code>monsite.fr</code> pour la France. C'est le signal géographique le plus fort aux yeux de Google — un domaine <code>.fr</code> est nativement perçu comme un site français.</p>
+            <p><strong>Inconvénient majeur :</strong> l'autorité est entièrement silotée. Vous devez bâtir le SEO de chaque domaine de zéro, obtenir des backlinks séparément pour chacun et maintenir plusieurs infrastructures techniques. C'est une approche réaliste pour les grandes entreprises ou lorsque les marchés sont radicalement distincts dans leur offre.</p>
+
+            <h3>Option 2 — Les sous-répertoires (recommandé pour la plupart des PME)</h3>
+            <p>Exemples : <code>monsite.ca/en/</code> pour la version anglophone, <code>monsite.ca/fr-fr/</code> pour la France. C'est l'approche la plus équilibrée : vous conservez toute l'autorité de votre domaine principal et la distribuez à vos versions internationales. Un backlink vers <code>monsite.ca</code> bénéficie à toutes les sous-sections.</p>
+            <p>Google recommande également cette structure dans sa documentation sur les sites multilingues. La gestion technique est centralisée et un seul compte Search Console suffit.</p>
+
+            <h3>Option 3 — Les sous-domaines</h3>
+            <p>Exemples : <code>en.monsite.ca</code>, <code>fr.monsite.ca</code>. Les sous-domaines sont traités par Google comme des entités semi-indépendantes — ils ne bénéficient pas pleinement de l'autorité du domaine principal. Cette structure est utile uniquement si vos services ou votre infrastructure sont radicalement différents d'un marché à l'autre (plateforme technique distincte, équipe de contenu séparée).</p>
+
+            <div class="callout">
+              <strong>En pratique</strong>
+              Pour une PME qui cherche à tester un nouveau marché avec un budget limité, les sous-répertoires permettent de capitaliser immédiatement sur l'autorité existante du domaine sans reconstruire un profil de liens depuis zéro.
+            </div>
+
+            <hr>
+
+            <!-- CTA PAUSE -->
+            <div class="article-cta-inline">
+              <p>Vous prévoyez une expansion hors Québec et vous ne savez pas quelle structure choisir ? C'est l'un des points couverts lors de l'audit technique.</p>
+              <a href="/seo.html" class="btn btn--primary">Voir notre service SEO →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="localisation">Levier 3 — Localisation vs Traduction : la différence qui change tout</h2>
+            <p>En 2026, l'algorithme E-E-A-T de Google analyse la <strong>crédibilité locale</strong> de votre contenu. Un texte traduit mot à mot depuis le québécois vers l'anglais ontarien sonnera comme une traduction — et les utilisateurs le sentiront immédiatement, ce qui augmente le taux de rebond et détériore votre positionnement.</p>
+
+            <h3>Ce que la localisation couvre concrètement</h3>
+            <ul>
+              <li><strong>Expressions idiomatiques :</strong> un Ontario ne dira pas « truck » comme un Québécois dit « truck ». Les nuances existent même au sein de la même langue.</li>
+              <li><strong>Unités et devises :</strong> si vous vendez en Ontario, vos prix sont déjà en CAD — mais votre contenu doit mentionner les repères locaux pertinents (taxes provinciales, réglementations locales).</li>
+              <li><strong>Références culturelles :</strong> les exemples, études de cas et témoignages doivent résonner avec le marché cible. Citer uniquement des entreprises québécoises dans un article ciblant la France crée une distance culturelle perceptible.</li>
+              <li><strong>Signaux de confiance locaux :</strong> numéro de téléphone local, adresse physique ou adresse postale dans la région cible, certifications reconnues localement. Ces éléments renforcent le « T » de E-E-A-T (Trustworthiness).</li>
+              <li><strong>Saisonnalité :</strong> les références saisonnières (périodes fiscales, fêtes, saisons) varient d'un marché à l'autre.</li>
+            </ul>
+
+            <h3>L'IA peut aider — mais ne remplace pas le natif</h3>
+            <p>Les outils d'IA (Claude, ChatGPT, DeepL Write) peuvent produire une première adaptation de qualité correcte. Mais une relecture par un rédacteur natif du marché cible reste indispensable pour garantir la naturalité du contenu et les signaux de confiance. Un contenu qui sonne « traduit » augmente le taux de rebond, signal négatif pour le classement.</p>
+
+            <hr>
+
+            <h2 id="mots-cles">Levier 4 — Recherche de mots-clés internationale : recommencer à zéro</h2>
+            <p>C'est l'erreur la plus fréquente : traduire ses mots-clés québécois et croire qu'ils s'appliquent au marché anglophone. Les intentions de recherche, les volumes et les expressions varient significativement d'un marché à l'autre.</p>
+
+            <h3>Les différences entre marchés anglophones</h3>
+            <p>Même au sein du monde anglophone, les variations sont importantes :</p>
+            <ul>
+              <li>Canada anglais : « flat fee lawyer », « criminal defense lawyer »</li>
+              <li>États-Unis : « flat fee attorney », « criminal defense attorney »</li>
+              <li>Royaume-Uni : « solicitor », « barrister »</li>
+            </ul>
+            <p>Le même service, trois marchés, trois terminologies distinctes. Une stratégie de mots-clés unique pour tous les marchés anglophones sera sous-optimale dans chacun d'eux.</p>
+
+            <h3>Méthode en 4 étapes pour la recherche de mots-clés internationale</h3>
+            <ol>
+              <li><strong>Identifier vos 10 mots-clés piliers</strong> en français, puis les faire traduire et adapter par un natif du marché cible — pas seulement par un outil automatique.</li>
+              <li><strong>Valider les volumes locaux</strong> avec <a href="https://ahrefs.com" target="_blank" rel="noopener">Ahrefs</a> ou <a href="https://www.semrush.com" target="_blank" rel="noopener">Semrush</a> en filtrant sur le pays cible — un mot-clé populaire au Québec peut être marginal à Toronto.</li>
+              <li><strong>Analyser les SERP locales</strong> : ouvrez une navigation privée avec une VPN positionnée dans le marché cible et regardez qui domine les résultats. Ce sont vos concurrents directs.</li>
+              <li><strong>Identifier les lacunes</strong> : cherchez les mots-clés à volume modéré (moins compétitifs) sur lesquels vos concurrents locaux ne produisent pas encore de contenu de qualité.</li>
+            </ol>
+
+            <div class="callout">
+              <strong>Point clé</strong>
+              La recherche de mots-clés internationale ne doit pas être déléguée à un traducteur. Elle doit être menée comme une première recherche complète pour le marché cible, avec les mêmes outils et la même rigueur que la stratégie française originale.
+            </div>
+
+            <hr>
+
+            <h2 id="checklist">Checklist technique SEO international en 6 points</h2>
+            <ul class="checklist">
+              <li class="checklist__item"><span class="checklist__num">1</span><span>Choisir une structure d'URL adaptée à votre budget et vos objectifs (sous-répertoires dans la grande majorité des cas).</span></li>
+              <li class="checklist__item"><span class="checklist__num">2</span><span>Implémenter les balises <code>hreflang</code> avec la syntaxe correcte (URLs absolues, codes ISO valides, balises réciproques).</span></li>
+              <li class="checklist__item"><span class="checklist__num">3</span><span>Configurer le ciblage géographique dans <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console</a> pour chaque sous-répertoire ou sous-domaine.</span></li>
+              <li class="checklist__item"><span class="checklist__num">4</span><span>Réaliser une recherche de mots-clés dédiée pour chaque marché cible — ne pas simplement traduire la liste française.</span></li>
+              <li class="checklist__item"><span class="checklist__num">5</span><span>Localiser le contenu au-delà de la traduction : expressions naturelles, signaux de confiance locaux (adresse, téléphone, références locales).</span></li>
+              <li class="checklist__item"><span class="checklist__num">6</span><span>Initier une stratégie de backlinks locaux : médias, associations professionnelles et partenaires du marché cible pour bâtir une autorité ancrée dans la région.</span></li>
+            </ul>
+
+            <hr>
+
+            <h2 id="faq">FAQ : 8 questions sur le SEO international</h2>
+            <div class="article-faq">
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">1. Qu'est-ce que la balise hreflang et pourquoi est-elle indispensable ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">La balise hreflang est un attribut HTML qui indique à Google quelle version linguistique ou régionale d'une page afficher selon l'emplacement et la langue de l'utilisateur. Sans elle, Google peut traiter vos différentes versions comme du contenu dupliqué, pénalisant votre référencement dans tous les marchés simultanément.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">2. Sous-répertoires ou sous-domaines pour le SEO international ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Pour la grande majorité des PME, les sous-répertoires (monsite.ca/en/) sont l'approche recommandée : ils conservent toute l'autorité du domaine principal et sont plus simples à maintenir. Les sous-domaines (en.monsite.ca) diluent l'autorité et nécessitent un travail SEO distinct pour chaque sous-domaine.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">3. Quelle est la différence entre traduction et localisation de contenu ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">La traduction convertit les mots d'une langue à l'autre. La localisation adapte les unités de mesure, les devises, les expressions culturelles, les références locales, les numéros de téléphone locaux et les études de cas pertinentes pour le marché cible. Google évalue cette crédibilité locale via son algorithme E-E-A-T.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">4. Peut-on utiliser Google Translate pour localiser un site ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Non. Google détecte le contenu traduit automatiquement et peut le déclasser comme contenu de faible qualité. La traduction automatique produit des expressions non naturelles qui augmentent le taux de rebond. Pour chaque marché cible, une révision par un rédacteur natif est indispensable pour garantir les signaux de confiance.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">5. Les mots-clés sont-ils différents d'un marché à l'autre ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Oui, considérablement. Un Québécois recherche « assurance auto » tandis qu'un Français tape « assurance voiture ». Un Américain tape « attorney » là où un Canadien anglais écrit « lawyer ». Chaque marché a ses expressions idiomatiques et ses volumes de recherche propres — une recherche de mots-clés distincte est nécessaire pour chaque territoire.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">6. Faut-il un hébergement dans chaque pays pour le SEO international ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Non. Avec les CDN (Content Delivery Networks) modernes, la localisation physique du serveur a un impact limité sur le classement. Ce qui compte davantage : la structure hreflang correcte, le ciblage géographique dans Google Search Console et la qualité du contenu localisé.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">7. Comment configurer le ciblage géographique dans Google Search Console ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Dans Google Search Console, accédez à Paramètres puis Ciblage international. Pour les sous-répertoires ou sous-domaines, vous pouvez définir un pays cible pour chaque version. Notez que ce paramètre est secondaire par rapport aux balises hreflang — celles-ci ont la priorité lorsqu'elles sont correctement implémentées.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">8. Combien de temps pour voir des résultats SEO dans un nouveau marché ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">En général entre 3 et 6 mois pour des premières positions significatives dans un nouveau marché, à condition que la structure technique soit correcte (hreflang, URL, balisage), le contenu localisé et une stratégie de liens locaux en cours. Les marchés peu concurrentiels peuvent montrer des résultats plus rapidement.</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="cta-final">Votre prochain pas</h2>
+            <p>Avant de vous lancer dans une expansion internationale, un diagnostic technique de votre site actuel permet d'identifier ce qui est déjà en place, ce qui manque et dans quel ordre agir pour maximiser vos chances de visibilité dans le nouveau marché.</p>
+            <div class="article-cta-inline">
+              <p>Audit SEO complet — structure technique, opportunités de marchés, plan d'action international priorisé sous 48 h.</p>
+              <a href="/contact.html?utm_source=blog&utm_medium=article&utm_campaign=seo-international-hreflang-export&utm_content=cta-final" class="btn btn--primary">Je veux mon audit gratuit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Dans cet article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#mythe">Le mythe de la traduction</a></li>
+                <li><a href="#hreflang">Levier 1 — Balise hreflang</a></li>
+                <li><a href="#structure">Levier 2 — Structure d'URL</a></li>
+                <li><a href="#localisation">Levier 3 — Localisation</a></li>
+                <li><a href="#mots-cles">Levier 4 — Mots-clés internationaux</a></li>
+                <li><a href="#checklist">Checklist technique</a></li>
+                <li><a href="#faq">FAQ (8 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Articles connexes</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/seo.html">Notre service SEO →</a></li>
+                <li><a href="/blog/seo/seo-onpage-contenu-structure.html">SEO on-page →</a></li>
+                <li><a href="/blog/seo/architecture-silos-seo-pme.html">Architecture SEO →</a></li>
+                <li><a href="/blog/seo/">Tous les articles SEO →</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+        <address class="footer__address">Montréal, Québec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></address>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/">Accueil</a></li><li><a href="/services.html">Services</a></li><li><a href="/secteurs.html">Secteurs</a></li><li><a href="/ressources.html">Ressources</a></li><li><a href="/blog/">Blog</a></li><li><a href="/a-propos.html">À propos</a></li><li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Blog</h3>
+        <ul class="footer__list">
+          <li><a href="/blog/creation-site/">Création de sites</a></li><li><a href="/blog/seo/">SEO</a></li><li><a href="/blog/marketing-digital/">Marketing digital</a></li><li><a href="/blog/ia-automatisation/">IA &amp; Automatisation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Zones desservies</h3>
+        <ul class="footer__list">
+          <li><a href="/zones-desservies/montreal.html">Montréal</a></li><li><a href="/zones-desservies/quebec.html">Québec</a></li><li><a href="/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 NEXTIWEB. Tous droits réservés.</p></div>
+  </footer>
+
+  <!-- Float bar -->
+  <div class="float-bar">
+    <a href="/question.html" class="question-float" aria-label="Poser une question">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </a>
+    <a href="https://wa.me/15147910591" class="whatsapp-pill" aria-label="WhatsApp" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.article-faq__item');
+        var isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.article-faq__item').forEach(function(i) {
+          i.classList.remove('is-open');
+          i.querySelector('.article-faq__btn').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('is-open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+  <script src="/assets/js/main.min.js" defer></script>
+</body>
+</html>

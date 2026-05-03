@@ -319,7 +319,7 @@
           novalidate
         >
           <input type="hidden" name="form-name" value="audit-gratuit">
-          <input type="hidden" name="bot-field" style="display:none">
+          <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
 
           <div class="tform__row">
             <div class="tform__field">
@@ -371,6 +371,10 @@
               J'accepte que mes informations soient utilisées pour traiter ma demande, conformément à la
               <a href="/politique-confidentialite.html" target="_blank">politique de confidentialité</a>.
             </label>
+          </div>
+
+          <div id="form-error" style="display:none;background:rgba(248,113,113,.1);border:1.5px solid #f87171;border-radius:.625rem;padding:.75rem 1rem;margin-bottom:1rem;font-size:.85rem;color:#f87171;text-align:center;">
+            Veuillez remplir tous les champs obligatoires : prénom, entreprise, courriel, choisir un objectif et cocher la case de consentement.
           </div>
 
           <button class="tform__submit" type="submit">
@@ -468,7 +472,13 @@
       }
       const consent = form.querySelector('#consent');
       if (!consent.checked) { valid = false; consent.focus(); }
-      if (!valid) { e.preventDefault(); }
+      var errDiv = document.getElementById('form-error');
+      if (!valid) {
+        if (errDiv) { errDiv.style.display = 'block'; errDiv.scrollIntoView({behavior:'smooth',block:'center'}); }
+        e.preventDefault();
+      } else {
+        if (errDiv) errDiv.style.display = 'none';
+      }
     });
 
     // Clear radio error on selection

@@ -15,7 +15,15 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
-# ---- 3. Page 404 personnalisée ----
+# ---- 3. Redirections blog (aliases catégories FR/EN) ----
+RewriteRule ^en/blog/creation-site/?$ /en/blog/website-design/ [R=301,L]
+RewriteRule ^en/blog/marketing-digital/?$ /en/blog/digital-marketing/ [R=301,L]
+RewriteRule ^en/blog/ia-automatisation/?$ /en/blog/ai-automation/ [R=301,L]
+RewriteRule ^blog/website-design/?$ /blog/creation-site/ [R=301,L]
+RewriteRule ^blog/digital-marketing/?$ /blog/marketing-digital/ [R=301,L]
+RewriteRule ^blog/ai-automation/?$ /blog/ia-automatisation/ [R=301,L]
+
+# ---- 4. Page 404 personnalisée ----
 ErrorDocument 404 /404.html
 
 # ---- 4. Compression GZIP ----

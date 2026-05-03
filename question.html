@@ -276,16 +276,12 @@
 
       <div class="tunnel-card">
         <form
-          name="question-rapide"
           method="POST"
-          action="/merci.html"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          action="/question-handler.php"
           id="question-form"
           novalidate
         >
-          <input type="hidden" name="form-name" value="question-rapide">
-          <input type="hidden" name="bot-field" style="display:none">
+          <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
 
           <div class="tform__row">
             <div class="tform__field">

@@ -1,10 +1,12 @@
 <?php
+require_once dirname(__DIR__) . '/mail-config.php';
+require_once dirname(__DIR__) . '/smtp-mailer.php';
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: /en/contact.html');
     exit;
 }
 
-// Honeypot anti-spam
 if (!empty($_POST['bot-field'])) {
     header('Location: /en/merci.html');
     exit;
@@ -22,8 +24,7 @@ if (empty($prenom) || empty($entreprise) || !filter_var($email, FILTER_VALIDATE_
     exit;
 }
 
-$to      = 'contact@nextiweb.ca';
-$subject = "=?UTF-8?B?" . base64_encode("New free audit — $prenom ($entreprise)") . "?=";
+$subject = "New free audit — $prenom ($entreprise)";
 $body    = "First name : $prenom\n"
          . "Company    : $entreprise\n"
          . "Email      : $email\n"
@@ -31,11 +32,7 @@ $body    = "First name : $prenom\n"
          . "Goal       : $objectif\n"
          . "Details    : " . ($details ?: 'none') . "\n";
 
-$headers  = "From: noreply@nextiweb.ca\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-mail($to, $subject, $body, $headers);
+smtp_send(MAIL_TO, $subject, $body, $email);
 
 header('Location: /en/merci.html');
 exit;

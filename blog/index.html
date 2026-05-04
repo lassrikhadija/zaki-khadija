@@ -265,7 +265,7 @@
     {t:"IA et marketing de contenu : gagner du temps sans perdre sa voix",d:"Utiliser ChatGPT, Jasper et les outils IA pour créer du contenu marketing efficace tout en gardant une voix authentique. Guide pratique pour PME.",u:"/blog/ia-automatisation/ia-marketing-contenu-pme.html",m:"4 mai 2026 · 9 min"},
     {t:"Combien coûte vraiment l'IA pour une PME en 2026 ?",d:"Abonnements, formation, intégration, maintenance — voici ce que coûte réellement l'adoption de l'IA dans une PME québécoise, avec des fourchettes réalistes.",u:"/blog/ia-automatisation/cout-ia-budget-pme.html",m:"4 mai 2026 · 8 min"}
   ];
-  function nrm(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");}
+  function nrm(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");}
   function doSearch(){
     var inp=document.querySelector(".blog-search__input");
     var wrap=document.getElementById("blog-search-results-wrap");
@@ -293,12 +293,10 @@
     box.innerHTML=h;
     wrap.scrollIntoView({behavior:"smooth",block:"start"});
   }
-  document.addEventListener("DOMContentLoaded",function(){
-    var btn=document.querySelector(".blog-search__btn");
-    var inp=document.querySelector(".blog-search__input");
-    if(btn)btn.addEventListener("click",doSearch);
-    if(inp)inp.addEventListener("keydown",function(e){if(e.key==="Enter")doSearch();});
-  });
+  var _btn=document.querySelector(".blog-search__btn");
+  var _inp=document.querySelector(".blog-search__input");
+  if(_btn)_btn.addEventListener("click",doSearch);
+  if(_inp)_inp.addEventListener("keydown",function(e){if(e.key==="Enter")doSearch();});
 })();
 
 </script>

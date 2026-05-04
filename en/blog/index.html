@@ -293,10 +293,12 @@
     box.innerHTML=h;
     wrap.scrollIntoView({behavior:"smooth",block:"start"});
   }
-  var _btn=document.querySelector(".blog-search__btn");
-  var _inp=document.querySelector(".blog-search__input");
-  if(_btn)_btn.addEventListener("click",doSearch);
-  if(_inp)_inp.addEventListener("keydown",function(e){if(e.key==="Enter")doSearch();});
+  document.addEventListener("click",function(e){
+    if(e.target&&(e.target.classList.contains("blog-search__btn")||e.target.closest&&e.target.closest(".blog-search__btn")))doSearch();
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Enter"&&e.target&&e.target.classList.contains("blog-search__input"))doSearch();
+  });
 })();
 </script>
 </body>

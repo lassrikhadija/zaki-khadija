@@ -361,24 +361,6 @@
             </div>
           </div>
 
-          <div class="tform__field" id="field-objectif">
-            <label class="tform__label">Your main goal<span>*</span></label>
-            <div class="tform__radio-group" id="objectif-group">
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="leads"> Get more qualified leads
-              </label>
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="seo"> Outrank my competitors on Google
-              </label>
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="conversion"> Have a website that sells 24/7
-              </label>
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="lancement"> Launch or redesign my website
-              </label>
-            </div>
-          </div>
-
           <div class="tform__field">
             <label class="tform__label" for="details">Tell us more <em style="font-weight:400;opacity:.6">(optional)</em></label>
             <textarea class="tform__textarea" id="details" name="details" placeholder="Your industry, your target clients, what isn't working today, what you want to change..."></textarea>
@@ -445,7 +427,6 @@
     if (!form) return;
 
     const inputs = form.querySelectorAll('.tform__input, .tform__textarea');
-    const objectifGroup = form.querySelector('#objectif-group');
 
     inputs.forEach(function(input) {
       input.addEventListener('blur', function() { validate(input); });
@@ -465,13 +446,6 @@
       input.classList.remove('valid', 'error');
     }
 
-    function setObjectifError(hasError) {
-      if (!objectifGroup) return;
-      objectifGroup.querySelectorAll('.tform__radio-label').forEach(function(lbl) {
-        lbl.style.borderColor = hasError ? '#f87171' : '';
-      });
-    }
-
     form.addEventListener('submit', function(e) {
       let valid = true;
       inputs.forEach(function(input) {
@@ -480,13 +454,6 @@
           if (input.classList.contains('error') || !input.value.trim()) valid = false;
         }
       });
-      const objectifChecked = form.querySelector('input[name="objectif"]:checked');
-      if (!objectifChecked) {
-        valid = false;
-        setObjectifError(true);
-      } else {
-        setObjectifError(false);
-      }
       const consent = form.querySelector('#consent');
       if (!consent.checked) { valid = false; consent.focus(); }
       var errDiv = document.getElementById('form-error');
@@ -497,10 +464,6 @@
         if (errDiv) errDiv.style.display = 'none';
       }
     });
-
-    if (objectifGroup) {
-      objectifGroup.addEventListener('change', function() { setObjectifError(false); });
-    }
   })();
   </script>
 

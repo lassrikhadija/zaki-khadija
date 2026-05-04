@@ -363,24 +363,6 @@
             </div>
           </div>
 
-          <div class="tform__field" id="field-objectif">
-            <label class="tform__label">Votre objectif principal<span>*</span></label>
-            <div class="tform__radio-group" id="objectif-group">
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="leads"> Multiplier mes leads qualifiés
-              </label>
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="seo"> Dépasser mes concurrents sur Google
-              </label>
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="conversion"> Avoir un site qui vend 24h/24
-              </label>
-              <label class="tform__radio-label">
-                <input type="radio" name="objectif" value="lancement"> Lancer ou refondre mon site
-              </label>
-            </div>
-          </div>
-
           <div class="tform__field">
             <label class="tform__label" for="details">Dites-nous en plus <em style="font-weight:400;opacity:.6">(optionnel)</em></label>
             <textarea class="tform__textarea" id="details" name="details" placeholder="Votre secteur, vos clients cibles, ce qui ne fonctionne pas aujourd'hui, ce que vous voulez changer..."></textarea>
@@ -395,7 +377,7 @@
           </div>
 
           <div id="form-error" style="display:none;background:rgba(248,113,113,.1);border:1.5px solid #f87171;border-radius:.625rem;padding:.75rem 1rem;margin-bottom:1rem;font-size:.85rem;color:#f87171;text-align:center;">
-            Veuillez remplir tous les champs obligatoires : prénom, entreprise, courriel, choisir un objectif et cocher la case de consentement.
+            Veuillez remplir tous les champs obligatoires : prénom, entreprise, courriel et cocher la case de consentement.
           </div>
 
           <button class="tform__submit" type="submit">
@@ -447,7 +429,6 @@
     if (!form) return;
 
     const inputs = form.querySelectorAll('.tform__input, .tform__textarea');
-    const objectifGroup = form.querySelector('#objectif-group');
 
     inputs.forEach(function(input) {
       input.addEventListener('blur', function() { validate(input); });
@@ -467,14 +448,6 @@
       input.classList.remove('valid', 'error');
     }
 
-    // Radio group visual error state
-    function setObjectifError(hasError) {
-      if (!objectifGroup) return;
-      objectifGroup.querySelectorAll('.tform__radio-label').forEach(function(lbl) {
-        lbl.style.borderColor = hasError ? '#f87171' : '';
-      });
-    }
-
     form.addEventListener('submit', function(e) {
       let valid = true;
       inputs.forEach(function(input) {
@@ -483,14 +456,6 @@
           if (input.classList.contains('error') || !input.value.trim()) valid = false;
         }
       });
-      // Validate objectif radio group
-      const objectifChecked = form.querySelector('input[name="objectif"]:checked');
-      if (!objectifChecked) {
-        valid = false;
-        setObjectifError(true);
-      } else {
-        setObjectifError(false);
-      }
       const consent = form.querySelector('#consent');
       if (!consent.checked) { valid = false; consent.focus(); }
       var errDiv = document.getElementById('form-error');
@@ -501,11 +466,6 @@
         if (errDiv) errDiv.style.display = 'none';
       }
     });
-
-    // Clear radio error on selection
-    if (objectifGroup) {
-      objectifGroup.addEventListener('change', function() { setObjectifError(false); });
-    }
   })();
   </script>
 

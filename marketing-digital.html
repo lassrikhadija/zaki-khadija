@@ -48,7 +48,17 @@
     .breadcrumb__current{color:var(--color-primary);font-weight:500}
     .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
     .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
-  
+    .section__header{text-align:center}
+    .section__header .section__title,.section__header .section__subtitle{max-width:760px;margin-left:auto;margin-right:auto}
+    .steps{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1.25rem!important;list-style:none!important;padding:0!important;counter-reset:step-counter}
+    .steps__item{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:28px 24px;counter-increment:step-counter;position:relative;transition:border-color .2s,background .2s}
+    .steps__item:hover{border-color:var(--color-primary);background:rgba(0,230,118,.05)}
+    .steps__item::before{content:counter(step-counter,decimal-leading-zero);display:block;font-size:2.2rem;font-weight:900;color:var(--color-primary);line-height:1;margin-bottom:14px;letter-spacing:-.02em}
+    .steps__title{font-size:1rem!important;font-weight:700!important;color:var(--color-text)!important;margin:0 0 8px!important}
+    .steps__item>p{font-size:.875rem!important;color:var(--color-text-muted)!important;line-height:1.65!important;margin:0!important}
+    @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)!important}}
+    @media(max-width:560px){.steps{grid-template-columns:1fr!important}}
+
     /* Barre flottante telephone + WhatsApp */
     .whatsapp-float{display:none!important}
     .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}

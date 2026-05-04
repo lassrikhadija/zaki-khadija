@@ -162,7 +162,8 @@
       transition: border-color .2s, color .2s, background .2s;
     }
     .tform__radio-label:hover { border-color: var(--color-primary); color: var(--color-text); }
-    .tform__radio-label input[type="radio"] { accent-color: var(--color-primary); }
+    .tform__radio-label input[type="radio"],
+    .tform__radio-label input[type="checkbox"] { accent-color: var(--color-primary); }
     .tform__radio-label:has(input:checked) {
       border-color: var(--color-primary);
       background: rgba(0,230,118,.08);
@@ -336,6 +337,30 @@
           <div class="tform__field">
             <label class="tform__label" for="site">Vous avez déjà un site ?</label>
             <input class="tform__input" id="site" name="site" type="url" placeholder="https://votresite.com (laissez vide si non)">
+          </div>
+
+          <div class="tform__field">
+            <label class="tform__label">Type de projet <em style="font-weight:400;opacity:.6">(optionnel)</em></label>
+            <div class="tform__radio-group">
+              <label class="tform__radio-label">
+                <input type="checkbox" name="projet[]" value="site-vitrine"> Site vitrine
+              </label>
+              <label class="tform__radio-label">
+                <input type="checkbox" name="projet[]" value="landing-page"> Landing page
+              </label>
+              <label class="tform__radio-label">
+                <input type="checkbox" name="projet[]" value="e-commerce"> Site e-commerce
+              </label>
+              <label class="tform__radio-label">
+                <input type="checkbox" name="projet[]" value="refonte"> Refonte de site
+              </label>
+              <label class="tform__radio-label">
+                <input type="checkbox" name="projet[]" value="seo"> Référencement SEO
+              </label>
+              <label class="tform__radio-label">
+                <input type="checkbox" name="projet[]" value="marketing"> Marketing digital
+              </label>
+            </div>
           </div>
 
           <div class="tform__field" id="field-objectif">

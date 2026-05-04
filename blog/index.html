@@ -122,6 +122,7 @@
         </div>
       </div>
     </section>
+    <section id="blog-search-results-wrap" style="display:none;" class="blog-posts section"><div class="container" id="blog-search-results"></div></section>
     <section class="blog-categories section section--alt-bg">
       <div class="container">
         <header class="section__header section__header--center">
@@ -206,5 +207,100 @@
       </svg>
     </a>
   </div>
+<script>
+(function(){
+  var A=[
+    {t:"7 signaux que votre site a besoin d'une refonte (Guide PME 2026)",d:"Score de diagnostic sur 7 points — lenteur mobile, conversion en baisse, design dépassé, non-conformité Loi 25. 3 scénarios chiffrés : rafraîchissement, refonte partielle ou refonte complète.",u:"/blog/creation-site/7-signaux-refonte-site-web.html",m:"3 mai 2026 · 11 min"},
+    {t:"Maintenance technique : pourquoi votre site web est un jardin, pas une statue",d:"Mises à jour de sécurité, sauvegardes, optimisation vitesse — les 4 tâches mensuelles et le tableau préventif vs urgence pour protéger votre investissement numérique.",u:"/blog/creation-site/maintenance-technique-site-web-pme.html",m:"3 mai 2026 · 10 min"},
+    {t:"Intégration et mise en ligne : le guide pour lancer votre site sans stress",d:"DNS, SSL, redirections 301, tests mobiles — les 4 étapes critiques et les 5 éléments à vérifier avant de cliquer Publier. Règle d'or : ne jamais lancer le vendredi.",u:"/blog/creation-site/integration-mise-en-ligne-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"Backend et logique : ce qui se cache sous le capot de votre site web",d:"Serveur, base de données, API — l'anatomie du cerveau numérique de votre site. Sécurité, conformité Loi 25 et automatisation : ce que tout dirigeant PME doit comprendre.",u:"/blog/creation-site/backend-logique-cerveau-pme.html",m:"3 mai 2026 · 11 min"},
+    {t:"WordPress ou site codé sur mesure : le vrai match (Guide PME Québec 2026)",d:"Comparatif des budgets, autonomie de gestion et dépendance technique — les 3 scénarios décisifs pour choisir la bonne technologie sans sur-ingénieriser.",u:"/blog/creation-site/wordpress-vs-site-code-pme.html",m:"3 mai 2026 · 11 min"},
+    {t:"Outils et CMS 2026 : le panorama pour choisir sans vous tromper",d:"WordPress, Shopify, Webflow ou CMS maison — comparatif stratégique, coûts réels de possession et 3 critères pour ne pas devenir technologiquement dépendant de votre prestataire.",u:"/blog/creation-site/outils-cms-panorama-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"UI et design : comment l'interface de votre site décide de vos ventes",d:"Hiérarchie visuelle, cohérence du Design System, signaux de confiance — les 3 piliers de l'UI de conversion et les 3 règles d'or pour transformer vos visiteurs en clients.",u:"/blog/creation-site/ui-design-conversion-pme.html",m:"3 mai 2026 · 11 min"},
+    {t:"Domaine, hébergement et propriété : ne soyez plus l'otage de votre prestataire",d:"Grille d'alerte WHOIS, coûts réels et 3 étapes pour reprendre le contrôle de vos actifs numériques — domaine, hébergement et accès DNS.",u:"/blog/creation-site/domaine-hebergement-proprietaire-pme.html",m:"3 mai 2026 · 10 min"},
+    {t:"HTML, CSS, JS : comprendre la mécanique de votre site web (Guide PME 2026)",d:"Le trio HTML / CSS / JavaScript expliqué sans jargon — impact SEO, taux de conversion et conformité Loi 25. 3 questions à poser à votre prestataire pour vérifier la qualité du code.",u:"/blog/creation-site/bases-techniques-frontend-pme.html",m:"3 mai 2026 · 10 min"},
+    {t:"UX et structure de contenu : votre site est-il un magasin ou un labyrinthe ?",d:"Arborescence, menu, hiérarchie de contenu — comment structurer votre site pour guider vos visiteurs et les convertir. La Loi de Miller, le siloing SEO et une checklist UX en 5 minutes.",u:"/blog/creation-site/ux-structure-contenu.html",m:"22 avril 2026 · 11 min"},
+    {t:"HTML, CSS et JavaScript : guide pour dirigeant de PME",d:"Comprendre HTML, CSS et JS sans coder : repérez les pièges techniques, posez les bonnes questions à votre prestataire et protégez votre investissement.",u:"/blog/creation-site/html-css-js-guide-dirigeant.html",m:"22 avril 2026 · 10 min"},
+    {t:"Vitrine, landing page ou e-commerce : le bon format pour votre budget 2026",d:"Tableau comparatif complet — objectifs, délais, taux de conversion et budgets réels au Québec. La règle d'or : ne payez pas pour des fonctionnalités au cas où.",u:"/blog/creation-site/choisir-format-site-web.html",m:"22 avril 2026 · 10 min"},
+    {t:"Vitrine, landing, e-commerce : quel type de site choisir (et combien ça coûte vraiment)",d:"3 types de sites, 3 objectifs différents. Quel format correspond à votre PME québécoise, les fourchettes de prix réalistes en 2026, et les 3 pièges qui vident votre portefeuille.",u:"/blog/creation-site/vitrine-landing-ecommerce.html",m:"17 avril 2026 · 9 min"},
+    {t:"Comment fonctionne un site web (pour une PME qui part de zéro)",d:"Domaine, hébergement, serveur, SSL, CMS — tout ce qu'une PME québécoise doit comprendre avant de créer ou refaire son site. Guide complet avec tableau comparatif et checklist avant de signer.",u:"/blog/creation-site/comment-fonctionne-site-web.html",m:"17 avril 2026 · 12 min"},
+    {t:"SEO International 2026 : exporter votre succès québécois avec les balises hreflang",d:"Balises hreflang, sous-répertoires vs ccTLD, localisation culturelle et recherche de mots-clés par marché — le guide pour rendre votre site visible à Toronto, New York ou Paris.",u:"/blog/seo/seo-international-hreflang-export.html",m:"2 mai 2026 · 13 min"},
+    {t:"YouTube SEO 2026 : les 4 leviers pour hisser vos vidéos en tête de Google",d:"Titre optimisé, chapitrage Key Moments, sous-titres SRT, Watch Time — la méthode complète pour transformer YouTube en canal d'acquisition organique.",u:"/blog/seo/youtube-seo-visibilite-video.html",m:"2 mai 2026 · 12 min"},
+    {t:"SEO e-commerce : transformer votre catalogue en machine à clics organiques",d:"Shopify vs WooCommerce, fiches produits uniques, schema Product, gestion des facettes et des produits épuisés — les 3 piliers du SEO e-commerce en 2026.",u:"/blog/seo/seo-ecommerce-shopify-woocommerce-pme.html",m:"2 mai 2026 · 13 min"},
+    {t:"Mesurer son SEO : piloter votre performance avec Search Console et GA4",d:"Impressions, clics, taux d'engagement, conversions organiques — les 6 métriques qui prouvent le ROI de votre SEO et comment les lire sans être développeur.",u:"/blog/seo/mesurer-performance-seo-pme.html",m:"2 mai 2026 · 12 min"},
+    {t:"Écrire pour les IA search : 5 signaux pour être cité par ChatGPT et Google AI Overviews",d:"GEO, réponse directe, FAQ autoporteuse, schema JSON-LD, entités nommées — les 5 signaux concrets pour passer de ignoré par les IA à cité textuellement.",u:"/blog/seo/seo-ia-generative-optimization-pme.html",m:"2 mai 2026 · 12 min"},
+    {t:"Architecture SEO : pages piliers et clusters thématiques pour dominer votre niche",d:"Page pilier, articles satellites, maillage interne stratégique — la méthode pour bâtir une autorité topique que Google identifie comme une expertise.",u:"/blog/seo/architecture-silos-seo-pme.html",m:"2 mai 2026 · 13 min"},
+    {t:"E-E-A-T 2026 : 7 actions concrètes pour renforcer votre crédibilité aux yeux de Google",d:"Expérience, expertise, autorité, fiabilité — les 7 actions prioritaires pour que Google et vos visiteurs vous perçoivent comme la référence de votre secteur.",u:"/blog/seo/eeat-expertise-autorite-confiance.html",m:"28 avril 2026 · 11 min"},
+    {t:"Autorité et backlinks : construire votre réputation Google proprement",d:"Data primaire, RP digitales, maillage partenaire — les 3 stratégies propres pour obtenir des liens d'autorité sans risquer une pénalité Google.",u:"/blog/seo/autorite-backlinks-strategies.html",m:"28 avril 2026 · 11 min"},
+    {t:"SEO local : le Google Business Profile étape par étape (guide PME Québec 2026)",d:"Revendication, NAP, catégories, avis, Google Posts — les 7 étapes pour entrer dans le Local Pack et dominer votre marché local.",u:"/blog/seo/seo-local-google-business-profile.html",m:"28 avril 2026 · 11 min"},
+    {t:"Core Web Vitals 2026 : savoir si votre site est assez rapide — et quoi corriger en premier",d:"LCP, INP, CLS — les seuils Google, le test en 2 minutes avec PageSpeed Insights et le plan de correction 30 jours pour PME québécoises.",u:"/blog/seo/vitesse-technique-core-web-vitals.html",m:"28 avril 2026 · 9 min"},
+    {t:"SEO on-page 2026 : la checklist du dirigeant PME pour une page qui se classe (sans coder)",d:"H1, meta title, URL, images WebP, liens internes — la checklist on-page en 7 points testable en 30 minutes, sans toucher au code.",u:"/blog/seo/seo-onpage-contenu-structure.html",m:"28 avril 2026 · 10 min"},
+    {t:"Recherche de mots-clés SEO : méthode en 6 étapes pour les PME",d:"Intention de recherche, outils gratuits, clusters thématiques et longue traîne — la méthode complète pour trouver les mots-clés qui attirent vos vrais clients.",u:"/blog/seo/recherche-mots-cles-strategiques.html",m:"28 avril 2026 · 11 min"},
+    {t:"Site invisible sur Google : 5 vérifications à faire en 30 minutes",d:"Indexation, robots.txt, Search Console, Core Web Vitals, balises title — le diagnostic complet pour trouver pourquoi votre site n'apparaît pas sur Google.",u:"/blog/seo/diagnostic-site-invisible.html",m:"28 avril 2026 · 10 min"},
+    {t:"Comprendre le SEO en 2026 : le guide du dirigeant PME",d:"Les 3 piliers du SEO, la différence SEO/SEA, les moteurs IA et un budget réaliste — tout ce qu'un dirigeant PME québécois doit savoir avant d'investir.",u:"/blog/seo/comprendre-seo-pme.html",m:"28 avril 2026 · 10 min"},
+    {t:"Core Web Vitals 2026 : le guide complet pour les PME",d:"LCP, INP, CLS — comprendre les seuils Google, diagnostiquer les ralentissements et corriger votre site en 30 jours.",u:"/blog/seo/performance-core-web-vitals.html",m:"24 avril 2026 · 9 min"},
+    {t:"Marketing digital PME : les 5 fondations avant d'investir un dollar",d:"Les 5 fondations du marketing digital PME : parcours client, canaux, positionnement, offre, message. Le guide clair du dirigeant avant d'investir un dollar.",u:"/blog/marketing-digital/bases-marketing-digital-pme.html",m:"3 mai 2026 · 9 min"},
+    {t:"Stratégie marketing digital PME : construire son plan 3-6-12 mois",d:"Construisez votre stratégie marketing digital PME en 1 page A4 : objectifs chiffrés, 2 canaux prioritaires, plan 3-6-12 mois. Guide du dirigeant 2026.",u:"/blog/marketing-digital/strategie-marketing-digital-plan-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"Choisir ses 2 canaux marketing prioritaires : la méthode PME 2026",d:"La matrice de décision B2B/B2C x ticket pour identifier vos 2 canaux gagnants. Méthode, règle 90-60-30 et cas chiffré ROI.",u:"/blog/marketing-digital/choisir-2-canaux-prioritaires-pme.html",m:"3 mai 2026 · 10 min"},
+    {t:"Landing Page Haute Performance : frameworks AIDA et PASTOR",d:"Apprenez à construire des pages de vente qui convertissent vraiment. Guide complet sur les frameworks psychologiques AIDA, PASTOR et la règle KISS en 2026.",u:"/blog/marketing-digital/landing-page-haute-conversion-frameworks.html",m:"3 mai 2026 · 15 min"},
+    {t:"Google Ads vs Meta Ads : le match publicitaire pour votre PME québécoise",d:"Ne gaspillez plus votre budget pub. Découvrez si votre PME doit investir sur Google ou Meta pour générer un ROI maximal en 2026.",u:"/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html",m:"3 mai 2026 · 13 min"},
+    {t:"Réseaux sociaux pour PME : guide ROI et stratégie 2026",d:"Arrêtez de poster dans le vide. Découvrez comment transformer vos réseaux sociaux en machines à prospects avec une stratégie LinkedIn, Instagram et TikTok adaptée aux PME.",u:"/blog/marketing-digital/reseaux-sociaux-roi-pme-strategie.html",m:"3 mai 2026 · 13 min"},
+    {t:"Influence locale et co-marketing PME : croître sans publicité payante",d:"Découvrez comment croître sans publicité grâce aux partenariats stratégiques et aux micro-influenceurs au Québec. Méthode pour réduire vos coûts d'acquisition.",u:"/blog/marketing-digital/partenariats-influence-locale-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"Tunnels de vente pour PME : maximisez votre conversion",d:"Transformez votre site web en machine de vente. Découvrez comment boucher les fuites de votre entonnoir et tripler vos leads sans augmenter votre budget pub.",u:"/blog/marketing-digital/tunnels-vente-pme-conversion.html",m:"3 mai 2026 · 13 min"},
+    {t:"5 idées de lead magnets pour PME : boostez vos prospects en 2026",d:"Transformez votre site en machine à leads. Découvrez les 5 types de ressources gratuites les plus performantes pour capturer des emails qualifiés en 2026.",u:"/blog/marketing-digital/lead-magnets-idees-pme.html",m:"3 mai 2026 · 14 min"},
+    {t:"Email vs Ads : où mettre vos 500 $/mois en marketing digital ?",d:"Dilemme budgétaire pour votre PME ? Découvrez comment répartir vos 500 $ entre publicité et email marketing pour maximiser votre ROI en 2026.",u:"/blog/marketing-digital/arbitrage-budget-email-vs-ads-pme.html",m:"3 mai 2026 · 14 min"},
+    {t:"Email marketing et automatisation : le guide ultime pour PME 2026",d:"Découvrez comment l'email marketing et l'automatisation peuvent transformer votre PME. Bâtissez un actif rentable et indépendant des algorithmes.",u:"/blog/marketing-digital/email-marketing-automatisation-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"Fidélisation et réactivation client pour PME : guide ROI 2026",d:"Découvrez comment multiplier vos profits sans augmenter votre budget pub. Guide complet sur la LTV, le suivi post-achat et les campagnes de réactivation pour PME.",u:"/blog/marketing-digital/fidelisation-reactivation-client-pme.html",m:"3 mai 2026 · 13 min"},
+    {t:"Avis clients PME : transformez vos 5 étoiles en ventes",d:"Découvrez comment bâtir une e-réputation imbattable en 2026. Guide sur l'automatisation des avis Google, la gestion des avis négatifs et la preuve sociale.",u:"/blog/marketing-digital/avis-clients-preuve-sociale-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"Mesurer le ROI marketing pour PME : guide performance 2026",d:"Arrêtez de piloter votre marketing à l'aveugle. Découvrez les KPIs critiques (CAC, LTV, ROAS) et comment configurer GA4 pour une PME performante.",u:"/blog/marketing-digital/mesurer-roi-marketing-pme-analytics.html",m:"3 mai 2026 · 13 min"},
+    {t:"Copywriting pour PME : les mots qui transforment votre site en machine de conversion",d:"Découvrez comment transformer votre site web en machine de conversion grâce au copywriting de performance. Formule PDR, tests de clarté et conseils experts.",u:"/blog/marketing-digital/copywriting-performance-pme.html",m:"3 mai 2026 · 12 min"},
+    {t:"IA et marketing PME : 5 outils pour gagner 10 h par semaine en 2026",d:"Apprenez à utiliser l'IA pour automatiser votre marketing sans perdre votre authenticité. Top 5 outils gratuits et méthode pour un contenu performant en 2026.",u:"/blog/marketing-digital/marketing-intelligence-artificielle-pme.html",m:"3 mai 2026 · 13 min"},
+    {t:"Site sans lead : les 6 correctifs qui convertissent (PME 2026)",d:"Votre site reçoit du trafic mais pas de leads ? Les 6 correctifs de conversion — promesse, formulaire, CTA, preuves, vitesse, relance — pour passer à 2-3 % de conversion.",u:"/blog/marketing-digital/site-sans-lead-6-correctifs-pme.html",m:"3 mai 2026 · 11 min"},
+    {t:"Google Ads pour les PME : guide complet pour maximiser votre ROI (2026)",d:"Apprenez à créer et optimiser vos campagnes Google Ads en 2026 : types de campagnes, structure de compte, mots-clés, budget et 5 erreurs à éviter pour les PME québécoises.",u:"/blog/marketing-digital/google-ads-pme-guide.html",m:"2 mai 2026 · 12 min"},
+    {t:"5 tâches répétitives que l'IA peut faire à votre place",d:"Emails, devis, facturation, réseaux sociaux, service client — découvrez 5 tâches que l'IA prend en charge pour libérer du temps dans votre PME.",u:"/blog/ia-automatisation/ia-taches-repetitives-pme.html",m:"4 mai 2026 · 8 min"},
+    {t:"No-code IA : automatiser votre PME sans coder",d:"Zapier, Make, n8n — comment automatiser vos processus métiers sans une ligne de code, même sans équipe technique.",u:"/blog/ia-automatisation/automatisation-no-code-pme.html",m:"4 mai 2026 · 9 min"},
+    {t:"IA et Loi 25 au Québec : ce que votre PME doit savoir",d:"Utiliser l'IA dans votre PME québécoise sans enfreindre la Loi 25 sur la protection des renseignements personnels. Guide pratique 2026.",u:"/blog/ia-automatisation/ia-loi-25-quebec-pme.html",m:"4 mai 2026 · 10 min"},
+    {t:"ChatGPT ou outils IA spécialisés : lequel choisir pour votre PME ?",d:"ChatGPT, Jasper, Midjourney, HubSpot IA — comment choisir le bon outil d'intelligence artificielle selon vos besoins et votre budget.",u:"/blog/ia-automatisation/chatgpt-vs-outils-specialises-pme.html",m:"4 mai 2026 · 8 min"},
+    {t:"Automatiser son service client avec l'IA : guide pour PME",d:"Chatbots, réponses automatiques, escalade intelligente — comment l'IA peut gérer votre service client 24h/24 sans sacrifier la qualité de la relation.",u:"/blog/ia-automatisation/automatiser-service-client-ia-pme.html",m:"4 mai 2026 · 9 min"},
+    {t:"IA et marketing de contenu : gagner du temps sans perdre sa voix",d:"Utiliser ChatGPT, Jasper et les outils IA pour créer du contenu marketing efficace tout en gardant une voix authentique. Guide pratique pour PME.",u:"/blog/ia-automatisation/ia-marketing-contenu-pme.html",m:"4 mai 2026 · 9 min"},
+    {t:"Combien coûte vraiment l'IA pour une PME en 2026 ?",d:"Abonnements, formation, intégration, maintenance — voici ce que coûte réellement l'adoption de l'IA dans une PME québécoise, avec des fourchettes réalistes.",u:"/blog/ia-automatisation/cout-ia-budget-pme.html",m:"4 mai 2026 · 8 min"}
+  ];
+  function nrm(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");}
+  function doSearch(){
+    var inp=document.querySelector(".blog-search__input");
+    var wrap=document.getElementById("blog-search-results-wrap");
+    var box=document.getElementById("blog-search-results");
+    if(!inp||!wrap||!box)return;
+    var q=nrm(inp.value.trim());
+    if(q.length<2){wrap.style.display="none";box.innerHTML="";return;}
+    var res=A.filter(function(a){return nrm(a.t).indexOf(q)!==-1||nrm(a.d).indexOf(q)!==-1;});
+    wrap.style.display="block";
+    if(res.length===0){
+      box.innerHTML='<p class="blog-empty">Aucun article trouvé pour cette recherche. Essayez un autre mot-clé.</p>';
+      wrap.scrollIntoView({behavior:"smooth",block:"start"});
+      return;
+    }
+    var h='<p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:1.5rem;">'+res.length+' article'+(res.length>1?'s':'')+' trouvé'+(res.length>1?'s':'')+' :</p><div class="projects">';
+    res.forEach(function(a){
+      h+='<article class="project-card">'
+        +'<p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">'+a.m+'</p>'
+        +'<h2 class="project-card__title" style="font-size:1.15rem;">'+a.t+'</h2>'
+        +'<p class="project-card__text">'+a.d+'</p>'
+        +'<p class="project-card__meta"><a href="'+a.u+'">Lire l\'article →</a></p>'
+        +'</article>';
+    });
+    h+='</div>';
+    box.innerHTML=h;
+    wrap.scrollIntoView({behavior:"smooth",block:"start"});
+  }
+  document.addEventListener("DOMContentLoaded",function(){
+    var btn=document.querySelector(".blog-search__btn");
+    var inp=document.querySelector(".blog-search__input");
+    if(btn)btn.addEventListener("click",doSearch);
+    if(inp)inp.addEventListener("keydown",function(e){if(e.key==="Enter")doSearch();});
+  });
+})();
+
+</script>
 </body>
 </html>

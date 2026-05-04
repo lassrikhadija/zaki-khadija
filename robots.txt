@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /blog/?
 
 Sitemap: https://nextiweb.ca/sitemap.xml

@@ -338,7 +338,7 @@
           </div>
 
           <div class="tform__field">
-            <label class="tform__label">Project type <em style="font-weight:400;opacity:.6">(optional)</em></label>
+            <label class="tform__label">Project type<span>*</span></label>
             <div class="tform__radio-group">
               <label class="tform__radio-label">
                 <input type="checkbox" name="projet[]" value="showcase-site"> Showcase website
@@ -362,8 +362,8 @@
           </div>
 
           <div class="tform__field">
-            <label class="tform__label" for="details">Tell us more <em style="font-weight:400;opacity:.6">(optional)</em></label>
-            <textarea class="tform__textarea" id="details" name="details" placeholder="Your industry, your target clients, what isn't working today, what you want to change..."></textarea>
+            <label class="tform__label" for="details">Tell us more<span>*</span></label>
+            <textarea class="tform__textarea" id="details" name="details" placeholder="Your industry, your target clients, what isn't working today, what you want to change..." required></textarea>
           </div>
 
           <div class="tform__consent">
@@ -375,7 +375,7 @@
           </div>
 
           <div id="form-error" style="display:none;background:rgba(248,113,113,.1);border:1.5px solid #f87171;border-radius:.625rem;padding:.75rem 1rem;margin-bottom:1rem;font-size:.85rem;color:#f87171;text-align:center;">
-            Please fill all required fields: first name, company, email, select a goal and check the consent box.
+            Please fill all required fields: first name, company, email, project type, message and consent.
           </div>
 
           <button class="tform__submit" type="submit">
@@ -427,6 +427,7 @@
     if (!form) return;
 
     const inputs = form.querySelectorAll('.tform__input, .tform__textarea');
+    const projetGroup = form.querySelector('.tform__radio-group');
 
     inputs.forEach(function(input) {
       input.addEventListener('blur', function() { validate(input); });
@@ -446,6 +447,17 @@
       input.classList.remove('valid', 'error');
     }
 
+    function setProjetError(hasError) {
+      if (!projetGroup) return;
+      projetGroup.querySelectorAll('.tform__radio-label').forEach(function(lbl) {
+        lbl.style.borderColor = hasError ? '#f87171' : '';
+      });
+    }
+
+    if (projetGroup) {
+      projetGroup.addEventListener('change', function() { setProjetError(false); });
+    }
+
     form.addEventListener('submit', function(e) {
       let valid = true;
       inputs.forEach(function(input) {
@@ -454,6 +466,8 @@
           if (input.classList.contains('error') || !input.value.trim()) valid = false;
         }
       });
+      const projetChecked = form.querySelector('input[name="projet[]"]:checked');
+      if (!projetChecked) { valid = false; setProjetError(true); } else { setProjetError(false); }
       const consent = form.querySelector('#consent');
       if (!consent.checked) { valid = false; consent.focus(); }
       var errDiv = document.getElementById('form-error');

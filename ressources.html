@@ -58,6 +58,18 @@
     .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
     @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
     body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    /* Steps visuels */
+    .steps--visual{list-style:none!important;display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:1.5rem!important;padding:0!important;margin:2rem 0!important}
+    .steps--visual .steps__item{position:relative;padding:1.75rem 1.25rem!important;display:flex!important;flex-direction:column!important;gap:.65rem!important;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;transition:border-color .2s,background .2s}
+    .steps--visual .steps__item:hover{border-color:var(--color-primary);background:rgba(0,230,118,.05)}
+    .steps--visual .steps__number{width:44px;height:44px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.1rem;display:flex!important;align-items:center;justify-content:center;flex-shrink:0}
+    .steps--visual .steps__arrow{position:absolute;top:50%;right:-1.1rem;transform:translateY(-50%);color:var(--color-primary);font-size:1.2rem;font-weight:700;z-index:1;line-height:1}
+    .steps--visual .steps__title{font-size:1rem!important;font-weight:700!important;color:var(--color-text)!important;margin:0!important;line-height:1.35}
+    .steps--visual .steps__text{font-size:.875rem!important;color:var(--color-text-muted)!important;line-height:1.6!important;margin:0!important;flex:1}
+    .steps--visual .steps__link{font-size:.85rem;font-weight:700;color:var(--color-primary);text-decoration:none;margin-top:.25rem;transition:opacity .2s}
+    .steps--visual .steps__link:hover{opacity:.75}
+    @media(max-width:900px){.steps--visual{grid-template-columns:repeat(2,1fr)!important}.steps--visual .steps__arrow{display:none!important}}
+    @media(max-width:560px){.steps--visual{grid-template-columns:1fr!important}}
   </style>
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
@@ -145,7 +157,7 @@
     <!-- SUJETS COUVERTS -->
     <section class="section">
       <div class="container">
-        <header class="section__header">
+        <header class="section__header section__header--center">
           <h2 class="section__title" id="sujets-ressources">Les sujets que nous couvrons en profondeur</h2>
           <p class="section__subtitle">
             Des ressources pratiques pour répondre aux vraies questions — avant une création de site, un mandat SEO ou une stratégie d'acquisition.
@@ -227,7 +239,7 @@
     <section class="section section--alt-bg">
       <div class="container">
         <header class="section__header section__header--center">
-          <h2 class="section__title">Ce que vous trouverez ici — et ce que vous ne trouverez pas</h2>
+          <h2 class="section__title">Ce qu’il y a ici — et ce qu’il n’y a pas</h2>
         </header>
         <div class="split">
           <div class="split__column">
@@ -255,26 +267,37 @@
     <!-- PAR OÙ COMMENCER -->
     <section class="section section--dark">
       <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Par où commencer selon votre situation</h2>
+        <header class="section__header section__header--center">
+          <h2 class="section__title">Par où commencer selon votre profil</h2>
           <p class="section__subtitle">Vous n'avez pas besoin de tout lire. Choisissez le point de départ qui correspond à votre réalité.</p>
         </header>
-        <ol class="steps">
+        <ol class="steps--visual">
           <li class="steps__item">
+            <div class="steps__number">1</div>
+            <div class="steps__arrow">&#8594;</div>
             <h3 class="steps__title">Vous n'avez pas encore de site</h3>
-            <p>Commencez par comprendre ce qui fait qu'un site génère des clients — avant de choisir une plateforme ou de contacter une agence. <a href="/blog/creation-site/" style="color:var(--color-accent)">Créer un site web →</a></p>
+            <p class="steps__text">Comprenez ce qui fait qu'un site génère des clients — avant de choisir une plateforme ou une agence.</p>
+            <a href="/blog/creation-site/" class="steps__link">Créer un site web &#8594;</a>
           </li>
           <li class="steps__item">
-            <h3 class="steps__title">Vous avez un site mais il ne génère rien</h3>
-            <p>Lisez d'abord sur le SEO local et la conversion — souvent, ce n'est pas le design qui pose problème. <a href="/blog/seo/" style="color:var(--color-accent)">Comprendre le SEO →</a></p>
+            <div class="steps__number">2</div>
+            <div class="steps__arrow">&#8594;</div>
+            <h3 class="steps__title">Votre site ne génère rien</h3>
+            <p class="steps__text">Le SEO local et la conversion — souvent, ce n'est pas le design qui pose problème.</p>
+            <a href="/blog/seo/" class="steps__link">Comprendre le SEO &#8594;</a>
           </li>
           <li class="steps__item">
-            <h3 class="steps__title">Vous êtes bien positionné sur Google mais voulez aller plus loin</h3>
-            <p>Découvrez l'AEO et la visibilité IA — le prochain levier de croissance que peu d'agences québécoises maîtrisent encore. <a href="/blog/ia-automatisation/" style="color:var(--color-accent)">Explorer la visibilité IA →</a></p>
+            <div class="steps__number">3</div>
+            <div class="steps__arrow">&#8594;</div>
+            <h3 class="steps__title">Vous êtes sur Google, vous voulez aller plus loin</h3>
+            <p class="steps__text">L'AEO et la visibilité IA — le levier que peu d'agences québécoises maîtrisent encore.</p>
+            <a href="/blog/ia-automatisation/" class="steps__link">Explorer la visibilité IA &#8594;</a>
           </li>
           <li class="steps__item">
-            <h3 class="steps__title">Vous voulez tout déléguer dès maintenant</h3>
-            <p>Passez directement à l'audit gratuit. On analyse votre situation et on vous dit exactement ce qu'il faut faire — sans engagement. <a href="/contact.html" style="color:var(--color-accent)">Demander mon audit →</a></p>
+            <div class="steps__number">4</div>
+            <h3 class="steps__title">Vous voulez tout déléguer maintenant</h3>
+            <p class="steps__text">Audit gratuit — on analyse votre situation et on vous dit exactement ce qu'il faut faire, sans engagement.</p>
+            <a href="/contact.html" class="steps__link">Demander mon audit &#8594;</a>
           </li>
         </ol>
       </div>

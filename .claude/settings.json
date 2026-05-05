@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find . -name \"*.html\" ! -name \"*.backup\" -exec sed -i 's|logo-nextiweb-agence-web-montreal\\\\.png|logo-nextiweb-transparent.png|g' {} +)"
+      "Bash(find . -name \"*.html\" ! -name \"*.backup\" -exec sed -i 's|logo-nextiweb-agence-web-montreal\\\\.png|logo-nextiweb-transparent.png|g' {} +)",
+      "Bash(git commit -m ' *)",
+      "Bash(python fix_search.py)",
+      "Bash(python -c ' *)",
+      "Bash(rm fix_search.py)",
+      "Bash(python fix_search2.py)",
+      "Bash(rm fix_search2.py)",
+      "Read(//c/Users/Chaki/.claude/projects/c--Users-Chaki-Downloads-e-commerce-khadija-Khadija-marketing-Projet-khadija-projet-Nextiweb-zaki-khadija/**)",
+      "Bash(git rm *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Chaki\\.claude\\projects\\c--Users-Chaki-Downloads-e-commerce-khadija-Khadija-marketing-Projet-khadija-projet-Nextiweb-zaki-khadija\\memory"
     ]
   }
 }

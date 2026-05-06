@@ -9,7 +9,14 @@
       "Bash(python fix_search2.py)",
       "Bash(rm fix_search2.py)",
       "Read(//c/Users/Chaki/.claude/projects/c--Users-Chaki-Downloads-e-commerce-khadija-Khadija-marketing-Projet-khadija-projet-Nextiweb-zaki-khadija/**)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(git commit -m 'services.html — titres H2 centrés \\(section__header--center\\) *)",
+      "Bash(python3 -c ' *)",
+      "Bash(git commit -m 'secteurs.html — titres H2 centrés *)",
+      "Bash(python fix_pastor_en.py)",
+      "Bash(python fix_zones_center.py)",
+      "Bash(python fix_en_visual.py)",
+      "Bash(python fix_en_items.py)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Chaki\\.claude\\projects\\c--Users-Chaki-Downloads-e-commerce-khadija-Khadija-marketing-Projet-khadija-projet-Nextiweb-zaki-khadija\\memory"

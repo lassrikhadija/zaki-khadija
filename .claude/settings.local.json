@@ -10,7 +10,10 @@
       "Read(//c/Users/Chaki/AppData/Local/Temp/**)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(python fix_en_pages.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(python fix_en_services.py)"
     ]
   }
 }

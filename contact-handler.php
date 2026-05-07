@@ -16,10 +16,11 @@ $prenom     = htmlspecialchars(trim($_POST['prenom']     ?? ''));
 $entreprise = htmlspecialchars(trim($_POST['entreprise'] ?? ''));
 $email      = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 $site       = htmlspecialchars(trim($_POST['site']       ?? ''));
-$objectif   = htmlspecialchars(trim($_POST['objectif']   ?? ''));
+$projet     = isset($_POST['projet']) ? implode(', ', (array)$_POST['projet']) : '';
+$projet     = htmlspecialchars(trim($projet));
 $details    = htmlspecialchars(trim($_POST['details']    ?? ''));
 
-if (empty($prenom) || empty($entreprise) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($objectif)) {
+if (empty($prenom) || empty($entreprise) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($projet)) {
     header('Location: /contact.html?erreur=1');
     exit;
 }
@@ -29,7 +30,7 @@ $body    = "Prénom     : $prenom\n"
          . "Entreprise : $entreprise\n"
          . "Courriel   : $email\n"
          . "Site       : " . ($site ?: 'aucun') . "\n"
-         . "Objectif   : $objectif\n"
+         . "Projet     : $projet\n"
          . "Détails    : " . ($details ?: 'aucun') . "\n";
 
 try {

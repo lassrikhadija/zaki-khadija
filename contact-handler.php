@@ -32,7 +32,12 @@ $body    = "Prénom     : $prenom\n"
          . "Objectif   : $objectif\n"
          . "Détails    : " . ($details ?: 'aucun') . "\n";
 
-smtp_send(MAIL_TO, $subject, $body, $email);
+try {
+    smtp_send(MAIL_TO, $subject, $body, $email);
+} catch (Exception $e) {
+    // Envoi échoué — on redirige quand même vers merci.html
+    // L'erreur est ignorée silencieusement pour ne pas bloquer l'utilisateur
+}
 
 header('Location: /merci.html');
 exit;

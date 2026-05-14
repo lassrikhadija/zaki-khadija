@@ -315,6 +315,8 @@
           novalidate
         >
           <p style="display:none"><label>Do not fill: <input name="bot-field"></label></p>
+          <input type="hidden" name="form_ts" id="form_ts" value="0">
+          <input type="hidden" name="website_confirm" id="website_confirm" value="">
 
           <div class="tform__row">
             <div class="tform__field">
@@ -421,6 +423,12 @@
 
   <script src="/assets/js/main.min.js" defer></script>
   <script>
+  // ── Anti-spam : timestamp ──────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function() {
+    var ts = document.getElementById('form_ts');
+    if (ts) ts.value = Date.now();
+  });
+
   // ── Real-time validation ──────────────────────────────────────────────
   (function() {
     const form = document.getElementById('audit-form');

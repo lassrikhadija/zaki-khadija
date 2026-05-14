@@ -7,7 +7,21 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Honeypot 1 : bot-field
 if (!empty($_POST['bot-field'])) {
+    header('Location: /merci.html');
+    exit;
+}
+
+// Honeypot 2 : website_confirm doit rester vide
+if (!empty($_POST['website_confirm'])) {
+    header('Location: /merci.html');
+    exit;
+}
+
+// Anti-spam : vérification du temps (minimum 5 secondes)
+$form_ts = intval($_POST['form_ts'] ?? 0);
+if ($form_ts === 0 || (time() * 1000 - $form_ts) < 5000) {
     header('Location: /merci.html');
     exit;
 }
@@ -22,6 +36,17 @@ $details    = htmlspecialchars(trim($_POST['details']    ?? ''));
 
 if (empty($prenom) || empty($entreprise) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($projet)) {
     header('Location: /contact.html?erreur=1');
+    exit;
+}
+
+// Anti-spam : détection de contenu suspect (liens dans les détails)
+$details_raw = trim($_POST['details'] ?? '');
+$spam_score = 0;
+if (preg_match('/https?:\/\//i', $details_raw)) $spam_score++;
+if (preg_match('/https?:\/\//i', $_POST['entreprise'] ?? '')) $spam_score++;
+if (preg_match('/(ranking|seo service|package|pricing|we can help|reply yes)/i', $details_raw)) $spam_score++;
+if ($spam_score >= 2) {
+    header('Location: /merci.html'); // Rediriger silencieusement sans envoyer l'email
     exit;
 }
 

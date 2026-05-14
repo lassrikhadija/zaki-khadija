@@ -1,4 +1,54 @@
+# robots.txt — nextiweb.ca
+# Agence web Montréal | SEO & Marketing digital pour PME québécoises
+
+# ── Crawlers généraux ──────────────────────────────────────────────────
 User-agent: *
 Allow: /
+Disallow: /contact-handler.php
+Disallow: /en/contact-handler.php
 
+# ── Bots IA — explicitement autorisés ─────────────────────────────────
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Google AI / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (utilisé par de nombreux modèles IA)
+User-agent: CCBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ── Sitemaps ───────────────────────────────────────────────────────────
 Sitemap: https://nextiweb.ca/sitemap.xml

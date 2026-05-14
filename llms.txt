@@ -1,0 +1,61 @@
+# NEXTIWEB
+
+> Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME québécoises. Fondée par Khadija AitLassri. Bilingue français / anglais.
+
+## À propos
+
+NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes entreprises (PME) du Québec à bâtir une présence en ligne performante. L'agence propose des sites web sur mesure, du référencement naturel (SEO) local et technique, ainsi que des stratégies de marketing digital adaptées aux réalités des entrepreneurs québécois.
+
+- Fondatrice : Khadija AitLassri
+- Localisation : Montréal, Québec, Canada
+- NEQ : 2272348204
+- Langues : Français (principal), Anglais
+- Courriel : contact@nextiweb.ca
+
+## Services
+
+- [Création de sites web](https://nextiweb.ca/creation-site.html) — Sites vitrines, landing pages, e-commerce, refonte
+- [SEO — Référencement naturel](https://nextiweb.ca/seo.html) — Audit SEO, SEO local Montréal, SEO technique, contenu
+- [Marketing digital](https://nextiweb.ca/marketing-digital.html) — Stratégie, Google Ads, Meta Ads, email marketing
+- [Visibilité IA (GEO/AEO)](https://nextiweb.ca/visibilite-ia.html) — Optimisation pour les moteurs de réponse IA
+- [Services complets](https://nextiweb.ca/services.html)
+
+## Pages locales Montréal
+
+- [Création de site web Montréal](https://nextiweb.ca/local/creation-site-web-montreal.html)
+- [SEO Montréal](https://nextiweb.ca/local/seo-montreal.html)
+
+## Blog — Guides pour PME
+
+### SEO
+- [Comprendre le SEO pour PME](https://nextiweb.ca/blog/seo/comprendre-seo-pme.html)
+- [Recherche de mots-clés en 6 étapes](https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html)
+- [SEO local et Google Business Profile](https://nextiweb.ca/blog/seo/seo-local-google-business-profile.html)
+- [E-E-A-T : Expertise, Autorité, Confiance](https://nextiweb.ca/blog/seo/eeat-expertise-autorite-confiance.html)
+- [SEO IA générative et GEO](https://nextiweb.ca/blog/seo/seo-ia-generative-optimization-pme.html)
+- [Tous les guides SEO](https://nextiweb.ca/blog/seo/)
+
+### Création de site web
+- [Comment fonctionne un site web](https://nextiweb.ca/blog/creation-site/comment-fonctionne-site-web.html)
+- [WordPress vs site sur mesure](https://nextiweb.ca/blog/creation-site/wordpress-vs-site-code-pme.html)
+- [Tous les guides création de site](https://nextiweb.ca/blog/creation-site/)
+
+### Marketing digital
+- [Bases du marketing digital pour PME](https://nextiweb.ca/blog/marketing-digital/bases-marketing-digital-pme.html)
+- [Google Ads vs Meta Ads Québec](https://nextiweb.ca/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html)
+- [Tous les guides marketing](https://nextiweb.ca/blog/marketing-digital/)
+
+### IA et automatisation
+- [ChatGPT et outils IA pour PME](https://nextiweb.ca/blog/ia-automatisation/chatgpt-outils-ia-pme.html)
+- [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html)
+- [Tous les guides IA](https://nextiweb.ca/blog/ia-automatisation/)
+
+## Audit gratuit
+
+NEXTIWEB offre un audit web gratuit aux PME québécoises. Réponse sous 24h.
+
+- [Demander l'audit gratuit](https://nextiweb.ca/contact.html)
+
+## Version anglaise
+
+- [English version](https://nextiweb.ca/en/index.html)

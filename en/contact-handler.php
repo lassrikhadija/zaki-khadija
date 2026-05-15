@@ -88,12 +88,8 @@ curl_setopt($ch, CURLOPT_POSTFIELDS,     $hs_data);
 curl_setopt($ch, CURLOPT_HTTPHEADER,     ['Content-Type: application/json']);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_TIMEOUT,        5);
-$hs_response  = curl_exec($ch);
-$hs_http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-$hs_curl_err  = curl_error($ch);
+curl_exec($ch);
 curl_close($ch);
-$hs_log = date('Y-m-d H:i:s') . ' | HubSpot HTTP=' . $hs_http_code . ' | curl_error=' . ($hs_curl_err ?: 'none') . ' | response=' . $hs_response . "\n";
-file_put_contents(dirname(__DIR__) . '/smtp-debug.log', $hs_log, FILE_APPEND);
 
 header('Location: /en/merci.html');
 exit;

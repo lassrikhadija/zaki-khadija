@@ -77,10 +77,10 @@ $hs_data = json_encode([
         ['name' => 'message',            'value' => trim($_POST['details']    ?? '')],
         ['name' => 'consentement_loi25', 'value' => !empty($_POST['consent']) ? 'true' : 'false'],
     ],
-    'context' => [
+    'context' => array_filter([
         'pageUri' => 'https://nextiweb.ca/en/contact.html',
         'hutk'    => $_COOKIE['hubspotutk'] ?? '',
-    ],
+    ]),
 ]);
 $ch = curl_init('https://api.hsforms.com/submissions/v3/integration/submit/342806224/d115bad7-bd97-43c0-8845-fcdd16c47e56');
 curl_setopt($ch, CURLOPT_POST,           true);

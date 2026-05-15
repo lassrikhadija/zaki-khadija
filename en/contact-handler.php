@@ -64,5 +64,31 @@ try {
     // Silent fail — redirect anyway
 }
 
+// HubSpot CRM — contact registration (Forms API, no key required)
+$hs_raw_projet = isset($_POST['projet']) ? implode(', ', (array)$_POST['projet']) : '';
+$hs_data = json_encode([
+    'fields' => [
+        ['name' => 'firstname',          'value' => trim($_POST['prenom']     ?? '')],
+        ['name' => 'company',            'value' => trim($_POST['entreprise'] ?? '')],
+        ['name' => 'email',              'value' => trim($_POST['email']      ?? '')],
+        ['name' => 'website',            'value' => trim($_POST['site']       ?? '')],
+        ['name' => 'type_de_projet',     'value' => $hs_raw_projet],
+        ['name' => 'message',            'value' => trim($_POST['details']    ?? '')],
+        ['name' => 'consentement_loi25', 'value' => !empty($_POST['consent']) ? 'true' : 'false'],
+    ],
+    'context' => [
+        'pageUri' => 'https://nextiweb.ca/en/contact.html',
+        'hutk'    => $_COOKIE['hubspotutk'] ?? '',
+    ],
+]);
+$ch = curl_init('https://api.hsforms.com/submissions/v3/integration/submit/342806224/d115bad7-bd97-43c0-8845-fcdd16c47e56');
+curl_setopt($ch, CURLOPT_POST,           true);
+curl_setopt($ch, CURLOPT_POSTFIELDS,     $hs_data);
+curl_setopt($ch, CURLOPT_HTTPHEADER,     ['Content-Type: application/json']);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_TIMEOUT,        5);
+curl_exec($ch);
+curl_close($ch);
+
 header('Location: /en/merci.html');
 exit;

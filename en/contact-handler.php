@@ -19,9 +19,10 @@ if (!empty($_POST['website_confirm'])) {
     exit;
 }
 
-// Anti-spam : vérification du temps (minimum 5 secondes)
+// Anti-spam : time check (minimum 5 seconds, max 2h)
 $form_ts = intval($_POST['form_ts'] ?? 0);
-if ($form_ts === 0 || (time() * 1000 - $form_ts) < 5000) {
+$elapsed = ($form_ts > 0) ? (time() - $form_ts) : 999;
+if ($elapsed < 5 || $elapsed > 7200) {
     header('Location: /en/merci.html');
     exit;
 }

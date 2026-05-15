@@ -426,7 +426,7 @@
   // ── Anti-spam : timestamp ──────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function() {
     var ts = document.getElementById('form_ts');
-    if (ts) ts.value = Date.now();
+    if (ts) ts.value = Math.floor(Date.now() / 1000);
   });
 
   // ── Real-time validation ──────────────────────────────────────────────

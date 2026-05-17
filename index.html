@@ -5,6 +5,9 @@
        META & SEO DE BASE
        ======================= -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- CSS critique chargé en priorité → réduit le LCP -->
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=6">
   <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -13,7 +16,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
   <!-- End Google Tag Manager -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Agence web Montréal | SEO & Marketing digital | NEXTIWEB</title>
   <meta name="description" content="NEXTIWEB crée des sites web rapides, optimisés SEO et pensés pour convertir vos visiteurs en clients. Audit gratuit pour PME à Montréal.">
 
@@ -45,7 +47,6 @@
   <!-- =======================
        CSS GLOBAL
        ======================= -->
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=6">
   <link rel="manifest" href="/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1200,13 +1201,16 @@
   </div>
 
   <script>
-  /* ── HERO STARS CANVAS ── */
+  /* ── HERO STARS CANVAS (optimisé perf) ── */
   (function () {
+    if (window.innerWidth <= 768) return; // désactivé sur mobile
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const canvas = document.getElementById('hero-stars');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     const GREEN = '#00e676';
-    let stars = [], W, H, raf;
+    let stars = [], W, H, raf, lastT = 0;
+    const TARGET_MS = 50; // ~20 fps — 3× moins de tâches main-thread
 
     function resize() {
       const section = canvas.parentElement;
@@ -1214,42 +1218,59 @@
       H = canvas.height = section.offsetHeight;
     }
 
-    function randomBetween(a, b) { return a + Math.random() * (b - a); }
+    function rand(a, b) { return a + Math.random() * (b - a); }
 
     function createStars() {
       stars = [];
-      const count = Math.floor((W * H) / 5000); // densité adaptative
+      const count = Math.floor((W * H) / 8000); // densité réduite
       for (let i = 0; i < count; i++) {
-        const isGreen = Math.random() < 0.08; // 8 % vertes
+        const g = Math.random() < 0.08;
         stars.push({
-          x: randomBetween(0, W),
-          y: randomBetween(0, H),
-          r: isGreen ? randomBetween(1.2, 2.2) : randomBetween(0.4, 1.5),
-          alpha: randomBetween(0.3, 1),
-          speed: randomBetween(0.003, 0.012),
-          phase: randomBetween(0, Math.PI * 2),
-          green: isGreen,
-          glow: isGreen ? randomBetween(4, 10) : 0,
+          x: rand(0, W), y: rand(0, H),
+          r: g ? rand(1.2, 2.2) : rand(0.4, 1.5),
+          alpha: rand(0.3, 1),
+          speed: rand(0.003, 0.012),
+          phase: rand(0, Math.PI * 2),
+          green: g,
+          glow: g ? rand(4, 10) : 0,
         });
       }
     }
 
     function draw(t) {
+      // Limite à ~20 fps pour libérer le main-thread
+      if (t - lastT < TARGET_MS) { raf = requestAnimationFrame(draw); return; }
+      lastT = t;
+
       ctx.clearRect(0, 0, W, H);
+
+      // 1) Étoiles blanches — pas de save/restore, un fill par étoile
+      ctx.fillStyle = '#ffffff';
+      ctx.shadowBlur = 0;
       for (const s of stars) {
-        const a = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 60 + s.phase));
-        ctx.save();
-        if (s.green) {
-          ctx.shadowColor = GREEN;
-          ctx.shadowBlur  = s.glow;
-        }
-        ctx.globalAlpha = a;
+        if (s.green) continue;
+        ctx.globalAlpha = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 60 + s.phase));
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = s.green ? GREEN : '#ffffff';
         ctx.fill();
-        ctx.restore();
       }
+
+      // 2) Étoiles vertes — glow activé une seule fois pour le groupe
+      ctx.fillStyle = GREEN;
+      ctx.shadowColor = GREEN;
+      for (const s of stars) {
+        if (!s.green) continue;
+        ctx.globalAlpha = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 60 + s.phase));
+        ctx.shadowBlur = s.glow;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Reset état canvas
+      ctx.shadowBlur = 0;
+      ctx.globalAlpha = 1;
+
       raf = requestAnimationFrame(draw);
     }
 
@@ -1260,8 +1281,14 @@
       raf = requestAnimationFrame(draw);
     }
 
-    window.addEventListener('resize', () => { resize(); createStars(); });
-    init();
+    window.addEventListener('resize', () => { resize(); createStars(); }, { passive: true });
+
+    // Démarrer APRÈS le LCP — laisse le navigateur peindre le contenu d'abord
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(init, { timeout: 2000 });
+    } else {
+      setTimeout(init, 400);
+    }
   })();
   </script>
 </body>

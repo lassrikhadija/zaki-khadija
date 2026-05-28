@@ -63,8 +63,9 @@ $body    = "Clinique     : {$clinic_name}\n"
 try {
     smtp_send(MAIL_TO, $subject, $body, $email);
 } catch (Exception $e) {
-    // Envoi échoué — on redirige quand même vers merci.html
-    // L'erreur est ignorée silencieusement pour ne pas bloquer l'utilisateur
+    // Log temporaire pour diagnostic — à supprimer après résolution
+    $log_line = date('Y-m-d H:i:s') . ' | SMTP ERROR | ' . $e->getMessage() . "\n";
+    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log_line, FILE_APPEND);
 }
 
 // HubSpot CRM — enregistrement du contact (Forms API)

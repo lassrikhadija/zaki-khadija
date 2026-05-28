@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merci — Votre audit est en cours | NEXTIWEB</title>
+  <meta name="description" content="Votre demande d'audit IA pour votre clinique dentaire a bien été reçue. Vous recevrez votre vidéo Loom personnalisée sous 24 heures ouvrées.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Merci — Votre audit est en cours | NEXTIWEB">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta property="og:url" content="https://nextiweb.ca/audit-jdiq-2026/merci.html">
+  <meta property="og:locale" content="fr_CA">
+
+  <!-- Schema.org Action -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ConfirmAction",
+    "name": "Confirmation de demande d'audit IA",
+    "agent": {
+      "@type": "Organization",
+      "name": "NEXTIWEB",
+      "url": "https://nextiweb.ca"
+    },
+    "object": {
+      "@type": "Service",
+      "name": "Audit IA gratuit pour cliniques dentaires",
+      "url": "https://nextiweb.ca/audit-jdiq-2026/"
+    }
+  }
+  </script>
+
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0A0F1F;
+      color: #FFFFFF;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: #0A0F1F;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .site-header .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: #FFFFFF;
+      letter-spacing: 0.03em;
+    }
+    .header-cta {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #00e676;
+      transition: opacity 0.2s;
+    }
+    .header-cta:hover { opacity: 0.8; }
+
+    /* ===== MAIN CONTENT ===== */
+    .merci-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.25rem;
+    }
+    .merci-card {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ===== CHECKMARK ===== */
+    .checkmark-circle {
+      width: 88px;
+      height: 88px;
+      background: rgba(0,230,118,0.12);
+      border: 3px solid #00e676;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    .checkmark-symbol {
+      color: #00e676;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    .merci-h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+    .merci-subtitle {
+      font-size: 1.05rem;
+      color: #E5E7EB;
+      margin-bottom: 2.5rem;
+      line-height: 1.65;
+    }
+
+    /* ===== STEPS ===== */
+    .merci-steps {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      text-align: left;
+    }
+    .merci-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      background: #00e676;
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: #E5E7EB;
+      line-height: 1.55;
+      padding-top: 0.3rem;
+    }
+
+    /* ===== CTA ===== */
+    .btn-cta {
+      display: inline-block;
+      background: #00e676;
+      color: #000000;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      border: none;
+      border-radius: 999px;
+      padding: 0.9rem 2rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,230,118,0.35);
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #070C1A;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2rem 0;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #FFFFFF;
+      margin-bottom: 0.75rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: #9CA3AF;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: #00e676; }
+    .footer-sep { color: rgba(255,255,255,0.2); font-size: 0.75rem; }
+    .footer-copy { font-size: 0.75rem; color: #6B7280; margin-bottom: 0.4rem; }
+    .footer-loi25 { font-size: 0.72rem; color: #6B7280; }
+  </style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container">
+    <a href="https://nextiweb.ca" class="logo-link" aria-label="NEXTIWEB — retour à l'accueil">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28" aria-hidden="true">
+        <path d="M6 16C6 11.58 9.58 8 14 8C16.21 8 18.21 8.9 19.66 10.34L26 16L19.66 21.66C18.21 23.1 16.21 24 14 24C9.58 24 6 20.42 6 16Z" stroke="#00e676" stroke-width="2.2" fill="none"/>
+        <path d="M26 16C26 20.42 22.42 24 18 24C15.79 24 13.79 23.1 12.34 21.66L6 16L12.34 10.34C13.79 8.9 15.79 8 18 8C22.42 8 26 11.58 26 16Z" stroke="#00e676" stroke-width="2.2" fill="none"/>
+      </svg>
+      NEXTIWEB
+    </a>
+    <a href="https://nextiweb.ca" target="_blank" rel="noopener" class="header-cta">nextiweb.ca</a>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="merci-main" role="main">
+  <div class="merci-card">
+
+    <div class="checkmark-circle" role="img" aria-label="Confirmation">
+      <span class="checkmark-symbol">✓</span>
+    </div>
+
+    <h1 class="merci-h1">Votre audit est en cours de préparation&nbsp;!</h1>
+    <p class="merci-subtitle">Vous recevrez votre vidéo Loom personnalisée à l'adresse que vous avez indiquée, dans les 24 heures ouvrées.</p>
+
+    <ol class="merci-steps" aria-label="Prochaines étapes">
+      <li class="merci-step">
+        <span class="step-num">1</span>
+        <p class="step-text">Vérifiez votre boîte de réception (et vos spams, parfois on s'y retrouve)</p>
+      </li>
+      <li class="merci-step">
+        <span class="step-num">2</span>
+        <p class="step-text">Regardez la vidéo Loom de 2&nbsp;min à votre rythme</p>
+      </li>
+      <li class="merci-step">
+        <span class="step-num">3</span>
+        <p class="step-text">Si vous avez des questions, répondez directement à ce courriel</p>
+      </li>
+    </ol>
+
+    <a href="https://nextiweb.ca" class="btn-cta">Retourner sur nextiweb.ca →</a>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" aria-hidden="true">
+        <path d="M6 16C6 11.58 9.58 8 14 8C16.21 8 18.21 8.9 19.66 10.34L26 16L19.66 21.66C18.21 23.1 16.21 24 14 24C9.58 24 6 20.42 6 16Z" stroke="#00e676" stroke-width="2.2" fill="none"/>
+        <path d="M26 16C26 20.42 22.42 24 18 24C15.79 24 13.79 23.1 12.34 21.66L6 16L12.34 10.34C13.79 8.9 15.79 8 18 8C22.42 8 26 11.58 26 16Z" stroke="#00e676" stroke-width="2.2" fill="none"/>
+      </svg>
+      NEXTIWEB
+    </div>
+    <nav class="footer-links" aria-label="Liens bas de page">
+      <a href="/mentions-legales.html">Mentions légales</a>
+      <span class="footer-sep">·</span>
+      <a href="/politique-confidentialite.html">Politique de confidentialité</a>
+      <span class="footer-sep">·</span>
+      <a href="https://nextiweb.ca" target="_blank" rel="noopener">nextiweb.ca</a>
+    </nav>
+    <p class="footer-copy">© 2026 NEXTIWEB · Montréal, QC, Canada · NEQ 2272348204</p>
+    <p class="footer-loi25">🔒 Conforme Loi 25 du Québec</p>
+  </div>
+</footer>
+
+<!-- ===== GA4 conversion event ===== -->
+<script>
+(function () {
+  function gaEvent(name, params) {
+    if (typeof gtag !== 'undefined') gtag('event', name, params || {});
+  }
+  // Fire form_submit_success conversion on page load
+  gaEvent('form_submit_success', { page_title: 'JDIQ 2026 — Merci' });
+})();
+</script>
+
+</body>
+</html>

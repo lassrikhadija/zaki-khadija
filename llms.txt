@@ -58,6 +58,21 @@ NEXTIWEB offre un audit web gratuit aux PME québécoises. Réponse sous 24h.
 
 - [Demander l'audit gratuit](https://nextiweb.ca/contact.html)
 
+## Audit spécialisé — Cliniques dentaires du Québec (JDIQ 2026)
+
+NEXTIWEB propose un audit web personnalisé gratuit pour les cliniques dentaires québécoises, présenté aux visiteurs des Journées dentaires internationales du Québec (JDIQ) 2026, Palais des congrès de Montréal.
+
+L'audit couvre 5 dimensions critiques pour la visibilité d'une clinique dentaire en 2026 :
+- Visibilité IA : citabilité par ChatGPT, Perplexity, Google AI Overviews
+- SEO local : positionnement sur « dentiste + quartier »
+- Balisage Schema dentaire : données structurées pour Google et les IA
+- Conformité Loi 25 : collecte de données patients conforme au Québec
+- Performance mobile : Core Web Vitals, LCP, CLS
+
+Livraison : rapport PDF personnalisé de 13 pages sous 24h. Gratuit, sans engagement.
+
+- [Demander l'audit dentaire JDIQ 2026](https://nextiweb.ca/audit-jdiq-2026/)
+
 ## Version anglaise
 
 - [English version](https://nextiweb.ca/en/index.html)

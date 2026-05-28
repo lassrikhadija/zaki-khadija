@@ -38,8 +38,8 @@ $utm_medium   = htmlspecialchars(trim($_POST['utm_medium']   ?? ''));
 $utm_campaign = htmlspecialchars(trim($_POST['utm_campaign'] ?? ''));
 $utm_content  = htmlspecialchars(trim($_POST['utm_content']  ?? ''));
 
-// Validation des champs obligatoires
-if (empty($clinic_name) || empty($full_name) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($site_url)) {
+// Validation des champs obligatoires (site_url optionnel — dentiste sans site = lead création)
+if (empty($clinic_name) || empty($full_name) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     header('Location: /audit-jdiq-2026/?erreur=1');
     exit;
 }

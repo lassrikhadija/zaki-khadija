@@ -62,10 +62,13 @@ $body    = "Clinique     : {$clinic_name}\n"
 
 try {
     smtp_send(MAIL_TO, $subject, $body, $email);
+    // Log succès temporaire pour diagnostic
+    $log_ok = date('Y-m-d H:i:s') . ' | SMTP OK | to=' . MAIL_TO . ' | from=' . $email . ' | clinic=' . $clinic_name . "\n";
+    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log_ok, FILE_APPEND);
 } catch (Exception $e) {
-    // Log temporaire pour diagnostic — à supprimer après résolution
-    $log_line = date('Y-m-d H:i:s') . ' | SMTP ERROR | ' . $e->getMessage() . "\n";
-    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log_line, FILE_APPEND);
+    // Log erreur temporaire pour diagnostic
+    $log_err = date('Y-m-d H:i:s') . ' | SMTP ERROR | to=' . MAIL_TO . ' | ' . $e->getMessage() . "\n";
+    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log_err, FILE_APPEND);
 }
 
 // HubSpot CRM — enregistrement du contact (Forms API)

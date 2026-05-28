@@ -327,45 +327,18 @@
       flex-shrink: 0;
       margin-top: 0.1em;
     }
-    .loom-mockup {
+    /* ===== PDF PREVIEW (section Solution) ===== */
+    .pdf-preview {
       background: #1a1f2e;
       border-radius: 1rem;
-      aspect-ratio: 16/9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .loom-mockup::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(0,230,118,0.05) 0%, rgba(10,15,31,0.8) 100%);
-    }
-    .loom-play {
-      width: 64px;
-      height: 64px;
-      background: rgba(0,230,118,0.9);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      color: #000;
-      position: relative;
-      z-index: 1;
-      box-shadow: 0 4px 24px rgba(0,230,118,0.4);
-    }
-    .loom-label {
-      position: relative;
-      z-index: 1;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.6);
+      padding: 2rem 1.5rem;
       text-align: center;
+      border: 1px solid rgba(0,230,118,0.25);
     }
+    .pdf-icon { font-size: 3rem; margin-bottom: 0.6rem; }
+    .pdf-title { color: #00e676; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .pdf-desc  { color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.55; }
+    .pdf-pages { display: inline-block; background: rgba(0,230,118,0.12); color: #00e676; border-radius: 999px; font-size: 0.75rem; font-weight: 700; padding: 3px 12px; margin-top: 0.75rem; letter-spacing: 0.04em; }
     .loom-caption {
       font-size: 0.82rem;
       color: #6B7280;
@@ -373,6 +346,64 @@
       font-style: italic;
       text-align: center;
     }
+
+    /* ===== AVANT/APRÈS SLIDER ===== */
+    .ba-container { max-width: 420px; margin: 0 auto 0.5rem; }
+    .ba-slider {
+      position: relative;
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      cursor: ew-resize;
+      user-select: none;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+      touch-action: pan-y;
+    }
+    .ba-after { display: block; width: 100%; }
+    .ba-after img { width: 100%; display: block; }
+    .ba-before {
+      position: absolute;
+      top: 0; left: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .ba-before img {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 0; left: 50%;
+      width: 44px; height: 100%;
+      transform: translateX(-50%);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 10; pointer-events: none;
+    }
+    .ba-handle::before {
+      content: "";
+      position: absolute; left: 50%; top: 0; bottom: 0;
+      width: 2px; background: rgba(255,255,255,0.9);
+      transform: translateX(-50%);
+    }
+    .ba-handle-circle {
+      background: #fff; border-radius: 50%;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700; color: #000;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.28);
+      position: relative; z-index: 1; flex-shrink: 0;
+    }
+    .ba-labels {
+      position: absolute; bottom: 10px; left: 0; right: 0;
+      display: flex; justify-content: space-between;
+      padding: 0 12px; pointer-events: none; z-index: 5;
+    }
+    .ba-label-before { background: rgba(220,38,38,0.92); color: #fff; font-weight: 700; font-size: 0.7rem; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.06em; }
+    .ba-label-after  { background: rgba(0,180,80,0.92);  color: #000; font-weight: 700; font-size: 0.7rem; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.06em; }
+    .ba-hint { font-size: 0.8rem; color: #9CA3AF; text-align: center; margin-top: 0.6rem; font-style: italic; }
 
     /* ===== SECTION TRANSFORMATION ===== */
     .browser-frame {
@@ -944,7 +975,7 @@
     <div class="solution-grid">
 
       <div class="solution-left">
-        <p class="solution-intro">Un regard expert sur 5 dimensions critiques pour votre visibilité en 2026. Pas un rapport automatisé générique — une analyse humaine, livrée en vidéo.</p>
+        <p class="solution-intro">Un regard expert sur 5 dimensions critiques pour votre visibilité en 2026. Pas un rapport générique — une analyse personnalisée sur votre site, livrée en PDF de 13 pages.</p>
         <ul class="solution-checklist">
           <li><strong>Visibilité IA&nbsp;:</strong> votre clinique est-elle citable par ChatGPT, Perplexity, Google AI Overviews&nbsp;?</li>
           <li><strong>SEO local&nbsp;:</strong> où vous positionnez-vous sur « dentiste + votre quartier » vs vos concurrents directs&nbsp;?</li>
@@ -955,11 +986,13 @@
       </div>
 
       <div class="solution-right">
-        <div class="loom-mockup" role="img" aria-label="Aperçu vidéo Loom de l'audit">
-          <div class="loom-play" aria-hidden="true">▶</div>
-          <span class="loom-label">Votre audit personnalisé — 2 min</span>
+        <div class="pdf-preview">
+          <div class="pdf-icon">📄</div>
+          <div class="pdf-title">Rapport PDF personnalisé</div>
+          <p class="pdf-desc">Score global, araignée radar par catégorie, priorités classées par impact, glossaire pour non-techniciens. Votre rapport en main en 24&nbsp;h.</p>
+          <span class="pdf-pages">13 pages · PDF · Gratuit</span>
         </div>
-        <p class="loom-caption">Audit livré en vidéo Loom de 2&nbsp;min. Vous le gardez. Vous pouvez le rejouer, le partager avec votre équipe.</p>
+        <p class="loom-caption">Vous le gardez. Vous pouvez le partager avec votre associé ou votre gestionnaire.</p>
       </div>
 
     </div>
@@ -973,19 +1006,27 @@
 
     <div class="transformation-grid">
       <div class="transformation-left">
-        <div class="browser-frame">
-          <div class="browser-bar">
-            <div class="browser-dots">
-              <span></span><span></span><span></span>
+        <div class="ba-container">
+          <div class="ba-slider" id="baSlider" role="img" aria-label="Comparaison avant/après audit Nextiweb">
+            <!-- APRÈS (fond, visible en entier) -->
+            <div class="ba-after">
+              <img src="apres.png" alt="Après optimisation Nextiweb — Score 96/100" width="840" height="1080" loading="lazy">
             </div>
-            <div class="browser-url">soins-services.nextiwebstudio.ca</div>
-          </div>
-          <div class="browser-content">
-            <div class="browser-content-inner">
-              <strong>Studio Belmont — Clinique Dentaire</strong>
-              Démo créative NEXTIWEB
+            <!-- AVANT (superposé, largeur contrôlée par JS) -->
+            <div class="ba-before" id="baBefore">
+              <img src="avant.png" alt="Avant optimisation — Score 38/100" width="840" height="1080" loading="lazy">
+            </div>
+            <!-- Poignée de glissement -->
+            <div class="ba-handle" id="baHandle">
+              <div class="ba-handle-circle">◀▶</div>
+            </div>
+            <!-- Étiquettes -->
+            <div class="ba-labels">
+              <span class="ba-label-before">AVANT</span>
+              <span class="ba-label-after">APRÈS</span>
             </div>
           </div>
+          <p class="ba-hint">← Faites glisser pour comparer →</p>
         </div>
       </div>
 
@@ -1022,9 +1063,9 @@
       </article>
 
       <article class="offer-card">
-        <div class="offer-card-icon">🎬</div>
-        <h3 class="offer-card-title">Une vidéo Loom de 2&nbsp;min</h3>
-        <p class="offer-card-text">où Khadija passe en revue les 5 dimensions</p>
+        <div class="offer-card-icon">📄</div>
+        <h3 class="offer-card-title">Un rapport PDF de 13&nbsp;pages</h3>
+        <p class="offer-card-text">score, araignée radar, priorités classées — à partager avec votre équipe</p>
       </article>
 
       <article class="offer-card">
@@ -1056,12 +1097,12 @@
 
       <details class="faq-item">
         <summary class="faq-question">Combien de temps prend l'audit&nbsp;?</summary>
-        <p class="faq-answer">Vous recevez votre vidéo Loom personnalisée sous 24&nbsp;h ouvrées. La vidéo elle-même dure 2 minutes. Vous pouvez la rejouer autant de fois que vous voulez.</p>
+        <p class="faq-answer">Vous recevez votre rapport PDF personnalisé de 13 pages sous 24&nbsp;h ouvrées. Vous pouvez le consulter, l'imprimer, et le partager avec votre associé ou gestionnaire.</p>
       </details>
 
       <details class="faq-item">
         <summary class="faq-question">Que se passe-t-il après l'audit&nbsp;?</summary>
-        <p class="faq-answer">Vous recevez la vidéo par courriel. Si vous voulez en discuter, un rendez-vous découverte de 30&nbsp;min est proposé (gratuit, sans engagement). Si vous voulez juste appliquer les recommandations seul ou avec votre prestataire actuel, c'est parfait aussi.</p>
+        <p class="faq-answer">Vous recevez le rapport PDF par courriel. Si vous voulez en discuter, un rendez-vous découverte de 30&nbsp;min est proposé (gratuit, sans engagement). Si vous voulez juste appliquer les recommandations seul ou avec votre prestataire actuel, c'est parfait aussi.</p>
       </details>
 
     </div>
@@ -1177,6 +1218,41 @@
       }
     }
   });
+
+  // ---- 4b. Avant/Après Slider ----
+  (function () {
+    var slider = document.getElementById('baSlider');
+    if (!slider) return;
+    var before = document.getElementById('baBefore');
+    var handle = document.getElementById('baHandle');
+    var dragging = false;
+
+    function setPos(clientX) {
+      var rect = slider.getBoundingClientRect();
+      var pct = Math.min(Math.max((clientX - rect.left) / rect.width, 0.04), 0.96);
+      before.style.width = (pct * 100) + '%';
+      handle.style.left   = (pct * 100) + '%';
+    }
+
+    slider.addEventListener('mousedown',  function (e) { dragging = true; setPos(e.clientX); e.preventDefault(); });
+    window.addEventListener('mousemove',  function (e) { if (dragging) setPos(e.clientX); });
+    window.addEventListener('mouseup',    function ()  { dragging = false; });
+    slider.addEventListener('touchstart', function (e) { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchmove',  function (e) { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchend',   function ()  { dragging = false; });
+
+    // Animation d'entrée : glisse de droite vers 50%
+    setTimeout(function () {
+      var pct = 0.85, step = 0;
+      var anim = setInterval(function () {
+        pct -= 0.025;
+        step++;
+        if (pct <= 0.5 || step > 14) { pct = 0.5; clearInterval(anim); }
+        before.style.width = (pct * 100) + '%';
+        handle.style.left   = (pct * 100) + '%';
+      }, 30);
+    }, 800);
+  })();
 
   // ---- 5. GA4 events ----
   function gaEvent(name, params) {

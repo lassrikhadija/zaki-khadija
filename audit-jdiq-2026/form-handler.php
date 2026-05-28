@@ -61,14 +61,9 @@ $body    = "Clinique     : {$clinic_name}\n"
          . "Campagne     : JDIQ 2026 — Palais des congrès de Montréal\n";
 
 try {
-    $sent = smtp_send(MAIL_TO, $subject, $body, $email);
-    // Log temporaire — vérifie la vraie valeur de retour
-    $status = $sent ? 'SENT=true' : 'SENT=false (retour silencieux — mauvais mdp ou connexion)';
-    $log = date('Y-m-d H:i:s') . ' | ' . $status . ' | to=' . MAIL_TO . ' | clinic=' . $clinic_name . "\n";
-    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log, FILE_APPEND);
+    smtp_send(MAIL_TO, $subject, $body, $email);
 } catch (Exception $e) {
-    $log = date('Y-m-d H:i:s') . ' | EXCEPTION | ' . $e->getMessage() . "\n";
-    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log, FILE_APPEND);
+    // Envoi échoué — on redirige quand même vers merci.html
 }
 
 // HubSpot CRM — enregistrement du contact (Forms API)

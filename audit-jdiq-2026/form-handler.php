@@ -61,14 +61,14 @@ $body    = "Clinique     : {$clinic_name}\n"
          . "Campagne     : JDIQ 2026 — Palais des congrès de Montréal\n";
 
 try {
-    smtp_send(MAIL_TO, $subject, $body, $email);
-    // Log succès temporaire pour diagnostic
-    $log_ok = date('Y-m-d H:i:s') . ' | SMTP OK | to=' . MAIL_TO . ' | from=' . $email . ' | clinic=' . $clinic_name . "\n";
-    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log_ok, FILE_APPEND);
+    $sent = smtp_send(MAIL_TO, $subject, $body, $email);
+    // Log temporaire — vérifie la vraie valeur de retour
+    $status = $sent ? 'SENT=true' : 'SENT=false (retour silencieux — mauvais mdp ou connexion)';
+    $log = date('Y-m-d H:i:s') . ' | ' . $status . ' | to=' . MAIL_TO . ' | clinic=' . $clinic_name . "\n";
+    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log, FILE_APPEND);
 } catch (Exception $e) {
-    // Log erreur temporaire pour diagnostic
-    $log_err = date('Y-m-d H:i:s') . ' | SMTP ERROR | to=' . MAIL_TO . ' | ' . $e->getMessage() . "\n";
-    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log_err, FILE_APPEND);
+    $log = date('Y-m-d H:i:s') . ' | EXCEPTION | ' . $e->getMessage() . "\n";
+    file_put_contents(dirname(__DIR__) . '/smtp-jdiq-debug.log', $log, FILE_APPEND);
 }
 
 // HubSpot CRM — enregistrement du contact (Forms API)

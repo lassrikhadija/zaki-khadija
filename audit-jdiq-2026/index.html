@@ -321,8 +321,8 @@
       box-shadow: 0 4px 24px rgba(0,230,118,0.06);
     }
     .amplify-card-icon {
-      font-size: 1.8rem;
       margin-bottom: 0.75rem;
+      line-height: 0;
     }
     .amplify-card-title {
       font-size: 1rem;
@@ -606,7 +606,7 @@
       border-radius: 1rem;
       padding: 1.5rem;
     }
-    .offer-card-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .offer-card-icon { margin-bottom: 0.5rem; line-height: 0; }
     .offer-card-title {
       font-size: 0.97rem;
       font-weight: 700;
@@ -1042,19 +1042,25 @@
     <div class="amplify-grid">
 
       <article class="amplify-card">
-        <div class="amplify-card-icon">🔍</div>
+        <div class="amplify-card-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
         <h3 class="amplify-card-title">Patients qui ne vous trouvent jamais</h3>
         <p class="amplify-card-text">Quand un patient tape « dentiste anxieux Plateau » ou « dentiste fin de semaine Rosemont », c'est l'IA qui répond. Et l'IA ne vous cite pas si votre site n'est pas structuré.</p>
       </article>
 
       <article class="amplify-card">
-        <div class="amplify-card-icon">📉</div>
+        <div class="amplify-card-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+        </div>
         <h3 class="amplify-card-title">Aucune alerte, aucun signal</h3>
         <p class="amplify-card-text">Vous ne saurez jamais combien de patients ont choisi le cabinet d'à côté à votre place. Pas de plainte, pas de retour, juste un manque à gagner invisible.</p>
       </article>
 
       <article class="amplify-card">
-        <div class="amplify-card-icon">⏱️</div>
+        <div class="amplify-card-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
         <h3 class="amplify-card-title">L'écart se creuse chaque jour</h3>
         <p class="amplify-card-text">Pendant que vous attendez, vos concurrents qui ont corrigé leur site SEO + IA accumulent un avantage que rattraper coûtera 5× plus dans 12 mois.</p>
       </article>
@@ -1126,25 +1132,33 @@
     <div class="offer-grid">
 
       <article class="offer-card">
-        <div class="offer-card-icon">🎯</div>
+        <div class="offer-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
         <h3 class="offer-card-title">Une analyse personnalisée</h3>
         <p class="offer-card-text">de votre site actuel (pas un audit générique)</p>
       </article>
 
       <article class="offer-card">
-        <div class="offer-card-icon">📄</div>
+        <div class="offer-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
         <h3 class="offer-card-title">Un rapport PDF personnalisé</h3>
         <p class="offer-card-text">score, araignée radar, priorités classées — à partager avec votre équipe</p>
       </article>
 
       <article class="offer-card">
-        <div class="offer-card-icon">📋</div>
+        <div class="offer-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
         <h3 class="offer-card-title">Vos 3 priorités de correction</h3>
         <p class="offer-card-text">(par ordre d'impact business)</p>
       </article>
 
       <article class="offer-card">
-        <div class="offer-card-icon">⚡</div>
+        <div class="offer-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
         <h3 class="offer-card-title">Livré sous 24&nbsp;h ouvrées</h3>
         <p class="offer-card-text">sans engagement</p>
       </article>

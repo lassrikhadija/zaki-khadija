@@ -390,11 +390,11 @@
     }
 
     /* ===== AVANT/APRÈS SLIDER ===== */
-    .ba-container { max-width: 400px; margin: 0 auto 0.5rem; }
+    .ba-container { max-width: 620px; margin: 0 auto 1.5rem; }
     .ba-slider {
       position: relative;
       width: 100%;
-      max-height: 480px;
+      max-height: 560px;
       border-radius: 1rem;
       overflow: hidden;
       cursor: ew-resize;
@@ -405,7 +405,7 @@
     .ba-after { display: block; width: 100%; height: 100%; }
     .ba-after img {
       width: 100%;
-      max-height: 480px;
+      max-height: 560px;
       object-fit: cover;
       object-position: top;
       display: block;
@@ -419,7 +419,7 @@
     }
     .ba-before img {
       width: 100%;
-      max-height: 480px;
+      max-height: 560px;
       object-fit: cover;
       object-position: top;
       display: block;
@@ -456,6 +456,31 @@
     .ba-label-before { background: rgba(220,38,38,0.92); color: #fff; font-weight: 700; font-size: 0.7rem; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.06em; }
     .ba-label-after  { background: rgba(0,180,80,0.92);  color: #000; font-weight: 700; font-size: 0.7rem; padding: 3px 9px; border-radius: 4px; letter-spacing: 0.06em; }
     .ba-hint { font-size: 0.8rem; color: #9CA3AF; text-align: center; margin-top: 0.6rem; font-style: italic; }
+    .transformation-bottom {
+      max-width: 620px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .transformation-checks-row {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+    .transformation-checks-row li {
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 600;
+    }
+    .transformation-checks-row li { color: #00e676; }
+    .transformation-cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
 
     /* ===== SECTION TRANSFORMATION ===== */
     .browser-frame {
@@ -840,8 +865,8 @@
       .section-light { padding: 5rem 0; }
       .section-amplify { padding: 5rem 0; }
       .amplify-grid { grid-template-columns: repeat(3, 1fr); }
-      .solution-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
-      .transformation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+      .solution-checklist { grid-template-columns: 1fr 1fr; display: grid; gap: 0.85rem; }
+      .transformation-checks-row { gap: 0.75rem 2.5rem; }
       .site-header { height: 60px; }
 
       .sticky-mobile-cta { display: none !important; }
@@ -1029,79 +1054,53 @@
 <!-- ===== SECTION SOLUTION ===== -->
 <section class="section-light" aria-labelledby="solution-title">
   <div class="container">
-    <h2 class="section-title" id="solution-title">L'audit NEXTIWEB révèle en 2 minutes ce que les IA voient de votre clinique</h2>
-    <div class="solution-grid">
-
-      <div class="solution-left">
-        <p class="solution-intro">Un regard expert sur 5 dimensions critiques pour votre visibilité en 2026. Pas un rapport générique — une analyse personnalisée sur votre site, livrée en PDF de 13 pages.</p>
-        <ul class="solution-checklist">
-          <li><strong>Visibilité IA&nbsp;:</strong> votre clinique est-elle citable par ChatGPT, Perplexity, Google AI Overviews&nbsp;?</li>
-          <li><strong>SEO local&nbsp;:</strong> où vous positionnez-vous sur « dentiste + votre quartier » vs vos concurrents directs&nbsp;?</li>
-          <li><strong>Balisage Schema dentaire&nbsp;:</strong> votre code structuré est-il en place pour Google et les IA&nbsp;?</li>
-          <li><strong>Conformité Loi 25&nbsp;:</strong> votre collecte de données patients respecte-t-elle la loi québécoise&nbsp;?</li>
-          <li><strong>Performance mobile&nbsp;:</strong> votre site charge-t-il en moins de 3&nbsp;s sur un téléphone moyen&nbsp;?</li>
-        </ul>
-      </div>
-
-      <div class="solution-right">
-        <div class="pdf-preview">
-          <img src="../assets/img/projets/site-apres-passage-chez-nextiweb.webp"
-               alt="Exemple de rapport d'audit Nextiweb — Score 96/100"
-               style="width:100%;border-radius:0.75rem;display:block;margin-bottom:0.75rem;">
-          <span class="pdf-pages">Exemple de rapport — Score 96/100</span>
-        </div>
-        <p class="loom-caption">Votre rapport PDF personnalisé · 13 pages · livré sous 24&nbsp;h · gratuit</p>
-      </div>
-
-    </div>
+    <h2 class="section-title" id="solution-title">L'audit NEXTIWEB révèle ce que les IA voient de votre clinique</h2>
+    <p class="solution-intro" style="text-align:center;max-width:640px;margin:0 auto 2.5rem;">Un regard expert sur 5 dimensions critiques pour votre visibilité en 2026. Analyse personnalisée sur votre site — livrée en rapport PDF de 13 pages.</p>
+    <ul class="solution-checklist">
+      <li><strong>Visibilité IA&nbsp;:</strong> votre clinique est-elle citable par ChatGPT, Perplexity, Google AI Overviews&nbsp;?</li>
+      <li><strong>SEO local&nbsp;:</strong> où vous positionnez-vous sur « dentiste + votre quartier » vs vos concurrents directs&nbsp;?</li>
+      <li><strong>Balisage Schema dentaire&nbsp;:</strong> votre code structuré est-il en place pour Google et les IA&nbsp;?</li>
+      <li><strong>Conformité Loi 25&nbsp;:</strong> votre collecte de données patients respecte-t-elle la loi québécoise&nbsp;?</li>
+      <li><strong>Performance mobile&nbsp;:</strong> votre site charge-t-il en moins de 3&nbsp;s sur un téléphone moyen&nbsp;?</li>
+    </ul>
   </div>
 </section>
 
 <!-- ===== SECTION TRANSFORMATION ===== -->
-<section class="section-light" style="border-top:1px solid #F3F4F6;" aria-labelledby="transformation-title">
+<section class="section-dark" aria-labelledby="transformation-title">
   <div class="container">
-    <h2 class="section-title" id="transformation-title">Voici à quoi peut ressembler une clinique dentaire bien construite en 2026</h2>
+    <h2 class="section-title" id="transformation-title">Voici ce qu'un audit Nextiweb peut transformer</h2>
 
-    <div class="transformation-grid">
-      <div class="transformation-left">
-        <div class="ba-container">
-          <div class="ba-slider" id="baSlider" role="img" aria-label="Comparaison avant/après audit Nextiweb">
-            <!-- APRÈS (fond, visible en entier) -->
-            <div class="ba-after">
-              <img src="../assets/img/projets/site-apres-passage-chez-nextiweb.webp" alt="Après optimisation Nextiweb — Score 96/100" width="840" height="1080" loading="lazy">
-            </div>
-            <!-- AVANT (superposé, largeur contrôlée par JS) -->
-            <div class="ba-before" id="baBefore">
-              <img src="../assets/img/projets/site-avant-passage-chez-nextiweb.webp" alt="Avant optimisation — Score 38/100" width="840" height="1080" loading="lazy">
-            </div>
-            <!-- Poignée de glissement -->
-            <div class="ba-handle" id="baHandle">
-              <div class="ba-handle-circle">◀▶</div>
-            </div>
-            <!-- Étiquettes -->
-            <div class="ba-labels">
-              <span class="ba-label-before">AVANT</span>
-              <span class="ba-label-after">APRÈS</span>
-            </div>
-          </div>
-          <p class="ba-hint">← Faites glisser pour comparer →</p>
+    <!-- Slider centré et large -->
+    <div class="ba-container">
+      <div class="ba-slider" id="baSlider" role="img" aria-label="Comparaison avant/après audit Nextiweb">
+        <div class="ba-after">
+          <img src="../assets/img/projets/site-apres-passage-chez-nextiweb.webp" alt="Après optimisation Nextiweb — Score 96/100" width="840" height="1080" loading="lazy">
+        </div>
+        <div class="ba-before" id="baBefore">
+          <img src="../assets/img/projets/site-avant-passage-chez-nextiweb.webp" alt="Avant optimisation — Score 38/100" width="840" height="1080" loading="lazy">
+        </div>
+        <div class="ba-handle" id="baHandle">
+          <div class="ba-handle-circle">◀▶</div>
+        </div>
+        <div class="ba-labels">
+          <span class="ba-label-before">AVANT</span>
+          <span class="ba-label-after">APRÈS</span>
         </div>
       </div>
+      <p class="ba-hint">← Faites glisser pour comparer →</p>
+    </div>
 
-      <div class="transformation-right">
-        <ul class="transformation-checks">
-          <li>Hook patient-centré dès l'arrivée</li>
-          <li>Prise de rendez-vous en 1 clic mobile</li>
-          <li>Schema dentaire + Loi 25 + visibilité IA prêts</li>
-        </ul>
-        <a
-          href="https://soins-services.nextiwebstudio.ca/"
-          target="_blank"
-          rel="noopener"
-          class="btn-outline"
-          id="demo-link"
-        >Voir la démo Studio Belmont →</a>
-        <p class="transformation-disclaimer">Démo créative — aucun patient réel, aucun cabinet existant. Tous les éléments visibles sont reproductibles pour votre clinique.</p>
+    <!-- 3 éléments + CTA en dessous -->
+    <div class="transformation-bottom">
+      <ul class="transformation-checks-row">
+        <li>✓ Score 38 → 96 / 100</li>
+        <li>✓ SEO local + visibilité IA activés</li>
+        <li>✓ Schema dentaire + Loi 25 + performance mobile</li>
+      </ul>
+      <div class="transformation-cta-wrap">
+        <a href="https://soins-services.nextiwebstudio.ca/" target="_blank" rel="noopener" class="btn-outline" id="demo-link">Voir la démo Studio Belmont →</a>
+        <p class="transformation-disclaimer">Démo créative — aucun patient réel, aucun cabinet existant.</p>
       </div>
     </div>
 

@@ -104,63 +104,101 @@
     /* ===== HERO ===== */
     .hero {
       background: #0A0F1F;
-      padding: 3rem 0;
+      padding: 4rem 0 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -120px; left: -10%;
+      width: 60%;
+      height: 500px;
+      background: radial-gradient(ellipse at center, rgba(0,230,118,0.09) 0%, transparent 70%);
+      pointer-events: none;
     }
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2.5rem;
       align-items: start;
+      position: relative;
+      z-index: 1;
     }
     .hero-h1 {
-      font-size: clamp(1.75rem, 4vw, 2.75rem);
-      font-weight: 800;
-      line-height: 1.2;
+      font-size: clamp(2rem, 5.5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.1;
       color: #FFFFFF;
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .hero-h1 span {
+      color: #00e676;
     }
     .hero-subtitle {
       font-size: 1.05rem;
-      color: #E5E7EB;
-      margin-bottom: 1.5rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
     }
     .hero-checks {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
-      margin-bottom: 1.5rem;
+      gap: 0.55rem;
+      margin-bottom: 1.75rem;
     }
     .hero-checks li {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.65rem;
       font-size: 0.97rem;
-      color: #E5E7EB;
+      color: rgba(255,255,255,0.85);
     }
     .hero-checks li::before {
       content: "✓";
       color: #00e676;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 1rem;
       flex-shrink: 0;
     }
     .hero-badge {
-      display: inline-block;
-      background: rgba(0,230,118,0.1);
-      border: 1px solid rgba(0,230,118,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(0,230,118,0.08);
+      border: 1px solid rgba(0,230,118,0.25);
       border-radius: 999px;
       padding: 0.45rem 1rem;
-      font-size: 0.82rem;
-      color: #E5E7EB;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .hero-tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-tech-tag {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     /* ===== FORM BOX ===== */
     .form-box {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 1rem;
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(0,230,118,0.2);
+      border-radius: 1.25rem;
       padding: 2rem 1.5rem;
+      box-shadow: 0 0 40px rgba(0,230,118,0.06), inset 0 1px 0 rgba(255,255,255,0.06);
     }
     .form-box-title {
       font-size: 1.2rem;
@@ -233,27 +271,31 @@
     /* ===== SECTION BASE ===== */
     .section-dark {
       background: #0A0F1F;
-      padding: 3rem 0;
+      padding: 4rem 0;
     }
     .section-light {
-      background: #FFFFFF;
-      color: #111111;
-      padding: 3rem 0;
+      background: #0D1226;
+      color: #FFFFFF;
+      padding: 4rem 0;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     .section-title {
-      font-size: clamp(1.5rem, 3vw, 2.1rem);
-      font-weight: 800;
-      margin-bottom: 2rem;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 900;
+      margin-bottom: 2.5rem;
       text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
     }
     .section-dark .section-title { color: #FFFFFF; }
-    .section-light .section-title { color: #111111; }
+    .section-light .section-title { color: #FFFFFF; }
 
     /* ===== SECTION AMPLIFY ===== */
     .section-amplify {
-      background: #0A0F1F;
-      border-top: 4px solid #00e676;
-      padding: 3rem 0;
+      background: #080C1A;
+      border-top: 1px solid rgba(0,230,118,0.3);
+      padding: 4rem 0;
     }
     .amplify-grid {
       display: grid;
@@ -262,10 +304,15 @@
       margin-top: 1rem;
     }
     .amplify-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
       border-radius: 1rem;
-      padding: 1.5rem;
+      padding: 1.75rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .amplify-card:hover {
+      border-color: rgba(0,230,118,0.25);
+      box-shadow: 0 4px 24px rgba(0,230,118,0.06);
     }
     .amplify-card-icon {
       font-size: 1.8rem;
@@ -292,28 +339,32 @@
     }
     .solution-intro {
       font-size: 1rem;
-      color: #333333;
-      margin-bottom: 1.25rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 1.5rem;
       line-height: 1.7;
     }
     .solution-checklist {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 0.85rem;
     }
     .solution-checklist li {
       display: flex;
       align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.95rem;
-      color: #111111;
+      gap: 0.75rem;
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.85);
       line-height: 1.55;
+      padding: 0.65rem 1rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 0.6rem;
     }
     .solution-checklist li::before {
       content: "✓";
       color: #00e676;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 1rem;
       flex-shrink: 0;
       margin-top: 0.1em;
@@ -474,7 +525,7 @@
       align-items: center;
       gap: 0.6rem;
       font-size: 0.97rem;
-      color: #111111;
+      color: rgba(255,255,255,0.85);
     }
     .transformation-checks li::before {
       content: "✓";
@@ -538,17 +589,21 @@
       margin: 0 auto;
     }
     details.faq-item {
-      background: #F9FAFB;
-      border: 1px solid #E5E7EB;
-      border-radius: 0.75rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 0.85rem;
       overflow: hidden;
+      transition: border-color 0.2s;
     }
-    details.faq-item[open] { border-color: #00e676; }
+    details.faq-item[open] {
+      border-color: rgba(0,230,118,0.35);
+      background: rgba(0,230,118,0.03);
+    }
     summary.faq-question {
-      padding: 1.1rem 1.25rem;
+      padding: 1.15rem 1.4rem;
       font-weight: 600;
       font-size: 0.97rem;
-      color: #111111;
+      color: #FFFFFF;
       cursor: pointer;
       list-style: none;
       display: flex;
@@ -560,19 +615,20 @@
     summary.faq-question::-webkit-details-marker { display: none; }
     summary.faq-question::after {
       content: "+";
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #00e676;
       flex-shrink: 0;
-      transition: transform 0.2s;
+      transition: transform 0.25s;
+      font-weight: 300;
     }
     details.faq-item[open] summary.faq-question::after {
       transform: rotate(45deg);
     }
     .faq-answer {
-      padding: 0 1.25rem 1.1rem;
+      padding: 0 1.4rem 1.15rem;
       font-size: 0.93rem;
-      color: #374151;
-      line-height: 1.65;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
     }
 
     /* ===== CTA FINALE ===== */
@@ -820,11 +876,18 @@
 
       <!-- Left: Copy -->
       <div class="hero-copy">
-        <h1 class="hero-h1">Votre clinique existe sur Google. Mais existe-t-elle dans ChatGPT&nbsp;?</h1>
+        <h1 class="hero-h1">Votre clinique existe sur Google.<br>Mais existe-t-elle dans <span>ChatGPT&nbsp;?</span></h1>
         <p class="hero-subtitle">Les patients cherchent déjà avec l'IA. La majorité des cliniques dentaires québécoises sont invisibles dans ces réponses.</p>
+        <div class="hero-tech-tags">
+          <span class="hero-tech-tag">SEO Local</span>
+          <span class="hero-tech-tag">IA Visibility</span>
+          <span class="hero-tech-tag">Schema.org</span>
+          <span class="hero-tech-tag">Core Web Vitals</span>
+          <span class="hero-tech-tag">Loi 25</span>
+        </div>
         <ul class="hero-checks">
-          <li>Audit personnalisé en vidéo Loom 2&nbsp;min</li>
-          <li>Livré en moins de 24&nbsp;h</li>
+          <li>Rapport PDF personnalisé · 13 pages</li>
+          <li>Livré sous 24&nbsp;h ouvrées</li>
           <li>100&nbsp;% gratuit, sans engagement</li>
         </ul>
         <span class="hero-badge">🏥 Pour les dentistes visiteurs du JDIQ 2026 — Palais des congrès de Montréal</span>
@@ -1236,17 +1299,22 @@
     window.addEventListener('touchmove',  function (e) { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
     window.addEventListener('touchend',   function ()  { dragging = false; });
 
-    // Animation d'entrée : glisse de droite vers 50%
+    // Position initiale : 50% visible dès le chargement
+    before.style.width = '50%';
+    handle.style.left  = '50%';
+
+    // Animation d'entrée : glisse 80%→50% pour attirer l'attention
     setTimeout(function () {
-      var pct = 0.85, step = 0;
+      var pct = 0.80, dir = -1, bounces = 0;
       var anim = setInterval(function () {
-        pct -= 0.025;
-        step++;
-        if (pct <= 0.5 || step > 14) { pct = 0.5; clearInterval(anim); }
+        pct += dir * 0.022;
+        if (pct <= 0.50) { pct = 0.50; dir = 1; bounces++; }
+        if (pct >= 0.80 && bounces > 0) { pct = 0.80; dir = -1; bounces++; }
+        if (bounces >= 2) { pct = 0.50; clearInterval(anim); }
         before.style.width = (pct * 100) + '%';
         handle.style.left   = (pct * 100) + '%';
-      }, 30);
-    }, 800);
+      }, 22);
+    }, 600);
   })();
 
   // ---- 5. GA4 events ----

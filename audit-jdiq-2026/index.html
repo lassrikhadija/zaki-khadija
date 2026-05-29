@@ -7,6 +7,15 @@
   <meta name="description" content="Audit gratuit de votre site dentaire en 2 min. Visibilité ChatGPT, SEO local, Schema, Loi 25. Livré en 24 h. Sans engagement. Montréal et Grand Montréal.">
   <meta name="robots" content="index, follow">
 
+  <!-- Preconnect tiers critiques -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://api.hsforms.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload image hero slider (above fold) -->
+  <link rel="preload" as="image" href="../assets/img/projets/site-apres-passage-chez-nextiweb.webp">
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png">
@@ -47,9 +56,6 @@
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CAD"}
   }
   </script>
-
-  <!-- GTM -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
 
   <style>
     /* ===== RESET & BASE ===== */
@@ -890,6 +896,9 @@
       }
     }
   </style>
+
+  <!-- GTM — chargé après le CSS pour ne pas bloquer le rendu -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
 </head>
 <body>
 
@@ -1093,7 +1102,7 @@
     <div class="ba-container">
       <div class="ba-slider" id="baSlider" role="img" aria-label="Comparaison avant/après audit Nextiweb">
         <div class="ba-after">
-          <img src="../assets/img/projets/site-apres-passage-chez-nextiweb.webp" alt="Après optimisation Nextiweb — Score 96/100" width="840" height="1080" loading="lazy">
+          <img src="../assets/img/projets/site-apres-passage-chez-nextiweb.webp" alt="Après optimisation Nextiweb — Score 96/100" width="840" height="1080" loading="eager" fetchpriority="high">
         </div>
         <div class="ba-before" id="baBefore">
           <img src="../assets/img/projets/site-avant-passage-chez-nextiweb.webp" alt="Avant optimisation — Score 38/100" width="840" height="1080" loading="lazy">

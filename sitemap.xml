@@ -60,6 +60,55 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- English dental clinics -->
+  <url>
+    <loc>https://nextiweb.ca/en/dental-clinics.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/google-local-pack-dental-practices.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/google-business-profile-dental-practices.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/google-reviews-dental-clinics.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/neighbourhood-pages-dental-seo.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/schema-dentist-ai-visibility.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/nap-citations-quebec-directories.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Homepage -->
   <url>
     <loc>https://nextiweb.ca/</loc>

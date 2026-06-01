@@ -91,6 +91,19 @@ Série complète d'articles pratiques pour dentistes québécois :
 - [Citations NAP : les principaux répertoires québécois pour dentistes](https://nextiweb.ca/blog/dentistes/citations-nap-repertoires-quebecois.html)
 - [Index guides dentaires](https://nextiweb.ca/blog/dentistes/)
 
+## Dental Clinic Guides — English
+
+NEXTIWEB helps Quebec dental clinics improve their online visibility through local SEO, Google Business Profile optimization, patient reviews, Schema Dentist markup, and AI citability.
+
+- [SEO services for dental clinics](https://nextiweb.ca/en/dental-clinics.html)
+- [Google Local Pack for dental practices — pillar guide](https://nextiweb.ca/en/blog/dentists/google-local-pack-dental-practices.html)
+- [Google Business Profile for dental practices](https://nextiweb.ca/en/blog/dentists/google-business-profile-dental-practices.html)
+- [Google Reviews for dental clinics: ethical method](https://nextiweb.ca/en/blog/dentists/google-reviews-dental-clinics.html)
+- [Neighbourhood pages for dental SEO](https://nextiweb.ca/en/blog/dentists/neighbourhood-pages-dental-seo.html)
+- [Schema Dentist: get cited by ChatGPT and Google AI](https://nextiweb.ca/en/blog/dentists/schema-dentist-ai-visibility.html)
+- [NAP citations: key Quebec directories for dental clinics](https://nextiweb.ca/en/blog/dentists/nap-citations-quebec-directories.html)
+- [All dental clinic guides](https://nextiweb.ca/en/blog/dentists/)
+
 ## Version anglaise
 
 - [English version](https://nextiweb.ca/en/index.html)

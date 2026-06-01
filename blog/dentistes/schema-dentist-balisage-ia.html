@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Schema Dentist JSON-LD : le balisage qui fait citer votre clinique par ChatGPT et Google AI Overviews | NEXTIWEB</title>
+  <meta name="description" content="Comment installer le balisage Schema Dentist JSON-LD sur votre site pour être cité par ChatGPT, Perplexity et Google AI Overviews. Code complet prêt à copier.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Schema Dentist JSON-LD : le balisage qui fait citer votre clinique par ChatGPT et Google AI Overviews">
+  <meta property="og:description" content="Comment installer le balisage Schema Dentist JSON-LD sur votre site pour être cité par ChatGPT, Perplexity et Google AI Overviews. Code complet prêt à copier.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schema Dentist JSON-LD : être cité par ChatGPT et Google AI Overviews — guide 2026">
+  <meta name="twitter:description" content="Code Schema Dentist JSON-LD complet prêt à copier. Propriétés obligatoires et avancées pour maximiser la citabilité IA. NEXTIWEB.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=6">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body code{background:rgba(255,255,255,.07);border-radius:.3rem;padding:.1rem .4rem;font-size:.88em;font-family:monospace;color:var(--color-primary)}
+
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+
+    .code-block{background:#0d1117;border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:1.5rem;margin:1.75rem 0;overflow-x:auto;position:relative}
+    .code-block__label{font-size:.72rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;display:block}
+    .code-block pre{margin:0;font-family:'Courier New',monospace;font-size:.82rem;line-height:1.7;color:#e6edf3;white-space:pre;overflow-x:auto}
+    .code-block .kw{color:#ff7b72}
+    .code-block .str{color:#a5d6ff}
+    .code-block .prop{color:#79c0ff}
+    .code-block .val{color:#a5d6ff}
+    .code-block .cmt{color:#8b949e;font-style:italic}
+
+    .prop-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.88rem}
+    .prop-table th{background:rgba(0,230,118,.08);color:var(--color-primary);font-weight:700;text-align:left;padding:.65rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .prop-table td{padding:.6rem 1rem;border-bottom:1px solid rgba(255,255,255,.05);color:var(--color-text);vertical-align:top;line-height:1.5}
+    .prop-table tr:last-child td{border-bottom:none}
+    .prop-table .badge{display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em}
+    .badge--required{background:rgba(255,82,82,.15);color:#ff5252}
+    .badge--recommended{background:rgba(0,230,118,.12);color:var(--color-primary)}
+    .badge--advanced{background:rgba(121,192,255,.12);color:#79c0ff}
+
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}.prop-table{font-size:.78rem}.prop-table th,.prop-table td{padding:.5rem .6rem}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Schema Dentist : le balisage invisible qui fait citer votre clinique par ChatGPT et Google AI Overviews",
+    "description": "Comment installer le balisage Schema Dentist JSON-LD sur votre site pour être cité par ChatGPT, Perplexity et Google AI Overviews. Code complet prêt à copier.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html", "sameAs": ["https://www.linkedin.com/in/khadija-ait-lassri/"]},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-06-01",
+    "dateModified": "2026-06-01",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "Schema Dentist JSON-LD, balisage dentiste Google IA, ChatGPT recommande dentiste, Schema.org clinique dentaire Québec, données structurées dentiste"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"Cliniques dentaires","item":"https://nextiweb.ca/blog/dentistes/"},
+    {"@type":"ListItem","position":4,"name":"Schema Dentist : le balisage qui fait citer votre clinique par ChatGPT et Google AI Overviews","item":"https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Combien de temps faut-il pour qu'une IA comme ChatGPT commence à citer ma clinique après l'installation du Schema Dentist ?","acceptedAnswer":{"@type":"Answer","text":"Le délai varie selon les IA. Google AI Overviews peut intégrer le Schema dans ses réponses dès la prochaine exploration (crawl) de votre site, soit entre quelques jours et 4 semaines. Pour ChatGPT et Perplexity, qui s'appuient sur des données web indexées par tiers, le délai est plus difficile à prédire — entre 4 et 12 semaines généralement. L'élément déterminant n'est pas uniquement le Schema : la clinique doit aussi avoir une présence web cohérente (GBP, citations NAP, avis) pour que les IA la jugent crédible et digne d'être citée. Le Schema Dentist est le signal formel qui rend la citation possible ; la crédibilité globale du site est le signal qui la rend probable."}},
+    {"@type":"Question","name":"ChatGPT peut-il vraiment recommander un dentiste en particulier à un patient ?","acceptedAnswer":{"@type":"Answer","text":"Oui, et c'est déjà documenté. Quand un utilisateur pose une question comme « Quel est un bon dentiste parlant français et espagnol à Rosemont qui accepte les assurances ? », ChatGPT et d'autres IA génératives répondent en citant des cabinets spécifiques — en priorité ceux dont le site fournit des données structurées claires (Schema Dentist avec languagesSpoken, acceptsInsurance, availableService, addressLocality). Les cabinets sans Schema sont soit absents de la réponse, soit cités de façon vague sans détails utiles. En 2026, cette forme de recommandation IA est en forte croissance comme point d'entrée dans le parcours patient."}},
+    {"@type":"Question","name":"Le Schema Dentist remplace-t-il le SEO classique ?","acceptedAnswer":{"@type":"Answer","text":"Non, le Schema Dentist complète le SEO — il ne le remplace pas. Le SEO classique (mots-clés, maillage interne, contenu de qualité, backlinks) reste indispensable pour le classement dans les résultats organiques de Google. Le Schema Dentist est une couche additionnelle qui améliore la compréhension qu'ont les moteurs de recherche et les IA de votre cabinet. Il peut contribuer à déclencher des rich results (résultats enrichis) dans Google, améliorer le taux de clic, et surtout rendre votre clinique citable par les IA génératives — un canal que le SEO classique seul ne couvre pas. Les cabinets les plus visibles en 2026 combinent les deux : SEO solide et Schema complet."}},
+    {"@type":"Question","name":"Combien coûte l'installation du Schema Dentist sur un site dentaire ?","acceptedAnswer":{"@type":"Answer","text":"L'installation du Schema Dentist est une intervention technique ponctuelle. Sur un site WordPress avec accès au thème ou via un plugin SEO (RankMath, Yoast), un développeur peut implémenter un Schema Dentist complet en 1 à 2 heures. Sur un site custom (HTML, React, Next.js), c'est également une intervention de quelques heures. Le coût réel varie selon l'agence ou le développeur, mais il s'agit d'un investissement unique — une fois le code en place, il fonctionne indéfiniment. Seules les mises à jour (horaires, nouveaux services, nouvelles langues) nécessitent des ajustements ponctuels. C'est l'un des meilleurs retours sur investissement en termes de visibilité digitale pour un cabinet dentaire."}},
+    {"@type":"Question","name":"Le Schema Dentist s'installe-t-il différemment sur WordPress vs un site custom ?","acceptedAnswer":{"@type":"Answer","text":"La logique est identique — c'est un bloc JSON-LD à injecter dans la balise <head> de votre site — mais la méthode technique diffère. Sur WordPress, vous pouvez utiliser RankMath (section Schéma > Local Business > Dentist), Yoast avec l'extension locale, ou ajouter le bloc JSON-LD directement dans le functions.php ou via un plugin de header custom. Sur un site HTML statique, vous collez le JSON-LD dans le <head>. Sur un site React ou Next.js, vous injectez le script via next/head ou react-helmet. Dans tous les cas, le code JSON-LD fourni dans cet article est universel — seules les valeurs (nom, adresse, services) changent selon votre clinique."}},
+    {"@type":"Question","name":"Comment vérifier que mon Schema Dentist est correctement reconnu par Google ?","acceptedAnswer":{"@type":"Answer","text":"Deux outils officiels permettent de valider votre Schema Dentist. Premièrement, le Google Rich Results Test (search.google.com/test/rich-results) : entrez l'URL de votre page et Google indique si le Schema est valide, s'il peut générer des rich results, et liste les éventuelles erreurs. Deuxièmement, Schema Markup Validator (validator.schema.org) : outil officiel Schema.org qui valide la conformité technique de votre JSON-LD. Une fois le Schema en ligne, Google Search Console (section Améliorations > Données structurées) vous montrera dans les jours suivants si Google a crawlé et reconnu vos données structurées, avec les avertissements ou erreurs à corriger."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/dentistes/" class="breadcrumb__link">Cliniques dentaires</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Schema Dentist — Balisage IA</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO ARTICLE -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Données structurées — IA &amp; SEO dentaire
+          </p>
+          <h1 class="article-hero__title">Schema Dentist&nbsp;: le balisage invisible qui fait citer votre clinique par ChatGPT et Google AI&nbsp;Overviews</h1>
+          <div class="article-meta">
+            <span><a href="https://www.linkedin.com/in/khadija-ait-lassri/" target="_blank" rel="noopener noreferrer" class="article-meta__author" style="text-decoration:none;color:inherit" aria-label="Profil LinkedIn de Khadija AitLassri">Khadija AitLassri</a></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              1 juin 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              13 min de lecture
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- BODY -->
+          <div class="article-body">
+
+            <!-- Résumé -->
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li>En 2026, une part croissante des patients commence leur recherche dans les IA génératives (ChatGPT, Google AI Overviews, Perplexity) — et ces IA <strong>citent en priorité les cabinets qui parlent leur langage</strong> : les données structurées Schema.org.</li>
+                <li>Sans <strong>Schema Dentist JSON-LD</strong> sur votre site, vous êtes pratiquement invisible dans les réponses IA, peu importe votre positionnement SEO classique.</li>
+                <li>Le Schema Dentist décrit formellement votre cabinet&nbsp;: nom, adresse, services, horaires, langues parlées, spécialités, lien de prise de rendez-vous — dans un format que les machines lisent directement.</li>
+                <li>L'installation prend 30 minutes avec le <strong>code complet prêt à copier</strong> fourni dans cet article.</li>
+              </ul>
+            </div>
+
+            <!-- Lien pilier -->
+            <div class="callout">
+              <strong>Article pilier</strong>
+              Cet article fait partie de la série SEO local pour cliniques dentaires. Pour une vue d'ensemble des 5 leviers (GBP, avis, pages-quartier, Schema, citations NAP), consultez l'article fondateur&nbsp;: <a href="/blog/dentistes/local-pack-google-cabinets-dentaires.html">Le Local Pack Google pour cabinets dentaires</a>.
+            </div>
+
+            <hr>
+
+            <h2 id="ia-lit-votre-site">Comment les IA lisent votre site (HTML vs données structurées)</h2>
+            <p>Votre site web contient deux types d'informations. D'abord, le <strong>HTML visible</strong>&nbsp;: le texte que les visiteurs lisent, les images, les menus. Ensuite, les <strong>données structurées</strong>&nbsp;: un code technique ajouté dans les coulisses, invisible pour les humains, mais conçu spécifiquement pour être lu et compris par les moteurs de recherche et les intelligences artificielles.</p>
+            <p>La différence est fondamentale. Quand Google ou ChatGPT explore un site dentaire sans données structurées, il doit <em>inférer</em> les informations&nbsp;: il tente de deviner votre adresse en lisant votre page Contact, vos horaires en scannant du texte en français, vos services en analysant les titres de vos pages. Ce processus est imprécis. L'IA peut se tromper, rater des informations ou ignorer le cabinet faute de confiance dans les données extraites.</p>
+            <p>Avec le <strong>Schema Dentist JSON-LD</strong>, vous lui remettez directement une fiche structurée&nbsp;: « Voici mon nom exact, voici mon adresse en format standardisé, voici mes horaires du lundi au vendredi, voici mes services avec leurs noms officiels. » L'IA n'a plus à inférer — elle lit. Et ce qu'elle lit clairement, elle peut le citer avec confiance.</p>
+
+            <div class="callout">
+              <strong>Pourquoi JSON-LD et pas Microdata ?</strong>
+              Google recommande officiellement le format <strong>JSON-LD</strong> (JavaScript Object Notation for Linked Data) pour toutes les données structurées. Il s'insère dans une balise <code>&lt;script type="application/ld+json"&gt;</code> sans modifier le HTML visible de vos pages. C'est la méthode la plus simple à implémenter, à maintenir, et à valider.
+            </div>
+
+            <hr>
+
+            <h2 id="schema-dentist-heritage">Qu'est-ce que Schema.org type Dentist — l'héritage MedicalBusiness</h2>
+            <p>Schema.org est un vocabulaire commun créé et maintenu par Google, Microsoft, Yahoo et Yandex. Il définit des centaines de types d'entités — <code>Restaurant</code>, <code>Hotel</code>, <code>Person</code>, <code>Product</code> — avec leurs propriétés standardisées. Pour les cabinets dentaires, le type officiel est <code>Dentist</code>.</p>
+            <p>Ce type s'inscrit dans une hiérarchie&nbsp;:</p>
+            <ul>
+              <li><code>Thing</code> &rarr; <code>Organization</code> &rarr; <code>LocalBusiness</code> &rarr; <code>HealthAndBeautyBusiness</code> ou <code>MedicalBusiness</code> &rarr; <code>Dentist</code></li>
+            </ul>
+            <p>Cette hiérarchie est importante&nbsp;: le type <code>Dentist</code> hérite de <strong>toutes les propriétés</strong> des types parents. Cela signifie que vous pouvez utiliser les propriétés de <code>LocalBusiness</code> (adresse, horaires, téléphone, géolocalisation) <em>et</em> les propriétés de <code>MedicalBusiness</code> (spécialité médicale, langues parlées, services disponibles) dans un seul bloc JSON-LD cohérent.</p>
+            <p>Pour les IA génératives, cette richesse est précieuse. Une IA qui reçoit la requête « Dentiste bilingue français-anglais spécialisé en orthodontie à Ville-Émard » peut croiser plusieurs propriétés structurées pour identifier les cabinets correspondants — mais seulement si ces propriétés existent dans les données.</p>
+
+            <hr>
+
+            <h2 id="proprietes-obligatoires">Les propriétés obligatoires — ce que Google exige</h2>
+            <p>Un Schema Dentist minimal doit comporter les propriétés suivantes pour être valide aux yeux de Google et pour déclencher des améliorations dans les résultats de recherche :</p>
+
+            <table class="prop-table">
+              <thead>
+                <tr>
+                  <th>Propriété</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>@type</code></td>
+                  <td>Text</td>
+                  <td>Toujours <code>"Dentist"</code></td>
+                  <td><span class="badge badge--required">Requis</span></td>
+                </tr>
+                <tr>
+                  <td><code>name</code></td>
+                  <td>Text</td>
+                  <td>Nom exact de la clinique tel qu'il apparaît sur Google Maps et GBP</td>
+                  <td><span class="badge badge--required">Requis</span></td>
+                </tr>
+                <tr>
+                  <td><code>address</code></td>
+                  <td>PostalAddress</td>
+                  <td>Adresse complète — numéro, rue, ville, province, code postal, pays</td>
+                  <td><span class="badge badge--required">Requis</span></td>
+                </tr>
+                <tr>
+                  <td><code>telephone</code></td>
+                  <td>Text</td>
+                  <td>Numéro avec indicatif régional, format E.164 recommandé</td>
+                  <td><span class="badge badge--required">Requis</span></td>
+                </tr>
+                <tr>
+                  <td><code>url</code></td>
+                  <td>URL</td>
+                  <td>URL canonique de votre site</td>
+                  <td><span class="badge badge--required">Requis</span></td>
+                </tr>
+                <tr>
+                  <td><code>openingHours</code></td>
+                  <td>Text</td>
+                  <td>Horaires au format standard Schema (ex. <code>Mo-Fr 08:00-17:00</code>)</td>
+                  <td><span class="badge badge--required">Requis</span></td>
+                </tr>
+                <tr>
+                  <td><code>geo</code></td>
+                  <td>GeoCoordinates</td>
+                  <td>Latitude et longitude exactes (depuis Google Maps)</td>
+                  <td><span class="badge badge--recommended">Recommandé</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="callout">
+              <strong>Cohérence NAP absolue</strong>
+              Le <code>name</code>, l'<code>address</code> et le <code>telephone</code> dans votre Schema doivent être <strong>strictement identiques</strong> à ce qui figure sur votre fiche Google Business Profile, votre page Contact et l'ensemble de vos répertoires locaux. Une incohérence — même mineure (« Avenue » vs « Ave. ») — réduit la confiance de Google dans vos données structurées.
+            </div>
+
+            <hr>
+
+            <h2 id="proprietes-avancees">Les propriétés avancées pour maximiser la citabilité IA</h2>
+            <p>C'est ici que la majorité des cabinets dentaires laissent de la visibilité sur la table. Les propriétés avancées ne sont pas techniquement requises par Google pour valider le Schema — mais elles sont <strong>déterminantes pour être cité par les IA génératives</strong>, qui s'en servent pour répondre aux requêtes précises des patients.</p>
+
+            <table class="prop-table">
+              <thead>
+                <tr>
+                  <th>Propriété</th>
+                  <th>Description</th>
+                  <th>Impact IA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>medicalSpecialty</code></td>
+                  <td>Spécialité dentaire (ex. Orthodontie, Endodontie, Pédiatrie)</td>
+                  <td><span class="badge badge--advanced">Très élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>availableService</code></td>
+                  <td>Liste des services — détartrage, blanchiment, implant, urgence dentaire, etc.</td>
+                  <td><span class="badge badge--advanced">Très élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>knowsLanguage</code></td>
+                  <td>Langues parlées par l'équipe (français, anglais, espagnol, arabe…)</td>
+                  <td><span class="badge badge--advanced">Très élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>priceRange</code></td>
+                  <td>Fourchette de prix ($, $$, $$$) — information attendue par les IA</td>
+                  <td><span class="badge badge--recommended">Élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>paymentAccepted</code></td>
+                  <td>Modes de paiement (carte de crédit, débit, assurances)</td>
+                  <td><span class="badge badge--recommended">Élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>hasMap</code></td>
+                  <td>URL Google Maps de votre fiche</td>
+                  <td><span class="badge badge--recommended">Moyen</span></td>
+                </tr>
+                <tr>
+                  <td><code>sameAs</code></td>
+                  <td>URLs de vos profils GBP, Facebook, Instagram, Pages Jaunes</td>
+                  <td><span class="badge badge--recommended">Élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>potentialAction</code></td>
+                  <td>Lien direct de prise de rendez-vous (ReserveAction)</td>
+                  <td><span class="badge badge--advanced">Très élevé</span></td>
+                </tr>
+                <tr>
+                  <td><code>aggregateRating</code></td>
+                  <td>Note moyenne et nombre d'avis (source externe requise)</td>
+                  <td><span class="badge badge--advanced">Très élevé</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>La propriété <code>availableService</code> mérite une attention particulière. Chaque service que vous listez est un terme sur lequel une IA peut vous citer. Si un patient demande à ChatGPT « Qui fait des implants dentaires à Villeray ? », seuls les cabinets ayant explicitement déclaré <code>"name": "Implants dentaires"</code> dans leur Schema seront identifiés avec certitude.</p>
+
+            <hr>
+
+            <h2 id="code-json-ld">Code JSON-LD complet — exemple clinique montréalaise bilingue</h2>
+            <p>Voici un exemple réaliste et complet pour une clinique dentaire bilingue (français/anglais) à Montréal. Remplacez les valeurs par celles de votre clinique. Ce code se place dans la balise <code>&lt;head&gt;</code> de chaque page de votre site.</p>
+
+            <div class="code-block">
+              <span class="code-block__label">JSON-LD — Schema Dentist complet (copier-coller prêt)</span>
+              <pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Clinique Dentaire Mont-Royal",
+  "alternateName": "Mont-Royal Dental Clinic",
+  "description": "Clinique dentaire bilingue au Plateau-Mont-Royal, Montréal. Soins généraux, orthodontie, implants et urgences dentaires. Assurances acceptées.",
+  "url": "https://www.cliniquedentalemontroyal.ca",
+  "telephone": "+15141234567",
+  "email": "info@cliniquedentalemontroyal.ca",
+  "priceRange": "$$",
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Insurance",
+  "currenciesAccepted": "CAD",
+
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1250 Avenue du Mont-Royal Est, Suite 200",
+    "addressLocality": "Montréal",
+    "addressRegion": "QC",
+    "postalCode": "H2J 1Y2",
+    "addressCountry": "CA"
+  },
+
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5284,
+    "longitude": -73.5788
+  },
+
+  "openingHours": [
+    "Mo 08:00-17:00",
+    "Tu 08:00-19:00",
+    "We 08:00-17:00",
+    "Th 08:00-19:00",
+    "Fr 08:00-16:00",
+    "Sa 09:00-14:00"
+  ],
+
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Wednesday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Thursday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+
+  "knowsLanguage": [
+    {"@type": "Language", "name": "Français", "alternateName": "fr"},
+    {"@type": "Language", "name": "English", "alternateName": "en"}
+  ],
+
+  "medicalSpecialty": [
+    "Dentistry",
+    "Orthodontics",
+    "Oral Surgery"
+  ],
+
+  "availableService": [
+    {
+      "@type": "MedicalProcedure",
+      "name": "Examen et détartrage",
+      "description": "Examen dentaire complet avec radiographies et nettoyage professionnel."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Blanchiment dentaire",
+      "description": "Blanchiment professionnel en clinique et traitement à domicile."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Implants dentaires",
+      "description": "Pose d'implants dentaires en titane avec couronne sur mesure."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Orthodontie adulte",
+      "description": "Appareils orthodontiques fixes et aligneurs transparents pour adultes."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Urgence dentaire",
+      "description": "Prise en charge des urgences dentaires le jour même, 6 jours par semaine."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Dentisterie pédiatrique",
+      "description": "Soins dentaires pour enfants dans un environnement accueillant."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Soins pour patients anxieux",
+      "description": "Sédation consciente (oxyde nitreux) disponible sur demande."
+    }
+  ],
+
+  "hasMap": "https://maps.google.com/?cid=VOTRE_CID_GOOGLE",
+
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.cliniquedentalemontroyal.ca/rendez-vous",
+      "inLanguage": "fr-CA",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Prise de rendez-vous dentaire"
+    }
+  },
+
+  "sameAs": [
+    "https://www.google.com/maps?cid=VOTRE_CID_GOOGLE",
+    "https://www.facebook.com/cliniquedentalemontroyal",
+    "https://www.pagesjaunes.ca/clinique-dentaire-mont-royal"
+  ],
+
+  "image": [
+    "https://www.cliniquedentalemontroyal.ca/assets/facade-clinique.jpg",
+    "https://www.cliniquedentalemontroyal.ca/assets/salle-attente.jpg",
+    "https://www.cliniquedentalemontroyal.ca/assets/equipe-dentaire.jpg"
+  ],
+
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.cliniquedentalemontroyal.ca/assets/logo.png",
+    "width": 400,
+    "height": 120
+  },
+
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Marie-Ève Tremblay",
+    "jobTitle": "Dentiste généraliste et directrice clinique"
+  },
+
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Dr. Ahmed Benali",
+      "jobTitle": "Orthodontiste",
+      "knowsLanguage": [
+        {"@type": "Language", "name": "Français", "alternateName": "fr"},
+        {"@type": "Language", "name": "Arabic", "alternateName": "ar"}
+      ]
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+            </div>
+
+            <div class="callout">
+              <strong>Comment trouver votre CID Google Maps</strong>
+              Recherchez votre clinique sur Google Maps, cliquez sur votre fiche, et regardez l'URL — elle contient un paramètre <code>cid=XXXXXXXXXXXXXXX</code>. C'est votre identifiant unique Google. Intégrez-le dans les champs <code>hasMap</code> et <code>sameAs</code> pour renforcer la connexion entre votre Schema et votre fiche GBP.
+            </div>
+
+            <hr>
+
+            <h2 id="placement-script">Où placer le script dans votre HTML</h2>
+            <p>La recommandation officielle de Google est de placer le JSON-LD dans la balise <code>&lt;head&gt;</code> de votre page. Techniquement, il fonctionne aussi avant la fermeture <code>&lt;/body&gt;</code>, mais la pratique conseillée reste le <code>&lt;head&gt;</code> pour une détection plus rapide lors du crawl.</p>
+
+            <h3>Sur une seule page ou sur tout le site ?</h3>
+            <p>Le Schema Dentist doit idéalement être présent sur <strong>toutes les pages de votre site</strong>, pas seulement la page d'accueil. Google associe les données structurées à la page sur laquelle elles se trouvent. Si un patient atterrit directement sur votre page « Implants dentaires » depuis une recherche IA, le Schema sur cette page confirme immédiatement que vous êtes bien la clinique concernée. Sur une page spécifique à un service, vous pouvez ajouter un Schema <code>MedicalProcedure</code> en complément du Schema <code>Dentist</code> global.</p>
+
+            <h3>Attention aux doublons</h3>
+            <p>N'incluez qu'<strong>un seul bloc Schema Dentist par page</strong>. Si vous utilisez un plugin WordPress comme RankMath ou Yoast qui génère automatiquement des données structurées, vérifiez qu'il ne crée pas déjà un Schema LocalBusiness pour éviter les conflits. Consultez le code source de votre page (Ctrl+U) et cherchez <code>application/ld+json</code> pour voir ce qui est déjà présent.</p>
+
+            <hr>
+
+            <h2 id="validation">Valider avec Google Rich Results Test et Schema Markup Validator</h2>
+            <p>Une fois le Schema en place, validez-le immédiatement avec ces deux outils officiels gratuits :</p>
+
+            <h3>1 — Google Rich Results Test</h3>
+            <p>Rendez-vous sur <strong>search.google.com/test/rich-results</strong>, entrez l'URL de votre page, et lancez le test. Google indique si votre Schema est valide, s'il peut générer des résultats enrichis (rich results), et liste toutes les erreurs ou avertissements avec leur description précise. C'est l'outil de référence pour un feedback immédiat.</p>
+
+            <h3>2 — Schema Markup Validator</h3>
+            <p>Rendez-vous sur <strong>validator.schema.org</strong> pour une validation technique complète. Cet outil vérifie la conformité de votre JSON-LD aux spécifications officielles Schema.org, indépendamment de Google. Il est particulièrement utile pour détecter les erreurs de syntaxe JSON ou les propriétés mal typées.</p>
+
+            <div class="callout">
+              <strong>Erreur fréquente à la validation</strong>
+              La plupart des erreurs Schema Dentist proviennent de trois sources&nbsp;: les <strong>guillemets incorrects</strong> (guillemets typographiques « » à la place de " "), les <strong>virgules manquantes</strong> entre les propriétés, et les <strong>URL mal formatées</strong> (manque du protocole https://). Validez toujours votre JSON dans un validateur JSON standard (jsonlint.com) avant de le soumettre au Google Rich Results Test.
+            </div>
+
+            <hr>
+
+            <h2 id="schema-faqpage">Schema FAQPage — maximiser la citabilité IA avec une FAQ structurée</h2>
+            <p>Le Schema <code>FAQPage</code> est le complément idéal du Schema Dentist. Il permet de déclarer formellement les questions fréquentes de vos patients — avec leurs réponses — dans un format que les IA lisent directement. C'est le mécanisme le plus efficace pour apparaître dans les réponses aux questions conversationnelles IA.</p>
+            <p>Quand ChatGPT ou Google AI Overviews reçoit une question comme « Est-ce que les implants dentaires font mal ? », il cherche des sources structurées qui ont répondu explicitement à cette question. Un cabinet avec un Schema FAQPage couvrant 10 questions de ce type est nettement mieux positionné pour être cité — et cité précisément — qu'un cabinet dont le contenu FAQ n'est présent qu'en HTML.</p>
+
+            <div class="code-block">
+              <span class="code-block__label">JSON-LD — Schema FAQPage (ajouter après le Schema Dentist)</span>
+              <pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Acceptez-vous les assurances dentaires au Québec ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Nous travaillons avec la majorité des assureurs québécois incluant La Capitale, Sun Life, Great-West, Desjardins et Industrielle Alliance. Nous effectuons la facturation directe à votre assureur pour les soins couverts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Offrez-vous des rendez-vous d'urgence dentaire le jour même ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Nous réservons des plages horaires quotidiennes pour les urgences dentaires — douleur aiguë, dent cassée, couronne décollée. Appelez-nous le matin et nous vous recevons généralement dans la journée."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Parlez-vous anglais à la clinique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Toute notre équipe est bilingue français-anglais. Certains membres parlent également l'arabe et l'espagnol."
+      }
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+            </div>
+
+            <p>Adaptez les questions à votre réalité clinique. Les meilleures questions pour la citabilité IA sont celles qui correspondent aux requêtes conversationnelles réelles de vos patients&nbsp;: langues parlées, assurances acceptées, disponibilité urgences, fourchette de prix, spécialités.</p>
+
+            <div class="article-cta-inline">
+              <p>Votre Schema Dentist est-il complet et correctement indexé ? Obtenez un audit technique de vos données structurées — rapport PDF personnalisé sous 24&nbsp;h.</p>
+              <a href="/audit-jdiq-2026/" class="btn btn--primary">Demander mon audit gratuit →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="google-search-console">Vérifier dans Google Search Console</h2>
+            <p>Une fois votre Schema validé et votre site crawlé par Google (généralement quelques jours à quelques semaines), vous pouvez suivre son statut dans <strong>Google Search Console</strong>. Dans le menu de gauche, section « Améliorations », vous trouverez les entrées liées à vos données structurées.</p>
+            <p>GSC vous indique&nbsp;: combien de pages ont été détectées avec des données structurées valides, lesquelles présentent des erreurs ou avertissements, et dans certains cas, si vos données structurées ont déclenché des rich results dans les résultats de recherche. Un Schema Dentist valide sans erreur dans GSC est le signe que Google a correctement compris et indexé les informations de votre clinique.</p>
+            <p>Soumettez également une nouvelle demande d'indexation via « Inspection d'URL » après avoir ajouté ou modifié votre Schema — cela accélère la prise en compte des changements.</p>
+
+            <hr>
+
+            <h2 id="erreurs-frequentes">Erreurs fréquentes à éviter</h2>
+            <p>Ces erreurs sont observées dans la majorité des cabinets dentaires qui tentent d'implémenter le Schema sans accompagnement&nbsp;:</p>
+
+            <h3>Adresse incohérente (NAP)</h3>
+            <p>C'est l'erreur la plus commune et la plus dommageable. Si votre fiche GBP dit « 1250, avenue du Mont-Royal Est » et votre Schema dit « 1250 Avenue Mont-Royal E », Google traite les deux comme des entités potentiellement différentes. Choisissez un format unique et appliquez-le sur <strong>tous vos points de présence en ligne</strong> sans exception.</p>
+
+            <h3>Horaires mal formatés</h3>
+            <p>Le format Schema standard pour les horaires est strict&nbsp;: <code>"Mo-Fr 09:00-17:00"</code>. Les abréviations anglaises des jours sont obligatoires (Mo, Tu, We, Th, Fr, Sa, Su). Un format comme <code>"Lundi-Vendredi 9h-17h"</code> ne sera pas reconnu. Utilisez le <a href="https://developers.google.com/search/docs/appearance/structured-data/local-business" target="_blank" rel="noopener noreferrer">guide officiel Google</a> pour le formatage des horaires.</p>
+
+            <h3>Propriétés manquantes critiques</h3>
+            <p>Un Schema sans <code>geo</code> (coordonnées GPS) est moins performant pour les requêtes géolocalisées. Un Schema sans <code>availableService</code> ne peut pas être cité pour des requêtes de services spécifiques. Un Schema sans <code>knowsLanguage</code> passe à côté de toutes les requêtes bilingues. Chaque propriété manquante est une opportunité de citation IA perdue.</p>
+
+            <h3>URLs relatives dans les champs URL</h3>
+            <p>Tous les champs de type URL (<code>url</code>, <code>image</code>, <code>logo</code>, <code>sameAs</code>, <code>hasMap</code>) doivent contenir des <strong>URLs absolues complètes</strong> avec protocole https://. Une URL relative comme <code>/assets/logo.png</code> est invalide dans un JSON-LD.</p>
+
+            <h3>Schema seulement sur la page d'accueil</h3>
+            <p>Le Schema Dentist ne doit pas être limité à la page d'accueil. Il doit être présent sur toutes les pages du site — pages de services, pages de quartier, page Contact, page À propos. Chaque page est un point d'entrée potentiel pour une IA qui explore votre site.</p>
+
+            <hr>
+
+            <h2 id="articles-complementaires">Articles complémentaires — la série SEO dentaire NEXTIWEB</h2>
+            <p>Le Schema Dentist s'intègre dans une stratégie de visibilité locale complète. Ces articles détaillent les autres leviers&nbsp;:</p>
+
+            <ul>
+              <li><a href="/blog/dentistes/local-pack-google-cabinets-dentaires.html">Article pilier — Le Local Pack Google pour cabinets dentaires&nbsp;: les 5 leviers</a></li>
+              <li><a href="/blog/dentistes/avis-google-cliniques-dentaires.html">Avis Google&nbsp;: la méthode éthique pour passer de 9 à 80 avis en 6 mois</a></li>
+              <li><a href="/blog/dentistes/pages-quartier-seo-dentaire.html">Pages par quartier&nbsp;: dominer « dentiste Plateau », « dentiste Rosemont » en parallèle</a></li>
+              <li><a href="/blog/dentistes/citations-nap-repertoires-quebecois.html">Citations NAP&nbsp;: les 30 répertoires québécois où votre clinique doit figurer</a></li>
+            </ul>
+
+            <hr>
+
+            <!-- FAQ -->
+            <h2 id="faq">Questions fréquentes</h2>
+            <div class="article-faq" role="list">
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Combien de temps faut-il pour qu'une IA cite ma clinique après l'installation du Schema Dentist ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Le délai varie selon les IA. Google AI Overviews peut intégrer le Schema dès la prochaine exploration de votre site, soit entre quelques jours et 4 semaines. Pour ChatGPT et Perplexity, le délai est généralement de 4 à 12 semaines. L'élément déterminant n'est pas uniquement le Schema&nbsp;: la clinique doit aussi avoir une présence web cohérente (GBP, citations NAP, avis) pour que les IA la jugent crédible. Le Schema Dentist est le signal formel qui rend la citation possible&nbsp;; la crédibilité globale du site est ce qui la rend probable.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">ChatGPT peut-il vraiment recommander un dentiste en particulier à un patient ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Oui. Quand un utilisateur demande « Quel est un bon dentiste parlant français et espagnol à Rosemont qui accepte les assurances ? », ChatGPT et d'autres IA génératives répondent en citant des cabinets spécifiques — en priorité ceux dont le site fournit des données structurées claires avec <code>knowsLanguage</code>, <code>paymentAccepted</code> et <code>addressLocality</code>. Les cabinets sans Schema sont soit absents de la réponse, soit cités vaguement. En 2026, cette recommandation IA est en forte croissance comme point d'entrée dans le parcours patient.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Le Schema Dentist remplace-t-il le SEO classique ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Non, le Schema Dentist complète le SEO — il ne le remplace pas. Le SEO classique reste indispensable pour le classement dans les résultats organiques Google. Le Schema est une couche additionnelle qui améliore la compréhension de votre cabinet par les moteurs et les IA. Il peut contribuer à déclencher des rich results dans Google et rendre votre clinique citable par les IA génératives — un canal que le SEO seul ne couvre pas. Les cabinets les plus visibles en 2026 combinent les deux.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Combien coûte l'installation du Schema Dentist ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">L'installation du Schema Dentist est une intervention technique ponctuelle — en général 1 à 2 heures de travail pour un développeur, sur WordPress ou site custom. C'est un investissement unique&nbsp;: une fois le code en place, il fonctionne indéfiniment. Seules les mises à jour (horaires, nouveaux services, nouvelles langues) nécessitent des ajustements ponctuels. C'est l'un des meilleurs retours sur investissement en visibilité digitale pour un cabinet dentaire.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Le Schema Dentist s'installe-t-il différemment sur WordPress vs un site custom ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">La logique est identique — c'est un bloc JSON-LD à injecter dans le <code>&lt;head&gt;</code> — mais la méthode diffère. Sur WordPress, utilisez RankMath (Local Business &gt; Dentist), Yoast avec l'extension locale, ou ajoutez le code dans <code>functions.php</code>. Sur un site HTML statique, collez le JSON-LD directement dans le <code>&lt;head&gt;</code>. Sur React ou Next.js, injectez-le via <code>next/head</code> ou react-helmet. Le code fourni dans cet article est universel — seules les valeurs changent selon votre clinique.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Comment vérifier que mon Schema Dentist est correctement reconnu par Google ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Deux outils officiels gratuits&nbsp;: le <strong>Google Rich Results Test</strong> (search.google.com/test/rich-results) pour un test immédiat de votre URL, et le <strong>Schema Markup Validator</strong> (validator.schema.org) pour la conformité technique. Une fois en ligne, <strong>Google Search Console</strong> (section Améliorations) affichera dans les jours suivants si Google a détecté et validé vos données structurées, avec les éventuelles erreurs à corriger.</p>
+              </div>
+
+            </div>
+
+            <!-- CTA finale -->
+            <div class="article-cta-inline" style="margin-top:3rem">
+              <p><strong>Votre clinique est-elle prête pour l'ère des IA&nbsp;?</strong> Obtenez un audit complet de votre visibilité dentaire — Schema Dentist, GBP, avis, pages-quartier, citations NAP — rapport PDF personnalisé sous 24&nbsp;h, offert au JDIQ 2026.</p>
+              <a href="/audit-jdiq-2026/" class="btn btn--primary">Demander mon audit gratuit →</a>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar" aria-label="Sommaire et ressources">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Sommaire</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#ia-lit-votre-site">Comment les IA lisent votre site</a></li>
+                <li><a href="#schema-dentist-heritage">Qu'est-ce que Schema.org Dentist</a></li>
+                <li><a href="#proprietes-obligatoires">Propriétés obligatoires</a></li>
+                <li><a href="#proprietes-avancees">Propriétés avancées (IA)</a></li>
+                <li><a href="#code-json-ld">Code JSON-LD complet</a></li>
+                <li><a href="#placement-script">Où placer le script</a></li>
+                <li><a href="#validation">Valider votre Schema</a></li>
+                <li><a href="#schema-faqpage">Schema FAQPage</a></li>
+                <li><a href="#google-search-console">Google Search Console</a></li>
+                <li><a href="#erreurs-frequentes">Erreurs à éviter</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Audit gratuit</p>
+              <p style="font-size:.85rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1rem">Schema, GBP, avis, citations NAP — rapport PDF personnalisé sous 24&nbsp;h.</p>
+              <a href="/audit-jdiq-2026/" class="btn btn--primary" style="display:block;text-align:center;color:#000!important;font-weight:700">Demander l'audit →</a>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Article pilier</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/blog/dentistes/local-pack-google-cabinets-dentaires.html">Local Pack Google — les 5 leviers SEO</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Guides associés</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/blog/dentistes/avis-google-cliniques-dentaires.html">Avis Google — 9 à 80 avis en 6 mois</a></li>
+                <li><a href="/blog/dentistes/pages-quartier-seo-dentaire.html">Pages par quartier — SEO géolocalisé</a></li>
+                <li><a href="/blog/dentistes/citations-nap-repertoires-quebecois.html">Citations NAP — 30 répertoires QC</a></li>
+                <li><a href="/blog/seo/seo-ia-generative-optimization-pme.html">SEO IA générative pour PME</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB" width="84" height="48" loading="lazy">
+        </a>
+        <p class="footer__tagline">Agence web à Montréal — création de sites, SEO et marketing digital pour PME québécoises.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navigation pied de page">
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <a href="/creation-site.html">Création de sites web</a>
+          <a href="/seo.html">Référencement SEO</a>
+          <a href="/marketing-digital.html">Marketing digital</a>
+          <a href="/visibilite-ia.html">Visibilité IA</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Blog</p>
+          <a href="/blog/seo/">SEO &amp; Référencement</a>
+          <a href="/blog/creation-site/">Création de site</a>
+          <a href="/blog/marketing-digital/">Marketing digital</a>
+          <a href="/blog/ia-automatisation/">IA &amp; automatisation</a>
+          <a href="/blog/dentistes/">Dentistes</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">NEXTIWEB</p>
+          <a href="/a-propos.html">À propos</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/mentions-legales.html">Mentions légales</a>
+          <a href="/politique-confidentialite.html">Confidentialité</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB · Montréal, QC, Canada · NEQ 2272348204</p>
+      <p>🔒 Conforme Loi 25 du Québec</p>
+    </div>
+  </footer>
+
+  <!-- Barre flottante -->
+  <div class="float-bar">
+    <a href="/audit-jdiq-2026/" class="audit-pill" aria-label="Demander un audit gratuit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Audit gratuit
+    </a>
+    <a href="https://wa.me/15147910591" class="whatsapp-pill" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- FAQ JS -->
+  <script>
+  document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.article-faq__item');
+      var isOpen=item.classList.contains('is-open');
+      document.querySelectorAll('.article-faq__item').forEach(function(i){i.classList.remove('is-open');i.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
+      if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+    });
+  });
+  </script>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+</body>
+</html>

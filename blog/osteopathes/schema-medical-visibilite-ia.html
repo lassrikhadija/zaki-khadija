@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Schema MedicalBusiness pour ostéopathes : être cité par ChatGPT et Google AI Overviews | NEXTIWEB</title>
+  <meta name="description" content="Comment utiliser Schema.org type MedicalBusiness et Physician pour que votre clinique d'ostéopathie soit citée par ChatGPT, Perplexity et les Google AI Overviews. Code JSON-LD complet.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Schema MedicalBusiness pour ostéopathes : être cité par ChatGPT et Google AI Overviews">
+  <meta property="og:description" content="Schema.org MedicalBusiness + Physician, spécialités, code JSON-LD complet pour ostéopathes québécois. Visibilité IA en 2026. NEXTIWEB.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schema MedicalBusiness pour ostéopathes — être cité par l'IA">
+  <meta name="twitter:description" content="JSON-LD complet Schema.org pour ostéopathes : MedicalBusiness, Physician, spécialités. Visibilité dans ChatGPT et Google AI Overviews. NEXTIWEB.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/osteopaths/schema-medical-ai-visibility-osteopath.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=6">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body pre{background:rgba(0,0,0,.4);border:1px solid rgba(0,230,118,.2);border-radius:.6rem;padding:1.25rem;overflow-x:auto;margin:1.5rem 0}
+    .article-body pre code{background:none;padding:0;font-size:.82rem;color:#a8ff78;font-family:'Courier New',monospace;line-height:1.6}
+    .article-body code{background:rgba(255,255,255,.07);border-radius:.3rem;padding:.1rem .4rem;font-size:.88em;font-family:monospace;color:var(--color-primary)}
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Schema MedicalBusiness pour ostéopathes : être cité par ChatGPT et Google AI Overviews",
+    "description": "Comment utiliser Schema.org type MedicalBusiness et Physician pour que votre clinique d'ostéopathie soit citée par ChatGPT et les Google AI Overviews.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html", "sameAs": ["https://www.linkedin.com/in/khadija-ait-lassri/"]},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-06-01",
+    "dateModified": "2026-06-01",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "Schema MedicalBusiness ostéopathe, Schema.org ostéopathie, JSON-LD ostéopathe, visibilité IA ostéopathe, ChatGPT clinique ostéopathie Québec"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"Ostéopathes","item":"https://nextiweb.ca/blog/osteopathes/"},
+    {"@type":"ListItem","position":4,"name":"Schema MedicalBusiness — Visibilité IA","item":"https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Quel type Schema.org utiliser pour une clinique d'ostéopathie ?","acceptedAnswer":{"@type":"Answer","text":"Le type principal recommandé est MedicalBusiness, qui est le type Schema.org le plus précis pour un établissement de santé qui offre des soins en présentiel. Vous pouvez aussi utiliser Physician si votre pratique est centrée sur un praticien individuel, ou combiner les deux avec un @graph. Le type MedicalBusiness permet de déclarer la spécialité médicale via medicalSpecialty, les services via availableService, et la zone géographique desservie via areaServed — trois propriétés cruciales pour la visibilité dans le Local Pack et les réponses IA."}},
+    {"@type":"Question","name":"Qu'est-ce que la propriété medicalSpecialty dans Schema.org ?","acceptedAnswer":{"@type":"Answer","text":"La propriété medicalSpecialty est une propriété Schema.org spécifique aux types médicaux (MedicalBusiness, Physician, Hospital, etc.) qui permet de déclarer la ou les spécialités pratiquées. Pour un ostéopathe, la valeur recommandée est Osteopathic — une valeur officielle de l'enum MedicalSpecialty Schema.org. Vous pouvez aussi ajouter Musculoskeletal si vous traitez principalement des problèmes neuro-musculo-squelettiques, ou Pediatric si vous avez une pratique pédiatrique significative. Cette propriété aide les moteurs de recherche et les IA à identifier précisément votre spécialité."}},
+    {"@type":"Question","name":"Le balisage Schema.org aide-t-il vraiment à être cité par ChatGPT ?","acceptedAnswer":{"@type":"Answer","text":"Le Schema.org est un signal indirect mais documenté pour la visibilité dans les LLMs (ChatGPT, Perplexity, Claude, Gemini). Ces modèles ont été entraînés sur des données web et ont appris à accorder plus de poids aux entités bien structurées avec des données sémantiques cohérentes. Un ostéopathe dont le site déclare clairement son type (MedicalBusiness), sa spécialité (Osteopathic), sa localisation (PostalAddress), et ses services (availableService) crée une entité sémantique reconnaissable — ce qui augmente sa probabilité d'apparaître dans les réponses d'un LLM interrogé sur les ostéopathes d'un quartier. Ce n'est pas une garantie absolue, mais c'est l'une des pratiques les plus accessibles pour améliorer la visibilité IA."}},
+    {"@type":"Question","name":"Où placer le JSON-LD Schema sur son site d'ostéopathe ?","acceptedAnswer":{"@type":"Answer","text":"Placez votre JSON-LD MedicalBusiness principal dans la balise <head> de votre page d'accueil et de votre page de services. Pour les pages par quartier, ajoutez une version adaptée avec areaServed correspondant à l'arrondissement ciblé. Utilisez la balise <script type='application/ld+json'> — c'est le format préféré par Google et le plus robuste pour les crawlers. Évitez le balisage Microdata dans le HTML (attributs itemscope/itemtype) qui est plus difficile à maintenir."}},
+    {"@type":"Question","name":"Faut-il déclarer chaque service d'ostéopathie dans le Schema ?","acceptedAnswer":{"@type":"Answer","text":"Oui. La propriété availableService du type MedicalBusiness permet de lister chaque service comme une entité MedicalProcedure ou MedicalTherapy avec son nom et sa description. Lister explicitement les services (ostéopathie pour bébés, post-partum, sportifs, lombalgies, cervicalgies) crée des signaux sémantiques précis que les moteurs de recherche et les IA utilisent pour déterminer sur quelles requêtes afficher votre établissement. C'est l'équivalent sémantique de la section Services dans votre fiche GBP."}},
+    {"@type":"Question","name":"Qu'est-ce que le champ areaServed et pourquoi est-il important ?","acceptedAnswer":{"@type":"Answer","text":"La propriété areaServed de Schema.org permet de déclarer explicitement les zones géographiques que votre clinique dessert. Pour un ostéopathe montréalais, vous pouvez déclarer : l'arrondissement principal (ex. Rosemont-La Petite-Patrie), la ville (Montréal), et d'autres arrondissements desservis. Cette déclaration explicite aide Google à associer votre clinique à ces zones géographiques, renforçant votre pertinence dans les recherches locales et dans les réponses des moteurs de recherche IA qui cherchent à recommander des praticiens par zone."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/osteopathes/" class="breadcrumb__link">Ostéopathes</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Schema MedicalBusiness — Visibilité IA</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Schema.org &amp; IA — Ostéopathe
+          </p>
+          <h1 class="article-hero__title">Schema MedicalBusiness pour ostéopathes&nbsp;: être cité par ChatGPT et Google AI&nbsp;Overviews</h1>
+          <div class="article-meta">
+            <span><a href="https://www.linkedin.com/in/khadija-ait-lassri/" target="_blank" rel="noopener noreferrer" class="article-meta__author" style="text-decoration:none;color:inherit">Khadija AitLassri</a></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              1 juin 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              13 min de lecture
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <div class="article-body">
+
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li><strong>Schema.org MedicalBusiness</strong> est le type le plus précis pour déclarer une clinique d'ostéopathie à Google et aux LLMs (ChatGPT, Perplexity, Gemini).</li>
+                <li>Propriétés clés : <strong>medicalSpecialty: Osteopathic</strong>, <code>availableService</code> pour chaque spécialité, <code>areaServed</code> pour les quartiers, <code>openingHoursSpecification</code> pour les horaires.</li>
+                <li>Un JSON-LD bien structuré crée une <strong>entité sémantique reconnaissable</strong> — ce qui augmente la probabilité d'être cité dans les réponses IA locales.</li>
+                <li>Code JSON-LD complet fourni dans cet article — à adapter et à copier directement dans votre site.</li>
+              </ul>
+            </div>
+
+            <div class="callout">
+              <strong>Pourquoi le Schema.org compte en 2026</strong>
+              Les Google AI Overviews, ChatGPT Search, Perplexity et d'autres moteurs IA recommandent désormais des praticiens locaux dans leurs réponses. Pour être cité, votre site doit parler la même langue que ces systèmes — et cette langue, c'est Schema.org. Un ostéopathe dont le site déclare clairement son type, sa spécialité, son adresse et ses services crée une entité sémantique que l'IA peut reconnaître et recommander.
+            </div>
+
+            <p>Cet article fait partie de la série SEO local pour ostéopathes québécois. Retour à l'article pilier : <a href="/blog/osteopathes/local-pack-google-osteopathes.html">Local Pack Google pour ostéopathes — les 5 leviers qui font la différence</a>.</p>
+
+            <hr>
+
+            <h2 id="schema-types">Quel type Schema.org pour un ostéopathe ?</h2>
+            <p>Schema.org propose plusieurs types pour les professionnels de santé. Voici comment choisir :</p>
+
+            <h3>MedicalBusiness (recommandé en principal)</h3>
+            <p><code>MedicalBusiness</code> est un sous-type de <code>LocalBusiness</code> spécialisé pour les établissements de santé qui offrent des soins physiques. C'est le type le plus précis pour une clinique d'ostéopathie car il permet d'utiliser des propriétés médicales spécialisées comme <code>medicalSpecialty</code> et <code>availableService</code> avec des types médicaux (<code>MedicalTherapy</code>, <code>MedicalProcedure</code>).</p>
+
+            <h3>Physician (en complément pour le praticien)</h3>
+            <p><code>Physician</code> est le type Schema.org pour un médecin ou praticien de santé individuel. Bien que l'ostéopathe ne soit pas nécessairement reconnu comme « médecin » au sens légal québécois, Google accepte ce type pour les ostéopathes DO et les praticiens de thérapie manuelle. Utilisez-le pour le profil du praticien individuel, en complément du MedicalBusiness pour la clinique.</p>
+
+            <h3>Approche recommandée : @graph combiné</h3>
+            <p>Pour une clinique avec un praticien principal identifié, l'approche optimale est un <code>@graph</code> JSON-LD qui déclare à la fois la clinique (MedicalBusiness) et le praticien (Physician) avec des liens entre les deux entités via <code>employee</code> et <code>worksFor</code>.</p>
+
+            <hr>
+
+            <h2 id="proprietes-cles">Propriétés clés pour un ostéopathe</h2>
+
+            <h3>medicalSpecialty</h3>
+            <p>La propriété <code>medicalSpecialty</code> est spécifique aux types médicaux. Pour un ostéopathe, les valeurs de l'enum <code>MedicalSpecialty</code> les plus pertinentes :</p>
+            <ul>
+              <li><code>https://schema.org/Osteopathic</code> — valeur officielle pour l'ostéopathie</li>
+              <li><code>https://schema.org/Musculoskeletal</code> — pour les spécialités neuro-musculo-squelettiques</li>
+              <li><code>https://schema.org/Pediatric</code> — si vous avez une pratique pédiatrique significative (bébés, enfants)</li>
+              <li><code>https://schema.org/PhysicalTherapy</code> — si votre pratique inclut des techniques de thérapie physique</li>
+            </ul>
+
+            <h3>availableService</h3>
+            <p>La propriété <code>availableService</code> permet de déclarer chaque service comme une entité <code>MedicalTherapy</code>. C'est l'équivalent sémantique de votre liste de services GBP — et c'est ce que les IA utilisent pour déterminer votre pertinence sur des requêtes spécifiques comme « ostéopathe bébé » ou « ostéopathe post-partum ».</p>
+
+            <h3>areaServed</h3>
+            <p>Déclarez explicitement les zones géographiques que vous desservez. Un array de valeurs textuelles (arrondissements, villes) est accepté par Google. Cette propriété renforce directement votre pertinence géographique dans le Local Pack et dans les réponses IA.</p>
+
+            <hr>
+
+            <h2 id="json-ld-complet">Code JSON-LD complet — Clinique d'ostéopathie</h2>
+            <p>Copiez ce code, adaptez les valeurs en majuscules à votre situation, et placez-le dans la balise <code>&lt;head&gt;</code> de votre page d'accueil et de votre page de services :</p>
+
+            <pre><code>{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://VOTRE-SITE.ca/#clinique",
+      "name": "Clinique d'ostéopathie [NOM DE LA CLINIQUE]",
+      "url": "https://VOTRE-SITE.ca/",
+      "telephone": "+1-514-XXX-XXXX",
+      "email": "contact@VOTRE-SITE.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "NUMERO ADRESSE RUE",
+        "addressLocality": "Montréal",
+        "addressRegion": "QC",
+        "postalCode": "H_X _X_",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.XXXXXX",
+        "longitude": "-73.XXXXXX"
+      },
+      "areaServed": [
+        "Rosemont–La Petite-Patrie",
+        "Plateau-Mont-Royal",
+        "Verdun",
+        "Montréal"
+      ],
+      "medicalSpecialty": [
+        "https://schema.org/Osteopathic",
+        "https://schema.org/Musculoskeletal"
+      ],
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Ostéopathie pour bébés et nourrissons",
+          "description": "Traitement doux pour coliques, plagiocéphalie, difficultés d'allaitement et troubles du sommeil chez les nourrissons."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Ostéopathie post-partum",
+          "description": "Rééquilibrage du bassin et récupération après l'accouchement pour les nouvelles mamans."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Traitement des lombalgies et douleurs dorsales",
+          "description": "Soulagement des douleurs lombaires, hernie discale, sciatique et tensions du dos."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Traitement des cervicalgies et maux de cou",
+          "description": "Traitement des douleurs cervicales, torticolis et tensions liées au travail sur écran."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Ostéopathie pour sportifs",
+          "description": "Prévention des blessures, récupération post-effort, traitement des entorses et tendinopathies."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Traitement des maux de tête et migraines",
+          "description": "Approche crânio-sacrée et cervicale pour les céphalées de tension et migraines chroniques."
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Cash, Credit Card, Debit Card",
+      "image": "https://VOTRE-SITE.ca/assets/img/clinique-photo.jpg",
+      "sameAs": [
+        "https://www.google.com/maps?cid=VOTRE_CID_GOOGLE",
+        "https://www.facebook.com/VOTREPAGE",
+        "https://www.linkedin.com/company/VOTREPAGE"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://VOTRE-SITE.ca/#praticien",
+      "name": "PRÉNOM NOM, D.O.",
+      "url": "https://VOTRE-SITE.ca/equipe.html",
+      "jobTitle": "Ostéopathe",
+      "medicalSpecialty": "https://schema.org/Osteopathic",
+      "worksFor": {
+        "@id": "https://VOTRE-SITE.ca/#clinique"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "NUMERO ADRESSE RUE",
+        "addressLocality": "Montréal",
+        "addressRegion": "QC",
+        "postalCode": "H_X _X_",
+        "addressCountry": "CA"
+      },
+      "telephone": "+1-514-XXX-XXXX",
+      "image": "https://VOTRE-SITE.ca/assets/img/portrait-praticien.jpg"
+    }
+  ]
+}</code></pre>
+
+            <div class="callout">
+              <strong>Validation obligatoire</strong>
+              Après avoir implémenté ce JSON-LD, validez-le avec deux outils : le <strong>Rich Results Test de Google</strong> (search.google.com/test/rich-results) et le <strong>Schema Markup Validator</strong> (validator.schema.org). Ces outils détectent les erreurs de syntaxe et confirment que vos propriétés sont correctement interprétées.
+            </div>
+
+            <hr>
+
+            <h2 id="schema-pages-quartier">Schema adapté pour les pages par quartier</h2>
+            <p>Pour vos pages par quartier (ex. « Ostéopathe Rosemont »), ajoutez une version simplifiée du JSON-LD avec <code>areaServed</code> adapté à l'arrondissement ciblé et une URL de page spécifique :</p>
+
+            <pre><code>{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://VOTRE-SITE.ca/osteopathe-rosemont/#clinique-rosemont",
+  "name": "Ostéopathe Rosemont — Clinique [NOM]",
+  "url": "https://VOTRE-SITE.ca/osteopathe-rosemont/",
+  "telephone": "+1-514-XXX-XXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "NUMERO ADRESSE RUE",
+    "addressLocality": "Montréal",
+    "addressRegion": "QC",
+    "postalCode": "H_X _X_",
+    "addressCountry": "CA"
+  },
+  "areaServed": "Rosemont–La Petite-Patrie",
+  "medicalSpecialty": "https://schema.org/Osteopathic",
+  "mainEntityOfPage": "https://VOTRE-SITE.ca/osteopathe-rosemont/"
+}</code></pre>
+
+            <hr>
+
+            <h2 id="visibilite-ia">Maximiser la visibilité dans les réponses IA</h2>
+            <p>Au-delà du Schema.org, plusieurs pratiques complémentaires augmentent votre probabilité d'être cité par ChatGPT, Perplexity et les Google AI Overviews :</p>
+
+            <h3>Cohérence NAP absolue</h3>
+            <p>Le nom, l'adresse et le téléphone (NAP) de votre clinique doivent être <strong>strictement identiques</strong> sur votre site, votre fiche GBP, tous vos répertoires, et dans votre JSON-LD. La moindre variation (« Clinique Ostéo Rosemont » vs « Clinique d'Ostéopathie Rosemont ») crée une ambiguïté que les IA interprètent comme des entités distinctes ou comme un signal de faible fiabilité.</p>
+
+            <h3>Contenu E-E-A-T (Expertise, Expérience, Autorité, Trust)</h3>
+            <p>Les IA privilégient les sources qui démontrent une expertise réelle. Sur votre site, incluez : les diplômes et formations du praticien, les années d'expérience, les associations professionnelles (OSTÉO Québec, ROC), les publications ou conférences, et des témoignages authentiques de patients.</p>
+
+            <h3>Citations dans des sources faisant autorité</h3>
+            <p>Être mentionné dans des sources reconnues (annuaires professionnels d'ostéopathie, presse locale, sites de santé québécois) renforce votre statut d'entité fiable aux yeux des LLMs. Consultez notre guide : <a href="/blog/osteopathes/citations-nap-repertoires-osteopathie.html">Citations NAP : les répertoires québécois où votre clinique doit figurer</a>.</p>
+
+            <div class="article-cta-inline">
+              <p><strong>Votre site est-il prêt pour la visibilité IA ?</strong> Audit Schema.org, cohérence NAP et stratégie GEO — rapport PDF personnalisé sous 24&nbsp;h.</p>
+              <a href="/osteopathes.html" class="btn btn--primary">Découvrir nos services pour ostéopathes →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="faq">Questions fréquentes — Schema.org pour ostéopathes</h2>
+            <div class="article-faq" role="list">
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Quel type Schema.org utiliser pour une clinique d'ostéopathie ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Le type principal recommandé est MedicalBusiness, qui est le plus précis pour un établissement de santé offrant des soins en présentiel. Il permet d'utiliser des propriétés médicales spécialisées comme medicalSpecialty et availableService. Vous pouvez aussi utiliser Physician pour le praticien individuel, ou combiner les deux avec un @graph. Le type MedicalBusiness avec medicalSpecialty: Osteopathic est la déclaration la plus précise pour un ostéopathe.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Qu'est-ce que la propriété medicalSpecialty dans Schema.org ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">La propriété medicalSpecialty est spécifique aux types médicaux Schema.org. Elle permet de déclarer la ou les spécialités pratiquées. Pour un ostéopathe, la valeur recommandée est https://schema.org/Osteopathic — valeur officielle de l'enum MedicalSpecialty. Vous pouvez aussi ajouter Musculoskeletal ou Pediatric selon votre pratique. Cette propriété aide les moteurs de recherche et les IA à identifier précisément votre spécialité.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Le balisage Schema.org aide-t-il vraiment à être cité par ChatGPT ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Le Schema.org est un signal indirect mais documenté pour la visibilité dans les LLMs. Ces modèles ont été entraînés sur des données web structurées et accordent plus de poids aux entités bien déclarées. Un ostéopathe dont le site déclare son type (MedicalBusiness), sa spécialité (Osteopathic), sa localisation (PostalAddress) et ses services (availableService) crée une entité sémantique reconnaissable — ce qui augmente sa probabilité d'apparaître dans les réponses IA. C'est l'une des pratiques les plus accessibles pour la visibilité IA.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Où placer le JSON-LD Schema sur son site d'ostéopathe ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Placez votre JSON-LD MedicalBusiness principal dans la balise head de votre page d'accueil et de votre page de services. Pour les pages par quartier, ajoutez une version adaptée avec areaServed correspondant à l'arrondissement ciblé. Utilisez la balise script type="application/ld+json" — c'est le format préféré par Google. Évitez le balisage Microdata qui est plus difficile à maintenir.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Faut-il déclarer chaque service d'ostéopathie dans le Schema ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Oui. La propriété availableService permet de lister chaque service comme une entité MedicalTherapy. Lister explicitement les services (ostéopathie bébés, post-partum, sportifs, lombalgies, cervicalgies) crée des signaux sémantiques précis que les moteurs et les IA utilisent pour déterminer votre pertinence sur des requêtes spécifiques. C'est l'équivalent sémantique de la section Services de votre fiche GBP.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Qu'est-ce que le champ areaServed et pourquoi est-il important ?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">La propriété areaServed permet de déclarer explicitement les zones géographiques que votre clinique dessert. Pour un ostéopathe montréalais, déclarez l'arrondissement principal, la ville et d'autres arrondissements desservis. Cette déclaration explicite aide Google à associer votre clinique à ces zones, renforçant votre pertinence dans les recherches locales et dans les réponses des moteurs de recherche IA.</p>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+
+            <div class="article-cta-inline">
+              <p>Retour à l'article pilier — les 5 leviers SEO local pour dominer le Local Pack en tant qu'ostéopathe québécois.</p>
+              <a href="/blog/osteopathes/local-pack-google-osteopathes.html" class="btn btn--primary">Lire l'article pilier — Local Pack Google →</a>
+            </div>
+
+            <p>Les autres guides de la série :</p>
+            <ul>
+              <li><a href="/blog/osteopathes/google-business-profile-osteopathes.html">Google Business Profile : la fiche complète qui remplit votre agenda</a></li>
+              <li><a href="/blog/osteopathes/avis-google-cliniques-osteopathie.html">Avis Google : la méthode éthique pour bâtir votre réputation</a></li>
+              <li><a href="/blog/osteopathes/pages-quartier-seo-osteopathe.html">Pages par quartier : dominer « ostéopathe Plateau », « ostéopathe Rosemont »</a></li>
+              <li><a href="/blog/osteopathes/citations-nap-repertoires-osteopathie.html">Citations NAP : les répertoires québécois de santé où votre clinique doit figurer</a></li>
+            </ul>
+
+            <div class="callout" style="border-left-color:#00e676;background:rgba(0,230,118,.05);margin-top:2.5rem;">
+              <strong>Vous préférez qu'on s'en charge ?</strong>
+              C'est exactement ce que fait NEXTIWEB. Pendant que vous traitez vos patients, nous implémentons votre Schema.org, optimisons votre GBP et positionnons votre clinique dans les réponses IA. <a href="/osteopathes.html" style="color:#00e676;">Découvrir nos services pour ostéopathes →</a>
+            </div>
+
+            <div class="article-cta-inline" style="margin-top:3rem">
+              <p><strong>Votre site parle-t-il le langage de l'IA ?</strong> Audit Schema.org et stratégie GEO pour ostéopathes — rapport PDF sous 24&nbsp;h.</p>
+              <a href="/osteopathes.html" class="btn btn--primary">Découvrir nos services pour ostéopathes →</a>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <aside class="article-sidebar" aria-label="Sommaire et ressources">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Sommaire</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#schema-types">Types Schema.org</a></li>
+                <li><a href="#proprietes-cles">Propriétés clés</a></li>
+                <li><a href="#json-ld-complet">JSON-LD complet</a></li>
+                <li><a href="#schema-pages-quartier">Schema pages quartier</a></li>
+                <li><a href="#visibilite-ia">Visibilité IA</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Audit gratuit</p>
+              <p style="font-size:.85rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1rem">Votre Schema.org est-il correct ? Audit visibilité IA — rapport PDF sous 24&nbsp;h.</p>
+              <a href="/osteopathes.html" class="btn btn--primary" style="display:block;text-align:center;color:#000!important;font-weight:700">Demander l'audit →</a>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Série SEO ostéopathes</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/blog/osteopathes/local-pack-google-osteopathes.html">Article pilier — Local Pack</a></li>
+                <li><a href="/blog/osteopathes/google-business-profile-osteopathes.html">Google Business Profile</a></li>
+                <li><a href="/blog/osteopathes/avis-google-cliniques-osteopathie.html">Avis Google éthiques</a></li>
+                <li><a href="/blog/osteopathes/pages-quartier-seo-osteopathe.html">Pages par quartier</a></li>
+                <li><a href="/blog/osteopathes/citations-nap-repertoires-osteopathie.html">Citations NAP Québec</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB" width="84" height="48" loading="lazy">
+        </a>
+        <p class="footer__tagline">Agence web à Montréal — création de sites, SEO et marketing digital pour PME québécoises.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navigation pied de page">
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <a href="/creation-site.html">Création de sites web</a>
+          <a href="/seo.html">Référencement SEO</a>
+          <a href="/marketing-digital.html">Marketing digital</a>
+          <a href="/visibilite-ia.html">Visibilité IA</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Blog</p>
+          <a href="/blog/seo/">SEO &amp; Référencement</a>
+          <a href="/blog/creation-site/">Création de site</a>
+          <a href="/blog/marketing-digital/">Marketing digital</a>
+          <a href="/blog/ia-automatisation/">IA &amp; automatisation</a>
+          <a href="/blog/osteopathes/">Ostéopathes</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">NEXTIWEB</p>
+          <a href="/a-propos.html">À propos</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/mentions-legales.html">Mentions légales</a>
+          <a href="/politique-confidentialite.html">Confidentialité</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB · Montréal, QC, Canada · NEQ 2272348204</p>
+      <p>🔒 Conforme Loi 25 du Québec</p>
+    </div>
+  </footer>
+
+  <div class="float-bar">
+    <a href="/osteopathes.html" class="audit-pill" aria-label="Demander un audit gratuit pour ostéopathes">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Audit gratuit
+    </a>
+    <a href="https://wa.me/15147910591" class="whatsapp-pill" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+  document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.article-faq__item');
+      var isOpen=item.classList.contains('is-open');
+      document.querySelectorAll('.article-faq__item').forEach(function(i){i.classList.remove('is-open');i.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
+      if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+    });
+  });
+  </script>
+  <script src="/assets/js/main.min.js" defer></script>
+</body>
+</html>

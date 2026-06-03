@@ -118,6 +118,32 @@ NEXTIWEB helps Quebec osteopathy clinics improve their online visibility through
 - [NAP citations for osteopathy Quebec](https://nextiweb.ca/en/blog/osteopaths/nap-citations-osteopathy-quebec.html)
 - [All osteopath guides](https://nextiweb.ca/en/blog/osteopaths/)
 
+## SEO local pour avocats — Page secteur
+
+NEXTIWEB accompagne les cabinets d'avocats québécois sur 6 dimensions de visibilité numérique : Google Business Profile, avis Google, pages par spécialité et quartier, Schema LegalService, citations NAP et FAQ structurée pour les IA.
+
+- [Services SEO pour avocats](https://nextiweb.ca/avocats.html)
+- [Local Pack Google pour avocats — guide pilier](https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html)
+- [Google Business Profile pour avocats](https://nextiweb.ca/blog/avocats/google-business-profile-avocats.html)
+- [Avis Google pour cabinets d'avocats](https://nextiweb.ca/blog/avocats/avis-google-cabinets-avocats.html)
+- [Pages par spécialité et quartier pour avocats](https://nextiweb.ca/blog/avocats/pages-specialite-quartier-avocat.html)
+- [Schema LegalService : visibilité IA pour avocats](https://nextiweb.ca/blog/avocats/schema-legal-service-visibilite-ia.html)
+- [Citations NAP répertoires juridiques Québec](https://nextiweb.ca/blog/avocats/citations-nap-repertoires-juridiques.html)
+- [Index guides avocats](https://nextiweb.ca/blog/avocats/)
+
+## Law Firm Guides — English
+
+NEXTIWEB helps Quebec law firms improve their online visibility through local SEO, Google Business Profile, client reviews, Schema LegalService, and AI citability.
+
+- [SEO services for law firms](https://nextiweb.ca/en/lawyers.html)
+- [Google Local Pack for lawyers — pillar guide](https://nextiweb.ca/en/blog/lawyers/google-local-pack-lawyers.html)
+- [Google Business Profile for lawyers](https://nextiweb.ca/en/blog/lawyers/google-business-profile-lawyers.html)
+- [Google Reviews for law firms](https://nextiweb.ca/en/blog/lawyers/google-reviews-law-firms.html)
+- [Specialty pages for lawyer SEO](https://nextiweb.ca/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html)
+- [Schema LegalService: AI visibility](https://nextiweb.ca/en/blog/lawyers/schema-legal-service-ai-visibility.html)
+- [NAP citations legal directories Quebec](https://nextiweb.ca/en/blog/lawyers/nap-citations-legal-directories-quebec.html)
+- [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
+
 ## Dental Clinic Guides — English
 
 NEXTIWEB helps Quebec dental clinics improve their online visibility through local SEO, Google Business Profile optimization, patient reviews, Schema Dentist markup, and AI citability.

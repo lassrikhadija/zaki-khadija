@@ -130,6 +130,25 @@
   <url><loc>https://nextiweb.ca/en/blog/osteopaths/schema-medical-ai-visibility-osteopaths.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/en/blog/osteopaths/nap-citations-osteopathy-quebec.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <!-- Secteur avocats FR -->
+  <url><loc>https://nextiweb.ca/avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/</loc><lastmod>2026-06-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/google-business-profile-avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/avis-google-cabinets-avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/pages-specialite-quartier-avocat.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/schema-legal-service-visibilite-ia.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/citations-nap-repertoires-juridiques.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Secteur lawyers EN -->
+  <url><loc>https://nextiweb.ca/en/lawyers.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/</loc><lastmod>2026-06-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/google-local-pack-lawyers.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/google-business-profile-lawyers.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/google-reviews-law-firms.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/schema-legal-service-ai-visibility.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nextiweb.ca/en/blog/lawyers/nap-citations-legal-directories-quebec.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
   <!-- Homepage -->
   <url>
     <loc>https://nextiweb.ca/</loc>

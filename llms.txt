@@ -105,6 +105,8 @@ NEXTIWEB accompagne les cliniques d'ostéopathie québécoises sur 6 dimensions 
 - [Pages par quartier pour ostéopathes](https://nextiweb.ca/blog/osteopathes/pages-quartier-seo-osteopathe.html)
 - [Schema MedicalBusiness : visibilité IA pour ostéopathes](https://nextiweb.ca/blog/osteopathes/schema-medical-visibilite-ia.html)
 - [Citations NAP ostéopathie Québec](https://nextiweb.ca/blog/osteopathes/citations-nap-repertoires-osteopathie.html)
+- [Réduire les rendez-vous manqués (no-shows) en clinique d'ostéopathie](https://nextiweb.ca/blog/osteopathes/reduire-rendez-vous-manques-osteopathie.html)
+- [Transformer les visiteurs du site en rendez-vous d'ostéopathie](https://nextiweb.ca/blog/osteopathes/convertir-visiteurs-site-rendez-vous-osteopathe.html)
 - [Index guides ostéopathes](https://nextiweb.ca/blog/osteopathes/)
 
 ## Osteopath Guides — English
@@ -118,6 +120,8 @@ NEXTIWEB helps Quebec osteopathy clinics improve their online visibility through
 - [Neighbourhood pages for osteopath SEO](https://nextiweb.ca/en/blog/osteopaths/neighbourhood-pages-osteopath-seo.html)
 - [Schema for osteopaths: AI visibility](https://nextiweb.ca/en/blog/osteopaths/schema-medical-ai-visibility-osteopaths.html)
 - [NAP citations for osteopathy Quebec](https://nextiweb.ca/en/blog/osteopaths/nap-citations-osteopathy-quebec.html)
+- [Reduce no-shows (missed appointments) in an osteopathy clinic](https://nextiweb.ca/en/blog/osteopaths/reduce-no-shows-osteopathy-clinic.html)
+- [Turn website visitors into osteopathy appointments](https://nextiweb.ca/en/blog/osteopaths/convert-website-visitors-osteopathy-appointments.html)
 - [All osteopath guides](https://nextiweb.ca/en/blog/osteopaths/)
 
 ## SEO local pour avocats — Page secteur

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Reduce No-Shows (Missed Appointments) in an Osteopathy Clinic | NEXTIWEB</title>
+  <meta name="description" content="Missed appointments cost an osteopathy clinic real money and undermine the treatment plan. Online booking, automated reminders, confirmations, deposits, smart waitlist: the complete web system to reduce no-shows.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Reduce No-Shows (Missed Appointments) in an Osteopathy Clinic">
+  <meta property="og:description" content="Online booking, automated reminders, confirmations, deposits, smart waitlist: the complete web system to reduce no-shows in your osteopathy clinic.">
+  <meta property="og:url" content="https://nextiweb.ca/en/blog/osteopaths/reduce-no-shows-osteopathy-clinic.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reduce No-Shows in an Osteopathy Clinic">
+  <meta name="twitter:description" content="The complete web system to reduce no-shows: online booking, automated reminders, confirmations, deposits, smart waitlist. NEXTIWEB.">
+
+  <link rel="canonical" href="https://nextiweb.ca/en/blog/osteopaths/reduce-no-shows-osteopathy-clinic.html">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/osteopaths/reduce-no-shows-osteopathy-clinic.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/osteopathes/reduire-rendez-vous-manques-osteopathie.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/osteopathes/reduire-rendez-vous-manques-osteopathie.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=6">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+    .article-body code{background:rgba(255,255,255,.07);border-radius:.3rem;padding:.1rem .4rem;font-size:.88em;font-family:monospace;color:var(--color-primary)}
+
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+
+    .plan-table{width:100%;border-collapse:collapse;margin:1.5rem 0 2rem;font-size:.9rem}
+    .plan-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;padding:.75rem 1rem;text-align:left;border-bottom:2px solid rgba(0,230,118,.2)}
+    .plan-table td{padding:.7rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top;line-height:1.6}
+    .plan-table tr:last-child td{border-bottom:none}
+    .plan-table td:first-child{font-weight:700;color:var(--color-primary);white-space:nowrap}
+
+    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}.plan-table{font-size:.82rem}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Reduce No-Shows (Missed Appointments) in an Osteopathy Clinic",
+    "description": "Missed appointments cost an osteopathy clinic real money and undermine the treatment plan. Online booking, automated reminders, confirmations, deposits, smart waitlist: the complete web system to reduce no-shows.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/en/a-propos.html", "sameAs": ["https://www.linkedin.com/in/khadija-ait-lassri/"]},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-06-03",
+    "dateModified": "2026-06-03",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/en/blog/osteopaths/reduce-no-shows-osteopathy-clinic.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "en-CA",
+    "keywords": "osteopathy no-shows, missed appointments osteopath, online booking osteopath, automated patient reminders, treatment plan drop-off osteopathy"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/en/blog/"},
+    {"@type":"ListItem","position":3,"name":"Osteopaths","item":"https://nextiweb.ca/en/blog/osteopaths/"},
+    {"@type":"ListItem","position":4,"name":"Reduce No-Shows","item":"https://nextiweb.ca/en/blog/osteopaths/reduce-no-shows-osteopathy-clinic.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How does online booking reduce missed appointments in osteopathy?","acceptedAnswer":{"@type":"Answer","text":"A patient who picks their own time slot, sees the date on screen and receives an instant confirmation is far more committed than one who was given an hour over the phone. Online booking also captures the email and mobile number right at the time of booking, which makes automated reminders and confirmations possible. Above all, it lets the patient rebook the next follow-up session in two clicks instead of dropping it — a reschedule is far better than a no-show, because the slot can be reassigned to another patient."}},
+    {"@type":"Question","name":"Why do osteopathy patients abandon their treatment plan?","acceptedAnswer":{"@type":"Answer","text":"This is an absence cause specific to osteopathy: after one or two sessions, the patient feels better and wrongly concludes that follow-up is no longer needed. They then miss the sessions that consolidate the result. The answer is not to guilt-trip, but to recall the value of the care plan at the right moment: a reminder message that explains the goal of the next session, a follow-up booking offered at the end of each session, and online booking that is easy to reschedule. Patient education and reduced friction work together."}},
+    {"@type":"Question","name":"Are SMS reminders more effective than email reminders?","acceptedAnswer":{"@type":"Answer","text":"They are complementary. The confirmation email, sent at the time of booking, serves as a written record with the appointment details and a link to reschedule. The SMS is opened almost every time and within minutes — making it ideal for the day-before and same-day reminders. The most reliable sequence combines both: email confirmation at booking, SMS reminder 48 hours before, then a same-day SMS asking the patient to confirm by reply."}},
+    {"@type":"Question","name":"Should you ask for a deposit to book an osteopathy session?","acceptedAnswer":{"@type":"Answer","text":"Not for every session, but it is an effective measure for the most sensitive slots: long appointments, new patients, or patients who have already missed an appointment without notice. A modest deposit, refundable and credited toward the session, turns intention into real commitment without slowing down routine bookings. The policy must be announced clearly in advance and remain consistent with your commitments to your patients and the rules of your professional association."}},
+    {"@type":"Question","name":"Does an automated reminder comply with Quebec's Law 25?","acceptedAnswer":{"@type":"Answer","text":"Yes, provided a few rules are followed. The patient must consent to receiving communications (SMS, email) at the time of booking, the consent must be documented, and every message must allow unsubscribing. Personal information (name, number, reason for the visit) must be handled securely and kept only as long as necessary. A well-configured reminder system builds in these requirements natively — a point our audit checks systematically."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav__item">
+          <a href="/en/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
+            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
+            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+          </div>
+        </div>
+        <a href="/en/secteurs.html" class="nav__link">Industries</a>
+        <a href="/en/ressources.html" class="nav__link">Resources</a>
+        <a href="/en/blog/" class="nav__link">Blog</a>
+        <a href="/en/a-propos.html" class="nav__link">About</a>
+        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/en/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/en/blog/osteopaths/" class="breadcrumb__link">Osteopaths</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Reduce No-Shows</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO ARTICLE -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Practice Management — Osteopathy
+          </p>
+          <h1 class="article-hero__title">Reduce No-Shows (Missed Appointments) in Your Osteopathy Clinic</h1>
+          <div class="article-meta">
+            <span><a href="https://www.linkedin.com/in/khadija-ait-lassri/" target="_blank" rel="noopener noreferrer" class="article-meta__author" style="text-decoration:none;color:inherit" aria-label="Khadija AitLassri LinkedIn profile">Khadija AitLassri</a></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              June 3, 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min read
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- BODY -->
+          <div class="article-body">
+
+            <!-- Summary -->
+            <div class="article-summary">
+              <p class="article-summary__title">30-second summary</p>
+              <ul>
+                <li>A missed appointment is a lost treatment slot, vanished revenue, and a waiting patient who could have taken the spot.</li>
+                <li>In osteopathy, no-shows have a cause all their own: <strong>the patient feels better after one or two sessions and abandons the follow-up</strong> — at the expense of the result.</li>
+                <li><strong>5 web levers</strong> bring these absences down: online booking, automated reminders, active confirmation, a deposit on sensitive slots, and a smart waitlist.</li>
+                <li>The common thread: it all relies on a website and tools that capture the right contact and automate follow-up — without adding to your clinical work.</li>
+              </ul>
+            </div>
+
+            <div class="callout">
+              <strong>The key idea</strong>
+              You do not cut no-shows by guilt-tripping patients, but by <strong>removing friction</strong> and <strong>recalling the value of the follow-up</strong> at the right moment. Booking, remembering, confirming and rescheduling should be as easy as a single click.
+            </div>
+
+            <p>Every osteopathy clinic knows two scenes. The first: a booked slot, and no one shows up. The second, quieter but just as costly: a patient who felt relief after two sessions and never comes back to finish their care plan. In both cases, it is an empty slot, lost revenue — and often a clinical result left halfway.</p>
+            <p>The good news: the vast majority of these absences are avoidable. Not by lecturing patients, but by rethinking the <strong>journey</strong> around the appointment and the follow-up. This article breaks down the five web and organizational levers that durably reduce no-shows in a Quebec osteopathy clinic.</p>
+
+            <hr>
+
+            <h2 id="cost">The real cost of a missed appointment in osteopathy</h2>
+            <p>A no-show is never just an empty cell. It is clinical time that will not be billed, a slot a waiting patient could have taken, and the admin effort to rebook. Over a week, a few absences are enough to eat into real revenue — without anything showing up clearly in the books.</p>
+            <p>In osteopathy comes an extra, trade-specific cost: <strong>follow-up drop-off</strong>. Because the result is often built over several sessions, a patient who stops too early does not get the full benefit — and may come back months later with the same problem, or even conclude that "osteopathy didn't really work." Cutting no-shows therefore protects both your revenue and the quality of your results.</p>
+
+            <hr>
+
+            <h2 id="causes">Why patients don't show up</h2>
+            <p>Before fixing it, you have to understand it. Absences are rarely pure negligence. The most common causes in osteopathy are:</p>
+            <ul>
+              <li><strong>Forgetting</strong> — the appointment was booked long ago, with no recent reminder. The number-one cause, and the easiest to fix.</li>
+              <li><strong>Feeling better</strong> — a cause specific to osteopathy: the patient feels better after one or two sessions and wrongly concludes that follow-up is no longer needed.</li>
+              <li><strong>The unexpected</strong> — a last-minute conflict, with no easy way to reschedule, that defaults into an absence.</li>
+              <li><strong>Friction to cancel</strong> — having to call during opening hours, wait, talk to someone: many prefer to do nothing rather than face that process.</li>
+              <li><strong>Lack of commitment</strong> — an appointment booked in a rush, with no confirmation or validated contact, carries little weight in the patient's mind.</li>
+            </ul>
+            <p>Each of these causes has a concrete answer. Here are the five levers.</p>
+
+            <hr>
+
+            <h2 id="lever-1">Lever 1 — Online booking: commit and ease the follow-up</h2>
+            <p>When a patient picks their own slot, sees it on screen and gets an instant confirmation, they commit far more than when an hour is imposed over the phone. In osteopathy, online booking plays an extra role: it makes <strong>booking the next follow-up session</strong> frictionless.</p>
+            <ul>
+              <li>It <strong>captures the right contact</strong> at the moment of booking: email and mobile number, essential for reminders.</li>
+              <li>It <strong>builds ownership</strong>: the patient took the action, chose the time, saw the date.</li>
+              <li>It <strong>lets them rebook a session in two clicks</strong> instead of dropping it — essential to keep a follow-up plan intact.</li>
+              <li>It <strong>captures after-hours demand</strong>: a patient who decides at 10 p.m. to book does it right then, instead of forgetting the next day.</li>
+            </ul>
+            <div class="callout">
+              <strong>Tie it to your listing and your site</strong>
+              The booking button must be visible everywhere: on your <a href="/en/blog/osteopaths/google-business-profile-osteopaths.html">Google Business Profile</a>, at the top of your site, and on your neighbourhood pages. The easier it is to book, the less friction there is — and friction is the number-one enemy of a kept follow-up.
+            </div>
+
+            <hr>
+
+            <h2 id="lever-2">Lever 2 — Automated reminders: SMS + email</h2>
+            <p>Forgetting is the leading cause of absence, and also the simplest to neutralize. An automated reminder system sends the right messages at the right times, with no input from you.</p>
+            <h3>The sequence that works</h3>
+            <ul>
+              <li><strong>At booking</strong> — a confirmation email with the appointment details, the address, and a link to reschedule or cancel.</li>
+              <li><strong>48 hours before</strong> — a short, clear SMS reminder, with the reschedule link.</li>
+              <li><strong>The same morning</strong> — a final SMS asking for active confirmation: "Reply YES to confirm." That tiny action re-engages the patient.</li>
+            </ul>
+            <p>For patients on a treatment plan, a reminder can also gently recall the goal of the next session — a soft way to support adherence to the care plan without guilt-tripping.</p>
+
+            <hr>
+
+            <h2 id="lever-3">Lever 3 — Active confirmation and a clear policy</h2>
+            <p>An appointment "confirmed" by the patient carries far more weight than one simply written down. Asking for a confirmation — a click, an SMS reply — creates a micro-commitment that clearly lowers absences.</p>
+            <p>Alongside this, a <strong>clear cancellation policy announced in advance</strong> sets a healthy frame: a reasonable notice period (say 24 or 48 hours), communicated at booking and repeated in the messages. The goal is not to punish, but to signal that every slot has value — and that cancelling in time lets you give it to another patient.</p>
+
+            <hr>
+
+            <h2 id="lever-4">Lever 4 — A deposit on sensitive slots</h2>
+            <p>Not all sessions are equal. A long appointment, a new patient, or a patient who has already missed an appointment without notice carry higher risk. For those cases, a <strong>modest deposit, refundable and credited toward the session</strong>, turns intention into real commitment.</p>
+            <p>The golden rule: apply the deposit only where it is justified, announce it clearly in advance, and make it painless (secure online payment in seconds). It is not about slowing down routine bookings, but about securing the slots where an absence costs the most. The policy must remain consistent with your commitments to your patients and the rules of your professional association.</p>
+
+            <hr>
+
+            <h2 id="lever-5">Lever 5 — The smart waitlist</h2>
+            <p>Even with the best systems, cancellations will happen. The question then becomes: does that freed slot stay empty, or is it taken immediately? That is the role of the smart waitlist.</p>
+            <p>The principle: patients willing to move their appointment earlier — often those in pain who want to be seen sooner — sign up to a list. As soon as a slot frees up, an automated message offers it to those patients, in order, until it is taken. The cancellation, instead of an empty slot, becomes a filled opportunity. It is one of the most profitable levers, because it recovers revenue already considered lost — and it shortens wait times for patients in pain.</p>
+
+            <hr>
+
+            <h2 id="plan">Implementation plan</h2>
+            <p>No need to deploy everything at once. Here is a realistic sequence to install the system without disrupting your practice:</p>
+            <table class="plan-table">
+              <thead>
+                <tr><th>Step</th><th>Action</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Step 1</td><td>Turn on online booking and make it visible (site, Google listing, neighbourhood pages). Systematically capture email and mobile, and offer to book the next follow-up.</td></tr>
+                <tr><td>Step 2</td><td>Set up the reminder sequence: email at booking, SMS 48 hours before, same-morning confirmation SMS.</td></tr>
+                <tr><td>Step 3</td><td>Write and display a clear cancellation policy; build it into the confirmation messages.</td></tr>
+                <tr><td>Step 4</td><td>Introduce the deposit on sensitive slots only, with secure online payment.</td></tr>
+                <tr><td>Step 5</td><td>Activate the smart waitlist to automatically reassign cancellations.</td></tr>
+              </tbody>
+            </table>
+
+            <div class="callout">
+              <strong>Law 25 compliance</strong>
+              Any reminder and payment system handles personal information. Consent at booking, the ability to unsubscribe, secure storage and a limited retention period are mandatory in Quebec. A well-configured system builds in these requirements from the start.
+            </div>
+
+            <div class="article-cta-inline">
+              <p><strong>Does your site truly capture appointments — and support the follow-up?</strong> Get a free audit of your online presence and patient journey, delivered as a PDF report within 24&nbsp;hours.</p>
+              <a href="/en/osteopaths.html" class="btn btn--primary">Explore our services for osteopaths →</a>
+            </div>
+
+            <hr>
+
+            <!-- FAQ -->
+            <h2 id="faq">Frequently asked questions — Reducing no-shows</h2>
+            <div class="article-faq" role="list">
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">How does online booking reduce missed appointments in osteopathy?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">A patient who picks their own time slot, sees the date on screen and receives an instant confirmation is far more committed than one who was given an hour over the phone. Online booking also captures the email and mobile number right at the time of booking, which makes automated reminders and confirmations possible. Above all, it lets the patient rebook the next follow-up session in two clicks instead of dropping it — a reschedule is far better than a no-show, because the slot can be reassigned to another patient.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Why do osteopathy patients abandon their treatment plan?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">This is an absence cause specific to osteopathy: after one or two sessions, the patient feels better and wrongly concludes that follow-up is no longer needed. They then miss the sessions that consolidate the result. The answer is not to guilt-trip, but to recall the value of the care plan at the right moment: a reminder message that explains the goal of the next session, a follow-up booking offered at the end of each session, and online booking that is easy to reschedule. Patient education and reduced friction work together.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Are SMS reminders more effective than email reminders?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">They are complementary. The confirmation email, sent at the time of booking, serves as a written record with the appointment details and a link to reschedule. The SMS is opened almost every time and within minutes — making it ideal for the day-before and same-day reminders. The most reliable sequence combines both: email confirmation at booking, SMS reminder 48 hours before, then a same-day SMS asking the patient to confirm by reply.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Should you ask for a deposit to book an osteopathy session?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Not for every session, but it is an effective measure for the most sensitive slots: long appointments, new patients, or patients who have already missed an appointment without notice. A modest deposit, refundable and credited toward the session, turns intention into real commitment without slowing down routine bookings. The policy must be announced clearly in advance and remain consistent with your commitments to your patients and the rules of your professional association.</p>
+              </div>
+
+              <div class="article-faq__item" role="listitem">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <span class="article-faq__q">Does an automated reminder comply with Quebec's Law 25?</span>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Yes, provided a few rules are followed. The patient must consent to receiving communications (SMS, email) at the time of booking, the consent must be documented, and every message must allow unsubscribing. Personal information (name, number, reason for the visit) must be handled securely and kept only as long as necessary. A well-configured reminder system builds in these requirements natively — a point our audit checks systematically.</p>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Go further -->
+            <h2 id="go-further">Go further</h2>
+            <p>Reducing no-shows starts with a site and a listing that capture the right contact and make every action easy. These guides complete the approach:</p>
+            <ul>
+              <li><a href="/en/blog/osteopaths/google-business-profile-osteopaths.html">Google Business Profile for osteopaths: the optimal listing</a></li>
+              <li><a href="/en/blog/osteopaths/google-local-pack-osteopaths.html">Google Local Pack: the levers to win new patients</a></li>
+              <li><a href="/en/blog/osteopaths/google-reviews-osteopathy-clinics.html">Google Reviews: build your reputation ethically</a></li>
+            </ul>
+
+            <!-- CTA agency -->
+            <div class="callout" style="border-left-color:#00e676;background:rgba(0,230,118,.05);margin-top:2.5rem;">
+              <strong>Prefer we handle it?</strong>
+              That is exactly what NEXTIWEB does. While you treat your patients, we build the site, online booking and automations that fill — and keep — your schedule. <a href="/en/osteopaths.html" style="color:#00e676;">Explore our services for osteopaths →</a>
+            </div>
+
+            <!-- Final CTA -->
+            <div class="article-cta-inline" style="margin-top:3rem">
+              <p><strong>How many empty slots this week?</strong> Get a free audit of your online presence and patient journey — booking, reminders, follow-up — delivered as a personalized PDF report within 24&nbsp;hours.</p>
+              <a href="/en/osteopaths.html" class="btn btn--primary">Explore our services for osteopaths →</a>
+            </div>
+
+          </div><!-- /article-body -->
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar" aria-label="Contents and resources">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Contents</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#cost">The real cost of a no-show</a></li>
+                <li><a href="#causes">Why patients don't show up</a></li>
+                <li><a href="#lever-1">Lever 1 — Online booking</a></li>
+                <li><a href="#lever-2">Lever 2 — Automated reminders</a></li>
+                <li><a href="#lever-3">Lever 3 — Confirmation &amp; policy</a></li>
+                <li><a href="#lever-4">Lever 4 — Deposit on sensitive slots</a></li>
+                <li><a href="#lever-5">Lever 5 — Smart waitlist</a></li>
+                <li><a href="#plan">Implementation plan</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Free audit</p>
+              <p style="font-size:.85rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1rem">Is your patient journey letting appointments slip away? Personalized PDF report within 24&nbsp;hours.</p>
+              <a href="/en/osteopaths.html" class="btn btn--primary" style="display:block;text-align:center;color:#000!important;font-weight:700">Request the audit →</a>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Osteopathy SEO series</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/en/blog/osteopaths/google-local-pack-osteopaths.html">Pillar — Local Pack</a></li>
+                <li><a href="/en/blog/osteopaths/google-business-profile-osteopaths.html">Google Business Profile</a></li>
+                <li><a href="/en/blog/osteopaths/google-reviews-osteopathy-clinics.html">Google Reviews</a></li>
+                <li><a href="/en/blog/osteopaths/neighbourhood-pages-osteopath-seo.html">Neighbourhood pages</a></li>
+                <li><a href="/en/blog/osteopaths/schema-medical-ai-visibility-osteopaths.html">Schema &amp; AI visibility</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/en/" class="footer__logo">
+          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB" width="84" height="48" loading="lazy">
+        </a>
+        <p class="footer__tagline">Web agency in Montreal — websites, SEO and digital marketing for Quebec SMEs.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <a href="/en/creation-site.html">Website Design</a>
+          <a href="/en/seo.html">SEO</a>
+          <a href="/en/marketing-digital.html">Digital Marketing</a>
+          <a href="/en/visibilite-ia.html">AI Visibility</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Blog</p>
+          <a href="/en/blog/seo/">SEO</a>
+          <a href="/en/blog/website-design/">Website Design</a>
+          <a href="/en/blog/digital-marketing/">Digital Marketing</a>
+          <a href="/en/blog/ai-automation/">AI &amp; Automation</a>
+          <a href="/en/blog/osteopaths/">Osteopaths</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">NEXTIWEB</p>
+          <a href="/en/a-propos.html">About</a>
+          <a href="/en/contact.html">Contact</a>
+          <a href="/en/mentions-legales.html">Legal Notice</a>
+          <a href="/en/politique-confidentialite.html">Privacy</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB · Montreal, QC, Canada · NEQ 2272348204</p>
+      <p>🔒 Quebec Law 25 compliant</p>
+    </div>
+  </footer>
+
+  <!-- Floating bar -->
+  <div class="float-bar">
+    <a href="/en/osteopaths.html" class="audit-pill" aria-label="Request a free audit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Free audit
+    </a>
+    <a href="https://wa.me/15147910591" class="whatsapp-pill" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- FAQ JS -->
+  <script>
+  document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.article-faq__item');
+      var isOpen=item.classList.contains('is-open');
+      document.querySelectorAll('.article-faq__item').forEach(function(i){i.classList.remove('is-open');i.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
+      if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+    });
+  });
+  </script>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+</body>
+</html>

@@ -90,6 +90,8 @@ Série complète d'articles pratiques pour dentistes québécois :
 - [Pages par quartier : dominer « dentiste Plateau », « dentiste Rosemont »](https://nextiweb.ca/blog/dentistes/pages-quartier-seo-dentaire.html)
 - [Schema Dentist : être cité par ChatGPT et Google AI Overviews](https://nextiweb.ca/blog/dentistes/schema-dentist-balisage-ia.html)
 - [Citations NAP : les principaux répertoires québécois pour dentistes](https://nextiweb.ca/blog/dentistes/citations-nap-repertoires-quebecois.html)
+- [Réduire les rendez-vous manqués (no-shows) au cabinet dentaire](https://nextiweb.ca/blog/dentistes/reduire-rendez-vous-manques-cabinet-dentaire.html)
+- [Transformer les visiteurs du site en rendez-vous dentaires](https://nextiweb.ca/blog/dentistes/convertir-visiteurs-site-rendez-vous-dentaire.html)
 - [Index guides dentaires](https://nextiweb.ca/blog/dentistes/)
 
 ## SEO local pour ostéopathes — Page secteur
@@ -191,6 +193,8 @@ NEXTIWEB helps Quebec dental clinics improve their online visibility through loc
 - [Neighbourhood pages for dental SEO](https://nextiweb.ca/en/blog/dentists/neighbourhood-pages-dental-seo.html)
 - [Schema Dentist: get cited by ChatGPT and Google AI](https://nextiweb.ca/en/blog/dentists/schema-dentist-ai-visibility.html)
 - [NAP citations: key Quebec directories for dental clinics](https://nextiweb.ca/en/blog/dentists/nap-citations-quebec-directories.html)
+- [Reduce no-shows (missed appointments) in a dental practice](https://nextiweb.ca/en/blog/dentists/reduce-no-shows-dental-practice.html)
+- [Turn website visitors into dental appointments](https://nextiweb.ca/en/blog/dentists/convert-website-visitors-dental-appointments.html)
 - [All dental clinic guides](https://nextiweb.ca/en/blog/dentists/)
 
 ## Version anglaise

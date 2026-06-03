@@ -1003,24 +1003,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nextiweb.ca/blog/seo/performance-core-web-vitals.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/performance-core-web-vitals.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/performance-core-web-vitals.html"/>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/performance-core-web-vitals.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/core-web-vitals-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/seo/performance-core-web-vitals.html"/>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/seo/keyword-research-strategy-guide.html"/>

@@ -36,6 +36,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nextiweb.ca/blog/dentistes/reduire-rendez-vous-manques-cabinet-dentaire.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nextiweb.ca/blog/dentistes/avis-google-cliniques-dentaires.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -82,6 +88,12 @@
   <url>
     <loc>https://nextiweb.ca/en/blog/dentists/google-business-profile-dental-practices.html</loc>
     <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/dentists/reduce-no-shows-dental-practice.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

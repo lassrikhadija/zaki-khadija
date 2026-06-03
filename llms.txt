@@ -135,6 +135,8 @@ NEXTIWEB accompagne les cabinets d'avocats québécois sur 6 dimensions de visib
 - [Pages par spécialité et quartier pour avocats](https://nextiweb.ca/blog/avocats/pages-specialite-quartier-avocat.html)
 - [Schema LegalService : visibilité IA pour avocats](https://nextiweb.ca/blog/avocats/schema-legal-service-visibilite-ia.html)
 - [Citations NAP répertoires juridiques Québec](https://nextiweb.ca/blog/avocats/citations-nap-repertoires-juridiques.html)
+- [Réduire les rendez-vous manqués (no-shows) dans un cabinet d'avocats](https://nextiweb.ca/blog/avocats/reduire-rendez-vous-manques-cabinet-avocat.html)
+- [Transformer les visiteurs du site en consultations juridiques](https://nextiweb.ca/blog/avocats/convertir-visiteurs-site-consultation-avocat.html)
 - [Index guides avocats](https://nextiweb.ca/blog/avocats/)
 
 ## SEO local pour courtiers immobiliers — Page secteur
@@ -184,6 +186,8 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 - [Specialty pages for lawyer SEO](https://nextiweb.ca/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html)
 - [Schema LegalService: AI visibility](https://nextiweb.ca/en/blog/lawyers/schema-legal-service-ai-visibility.html)
 - [NAP citations legal directories Quebec](https://nextiweb.ca/en/blog/lawyers/nap-citations-legal-directories-quebec.html)
+- [Reduce no-shows (missed consultations) in a law firm](https://nextiweb.ca/en/blog/lawyers/reduce-no-shows-law-firm.html)
+- [Turn website visitors into legal consultations](https://nextiweb.ca/en/blog/lawyers/convert-website-visitors-legal-consultations.html)
 - [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
 
 ## Dental Clinic Guides — English

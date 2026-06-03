@@ -74,6 +74,10 @@
     .steps--visual .steps__link:hover{opacity:.75}
     @media(max-width:900px){.steps--visual{grid-template-columns:repeat(2,1fr)!important}.steps--visual .steps__arrow{display:none!important}}
     @media(max-width:560px){.steps--visual{grid-template-columns:1fr!important}}
+    /* 8-sector grid: centered last row (no orphan slot) */
+    .projects{display:flex!important;flex-wrap:wrap;justify-content:center;gap:1.5rem}
+    .projects>.project-card{flex:1 1 280px;max-width:340px}
+    @media(max-width:560px){.projects>.project-card{max-width:none;flex-basis:100%}}
   </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">

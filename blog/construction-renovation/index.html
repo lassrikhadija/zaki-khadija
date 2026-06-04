@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Blog Construction &amp; Rénovation — Guides web, estimations &amp; soumissions | NEXTIWEB</title>
+  <meta name="description" content="Guides pratiques pour entrepreneurs en construction et rénovation au Québec : réduire les rendez-vous d'estimation manqués et transformer les visiteurs de votre site en demandes de soumission. Conseils web concrets, sans jargon.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Blog Construction &amp; Rénovation — Guides web NEXTIWEB">
+  <meta property="og:description" content="Guides pratiques pour entrepreneurs : réduire les estimations manquées et convertir les visiteurs en demandes de soumission.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/construction-renovation/">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog Construction &amp; Rénovation — NEXTIWEB">
+  <meta name="twitter:description" content="Guides pratiques pour entrepreneurs : estimations manquées et conversion en soumissions.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/construction-renovation/">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/construction-renovation/">
+  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/construction-renovation/">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/construction-renovation/">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=6">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+
+  <style>
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+
+    .blog-hero{padding:3.5rem 0 2.5rem;text-align:center;border-bottom:1px solid rgba(255,255,255,.07)}
+    .blog-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .blog-hero__title{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;line-height:1.15;margin-bottom:1.25rem;max-width:760px;margin-left:auto;margin-right:auto}
+    .blog-hero__subtitle{font-size:1.05rem;line-height:1.7;color:var(--color-text-muted);max-width:620px;margin:0 auto}
+
+    .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start;padding:3rem 0}
+    .sidebar{position:sticky;top:100px;display:flex;flex-direction:column;gap:1.5rem}
+    .sidebar-box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem}
+    .sidebar-box__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .sidebar-box__list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem}
+    .sidebar-box__list a{font-size:.88rem;color:var(--color-text-muted);text-decoration:none;line-height:1.5;transition:color .2s}
+    .sidebar-box__list a:hover{color:var(--color-primary)}
+
+    .article-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+    .project-card{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.85rem;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,border-color .2s ease}
+    .project-card:hover{transform:translateY(-4px);border-color:rgba(0,230,118,.35)}
+    .project-card__body{padding:1.5rem;display:flex;flex-direction:column;flex-grow:1}
+    .project-card__tag{display:inline-block;font-size:.72rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.75rem}
+    .project-card__title{font-size:1.15rem;font-weight:700;line-height:1.35;margin-bottom:.6rem}
+    .project-card__title a{color:var(--color-text);text-decoration:none;transition:color .2s}
+    .project-card__title a:hover{color:var(--color-primary)}
+    .project-card__excerpt{font-size:.9rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1.25rem;flex-grow:1}
+    .project-card__link{font-size:.85rem;font-weight:600;color:var(--color-primary);text-decoration:none;display:inline-flex;align-items:center;gap:.35rem;margin-top:auto}
+    .project-card__link:hover{gap:.6rem}
+
+    .callout-agence{background:linear-gradient(135deg,rgba(0,230,118,.1),rgba(0,230,118,.03));border:1px solid rgba(0,230,118,.25);border-radius:1rem;padding:2rem;margin-top:2.5rem;text-align:center}
+    .callout-agence__title{font-size:1.3rem;font-weight:800;margin-bottom:.75rem}
+    .callout-agence__text{font-size:.95rem;color:var(--color-text-muted);line-height:1.7;max-width:520px;margin:0 auto 1.5rem}
+
+    .blog-faq{padding:1rem 0 0}
+    .blog-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;margin-bottom:.6rem;overflow:hidden}
+    .blog-faq__item summary{padding:1rem 1.3rem;font-weight:700;font-size:.95rem;color:var(--color-text);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .blog-faq__item summary::-webkit-details-marker{display:none}
+    .blog-faq__item summary::after{content:"+";color:var(--color-primary);font-size:1.3rem;font-weight:400;flex-shrink:0}
+    .blog-faq__item[open] summary::after{content:"\2212"}
+    .blog-faq__item p{padding:0 1.3rem 1rem;font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0}
+
+    .section-label{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.5rem}
+
+    @media(max-width:900px){.blog-layout{grid-template-columns:1fr}.sidebar{display:none}.article-grid{grid-template-columns:1fr}}
+  </style>
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+        {"@type":"ListItem","position":3,"name":"Construction et rénovation","item":"https://nextiweb.ca/blog/construction-renovation/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Construction et Rénovation — NEXTIWEB",
+      "description": "Guides pratiques pour entrepreneurs en construction et rénovation au Québec : réduire les rendez-vous d'estimation manqués et transformer les visiteurs de votre site en demandes de soumission.",
+      "url": "https://nextiweb.ca/blog/construction-renovation/",
+      "inLanguage": "fr-CA",
+      "publisher": {"@type":"Organization","name":"NEXTIWEB","url":"https://nextiweb.ca","logo":{"@type":"ImageObject","url":"https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+      "blogPost": [
+        {"@type":"BlogPosting","headline":"Réduire les rendez-vous d'estimation manqués en construction et rénovation","url":"https://nextiweb.ca/blog/construction-renovation/reduire-rendez-vous-estimation-manques-construction.html","datePublished":"2026-06-03","author":{"@type":"Person","name":"Khadija AitLassri"}},
+        {"@type":"BlogPosting","headline":"Transformer les visiteurs de votre site en demandes de soumission","url":"https://nextiweb.ca/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html","datePublished":"2026-06-03","author":{"@type":"Person","name":"Khadija AitLassri"}}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Comment un entrepreneur peut-il réduire les estimations manquées ?","acceptedAnswer":{"@type":"Answer","text":"En agissant sur la friction et l'intention : réservation d'estimation en ligne, rappels automatisés par SMS et courriel, confirmation active, formulaire de projet rempli à l'avance et pré-qualification du chantier. Ces leviers, conformes à la Loi 25, réduisent fortement les déplacements pour rien tout en qualifiant les demandes."}},
+        {"@type":"Question","name":"Comment transformer les visiteurs d'un site d'entrepreneur en demandes de soumission ?","acceptedAnswer":{"@type":"Answer","text":"Avec une demande de soumission visible en permanence, une licence RBQ et des assurances affichées, de vraies réalisations avant/après, des réponses claires (types de travaux, zone, ordres de grandeur de prix), un site rapide sur mobile et des signaux de confiance. La conversion rentabilise le trafic que votre référencement fait venir."}}
+      ]
+    }
+  ]
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Construction et rénovation</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="blog-hero">
+          <p class="blog-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22h20M4 22V8l8-5 8 5v14M9 22v-6h6v6"/></svg>
+            Blog — Construction &amp; rénovation
+          </p>
+          <h1 class="blog-hero__title">Guides web pour entrepreneurs en construction et rénovation</h1>
+          <p class="blog-hero__subtitle">Des conseils concrets pour remplir votre carnet de commandes : réduire les rendez-vous d'estimation manqués et transformer les visiteurs de votre site en demandes de soumission — sans jargon.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYOUT -->
+    <div class="section">
+      <div class="container">
+        <div class="blog-layout">
+
+          <!-- ARTICLES -->
+          <div>
+            <p class="section-label">Tous les guides entrepreneurs</p>
+            <div class="article-grid">
+
+              <article class="project-card">
+                <div class="project-card__body">
+                  <span class="project-card__tag">Gestion d'activité</span>
+                  <h2 class="project-card__title"><a href="/blog/construction-renovation/reduire-rendez-vous-estimation-manques-construction.html">Réduire les rendez-vous d'estimation manqués en construction et rénovation</a></h2>
+                  <p class="project-card__excerpt">Une estimation manquée, c'est un déplacement et une demi-journée perdus. 5 leviers web — réservation en ligne, rappels, confirmation, formulaire de projet, pré-qualification — pour réduire les no-shows.</p>
+                  <a href="/blog/construction-renovation/reduire-rendez-vous-estimation-manques-construction.html" class="project-card__link">Lire le guide →</a>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__body">
+                  <span class="project-card__tag">Conversion &amp; site web</span>
+                  <h2 class="project-card__title"><a href="/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html">Transformer les visiteurs de votre site en demandes de soumission</a></h2>
+                  <p class="project-card__excerpt">Avoir du trafic ne suffit pas. Les 7 éléments — soumission visible, licence RBQ, réalisations avant/après, vitesse, mobile d'abord — qui font passer un client à l'action.</p>
+                  <a href="/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html" class="project-card__link">Lire le guide →</a>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- CALLOUT AGENCE -->
+            <div class="callout-agence">
+              <h2 class="callout-agence__title">Un site d'entrepreneur pensé pour remplir votre carnet</h2>
+              <p class="callout-agence__text">NEXTIWEB conçoit des sites rapides, mobile d'abord, avec réservation d'estimation, licence RBQ visible, réalisations avant/après et demande de soumission intégrée. Pendant que vous gérez vos chantiers, votre site travaille.</p>
+              <a href="/construction-renovation.html" class="btn btn--primary" style="color:#000;font-weight:700">Découvrir nos services pour entrepreneurs →</a>
+            </div>
+
+            <!-- FAQ -->
+            <div style="margin-top:3rem">
+              <p class="section-label">Questions fréquentes</p>
+              <div class="blog-faq">
+                <details class="blog-faq__item">
+                  <summary>Comment un entrepreneur peut-il réduire les estimations manquées ?</summary>
+                  <p>En agissant sur la friction et l'intention : réservation d'estimation en ligne, rappels automatisés par SMS et courriel, confirmation active, formulaire de projet rempli à l'avance et pré-qualification du chantier. Ces leviers, conformes à la Loi 25, réduisent fortement les déplacements pour rien tout en qualifiant les demandes.</p>
+                </details>
+                <details class="blog-faq__item">
+                  <summary>Comment transformer les visiteurs d'un site d'entrepreneur en demandes de soumission ?</summary>
+                  <p>Avec une demande de soumission visible en permanence, une licence RBQ et des assurances affichées, de vraies réalisations avant/après, des réponses claires (types de travaux, zone, ordres de grandeur de prix), un site rapide sur mobile et des signaux de confiance. La conversion rentabilise le trafic que votre référencement fait venir.</p>
+                </details>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside class="sidebar" aria-label="Ressources">
+            <div class="sidebar-box">
+              <p class="sidebar-box__title">Audit gratuit</p>
+              <p style="font-size:.88rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1.2rem">Votre site d'entrepreneur capte-t-il vraiment les demandes de soumission ? Rapport PDF personnalisé sous 24&nbsp;h.</p>
+              <a href="/construction-renovation.html" class="btn btn--primary" style="display:block;text-align:center;color:#000;font-weight:700">Demander l'audit →</a>
+            </div>
+            <div class="sidebar-box">
+              <p class="sidebar-box__title">Nos services entrepreneurs</p>
+              <ul class="sidebar-box__list">
+                <li><a href="/construction-renovation.html">Sites web pour entrepreneurs</a></li>
+                <li><a href="/seo.html">Référencement local</a></li>
+                <li><a href="/marketing-digital.html">Marketing digital</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-box">
+              <p class="sidebar-box__title">Autres secteurs</p>
+              <ul class="sidebar-box__list">
+                <li><a href="/blog/restaurants/">Blog Restaurants</a></li>
+                <li><a href="/blog/dentistes/">Blog Cliniques dentaires</a></li>
+                <li><a href="/blog/avocats/">Blog Cabinets d'avocats</a></li>
+                <li><a href="/blog/">Tous les articles</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB" width="84" height="48" loading="lazy">
+        </a>
+        <p class="footer__tagline">Agence web à Montréal — création de sites, SEO et marketing digital pour PME québécoises.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navigation pied de page">
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <a href="/creation-site.html">Création de sites web</a>
+          <a href="/seo.html">Référencement SEO</a>
+          <a href="/marketing-digital.html">Marketing digital</a>
+          <a href="/visibilite-ia.html">Visibilité IA</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Blog</p>
+          <a href="/blog/seo/">SEO &amp; Référencement</a>
+          <a href="/blog/construction-renovation/">Construction &amp; rénovation</a>
+          <a href="/blog/restaurants/">Restaurants</a>
+          <a href="/blog/dentistes/">Cliniques dentaires</a>
+          <a href="/blog/avocats/">Cabinets d'avocats</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">NEXTIWEB</p>
+          <a href="/a-propos.html">À propos</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/mentions-legales.html">Mentions légales</a>
+          <a href="/politique-confidentialite.html">Confidentialité</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB · Montréal, QC, Canada · NEQ 2272348204</p>
+      <p>🔒 Conforme Loi 25 du Québec</p>
+    </div>
+  </footer>
+
+  <!-- Barre flottante -->
+  <div class="float-bar">
+    <a href="/construction-renovation.html" class="audit-pill" aria-label="Demander un audit gratuit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Audit gratuit
+    </a>
+    <a href="https://wa.me/15147910591" class="whatsapp-pill" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+</body>
+</html>

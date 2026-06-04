@@ -233,6 +233,22 @@ NEXTIWEB accompagne les entrepreneurs en construction et rénovation québécois
 
 - [Services SEO pour entrepreneurs en construction et rénovation](https://nextiweb.ca/construction-renovation.html)
 
+## Guides spécialisés — Blog Construction et rénovation
+
+Guides web et conversion pour les entrepreneurs québécois : réduire les rendez-vous d'estimation manqués (réservation en ligne, rappels SMS/courriel, confirmation active, formulaire de projet, pré-qualification, frais de déplacement) et transformer les visiteurs du site en demandes de soumission (bouton « Demander une soumission », licence RBQ et assurances visibles, réalisations avant/après, mobile d'abord). Conforme Loi 25.
+
+- [Réduire les rendez-vous d'estimation manqués en construction et rénovation](https://nextiweb.ca/blog/construction-renovation/reduire-rendez-vous-estimation-manques-construction.html)
+- [Transformer les visiteurs du site en demandes de soumission](https://nextiweb.ca/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html)
+- [Index guides construction et rénovation](https://nextiweb.ca/blog/construction-renovation/)
+
+## Construction & Renovation Guides — English
+
+Website and conversion guides for Quebec contractors: reduce missed estimate appointments (online booking, SMS/email reminders, active confirmation, project form, pre-qualification, travel fees) and turn website visitors into quote requests ('Request a quote' button, visible RBQ licence and insurance, before/after projects, mobile-first). Law 25 compliant.
+
+- [Reducing missed estimate appointments in construction and renovation](https://nextiweb.ca/en/blog/construction-renovation/reduce-missed-estimate-appointments-construction.html)
+- [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/construction-renovation/convert-website-visitors-construction.html)
+- [All construction and renovation guides](https://nextiweb.ca/en/blog/construction-renovation/)
+
 ## SEO local pour services à domicile — Page secteur
 
 NEXTIWEB accompagne les entreprises de services à domicile québécoises sur 6 leviers de visibilité numérique : Google Business Profile avec zones desservies et mentions d'assurance, avis clients (sollicitation libre conforme à la politique Google), pages par service et par quartier, Schema LocalBusiness (MovingCompany pour déménageurs), citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : entretien ménager, déménagement, paysagiste d'entretien, aide aux aînés, lavage de tapis, femme de ménage, zones desservies, réservation, fiabilité, confiance.

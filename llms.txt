@@ -255,6 +255,22 @@ NEXTIWEB accompagne les entreprises de services à domicile québécoises sur 6 
 
 - [Services SEO pour services à domicile](https://nextiweb.ca/services-domicile.html)
 
+## Guides spécialisés — Blog Services à domicile
+
+Guides web et conversion pour les entreprises de services à domicile québécoises : réduire les rendez-vous manqués (réservation en ligne, rappels SMS/courriel, confirmation active, formulaire de détails d'accès, politique d'annulation, services récurrents) et transformer les visiteurs du site en réservations (bouton « Réserver », signaux de confiance assurance/cautionnement/personnel vérifié, zones desservies, avis, mobile d'abord). Conforme Loi 25.
+
+- [Réduire les rendez-vous manqués en services à domicile](https://nextiweb.ca/blog/services-domicile/reduire-rendez-vous-manques-services-domicile.html)
+- [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/services-domicile/convertir-visiteurs-site-reservation-services-domicile.html)
+- [Index guides services à domicile](https://nextiweb.ca/blog/services-domicile/)
+
+## Home Services Guides — English
+
+Website and conversion guides for Quebec home-services businesses: reduce missed appointments (online booking, SMS/email reminders, active confirmation, access details form, cancellation policy, recurring services) and turn website visitors into bookings ('Book now' button, trust signals insurance/bonding/vetted staff, service areas, reviews, mobile-first). Law 25 compliant.
+
+- [Reducing missed appointments in home services](https://nextiweb.ca/en/blog/home-services/reduce-missed-appointments-home-services.html)
+- [Turning website visitors into bookings](https://nextiweb.ca/en/blog/home-services/convert-website-visitors-home-services.html)
+- [All home services guides](https://nextiweb.ca/en/blog/home-services/)
+
 ## Law Firm Guides — English
 
 NEXTIWEB helps Quebec law firms improve their online visibility through local SEO, Google Business Profile, client reviews, Schema LegalService, and AI citability.

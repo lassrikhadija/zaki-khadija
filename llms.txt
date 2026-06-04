@@ -199,6 +199,22 @@ Website and conversion guides for Quebec caterers: reduce missed tastings and ap
 - [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/caterer/convert-website-visitors-caterer.html)
 - [All caterer guides](https://nextiweb.ca/en/blog/caterer/)
 
+## Guides spécialisés — Blog Fleuristes
+
+Guides web et conversion pour les fleuristes québécois : réduire les commandes abandonnées et les consultations manquées (commande en ligne simple, informations de livraison claires, heure limite, rappels, acompte sur gros contrats) et transformer les visiteurs du site en commandes (bouton « Commander », vraies photos de bouquets, catalogue par occasion, livraison limpide, mobile d'abord). Conforme Loi 25.
+
+- [Réduire les commandes abandonnées et consultations manquées chez un fleuriste](https://nextiweb.ca/blog/fleuriste/reduire-commandes-abandonnees-consultations-fleuriste.html)
+- [Transformer les visiteurs du site en commandes](https://nextiweb.ca/blog/fleuriste/convertir-visiteurs-site-commande-fleuriste.html)
+- [Index guides fleuristes](https://nextiweb.ca/blog/fleuriste/)
+
+## Florist Guides — English
+
+Website and conversion guides for Quebec florists: reduce abandoned orders and missed consultations (simple online ordering, clear delivery info, cut-off time, reminders, deposit on big contracts) and turn website visitors into orders ('Order' button, real bouquet photos, catalogue by occasion, crystal-clear delivery, mobile-first). Law 25 compliant.
+
+- [Reducing abandoned orders and missed consultations for florists](https://nextiweb.ca/en/blog/florist/reduce-abandoned-orders-consultations-florist.html)
+- [Turning website visitors into orders](https://nextiweb.ca/en/blog/florist/convert-website-visitors-florist.html)
+- [All florist guides](https://nextiweb.ca/en/blog/florist/)
+
 ## SEO local pour traiteurs — Page métier (créneau Restaurant)
 
 NEXTIWEB accompagne les traiteurs québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos de buffets et forfaits, avis clients (sollicitation après l'événement, conforme à la politique Google), pages par type d'événement et par quartier, Schema FoodEstablishment, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : traiteur, service traiteur, événementiel, mariage, corporatif, réception, party de bureau, buffet, forfait, soumission, devis, zone de service.

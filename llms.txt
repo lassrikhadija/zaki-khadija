@@ -147,17 +147,17 @@ NEXTIWEB accompagne les courtiers immobiliers québécois sur 6 leviers de visib
 
 ## Guides spécialisés — Blog Courtiers immobiliers
 
-Guides web et conversion pour courtiers immobiliers du Québec : réduire les visites manquées (réservation en ligne, rappels, pré-qualification de l'acheteur, visites groupées) et convertir vendeurs et acheteurs (double appel à l'action « Estimer ma propriété » / « Réserver une visite », estimation gratuite, parcours séparés). Conforme aux règles de l'OACIQ et à la Loi 25.
+Guides web et conversion pour courtiers immobiliers du Québec : relancer et suivre ses leads sur le cycle long de l'immobilier (capture centralisée, réponse rapide au premier contact, séquences de relance automatisées acheteur/vendeur, nurturing de quartier, segmentation) et convertir vendeurs et acheteurs (double appel à l'action « Estimer ma propriété » / « Réserver une visite », estimation gratuite, parcours séparés). Conforme aux règles de l'OACIQ et à la Loi 25.
 
-- [Réduire les visites et rendez-vous manqués chez un courtier immobilier](https://nextiweb.ca/blog/courtiers-immobiliers/reduire-rendez-vous-manques-courtier-immobilier.html)
+- [Relancer et suivre ses leads : ne plus laisser dormir un prospect (courtier immobilier)](https://nextiweb.ca/blog/courtiers-immobiliers/relancer-suivre-leads-courtier-immobilier.html)
 - [Transformer les visiteurs du site en demandes (estimation, visite)](https://nextiweb.ca/blog/courtiers-immobiliers/convertir-visiteurs-site-courtier-immobilier.html)
 - [Index guides courtiers immobiliers](https://nextiweb.ca/blog/courtiers-immobiliers/)
 
 ## Real Estate Broker Guides — English
 
-Website and conversion guides for Quebec real estate brokers: reduce missed showings (online booking, reminders, buyer pre-qualification, grouped showings) and convert sellers and buyers (dual call to action, free valuation, separate journeys). Compliant with OACIQ rules and Law 25.
+Website and conversion guides for Quebec real estate brokers: follow up and nurture leads across real estate's long cycle (centralized capture, fast first-contact response, automated buyer/seller follow-up sequences, neighbourhood nurturing, segmentation) and convert sellers and buyers (dual call to action, free valuation, separate journeys). Compliant with OACIQ rules and Law 25.
 
-- [Reduce missed showings and no-shows for a real estate broker](https://nextiweb.ca/en/blog/real-estate-brokers/reduce-no-shows-real-estate.html)
+- [Following up and nurturing your leads: stop letting a prospect go cold (real estate broker)](https://nextiweb.ca/en/blog/real-estate-brokers/follow-up-leads-real-estate-broker.html)
 - [Turn website visitors into requests (valuation, showing)](https://nextiweb.ca/en/blog/real-estate-brokers/convert-website-visitors-real-estate.html)
 - [All real estate broker guides](https://nextiweb.ca/en/blog/real-estate-brokers/)
 

@@ -145,6 +145,22 @@ NEXTIWEB accompagne les courtiers immobiliers québécois sur 6 leviers de visib
 
 - [Services SEO pour courtiers immobiliers](https://nextiweb.ca/courtiers-immobiliers.html)
 
+## Guides spécialisés — Blog Courtiers immobiliers
+
+Guides web et conversion pour courtiers immobiliers du Québec : réduire les visites manquées (réservation en ligne, rappels, pré-qualification de l'acheteur, visites groupées) et convertir vendeurs et acheteurs (double appel à l'action « Estimer ma propriété » / « Réserver une visite », estimation gratuite, parcours séparés). Conforme aux règles de l'OACIQ et à la Loi 25.
+
+- [Réduire les visites et rendez-vous manqués chez un courtier immobilier](https://nextiweb.ca/blog/courtiers-immobiliers/reduire-rendez-vous-manques-courtier-immobilier.html)
+- [Transformer les visiteurs du site en demandes (estimation, visite)](https://nextiweb.ca/blog/courtiers-immobiliers/convertir-visiteurs-site-courtier-immobilier.html)
+- [Index guides courtiers immobiliers](https://nextiweb.ca/blog/courtiers-immobiliers/)
+
+## Real Estate Broker Guides — English
+
+Website and conversion guides for Quebec real estate brokers: reduce missed showings (online booking, reminders, buyer pre-qualification, grouped showings) and convert sellers and buyers (dual call to action, free valuation, separate journeys). Compliant with OACIQ rules and Law 25.
+
+- [Reduce missed showings and no-shows for a real estate broker](https://nextiweb.ca/en/blog/real-estate-brokers/reduce-no-shows-real-estate.html)
+- [Turn website visitors into requests (valuation, showing)](https://nextiweb.ca/en/blog/real-estate-brokers/convert-website-visitors-real-estate.html)
+- [All real estate broker guides](https://nextiweb.ca/en/blog/real-estate-brokers/)
+
 ## SEO local pour restaurants et cafés — Page secteur
 
 NEXTIWEB accompagne les restaurants et cafés québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos et menu, avis clients (sollicitation libre conforme à la politique Google), pages par quartier et par type de cuisine, Schema Restaurant, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : restaurant, café, bistro, traiteur, boulangerie-pâtisserie, menu, réservation, brunch, terrasse, type de cuisine, photos de plats.

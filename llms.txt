@@ -147,16 +147,22 @@ NEXTIWEB accompagne les courtiers immobiliers québécois sur 6 leviers de visib
 
 ## Guides spécialisés — Blog Courtiers immobiliers
 
-Guides web et conversion pour courtiers immobiliers du Québec : relancer et suivre ses leads sur le cycle long de l'immobilier (capture centralisée, réponse rapide au premier contact, séquences de relance automatisées acheteur/vendeur, nurturing de quartier, segmentation) et convertir vendeurs et acheteurs (double appel à l'action « Estimer ma propriété » / « Réserver une visite », estimation gratuite, parcours séparés). Conforme aux règles de l'OACIQ et à la Loi 25.
+Guides web, SEO, site et marketing pour courtiers immobiliers du Québec : référencement local pour apparaître sur Google (fiche Google Business Profile, pages de quartier, avis, site vs Centris), site web de courtier (propriété de la marque/leads/SEO vs page de bannière), publicité Google Ads et Facebook/Meta (intention vs notoriété, estimation, retargeting, budgets), relancer et suivre ses leads sur le cycle long, et convertir vendeurs et acheteurs (double appel à l'action « Estimer ma propriété » / « Réserver une visite », estimation gratuite). Mots-clés couverts : site web courtier immobilier, référencement courtier immobilier, SEO courtier, marketing courtier immobilier, publicité Facebook immobilier, Google Ads courtier, création site courtier. Conforme aux règles de l'OACIQ et à la Loi 25.
 
+- [Référencement local pour courtier immobilier : apparaître sur Google dans votre secteur](https://nextiweb.ca/blog/courtiers-immobiliers/referencement-local-courtier-immobilier.html)
+- [Site web de courtier immobilier : en avez-vous vraiment besoin ?](https://nextiweb.ca/blog/courtiers-immobiliers/site-web-courtier-immobilier.html)
+- [Publicité Google et Facebook pour courtier immobilier : par où commencer](https://nextiweb.ca/blog/courtiers-immobiliers/publicite-google-facebook-courtier-immobilier.html)
 - [Relancer et suivre ses leads : ne plus laisser dormir un prospect (courtier immobilier)](https://nextiweb.ca/blog/courtiers-immobiliers/relancer-suivre-leads-courtier-immobilier.html)
 - [Transformer les visiteurs du site en demandes (estimation, visite)](https://nextiweb.ca/blog/courtiers-immobiliers/convertir-visiteurs-site-courtier-immobilier.html)
 - [Index guides courtiers immobiliers](https://nextiweb.ca/blog/courtiers-immobiliers/)
 
 ## Real Estate Broker Guides — English
 
-Website and conversion guides for Quebec real estate brokers: follow up and nurture leads across real estate's long cycle (centralized capture, fast first-contact response, automated buyer/seller follow-up sequences, neighbourhood nurturing, segmentation) and convert sellers and buyers (dual call to action, free valuation, separate journeys). Compliant with OACIQ rules and Law 25.
+Website, SEO, site and marketing guides for Quebec real estate brokers: local SEO to get found on Google (Google Business Profile, neighbourhood pages, reviews, site vs Centris), broker website (ownership of brand/leads/SEO vs brokerage page), Google Ads and Facebook/Meta advertising (intent vs awareness, valuation, retargeting, budgets), following up and nurturing leads across the long cycle, and converting sellers and buyers (dual call to action, free valuation). Keywords covered: real estate broker website, real estate broker SEO, realtor SEO, real estate marketing, Facebook ads real estate, Google Ads real estate agent, realtor website design. Compliant with OACIQ rules and Law 25.
 
+- [Local SEO for real estate brokers: get found on Google in your area](https://nextiweb.ca/en/blog/real-estate-brokers/local-seo-real-estate-broker.html)
+- [Real estate broker website: do you really need one?](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website.html)
+- [Google and Facebook ads for real estate brokers: where to start](https://nextiweb.ca/en/blog/real-estate-brokers/google-facebook-ads-real-estate-broker.html)
 - [Following up and nurturing your leads: stop letting a prospect go cold (real estate broker)](https://nextiweb.ca/en/blog/real-estate-brokers/follow-up-leads-real-estate-broker.html)
 - [Turn website visitors into requests (valuation, showing)](https://nextiweb.ca/en/blog/real-estate-brokers/convert-website-visitors-real-estate.html)
 - [All real estate broker guides](https://nextiweb.ca/en/blog/real-estate-brokers/)

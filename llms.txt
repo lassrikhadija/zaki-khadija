@@ -167,6 +167,22 @@ NEXTIWEB accompagne les restaurants et cafés québécois sur 6 leviers de visib
 
 - [Services SEO pour restaurants et cafés](https://nextiweb.ca/restaurants.html)
 
+## Guides spécialisés — Blog Restaurants
+
+Guides web et conversion pour restaurants et cafés du Québec : réduire les réservations manquées (réservation en ligne, rappels SMS/courriel, confirmation, empreinte de carte sur créneaux sensibles, liste d'attente) et convertir les visiteurs en réservations (bouton « Réserver une table », menu en page web, photos de plats, options véganes/sans gluten/allergies). Conforme à la Loi 25.
+
+- [Réduire les réservations manquées (no-shows) dans un restaurant](https://nextiweb.ca/blog/restaurants/reduire-reservations-manquees-restaurant.html)
+- [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/restaurants/convertir-visiteurs-site-reservation-restaurant.html)
+- [Index guides restaurants](https://nextiweb.ca/blog/restaurants/)
+
+## Restaurant Guides — English
+
+Website and conversion guides for Quebec restaurants and cafés: reduce no-shows (online booking, SMS/email reminders, confirmation, card hold on sensitive slots, waitlist) and convert visitors into reservations ('Book a table' button, web-page menu, dish photos, vegan/gluten-free/allergy options). Law 25 compliant.
+
+- [Reduce no-shows (missed reservations) in a restaurant](https://nextiweb.ca/en/blog/restaurants/reduce-no-shows-restaurant.html)
+- [Turn website visitors into reservations](https://nextiweb.ca/en/blog/restaurants/convert-website-visitors-restaurant.html)
+- [All restaurant guides](https://nextiweb.ca/en/blog/restaurants/)
+
 ## SEO local pour traiteurs — Page métier (créneau Restaurant)
 
 NEXTIWEB accompagne les traiteurs québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos de buffets et forfaits, avis clients (sollicitation après l'événement, conforme à la politique Google), pages par type d'événement et par quartier, Schema FoodEstablishment, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : traiteur, service traiteur, événementiel, mariage, corporatif, réception, party de bureau, buffet, forfait, soumission, devis, zone de service.

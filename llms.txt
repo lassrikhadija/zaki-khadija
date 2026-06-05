@@ -82,8 +82,11 @@ NEXTIWEB accompagne les cliniques dentaires québécoises sur 6 dimensions de vi
 
 ## Guides spécialisés — Blog Cliniques dentaires
 
-Série complète d'articles pratiques pour dentistes québécois :
+Série complète d'articles pratiques pour dentistes québécois (site web, SEO, marketing, gestion). Mots-clés couverts : création site web dentiste, site web clinique dentaire, référencement clinique dentaire, SEO dentiste, marketing dentaire, publicité Google/Facebook dentiste, agence web/SEO/marketing dentaire à Montréal, Rive-Sud et Rive-Nord. Conforme à l'Ordre des dentistes du Québec et à la Loi 25.
 
+- [Création de site web pour dentiste à Montréal, Rive-Sud et Rive-Nord](https://nextiweb.ca/blog/dentistes/creation-site-web-dentiste-montreal.html)
+- [Référencement SEO pour clinique dentaire à Montréal, Rive-Sud et Rive-Nord](https://nextiweb.ca/blog/dentistes/referencement-seo-clinique-dentaire-montreal.html)
+- [Marketing et publicité pour dentiste à Montréal, Rive-Sud et Rive-Nord](https://nextiweb.ca/blog/dentistes/marketing-publicite-dentiste-montreal.html)
 - [Local Pack Google pour cabinets dentaires — guide pilier](https://nextiweb.ca/blog/dentistes/local-pack-google-cabinets-dentaires.html)
 - [Google Business Profile pour dentistes : fiche à 100 % en 60 jours](https://nextiweb.ca/blog/dentistes/google-business-profile-cabinets-dentaires.html)
 - [Avis Google pour cliniques dentaires : méthode éthique](https://nextiweb.ca/blog/dentistes/avis-google-cliniques-dentaires.html)
@@ -294,9 +297,12 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 
 ## Dental Clinic Guides — English
 
-NEXTIWEB helps Quebec dental clinics improve their online visibility through local SEO, Google Business Profile optimization, patient reviews, Schema Dentist markup, and AI citability.
+NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and practice management. Keywords covered: dental website design, dental clinic website, dental SEO, dentist SEO, dental marketing, Google/Facebook ads for dentists, dental web/SEO/marketing agency in Montreal, South Shore and North Shore. Compliant with the Ordre des dentistes du Québec and Law 25.
 
 - [SEO services for dental clinics](https://nextiweb.ca/en/dental-clinics.html)
+- [Dental website design in Montreal, South Shore and North Shore](https://nextiweb.ca/en/blog/dentists/dental-website-design-montreal.html)
+- [Dental SEO in Montreal, South Shore and North Shore](https://nextiweb.ca/en/blog/dentists/dental-seo-montreal.html)
+- [Dental marketing and advertising in Montreal, South Shore and North Shore](https://nextiweb.ca/en/blog/dentists/dental-marketing-advertising-montreal.html)
 - [Google Local Pack for dental practices — pillar guide](https://nextiweb.ca/en/blog/dentists/google-local-pack-dental-practices.html)
 - [Google Business Profile for dental practices](https://nextiweb.ca/en/blog/dentists/google-business-profile-dental-practices.html)
 - [Google Reviews for dental clinics: ethical method](https://nextiweb.ca/en/blog/dentists/google-reviews-dental-clinics.html)

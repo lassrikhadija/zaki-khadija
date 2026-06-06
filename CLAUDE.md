@@ -95,9 +95,10 @@ Industries | Resources | Blog | About | [CTA] Get My Free Audit
 
 ### CSS cache-busting
 ```html
-<link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
+<link rel="stylesheet" href="/assets/css/styles.min.css?v=7">
 ```
-**Règle :** incrémenter la version à chaque changement de CSS global.
+**Règle :** incrémenter la version à chaque changement de CSS global (version actuelle : `v=7`). Modifier **styles.min.css** (servi) ET **styles.css** (source), puis bumper la version sur toutes les pages.
+**Note :** `backdrop-filter` retiré du `.site-header` le 6 juin 2026 — il causait des traînées de peinture (ghosting) au scroll sur Android. Le fond du header étant opaque, aucun impact visuel.
 
 ### WhatsApp float bar
 - FR : `https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services.`

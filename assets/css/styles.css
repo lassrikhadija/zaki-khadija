@@ -365,7 +365,6 @@ body {
   width: 100%;
   z-index: 20;
   background-color: var(--color-header-bg);
-  backdrop-filter: blur(10px);
 }
 
 .header__inner {

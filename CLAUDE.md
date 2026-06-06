@@ -84,6 +84,15 @@ Industries | Resources | Blog | About | [CTA] Get My Free Audit
 - **EN :** "Get My Free Audit" → `/en/contact.html`
 - **RÈGLE :** Même label sur TOUTES les pages. Ne jamais utiliser "offert", "maintenant", "Démarrer mon projet" ou tout autre variante.
 
+### Footer standardisé (uniformisé le 6 juin 2026)
+- **UN seul footer de référence** sur toutes les pages `<footer class="site-footer">` : FR = `partials/footer.html`, EN = `en/partials/footer.html`. Toute modif du footer DOIT être faite sur ces 2 fichiers de référence PUIS resynchronisée sur toutes les pages (les partials ne sont pas inclus dynamiquement — le HTML est dupliqué dans chaque page).
+- **Structure :** 4 colonnes (Identité + Navigation + Services + Zones desservies) + bande Nextiweb Studio + bas de page légal.
+- **Slogan unique FR :** « Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal. »
+- **Colonne Services (4 liens) :** Création de sites web · Référencement SEO · Marketing digital · Visibilité IA. **Pas** de liste des 10 secteurs dans le footer (un seul lien « Secteurs » dans Navigation suffit — cohérent avec le toboggan).
+- **Bas de page légal (Loi 25 — sur TOUTES les pages) :** Mentions légales · Politique de confidentialité · Politique de cookies.
+- **Exception :** les pages tunnel `contact.html` / `question.html` / `merci.html` (FR + EN) n'ont PAS ce footer (footer minimal volontaire — ne pas y ajouter le footer complet).
+- **Resynchronisation :** régénérer les pages en remplaçant le bloc `<footer class="site-footer">…</footer>` par le contenu du partial correspondant, en conservant la fin de ligne propre à chaque fichier (les articles de blog sont en LF, le reste en CRLF).
+
 ### CSS cache-busting
 ```html
 <link rel="stylesheet" href="/assets/css/styles.min.css?v=3">
@@ -102,11 +111,15 @@ Industries | Resources | Blog | About | [CTA] Get My Free Audit
 <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/[slug-fr].html">
 ```
 
-### Formulaires Netlify
-- FR contact : `name="audit-gratuit"` → `action="/merci.html"` `method="POST"` `data-netlify="true"`
-- FR question : `name="question-rapide"` → `action="/merci.html"` `method="POST"` `data-netlify="true"`
-- EN contact : `name="audit-gratuit-en"` → `action="/en/merci.html"` `method="POST"` `data-netlify="true"`
-- EN question : `name="question-rapide-en"` → `action="/en/merci.html"` `method="POST"` `data-netlify="true"`
+### Formulaires (handlers PHP — Netlify abandonné)
+> Netlify a été un essai puis supprimé. Les formulaires sont désormais traités côté serveur par des handlers PHP. **Ne plus utiliser `data-netlify`.**
+- FR contact : `method="POST"` → `action="/contact-handler.php"` (`id="audit-form"`)
+- FR question : `method="POST"` → `action="/question-handler.php"` (`id="question-form"`)
+- EN contact : `method="POST"` → `action="/en/contact-handler.php"` (`id="audit-form"`)
+- EN question : `method="POST"` → `action="/en/question-handler.php"` (`id="question-form"`)
+- **Anti-spam :** honeypot `name="bot-field"` (champ caché) vérifié par les handlers PHP — **ne pas supprimer**. `contact-handler.php` a un 2ᵉ honeypot `website_confirm`.
+- Config mail : `mail-config.php` / `smtp-mailer.php`.
+- **Note hébergement :** `_redirects` et `_headers` sont au format Netlify/Cloudflare Pages → **inactifs sur Apache/PHP**. Les vraies redirections 301/410 et en-têtes de sécurité doivent vivre dans `.htaccess`.
 
 ### GA4 — tracking conversion
 - `merci.html` et `en/merci.html` poussent chacun un event `generate_lead` via dataLayer :

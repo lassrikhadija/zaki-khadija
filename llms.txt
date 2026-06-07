@@ -41,6 +41,7 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 ### Création de site web
 - [Comment fonctionne un site web](https://nextiweb.ca/blog/creation-site/comment-fonctionne-site-web.html)
 - [WordPress vs site sur mesure](https://nextiweb.ca/blog/creation-site/wordpress-vs-site-code-pme.html)
+- [Combien coûte un site web au Québec en 2026 (prix réels sourcés)](https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html)
 - [Tous les guides création de site](https://nextiweb.ca/blog/creation-site/)
 
 ### Marketing digital
@@ -51,6 +52,7 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 ### IA et automatisation
 - [ChatGPT et outils IA pour PME](https://nextiweb.ca/blog/ia-automatisation/chatgpt-outils-ia-pme.html)
 - [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html)
+- [Bien écrire ses prompts IA : le guide du dirigeant](https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html)
 - [Tous les guides IA](https://nextiweb.ca/blog/ia-automatisation/)
 
 ## Audit gratuit

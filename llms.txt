@@ -366,4 +366,5 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html)
 - [How to write good AI prompts: the business owner's guide](https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html)
 - [AI is changing how your customers search for you](https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html)
+- [AI chatbot on your website: capture leads 24/7](https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html)
 - [All AI & automation guides](https://nextiweb.ca/en/blog/ai-automation/)

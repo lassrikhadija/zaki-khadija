@@ -1607,9 +1607,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-    <url>
+      <url>
+    <loc>https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+ . "  " . <url>
     <loc>https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"/>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>

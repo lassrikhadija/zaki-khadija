@@ -197,6 +197,15 @@
   <url><loc>https://nextiweb.ca/services-domicile.html</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/en/home-services.html</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/blog/avocats/</loc><lastmod>2026-06-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
       <url>
     <loc>https://nextiweb.ca/en/blog/lawyers/educational-content-client-questions-law-firm.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/avocats/contenu-educatif-questions-clients-avocat.html"/>
@@ -206,7 +215,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- . "  " . <url>
+  <url>
     <loc>https://nextiweb.ca/blog/avocats/contenu-educatif-questions-clients-avocat.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/avocats/contenu-educatif-questions-clients-avocat.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/lawyers/educational-content-client-questions-law-firm.html"/>
@@ -215,7 +224,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- . "  " . <url><loc>https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://nextiweb.ca/blog/avocats/google-business-profile-avocats.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/blog/avocats/reduire-rendez-vous-manques-cabinet-avocat.html</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/blog/avocats/convertir-visiteurs-site-consultation-avocat.html</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -1634,7 +1643,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- . "  " . <url>
+  <url>
     <loc>https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html"/>
@@ -1643,7 +1652,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
- . "  " . <url>
+  <url>
     <loc>https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html"/>

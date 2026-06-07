@@ -86,10 +86,11 @@ Industries | Resources | Blog | About | [CTA] Get My Free Audit
 
 ### Footer standardisé (uniformisé le 6 juin 2026)
 - **UN seul footer de référence** sur toutes les pages `<footer class="site-footer">` : FR = `partials/footer.html`, EN = `en/partials/footer.html`. Toute modif du footer DOIT être faite sur ces 2 fichiers de référence PUIS resynchronisée sur toutes les pages (les partials ne sont pas inclus dynamiquement — le HTML est dupliqué dans chaque page).
-- **Structure :** 4 colonnes (Identité + Navigation + Services + Zones desservies) + bande Nextiweb Studio + bas de page légal.
+- **Structure (mise à jour 6 juin 2026) :** 5 colonnes (Identité + Navigation + Services + **Secteurs** + Zones desservies) + bande Nextiweb Studio + ligne copyright.
 - **Slogan unique FR :** « Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal. »
-- **Colonne Services (4 liens) :** Création de sites web · Référencement SEO · Marketing digital · Visibilité IA. **Pas** de liste des 10 secteurs dans le footer (un seul lien « Secteurs » dans Navigation suffit — cohérent avec le toboggan).
-- **Bas de page légal (Loi 25 — sur TOUTES les pages) :** Mentions légales · Politique de confidentialité · Politique de cookies.
+- **Colonne Services (4 liens) :** Création de sites web · Référencement SEO · Marketing digital · Visibilité IA.
+- **Colonne Secteurs (ajoutée 6 juin 2026) :** les 9 secteurs (Cliniques dentaires, Ostéopathes, Avocats, Courtiers immobiliers, Restaurants, Traiteur, Fleuriste, Construction et rénovation, Services à domicile) + « Tous les secteurs ». EN = titre « Industries », mêmes liens vers `/en/...`.
+- **Ligne copyright (footer__bottom) :** UNIQUEMENT `© 2026 NEXTIWEB · NEQ 2272348204`. **Ne PAS y mettre les liens légaux** : `main.js` injecte automatiquement une ligne `.footer__legal` avec confidentialité + cookies + mentions légales + bouton « Gérer mes cookies » (Loi 25). Les ajouter dans le HTML crée un doublon.
 - **Exception :** les pages tunnel `contact.html` / `question.html` / `merci.html` (FR + EN) n'ont PAS ce footer (footer minimal volontaire — ne pas y ajouter le footer complet).
 - **Resynchronisation :** régénérer les pages en remplaçant le bloc `<footer class="site-footer">…</footer>` par le contenu du partial correspondant, en conservant la fin de ligne propre à chaque fichier (les articles de blog sont en LF, le reste en CRLF).
 

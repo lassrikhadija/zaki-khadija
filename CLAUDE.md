@@ -96,9 +96,10 @@ Industries | Resources | Blog | About | [CTA] Get My Free Audit
 
 ### CSS cache-busting
 ```html
-<link rel="stylesheet" href="/assets/css/styles.min.css?v=7">
+<link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
 ```
-**Règle :** incrémenter la version à chaque changement de CSS global (version actuelle : `v=7`). Modifier **styles.min.css** (servi) ET **styles.css** (source), puis bumper la version sur toutes les pages.
+**Règle :** incrémenter la version à chaque changement de CSS global (version actuelle : `v=8`). Modifier **styles.min.css** (servi) ET **styles.css** (source), puis bumper la version sur toutes les pages.
+**Accessibilité (6 juin 2026) :** skip-link « Aller au contenu » / « Skip to content » ajouté en 1ʳᵉ position dans `<body>` sur toutes les pages, avec ancre `id="main"` sur `<main>` (WCAG 2.4.1). CSS `.skip-link` dans le CSS global (caché hors focus). La page `audit-jdiq-2026/merci.html` a sa propre copie inline (pas de CSS global).
 **Note :** `backdrop-filter` retiré du `.site-header` le 6 juin 2026 — il causait des traînées de peinture (ghosting) au scroll sur Android. Le fond du header étant opaque, aucun impact visuel.
 
 ### WhatsApp float bar

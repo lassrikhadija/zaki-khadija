@@ -54,6 +54,7 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 - [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html)
 - [Bien écrire ses prompts IA : le guide du dirigeant](https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html)
 - [L'IA change la façon dont vos clients vous cherchent](https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html)
+- [Chatbot et agent IA sur votre site : capter vos leads 24/7](https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html)
 - [Tous les guides IA](https://nextiweb.ca/blog/ia-automatisation/)
 
 ## Audit gratuit

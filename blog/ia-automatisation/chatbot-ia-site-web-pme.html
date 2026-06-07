@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Chatbot et agent IA sur votre site : capter vos leads 24/7 (guide PME) | NEXTIWEB</title>
+  <meta name="description" content="Un chatbot IA répond à vos visiteurs jour et nuit, qualifie les leads et prend des rendez-vous. Ce qu'il fait vraiment, chatbot classique vs agent IA, confidentialité (Loi 25) et par où commencer. Guide PME, données sourcées (Harvard Business Review).">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Chatbot et agent IA sur votre site : capter vos leads 24/7">
+  <meta property="og:description" content="Ce qu'un chatbot IA fait vraiment, chatbot classique vs agent IA, confidentialité (Loi 25) et par où commencer. Guide PME, données sourcées.">
+  <meta property="og:url" content="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chatbot et agent IA sur votre site : capter vos leads 24/7">
+  <meta name="twitter:description" content="Ce qu'un chatbot IA fait vraiment pour une PME — guide NEXTIWEB.">
+
+  <link rel="canonical" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html">
+  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="stylesheet" href="/assets/css/styles.min.css?v=7">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00e676">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    /* Fil d'Ariane */
+    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
+    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
+    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
+    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
+    .breadcrumb__link:hover{color:var(--color-primary)}
+    .breadcrumb__current{color:var(--color-primary);font-weight:500}
+    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
+    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+
+    /* Float bar */
+    .whatsapp-float{display:none!important}
+    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
+    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
+    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
+    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
+    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
+    body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+
+    /* Article layout */
+    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
+    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
+    .article-meta__author{font-weight:600;color:var(--color-text)}
+    .article-meta span{display:flex;align-items:center;gap:.35rem}
+
+    /* Summary box */
+    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
+    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
+
+    /* Article body */
+    .article-body{max-width:780px}
+    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
+    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
+    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
+    .article-body strong{color:var(--color-text);font-weight:700}
+    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+    .article-body a:hover{opacity:.8}
+    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
+
+    /* Callout */
+    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
+    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+
+    /* CTA inline */
+    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
+    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
+    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
+
+    /* Table */
+    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
+    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
+    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
+    .article-table tr:hover td{background:rgba(255,255,255,.02)}
+    .article-table td strong{color:var(--color-primary)}
+
+    /* FAQ */
+    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
+    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
+    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
+    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
+    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
+    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
+    .article-faq__item.is-open .article-faq__a{display:block}
+    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
+
+    /* Sidebar */
+    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
+    .article-sidebar{position:sticky;top:100px}
+    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
+    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
+    .article-sidebar__toc a:hover{color:var(--color-primary)}
+
+    @media(max-width:900px){
+      .article-layout{grid-template-columns:1fr}
+      .article-sidebar{display:none}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Chatbot et agent IA sur votre site : capter vos leads 24/7",
+    "description": "Ce qu'un chatbot IA fait vraiment pour une PME, chatbot classique vs agent IA, confidentialité (Loi 25) et par où commencer.",
+    "author": {"@type": "Person", "name": "Khadija AitLassri", "url": "https://nextiweb.ca/a-propos.html", "sameAs": ["https://www.linkedin.com/in/khadija-ait-lassri/"]},
+    "publisher": {"@type": "Organization", "name": "NEXTIWEB", "url": "https://nextiweb.ca", "logo": {"@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png"}},
+    "datePublished": "2026-06-06",
+    "dateModified": "2026-06-06",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"},
+    "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
+    "inLanguage": "fr-CA",
+    "keywords": "chatbot site web, agent IA, capter des leads, chatbot PME Québec, qualifier les leads, chatbot vs agent IA, automatiser prise de rendez-vous"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nextiweb.ca/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://nextiweb.ca/blog/"},
+    {"@type":"ListItem","position":3,"name":"IA & Automatisation","item":"https://nextiweb.ca/blog/ia-automatisation/"},
+    {"@type":"ListItem","position":4,"name":"Chatbot et agent IA sur votre site : capter vos leads 24/7","item":"https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Un chatbot va-t-il remplacer mon équipe ?","acceptedAnswer":{"@type":"Answer","text":"Non. Un bon chatbot prend en charge le premier contact et les questions répétitives (horaires, services, disponibilités), et transfère à un humain dès que la conversation devient complexe ou sensible. Il libère votre équipe des tâches répétitives plutôt que de la remplacer."}},
+    {"@type":"Question","name":"Quelle est la différence entre un chatbot classique et un agent IA ?","acceptedAnswer":{"@type":"Answer","text":"Un chatbot classique suit un scénario fixe (boutons, réponses préprogrammées) : rapide à mettre en place mais rigide. Un agent IA, basé sur un modèle de langage, comprend des questions formulées librement et répond à partir de vos informations : plus naturel et flexible, mais à encadrer pour éviter les erreurs."}},
+    {"@type":"Question","name":"Pourquoi répondre vite à un visiteur change autant les choses ?","acceptedAnswer":{"@type":"Answer","text":"Parce que l'intérêt d'un prospect retombe très vite. Selon une étude de la Harvard Business Review portant sur 2,24 millions de prospects, les entreprises qui tentent un contact dans l'heure ont près de 7 fois plus de chances de qualifier le prospect que celles qui attendent plus d'une heure. Un chatbot répond instantanément, 24/7."}},
+    {"@type":"Question","name":"Un chatbot est-il conforme à la Loi 25 au Québec ?","acceptedAnswer":{"@type":"Answer","text":"Il peut l'être, à condition d'être bien configuré : informer le visiteur, recueillir le consentement avant de collecter des renseignements personnels, sécuriser les données et ne conserver que le nécessaire. La conformité Loi 25 se prévoit dès la mise en place, pas après."}},
+    {"@type":"Question","name":"Combien de temps pour mettre un chatbot en place ?","acceptedAnswer":{"@type":"Answer","text":"Un chatbot simple à base de scénarios peut être lancé en quelques jours. Un agent IA nourri de vos informations (services, FAQ, processus de rendez-vous) demande un peu plus de préparation, mais reste un projet de quelques semaines pour une PME, pas un chantier."}},
+    {"@type":"Question","name":"Par où commencer sans se tromper ?","acceptedAnswer":{"@type":"Answer","text":"Commencez par les 5 à 10 questions que vos clients posent le plus souvent et par un objectif clair (prendre un rendez-vous, obtenir un courriel). Un chatbot qui fait bien une chose convertit mieux qu'un chatbot qui tente tout. On élargit ensuite, en fonction des résultats."}}
+  ]}
+  </script>
+</head>
+<body class="theme-dark">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="nav__item">
+          <a href="/services.html" class="nav__link">Services</a>
+          <div class="nav__submenu">
+            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
+            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
+            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+          </div>
+        </div>
+        <a href="/secteurs.html" class="nav__link">Secteurs</a>
+        <a href="/ressources.html" class="nav__link">Ressources</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/a-propos.html" class="nav__link">À propos</a>
+        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- FIL D'ARIANE -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link breadcrumb__link--home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                NEXTIWEB
+              </a>
+            </li>
+            <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
+            <li class="breadcrumb__item"><a href="/blog/ia-automatisation/" class="breadcrumb__link">IA &amp; Automatisation</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Chatbot et agent IA sur votre site</span></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO ARTICLE -->
+    <div class="section section--dark">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            IA &amp; Automatisation
+          </p>
+          <h1 class="article-hero__title">Chatbot et agent IA sur votre site&nbsp;: capter vos leads 24/7</h1>
+          <div class="article-meta">
+            <span><a href="https://www.linkedin.com/in/khadija-ait-lassri/" target="_blank" rel="noopener noreferrer" class="article-meta__author" style="text-decoration:none;color:inherit" aria-label="Profil LinkedIn de Khadija AitLassri">Khadija AitLassri</a></span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              6 juin 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              10 min de lecture
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- BODY -->
+          <div class="article-body">
+
+            <!-- Résumé -->
+            <div class="article-summary">
+              <p class="article-summary__title">Résumé en 30 secondes</p>
+              <ul>
+                <li><strong>Le vrai rôle d'un chatbot</strong> : répondre instantanément, qualifier le visiteur et capter le lead — surtout en dehors de vos heures d'ouverture.</li>
+                <li><strong>Pourquoi la vitesse compte</strong> : contacter un prospect dans l'heure = près de 7× plus de chances de le qualifier (Harvard Business Review, 2,24 M de prospects).</li>
+                <li><strong>Chatbot classique vs agent IA</strong> : le premier suit un scénario fixe ; le second comprend les questions libres. Chacun a son usage.</li>
+                <li><strong>Règle d'or</strong> : un chatbot qui fait bien <em>une</em> chose (prendre un RDV, obtenir un courriel) convertit mieux qu'un chatbot qui tente tout. Et il doit respecter la Loi 25.</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="probleme">Le problème que personne ne voit</h2>
+            <p>Un visiteur arrive sur votre site à 21 h, un dimanche. Il a une question simple — «&nbsp;est-ce que vous faites ça&nbsp;?&nbsp;», «&nbsp;c'est combien&nbsp;?&nbsp;», «&nbsp;vous êtes disponibles quand&nbsp;?&nbsp;». Personne ne répond. Il referme l'onglet et va voir un concurrent. Vous ne saurez jamais qu'il est passé.</p>
+            <p>C'est le coût invisible de l'absence de réponse immédiate. Et ce n'est pas une question de politesse&nbsp;: c'est une question de <strong>timing</strong>. Selon une étude de la <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener">Harvard Business Review</a> portant sur <strong>2,24 millions de prospects</strong>, les entreprises qui tentent un contact <strong>dans l'heure</strong> ont <strong>près de 7 fois plus de chances</strong> de qualifier le prospect que celles qui attendent plus d'une heure. L'intérêt retombe vite. Très vite.</p>
+            <p>Un chatbot règle exactement ce problème&nbsp;: il répond <strong>tout de suite, 24 h/24</strong>, pendant que l'intérêt du visiteur est à son maximum.</p>
+
+            <hr>
+
+            <h2 id="role">Ce qu'un chatbot fait vraiment (et ce qu'il ne fait pas)</h2>
+            <p>Un bon chatbot n'est pas un gadget qui dit «&nbsp;Bonjour, comment puis-je vous aider&nbsp;?&nbsp;» dans le vide. C'est un <strong>premier maillon de votre tunnel de conversion</strong>. Concrètement, il&nbsp;:</p>
+            <ul>
+              <li><strong>répond aux questions fréquentes</strong> (services, horaires, zone desservie, prix de départ)&nbsp;;</li>
+              <li><strong>qualifie le visiteur</strong> en posant 2-3 bonnes questions&nbsp;;</li>
+              <li><strong>capte le lead</strong> (courriel, téléphone) ou <strong>déclenche une action</strong> (prise de rendez-vous, demande de soumission)&nbsp;;</li>
+              <li><strong>transfère à un humain</strong> dès que la conversation devient complexe ou sensible.</li>
+            </ul>
+            <p>Ce qu'il ne fait <strong>pas</strong>&nbsp;: remplacer votre expertise, gérer les cas délicats, ou prétendre être humain. Le meilleur chatbot connaît ses limites et passe la main au bon moment. Pour comprendre comment il s'insère dans le parcours d'achat, voyez notre guide <a href="/blog/marketing-digital/tunnels-vente-pme-conversion.html">tunnels de vente et conversion</a>.</p>
+
+            <hr>
+
+            <h2 id="types">Chatbot classique ou agent IA&nbsp;: lequel choisir&nbsp;?</h2>
+            <p>On met tout dans le même mot, mais ce sont deux outils différents.</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr><th>&nbsp;</th><th>Chatbot classique (scénario)</th><th>Agent IA (modèle de langage)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Fonctionnement</strong></td><td>Boutons et réponses préprogrammées</td><td>Comprend les questions formulées librement</td></tr>
+                  <tr><td><strong>Ton</strong></td><td>Rigide mais prévisible</td><td>Naturel, conversationnel</td></tr>
+                  <tr><td><strong>Mise en place</strong></td><td>Rapide</td><td>Demande de la préparation (vos infos)</td></tr>
+                  <tr><td><strong>Risque</strong></td><td>Frustrant si la question sort du script</td><td>Peut se tromper s'il est mal encadré</td></tr>
+                  <tr><td><strong>Idéal pour</strong></td><td>FAQ simple, prise de RDV guidée</td><td>Questions variées, conseil de premier niveau</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Pour une PME qui démarre, un <strong>chatbot à scénario bien conçu</strong> suffit souvent et coûte moins cher. L'agent IA devient intéressant quand vos visiteurs posent des questions très variées. Le bon choix dépend de vos questions réelles — c'est aussi la logique de l'article <a href="/blog/ia-automatisation/chatgpt-vs-outils-specialises-pme.html">ChatGPT ou outils spécialisés</a>.</p>
+
+            <hr>
+
+            <!-- CTA inline -->
+            <div class="article-cta-inline">
+              <p>Vous voulez un site qui capte les leads, même la nuit&nbsp;? On le construit pour vous.</p>
+              <a href="/creation-site.html" class="btn btn--primary">Voir nos services création web →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="loi25">Le chatbot et la Loi 25 (à ne pas négliger)</h2>
+            <p>Un chatbot qui collecte un nom, un courriel ou un numéro de téléphone collecte des <strong>renseignements personnels</strong>. Au Québec, la Loi 25 encadre cette collecte. Concrètement&nbsp;:</p>
+            <ul>
+              <li>informer clairement le visiteur qu'il échange avec un outil automatisé&nbsp;;</li>
+              <li>recueillir le <strong>consentement</strong> avant de collecter des données personnelles&nbsp;;</li>
+              <li>sécuriser les données et ne conserver que le nécessaire.</li>
+            </ul>
+            <p>Ce n'est pas un frein, c'est un cadre — et il se prévoit dès la mise en place. Pour le détail, voyez notre guide <a href="/blog/ia-automatisation/ia-loi-25-quebec-pme.html">IA et Loi 25 au Québec</a>.</p>
+
+            <div class="callout">
+              <strong>À retenir</strong>
+              Un chatbot ne remplace pas une relation client de qualité&nbsp;: il l'amorce. Il transforme un visiteur silencieux en conversation, et une conversation en lead. Le reste — la confiance, la vente — reste profondément humain.
+            </div>
+
+            <hr>
+
+            <h2 id="commencer">Par où commencer (sans se tromper)</h2>
+            <ol>
+              <li><strong>Listez les 5 à 10 questions</strong> que vos clients posent le plus souvent. C'est la matière première de votre chatbot.</li>
+              <li><strong>Fixez un seul objectif clair</strong> : obtenir un courriel, déclencher une prise de rendez-vous, ou répondre à une question fréquente. Un chatbot focalisé convertit mieux.</li>
+              <li><strong>Prévoyez le transfert humain</strong> : un bouton « parler à quelqu'un » visible évite la frustration.</li>
+              <li><strong>Encadrez la Loi 25</strong> dès le départ (consentement, sécurité).</li>
+              <li><strong>Mesurez et ajustez</strong> : regardez les vraies conversations chaque semaine et corrigez ce qui bloque. Si votre site ne génère pas de leads, notre guide <a href="/blog/marketing-digital/site-sans-lead-6-correctifs-pme.html">site sans lead : 6 correctifs</a> complète cette démarche.</li>
+            </ol>
+
+            <hr>
+
+            <h2 id="faq">FAQ : chatbot et agent IA</h2>
+            <div class="article-faq">
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">1. Un chatbot va-t-il remplacer mon équipe ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Non. Un bon chatbot prend en charge le premier contact et les questions répétitives (horaires, services, disponibilités), et transfère à un humain dès que la conversation devient complexe ou sensible. Il libère votre équipe des tâches répétitives plutôt que de la remplacer.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">2. Quelle est la différence entre un chatbot classique et un agent IA ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Un chatbot classique suit un scénario fixe (boutons, réponses préprogrammées) : rapide à mettre en place mais rigide. Un agent IA, basé sur un modèle de langage, comprend des questions formulées librement et répond à partir de vos informations : plus naturel et flexible, mais à encadrer pour éviter les erreurs.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">3. Pourquoi répondre vite à un visiteur change autant les choses ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Parce que l'intérêt d'un prospect retombe très vite. Selon une étude de la <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" rel="noopener">Harvard Business Review</a> portant sur 2,24 millions de prospects, les entreprises qui tentent un contact dans l'heure ont près de 7 fois plus de chances de qualifier le prospect que celles qui attendent plus d'une heure. Un chatbot répond instantanément, 24/7.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">4. Un chatbot est-il conforme à la Loi 25 au Québec ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Il peut l'être, à condition d'être bien configuré : informer le visiteur, recueillir le consentement avant de collecter des renseignements personnels, sécuriser les données et ne conserver que le nécessaire. La conformité Loi 25 se prévoit dès la mise en place, pas après.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">5. Combien de temps pour mettre un chatbot en place ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Un chatbot simple à base de scénarios peut être lancé en quelques jours. Un agent IA nourri de vos informations (services, FAQ, processus de rendez-vous) demande un peu plus de préparation, mais reste un projet de quelques semaines pour une PME, pas un chantier.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">6. Par où commencer sans se tromper ?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Commencez par les 5 à 10 questions que vos clients posent le plus souvent et par un objectif clair (prendre un rendez-vous, obtenir un courriel). Un chatbot qui fait bien une chose convertit mieux qu'un chatbot qui tente tout. On élargit ensuite, en fonction des résultats.</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="cta-final">Votre prochain pas</h2>
+            <p>Un chatbot bien pensé, c'est un vendeur qui ne dort jamais et ne rate aucun visiteur. Mais comme tout bon outil, il doit être branché sur une stratégie. Un audit de 30 minutes suffit à voir s'il a sa place chez vous — et où il rapporterait le plus.</p>
+
+            <div class="article-cta-inline">
+              <p>Audit gratuit — 30 min, 12 points vérifiés, rapport sous 48 h.</p>
+              <a href="/contact.html?utm_source=blog&utm_medium=article&utm_campaign=chatbot-ia-site-web&utm_content=cta-final" class="btn btn--primary">Je veux mon audit gratuit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
+            </div>
+
+
+          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07);text-align:center">
+            <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:.75rem">Cet article vous a aidé ? Partagez-le :</p>
+            <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank','width=600,height=600');return false;" style="display:inline-flex;align-items:center;gap:.5rem;background:#0A66C2;color:#fff;font-size:.875rem;font-weight:600;padding:.5rem 1.25rem;border-radius:2rem;text-decoration:none;transition:opacity .2s" aria-label="Partager cet article sur LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> Partager sur LinkedIn</a>
+          </div>
+          </div><!-- /article-body -->
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Dans cet article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#probleme">Le problème que personne ne voit</a></li>
+                <li><a href="#role">Ce qu'un chatbot fait vraiment</a></li>
+                <li><a href="#types">Chatbot classique ou agent IA</a></li>
+                <li><a href="#loi25">Le chatbot et la Loi 25</a></li>
+                <li><a href="#commencer">Par où commencer</a></li>
+                <li><a href="#faq">FAQ (6 questions)</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Articles connexes</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/blog/ia-automatisation/automatiser-service-client-ia-pme.html">Automatiser son service client avec l'IA →</a></li>
+                <li><a href="/blog/ia-automatisation/ia-taches-repetitives-pme.html">5 tâches répétitives à déléguer →</a></li>
+                <li><a href="/blog/marketing-digital/tunnels-vente-pme-conversion.html">Tunnels de vente et conversion →</a></li>
+                <li><a href="/creation-site.html">Nos services création web →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+        <section style="background:var(--color-bg-alt);padding:2rem 0;margin-top:2rem">
+      <div class="container" style="max-width:720px">
+        <h2 style="font-size:1rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem">Articles connexes</h2>
+        <ul style="list-style:none;padding:0;margin:0">
+      <li style="border-top:1px solid rgba(255,255,255,.06);padding:.9rem 0">
+        <a href="/blog/ia-automatisation/automatiser-service-client-ia-pme.html" style="display:flex;align-items:center;gap:.6rem;color:var(--color-text);text-decoration:none;font-size:.92rem;font-weight:500;line-height:1.4;transition:color .2s" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-text)'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg> Automatiser son service client avec l'IA
+        </a>
+      </li>
+      <li style="border-top:1px solid rgba(255,255,255,.06);padding:.9rem 0">
+        <a href="/blog/ia-automatisation/ia-change-recherche-clients-pme.html" style="display:flex;align-items:center;gap:.6rem;color:var(--color-text);text-decoration:none;font-size:.92rem;font-weight:500;line-height:1.4;transition:color .2s" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-text)'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg> L'IA change la façon dont vos clients vous cherchent
+        </a>
+      </li>
+      <li style="border-top:1px solid rgba(255,255,255,.06);padding:.9rem 0">
+        <a href="/blog/marketing-digital/site-sans-lead-6-correctifs-pme.html" style="display:flex;align-items:center;gap:.6rem;color:var(--color-text);text-decoration:none;font-size:.92rem;font-weight:500;line-height:1.4;transition:color .2s" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-text)'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg> Site sans lead : 6 correctifs pour une PME
+        </a>
+      </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__logo">NEXTIWEB</p>
+        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+        <address class="footer__address">
+          Montréal, Québec, Canada<br>
+          <a href="tel:+15147910591">514-791-0591</a><br>
+          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
+        </address>
+        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB sur LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/secteurs.html">Secteurs</a></li>
+          <li><a href="/ressources.html">Ressources</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Services</h3>
+        <ul class="footer__list">
+          <li><a href="/creation-site.html">Création de sites web</a></li>
+          <li><a href="/seo.html">Référencement SEO</a></li>
+          <li><a href="/marketing-digital.html">Marketing digital</a></li>
+          <li><a href="/visibilite-ia.html">Visibilité IA</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Secteurs</h3>
+        <ul class="footer__list">
+          <li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li>
+          <li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li>
+          <li><a href="/avocats.html">Avocats</a></li>
+          <li><a href="/construction-renovation.html">Construction et rénovation</a></li>
+          <li><a href="/secteurs.html">Autres secteurs</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Zones desservies</h3>
+        <ul class="footer__list">
+          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
+          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
+          <li><a href="/zones-desservies/canada.html">Canada</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__studio">
+      <p>Curieux de voir notre méthode en action ? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explorez nos concepts sectoriels sur <strong>Nextiweb Studio</strong> →</a></p>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.min.js" defer></script>
+
+  <!-- Barre flottante bas droite -->
+  <div class="float-bar">
+    <a href="/contact.html" class="audit-pill" aria-label="Demander mon audit gratuit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+      Audit gratuit
+    </a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.article-faq__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.article-faq__item');
+        const isOpen = item.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    });
+  </script>
+
+</body>
+</html>

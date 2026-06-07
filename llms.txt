@@ -333,6 +333,32 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [Turn website visitors into dental appointments](https://nextiweb.ca/en/blog/dentists/convert-website-visitors-dental-appointments.html)
 - [All dental clinic guides](https://nextiweb.ca/en/blog/dentists/)
 
-## Version anglaise
+## English version — Services & global guides
 
-- [English version](https://nextiweb.ca/en/index.html)
+- [English homepage](https://nextiweb.ca/en/index.html)
+
+### Services (EN)
+- [Website design](https://nextiweb.ca/en/creation-site.html) — Business sites, landing pages, e-commerce, redesign
+- [SEO](https://nextiweb.ca/en/seo.html) — Local and technical search engine optimization
+- [Digital marketing](https://nextiweb.ca/en/marketing-digital.html) — Ads, content, social, conversion
+- [AI visibility](https://nextiweb.ca/en/visibilite-ia.html) — Get cited by AI answers (AEO / GEO)
+
+### Website design (EN)
+- [How does a website work](https://nextiweb.ca/en/blog/website-design/how-does-a-website-work.html)
+- [WordPress vs custom website](https://nextiweb.ca/en/blog/website-design/wordpress-vs-custom-website-sme.html)
+- [All website design guides](https://nextiweb.ca/en/blog/website-design/)
+
+### SEO (EN)
+- [Understanding SEO for SMEs](https://nextiweb.ca/en/blog/seo/understanding-seo-guide.html)
+- [Local SEO & Google Business Profile](https://nextiweb.ca/en/blog/seo/local-seo-google-business-profile.html)
+- [All SEO guides](https://nextiweb.ca/en/blog/seo/)
+
+### Digital marketing (EN)
+- [Digital marketing basics](https://nextiweb.ca/en/blog/digital-marketing/digital-marketing-basics-sme.html)
+- [Sales funnels & conversion](https://nextiweb.ca/en/blog/digital-marketing/sales-funnels-conversion-sme.html)
+- [All digital marketing guides](https://nextiweb.ca/en/blog/digital-marketing/)
+
+### AI & automation (EN)
+- [ChatGPT & AI tools for SMEs](https://nextiweb.ca/en/blog/ai-automation/chatgpt-ai-tools-sme-guide.html)
+- [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html)
+- [All AI & automation guides](https://nextiweb.ca/en/blog/ai-automation/)

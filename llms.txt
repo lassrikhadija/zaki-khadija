@@ -347,6 +347,7 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 ### Website design (EN)
 - [How does a website work](https://nextiweb.ca/en/blog/website-design/how-does-a-website-work.html)
 - [WordPress vs custom website](https://nextiweb.ca/en/blog/website-design/wordpress-vs-custom-website-sme.html)
+- [How much does a website cost in Quebec 2026 (real, sourced prices)](https://nextiweb.ca/en/blog/website-design/website-cost.html)
 - [All website design guides](https://nextiweb.ca/en/blog/website-design/)
 
 ### SEO (EN)
@@ -362,4 +363,6 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 ### AI & automation (EN)
 - [ChatGPT & AI tools for SMEs](https://nextiweb.ca/en/blog/ai-automation/chatgpt-ai-tools-sme-guide.html)
 - [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html)
+- [How to write good AI prompts: the business owner's guide](https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html)
+- [AI is changing how your customers search for you](https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html)
 - [All AI & automation guides](https://nextiweb.ca/en/blog/ai-automation/)

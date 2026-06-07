@@ -755,6 +755,7 @@
   <url>
     <loc>https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/website-design/website-cost.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html"/>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1609,6 +1610,7 @@
   <url>
     <loc>https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html"/>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1617,6 +1619,7 @@
   <url>
     <loc>https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html"/>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1745,6 +1748,33 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html"/>
     <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/website-design/website-cost.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/website-design/website-cost.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html"/>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html"/>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

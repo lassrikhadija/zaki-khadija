@@ -23,6 +23,20 @@ RewriteRule ^blog/website-design/?$ /blog/creation-site/ [R=301,L]
 RewriteRule ^blog/digital-marketing/?$ /blog/marketing-digital/ [R=301,L]
 RewriteRule ^blog/ai-automation/?$ /blog/ia-automatisation/ [R=301,L]
 
+# ---- 3b. Anciennes URLs WordPress → pages actuelles (301) ----
+RewriteRule ^agence-de-creation-de-site-e-commerce-performantes/?$ /creation-site.html [R=301,L]
+RewriteRule ^agence-de-creation-de-sites-internet-adaptes/?$ /creation-site.html [R=301,L]
+RewriteRule ^creation-de-site-internet-et-conception-de-site-web/?$ /creation-site.html [R=301,L]
+RewriteRule ^contactez-nous/?$ /contact.html [R=301,L]
+
+# ---- 3c. Consolidation Core Web Vitals (301) ----
+RewriteRule ^blog/seo/performance-core-web-vitals\.html$ /blog/seo/vitesse-technique-core-web-vitals.html [R=301,L]
+RewriteRule ^en/blog/seo/core-web-vitals-guide\.html$ /en/blog/seo/website-speed-technical-sme.html [R=301,L]
+RewriteRule ^en/blog/seo/performance-core-web-vitals\.html$ /en/blog/seo/website-speed-technical-sme.html [R=301,L]
+
+# ---- 3d. URLs mortes (410 Gone) ----
+RewriteRule ^feed/?$ - [R=410,L]
+
 # ---- 4. Page 404 personnalisée ----
 ErrorDocument 404 /404.html
 
@@ -66,6 +80,10 @@ ErrorDocument 404 /404.html
   Header always set X-XSS-Protection "1; mode=block"
   # Référent — ne pas envoyer l'URL complète vers des tiers
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # HSTS — force le navigateur à toujours utiliser HTTPS (1 an, sous-domaines inclus)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  # Permissions-Policy — désactive caméra / micro / géolocalisation par défaut
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   # Supprime la signature serveur
   Header unset Server
   Header unset X-Powered-By

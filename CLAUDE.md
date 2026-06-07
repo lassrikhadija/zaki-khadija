@@ -121,7 +121,7 @@ Industries | Resources | Blog | About | [CTA] Get My Free Audit
 - EN question : `method="POST"` → `action="/en/question-handler.php"` (`id="question-form"`)
 - **Anti-spam :** honeypot `name="bot-field"` (champ caché) vérifié par les handlers PHP — **ne pas supprimer**. `contact-handler.php` a un 2ᵉ honeypot `website_confirm`.
 - Config mail : `mail-config.php` / `smtp-mailer.php`.
-- **Note hébergement :** `_redirects` et `_headers` sont au format Netlify/Cloudflare Pages → **inactifs sur Apache/PHP**. Les vraies redirections 301/410 et en-têtes de sécurité doivent vivre dans `.htaccess`.
+- **Note hébergement :** `_redirects` et `_headers` sont au format Netlify/Cloudflare Pages → **inactifs sur Apache/PHP**. Les vraies redirections 301/410 et en-têtes de sécurité vivent dans `.htaccess` (migration faite le 6 juin 2026 : 301 WordPress + consolidation Core Web Vitals + 410 `/feed/` + HSTS + Permissions-Policy). `_redirects`/`_headers` conservés mais désormais redondants. **CSP non encore en place** (à ajouter avec tests pour ne pas bloquer GTM/GA/polices).
 
 ### GA4 — tracking conversion
 - `merci.html` et `en/merci.html` poussent chacun un event `generate_lead` via dataLayer :

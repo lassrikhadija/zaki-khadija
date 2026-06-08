@@ -142,7 +142,7 @@ NEXTIWEB helps Quebec osteopathy clinics improve their online visibility through
 
 ## SEO local pour avocats — Page secteur
 
-NEXTIWEB accompagne les cabinets d'avocats québécois sur 6 dimensions de visibilité numérique : Google Business Profile, avis Google, pages par spécialité et quartier, Schema LegalService, citations NAP et FAQ structurée pour les IA.
+NEXTIWEB accompagne les cabinets d'avocats québécois sur la visibilité numérique : Google Business Profile, avis Google, pages par spécialité et quartier, Schema LegalService, citations NAP, contenu éducatif, conformité déontologique (Barreau du Québec) et signaux d'autorité E-E-A-T pour Google et les IA.
 
 - [Services SEO pour avocats](https://nextiweb.ca/avocats.html)
 - [Local Pack Google pour avocats — guide pilier](https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html)
@@ -153,6 +153,9 @@ NEXTIWEB accompagne les cabinets d'avocats québécois sur 6 dimensions de visib
 - [Citations NAP répertoires juridiques Québec](https://nextiweb.ca/blog/avocats/citations-nap-repertoires-juridiques.html)
 - [Réduire les rendez-vous manqués (no-shows) dans un cabinet d'avocats](https://nextiweb.ca/blog/avocats/reduire-rendez-vous-manques-cabinet-avocat.html)
 - [Transformer les visiteurs du site en consultations juridiques](https://nextiweb.ca/blog/avocats/convertir-visiteurs-site-consultation-avocat.html)
+- [Contenu éducatif : répondre aux vraies questions des clients](https://nextiweb.ca/blog/avocats/contenu-educatif-questions-clients-avocat.html)
+- [Site d'avocat conforme aux règles de publicité du Barreau](https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html)
+- [E-E-A-T et autorité pour avocats (sujet YMYL)](https://nextiweb.ca/blog/avocats/eeat-autorite-expertise-avocat.html)
 - [Index guides avocats](https://nextiweb.ca/blog/avocats/)
 
 ## SEO local pour courtiers immobiliers — Page secteur
@@ -295,7 +298,7 @@ Website and conversion guides for Quebec home-services businesses: reduce missed
 
 ## Law Firm Guides — English
 
-NEXTIWEB helps Quebec law firms improve their online visibility through local SEO, Google Business Profile, client reviews, Schema LegalService, and AI citability.
+NEXTIWEB helps Quebec law firms improve their online visibility through local SEO, Google Business Profile, client reviews, Schema LegalService, educational content, professional-conduct compliance (Barreau du Québec) and E-E-A-T authority signals for Google and AI citability.
 
 - [SEO services for law firms](https://nextiweb.ca/en/lawyers.html)
 - [Google Local Pack for lawyers — pillar guide](https://nextiweb.ca/en/blog/lawyers/google-local-pack-lawyers.html)
@@ -306,6 +309,9 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 - [NAP citations legal directories Quebec](https://nextiweb.ca/en/blog/lawyers/nap-citations-legal-directories-quebec.html)
 - [Reduce no-shows (missed consultations) in a law firm](https://nextiweb.ca/en/blog/lawyers/reduce-no-shows-law-firm.html)
 - [Turn website visitors into legal consultations](https://nextiweb.ca/en/blog/lawyers/convert-website-visitors-legal-consultations.html)
+- [Educational content: answering real client questions](https://nextiweb.ca/en/blog/lawyers/educational-content-client-questions-law-firm.html)
+- [A compliant law firm website (Bar advertising rules)](https://nextiweb.ca/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html)
+- [E-E-A-T and authority for law firms (YMYL topic)](https://nextiweb.ca/en/blog/lawyers/eeat-authority-expertise-law-firm.html)
 - [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
 
 ## Dental Clinic Guides — English

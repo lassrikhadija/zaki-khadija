@@ -198,6 +198,15 @@
   <url><loc>https://nextiweb.ca/en/home-services.html</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/blog/avocats/</loc><lastmod>2026-06-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url>
+    <loc>https://nextiweb.ca/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html"/>

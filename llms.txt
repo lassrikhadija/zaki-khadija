@@ -232,18 +232,30 @@ Local SEO, website and conversion guides for Quebec restaurants and cafés, cove
 
 ## Guides spécialisés — Blog Traiteurs
 
-Guides web et conversion pour les traiteurs québécois : réduire les rendez-vous et dégustations manqués (réservation en ligne, rappels SMS/courriel, confirmation active, acompte de dégustation, formulaire d'événement) et transformer les visiteurs du site en demandes de soumission (bouton « Demander une soumission », photos de buffets, forfaits, options alimentaires, mobile d'abord). Conforme Loi 25.
+Guides SEO local, web et conversion pour les traiteurs québécois, couvrant deux intentions. Visibilité (être trouvé) : apparaître dans le top 3 Google / Local Pack et la shortlist de soumissions, fiche Google « zone desservie » (sans local public), avis Google d'organisateurs (peu nombreux mais décisifs), cohérence NAP, Schema FoodEstablishment et visibilité IA, pages par type d'événement (mariage, corporatif, funérailles) croisées avec les quartiers. Conversion : transformer les visiteurs en demandes de soumission et réduire les rendez-vous et dégustations manqués (réservation en ligne, rappels, confirmation, acompte de dégustation, formulaire d'événement). Conforme Loi 25.
 
-- [Réduire les rendez-vous et dégustations manqués chez un traiteur](https://nextiweb.ca/blog/traiteur/reduire-rendez-vous-degustations-manques-traiteur.html)
+- [Apparaître dans le top 3 Google (Local Pack) pour un traiteur — guide pilier](https://nextiweb.ca/blog/traiteur/local-pack-google-traiteur.html)
+- [Optimiser sa fiche Google Business Profile de traiteur (zone desservie)](https://nextiweb.ca/blog/traiteur/google-business-profile-traiteur.html)
+- [Avis Google pour traiteur : en obtenir plus et répondre](https://nextiweb.ca/blog/traiteur/avis-google-traiteur.html)
+- [Citations et cohérence NAP pour un traiteur](https://nextiweb.ca/blog/traiteur/citations-nap-traiteur.html)
+- [Schema FoodEstablishment et visibilité dans les IA pour un traiteur](https://nextiweb.ca/blog/traiteur/schema-traiteur-visibilite-ia.html)
+- [Pages par type d'événement et par quartier (traiteur)](https://nextiweb.ca/blog/traiteur/pages-evenement-quartier-seo-traiteur.html)
 - [Transformer les visiteurs du site en demandes de soumission](https://nextiweb.ca/blog/traiteur/convertir-visiteurs-site-soumission-traiteur.html)
+- [Réduire les rendez-vous et dégustations manqués chez un traiteur](https://nextiweb.ca/blog/traiteur/reduire-rendez-vous-degustations-manques-traiteur.html)
 - [Index guides traiteurs](https://nextiweb.ca/blog/traiteur/)
 
 ## Caterer Guides — English
 
-Website and conversion guides for Quebec caterers: reduce missed tastings and appointments (online booking, SMS/email reminders, active confirmation, tasting deposit, event form) and turn website visitors into quote requests ('Request a quote' button, buffet photos, packages, dietary options, mobile-first). Law 25 compliant.
+Local SEO, website and conversion guides for Quebec caterers, covering two intents. Visibility (get found): rank in Google's top 3 / Local Pack and the quote shortlist, "service area" Google listing (no public premises), planner Google reviews (few but decisive), NAP consistency, FoodEstablishment Schema and AI visibility, pages by event type (wedding, corporate, funeral) crossed with neighbourhoods. Conversion: turn visitors into quote requests and reduce missed tastings and appointments (online booking, reminders, confirmation, tasting deposit, event form). Law 25 compliant.
 
-- [Reducing missed tastings and appointments for caterers](https://nextiweb.ca/en/blog/caterer/reduce-no-shows-caterer.html)
+- [Rank in Google's top 3 (Local Pack) for a caterer — pillar guide](https://nextiweb.ca/en/blog/caterer/google-local-pack-caterer.html)
+- [Optimize your caterer's Google Business Profile (service area)](https://nextiweb.ca/en/blog/caterer/google-business-profile-caterer.html)
+- [Google reviews for caterers: get more and reply](https://nextiweb.ca/en/blog/caterer/google-reviews-caterer.html)
+- [Citations and NAP consistency for a caterer](https://nextiweb.ca/en/blog/caterer/nap-citations-caterer.html)
+- [FoodEstablishment Schema and AI visibility for a caterer](https://nextiweb.ca/en/blog/caterer/caterer-schema-ai-visibility.html)
+- [Pages by event type and by neighbourhood (caterer)](https://nextiweb.ca/en/blog/caterer/event-neighbourhood-pages-caterer.html)
 - [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/caterer/convert-website-visitors-caterer.html)
+- [Reducing missed tastings and appointments for caterers](https://nextiweb.ca/en/blog/caterer/reduce-no-shows-caterer.html)
 - [All caterer guides](https://nextiweb.ca/en/blog/caterer/)
 
 ## Guides spécialisés — Blog Fleuristes

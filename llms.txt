@@ -204,18 +204,30 @@ NEXTIWEB accompagne les restaurants et cafés québécois sur 6 leviers de visib
 
 ## Guides spécialisés — Blog Restaurants
 
-Guides web et conversion pour restaurants et cafés du Québec : réduire les réservations manquées (réservation en ligne, rappels SMS/courriel, confirmation, empreinte de carte sur créneaux sensibles, liste d'attente) et convertir les visiteurs en réservations (bouton « Réserver une table », menu en page web, photos de plats, options véganes/sans gluten/allergies). Conforme à la Loi 25.
+Guides SEO local, web et conversion pour restaurants et cafés du Québec, couvrant deux intentions. Visibilité (être trouvé) : apparaître dans le top 3 Google / Local Pack, optimiser la fiche Google Business Profile, obtenir et gérer les avis Google, cohérence NAP, Schema Restaurant et visibilité IA, pages par quartier. Conversion (faire réserver et tenir la table) : convertir les visiteurs en réservations et réduire les réservations manquées (réservation en ligne, rappels SMS/courriel, confirmation, empreinte de carte, liste d'attente). Conforme à la Loi 25.
 
-- [Réduire les réservations manquées (no-shows) dans un restaurant](https://nextiweb.ca/blog/restaurants/reduire-reservations-manquees-restaurant.html)
+- [Apparaître dans le top 3 Google (Local Pack) — guide pilier](https://nextiweb.ca/blog/restaurants/local-pack-google-restaurant.html)
+- [Optimiser sa fiche Google Business Profile de restaurant](https://nextiweb.ca/blog/restaurants/google-business-profile-restaurant.html)
+- [Avis Google : en obtenir plus et répondre aux négatifs](https://nextiweb.ca/blog/restaurants/avis-google-restaurant.html)
+- [Citations et cohérence NAP pour un restaurant](https://nextiweb.ca/blog/restaurants/citations-nap-restaurant.html)
+- [Schema Restaurant et visibilité dans les IA](https://nextiweb.ca/blog/restaurants/schema-restaurant-visibilite-ia.html)
+- [Pages par quartier : être trouvé secteur par secteur](https://nextiweb.ca/blog/restaurants/pages-quartier-seo-restaurant.html)
 - [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/restaurants/convertir-visiteurs-site-reservation-restaurant.html)
+- [Réduire les réservations manquées (no-shows) dans un restaurant](https://nextiweb.ca/blog/restaurants/reduire-reservations-manquees-restaurant.html)
 - [Index guides restaurants](https://nextiweb.ca/blog/restaurants/)
 
 ## Restaurant Guides — English
 
-Website and conversion guides for Quebec restaurants and cafés: reduce no-shows (online booking, SMS/email reminders, confirmation, card hold on sensitive slots, waitlist) and convert visitors into reservations ('Book a table' button, web-page menu, dish photos, vegan/gluten-free/allergy options). Law 25 compliant.
+Local SEO, website and conversion guides for Quebec restaurants and cafés, covering two intents. Visibility (get found): rank in Google's top 3 / Local Pack, optimize the Google Business Profile, earn and manage Google reviews, NAP consistency, Restaurant Schema and AI visibility, neighbourhood pages. Conversion (get booked and keep the table): convert visitors into reservations and reduce no-shows (online booking, SMS/email reminders, confirmation, card hold, waitlist). Law 25 compliant.
 
-- [Reduce no-shows (missed reservations) in a restaurant](https://nextiweb.ca/en/blog/restaurants/reduce-no-shows-restaurant.html)
+- [Rank in Google's top 3 (Local Pack) — pillar guide](https://nextiweb.ca/en/blog/restaurants/google-local-pack-restaurant.html)
+- [Optimize your restaurant's Google Business Profile](https://nextiweb.ca/en/blog/restaurants/google-business-profile-restaurant.html)
+- [Google reviews: get more and reply to negative ones](https://nextiweb.ca/en/blog/restaurants/google-reviews-restaurant.html)
+- [Citations and NAP consistency for a restaurant](https://nextiweb.ca/en/blog/restaurants/nap-citations-restaurant.html)
+- [Restaurant Schema and AI visibility](https://nextiweb.ca/en/blog/restaurants/restaurant-schema-ai-visibility.html)
+- [Neighbourhood pages: get found area by area](https://nextiweb.ca/en/blog/restaurants/neighbourhood-pages-restaurant.html)
 - [Turn website visitors into reservations](https://nextiweb.ca/en/blog/restaurants/convert-website-visitors-restaurant.html)
+- [Reduce no-shows (missed reservations) in a restaurant](https://nextiweb.ca/en/blog/restaurants/reduce-no-shows-restaurant.html)
 - [All restaurant guides](https://nextiweb.ca/en/blog/restaurants/)
 
 ## Guides spécialisés — Blog Traiteurs

@@ -260,16 +260,28 @@ Local SEO, website and conversion guides for Quebec caterers, covering two inten
 
 ## Guides spécialisés — Blog Fleuristes
 
-Guides web et conversion pour les fleuristes québécois : réduire les commandes abandonnées et les consultations manquées (commande en ligne simple, informations de livraison claires, heure limite, rappels, acompte sur gros contrats) et transformer les visiteurs du site en commandes (bouton « Commander », vraies photos de bouquets, catalogue par occasion, livraison limpide, mobile d'abord). Conforme Loi 25.
+Guides SEO local, web et conversion pour les fleuristes québécois. Visibilité : apparaître dans le top 3 Google (Local Pack) — le fleuriste est hybride, boutique ET zone de livraison ; optimiser la fiche Google Business Profile (adresse visible + livraison, catégorie, occasions, photos de compositions, Google Posts) ; obtenir et répondre aux avis (fraîcheur, beauté du bouquet, fiabilité de la livraison, double collecte boutique + après-livraison, Loi 25) ; cohérence NAP, y compris les réseaux de livraison de fleurs ; Schema Florist + Product (être cité par les IA « un fleuriste qui livre ce soir ») ; pages par occasion × quartier sans contenu dupliqué ni fausse boutique. Conversion : réduire les commandes abandonnées et consultations manquées (commande en ligne simple, livraison claire, heure limite, rappels, acompte) et transformer les visiteurs en commandes (vraies photos de bouquets, catalogue par occasion, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
 
+- [Apparaître dans le top 3 Google (Local Pack) pour un fleuriste — guide pilier](https://nextiweb.ca/blog/fleuriste/local-pack-google-fleuriste.html)
+- [Optimiser sa fiche Google Business Profile de fleuriste](https://nextiweb.ca/blog/fleuriste/google-business-profile-fleuriste.html)
+- [Avis Google : en obtenir plus et répondre (fleuriste)](https://nextiweb.ca/blog/fleuriste/avis-google-fleuriste.html)
+- [Citations et cohérence NAP pour un fleuriste](https://nextiweb.ca/blog/fleuriste/citations-nap-fleuriste.html)
+- [Schema Florist, Produit et visibilité dans les IA](https://nextiweb.ca/blog/fleuriste/schema-fleuriste-visibilite-ia.html)
+- [Pages par occasion et par quartier pour un fleuriste](https://nextiweb.ca/blog/fleuriste/pages-occasion-quartier-seo-fleuriste.html)
 - [Réduire les commandes abandonnées et consultations manquées chez un fleuriste](https://nextiweb.ca/blog/fleuriste/reduire-commandes-abandonnees-consultations-fleuriste.html)
 - [Transformer les visiteurs du site en commandes](https://nextiweb.ca/blog/fleuriste/convertir-visiteurs-site-commande-fleuriste.html)
 - [Index guides fleuristes](https://nextiweb.ca/blog/fleuriste/)
 
 ## Florist Guides — English
 
-Website and conversion guides for Quebec florists: reduce abandoned orders and missed consultations (simple online ordering, clear delivery info, cut-off time, reminders, deposit on big contracts) and turn website visitors into orders ('Order' button, real bouquet photos, catalogue by occasion, crystal-clear delivery, mobile-first). Law 25 compliant.
+Local SEO, web and conversion guides for Quebec florists. Visibility: rank in Google's top 3 (Local Pack) — the florist is hybrid, shop AND delivery area; optimize the Google Business Profile (visible address + delivery, category, occasions, arrangement photos, Google Posts); get and reply to reviews (freshness, beauty of the bouquet, delivery reliability, dual collection in-store + after delivery, Law 25); NAP consistency including flower delivery networks; Florist + Product Schema (get cited by AI for 'a florist that delivers tonight'); occasion × neighbourhood pages without duplicate content or a fake shop. Conversion: reduce abandoned orders and missed consultations (simple online ordering, clear delivery, cut-off time, reminders, deposit) and turn visitors into orders (real bouquet photos, catalogue by occasion, mobile-first). No invented figures and no ranking guarantee.
 
+- [Rank in Google's top 3 (Local Pack) when people look for a florist — pillar guide](https://nextiweb.ca/en/blog/florist/google-local-pack-florist.html)
+- [Optimize your florist's Google Business Profile](https://nextiweb.ca/en/blog/florist/google-business-profile-florist.html)
+- [Google reviews: get more and reply (florist)](https://nextiweb.ca/en/blog/florist/google-reviews-florist.html)
+- [Citations and NAP consistency for a florist](https://nextiweb.ca/en/blog/florist/nap-citations-florist.html)
+- [Florist Schema, Product and AI visibility](https://nextiweb.ca/en/blog/florist/florist-schema-ai-visibility.html)
+- [Occasion and neighbourhood pages for florists](https://nextiweb.ca/en/blog/florist/occasion-neighbourhood-pages-florist.html)
 - [Reducing abandoned orders and missed consultations for florists](https://nextiweb.ca/en/blog/florist/reduce-abandoned-orders-consultations-florist.html)
 - [Turning website visitors into orders](https://nextiweb.ca/en/blog/florist/convert-website-visitors-florist.html)
 - [All florist guides](https://nextiweb.ca/en/blog/florist/)

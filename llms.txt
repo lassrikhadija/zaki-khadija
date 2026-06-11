@@ -306,16 +306,28 @@ NEXTIWEB accompagne les entrepreneurs en construction et rénovation québécois
 
 ## Guides spécialisés — Blog Construction et rénovation
 
-Guides web et conversion pour les entrepreneurs québécois : réduire les rendez-vous d'estimation manqués (réservation en ligne, rappels SMS/courriel, confirmation active, formulaire de projet, pré-qualification, frais de déplacement) et transformer les visiteurs du site en demandes de soumission (bouton « Demander une soumission », licence RBQ et assurances visibles, réalisations avant/après, mobile d'abord). Conforme Loi 25.
+Guides SEO local, web et conversion pour les entrepreneurs québécois. Visibilité : apparaître dans le top 3 Google (Local Pack) — l'entrepreneur est un commerce de zone desservie (pas de vitrine) et l'achat est réfléchi (le client vérifie réalisations, licence RBQ, avis avant la soumission) ; optimiser la fiche Google Business Profile (zone desservie, bonne catégorie de métier, photos de réalisations avant/après, licence RBQ, Google Posts) ; obtenir et répondre aux avis (qualité, respect du budget et de l'échéancier, peu de chantiers donc chaque avis compte double, routine de fin de chantier, Loi 25) ; cohérence NAP incluant le numéro de licence RBQ exact partout ; Schema entrepreneur GeneralContractor / HomeAndConstructionBusiness (être cité par les IA « un entrepreneur fiable pour rénover une salle de bain ») ; pages par métier × quartier sans explosion combinatoire, contenu dupliqué ni fausse adresse. Conversion : réduire les rendez-vous d'estimation manqués (réservation en ligne, rappels, confirmation, formulaire de projet, pré-qualification) et transformer les visiteurs en demandes de soumission (licence RBQ et assurances visibles, réalisations avant/après, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
 
+- [Apparaître dans le top 3 Google (Local Pack) pour un entrepreneur — guide pilier](https://nextiweb.ca/blog/construction-renovation/local-pack-google-construction.html)
+- [Optimiser sa fiche Google Business Profile d'entrepreneur](https://nextiweb.ca/blog/construction-renovation/google-business-profile-construction.html)
+- [Obtenir plus d'avis Google et répondre (entrepreneur)](https://nextiweb.ca/blog/construction-renovation/avis-google-construction.html)
+- [Citations et cohérence NAP pour un entrepreneur](https://nextiweb.ca/blog/construction-renovation/citations-nap-construction.html)
+- [Schema entrepreneur (GeneralContractor) et visibilité dans les IA](https://nextiweb.ca/blog/construction-renovation/schema-construction-visibilite-ia.html)
+- [Pages par métier et par quartier pour un entrepreneur](https://nextiweb.ca/blog/construction-renovation/pages-metier-quartier-seo-construction.html)
 - [Réduire les rendez-vous d'estimation manqués en construction et rénovation](https://nextiweb.ca/blog/construction-renovation/reduire-rendez-vous-estimation-manques-construction.html)
 - [Transformer les visiteurs du site en demandes de soumission](https://nextiweb.ca/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html)
 - [Index guides construction et rénovation](https://nextiweb.ca/blog/construction-renovation/)
 
 ## Construction & Renovation Guides — English
 
-Website and conversion guides for Quebec contractors: reduce missed estimate appointments (online booking, SMS/email reminders, active confirmation, project form, pre-qualification, travel fees) and turn website visitors into quote requests ('Request a quote' button, visible RBQ licence and insurance, before/after projects, mobile-first). Law 25 compliant.
+Local SEO, web and conversion guides for Quebec contractors. Visibility: rank in Google's top 3 (Local Pack) — the contractor is a service-area business (no storefront) and the purchase is considered (the client checks projects, RBQ licence, reviews before the quote); optimize the Google Business Profile (service area, right trade category, before/after project photos, RBQ licence, Google Posts); get and reply to reviews (quality, respect of budget and schedule, few jobs so each review counts double, end-of-job routine, Law 25); NAP consistency including the accurate RBQ licence number everywhere; GeneralContractor / HomeAndConstructionBusiness Schema (get cited by AI for 'a reliable contractor to renovate a bathroom'); trade × neighbourhood pages without combinatorial explosion, duplicate content or a fake address. Conversion: reduce missed estimate appointments (online booking, reminders, confirmation, project form, pre-qualification) and turn visitors into quote requests (visible RBQ licence and insurance, before/after projects, mobile-first). No invented figures and no ranking guarantee.
 
+- [Rank in Google's top 3 (Local Pack) when people look for a contractor — pillar guide](https://nextiweb.ca/en/blog/construction-renovation/google-local-pack-construction.html)
+- [Optimize your contractor's Google Business Profile](https://nextiweb.ca/en/blog/construction-renovation/google-business-profile-construction.html)
+- [Google reviews: get more and reply (contractor)](https://nextiweb.ca/en/blog/construction-renovation/google-reviews-construction.html)
+- [Citations and NAP consistency for a contractor](https://nextiweb.ca/en/blog/construction-renovation/nap-citations-construction.html)
+- [Contractor Schema (GeneralContractor) and AI visibility](https://nextiweb.ca/en/blog/construction-renovation/construction-schema-ai-visibility.html)
+- [Pages by trade and by neighbourhood for contractors](https://nextiweb.ca/en/blog/construction-renovation/trade-neighbourhood-pages-construction.html)
 - [Reducing missed estimate appointments in construction and renovation](https://nextiweb.ca/en/blog/construction-renovation/reduce-missed-estimate-appointments-construction.html)
 - [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/construction-renovation/convert-website-visitors-construction.html)
 - [All construction and renovation guides](https://nextiweb.ca/en/blog/construction-renovation/)

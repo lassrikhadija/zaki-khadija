@@ -404,6 +404,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/courtiers-immobiliers/pages-quartier-seo-courtier-immobilier.html"/>
     <lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nextiweb.ca/blog/courtiers-immobiliers/combien-coute-site-web-courtier-immobilier.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/courtiers-immobiliers/combien-coute-site-web-courtier-immobilier.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website-cost.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/courtiers-immobiliers/combien-coute-site-web-courtier-immobilier.html"/>
+    <lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website-cost.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/courtiers-immobiliers/combien-coute-site-web-courtier-immobilier.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website-cost.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/blog/courtiers-immobiliers/combien-coute-site-web-courtier-immobilier.html"/>
+    <lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
   <url><loc>https://nextiweb.ca/en/blog/real-estate-brokers/local-seo-real-estate-broker.html</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website.html</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nextiweb.ca/en/blog/real-estate-brokers/google-facebook-ads-real-estate-broker.html</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -821,6 +835,26 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/seo-montreal.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/seo-montreal.html"/>
     <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Local: SEO Laval -->
+  <url>
+    <loc>https://nextiweb.ca/local/seo-laval.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/seo-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/seo-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/seo-laval.html"/>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/local/seo-laval.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/local/seo-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/local/seo-laval.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/local/seo-laval.html"/>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

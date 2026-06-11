@@ -23,10 +23,11 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 - [Visibilité IA (GEO/AEO)](https://nextiweb.ca/visibilite-ia.html) — Optimisation pour les moteurs de réponse IA
 - [Services complets](https://nextiweb.ca/services.html)
 
-## Pages locales Montréal
+## Pages locales — grande région de Montréal
 
 - [Création de site web Montréal](https://nextiweb.ca/local/creation-site-web-montreal.html)
 - [SEO Montréal](https://nextiweb.ca/local/seo-montreal.html)
+- [SEO Laval — PME et commerces de proximité (recherche par quartier de l'Île Jésus, marché moins saturé que Montréal)](https://nextiweb.ca/local/seo-laval.html)
 
 ## Blog — Guides pour PME
 
@@ -172,6 +173,7 @@ Guides web, SEO, site et marketing pour courtiers immobiliers du Québec : réf�
 - [Fiche Google Business Profile du courtier : l'actif qui vous suit de bannière en bannière (zone desservie, OACIQ)](https://nextiweb.ca/blog/courtiers-immobiliers/google-business-profile-courtier-immobilier.html)
 - [Citations et cohérence NAP du courtier : nom, permis et bannière identiques partout (Centris, realtor.ca)](https://nextiweb.ca/blog/courtiers-immobiliers/citations-nap-courtier-immobilier.html)
 - [Pages de quartier du courtier : transformer l'expertise locale en visibilité (sans contenu dupliqué ni fausse adresse)](https://nextiweb.ca/blog/courtiers-immobiliers/pages-quartier-seo-courtier-immobilier.html)
+- [Combien coûte un site web de courtier immobilier : les vrais facteurs de prix (double parcours, estimation, leads, OACIQ)](https://nextiweb.ca/blog/courtiers-immobiliers/combien-coute-site-web-courtier-immobilier.html)
 - [Site web de courtier immobilier : en avez-vous vraiment besoin ?](https://nextiweb.ca/blog/courtiers-immobiliers/site-web-courtier-immobilier.html)
 - [Publicité Google et Facebook pour courtier immobilier : par où commencer](https://nextiweb.ca/blog/courtiers-immobiliers/publicite-google-facebook-courtier-immobilier.html)
 - [Relancer et suivre ses leads : ne plus laisser dormir un prospect (courtier immobilier)](https://nextiweb.ca/blog/courtiers-immobiliers/relancer-suivre-leads-courtier-immobilier.html)
@@ -191,6 +193,7 @@ Website, SEO, site and marketing guides for Quebec real estate brokers: local SE
 - [The broker's Google Business Profile: the asset that follows you from banner to banner (service area, OACIQ)](https://nextiweb.ca/en/blog/real-estate-brokers/google-business-profile-real-estate-broker.html)
 - [Citations and NAP consistency for brokers: name, licence and banner identical everywhere (Centris, realtor.ca)](https://nextiweb.ca/en/blog/real-estate-brokers/nap-citations-real-estate-broker.html)
 - [The broker's neighbourhood pages: turn local expertise into visibility (no duplicate content, no fake address)](https://nextiweb.ca/en/blog/real-estate-brokers/neighbourhood-pages-real-estate-broker-seo.html)
+- [How much does a real estate broker website cost: the real price drivers (dual path, valuation, leads, OACIQ)](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website-cost.html)
 - [Real estate broker website: do you really need one?](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-website.html)
 - [Google and Facebook ads for real estate brokers: where to start](https://nextiweb.ca/en/blog/real-estate-brokers/google-facebook-ads-real-estate-broker.html)
 - [Following up and nurturing your leads: stop letting a prospect go cold (real estate broker)](https://nextiweb.ca/en/blog/real-estate-brokers/follow-up-leads-real-estate-broker.html)

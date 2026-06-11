@@ -340,16 +340,28 @@ NEXTIWEB accompagne les entreprises de services à domicile québécoises sur 6 
 
 ## Guides spécialisés — Blog Services à domicile
 
-Guides web et conversion pour les entreprises de services à domicile québécoises : réduire les rendez-vous manqués (réservation en ligne, rappels SMS/courriel, confirmation active, formulaire de détails d'accès, politique d'annulation, services récurrents) et transformer les visiteurs du site en réservations (bouton « Réserver », signaux de confiance assurance/cautionnement/personnel vérifié, zones desservies, avis, mobile d'abord). Conforme Loi 25.
+Guides SEO local, web et conversion pour les entreprises de services à domicile québécoises (plombier, électricien, ménage, serrurier, déneigement, réparation…). Visibilité : apparaître dans le top 3 Google (Local Pack) — le prestataire est un commerce de zone desservie (pas de vitrine) et la décision est rapide (urgence) et fondée sur la confiance (on laisse entrer un inconnu chez soi) ; optimiser la fiche Google Business Profile (zone desservie, catégorie, liste de services, disponibilité d'urgence, mention « assuré », Google Posts) ; obtenir et répondre aux avis (ponctualité, sérieux, propreté, respect du domicile, interventions fréquentes donc flux d'avis facile, Loi 25) ; cohérence NAP incluant les plateformes de mise en relation ; Schema par métier (Plumber, Electrician…) ou LocalBusiness (être cité par les IA « un plombier fiable et disponible ce soir ») ; pages par service × quartier sans explosion combinatoire, contenu dupliqué ni fausse adresse. Conversion : réduire les rendez-vous manqués (réservation en ligne, rappels, confirmation, détails d'accès, services récurrents) et transformer les visiteurs en réservations (signaux de confiance assurance/cautionnement/personnel vérifié, zones desservies, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
 
+- [Apparaître dans le top 3 Google (Local Pack) pour un service à domicile — guide pilier](https://nextiweb.ca/blog/services-domicile/local-pack-google-services-domicile.html)
+- [Optimiser sa fiche Google Business Profile de service à domicile](https://nextiweb.ca/blog/services-domicile/google-business-profile-services-domicile.html)
+- [Obtenir plus d'avis Google et répondre (service à domicile)](https://nextiweb.ca/blog/services-domicile/avis-google-services-domicile.html)
+- [Citations et cohérence NAP pour un service à domicile](https://nextiweb.ca/blog/services-domicile/citations-nap-services-domicile.html)
+- [Schema et visibilité dans les IA pour un service à domicile](https://nextiweb.ca/blog/services-domicile/schema-services-domicile-visibilite-ia.html)
+- [Pages par service et par quartier pour un service à domicile](https://nextiweb.ca/blog/services-domicile/pages-service-quartier-seo-services-domicile.html)
 - [Réduire les rendez-vous manqués en services à domicile](https://nextiweb.ca/blog/services-domicile/reduire-rendez-vous-manques-services-domicile.html)
 - [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/services-domicile/convertir-visiteurs-site-reservation-services-domicile.html)
 - [Index guides services à domicile](https://nextiweb.ca/blog/services-domicile/)
 
 ## Home Services Guides — English
 
-Website and conversion guides for Quebec home-services businesses: reduce missed appointments (online booking, SMS/email reminders, active confirmation, access details form, cancellation policy, recurring services) and turn website visitors into bookings ('Book now' button, trust signals insurance/bonding/vetted staff, service areas, reviews, mobile-first). Law 25 compliant.
+Local SEO, web and conversion guides for Quebec home-services businesses (plumber, electrician, cleaning, locksmith, snow removal, repair…). Visibility: rank in Google's top 3 (Local Pack) — the provider is a service-area business (no storefront) and the decision is fast (urgency) and trust-based (you let a stranger into your home); optimize the Google Business Profile (service area, category, list of services, emergency availability, 'insured' mention, Google Posts); get and reply to reviews (punctuality, seriousness, cleanliness, respect for the home, frequent interventions so an easy review flow, Law 25); NAP consistency including matchmaking platforms; trade Schema (Plumber, Electrician…) or LocalBusiness (get cited by AI for 'a reliable plumber available tonight'); service × neighbourhood pages without combinatorial explosion, duplicate content or a fake address. Conversion: reduce missed appointments (online booking, reminders, confirmation, access details, recurring services) and turn visitors into bookings (trust signals insurance/bonding/vetted staff, service areas, mobile-first). No invented figures and no ranking guarantee.
 
+- [Rank in Google's top 3 (Local Pack) when people look for a home service — pillar guide](https://nextiweb.ca/en/blog/home-services/google-local-pack-home-services.html)
+- [Optimize your home-services Google Business Profile](https://nextiweb.ca/en/blog/home-services/google-business-profile-home-services.html)
+- [Google reviews: get more and reply (home service)](https://nextiweb.ca/en/blog/home-services/google-reviews-home-services.html)
+- [Citations and NAP consistency for a home service](https://nextiweb.ca/en/blog/home-services/nap-citations-home-services.html)
+- [Schema and AI visibility for a home service](https://nextiweb.ca/en/blog/home-services/home-services-schema-ai-visibility.html)
+- [Pages by service and by neighbourhood for home services](https://nextiweb.ca/en/blog/home-services/service-neighbourhood-pages-home-services.html)
 - [Reducing missed appointments in home services](https://nextiweb.ca/en/blog/home-services/reduce-missed-appointments-home-services.html)
 - [Turning website visitors into bookings](https://nextiweb.ca/en/blog/home-services/convert-website-visitors-home-services.html)
 - [All home services guides](https://nextiweb.ca/en/blog/home-services/)

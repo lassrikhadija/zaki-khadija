@@ -306,35 +306,35 @@
   .fb-audit{background:var(--grad);color:#04150c}
   .fb-wa{background:#25d366;color:#fff;width:46px;padding:0;justify-content:center}
 
-  /* Démos showcase */
-  .demos{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
-  .demo{display:block;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;position:relative;transition:transform .4s var(--ease),border-color .4s,box-shadow .4s}
-  .demo:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 30px 60px -30px rgba(0,230,118,.45)}
-  .demo__frame{position:relative;background:#0a0c0e}
-  .demo__badge{position:absolute;top:.7rem;right:.7rem;z-index:2;background:var(--grad);color:#04150c;font-family:var(--display);font-weight:700;font-size:.68rem;letter-spacing:.04em;padding:.3rem .7rem;border-radius:999px}
-  .demo__bar{display:flex;align-items:center;gap:.4rem;padding:.55rem .8rem;border-bottom:1px solid var(--border);background:rgba(255,255,255,.02)}
-  .demo__dot{width:9px;height:9px;border-radius:50%;background:#2a2f33;flex-shrink:0}
-  .demo__url{margin-left:.5rem;font-size:.7rem;color:var(--muted-2);font-family:var(--display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .demo__shot{display:block;width:100%;aspect-ratio:1280/832;object-fit:cover;object-position:top center;transition:transform .6s var(--ease)}
-  .demo:hover .demo__shot{transform:scale(1.05)}
-  .demo__body{padding:1.2rem 1.3rem}
-  .demo__tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
-  .demo__name{font-family:var(--display);font-weight:600;font-size:1.12rem;margin-bottom:.55rem}
-  .demo__desc{color:var(--muted);font-size:.95rem;margin-bottom:1rem}
-  .demo__link{display:inline-flex;align-items:center;gap:.4rem;color:var(--green);font-weight:600;font-size:.92rem;font-family:var(--display)}
-  .demo:hover .demo__link .arr{transform:translateX(4px)}
-  .demo .arr{transition:transform .3s var(--ease)}
-  .demo--feat{grid-column:1 / -1;display:grid;grid-template-columns:1.25fr .75fr;align-items:stretch}
-  .demo--feat .demo__frame{border-right:1px solid var(--border)}
-  .demo--feat .demo__body{display:flex;flex-direction:column;justify-content:center;padding:2.2rem}
-  .demo--feat .demo__name{font-size:1.6rem}
-  .demos__note{text-align:center;color:var(--muted-2);font-size:.85rem;margin-top:1.5rem}
-  @media(max-width:860px){.demos{grid-template-columns:repeat(2,1fr)}.demo--feat{grid-template-columns:1fr}.demo--feat .demo__frame{border-right:none;border-bottom:1px solid var(--border)}}
-  @media(max-width:680px){.demos{grid-template-columns:1fr}}
+  /* Démos — showcase navigateur + téléphone (style nextiwebstudio) */
+  .showcase__tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;margin-bottom:2.4rem}
+  .stab{font-family:var(--display);font-weight:600;font-size:.88rem;padding:.5rem 1.05rem;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;transition:color .2s,background .2s,border-color .2s}
+  .stab:hover{color:var(--text);border-color:var(--border-strong)}
+  .stab.is-active{background:var(--grad);color:#04150c;border-color:transparent;font-weight:700}
+  .showcase{position:relative;display:block;max-width:900px;margin:0 auto;cursor:pointer;padding-bottom:26px}
+  .browser{border-radius:14px;overflow:hidden;border:1px solid var(--border-strong);background:#0d0f12;box-shadow:0 50px 90px -40px rgba(0,0,0,.9);transition:transform .4s var(--ease),box-shadow .4s}
+  .showcase:hover .browser{transform:translateY(-5px);box-shadow:0 62px 110px -42px rgba(0,230,118,.32)}
+  .browser__bar{display:flex;align-items:center;gap:.5rem;padding:.7rem 1rem;background:#15181d;border-bottom:1px solid var(--border)}
+  .bdot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+  .bdot:nth-child(1){background:#ff5f57}
+  .bdot:nth-child(2){background:#febc2e}
+  .bdot:nth-child(3){background:#28c840}
+  .browser__url{margin:0 auto;font-family:var(--display);font-size:.8rem;color:var(--muted);background:#0d0f12;padding:.32rem 1.4rem;border-radius:999px;border:1px solid var(--border);max-width:72%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .browser__img{display:block;width:100%;height:auto;background:#0d0f12}
+  .phone{position:absolute;right:-6px;bottom:0;width:clamp(116px,17vw,160px);border:7px solid #16191e;border-radius:26px;overflow:hidden;background:#0b0d10;box-shadow:0 30px 55px -18px rgba(0,0,0,.9);z-index:2;transition:transform .4s var(--ease)}
+  .showcase:hover .phone{transform:translateY(-5px)}
+  .phone__notch{position:absolute;top:7px;left:50%;transform:translateX(-50%);width:38px;height:5px;border-radius:3px;background:rgba(255,255,255,.25);z-index:3}
+  .phone__img{display:block;width:100%;height:auto;background:#0b0d10}
+  .showcase__cta{position:absolute;top:4rem;right:1.1rem;display:inline-flex;align-items:center;gap:.4rem;background:var(--grad);color:#04150c;font-family:var(--display);font-weight:700;font-size:.82rem;padding:.5rem 1rem;border-radius:999px;box-shadow:0 8px 20px -6px rgba(0,230,118,.6);opacity:0;transform:translateY(-6px);transition:opacity .3s,transform .3s var(--ease);z-index:4;pointer-events:none}
+  .showcase:hover .showcase__cta{opacity:1;transform:none}
+  .showcase__name{text-align:center;color:var(--muted);font-size:.96rem;margin-top:1.5rem}
+  .showcase__name strong{color:var(--text);font-family:var(--display)}
+  .demos__note{text-align:center;color:var(--muted-2);font-size:.85rem;margin-top:1.1rem}
+  @media(max-width:560px){.phone{width:102px;right:2px;border-width:5px}.showcase__cta{display:none}.browser__url{max-width:60%;font-size:.7rem}}
 
   /* Reveal */
-  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-  .reveal.in{opacity:1;transform:none}
+  .reveal.in{opacity:1!important;transform:none!important}
+  html.has-js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 
   /* ---------- Responsive ---------- */
   @media(max-width:980px){
@@ -625,84 +625,30 @@
           <p>Six sites de démonstration, entièrement cliquables, conçus par NEXTIWEB&nbsp;— un par secteur. Explorez-les comme un vrai client le ferait.</p>
         </div>
 
-        <div class="demos reveal">
-          <!-- Vedette : dentaire -->
-          <a class="demo demo--feat" href="https://soins-services.nextiwebstudio.ca/" target="_blank" rel="noopener">
-            <div class="demo__frame">
-              <span class="demo__badge">Démo en vedette</span>
-              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">soins-services.nextiwebstudio.ca</span></div>
-              <img class="demo__shot" src="/assets/img/demos/demo-site-clinique-dentaire-montreal.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site web pour clinique dentaire à Montréal conçue par NEXTIWEB — Studio Dentaire Belmont">
-            </div>
-            <div class="demo__body">
-              <span class="demo__tag">🦷 Cliniques dentaires</span>
-              <h3 class="demo__name">Studio Dentaire Belmont</h3>
-              <p class="demo__desc">Prise de rendez-vous en ligne, nouveaux patients, avis Google bien gérés — un site pensé pour remplir l'agenda, dans le respect des règles de l'Ordre.</p>
-              <span class="demo__link">Explorer la démo dentaire <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-            </div>
-          </a>
-
-          <a class="demo" href="https://restaurant-cafe.nextiwebstudio.ca/" target="_blank" rel="noopener">
-            <div class="demo__frame">
-              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">restaurant-cafe.nextiwebstudio.ca</span></div>
-              <img class="demo__shot" src="/assets/img/demos/demo-site-restaurant-cafe.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site web pour restaurant et café conçue par NEXTIWEB — Kintsugi Sushi">
-            </div>
-            <div class="demo__body">
-              <span class="demo__tag">Restaurant &amp; café</span>
-              <h3 class="demo__name">Kintsugi Sushi</h3>
-              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-            </div>
-          </a>
-
-          <a class="demo" href="https://construction-renovation.nextiwebstudio.ca/" target="_blank" rel="noopener">
-            <div class="demo__frame">
-              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">construction-renovation.nextiwebstudio.ca</span></div>
-              <img class="demo__shot" src="/assets/img/demos/demo-site-construction-renovation.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site web pour entreprise de construction et rénovation conçue par NEXTIWEB — Aqua Élite">
-            </div>
-            <div class="demo__body">
-              <span class="demo__tag">Construction &amp; rénovation</span>
-              <h3 class="demo__name">Aqua Élite</h3>
-              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-            </div>
-          </a>
-
-          <a class="demo" href="https://art-artisanat.nextiwebstudio.ca/" target="_blank" rel="noopener">
-            <div class="demo__frame">
-              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">art-artisanat.nextiwebstudio.ca</span></div>
-              <img class="demo__shot" src="/assets/img/demos/demo-site-artisan-chocolaterie.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site web pour artisan chocolatier et boutique conçue par NEXTIWEB — Maison Cacao">
-            </div>
-            <div class="demo__body">
-              <span class="demo__tag">Artisan &amp; boutique</span>
-              <h3 class="demo__name">Maison Cacao</h3>
-              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-            </div>
-          </a>
-
-          <a class="demo" href="https://e-commerce.nextiwebstudio.ca/" target="_blank" rel="noopener">
-            <div class="demo__frame">
-              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">e-commerce.nextiwebstudio.ca</span></div>
-              <img class="demo__shot" src="/assets/img/demos/demo-site-ecommerce-marque-locale.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site web e-commerce pour bijouterie et marque locale québécoise conçue par NEXTIWEB — Maison Aurélia">
-            </div>
-            <div class="demo__body">
-              <span class="demo__tag">Bijouterie &amp; e-commerce</span>
-              <h3 class="demo__name">Maison Aurélia</h3>
-              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-            </div>
-          </a>
-
-          <a class="demo" href="https://service-domicile.nextiwebstudio.ca/" target="_blank" rel="noopener">
-            <div class="demo__frame">
-              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">service-domicile.nextiwebstudio.ca</span></div>
-              <img class="demo__shot" src="/assets/img/demos/demo-site-services-domicile.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site web pour entreprise de services à domicile et intervention d'urgence conçue par NEXTIWEB — Phénix">
-            </div>
-            <div class="demo__body">
-              <span class="demo__tag">Services à domicile</span>
-              <h3 class="demo__name">Phénix</h3>
-              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-            </div>
-          </a>
+        <div class="showcase__tabs reveal" role="tablist" aria-label="Choisir un secteur de démo">
+          <button class="stab is-active" type="button" data-i="0">🦷 Dentaire</button>
+          <button class="stab" type="button" data-i="1">Restaurant</button>
+          <button class="stab" type="button" data-i="2">Construction</button>
+          <button class="stab" type="button" data-i="3">Artisan</button>
+          <button class="stab" type="button" data-i="4">E-commerce</button>
+          <button class="stab" type="button" data-i="5">Services</button>
         </div>
 
-        <p class="demos__note reveal">Démos et concepts conçus par NEXTIWEB — exemples de méthode, pas des sites livrés à des clients.</p>
+        <a class="showcase reveal" id="showcase" href="https://soins-services.nextiwebstudio.ca/" target="_blank" rel="noopener" aria-label="Ouvrir la démo Studio Dentaire Belmont dans une fenêtre">
+          <div class="browser">
+            <div class="browser__bar"><span class="bdot"></span><span class="bdot"></span><span class="bdot"></span><span class="browser__url" id="scUrl">soins-services.nextiwebstudio.ca</span></div>
+            <img class="browser__img" id="scDesktop" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-desktop.webp" width="1366" height="854" decoding="async" alt="Aperçu desktop de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
+          </div>
+          <div class="phone">
+            <span class="phone__notch"></span>
+            <img class="phone__img" id="scMobile" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-mobile.webp" width="390" height="844" decoding="async" alt="Aperçu mobile de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
+          </div>
+          <span class="showcase__cta" id="scCta">Ouvrir la démo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+
+        <p class="showcase__name reveal" id="scName"><strong>Studio Dentaire Belmont</strong> · démo de site pour clinique dentaire</p>
+
+        <p class="demos__note reveal">Démos et concepts conçus par NEXTIWEB — exemples de méthode, pas des sites livrés à des clients. Les démos s'ouvrent dans une fenêtre, sans quitter cette page.</p>
         <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux la mienne — audit gratuit</a></div>
       </div>
     </section>
@@ -778,13 +724,17 @@
     t.addEventListener('click',open);c.addEventListener('click',close);s.addEventListener('click',close);
     d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
 
-    // Reveal on scroll
-    if('IntersectionObserver' in window && !mq){
-      var io=new IntersectionObserver(function(es){
-        es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-      },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
-      document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-    } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
+    // Reveal on scroll — FAIL-OPEN : si le JS plante, le contenu reste visible (pas de page blanche)
+    function nwRevealAll(){ document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
+    try{
+      if('IntersectionObserver' in window && !mq){
+        document.documentElement.classList.add('has-js'); // active le masquage seulement maintenant
+        var io=new IntersectionObserver(function(es){
+          es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+        },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+        document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+      } else { nwRevealAll(); }
+    }catch(err){ nwRevealAll(); }
 
     // FAQ accordion
     document.querySelectorAll('.faq__item').forEach(function(item){
@@ -818,6 +768,46 @@
         var r=hero.getBoundingClientRect();
         spot.style.left=(e.clientX-r.left)+'px';spot.style.top=(e.clientY-r.top)+'px';
       },{passive:true});
+    }
+
+    // Showcase démos : onglets qui changent la démo affichée (navigateur + téléphone)
+    var DEMOS=[
+      {n:'Studio Dentaire Belmont',t:'démo de site pour clinique dentaire',u:'soins-services.nextiwebstudio.ca',h:'https://soins-services.nextiwebstudio.ca/',d:'demo-site-clinique-dentaire-montreal-desktop',m:'demo-site-clinique-dentaire-montreal-mobile'},
+      {n:'Kintsugi Sushi',t:'démo de site pour restaurant & café',u:'restaurant-cafe.nextiwebstudio.ca',h:'https://restaurant-cafe.nextiwebstudio.ca/',d:'demo-site-restaurant-cafe-desktop',m:'demo-site-restaurant-cafe-mobile'},
+      {n:'Aqua Élite',t:'démo de site pour construction & rénovation',u:'construction-renovation.nextiwebstudio.ca',h:'https://construction-renovation.nextiwebstudio.ca/',d:'demo-site-construction-renovation-desktop',m:'demo-site-construction-renovation-mobile'},
+      {n:'Maison Cacao',t:'démo de site pour artisan & boutique',u:'art-artisanat.nextiwebstudio.ca',h:'https://art-artisanat.nextiwebstudio.ca/',d:'demo-site-artisan-chocolaterie-desktop',m:'demo-site-artisan-chocolaterie-mobile'},
+      {n:'Maison Aurélia',t:'démo de site e-commerce / bijouterie',u:'e-commerce.nextiwebstudio.ca',h:'https://e-commerce.nextiwebstudio.ca/',d:'demo-site-ecommerce-marque-locale-desktop',m:'demo-site-ecommerce-marque-locale-mobile'},
+      {n:'Phénix',t:'démo de site pour services à domicile',u:'service-domicile.nextiwebstudio.ca',h:'https://service-domicile.nextiwebstudio.ca/',d:'demo-site-services-domicile-desktop',m:'demo-site-services-domicile-mobile'}
+    ];
+    var sc=document.getElementById('showcase');
+    if(sc){
+      var scD=document.getElementById('scDesktop'),scM=document.getElementById('scMobile'),
+          scU=document.getElementById('scUrl'),scN=document.getElementById('scName'),
+          tabs=document.querySelectorAll('.stab');
+      function setDemo(i){
+        var x=DEMOS[i];
+        scD.src='/assets/img/demos/'+x.d+'.webp';
+        scM.src='/assets/img/demos/'+x.m+'.webp';
+        scD.alt='Aperçu desktop de la démo de site web '+x.n+' conçue par NEXTIWEB';
+        scM.alt='Aperçu mobile de la démo de site web '+x.n+' conçue par NEXTIWEB';
+        scU.textContent=x.u;
+        scN.innerHTML='<strong>'+x.n+'</strong> · '+x.t;
+        sc.setAttribute('href',x.h);
+        sc.setAttribute('aria-label','Ouvrir la démo '+x.n+' dans une fenêtre');
+        tabs.forEach(function(t,j){ t.classList.toggle('is-active',j===i); t.setAttribute('aria-selected',j===i?'true':'false'); });
+      }
+      tabs.forEach(function(t){ t.addEventListener('click',function(){ setDemo(+t.getAttribute('data-i')); }); });
+      // Ouvre la démo dans une fenêtre popup — la page reste derrière (pas de fuite)
+      sc.addEventListener('click',function(e){
+        e.preventDefault();
+        var url=this.getAttribute('href');
+        var w=Math.min(1320,(screen.availWidth||1320)-60);
+        var h=Math.min(880,(screen.availHeight||880)-60);
+        var left=Math.max(0,((screen.availWidth||1320)-w)/2);
+        var top=Math.max(0,((screen.availHeight||880)-h)/2);
+        var win=window.open(url,'nw-demo','noopener,width='+w+',height='+h+',left='+left+',top='+top);
+        if(!win){ window.open(url,'_blank','noopener'); }
+      });
     }
   })();
   </script>

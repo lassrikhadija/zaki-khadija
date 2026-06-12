@@ -306,6 +306,32 @@
   .fb-audit{background:var(--grad);color:#04150c}
   .fb-wa{background:#25d366;color:#fff;width:46px;padding:0;justify-content:center}
 
+  /* Démos showcase */
+  .demos{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .demo{display:block;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;position:relative;transition:transform .4s var(--ease),border-color .4s,box-shadow .4s}
+  .demo:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 30px 60px -30px rgba(0,230,118,.45)}
+  .demo__frame{position:relative;background:#0a0c0e}
+  .demo__badge{position:absolute;top:.7rem;right:.7rem;z-index:2;background:var(--grad);color:#04150c;font-family:var(--display);font-weight:700;font-size:.68rem;letter-spacing:.04em;padding:.3rem .7rem;border-radius:999px}
+  .demo__bar{display:flex;align-items:center;gap:.4rem;padding:.55rem .8rem;border-bottom:1px solid var(--border);background:rgba(255,255,255,.02)}
+  .demo__dot{width:9px;height:9px;border-radius:50%;background:#2a2f33;flex-shrink:0}
+  .demo__url{margin-left:.5rem;font-size:.7rem;color:var(--muted-2);font-family:var(--display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .demo__shot{display:block;width:100%;aspect-ratio:1280/832;object-fit:cover;object-position:top center;transition:transform .6s var(--ease)}
+  .demo:hover .demo__shot{transform:scale(1.05)}
+  .demo__body{padding:1.2rem 1.3rem}
+  .demo__tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
+  .demo__name{font-family:var(--display);font-weight:600;font-size:1.12rem;margin-bottom:.55rem}
+  .demo__desc{color:var(--muted);font-size:.95rem;margin-bottom:1rem}
+  .demo__link{display:inline-flex;align-items:center;gap:.4rem;color:var(--green);font-weight:600;font-size:.92rem;font-family:var(--display)}
+  .demo:hover .demo__link .arr{transform:translateX(4px)}
+  .demo .arr{transition:transform .3s var(--ease)}
+  .demo--feat{grid-column:1 / -1;display:grid;grid-template-columns:1.25fr .75fr;align-items:stretch}
+  .demo--feat .demo__frame{border-right:1px solid var(--border)}
+  .demo--feat .demo__body{display:flex;flex-direction:column;justify-content:center;padding:2.2rem}
+  .demo--feat .demo__name{font-size:1.6rem}
+  .demos__note{text-align:center;color:var(--muted-2);font-size:.85rem;margin-top:1.5rem}
+  @media(max-width:860px){.demos{grid-template-columns:repeat(2,1fr)}.demo--feat{grid-template-columns:1fr}.demo--feat .demo__frame{border-right:none;border-bottom:1px solid var(--border)}}
+  @media(max-width:680px){.demos{grid-template-columns:1fr}}
+
   /* Reveal */
   .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
   .reveal.in{opacity:1;transform:none}
@@ -590,32 +616,94 @@
       </div>
     </section>
 
-    <!-- SECTEURS -->
+    <!-- DÉMOS -->
     <section class="section">
       <div class="container">
         <div class="sec-head reveal">
-          <p class="eyebrow">Secteurs</p>
-          <h2>Les projets qu'on transforme en machines à clients.</h2>
-          <p>Peu importe votre secteur, la logique est la même&nbsp;: un site qui explique clairement ce que vous faites, qui convainc votre visiteur idéal, et qui l'amène à vous contacter.</p>
+          <p class="eyebrow">Démos par secteur</p>
+          <h2>Pas de promesses. Regardez ce qu'on construit.</h2>
+          <p>Six sites de démonstration, entièrement cliquables, conçus par NEXTIWEB&nbsp;— un par secteur. Explorez-les comme un vrai client le ferait.</p>
         </div>
-        <div class="grid grid-3 reveal">
-          <div class="card sector"><div class="card__glow"></div>
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7a3 3 0 0 0 6 0V2"/><path d="M6 9v13"/><path d="M18 2c-1.7 0-3 2-3 5s1.3 5 3 5"/><path d="M18 12v10"/></svg></div>
-            <h3>Restaurant &amp; café</h3>
-            <p>Menu en ligne, réservations, avis clients intégrés. Un site conçu pour remplir vos tables et générer des commandes directes.</p>
-            <a href="/secteurs.html" class="card__link">Vous êtes dans la restauration ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-          <div class="card sector"><div class="card__glow"></div>
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-            <h3>Entreprise de services</h3>
-            <p>Pages par service, formulaires de soumission et preuves de crédibilité. Pour générer des demandes qualifiées sans courir après les clients.</p>
-            <a href="/secteurs.html" class="card__link">Plombier, comptable, coach ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-          <div class="card sector"><div class="card__glow"></div>
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.4C10.4 3.7 8.3 3 6.8 3.7 5 4.6 4.3 7 5 10c.4 1.8.6 3.4.9 5.2.2 1.3.5 2.8 1.1 3.9.5.9 1.6.8 1.9-.2.3-1 .5-2.3.7-3.4.1-.7.4-1.2.9-1.2s.8.5.9 1.2c.2 1.1.4 2.4.7 3.4.3 1 1.4 1.1 1.9.2.6-1.1.9-2.6 1.1-3.9.3-1.8.5-3.4.9-5.2.7-3 0-5.4-1.8-6.3-1.5-.7-3.6 0-5.2 1.7z"/></svg></div>
-            <h3>Clinique dentaire</h3>
-            <p>Prise de rendez-vous en ligne, fiche Google optimisée et avis bien gérés. Un site pensé pour remplir votre agenda — dans le respect des règles de l'Ordre.</p>
-            <a href="/cliniques-dentaires.html" class="card__link">Vous êtes dentiste ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+
+        <div class="demos reveal">
+          <!-- Vedette : dentaire -->
+          <a class="demo demo--feat" href="https://nextiwebstudio.ca/labo/dentaire-et-soins/" target="_blank" rel="noopener">
+            <div class="demo__frame">
+              <span class="demo__badge">Démo en vedette</span>
+              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">nextiwebstudio.ca/labo/dentaire-et-soins</span></div>
+              <img class="demo__shot" src="/assets/img/demos/dentaire.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site pour clinique dentaire — Studio Dentaire Belmont">
+            </div>
+            <div class="demo__body">
+              <span class="demo__tag">🦷 Cliniques dentaires</span>
+              <h3 class="demo__name">Studio Dentaire Belmont</h3>
+              <p class="demo__desc">Prise de rendez-vous en ligne, nouveaux patients, avis Google bien gérés — un site pensé pour remplir l'agenda, dans le respect des règles de l'Ordre.</p>
+              <span class="demo__link">Explorer la démo dentaire <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </a>
+
+          <a class="demo" href="https://nextiwebstudio.ca/labo/restaurant-et-cafe/" target="_blank" rel="noopener">
+            <div class="demo__frame">
+              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">nextiwebstudio.ca/labo/restaurant-et-cafe</span></div>
+              <img class="demo__shot" src="/assets/img/demos/restaurant.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site pour restaurant et café — Kintsugi Sushi">
+            </div>
+            <div class="demo__body">
+              <span class="demo__tag">Restaurant &amp; café</span>
+              <h3 class="demo__name">Kintsugi Sushi</h3>
+              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </a>
+
+          <a class="demo" href="https://nextiwebstudio.ca/labo/piscine-et-renovation/" target="_blank" rel="noopener">
+            <div class="demo__frame">
+              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">nextiwebstudio.ca/labo/piscine-et-renovation</span></div>
+              <img class="demo__shot" src="/assets/img/demos/piscine.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site pour construction et rénovation — Aqua Élite">
+            </div>
+            <div class="demo__body">
+              <span class="demo__tag">Construction &amp; rénovation</span>
+              <h3 class="demo__name">Aqua Élite</h3>
+              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </a>
+
+          <a class="demo" href="https://nextiwebstudio.ca/labo/chocolat-et-artisan/" target="_blank" rel="noopener">
+            <div class="demo__frame">
+              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">nextiwebstudio.ca/labo/chocolat-et-artisan</span></div>
+              <img class="demo__shot" src="/assets/img/demos/chocolat.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site pour artisan et boutique — Maison Cacao">
+            </div>
+            <div class="demo__body">
+              <span class="demo__tag">Artisan &amp; boutique</span>
+              <h3 class="demo__name">Maison Cacao</h3>
+              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </a>
+
+          <a class="demo" href="https://nextiwebstudio.ca/labo/e-commerce-et-marque-locale/" target="_blank" rel="noopener">
+            <div class="demo__frame">
+              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">nextiwebstudio.ca/labo/e-commerce-et-marque-locale</span></div>
+              <img class="demo__shot" src="/assets/img/demos/ecommerce.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site e-commerce et marque locale">
+            </div>
+            <div class="demo__body">
+              <span class="demo__tag">E-commerce local</span>
+              <h3 class="demo__name">Marque DTC</h3>
+              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </a>
+
+          <a class="demo" href="https://nextiwebstudio.ca/labo/services-a-domicile/" target="_blank" rel="noopener">
+            <div class="demo__frame">
+              <div class="demo__bar"><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__dot"></span><span class="demo__url">nextiwebstudio.ca/labo/services-a-domicile</span></div>
+              <img class="demo__shot" src="/assets/img/demos/services.webp" width="1280" height="832" loading="lazy" decoding="async" alt="Démo de site pour services à domicile">
+            </div>
+            <div class="demo__body">
+              <span class="demo__tag">Services à domicile</span>
+              <h3 class="demo__name">Cleaning Service</h3>
+              <span class="demo__link">Voir la démo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </a>
         </div>
-        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+
+        <p class="demos__note reveal">Démos et concepts conçus par NEXTIWEB — exemples de méthode, pas des sites livrés à des clients.</p>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux la mienne — audit gratuit</a></div>
       </div>
     </section>
 

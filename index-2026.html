@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PAGE DE TEST — ne pas indexer tant qu'elle n'est pas validée -->
+  <meta name="robots" content="noindex, follow">
+  <title>NEXTIWEB — Aperçu design 2026</title>
+  <meta name="description" content="Aperçu du nouveau design 2026 de NEXTIWEB. Agence web à Montréal : sites web, SEO et visibilité IA pensés pour convertir.">
+
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+  /* =========================================================
+     NEXTIWEB — Design system 2026 (autonome, ne dépend pas de styles.min.css)
+     ========================================================= */
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#070809; --bg-2:#0b0d10; --surface:rgba(255,255,255,.035);
+    --surface-2:rgba(255,255,255,.06); --border:rgba(255,255,255,.09);
+    --border-strong:rgba(255,255,255,.16);
+    --green:#00e676; --green-soft:#5dffb0; --cyan:#27e0ff; --violet:#8b6cff;
+    --text:#f3f5f4; --muted:#9aa4a1; --muted-2:#6f7976;
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --maxw:1160px;
+    --grad:linear-gradient(115deg,var(--green) 0%,var(--green-soft) 40%,var(--cyan) 100%);
+    --grad-soft:linear-gradient(135deg,rgba(0,230,118,.16),rgba(39,224,255,.10));
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg); color:var(--text); font-family:var(--body);
+    line-height:1.65; font-size:16px; overflow-x:hidden; position:relative;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* Fond global : aurora + grille + grain */
+  .bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+  .bg-fx::before{content:"";position:absolute;inset:-20%;
+    background:
+      radial-gradient(40% 50% at 12% 8%,rgba(0,230,118,.18),transparent 60%),
+      radial-gradient(40% 45% at 88% 20%,rgba(39,224,255,.12),transparent 60%),
+      radial-gradient(50% 50% at 70% 95%,rgba(139,108,255,.10),transparent 60%);
+    filter:blur(20px); animation:auroraDrift 22s var(--ease) infinite alternate;}
+  .bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size:64px 64px;
+    -webkit-mask-image:radial-gradient(circle at 50% 0%,#000,transparent 75%);
+            mask-image:radial-gradient(circle at 50% 0%,#000,transparent 75%);}
+  @keyframes auroraDrift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-4%,3%,0) scale(1.12)}}
+
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 1.5rem}
+  .accent{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+    background-size:200% auto;animation:shineText 6s linear infinite}
+  @keyframes shineText{to{background-position:200% center}}
+
+  /* ---------- Boutons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    font-family:var(--display);font-weight:600;font-size:.98rem;letter-spacing:.01em;
+    padding:.9rem 1.6rem;border-radius:999px;border:1px solid transparent;cursor:pointer;
+    transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,border-color .3s;
+    position:relative;white-space:nowrap}
+  .btn--primary{background:var(--grad);background-size:160% auto;color:#04150c;
+    box-shadow:0 10px 30px -8px rgba(0,230,118,.55),inset 0 0 0 1px rgba(255,255,255,.2)}
+  .btn--primary:hover{transform:translateY(-3px);background-position:right center;
+    box-shadow:0 18px 44px -10px rgba(0,230,118,.7)}
+  .btn--ghost{background:rgba(255,255,255,.02);color:var(--text);border-color:var(--border-strong);backdrop-filter:blur(6px)}
+  .btn--ghost:hover{border-color:var(--green);color:var(--green);transform:translateY(-3px)}
+  .btn--lg{padding:1.05rem 2rem;font-size:1.05rem}
+
+  /* ---------- Header ---------- */
+  .topbar{font-size:.8rem;color:var(--muted-2);text-align:center;padding:.5rem 0;
+    border-bottom:1px solid var(--border);background:rgba(0,0,0,.4)}
+  .topbar b{color:var(--green)}
+  .header{position:sticky;top:0;z-index:50;transition:padding .3s var(--ease),background .3s,border-color .3s;
+    border-bottom:1px solid transparent}
+  .header.scrolled{background:rgba(7,8,9,.72);backdrop-filter:blur(16px) saturate(1.4);
+    border-bottom-color:var(--border)}
+  .header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;transition:padding .3s var(--ease)}
+  .header.scrolled .header__inner{padding:.6rem 0}
+  .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:700;
+    font-size:1.25rem;letter-spacing:.04em}
+  .brand__mark{width:30px;height:30px;flex-shrink:0}
+  .nav{display:flex;align-items:center;gap:.4rem}
+  .nav a{font-size:.92rem;color:var(--muted);padding:.5rem .8rem;border-radius:999px;transition:color .2s,background .2s}
+  .nav a:hover{color:var(--text);background:var(--surface)}
+  .nav__group{position:relative}
+  .nav__panel{position:absolute;top:calc(100% + .4rem);left:0;min-width:230px;
+    background:rgba(12,14,16,.96);backdrop-filter:blur(14px);border:1px solid var(--border);
+    border-radius:14px;padding:.5rem;opacity:0;visibility:hidden;transform:translateY(8px);
+    transition:.25s var(--ease);box-shadow:0 24px 60px -20px rgba(0,0,0,.8)}
+  .nav__group:hover .nav__panel{opacity:1;visibility:visible;transform:translateY(0)}
+  .nav__panel a{display:block;color:var(--muted)}
+  .nav__cta{margin-left:.4rem}
+  .nav-toggle{display:none;flex-direction:column;gap:5px;width:42px;height:42px;align-items:center;justify-content:center;
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;cursor:pointer}
+  .nav-toggle span{width:18px;height:2px;background:var(--text);border-radius:2px;transition:.3s var(--ease)}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle.open span:nth-child(2){opacity:0}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* Mobile drawer */
+  .drawer{position:fixed;inset:0 0 0 auto;width:min(84vw,340px);background:#0a0c0e;z-index:60;
+    border-left:1px solid var(--border);padding:1.5rem;transform:translateX(100%);
+    transition:transform .4s var(--ease);display:flex;flex-direction:column;gap:.3rem;overflow-y:auto}
+  .drawer.open{transform:translateX(0)}
+  .drawer a{padding:.85rem 1rem;border-radius:12px;color:var(--text);font-weight:500}
+  .drawer a:hover{background:var(--surface)}
+  .drawer__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+  .drawer__close{background:var(--surface);border:1px solid var(--border);border-radius:10px;width:38px;height:38px;color:var(--text);font-size:1.2rem;cursor:pointer}
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:55;opacity:0;visibility:hidden;transition:.3s}
+  .scrim.open{opacity:1;visibility:visible}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:clamp(3rem,8vw,6.5rem) 0 clamp(3rem,6vw,5rem);overflow:hidden}
+  .hero__spot{position:absolute;width:600px;height:600px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(0,230,118,.10),transparent 65%);
+    transform:translate(-50%,-50%);left:50%;top:35%;transition:left .25s ease,top .25s ease}
+  .hero__inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+  .kicker{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:600;
+    font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-soft);
+    padding:.45rem .9rem;border:1px solid var(--border);border-radius:999px;background:var(--surface);width:max-content}
+  .kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(0,230,118,.6);animation:ping 2s infinite}
+  @keyframes ping{0%{box-shadow:0 0 0 0 rgba(0,230,118,.55)}70%{box-shadow:0 0 0 10px rgba(0,230,118,0)}100%{box-shadow:0 0 0 0 rgba(0,230,118,0)}}
+  .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.02;
+    letter-spacing:-.03em;margin:1.4rem 0 1.3rem}
+  .hero h1 .accent{display:inline-block}
+  .hero__sub{font-size:1.12rem;color:var(--muted);max-width:30rem;margin-bottom:2rem}
+  .hero__actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.3rem}
+  .hero__note{display:flex;align-items:center;gap:.55rem;font-size:.9rem;color:var(--muted)}
+  .hero__note .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:ping 2s infinite}
+
+  /* Stat chips */
+  .chips{display:flex;flex-direction:column;gap:1rem}
+  .chip{display:flex;align-items:center;gap:1rem;padding:1.15rem 1.3rem;border-radius:18px;
+    background:var(--surface);border:1px solid var(--border);backdrop-filter:blur(10px);
+    transition:transform .4s var(--ease),border-color .4s,box-shadow .4s;position:relative;overflow:hidden}
+  .chip::after{content:"";position:absolute;inset:0;border-radius:18px;padding:1px;
+    background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s}
+  .chip:hover{transform:translateY(-5px);box-shadow:0 24px 50px -24px rgba(0,230,118,.45)}
+  .chip:hover::after{opacity:.9}
+  .chip__icon{width:46px;height:46px;border-radius:13px;flex-shrink:0;display:grid;place-items:center;
+    background:var(--grad-soft);color:var(--green);border:1px solid var(--border)}
+  .chip__num{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1}
+  .chip__num small{font-size:.95rem;color:var(--green)}
+  .chip__label{font-size:.85rem;color:var(--muted);margin-top:.15rem}
+  .chip__check{margin-left:auto;width:24px;height:24px;border-radius:50%;background:var(--grad-soft);
+    color:var(--green);display:grid;place-items:center;flex-shrink:0}
+  .float-anim{animation:floaty 6s ease-in-out infinite}
+  .float-anim:nth-child(2){animation-delay:.6s}
+  .float-anim:nth-child(3){animation-delay:1.2s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+  /* Marquee */
+  .marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+    padding:1rem 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+            mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee__track{display:flex;gap:3rem;width:max-content;animation:scrollX 28s linear infinite}
+  .marquee__track span{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--muted-2);
+    display:flex;align-items:center;gap:3rem;white-space:nowrap}
+  .marquee__track span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}
+  @keyframes scrollX{to{transform:translateX(-50%)}}
+
+  /* ---------- Sections ---------- */
+  .section{padding:clamp(3.5rem,7vw,6rem) 0}
+  .sec-head{text-align:center;max-width:46rem;margin:0 auto 3rem}
+  .eyebrow{font-family:var(--display);font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--green);margin-bottom:.9rem}
+  .section h2{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,4vw,2.6rem);
+    line-height:1.12;letter-spacing:-.02em}
+  .section h2 + p{color:var(--muted);font-size:1.08rem;margin-top:1rem}
+  .center-cta{text-align:center;margin-top:2.6rem}
+
+  /* Card base + glow */
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:1.8rem;
+    position:relative;transition:transform .4s var(--ease),border-color .4s,background .4s;overflow:hidden}
+  .card:hover{transform:translateY(-6px);border-color:var(--border-strong);background:var(--surface-2)}
+  .card__glow{position:absolute;width:240px;height:240px;border-radius:50%;top:-40%;right:-20%;
+    background:radial-gradient(circle,rgba(0,230,118,.16),transparent 70%);opacity:0;transition:opacity .4s;pointer-events:none}
+  .card:hover .card__glow{opacity:1}
+  .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:1.1rem;
+    background:var(--grad-soft);color:var(--green);border:1px solid var(--border)}
+  .card h3{font-family:var(--display);font-weight:600;font-size:1.18rem;line-height:1.3;margin-bottom:.6rem}
+  .card p{color:var(--muted);font-size:.96rem}
+  .card__link{display:inline-flex;align-items:center;gap:.4rem;margin-top:1.1rem;color:var(--green);
+    font-weight:600;font-size:.95rem;font-family:var(--display)}
+  .card__link svg{transition:transform .3s var(--ease)}
+  .card:hover .card__link svg{transform:translateX(4px)}
+
+  .grid{display:grid;gap:1.4rem}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-4{grid-template-columns:repeat(4,1fr)}
+
+  /* Qualification bento list */
+  .qual{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
+  .qual li{list-style:none;display:flex;gap:.9rem;align-items:flex-start;padding:1.3rem 1.5rem;
+    background:var(--surface);border:1px solid var(--border);border-radius:16px;font-size:1.02rem;
+    transition:border-color .3s,transform .3s var(--ease)}
+  .qual li:hover{border-color:var(--green);transform:translateX(4px)}
+  .qual li .tick{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--grad-soft);
+    color:var(--green);display:grid;place-items:center;margin-top:.15rem}
+
+  /* FOMO */
+  .fomo{max-width:760px;margin:0 auto;padding:2rem 2.2rem;border-radius:20px;
+    background:linear-gradient(135deg,rgba(251,146,60,.10),rgba(251,146,60,.03));
+    border:1px solid rgba(251,146,60,.30);border-left:4px solid #fb923c}
+  .fomo p{color:var(--muted);font-size:1.06rem}
+  .fomo strong{color:var(--text)}
+  .fomo__punch{color:var(--text);font-family:var(--display);font-weight:700;font-size:1.2rem;
+    margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(251,146,60,.25)}
+  .pivot{text-align:center;font-family:var(--display);font-weight:700;font-size:1.5rem;
+    margin:2.2rem 0;letter-spacing:-.01em}
+
+  /* IA compare */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:900px;margin:0 auto}
+  .compare__card{border-radius:20px;padding:1.9rem;border:1px solid var(--border)}
+  .compare__card--no{background:rgba(239,68,68,.05);border-color:rgba(239,68,68,.25)}
+  .compare__card--yes{background:rgba(0,230,118,.05);border-color:rgba(0,230,118,.25)}
+  .compare__head{display:flex;align-items:center;gap:.7rem;margin-bottom:1.2rem;font-family:var(--display);font-weight:600;font-size:1.1rem}
+  .compare__badge{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;font-weight:700}
+  .compare__card--no .compare__badge{background:rgba(239,68,68,.16);color:#ef4444}
+  .compare__card--yes .compare__badge{background:rgba(0,230,118,.16);color:var(--green)}
+  .compare ul{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+  .compare li{padding-left:1.7rem;position:relative;color:var(--muted)}
+  .compare__card--no li::before{content:"✕";position:absolute;left:0;color:#ef4444;font-weight:700}
+  .compare__card--yes li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;counter-reset:s}
+  .step{position:relative;padding:1.7rem;border-radius:18px;background:var(--surface);border:1px solid var(--border);transition:border-color .3s,transform .3s var(--ease)}
+  .step:hover{border-color:var(--border-strong);transform:translateY(-5px)}
+  .step__n{width:44px;height:44px;border-radius:12px;background:var(--grad);color:#04150c;
+    font-family:var(--display);font-weight:700;font-size:1.15rem;display:grid;place-items:center;margin-bottom:1rem}
+  .step h3{font-family:var(--display);font-weight:600;font-size:1.02rem;margin-bottom:.45rem;line-height:1.35}
+  .step p{color:var(--muted);font-size:.9rem}
+
+  /* Founder */
+  .founder{max-width:780px;margin:0 auto;display:flex;align-items:center;gap:2rem;
+    padding:2.2rem;border-radius:22px;background:var(--surface);border:1px solid var(--border)}
+  .founder__avatar{width:72px;height:72px;border-radius:50%;background:var(--grad);color:#04150c;
+    font-family:var(--display);font-weight:700;font-size:1.8rem;display:grid;place-items:center;flex-shrink:0}
+  .founder__text{font-style:italic;color:var(--muted);font-size:1.05rem}
+  .founder__link{display:inline-flex;align-items:center;gap:.4rem;margin-top:.9rem;color:var(--green);font-weight:600;font-family:var(--display)}
+
+  /* Engagements */
+  .pledge{display:flex;gap:.9rem;align-items:flex-start;padding:1.5rem;border-radius:16px;
+    background:var(--surface);border:1px solid var(--border);transition:border-color .3s,transform .3s var(--ease)}
+  .pledge:hover{border-color:var(--green);transform:translateY(-4px)}
+  .pledge .tick{flex-shrink:0;width:28px;height:28px;border-radius:8px;background:var(--grad-soft);color:var(--green);display:grid;place-items:center;margin-top:.1rem}
+  .pledge h3{font-family:var(--display);font-weight:600;font-size:1.02rem;margin-bottom:.4rem}
+  .pledge p{color:var(--muted);font-size:.9rem}
+
+  /* Sectors */
+  .sector{text-align:left}
+  .sector .ic svg{width:26px;height:26px}
+
+  /* FAQ */
+  .faq{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:.8rem}
+  .faq__item{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .3s}
+  .faq__item.open{border-color:var(--green)}
+  .faq__q{width:100%;text-align:left;background:none;border:0;color:var(--text);cursor:pointer;
+    padding:1.25rem 1.4rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+    font-family:var(--display);font-weight:600;font-size:1.02rem}
+  .faq__q .arr{flex-shrink:0;transition:transform .3s var(--ease);color:var(--green)}
+  .faq__item.open .arr{transform:rotate(180deg)}
+  .faq__a{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+  .faq__a p{padding:0 1.4rem 1.3rem;color:var(--muted)}
+
+  /* CTA final */
+  .cta-final{position:relative;border-radius:28px;padding:clamp(2.5rem,5vw,4rem);text-align:center;overflow:hidden;
+    background:linear-gradient(135deg,rgba(0,230,118,.14),rgba(39,224,255,.08));border:1px solid var(--border-strong)}
+  .cta-final::before{content:"";position:absolute;inset:0;
+    background:radial-gradient(60% 80% at 50% 0%,rgba(0,230,118,.18),transparent 70%);pointer-events:none}
+  .cta-final h2{position:relative}
+  .cta-final p{position:relative;color:var(--muted);max-width:34rem;margin:1rem auto 2rem}
+
+  /* Footer */
+  .footer{border-top:1px solid var(--border);padding:3.5rem 0 2rem;margin-top:2rem;background:rgba(0,0,0,.3)}
+  .footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:2rem}
+  .footer h4{font-family:var(--display);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-bottom:1rem}
+  .footer ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+  .footer a{color:var(--muted);font-size:.92rem;transition:color .2s}
+  .footer a:hover{color:var(--green)}
+  .footer__brand{font-family:var(--display);font-weight:700;font-size:1.3rem;letter-spacing:.05em;margin-bottom:.8rem}
+  .footer__desc{color:var(--muted);font-size:.92rem;max-width:22rem;margin-bottom:1rem}
+  .footer__bottom{border-top:1px solid var(--border);margin-top:2.5rem;padding-top:1.5rem;
+    display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted-2);font-size:.85rem}
+
+  /* Float bar */
+  .floatbar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:40;display:flex;gap:.6rem}
+  .floatbar a{display:flex;align-items:center;gap:.4rem;height:46px;padding:0 1rem;border-radius:23px;
+    font-family:var(--display);font-weight:700;font-size:.82rem;box-shadow:0 8px 24px -6px rgba(0,0,0,.5);
+    transition:transform .25s var(--ease),box-shadow .25s}
+  .floatbar a:hover{transform:translateY(-3px)}
+  .fb-audit{background:var(--grad);color:#04150c}
+  .fb-wa{background:#25d366;color:#fff;width:46px;padding:0;justify-content:center}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:980px){
+    .hero__inner{grid-template-columns:1fr;gap:2.4rem}
+    .chips{flex-direction:row;flex-wrap:wrap}.chip{flex:1 1 260px}
+    .footer__grid{grid-template-columns:1fr 1fr}
+    .grid-4{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:860px){
+    .nav{display:none}.nav-toggle{display:flex}
+  }
+  @media(max-width:680px){
+    .grid-2,.grid-3,.grid-4,.qual,.compare,.steps{grid-template-columns:1fr}
+    .founder{flex-direction:column;text-align:center}
+    .footer__grid{grid-template-columns:1fr}
+    .hero__actions .btn{width:100%}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+  </style>
+</head>
+<body>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <div class="topbar">Aperçu design <b>2026</b> · page de test — votre site actuel reste en ligne</div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/index-2026.html" class="brand" aria-label="NEXTIWEB accueil">
+        <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <defs><linearGradient id="bg1" x1="0" y1="0" x2="48" y2="48">
+            <stop stop-color="#00e676"/><stop offset="1" stop-color="#27e0ff"/></linearGradient></defs>
+          <path d="M14 32c-4 0-7-3-7-7s3-7 7-7c3 0 5 2 7 5l4 6c2 3 4 5 7 5 4 0 7-3 7-7s-3-7-7-7c-3 0-5 2-7 5l-4 6c-2 3-4 5-7 5z"
+            stroke="url(#bg1)" stroke-width="3.4" stroke-linecap="round"/>
+        </svg>
+        NEXTIWEB
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <div class="nav__group">
+          <a href="/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/creation-site.html">Création de sites web</a>
+            <a href="/seo.html">Référencement SEO</a>
+            <a href="/marketing-digital.html">Marketing digital</a>
+            <a href="/visibilite-ia.html">Visibilité IA</a>
+          </div>
+        </div>
+        <a href="/secteurs.html">Secteurs</a>
+        <a href="/ressources.html">Ressources</a>
+        <a href="/blog/">Blog</a>
+        <a href="/a-propos.html">À propos</a>
+        <a href="/contact.html" class="btn btn--primary nav__cta">Je veux mon audit gratuit</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Menu mobile">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Fermer">×</button>
+    </div>
+    <a href="/services.html">Services</a>
+    <a href="/creation-site.html">— Création de sites web</a>
+    <a href="/seo.html">— Référencement SEO</a>
+    <a href="/marketing-digital.html">— Marketing digital</a>
+    <a href="/secteurs.html">Secteurs</a>
+    <a href="/ressources.html">Ressources</a>
+    <a href="/blog/">Blog</a>
+    <a href="/a-propos.html">À propos</a>
+    <a href="/contact.html" class="btn btn--primary" style="margin-top:1rem">Je veux mon audit gratuit</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__spot" id="spot" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div>
+          <span class="kicker"><span class="dot"></span>Agence web · Montréal</span>
+          <h1>Votre site web devrait <span class="accent">vendre</span>, pas juste exister.</h1>
+          <p class="hero__sub">Nous concevons des sites rapides, optimisés pour le SEO et pensés pour convertir vos visiteurs en clients.</p>
+          <div class="hero__actions">
+            <a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a>
+            <a href="/services.html" class="btn btn--ghost btn--lg">Comment ça fonctionne</a>
+          </div>
+          <p class="hero__note"><span class="dot"></span>On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
+        </div>
+
+        <div class="chips">
+          <div class="chip float-anim">
+            <span class="chip__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div><div class="chip__num">1<small>-on-</small>1</div><div class="chip__label">Accompagnement personnel</div></div>
+            <span class="chip__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </div>
+          <div class="chip float-anim">
+            <span class="chip__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <div><div class="chip__num" data-count="24">0<small>h</small></div><div class="chip__label">Réponse garantie</div></div>
+            <span class="chip__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </div>
+          <div class="chip float-anim">
+            <span class="chip__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </span>
+            <div><div class="chip__num" data-count="100">0<small>%</small></div><div class="chip__label">Mobile-first</div></div>
+            <span class="chip__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Création de sites web</span><span>SEO local</span><span>Marketing digital</span><span>Visibilité IA · AEO / GEO</span><span>Mobile-first</span><span>Conversion</span><span>Montréal · Québec</span>
+        <span>Création de sites web</span><span>SEO local</span><span>Marketing digital</span><span>Visibilité IA · AEO / GEO</span><span>Mobile-first</span><span>Conversion</span><span>Montréal · Québec</span>
+      </div>
+    </div>
+
+    <!-- QUALIFICATION -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Pour qui ?</p>
+          <h2>Ce site est fait pour vous si&hellip;</h2>
+          <p>Vous n'avez peut-être pas un grand budget ni une équipe marketing — vous avez juste besoin d'un site qui reflète vraiment vos valeurs et qui travaille pour vous.</p>
+        </div>
+        <ul class="qual reveal">
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Vous avez un service à vendre et votre site ne le reflète pas</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Vous êtes bon dans votre métier, mais invisible sur Google</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Vous voulez des leads qualifiés sans tout dépenser en pub</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Votre site génère peu — ou pas — de prises de contact</li>
+        </ul>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+      </div>
+    </section>
+
+    <!-- FOMO -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Le vrai problème</p>
+          <h2>Votre site existe. Mais est-ce qu'il travaille pour vous&nbsp;?</h2>
+          <p>Il est peut-être lent, flou sur votre offre, ou tout simplement introuvable sur Google.</p>
+        </div>
+        <div class="fomo reveal">
+          <p>Pendant ce temps, votre concurrent — peut-être moins expérimenté que vous — a refait son site. Il reçoit des demandes. Il ferme des contrats. <strong>Pas vous.</strong></p>
+          <p class="fomo__punch">Pas parce qu'il est meilleur. Parce que son site, lui, travaille.</p>
+        </div>
+        <p class="pivot reveal accent">Alors pourquoi pas vous&nbsp;?</p>
+        <div class="grid grid-4 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <h3>Site clair qui convainc</h3><p>Votre client idéal comprend ce que vous faites dès la 1re page — et passe à l'action.</p></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>Référencement ciblé</h3><p>Positionné sur les bons mots-clés pour attirer des visiteurs qui cherchent exactement ce que vous offrez.</p></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <h3>Design qui déclenche</h3><p>Un parcours rassurant qui transforme un visiteur hésitant en prise de contact réelle.</p></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
+            <h3>Suivi continu</h3><p>Pas un livrable qu'on abandonne. On reste avec vous pour mesurer, ajuster et progresser.</p></div>
+        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Nos leviers</p>
+          <h2>Quatre leviers pour trouver des clients en ligne</h2>
+        </div>
+        <div class="grid grid-2 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h3>Un site qui vend pendant que vous travaillez</h3>
+            <p>Chaque page conçue avec un objectif&nbsp;: transformer un visiteur en appel, en soumission, en client — même la nuit.</p>
+            <a href="/creation-site.html" class="card__link">Obtenir un site qui génère des clients <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>Votre nom en tête de Google pour les bons mots-clés</h3>
+            <p>Des prospects qui cherchent exactement ce que vous offrez — et qui arrivent sur votre site, pas sur celui d'un concurrent.</p>
+            <a href="/seo.html" class="card__link">Améliorer mon classement sur Google <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3>Une stratégie complète pour des clients réguliers</h3>
+            <p>SEO, contenu et conversion coordonnés pour alimenter votre pipeline client chaque mois — sans dépendre du bouche-à-oreille.</p>
+            <a href="/marketing-digital.html" class="card__link">Développer mon acquisition client <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg></div>
+            <h3>Votre nom cité par ChatGPT, Perplexity et Google IA</h3>
+            <p>En 2026, vos clients cherchent aussi sur l'IA — pas seulement sur Google. On structure votre contenu pour que vous soyez recommandé par ces nouveaux moteurs.</p>
+            <a href="/services.html#visibilite-ia" class="card__link">Être visible sur les moteurs IA <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IA COMPARE -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Le web de 2026</p>
+          <h2>Vos clients vous cherchent aussi sur l'IA</h2>
+          <p>ChatGPT, Perplexity et Google IA recommandent directement des entreprises. Êtes-vous dans leurs réponses&nbsp;?</p>
+        </div>
+        <div class="compare reveal">
+          <div class="compare__card compare__card--no">
+            <div class="compare__head"><span class="compare__badge">✕</span>Sans visibilité IA</div>
+            <ul><li>Votre concurrent est nommé par ChatGPT — pas vous</li><li>Google IA affiche une réponse directe sans citer votre site</li><li>Perplexity recommande un fournisseur — vous êtes absent</li></ul>
+          </div>
+          <div class="compare__card compare__card--yes">
+            <div class="compare__head"><span class="compare__badge">✓</span>Avec NEXTIWEB</div>
+            <ul><li>Contenu structuré pour les vraies questions de vos clients</li><li>Autorité renforcée pour être cité comme référence</li><li>Site adapté aux critères AEO / GEO des moteurs IA</li></ul>
+          </div>
+        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--ghost btn--lg">Vérifier ma visibilité IA</a></div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">La méthode</p>
+          <h2>Votre résultat en 4 étapes</h2>
+        </div>
+        <div class="steps reveal">
+          <div class="step"><div class="step__n">1</div><h3>Vous nous parlez de votre business</h3><p>On comprend vos clients cibles, vos objectifs et ce qui vous bloque réellement en ligne.</p></div>
+          <div class="step"><div class="step__n">2</div><h3>Vous recevez une stratégie claire</h3><p>Plan du site, mots-clés cibles et parcours de conversion — rien de flou, tout est justifié.</p></div>
+          <div class="step"><div class="step__n">3</div><h3>Votre site prend vie</h3><p>Design, code et SEO livrés proprement. Vous validez à chaque étape, on ajuste sans friction.</p></div>
+          <div class="step"><div class="step__n">4</div><h3>Vos clients vous trouvent</h3><p>Suivi post-lancement, positions et améliorations continues — votre site progresse dans le temps.</p></div>
+        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="section">
+      <div class="container">
+        <div class="founder reveal">
+          <div class="founder__avatar">K</div>
+          <div>
+            <p class="founder__text">Je m'appelle Khadija. J'ai vécu exactement ce que vous vivez — un site techniquement solide, zéro trafic, zéro client. Ce que j'ai appris en reconstruisant tout a donné naissance à NEXTIWEB.</p>
+            <a href="/a-propos.html" class="founder__link">Lire mon histoire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Nos garanties</p>
+          <h2>Des engagements concrets.</h2>
+          <p>Une transparence totale et des garanties que vous pouvez tenir pour acquises dès le premier jour.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>3 cycles de révisions inclus</h3><p>Trois allers-retours complets inclus dans le cadre du brief initial. Au-delà, un tarif horaire s'applique.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Délai respecté, garanti</h3><p>Nous nous engageons sur une date de livraison dès le départ. Si nous la dépassons sans raison valable, vous êtes remboursé.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Réponse sous 24&nbsp;h</h3><p>Chaque question reçoit une réponse en moins de 24 heures ouvrables. Votre projet n'attend jamais.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Suivi 30 jours après lancement</h3><p>Une fois le site en ligne, on reste disponibles pour les ajustements pendant 30 jours.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Zéro jargon</h3><p>Chaque décision vous est expliquée simplement. Vous comprenez ce que vous payez, pourquoi, et ce que ça rapporte.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Prix transparent dès le départ</h3><p>Aucune surprise en cours de route. Le budget est fixé lors de l'audit gratuit — et il ne bouge pas sans votre accord.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTEURS -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Secteurs</p>
+          <h2>Les projets qu'on transforme en machines à clients.</h2>
+          <p>Peu importe votre secteur, la logique est la même&nbsp;: un site qui explique clairement ce que vous faites, qui convainc votre visiteur idéal, et qui l'amène à vous contacter.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="card sector"><div class="card__glow"></div>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7a3 3 0 0 0 6 0V2"/><path d="M6 9v13"/><path d="M18 2c-1.7 0-3 2-3 5s1.3 5 3 5"/><path d="M18 12v10"/></svg></div>
+            <h3>Restaurant &amp; café</h3>
+            <p>Menu en ligne, réservations, avis clients intégrés. Un site conçu pour remplir vos tables et générer des commandes directes.</p>
+            <a href="/secteurs.html" class="card__link">Vous êtes dans la restauration ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card sector"><div class="card__glow"></div>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Entreprise de services</h3>
+            <p>Pages par service, formulaires de soumission et preuves de crédibilité. Pour générer des demandes qualifiées sans courir après les clients.</p>
+            <a href="/secteurs.html" class="card__link">Plombier, comptable, coach ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card sector"><div class="card__glow"></div>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.4C10.4 3.7 8.3 3 6.8 3.7 5 4.6 4.3 7 5 10c.4 1.8.6 3.4.9 5.2.2 1.3.5 2.8 1.1 3.9.5.9 1.6.8 1.9-.2.3-1 .5-2.3.7-3.4.1-.7.4-1.2.9-1.2s.8.5.9 1.2c.2 1.1.4 2.4.7 3.4.3 1 1.4 1.1 1.9.2.6-1.1.9-2.6 1.1-3.9.3-1.8.5-3.4.9-5.2.7-3 0-5.4-1.8-6.3-1.5-.7-3.6 0-5.2 1.7z"/></svg></div>
+            <h3>Clinique dentaire</h3>
+            <p>Prise de rendez-vous en ligne, fiche Google optimisée et avis bien gérés. Un site pensé pour remplir votre agenda — dans le respect des règles de l'Ordre.</p>
+            <a href="/cliniques-dentaires.html" class="card__link">Vous êtes dentiste ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Vous vous demandez&hellip;</p>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq__item"><button class="faq__q">C'est quoi exactement l'audit gratuit — et c'est vraiment sans engagement ?<span class="arr">▾</span></button><div class="faq__a"><p>L'audit gratuit, c'est un appel de 30 minutes où on analyse votre situation réelle : votre site, votre visibilité sur Google, et ce qui bloque vos conversions. À la fin, vous repartez avec un diagnostic clair — et zéro obligation.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Quel budget prévoir pour un site web ?<span class="arr">▾</span></button><div class="faq__a"><p>À partir de 1 500 $ pour un site vitrine efficace. Le prix dépend de la taille du projet, des fonctionnalités et du niveau d'accompagnement. On vous présente une proposition claire avant tout engagement — pas de surprises.</p></div></div>
+          <div class="faq__item"><button class="faq__q">J'ai déjà un site qui ne génère rien — vous pouvez m'aider ?<span class="arr">▾</span></button><div class="faq__a"><p>C'est souvent notre point de départ. On commence par identifier pourquoi : chargement lent, message flou, mauvais positionnement Google. Ensuite, on corrige ce qui freine — parfois sans tout reconstruire.</p></div></div>
+          <div class="faq__item"><button class="faq__q">En combien de temps voit-on des résultats ?<span class="arr">▾</span></button><div class="faq__a"><p>Un nouveau site commence à générer des contacts dès les premières semaines si le SEO de base est bien fait. Pour le référencement naturel, comptez 3 à 6 mois pour des positions stables. Pas de promesses impossibles.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Est-ce que l'IA comme ChatGPT peut m'envoyer des clients ?<span class="arr">▾</span></button><div class="faq__a"><p>Oui — et c'est déjà le cas pour certains. Si votre contenu est bien structuré et votre autorité en ligne bien établie, vous pouvez figurer dans les recommandations. C'est l'AEO (Answer Engine Optimization) — et on peut vous y positionner.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2>Prêt à développer votre présence en ligne&nbsp;?</h2>
+          <p>Parlons de votre projet et voyons comment transformer votre site web en un véritable outil pour attirer des clients.</p>
+          <a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montréal, Québec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/">Accueil</a></li><li><a href="/services.html">Services</a></li><li><a href="/secteurs.html">Secteurs</a></li><li><a href="/ressources.html">Ressources</a></li><li><a href="/blog/">Blog</a></li><li><a href="/a-propos.html">À propos</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/creation-site.html">Création de sites web</a></li><li><a href="/seo.html">Référencement SEO</a></li><li><a href="/marketing-digital.html">Marketing digital</a></li><li><a href="/visibilite-ia.html">Visibilité IA</a></li></ul></div>
+        <div><h4>Secteurs</h4><ul><li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li><li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li><li><a href="/avocats.html">Avocats</a></li><li><a href="/construction-renovation.html">Construction</a></li><li><a href="/secteurs.html">Autres secteurs</a></li></ul></div>
+        <div><h4>Zones</h4><ul><li><a href="/zones-desservies/montreal.html">Montréal</a></li><li><a href="/zones-desservies/quebec.html">Québec</a></li><li><a href="/zones-desservies/canada.html">Canada</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span><span>Aperçu design 2026 — page de test</span></div>
+    </div>
+  </footer>
+
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Audit gratuit</a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
+  </div>
+
+  <script>
+  (function(){
+    var mq = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Header scroll state
+    var header = document.getElementById('header');
+    window.addEventListener('scroll', function(){
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, {passive:true});
+
+    // Mobile drawer
+    var t=document.getElementById('navToggle'),d=document.getElementById('drawer'),
+        s=document.getElementById('scrim'),c=document.getElementById('drawerClose');
+    function open(){d.classList.add('open');s.classList.add('open');t.classList.add('open')}
+    function close(){d.classList.remove('open');s.classList.remove('open');t.classList.remove('open')}
+    t.addEventListener('click',open);c.addEventListener('click',close);s.addEventListener('click',close);
+    d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+
+    // Reveal on scroll
+    if('IntersectionObserver' in window && !mq){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+      },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+      document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+    } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq__item').forEach(function(item){
+      var q=item.querySelector('.faq__q'),a=item.querySelector('.faq__a');
+      q.addEventListener('click',function(){
+        var isOpen=item.classList.contains('open');
+        document.querySelectorAll('.faq__item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq__a').style.maxHeight=null});
+        if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+      });
+    });
+
+    // Counter animation
+    function animateCount(el){
+      var target=+el.getAttribute('data-count'),small=el.querySelector('small'),suffix=small?small.outerHTML:'';
+      if(mq){el.innerHTML=target+suffix;return;}
+      var start=null,dur=1100;
+      function tick(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);
+        var val=Math.floor((1-Math.pow(1-p,3))*target);el.innerHTML=val+suffix;
+        if(p<1)requestAnimationFrame(tick);}
+      requestAnimationFrame(tick);
+    }
+    if('IntersectionObserver' in window){
+      var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animateCount(e.target);co.unobserve(e.target)}})},{threshold:.6});
+      document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el)});
+    } else { document.querySelectorAll('[data-count]').forEach(animateCount); }
+
+    // Hero spotlight follows cursor
+    if(!mq){
+      var hero=document.querySelector('.hero'),spot=document.getElementById('spot');
+      hero.addEventListener('mousemove',function(e){
+        var r=hero.getBoundingClientRect();
+        spot.style.left=(e.clientX-r.left)+'px';spot.style.top=(e.clientY-r.top)+'px';
+      },{passive:true});
+    }
+  })();
+  </script>
+</body>
+</html>

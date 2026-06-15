@@ -208,8 +208,10 @@
   .card__tag:hover{background:rgba(0,230,118,.16);border-color:var(--green);transform:translateY(-2px)}
   .card__tag--ghost{color:var(--muted);background:rgba(255,255,255,.03);border-color:var(--border-strong)}
   .card__tag--ghost:hover{color:var(--text);border-color:var(--green);background:rgba(255,255,255,.05)}
-  /* Cartes secteurs : hauteur uniforme, puces alignées en bas */
-  .sectors .card{display:flex;flex-direction:column}
+  /* Cartes secteurs : grille en flex pour centrer la dernière rangée incomplète,
+     hauteur uniforme + puces alignées en bas */
+  .grid.sectors{display:flex;flex-wrap:wrap;justify-content:center}
+  .sectors .card{display:flex;flex-direction:column;flex:0 1 calc((100% - 3rem) / 3);min-width:260px}
   .sectors .card .card__tags{margin-top:auto;padding-top:.5rem}
 
   .grid{display:grid;gap:1.4rem}

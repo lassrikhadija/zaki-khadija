@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
-  <!-- End Google Tag Manager -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Design in Montreal | NEXTIWEB Agency</title>
   <meta name="description" content="Professional, fast and conversion-focused website design in Montreal. Showcase sites, redesigns and technical optimization for SMEs and service companies.">
+
+  <link rel="canonical" href="https://nextiweb.ca/en/creation-site.html">
+  <link rel="alternate" hreflang="en-CA" href="https://nextiweb.ca/en/creation-site.html">
+  <link rel="alternate" hreflang="fr-CA" href="https://nextiweb.ca/creation-site.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/creation-site.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -30,150 +27,143 @@
   <meta name="twitter:title" content="Website Design in Montreal | NEXTIWEB Agency">
   <meta name="twitter:description" content="Professional, fast and conversion-focused website design in Montreal for SMEs and service companies.">
 
-  <link rel="canonical" href="https://nextiweb.ca/en/creation-site.html">
-  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/creation-site.html">
-  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/creation-site.html">
-  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/creation-site.html">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
 
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
-  <style>
-    /* Fil d'Ariane */
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
-    .projects{grid-template-columns:repeat(2,1fr)!important}
-    .section__header{text-align:center}
-    .section__header .section__title,.section__header .section__subtitle{max-width:760px;margin-left:auto;margin-right:auto}
-    /* Steps — grille de cartes numérotées */
-    .steps{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1.25rem!important;list-style:none!important;padding:0!important;counter-reset:step-counter}
-    .steps__item{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:28px 24px;counter-increment:step-counter;position:relative;transition:border-color .2s,background .2s}
-    .steps__item:hover{border-color:var(--color-primary);background:rgba(0,230,118,.05)}
-    .steps__item::before{content:counter(step-counter,decimal-leading-zero);display:block;font-size:2.2rem;font-weight:900;color:var(--color-primary);line-height:1;margin-bottom:14px;letter-spacing:-.02em}
-    .steps__title{font-size:1rem!important;font-weight:700!important;color:var(--color-text)!important;margin:0 0 8px!important}
-    .steps__item>p{font-size:.875rem!important;color:var(--color-text-muted)!important;line-height:1.65!important;margin:0!important}
-    @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)!important}}
-    @media(max-width:560px){.steps{grid-template-columns:1fr!important}}
-  
-    /* Barre flottante telephone + WhatsApp */
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-    body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-  </style>
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#00e676">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-</head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Skip to content</a>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-  <div class="top-bar">
-    <div class="container top-bar__inner">
-      <p class="top-bar__message" id="top-bar-message"></p>
+  <link rel="stylesheet" href="/assets/css/v2026.css">
+
+  <!-- Schema.org : Service + FAQPage + BreadcrumbList (PAS d'AggregateRating — jeune agence, aucun faux avis) -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Website Design Montreal","description":"Professional website design and development in Montreal. Fast, SEO-optimized websites for SMBs: showcase sites, e-commerce, landing pages.","url":"https://nextiweb.ca/en/creation-site.html","provider":{"@type":"LocalBusiness","name":"NEXTIWEB","telephone":"+15147910591"},"areaServed":"Montreal, Quebec, Canada","serviceType":"Website Design","offers":{"@type":"Offer","priceCurrency":"CAD","url":"https://nextiweb.ca/en/contact.html"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a website cost in Montreal?","acceptedAnswer":{"@type":"Answer","text":"A professional website in Montreal costs between $1,500 and $5,000 CAD for a showcase site, and $3,000 to $10,000 for e-commerce. NEXTIWEB offers a free consultation to estimate your project."}},{"@type":"Question","name":"How long does it take to build a website?","acceptedAnswer":{"@type":"Answer","text":"A professional website typically takes 3 to 6 weeks: 1 week for design, 2-3 weeks for development, and 1 week for testing and launch."}},{"@type":"Question","name":"Will my site be SEO-optimized from day one?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every site built by NEXTIWEB includes baseline SEO: semantic HTML structure, meta tags, optimized loading speed, mobile compatibility and HTTPS."}},{"@type":"Question","name":"Will my website be mobile-friendly?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All our websites are built with responsive design and tested on mobile, tablet and desktop. Google's mobile-first indexing makes this a top priority."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/index.html"},{"@type":"ListItem","position":2,"name":"Services","item":"https://nextiweb.ca/en/services.html"},{"@type":"ListItem","position":3,"name":"Website Design","item":"https://nextiweb.ca/en/creation-site.html"}]}]}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+      </a>
+      <p class="topbar__msg">Stop to restart stronger&nbsp;: <strong>we audit your website for free.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
     </div>
   </div>
 
-  <header class="site-header">
+  <!-- HEADER -->
+  <header class="header" id="header">
     <div class="container header__inner">
-      <a href="/en/index.html" class="logo">
-        
-          
-          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
-        
+      <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        NEXTIWEB
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav__item">
-          <a href="/en/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
-            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
-            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__group">
+          <a href="/en/services.html" aria-current="page">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/en/creation-site.html">Website Design</a>
+            <a href="/en/seo.html">SEO</a>
+            <a href="/en/marketing-digital.html">Digital Marketing</a>
+            <a href="/en/visibilite-ia.html">AI Visibility</a>
           </div>
         </div>
-        <a href="/en/secteurs.html" class="nav__link">Industries</a>
-        <a href="/en/ressources.html" class="nav__link">Resources</a>
-        <a href="/en/blog/" class="nav__link">Blog</a>
-        <a href="/en/a-propos.html" class="nav__link">About</a>
-        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+        <a href="/en/secteurs.html">Industries</a>
+        <a href="/en/ressources.html">Resources</a>
+        <a href="/en/blog/">Blog</a>
+        <a href="/en/a-propos.html">About</a>
+        <a href="/en/contact.html" class="btn btn--primary nav__cta">Get My Free Audit</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+      <div class="lang" aria-label="Language">
+        <a href="/creation-site.html" hreflang="fr">FR</a>
+        <a href="/en/creation-site.html" class="is-active" aria-current="page">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close">×</button>
+    </div>
+    <a href="/en/services.html" aria-current="page">Services</a>
+    <a href="/en/creation-site.html">— Website Design</a>
+    <a href="/en/seo.html">— SEO</a>
+    <a href="/en/marketing-digital.html">— Digital Marketing</a>
+    <a href="/en/secteurs.html">Industries</a>
+    <a href="/en/ressources.html">Resources</a>
+    <a href="/en/blog/">Blog</a>
+    <a href="/en/a-propos.html">About</a>
+    <a href="/en/contact.html" class="btn btn--primary" style="margin-top:1rem">Get My Free Audit</a>
+  </aside>
+
   <main id="main">
 
-    <!-- FIL D'ARIANE -->
-    <div class="breadcrumb-bar">
-      <div class="container">
-        <nav aria-label="Fil d'Ariane">
-          <ol class="breadcrumb">
-          <li class="breadcrumb__item">
-            <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              NEXTIWEB
-            </a>
-          </li>
-          <li class="breadcrumb__item">
-            <a href="/en/services.html" class="breadcrumb__link">Services</a>
-          </li>
-          <li class="breadcrumb__item">
-            <span class="breadcrumb__current">Website Creation</span>
-          </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-<section class="section section--dark">
-      <div class="container section__header section__header--center">
-        <h1 class="section__title" id="creation-site-web-montreal">A website that brings you clients — not just another URL.</h1>
-        <p class="section__text">
-          Your website is often the first contact a prospect has with you. It must convince them in under 10 seconds.
-          NEXTIWEB designs fast, clear and conversion-oriented showcase sites for SMEs and service companies in Montreal.
-        </p>
-      </div>
-        <div style="width:44px;height:3px;background:var(--color-primary);margin:1.25rem auto 0;border-radius:2px"></div>
-    </section>
+    <!-- BREADCRUMB -->
+    <nav class="container" aria-label="Breadcrumb" style="padding-top:1.2rem;padding-bottom:.2rem">
+      <p style="font-family:'Space Grotesk',sans-serif;font-size:.82rem;color:var(--muted-2);margin:0">
+        <a href="/en/" style="color:var(--muted-2)">NEXTIWEB</a>
+        <span aria-hidden="true" style="opacity:.6">&nbsp;›&nbsp;</span>
+        <a href="/en/services.html" style="color:var(--muted-2)">Services</a>
+        <span aria-hidden="true" style="opacity:.6">&nbsp;›&nbsp;</span>
+        <span style="color:var(--green)">Website Design</span>
+      </p>
+    </nav>
 
-
-    <!-- ============================
-         A — AMPLIFY
-         ============================ -->
+    <!-- INTRO -->
     <section class="section">
       <div class="container">
-        <div class="split">
-          <div class="split__column">
-            <h2 class="split__title">What you're losing without knowing it</h2>
-            <ul class="split__list">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Website Design</p>
+          <h1 id="creation-site-web-montreal">A website that brings you clients — not just another URL.</h1>
+          <p>Your website is often the first contact a prospect has with you. It must convince them in under 10 seconds. NEXTIWEB designs fast, clear and conversion-oriented showcase sites for SMEs and service companies in Montreal.</p>
+        </div>
+        <div class="center-cta reveal"><a href="/en/contact.html" class="btn btn--primary btn--lg">Get My Free Audit</a></div>
+      </div>
+    </section>
+
+    <!-- A — AMPLIFY -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">The real cost</p>
+          <h2>What you're losing without knowing it</h2>
+        </div>
+        <div class="compare reveal">
+          <div class="compare__card compare__card--no">
+            <div class="compare__head"><span class="compare__badge">✕</span>What you're losing without knowing it</div>
+            <ul>
               <li>Prospects judge your credibility in under 3 seconds</li>
               <li>A slow or messy site loses visitors before they read a single word</li>
               <li>You explain what your site should convince on its own</li>
-              <li>Without a pro site, every new client comes from word of mouth &mdash; and stops there</li>
+              <li>Without a pro site, every new client comes from word of mouth — and stops there</li>
             </ul>
           </div>
-          <div class="split__column">
-            <h2 class="split__title">What it concretely costs you</h2>
-            <ul class="split__list">
+          <div class="compare__card compare__card--no">
+            <div class="compare__head"><span class="compare__badge">✕</span>What it concretely costs you</div>
+            <ul>
               <li>1 prospect lost per week = thousands of dollars a year</li>
               <li>A site with no clear call to action = every visit invested at a loss</li>
               <li>Your competitors absorb the clients who could have called you</li>
@@ -184,228 +174,214 @@
       </div>
     </section>
 
-    <!-- ============================
-         S — STORY
-         ============================ -->
-    <section class="section section--dark">
-      <div class="container section__header section__header--center" style="max-width:680px">
-        <div aria-hidden="true" style="font-size:5rem;line-height:1;color:var(--color-primary);opacity:.15;font-family:Georgia,serif;font-weight:700;margin-bottom:-.5rem;text-align:center">&ldquo;</div>
-        <p style="font-size:1.05rem;color:var(--color-text-muted);line-height:1.8;font-style:italic;margin-bottom:1.25rem">&ldquo;&nbsp;I built my first site myself. Clean code, solid structure. And I waited for clients. Zero contact for months. It wasn&rsquo;t a code problem &mdash; it was a strategy problem. That&rsquo;s what NEXTIWEB fixes.&nbsp;&rdquo;</p>
-        <p style="color:var(--color-primary);font-weight:700;font-size:.95rem">&mdash;&nbsp;Khadija AitLassri, founder of NEXTIWEB</p>
-        <p style="color:var(--color-text-muted);font-size:.875rem;margin-top:.5rem">Computer scientist and former entrepreneur &mdash; <a href="/en/a-propos.html" style="color:var(--color-primary)">read my story&nbsp;&rarr;</a></p>
-      </div>
-    </section>
-
-    <!-- ============================
-         T — TRANSFORMATION
-         ============================ -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="pourquoi-site-web-montreal">Why a professional website in Montreal?</h2>
-          <p class="section__subtitle">Your website is your business's first impression on prospects.</p>
-        </header>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Credibility and trust</h3>
-            <p class="feature__text">A professional site builds visitor confidence and positions your business as serious and reliable.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>24/7 local visibility</h3>
-            <p class="feature__text">Be visible in Montreal and beyond, even outside your business hours.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Lead generation</h3>
-            <p class="feature__text">A clear site with calls to action turns your visitors into quote requests.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Competitive advantage</h3>
-            <p class="feature__text">Many Montreal businesses aren't well-positioned online — that's your opportunity.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    <!-- S — STORY -->
     <section class="section">
       <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="types-sites-web">Types of websites we build</h2>
-          <p class="section__subtitle">For every need, a solution tailored to your business and goals.</p>
-        </header>
-        <div class="projects">
-          <article class="project-card">
-            <h3 class="project-card__title">Showcase site for SMEs</h3>
-            <p class="project-card__text">Clear presentation of your services, portfolio, team and calls to action to capture quote requests.</p>
-            <p class="project-card__meta">Ideal for: plumbers, electricians, consultants, personal service providers.</p>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-card__title">High-conversion landing page</h3>
-            <p class="project-card__text">A single page designed to turn ad traffic (Google Ads, Meta Ads) into leads or sales — no menu, no distraction, one single goal.</p>
-            <p class="project-card__meta">Ideal for: Google Ads and Meta Ads campaigns, product launches, targeted promotions.</p>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-card__title">E-commerce site</h3>
-            <p class="project-card__text">Complete online store with cart, secure payment and product management to start selling online.</p>
-            <p class="project-card__meta">Ideal for: small retailers, producers, artisans.</p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">Website redesign</h3>
-            <p class="project-card__text">Modernization, design improvements, performance and UX to relaunch your online acquisition.</p>
-            <p class="project-card__meta">Ideal for: businesses with an outdated, underperforming site.</p>
-          </article>
+        <div class="founder reveal">
+          <div class="founder__sig" aria-hidden="true">
+            <svg viewBox="0 0 148 62" xmlns="http://www.w3.org/2000/svg">
+              <text x="6" y="44" class="sig-text">Khadija</text>
+              <path class="sig-flourish" d="M 4 52 C 30 58 80 56 144 49"/>
+            </svg>
+          </div>
+          <div>
+            <p class="founder__text">“ I built my first site myself. Clean code, solid structure. And I waited for clients. Zero contact for months. It wasn’t a code problem — it was a strategy problem. That’s what NEXTIWEB fixes. ”</p>
+            <p style="color:var(--green);font-weight:700;font-family:'Space Grotesk',sans-serif;margin-top:.6rem">— Khadija AitLassri, founder of NEXTIWEB</p>
+            <a href="/en/a-propos.html" class="founder__link">Computer scientist and former entrepreneur — read my story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt-bg">
+    <!-- T — TRANSFORMATION -->
+    <section class="section section--alt">
       <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="notre-processus-creation-site">How your site comes to life — step by step</h2>
-          <p class="section__subtitle">A clear, structured process — you know at every step where we are and what comes next.</p>
-        </header>
-        <ol class="steps">
-          <li class="steps__item">
-            <h3 class="steps__title">You tell us about your business</h3>
-            <p>We listen to your goals, your clients and what's blocking your online acquisition.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">You receive a clear plan</h3>
-            <p>Site architecture, structure and justified wireframes — nothing goes unreviewed without explanation.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Your site takes shape</h3>
-            <p>Design, code and technical optimization — delivered cleanly across all devices.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Your content works for you</h3>
-            <p>Copywriting, images, SEO markup and optimization for Google and AI search engines.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Your site is validated and live</h3>
-            <p>Full QA, training and launch — you're operational on day one.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Your site improves over time</h3>
-            <p>Post-launch monitoring, maintenance and adjustments — your investment works harder every month.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section section--dark">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="standards-techniques-site">What you get — with no technical compromises</h2>
-          <p class="section__subtitle">Every site delivered follows web best practices to be fast, visible and reliable long-term.</p>
-        </header>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Mobile-first responsive</h3>
-            <p class="feature__text">Your site adapts perfectly to all devices: desktop, tablet, mobile.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Fast and performant</h3>
-            <p class="feature__text">Image optimization, caching and minified code for fast loading times.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>SSL/HTTPS secured</h3>
-            <p class="feature__text">SSL certificate included to protect your site and reassure your visitors.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>SEO-ready</h3>
-            <p class="feature__text">Semantic HTML5 markup, structured data and on-page optimization for search rankings.</p>
-          </article>
+        <div class="sec-head reveal">
+          <p class="eyebrow">Why it matters</p>
+          <h2 id="pourquoi-site-web-montreal">Why a professional website in Montreal?</h2>
+          <p>Your website is your business's first impression on prospects.</p>
+        </div>
+        <div class="grid grid-4 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <h3>Credibility and trust</h3>
+            <p>A professional site builds visitor confidence and positions your business as serious and reliable.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <h3>24/7 local visibility</h3>
+            <p>Be visible in Montreal and beyond, even outside your business hours.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3>Lead generation</h3>
+            <p>A clear site with calls to action turns your visitors into quote requests.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg></div>
+            <h3>Competitive advantage</h3>
+            <p>Many Montreal businesses aren't well-positioned online — that's your opportunity.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--cta">
-      <div class="container section__header section__header--center">
-        <h2 class="section__title">Your competitor may have just launched a new site. Don't fall behind.</h2>
-        <p class="section__text">Tell us about your project. In 30 minutes we'll tell you if your situation is fixable and how a professional site can transform your client acquisition in Montreal.</p>
-        <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
+    <!-- TYPES OF WEBSITES -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Our offer</p>
+          <h2 id="types-sites-web">Types of websites we build</h2>
+          <p>For every need, a solution tailored to your business and goals.</p>
+        </div>
+        <div class="grid grid-2 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <h3>Showcase site for SMEs</h3>
+            <p>Clear presentation of your services, portfolio, team and calls to action to capture quote requests.</p>
+            <p style="color:var(--muted-2);font-size:.88rem;margin-top:.8rem">Ideal for: plumbers, electricians, consultants, personal service providers.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>High-conversion landing page</h3>
+            <p>A single page designed to turn ad traffic (Google Ads, Meta Ads) into leads or sales — no menu, no distraction, one single goal.</p>
+            <p style="color:var(--muted-2);font-size:.88rem;margin-top:.8rem">Ideal for: Google Ads and Meta Ads campaigns, product launches, targeted promotions.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>E-commerce site</h3>
+            <p>Complete online store with cart, secure payment and product management to start selling online.</p>
+            <p style="color:var(--muted-2);font-size:.88rem;margin-top:.8rem">Ideal for: small retailers, producers, artisans.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Website redesign</h3>
+            <p>Modernization, design improvements, performance and UX to relaunch your online acquisition.</p>
+            <p style="color:var(--muted-2);font-size:.88rem;margin-top:.8rem">Ideal for: businesses with an outdated, underperforming site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">The method</p>
+          <h2 id="notre-processus-creation-site">How your site comes to life — step by step</h2>
+          <p>A clear, structured process — you know at every step where we are and what comes next.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="step"><div class="step__n">1</div><h3>You tell us about your business</h3><p>We listen to your goals, your clients and what's blocking your online acquisition.</p></div>
+          <div class="step"><div class="step__n">2</div><h3>You receive a clear plan</h3><p>Site architecture, structure and justified wireframes — nothing goes unreviewed without explanation.</p></div>
+          <div class="step"><div class="step__n">3</div><h3>Your site takes shape</h3><p>Design, code and technical optimization — delivered cleanly across all devices.</p></div>
+          <div class="step"><div class="step__n">4</div><h3>Your content works for you</h3><p>Copywriting, images, SEO markup and optimization for Google and AI search engines.</p></div>
+          <div class="step"><div class="step__n">5</div><h3>Your site is validated and live</h3><p>Full QA, training and launch — you're operational on day one.</p></div>
+          <div class="step"><div class="step__n">6</div><h3>Your site improves over time</h3><p>Post-launch monitoring, maintenance and adjustments — your investment works harder every month.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL STANDARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Technical standards</p>
+          <h2 id="standards-techniques-site">What you get — with no technical compromises</h2>
+          <p>Every site delivered follows web best practices to be fast, visible and reliable long-term.</p>
+        </div>
+        <div class="grid grid-4 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+            <h3>Mobile-first responsive</h3>
+            <p>Your site adapts perfectly to all devices: desktop, tablet, mobile.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <h3>Fast and performant</h3>
+            <p>Image optimization, caching and minified code for fast loading times.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <h3>SSL/HTTPS secured</h3>
+            <p>SSL certificate included to protect your site and reassure your visitors.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>SEO-ready</h3>
+            <p>Semantic HTML5 markup, structured data and on-page optimization for search rankings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">You might be wondering&hellip;</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq__item"><button class="faq__q">How much does a website cost in Montreal?<span class="arr">▾</span></button><div class="faq__a"><p>A professional website in Montreal costs between $1,500 and $5,000 CAD for a showcase site, and $3,000 to $10,000 for e-commerce. NEXTIWEB offers a free consultation to estimate your project.</p></div></div>
+          <div class="faq__item"><button class="faq__q">How long does it take to build a website?<span class="arr">▾</span></button><div class="faq__a"><p>A professional website typically takes 3 to 6 weeks: 1 week for design, 2-3 weeks for development, and 1 week for testing and launch.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Will my site be SEO-optimized from day one?<span class="arr">▾</span></button><div class="faq__a"><p>Yes. Every site built by NEXTIWEB includes baseline SEO: semantic HTML structure, meta tags, optimized loading speed, mobile compatibility and HTTPS.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Will my website be mobile-friendly?<span class="arr">▾</span></button><div class="faq__a"><p>Absolutely. All our websites are built with responsive design and tested on mobile, tablet and desktop. Google's mobile-first indexing makes this a top priority.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2>Your competitor may have just launched a new site. Don't fall behind.</h2>
+          <p>Tell us about your project. In 30 minutes we'll tell you if your situation is fixable and how a professional site can transform your client acquisition in Montreal.</p>
+          <a href="/en/contact.html" class="btn btn--primary btn--lg">Get My Free Audit</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
-        <address class="footer__address">
-          Montreal, Quebec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB on LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li><li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/en/creation-site.html">Website Design</a></li><li><a href="/en/seo.html">SEO</a></li><li><a href="/en/marketing-digital.html">Digital Marketing</a></li><li><a href="/en/visibilite-ia.html">AI Visibility</a></li></ul></div>
+        <div><h4>Industries</h4><ul><li><a href="/en/dental-clinics.html">Dental clinics</a></li><li><a href="/en/real-estate-brokers.html">Real estate brokers</a></li><li><a href="/en/lawyers.html">Lawyers</a></li><li><a href="/en/construction-renovation.html">Construction</a></li><li><a href="/en/secteurs.html">Other industries</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="/en/zones-desservies/montreal.html">Montreal</a></li><li><a href="/en/zones-desservies/quebec.html">Quebec</a></li><li><a href="/en/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/en/index.html">Home</a></li>
-          <li><a href="/en/services.html">Services</a></li>
-          <li><a href="/en/secteurs.html">Industries</a></li>
-          <li><a href="/en/ressources.html">Resources</a></li>
-          <li><a href="/en/blog/">Blog</a></li>
-          <li><a href="/en/a-propos.html">About</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/en/creation-site.html">Website Design</a></li>
-          <li><a href="/en/seo.html">SEO</a></li>
-          <li><a href="/en/marketing-digital.html">Digital Marketing</a></li>
-          <li><a href="/en/visibilite-ia.html">AI Visibility</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Industries</h3>
-        <ul class="footer__list">
-          <li><a href="/en/dental-clinics.html">Dental Clinics</a></li>
-          <li><a href="/en/real-estate-brokers.html">Real Estate Brokers</a></li>
-          <li><a href="/en/lawyers.html">Lawyers</a></li>
-          <li><a href="/en/construction-renovation.html">Construction &amp; Renovation</a></li>
-          <li><a href="/en/secteurs.html">Other Industries</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Areas Served</h3>
-        <ul class="footer__list">
-          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
-          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
-          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curious to see our method in action? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <p class="footer__studio">Curious to see our method in action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Read our <a href="/en/politique-confidentialite.html">Privacy Policy</a>, <a href="/en/politique-cookies.html">Cookie Policy</a> and <a href="/en/mentions-legales.html">Legal Notice</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Manage cookies</button></p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js" defer></script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Website Design Montreal","description":"Professional website design and development in Montreal. Fast, SEO-optimized websites for SMBs: showcase sites, e-commerce, landing pages.","url":"https://nextiweb.ca/en/creation-site.html","provider":{"@type":"LocalBusiness","name":"NEXTIWEB","telephone":"+15147910591"},"areaServed":"Montreal, Quebec, Canada","serviceType":"Website Design","offers":{"@type":"Offer","priceCurrency":"CAD","url":"https://nextiweb.ca/en/contact.html"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a website cost in Montreal?","acceptedAnswer":{"@type":"Answer","text":"A professional website in Montreal costs between $1,500 and $5,000 CAD for a showcase site, and $3,000 to $10,000 for e-commerce. NEXTIWEB offers a free consultation to estimate your project."}},{"@type":"Question","name":"How long does it take to build a website?","acceptedAnswer":{"@type":"Answer","text":"A professional website typically takes 3 to 6 weeks: 1 week for design, 2-3 weeks for development, and 1 week for testing and launch."}},{"@type":"Question","name":"Will my site be SEO-optimized from day one?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every site built by NEXTIWEB includes baseline SEO: semantic HTML structure, meta tags, optimized loading speed, mobile compatibility and HTTPS."}},{"@type":"Question","name":"Will my website be mobile-friendly?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All our websites are built with responsive design and tested on mobile, tablet and desktop. Google's mobile-first indexing makes this a top priority."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nextiweb.ca/en/index.html"},{"@type":"ListItem","position":2,"name":"Services","item":"https://nextiweb.ca/en/services.html"},{"@type":"ListItem","position":3,"name":"Website Design","item":"https://nextiweb.ca/en/creation-site.html"}]}]}
-  </script>
-
-  <!-- Barre flottante bas droite : telephone + WhatsApp -->
-  <div class="float-bar">
-    <a href="/en/contact.html" class="audit-pill" aria-label="Get My Free Audit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Free audit
-    </a>
-    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-    </a>
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/en/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free audit</a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
   </div>
+
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Cookie consent management">
+    <h2>Cookie preferences</h2>
+    <p>We use essential cookies to keep this site running. Analytics and marketing cookies are enabled only with your consent (Law 25). <a href="/en/politique-confidentialite.html">Privacy</a> · <a href="/en/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Essential cookies (required)</label>
+      <label><input type="checkbox" id="cAnalytics"> Analytics cookies</label>
+      <label><input type="checkbox" id="cMarketing"> Marketing cookies</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Save my choices</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Accept all</button>
+      <button class="btn btn--ghost" data-consent="none">Reject all</button>
+      <button class="btn btn--ghost" data-consent="custom">Customize</button>
+    </div>
+  </div>
+
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

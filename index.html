@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- =======================
-       META & SEO DE BASE
-       ======================= -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- CSS critique inliné → élimine le render-blocking, accélère LCP -->
-  <style>
-  html{overflow-x:clip}.article-body{min-width:0;word-break:break-word;overflow-wrap:break-word}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--color-bg:#0f0f0f;--color-bg-alt:#000000;--color-bg-alt-2:#0a0a0a;--color-surface:#111111;--color-surface-alt:#101010;--color-surface-soft:#0c0c0c;--color-primary:#00e676;--color-primary-dark:#009e4f;--color-primary-deep:#006837;--color-text:#ffffff;--color-text-muted:#c8c8c8;--color-text-light:#9a9a9a;--color-border:#1a1a1a;--color-border-strong:#262626;--color-border-soft:#333333;--color-header-bg:rgba(0,0,0,1);--color-topbar-bg:#101010;--color-menu-bg:rgba(0,0,0,0.95);--color-footer-bg:#000000;--color-card-hover:#141414;--color-shadow-soft:rgba(0,0,0,0.35);--color-shadow-strong:rgba(0,0,0,0.45);--theme-toggle-bg:rgba(255,255,255,0.04);--font-family-base:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--container-width:1120px;--section-padding-y:6rem;--border-radius:0.5rem;--transition-smooth:all 0.3s cubic-bezier(0.4,0,0.2,1)}html{font-size:16px}body{background-color:var(--color-bg);color:var(--color-text);font-family:var(--font-family-base);line-height:1.6;transition:background-color 0.25s ease,color 0.25s ease}body.theme-light{--color-bg:#f5efe6;--color-bg-alt:#fffdf9;--color-bg-alt-2:#eee4d6;--color-surface:#fffdf9;--color-surface-alt:#f8efe3;--color-surface-soft:#fff8ef;--color-text:#171717;--color-text-muted:#4f4f4f;--color-text-light:#5e5e5e;--color-border:#ded1c0;--color-border-strong:#cdbda9;--color-border-soft:#baa892;--color-header-bg:rgba(239,225,207,0.97);--color-topbar-bg:#efe1cf;--color-menu-bg:rgba(255,250,244,0.98);--color-footer-bg:#ead9c5;--color-card-hover:#fbf3e8;--color-shadow-soft:rgba(82,55,24,0.12);--color-shadow-strong:rgba(82,55,24,0.18);--theme-toggle-bg:#ffffff}body.theme-light a:not(.btn){color:#006837}body.theme-light a:not(.btn):hover{color:#004d27}body.theme-light .hero-bg .btn--ghost{color:#ffffff;border-color:#ffffff}body.theme-light .hero-bg .btn--ghost:hover{background-color:#ffffff;color:#000000;border-color:#ffffff}body.theme-light .section--cta{background:linear-gradient(135deg,#003d1f,#006837)}body.theme-light .top-bar__highlight{color:#006837}body.theme-light .top-bar__phone{color:#006837}body.theme-light .top-bar__phone:hover{color:#004d27}body.theme-light .assurance-icon{background-color:#000000;color:#ffffff;border-color:#000000}a{color:var(--color-primary);text-decoration:none;transition:color 0.25s ease}a:hover{color:var(--color-primary-dark)}.container{width:100%;max-width:var(--container-width);margin:0 auto;padding:0 1.5rem}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}.section--cta{background:linear-gradient(135deg,#003d1f,#006837);text-align:center}.top-bar{background-color:var(--color-topbar-bg);border-bottom:1px solid var(--color-border);font-size:0.85rem;padding:0.5rem 0;position:fixed;top:0;left:0;right:0;width:100%;z-index:25;transition:transform 0.3s ease,opacity 0.3s ease}body.scrolled .top-bar{transform:translateY(-100%);opacity:0;pointer-events:none}body.scrolled .site-header{top:0;transition:top 0.3s ease}body{padding-top:119px}.top-bar__inner{display:flex;align-items:center;justify-content:space-between;min-height:1.25rem;padding:0;gap:1rem}.top-bar__message{flex:1;color:var(--color-text-muted);margin:0;font-size:0.85rem;text-align:center;transition:opacity 0.3s ease}.top-bar__highlight{color:var(--color-primary);font-weight:600}.top-bar__whatsapp{order:-1;flex-shrink:0}.top-bar__phone{position:static;transform:none;flex-shrink:0;color:var(--color-primary);font-weight:700;font-size:0.9rem;letter-spacing:0.01em;white-space:nowrap}.top-bar__phone:hover{color:var(--color-primary-dark)}.site-header{position:fixed;top:39px;transition:top 0.3s ease;left:0;right:0;width:100%;z-index:20;background-color:var(--color-header-bg);backdrop-filter:blur(10px)}.header__inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}.logo img{height:52px;max-height:52px;filter:saturate(2.2) brightness(1.55)}body.theme-light .logo img{filter:saturate(2.2) brightness(1.55)}.main-nav{display:flex;align-items:center;gap:1.5rem}.nav__item{position:relative}.nav__item>.nav__link{cursor:pointer}.nav__item>.nav__link::after{content:"";display:inline-block;width:0.4rem;height:0.4rem;border:solid var(--color-text);border-width:0 2px 2px 0;margin-left:0.4rem;transform:rotate(45deg);transition:transform 0.3s ease}.nav__item.is-open>.nav__link::after{transform:rotate(-135deg)}.nav__submenu{position:absolute;top:100%;left:0;background-color:var(--color-menu-bg);border:1px solid var(--color-border);border-radius:0.5rem;min-width:200px;margin-top:0.5rem;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.3s ease,visibility 0.3s ease;z-index:100;box-shadow:0 10px 30px var(--color-shadow-strong)}.nav__item:hover .nav__submenu{opacity:1;visibility:visible;pointer-events:auto}.nav__item.is-open .nav__submenu{opacity:1;visibility:visible;pointer-events:auto}.nav__submenu-link{display:block;padding:0.75rem 1rem;color:var(--color-text);font-size:0.9rem;transition:color 0.3s ease}.nav__submenu-link:hover{color:var(--color-primary)}.nav__submenu-link:first-child{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem}.nav__submenu-link:last-child{border-bottom-left-radius:0.5rem;border-bottom-right-radius:0.5rem}.nav__link{font-size:0.95rem;color:var(--color-text);transition:color 0.3s ease}.nav__link:hover{color:var(--color-primary)}.nav__link--active{color:var(--color-primary)}.nav__link--cta{padding:0.5rem 1rem;border-radius:999px;background-color:var(--color-primary);color:#000000;font-weight:600;transition:background-color 0.3s ease}.nav__link--cta:hover{background-color:var(--color-primary-dark);color:#ffffff}.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:0.55rem;min-width:9.5rem;border:1px solid var(--color-border-soft);background:var(--theme-toggle-bg);color:var(--color-text);border-radius:999px;padding:0.5rem 0.85rem;cursor:pointer;font:inherit;font-size:0.9rem;font-weight:600;line-height:1;box-shadow:0 8px 18px var(--color-shadow-soft);transition:var(--transition-smooth)}.theme-toggle:hover{border-color:var(--color-primary);transform:translateY(-1px)}.theme-toggle:focus-visible{outline:none;box-shadow:0 0 0 4px rgba(0,230,118,0.14)}.theme-toggle__icon{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;border-radius:999px;background-color:rgba(0,230,118,0.12);color:var(--color-primary);font-size:0.95rem;flex-shrink:0}.theme-toggle__text{white-space:nowrap}.language-switcher{display:inline-flex;align-items:center;gap:0.25rem;border:1px solid var(--color-border-soft);border-radius:999px;padding:0.2rem;background:var(--theme-toggle-bg);box-shadow:0 8px 18px var(--color-shadow-soft)}.language-switcher__btn{border:0;background:transparent;color:var(--color-text-muted);border-radius:999px;padding:0.3rem 0.6rem;font-size:0.78rem;font-weight:700;letter-spacing:0.03em;cursor:pointer;transition:var(--transition-smooth)}.language-switcher__btn:hover{color:var(--color-text)}.language-switcher__btn.is-active{color:#000000;background-color:var(--color-primary)}.language-switcher__btn:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(0,230,118,0.15)}@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}@keyframes slideInRight{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:translateX(0)}}@keyframes pulse-dot{0%,100%{box-shadow:0 0 0 0 rgba(0,230,118,0.7)}50%{box-shadow:0 0 0 8px rgba(0,230,118,0)}}@keyframes glow-ring{0%,100%{filter:drop-shadow(0 6px 14px rgba(0,230,118,.35))}50%{filter:drop-shadow(0 8px 22px rgba(0,230,118,.6))}}@keyframes scroll-bounce{0%,100%{transform:translateY(0);opacity:0.7}50%{transform:translateY(8px);opacity:1}}@keyframes highlight-appear{from{background-size:0% 100%}to{background-size:100% 100%}}.hero-bg{position:relative;min-height:92vh;display:flex;align-items:stretch;overflow:hidden;background-image:linear-gradient(to right,rgba(3,15,26,0.72) 0%,rgba(3,15,26,0.45) 55%,rgba(3,15,26,0.15) 100%),url("../img/hero/hero-nextiweb.webp");background-size:cover;background-position:center right;color:#ffffff}.hero-bg::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 8% 20%,rgba(0,230,118,0.32),rgba(0,230,118,0) 48%),radial-gradient(circle at 80% 70%,rgba(92,216,255,0.14),rgba(92,216,255,0) 42%);z-index:0}body.theme-light .hero-bg,body.theme-light .hero-bg__kicker,body.theme-light .hero-bg__headline,body.theme-light .hero-bg__subtitle,body.theme-light .hero-bg__microcopy{color:#f7f7f7}.hero-bg__overlay{position:absolute;inset:0;background:radial-gradient(circle at top left,rgba(0,230,118,0.18),transparent 50%),linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,0.4));pointer-events:none}.hero-bg__inner{position:relative;z-index:1;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:3rem;padding:7rem 0 5rem;width:100%}.hero-bg__content{flex:0 0 58%;max-width:620px;display:flex;flex-direction:column;gap:0}.hero-bg__kicker{display:inline-flex;align-items:center;gap:0.55rem;margin-bottom:1.4rem;font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(188,244,222,0.95);animation:slideUp 0.7s ease 0.1s both}.hero-bg__kicker-dot{width:9px;height:9px;border-radius:999px;background-color:var(--color-primary);flex-shrink:0;animation:pulse-dot 2s ease-in-out infinite}.hero-bg__headline{font-size:clamp(2.4rem,5.2vw,3.6rem);line-height:1.06;margin:0 0 1.4rem;font-weight:800;letter-spacing:-0.03em;color:#ffffff;text-shadow:0 6px 30px rgba(0,0,0,0.4);animation:slideUp 0.8s ease 0.2s both}.hero-bg__highlight-word{display:inline-block;color:var(--color-primary);-webkit-text-fill-color:var(--color-primary);position:relative}.hero-bg__subtitle{color:rgba(210,235,255,0.82);font-size:1.05rem;font-weight:400;margin-bottom:2rem;max-width:520px;line-height:1.65;text-shadow:0 2px 12px rgba(0,0,0,0.3);animation:slideUp 0.8s ease 0.35s both}.hero-bg__actions{display:flex;flex-wrap:wrap;gap:1rem;animation:slideUp 0.8s ease 0.5s both}.hero-bg__cta-main{font-size:1rem}.hero-bg__cta--glow{animation:glow-ring 2.4s ease-in-out infinite}.hero-bg__cta-secondary{font-size:0.95rem}.hero-bg__metrics{flex:0 0 34%;display:flex;flex-direction:column;gap:1.1rem;align-items:flex-end}.hero-metric{background:rgba(0,8,18,0.68);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.14);border-radius:1rem;padding:1.2rem 1.6rem;width:200px;display:flex;flex-direction:column;gap:0.2rem;position:relative;box-shadow:0 8px 32px rgba(0,0,0,0.25);transition:transform 0.3s ease,box-shadow 0.3s ease}.hero-metric:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,230,118,0.2);border-color:rgba(0,230,118,0.4)}.hero-metric--1{animation:slideInRight 0.7s ease 0.4s both}.hero-metric--2{animation:slideInRight 0.7s ease 0.6s both}.hero-metric--3{animation:slideInRight 0.7s ease 0.8s both}.hero-metric__number{font-size:2.2rem;font-weight:800;color:#ffffff;line-height:1;letter-spacing:-0.02em}.hero-metric__number--concept{font-size:1.9rem;letter-spacing:0.01em;color:#ffffff}.hero-metric__on{font-size:1.2rem;color:var(--color-primary);font-weight:700}.hero-metric__plus,.hero-metric__unit{font-size:1.2rem;color:var(--color-primary);font-weight:700}.hero-metric__label{font-size:0.82rem;color:#c8d8f0;font-weight:500;letter-spacing:0.02em}.hero-metric__check{position:absolute;top:0.9rem;right:1rem;width:1.6rem;height:1.6rem;border-radius:999px;background:rgba(0,230,118,0.18);color:var(--color-primary);font-size:0.875rem;display:flex;align-items:center;justify-content:center;font-weight:700}.hero-bg__scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.3rem;animation:slideUp 1s ease 1.2s both}.hero-bg__scroll-line{width:1.5px;height:40px;background:linear-gradient(to bottom,rgba(0,230,118,0.8),rgba(0,230,118,0));border-radius:2px;animation:scroll-bounce 1.8s ease-in-out infinite}@media (max-width:860px){.hero-bg__inner{flex-direction:column;align-items:flex-start;padding:5rem 0 4rem}.hero-bg__metrics{flex-direction:row;flex-wrap:wrap;align-items:flex-start;width:100%}.hero-metric{width:calc(50% - 0.55rem);flex:1 1 140px}.hero-bg__scroll-indicator{display:none}}.hero-bg__microcopy{font-size:0.9rem;color:rgba(226,239,248,0.88);line-height:1.4;margin:0;animation:slideUp 0.8s ease 0.5s both}.hero-bg__cta-secondary{font-size:0.95rem}.assurance-bar{padding:1.5rem 0;border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04)}.assurance-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem;align-items:center}.assurance-item{display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--color-text-muted)}.assurance-item strong{font-weight:600;color:var(--color-text);display:block}.assurance-item__desc{font-size:0.875rem;color:var(--color-text-light);display:block;margin-top:0.15rem}.assurance-icon{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;border-radius:999px;background-color:rgba(0,230,118,0.12);color:var(--color-primary);font-size:0.9rem;font-weight:bold;border:2px solid #ffffff;flex-shrink:0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:0.95rem 2rem;border-radius:999px;border:1px solid transparent;font-size:1rem;font-weight:600;cursor:pointer;transition:var(--transition-smooth);position:relative;overflow:hidden}.btn::before{content:"";position:absolute;inset:0;background-color:rgba(255,255,255,0.1);opacity:0;transition:opacity 0.25s ease}.btn--primary{background-color:var(--color-primary);color:#000000;box-shadow:0 10px 25px rgba(0,230,118,0.3)}.btn--primary:hover{background-color:var(--color-primary-dark);color:#ffffff;transform:translateY(-2px);box-shadow:0 14px 35px rgba(0,230,118,0.5)}.btn--primary:active{transform:translateY(0)}.btn--ghost{background-color:transparent;color:var(--color-text);border:1.5px solid var(--color-primary)}.btn--ghost:hover{background-color:var(--color-primary);color:#000000;transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,230,118,0.25)}.expertise-intro__cta{display:flex;flex-direction:column;align-items:center;gap:0.5rem;margin-top:2rem}@media (max-width:768px){.steps--visual{grid-template-columns:1fr 1fr}.steps__arrow{display:none}}@media (max-width:480px){.steps--visual{grid-template-columns:1fr}}.project-card__meta{font-size:0.85rem;color:var(--color-text-muted);opacity:0.9}.contact-form__textarea{min-height:160px;resize:vertical}.footer__legal a{color:var(--color-primary)}.cookie-banner__actions .btn{padding:0.6rem 1rem;font-size:0.85rem}.nav-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:2.2rem;height:2.2rem;background:transparent;border:1px solid var(--color-border-soft);border-radius:0.5rem;cursor:pointer;padding:0;z-index:201;transition:border-color 0.2s ease}.nav-toggle:hover{border-color:var(--color-primary)}.nav-toggle__bar{display:block;width:18px;height:2px;background:var(--color-text);border-radius:2px;transition:transform 0.3s ease,opacity 0.3s ease,width 0.3s ease}.nav-toggle.is-open .nav-toggle__bar:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-toggle.is-open .nav-toggle__bar:nth-child(2){opacity:0;width:0}.nav-toggle.is-open .nav-toggle__bar:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.mobile-nav-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:198;opacity:0;pointer-events:none;transition:opacity 0.3s ease}.mobile-nav-overlay.is-open{opacity:1;pointer-events:all}.mobile-nav{position:fixed;top:0;right:0;width:min(80vw,320px);height:100dvh;background:var(--color-surface);border-left:1px solid var(--color-border);z-index:199;transform:translateX(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);display:flex;flex-direction:column;padding:1.5rem;overflow-y:auto;box-shadow:-8px 0 32px rgba(0,0,0,0.3)}.mobile-nav.is-open{transform:translateX(0)}.mobile-nav__header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--color-border)}.mobile-nav__logo{font-size:1.1rem;font-weight:800;color:var(--color-text);letter-spacing:0.05em}.mobile-nav__close{background:transparent;border:1px solid var(--color-border-soft);border-radius:0.5rem;color:var(--color-text);width:2rem;height:2rem;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color 0.2s ease,color 0.2s ease}.mobile-nav__close:hover{border-color:var(--color-primary);color:var(--color-primary)}.mobile-nav__links{display:flex;flex-direction:column;gap:0.25rem;flex:1}.mobile-nav__link{display:block;padding:0.85rem 1rem;font-size:1rem;font-weight:500;color:var(--color-text);border-radius:0.5rem;transition:background-color 0.2s ease,color 0.2s ease;border-left:3px solid transparent}.mobile-nav__link:hover{background-color:var(--color-bg-alt-2);color:var(--color-primary);border-left-color:var(--color-primary)}.mobile-nav__link--cta{margin-top:1rem;background-color:var(--color-primary);color:#000000 !important;font-weight:700;text-align:center;border-radius:999px;border-left:none !important;padding:0.95rem 1rem}.mobile-nav__link--cta:hover{background-color:var(--color-primary-dark);color:#ffffff !important}.mobile-nav__submenu{padding-left:1rem;display:flex;flex-direction:column;gap:0.1rem;margin-bottom:0.25rem}.mobile-nav__submenu-link{display:block;padding:0.6rem 1rem;font-size:0.9rem;color:var(--color-text-muted);border-radius:0.4rem;transition:color 0.2s ease,background-color 0.2s ease}.mobile-nav__submenu-link:hover{color:var(--color-primary);background-color:var(--color-bg-alt-2)}body.mobile-nav-active{overflow:hidden}@media (max-width:768px){.main-nav{display:none}.nav-toggle{display:flex;order:4;flex-shrink:0}.header__inner{flex-wrap:nowrap;justify-content:flex-start;align-items:center;gap:0.75rem;padding:0.75rem 0}.logo{order:1;flex:0 0 auto;margin-right:auto;line-height:1}.language-switcher{order:2;flex-shrink:0}.theme-toggle{order:3;flex-shrink:0;min-width:2.2rem;width:2.2rem;height:2.2rem;padding:0;gap:0;border-radius:50%;border:1.5px solid var(--color-primary);background:rgba(0,230,118,0.12);box-shadow:none;justify-content:center}.theme-toggle__text{display:none}.theme-toggle__icon{width:1rem;height:1rem;font-size:0.78rem;background:transparent}.top-bar__inner{flex-direction:row;justify-content:center;align-items:center;padding:0;gap:1.25rem}.top-bar__message{display:none}.top-bar__whatsapp{order:0}.top-bar__phone{position:static;transform:none;font-size:0.85rem;white-space:nowrap;order:0}.logo img{height:auto;max-height:44px;width:auto;display:block}.hero-bg__metrics{display:none}.hero-bg{background-position:center;min-height:72vh}.hero-bg__inner{padding:3rem 0 2rem}.hero-bg__title{font-size:1.05rem;margin-bottom:0.45rem}.hero-bg__headline{font-size:1.85rem;margin-bottom:0.8rem}.hero-bg__subtitle{font-size:0.93rem;margin-bottom:1.1rem}.hero-bg__subtitle::before{width:28px;margin-bottom:0.5rem}.hero-bg__actions{gap:0.7rem;margin-bottom:0.5rem}.btn{padding:0.85rem 1.5rem;font-size:0.9rem}.assurance-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}.assurance-item{font-size:0.85rem}.section__title{font-size:1.8rem}.section{padding:4rem 0}.contact-grid{grid-template-columns:1fr}.contact-form__row{grid-template-columns:1fr}.cookie-banner{left:0.75rem;right:0.75rem;bottom:0.75rem;width:auto}.founder-message,.problem-solution{margin:2rem 1rem}.audiences--grid{grid-template-columns:repeat(2,1fr)}.footer__inner{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:480px){.hero-bg__title{font-size:0.9rem;line-height:1.3}.hero-bg__actions .btn,.section--cta .btn{padding:0.75rem 1.2rem;font-size:0.85rem;width:100%}.hero-bg__actions{flex-direction:column}.audiences--grid{grid-template-columns:1fr}.footer__inner{grid-template-columns:1fr}.section__title{font-size:1.55rem}.faq__item{padding:1.1rem 1.1rem}}.blog-cat-card--ia:hover{border-color:rgba(200,100,255,0.5)}.breadcrumb a{color:var(--color-text-muted);text-decoration:none}.breadcrumb a:hover{color:var(--color-primary)}.blog-cat-badge--ia{background:rgba(200,100,255,0.12);color:#c864ff}@media (max-width:768px){.blog-search{flex-direction:column}.blog-search__input,.blog-search__btn{border-radius:0.75rem;width:100%}.blog-cat-grid{grid-template-columns:1fr 1fr}}@media (max-width:480px){.blog-cat-grid{grid-template-columns:1fr}}body.theme-light .blog-search__input{background:#ffffff;border-color:var(--color-border)}body.theme-light .blog-cat-card{background:#ffffff}body.theme-light .phone-float{background:#ffffff;border-color:rgba(0,0,0,0.1);color:#1a1a1a;box-shadow:0 4px 16px rgba(0,0,0,0.15)}.article-body a,.article-faq__a a,.callout a,p a:not(.btn),li a:not(.btn):not(.nav__link):not(.nav__submenu-link):not(.breadcrumb__link){text-decoration:underline;text-underline-offset:3px}.main-nav a,.btn,.nav__link,.nav__submenu-link,.breadcrumb__link,.breadcrumb__current,.article-sidebar__toc a,.footer__list a,.blog-card__link,.blog-card__title a,.project-card__meta a,.float-bar a{text-decoration:none}
-  </style>
-  <!-- CSS complet chargé en async (non-blocking) -->
-  <link rel="preload" href="/assets/css/styles.min.css?v=8" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/assets/css/styles.min.css?v=8"></noscript>
-  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence web Montréal | SEO & Marketing digital | NEXTIWEB</title>
+  <meta name="description" content="NEXTIWEB crée des sites web rapides, optimisés SEO et pensés pour convertir vos visiteurs en clients. Audit gratuit pour PME à Montréal.">
+
+  <link rel="canonical" href="https://nextiweb.ca/">
+  <link rel="alternate" hreflang="fr-CA" href="https://nextiweb.ca/">
+  <link rel="alternate" hreflang="en-CA" href="https://nextiweb.ca/en/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NEXTIWEB">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Agence web Montréal | SEO & Marketing digital | NEXTIWEB">
+  <meta property="og:description" content="NEXTIWEB crée des sites web rapides, optimisés SEO et pensés pour convertir vos visiteurs en clients. Audit gratuit pour PME à Montréal.">
+  <meta property="og:url" content="https://nextiweb.ca/">
+  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -21,335 +28,394 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
   <!-- End Google Tag Manager -->
-  <title>Agence web Montréal | SEO & Marketing digital | NEXTIWEB</title>
-  <meta name="description" content="NEXTIWEB crée des sites web rapides, optimisés SEO et pensés pour convertir vos visiteurs en clients. Audit gratuit pour PME à Montréal.">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="NEXTIWEB">
-  <meta property="og:locale" content="fr_CA">
-  <meta property="og:title" content="Agence web Montréal | Sites web, SEO & Marketing digital | NEXTIWEB">
-  <meta property="og:description" content="Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME. Audit gratuit, réponse sous 24 h.">
-  <meta property="og:url" content="https://nextiweb.ca/">
-  <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Agence web Montréal | Sites web, SEO & Marketing digital | NEXTIWEB">
-  <meta name="twitter:description" content="Agence web à Montréal pour PME : sites web, SEO local et marketing digital. Audit gratuit, sans engagement.">
-
-  <!-- =======================
-       FAVICONS
-       ======================= -->
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="canonical" href="https://nextiweb.ca/">
-  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/">
-  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/">
-
-  <!-- =======================
-       CSS GLOBAL
-       ======================= -->
-  <link rel="manifest" href="/manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
   <style>
-    /* Founder teaser */
-    .founder-teaser{padding:3rem 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
-    .founder-teaser__inner{display:flex;align-items:center;gap:1.75rem;max-width:720px;margin:0 auto}
-    .founder-teaser__avatar{width:56px;height:56px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.4rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .founder-teaser__content{display:flex;flex-direction:column;gap:.75rem}
-    .founder-teaser__text{color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin:0;font-style:italic}
-    /* Signature manuscrite */
-    .founder-teaser__sig{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:0}
-    .sig-text{font-family:'Dancing Script',cursive;font-size:38px;font-weight:700;fill:var(--color-primary)}
-    .sig-flourish{stroke:var(--color-primary);stroke-width:1.5;fill:none;opacity:.55}
-    @media(max-width:540px){.founder-teaser__inner{flex-direction:column;text-align:center}}
+  /* =========================================================
+     NEXTIWEB — Design system 2026 (autonome, ne dépend pas de styles.min.css)
+     ========================================================= */
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#070809; --bg-2:#0b0d10; --surface:rgba(255,255,255,.035);
+    --surface-2:rgba(255,255,255,.06); --border:rgba(255,255,255,.09);
+    --border-strong:rgba(255,255,255,.16);
+    --green:#00e676; --green-soft:#5dffb0; --cyan:#27e0ff; --violet:#8b6cff;
+    --text:#f3f5f4; --muted:#9aa4a1; --muted-2:#6f7976;
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --maxw:1160px;
+    --grad:linear-gradient(115deg,var(--green) 0%,var(--green-soft) 40%,var(--cyan) 100%);
+    --grad-soft:linear-gradient(135deg,rgba(0,230,118,.16),rgba(39,224,255,.10));
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg); color:var(--text); font-family:var(--body);
+    line-height:1.65; font-size:16px; overflow-x:hidden; position:relative;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* Fond global : aurora + grille + grain */
+  .bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+  .bg-fx::before{content:"";position:absolute;inset:-20%;
+    background:
+      radial-gradient(40% 50% at 12% 8%,rgba(0,230,118,.18),transparent 60%),
+      radial-gradient(40% 45% at 88% 20%,rgba(39,224,255,.12),transparent 60%),
+      radial-gradient(50% 50% at 70% 95%,rgba(139,108,255,.10),transparent 60%);
+    filter:blur(20px); animation:auroraDrift 22s var(--ease) infinite alternate;}
+  .bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size:64px 64px;
+    -webkit-mask-image:radial-gradient(circle at 50% 0%,#000,transparent 75%);
+            mask-image:radial-gradient(circle at 50% 0%,#000,transparent 75%);}
+  @keyframes auroraDrift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-4%,3%,0) scale(1.12)}}
+  /* Halo discret qui suit la souris sur toute la page (derrière le contenu) */
+  .cursor-glow{position:fixed;top:0;left:0;width:540px;height:540px;border-radius:50%;pointer-events:none;z-index:-1;opacity:0;will-change:transform,opacity;
+    transform:translate(-50%,-50%);
+    background:radial-gradient(circle,rgba(0,230,118,.14),rgba(0,230,118,.05) 38%,transparent 66%);
+    transition:transform .2s ease,opacity .5s ease}
 
-    /* Steps visual */
-    .steps--visual{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;padding:0;margin:2rem 0}
-    .steps--visual .steps__item{position:relative;padding:0 1.5rem 0 0;display:flex;flex-direction:column;gap:.75rem}
-    .steps__number{width:48px;height:48px;border-radius:50%;background:var(--color-primary);color:#000;font-weight:800;font-size:1.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1}
-    .steps--visual .steps__item{position:relative}
-    .steps--visual .steps__item:not(:last-child)::after{content:'';position:absolute;top:24px;left:calc(48px + 12px);right:-12px;height:2px;background:linear-gradient(90deg,var(--color-primary) 60%,transparent 100%);background-image:repeating-linear-gradient(90deg,var(--color-primary) 0,var(--color-primary) 8px,transparent 8px,transparent 16px)}
-    .steps__title{font-size:1rem;font-weight:700;margin:0;line-height:1.4}
-    .steps__text{font-size:.9rem;color:var(--color-text-muted);line-height:1.6;margin:0}
-    @media(max-width:768px){.steps--visual{grid-template-columns:1fr 1fr}.steps--visual .steps__item:not(:last-child)::after{display:none}}
-    @media(max-width:480px){.steps--visual{grid-template-columns:1fr}}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 1.5rem}
+  .accent{background:linear-gradient(100deg,#00e676 0%,#2fe98f 50%,#7dffc2 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+    background-size:200% auto;animation:shineText 6s linear infinite}
+  @keyframes shineText{to{background-position:200% center}}
 
-    /* FOMO Block */
-    .fomo-block{background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.35);border-left:5px solid #fb923c;border-radius:.875rem;padding:2rem 2.25rem;margin:2.5rem auto;max-width:760px;display:flex;flex-direction:column;gap:1rem;box-shadow:0 4px 32px rgba(251,146,60,.12)}
-    .fomo-block__text{color:var(--color-text-muted);font-size:1.05rem;line-height:1.75;margin:0}
-    .fomo-block__text strong{color:var(--color-text);font-weight:700}
-    .fomo-block__punch{color:var(--color-text);font-weight:800;font-size:1.2rem;line-height:1.55;margin:0;border-top:1px solid rgba(251,146,60,.2);padding-top:.875rem}
-    .fomo-pivot{text-align:center;font-size:1.4rem;font-weight:800;color:var(--color-primary);margin:2rem 0 2.25rem;letter-spacing:-.01em}
+  /* ---------- Accessibilité ---------- */
+  .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--green);color:#04150c;padding:.7rem 1.2rem;border-radius:0 0 10px 0;font-family:var(--display);font-weight:700;text-decoration:none}
+  .skip-link:focus{left:0}
+  a:focus-visible,button:focus-visible,.btn:focus-visible,.stab:focus-visible,.demo:focus-visible,.showcase:focus-visible,.faq__q:focus-visible,.nav-toggle:focus-visible,.drawer__close:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:8px}
 
-    /* Solution Cards */
-    .solution-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:2rem}
-    .solution-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem}
-    .solution-card__title{font-size:.95rem;font-weight:700;margin:0}
-    .solution-card__text{font-size:.875rem;color:var(--color-text-muted);line-height:1.6;margin:0}
-    @media(max-width:900px){.solution-cards{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:540px){.solution-cards{grid-template-columns:1fr}}
+  /* ---------- Boutons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    font-family:var(--display);font-weight:600;font-size:.98rem;letter-spacing:.01em;
+    padding:.9rem 1.6rem;border-radius:999px;border:1px solid transparent;cursor:pointer;
+    transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,border-color .3s;
+    position:relative;white-space:nowrap}
+  .btn--primary{background:var(--grad);background-size:160% auto;color:#04150c;
+    box-shadow:0 10px 30px -8px rgba(0,230,118,.55),inset 0 0 0 1px rgba(255,255,255,.2)}
+  .btn--primary:hover{transform:translateY(-3px);background-position:right center;
+    box-shadow:0 18px 44px -10px rgba(0,230,118,.7)}
+  .btn--ghost{background:rgba(255,255,255,.02);color:var(--text);border-color:var(--border-strong);backdrop-filter:blur(6px)}
+  .btn--ghost:hover{border-color:var(--green);color:var(--green);transform:translateY(-3px)}
+  .btn--lg{padding:1.05rem 2rem;font-size:1.05rem}
 
-    /* IA Compare */
-    .ia-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
-    .ia-compare__card{border-radius:.875rem;padding:2rem;display:flex;flex-direction:column;gap:1.25rem}
-    .ia-compare__card--danger{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.25);border-top:3px solid rgba(239,68,68,.6)}
-    .ia-compare__card--success{background:rgba(0,230,118,.05);border:1px solid rgba(0,230,118,.2);border-top:3px solid var(--color-primary)}
-    .ia-compare__head{display:flex;align-items:center;gap:.75rem}
-    .ia-compare__icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;flex-shrink:0}
-    .ia-compare__icon--danger{background:rgba(239,68,68,.15);color:#ef4444}
-    .ia-compare__icon--success{background:rgba(0,230,118,.15);color:var(--color-primary)}
-    .ia-compare__title{font-size:1.05rem;font-weight:700;margin:0}
-    .ia-compare__list{list-style:none;display:flex;flex-direction:column;gap:.75rem;padding:0;margin:0}
-    .ia-compare__card--danger .ia-compare__list li{color:var(--color-text-muted);padding-left:1.5rem;position:relative;line-height:1.5}
-    .ia-compare__card--danger .ia-compare__list li::before{content:"✗";position:absolute;left:0;color:#ef4444;font-weight:700}
-    .ia-compare__card--success .ia-compare__list li{color:var(--color-text-muted);padding-left:1.5rem;position:relative;line-height:1.5}
-    .ia-compare__card--success .ia-compare__list li::before{content:"✓";position:absolute;left:0;color:var(--color-primary);font-weight:700}
-    @media(max-width:640px){.ia-compare{grid-template-columns:1fr}}
+  /* ---------- Header ---------- */
+  .topbar{font-size:.8rem;color:var(--muted-2);text-align:center;padding:.5rem 0;
+    border-bottom:1px solid var(--border);background:rgba(0,0,0,.4)}
+  .topbar b{color:var(--green)}
+  .header{position:sticky;top:0;z-index:50;transition:padding .3s var(--ease),background .3s,border-color .3s;
+    border-bottom:1px solid transparent}
+  .header.scrolled{background:rgba(7,8,9,.72);backdrop-filter:blur(16px) saturate(1.4);
+    border-bottom-color:var(--border)}
+  .header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;transition:padding .3s var(--ease)}
+  .header.scrolled .header__inner{padding:.6rem 0}
+  .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:700;
+    font-size:1.25rem;letter-spacing:.04em}
+  .brand__mark{height:36px;width:auto;flex-shrink:0;filter:saturate(1.4) brightness(1.15)}
+  .nav{display:flex;align-items:center;gap:.4rem}
+  .nav a:not(.btn){font-size:.92rem;color:var(--muted);padding:.5rem .8rem;border-radius:999px;transition:color .2s,background .2s}
+  .nav a:not(.btn):hover{color:var(--text);background:var(--surface)}
+  .nav__group{position:relative}
+  .nav__panel{position:absolute;top:calc(100% + .4rem);left:0;min-width:230px;
+    background:rgba(12,14,16,.96);backdrop-filter:blur(14px);border:1px solid var(--border);
+    border-radius:14px;padding:.5rem;opacity:0;visibility:hidden;transform:translateY(8px);
+    transition:.25s var(--ease);box-shadow:0 24px 60px -20px rgba(0,0,0,.8)}
+  .nav__group:hover .nav__panel{opacity:1;visibility:visible;transform:translateY(0)}
+  .nav__panel a{display:block;color:var(--muted)}
+  .nav__cta{margin-left:.4rem}
+  .nav-toggle{display:none;flex-direction:column;gap:5px;width:42px;height:42px;align-items:center;justify-content:center;
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;cursor:pointer}
+  .nav-toggle span{width:18px;height:2px;background:var(--text);border-radius:2px;transition:.3s var(--ease)}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle.open span:nth-child(2){opacity:0}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-    /* Hero metric cards — redesign avec icônes */
-    .hero-bg__metrics{display:flex;flex-direction:column;gap:.875rem;width:320px}
-    .hero-metric{display:flex !important;flex-direction:row !important;align-items:center !important;flex-wrap:nowrap !important;gap:.75rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-left:3px solid var(--color-primary);border-radius:.875rem;padding:.875rem 1.1rem;backdrop-filter:blur(8px);transition:background .2s,box-shadow .2s;width:100%}
-    .hero-metric:hover{background:rgba(0,230,118,.05);box-shadow:0 4px 20px rgba(0,230,118,.1)}
-    .hero-metric__top{display:none}
-    .hero-metric__body{display:none}
-    .hero-metric__icon{width:34px;height:34px;border-radius:8px;background:rgba(0,230,118,.12);display:flex;align-items:center;justify-content:center;color:var(--color-primary);flex-shrink:0}
-    .hero-metric__number{font-size:1.25rem;font-weight:800;color:#fff;line-height:1;flex-shrink:0;white-space:nowrap}
-    .hero-metric__on{font-size:.75rem;font-weight:600;color:var(--color-primary)}
-    .hero-metric__unit{font-size:.8rem;color:var(--color-primary)}
-    .hero-metric__label{font-size:.8rem;color:var(--color-text-muted);font-weight:500;flex:1;white-space:nowrap}
-    .hero-metric__check{margin-left:auto;width:22px;height:22px;border-radius:50%;background:rgba(0,230,118,.15);display:flex;align-items:center;justify-content:center;color:var(--color-primary);font-size:.75rem;font-weight:700;flex-shrink:0}
+  /* Mobile drawer */
+  .drawer{position:fixed;inset:0 0 0 auto;width:min(84vw,340px);background:#0a0c0e;z-index:60;
+    border-left:1px solid var(--border);padding:1.5rem;transform:translateX(100%);
+    transition:transform .4s var(--ease);display:flex;flex-direction:column;gap:.3rem;overflow-y:auto}
+  .drawer.open{transform:translateX(0)}
+  .drawer a{padding:.85rem 1rem;border-radius:12px;color:var(--text);font-weight:500}
+  .drawer a:hover{background:var(--surface)}
+  .drawer__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+  .drawer__close{background:var(--surface);border:1px solid var(--border);border-radius:10px;width:38px;height:38px;color:var(--text);font-size:1.2rem;cursor:pointer}
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:55;opacity:0;visibility:hidden;transition:.3s}
+  .scrim.open{opacity:1;visibility:visible}
 
-    /* Badge client fondateur */
-    .hero-bg__founder-badge{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:#fff;margin-top:.75rem}
-    .hero-bg__founder-dot{width:8px;height:8px;border-radius:50%;background:var(--color-primary);flex-shrink:0;animation:pulse-dot 2s infinite}
-    @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.85)}}
-    .hero-bg__founder-badge strong{color:var(--color-primary)}
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:clamp(3rem,8vw,6.5rem) 0 clamp(3rem,6vw,5rem);overflow:hidden}
+  .hero__spot{position:absolute;width:760px;height:760px;border-radius:50%;pointer-events:none;z-index:0;
+    background:radial-gradient(circle,rgba(0,230,118,.26),rgba(0,230,118,.09) 40%,transparent 68%);
+    transform:translate(-50%,-50%);left:50%;top:35%;transition:left .18s ease,top .18s ease}
+  .hero__inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+  .kicker{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:600;
+    font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-soft);
+    padding:.45rem .9rem;border:1px solid var(--border);border-radius:999px;background:var(--surface);width:max-content}
+  .kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(0,230,118,.6);animation:ping 2s infinite}
+  @keyframes ping{0%{box-shadow:0 0 0 0 rgba(0,230,118,.55)}70%{box-shadow:0 0 0 10px rgba(0,230,118,0)}100%{box-shadow:0 0 0 0 rgba(0,230,118,0)}}
+  .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.02;
+    letter-spacing:-.03em;margin:1.4rem 0 1.3rem}
+  .hero h1 .accent{display:inline-block}
+  .hero__sub{font-size:1.12rem;color:var(--muted);max-width:30rem;margin-bottom:2rem}
+  .hero__actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.3rem}
+  .hero__note{display:flex;align-items:center;gap:.55rem;font-size:.9rem;color:var(--muted)}
+  .hero__note .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:ping 2s infinite}
 
-    /* Cacher le bouton WhatsApp flottant généré par JS */
-    .whatsapp-float { display: none !important; }
+  /* Stat chips */
+  .chips{display:flex;flex-direction:column;gap:1rem}
+  .chip{display:flex;align-items:center;gap:1rem;padding:1.15rem 1.3rem;border-radius:18px;
+    background:var(--surface);border:1px solid var(--border);backdrop-filter:blur(10px);
+    transition:transform .4s var(--ease),border-color .4s,box-shadow .4s;position:relative;overflow:hidden}
+  .chip::after{content:"";position:absolute;inset:0;border-radius:18px;padding:1px;
+    background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s}
+  .chip:hover{transform:translateY(-5px);box-shadow:0 24px 50px -24px rgba(0,230,118,.45)}
+  .chip:hover::after{opacity:.9}
+  .chip__icon{width:46px;height:46px;border-radius:13px;flex-shrink:0;display:grid;place-items:center;
+    background:var(--surface-2);color:var(--green);border:1px solid var(--border)}
+  .chip__num{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1}
+  .chip__num small{font-size:.95rem;color:var(--green)}
+  .chip__label{font-size:.85rem;color:var(--muted);margin-top:.15rem}
+  .chip__check{margin-left:auto;width:24px;height:24px;border-radius:50%;background:var(--grad-soft);
+    color:var(--green);display:grid;place-items:center;flex-shrink:0}
+  .float-anim{animation:floaty 6s ease-in-out infinite}
+  .float-anim:nth-child(2){animation-delay:.6s}
+  .float-anim:nth-child(3){animation-delay:1.2s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
-    /* Barre flottante bas droite */
-    .float-bar {
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-    }
+  /* Marquee */
+  .marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+    padding:1rem 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+            mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee__track{display:flex;gap:3rem;width:max-content;animation:scrollX 28s linear infinite}
+  .marquee__track span{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--muted-2);
+    display:flex;align-items:center;gap:3rem;white-space:nowrap}
+  .marquee__track span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}
+  @keyframes scrollX{to{transform:translateX(-50%)}}
 
-    /* Bouton question rond */
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
+  /* ---------- Sections ---------- */
+  .section{padding:clamp(3.5rem,7vw,6rem) 0}
+  .sec-head{text-align:center;max-width:46rem;margin:0 auto 3rem}
+  .eyebrow{font-family:var(--display);font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--green);margin-bottom:.9rem}
+  .section h2{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,4vw,2.6rem);
+    line-height:1.12;letter-spacing:-.02em}
+  .section h2 + p{color:var(--muted);font-size:1.08rem;margin-top:1rem}
+  .center-cta{text-align:center;margin-top:2.6rem}
 
-    /* Pilule WhatsApp */
-    .whatsapp-pill {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      background: #25d366;
-      border-radius: 50%;
-      color: #fff;
-      box-shadow: 0 4px 16px rgba(37,211,102,.45);
-      transition: transform .2s ease, box-shadow .2s ease;
-      text-decoration: none;
-      flex-shrink: 0;
-    }
-    .whatsapp-pill:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,.6); }
+  /* Card base + glow */
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:1.8rem;
+    position:relative;transition:transform .4s var(--ease),border-color .4s,background .4s;overflow:hidden}
+  .card:hover{transform:translateY(-6px);border-color:var(--border-strong);background:var(--surface-2)}
+  .card__glow{position:absolute;width:240px;height:240px;border-radius:50%;top:-40%;right:-20%;
+    background:radial-gradient(circle,rgba(0,230,118,.16),transparent 70%);opacity:0;transition:opacity .4s;pointer-events:none}
+  .card:hover .card__glow{opacity:1}
+  .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:1.1rem;
+    background:var(--surface-2);color:var(--green);border:1px solid var(--border)}
+  .card h3{font-family:var(--display);font-weight:600;font-size:1.18rem;line-height:1.3;margin-bottom:.6rem}
+  .card p{color:var(--muted);font-size:.96rem}
+  .card__link{display:inline-flex;align-items:center;gap:.4rem;margin-top:1.1rem;color:var(--green);
+    font-weight:600;font-size:.95rem;font-family:var(--display)}
+  .card__link svg{transition:transform .3s var(--ease)}
+  .card:hover .card__link svg{transform:translateX(4px)}
 
-    /* ============================================================
-       RESPONSIVE MOBILE — correctifs critiques (styles.min.css
-       s'arrête à la règle 287, ces règles ne s'appliquent pas)
-       ============================================================ */
+  .grid{display:grid;gap:1.4rem}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-4{grid-template-columns:repeat(4,1fr)}
 
-    /* Hero : fond noir pur, sans image */
-    .hero-bg {
-      background-image: none !important;
-      background-color: #020c06 !important;
-    }
-    /* Canvas étoiles */
-    #hero-stars {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-    }
-    /* S'assurer que le contenu est au dessus du canvas */
-    .hero-bg__overlay,
-    .hero-bg__inner,
-    .hero-bg__scroll-indicator {
-      position: relative;
-      z-index: 1;
-    }
+  /* Qualification bento list */
+  .qual{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
+  .qual li{list-style:none;display:flex;gap:.9rem;align-items:flex-start;padding:1.3rem 1.5rem;
+    background:var(--surface);border:1px solid var(--border);border-radius:16px;font-size:1.02rem;
+    transition:border-color .3s,transform .3s var(--ease)}
+  .qual li:hover{border-color:var(--green);transform:translateX(4px)}
+  .qual li .tick{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--grad-soft);
+    color:var(--green);display:grid;place-items:center;margin-top:.15rem}
 
-    /* Empêche le débordement horizontal sur toute la page */
-    html, body { overflow-x: hidden; max-width: 100vw; }
+  /* FOMO */
+  .fomo{max-width:760px;margin:0 auto;padding:2rem 2.2rem;border-radius:20px;
+    background:linear-gradient(135deg,rgba(251,146,60,.10),rgba(251,146,60,.03));
+    border:1px solid rgba(251,146,60,.30);border-left:4px solid #fb923c}
+  .fomo p{color:var(--muted);font-size:1.06rem}
+  .fomo strong{color:var(--text)}
+  .fomo__punch{color:var(--text);font-family:var(--display);font-weight:700;font-size:1.2rem;
+    margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(251,146,60,.25)}
+  .pivot{text-align:center;font-family:var(--display);font-weight:700;font-size:1.5rem;
+    margin:2.2rem 0;letter-spacing:-.01em}
 
-    @media (max-width: 768px) {
-      /* Reset animations sur mobile (sauf menu et éléments interactifs) */
-      *, *::before, *::after {
-        box-sizing: border-box;
-        animation-duration: 0.01ms !important;
-        animation-delay: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-      }
-      /* Reset transforms SAUF mobile-nav, float-bar et boutons */
-      *:not(.mobile-nav):not(.mobile-nav-overlay):not(.audit-pill):not(.whatsapp-pill):not(.btn):not(.float-bar) {
-        transform: none !important;
-      }
-      /* Restaurer le menu mobile caché par défaut */
-      .mobile-nav { transform: translateX(100%) !important; transition: transform 0.35s cubic-bezier(0.4,0,0.2,1) !important; }
-      .mobile-nav.is-open { transform: translateX(0) !important; }
-      .mobile-nav-overlay { opacity: 0 !important; pointer-events: none !important; }
-      .mobile-nav-overlay.is-open { opacity: 1 !important; pointer-events: all !important; }
-      section, main, .section, .container, header, footer {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-      }
-      /* Padding horizontal symétrique */
-      .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+  /* IA compare */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:900px;margin:0 auto}
+  .compare__card{border-radius:20px;padding:1.9rem;border:1px solid var(--border)}
+  .compare__card--no{background:rgba(239,68,68,.05);border-color:rgba(239,68,68,.25)}
+  .compare__card--yes{background:rgba(0,230,118,.05);border-color:rgba(0,230,118,.25)}
+  .compare__head{display:flex;align-items:center;gap:.7rem;margin-bottom:1.2rem;font-family:var(--display);font-weight:600;font-size:1.1rem}
+  .compare__badge{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;font-weight:700}
+  .compare__card--no .compare__badge{background:rgba(239,68,68,.16);color:#ef4444}
+  .compare__card--yes .compare__badge{background:rgba(0,230,118,.16);color:var(--green)}
+  .compare ul{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+  .compare li{padding-left:1.7rem;position:relative;color:var(--muted)}
+  .compare__card--no li::before{content:"✕";position:absolute;left:0;color:#ef4444;font-weight:700}
+  .compare__card--yes li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
 
-      /* Hero : colonne unique, hauteur auto */
-      .hero-bg { min-height: auto !important; height: auto !important; }
-      .hero-bg__inner {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        padding: 2.5rem 1rem 2.5rem 0.5rem !important;
-        gap: 1.5rem !important;
-        width: 100% !important;
-      }
-      .hero-bg__content {
-        flex: 1 1 100% !important;
-        max-width: 100% !important;
-        width: 100% !important;
-      }
-      .hero-bg__metrics { display: none !important; }
-      .hero-bg__headline { font-size: 2rem !important; }
-      .hero-bg__subtitle  { font-size: 0.95rem !important; }
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;counter-reset:s;position:relative}
+  .steps::before{content:"";position:absolute;top:calc(1.7rem + 21px);left:12%;right:12%;height:2px;z-index:0;background:repeating-linear-gradient(90deg,rgba(0,230,118,.5) 0 7px,transparent 7px 15px)}
+  .step{position:relative;z-index:1;padding:1.7rem;border-radius:18px;background:var(--bg-2);border:1px solid var(--border);transition:border-color .3s,transform .3s var(--ease)}
+  .step:hover{border-color:var(--border-strong);transform:translateY(-5px)}
+  .step__n{width:44px;height:44px;border-radius:12px;background:var(--grad);color:#04150c;
+    font-family:var(--display);font-weight:700;font-size:1.15rem;display:grid;place-items:center;margin-bottom:1rem}
+  .step h3{font-family:var(--display);font-weight:600;font-size:1.02rem;margin-bottom:.45rem;line-height:1.35}
+  .step p{color:var(--muted);font-size:.9rem}
 
-      /* Sections générales */
-      .section { padding: 3.5rem 0 !important; }
-      .section__title { font-size: 1.7rem !important; }
+  /* Founder */
+  .founder{max-width:780px;margin:0 auto;display:flex;align-items:center;gap:2rem;
+    padding:2.2rem;border-radius:22px;background:var(--surface);border:1px solid var(--border)}
+  .founder__sig{flex-shrink:0;display:flex;flex-direction:column;align-items:center}
+  .founder__sig svg{width:clamp(170px,22vw,210px);height:auto}
+  .founder__sig .sig-text{font-family:'Dancing Script',cursive;font-size:38px;font-weight:700;fill:var(--green)}
+  .founder__sig .sig-flourish{stroke:var(--green);stroke-width:1.6;fill:none;opacity:.6}
+  .founder__text{font-style:italic;color:var(--muted);font-size:1.05rem}
+  .founder__link{display:inline-flex;align-items:center;gap:.4rem;margin-top:.9rem;color:var(--green);font-weight:600;font-family:var(--display)}
 
-      /* Problem-solution : reset marges larges */
-      .problem-solution { margin: 1.5rem 0 !important; border-radius: .75rem !important; }
+  /* Engagements */
+  .pledge{display:flex;gap:.9rem;align-items:flex-start;padding:1.5rem;border-radius:16px;
+    background:var(--surface);border:1px solid var(--border);transition:border-color .3s,transform .3s var(--ease)}
+  .pledge:hover{border-color:var(--green);transform:translateY(-4px)}
+  .pledge .tick{flex-shrink:0;width:28px;height:28px;border-radius:8px;background:var(--grad-soft);color:var(--green);display:grid;place-items:center;margin-top:.1rem}
+  .pledge h3{font-family:var(--display);font-weight:600;font-size:1.02rem;margin-bottom:.4rem}
+  .pledge p{color:var(--muted);font-size:.9rem}
 
-      /* Grilles → 1 colonne */
-      .assurance-grid    { grid-template-columns: repeat(2,1fr) !important; }
-      .services          { grid-template-columns: 1fr !important; }
-      .features          { grid-template-columns: 1fr !important; }
-      .split--3col       { grid-template-columns: 1fr !important; }
-      .projects          { grid-template-columns: 1fr !important; }
-      .ia-compare        { grid-template-columns: 1fr !important; }
-      .split--cards      { grid-template-columns: 1fr !important; }
-      .footer__inner     { grid-template-columns: repeat(2,1fr) !important; }
-      .audiences--grid   { grid-template-columns: repeat(2,1fr) !important; }
+  /* Sectors */
+  .sector{text-align:left}
+  .sector .ic svg{width:26px;height:26px}
 
-      /* Scroll indicator du hero : caché sur mobile */
-      .hero-bg__scroll-indicator { display: none !important; }
-    }
+  /* FAQ */
+  .faq{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:.8rem}
+  .faq__item{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .3s}
+  .faq__item.open{border-color:var(--green)}
+  .faq__q{width:100%;text-align:left;background:none;border:0;color:var(--text);cursor:pointer;
+    padding:1.25rem 1.4rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+    font-family:var(--display);font-weight:600;font-size:1.02rem}
+  .faq__q .arr{flex-shrink:0;transition:transform .3s var(--ease);color:var(--green)}
+  .faq__item.open .arr{transform:rotate(180deg)}
+  .faq__a{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+  .faq__a p{padding:0 1.4rem 1.3rem;color:var(--muted)}
 
-    @media (max-width: 480px) {
-      .hero-bg__headline { font-size: 1.75rem !important; }
-      .hero-bg__actions  { flex-direction: column !important; }
-      .hero-bg__actions .btn { width: 100% !important; text-align: center !important; }
-      .audiences--grid   { grid-template-columns: 1fr !important; }
-      .footer__inner     { grid-template-columns: 1fr !important; }
-    }
+  /* CTA final */
+  .cta-final{position:relative;border-radius:28px;padding:clamp(2.5rem,5vw,4rem);text-align:center;overflow:hidden;
+    background:linear-gradient(135deg,rgba(0,230,118,.14),rgba(39,224,255,.08));border:1px solid var(--border-strong)}
+  .cta-final::before{content:"";position:absolute;inset:0;
+    background:radial-gradient(60% 80% at 50% 0%,rgba(0,230,118,.18),transparent 70%);pointer-events:none}
+  .cta-final h2{position:relative}
+  .cta-final p{position:relative;color:var(--muted);max-width:34rem;margin:1rem auto 2rem}
 
-    @media (max-width: 768px) {
-      /* Hero : passage en colonne unique */
-      .hero-bg__inner {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        padding: 3rem 1rem 2rem 0.5rem !important;
-        gap: 1.5rem !important;
-      }
-      .hero-bg__content {
-        flex: 1 1 100% !important;
-        max-width: 100% !important;
-        width: 100% !important;
-      }
-      /* Cacher les métriques sur mobile */
-      .hero-bg__metrics { display: none !important; }
+  /* Footer */
+  .footer{border-top:1px solid var(--border);padding:3.5rem 0 2rem;margin-top:2rem;background:rgba(0,0,0,.3)}
+  .footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:2rem}
+  .footer h4{font-family:var(--display);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-bottom:1rem}
+  .footer ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+  .footer a{color:var(--muted);font-size:.92rem;transition:color .2s}
+  .footer a:hover{color:var(--green)}
+  .footer__brand{font-family:var(--display);font-weight:700;font-size:1.3rem;letter-spacing:.05em;margin-bottom:.8rem}
+  .footer__desc{color:var(--muted);font-size:.92rem;max-width:22rem;margin-bottom:1rem}
+  .footer__bottom{border-top:1px solid var(--border);margin-top:2.5rem;padding-top:1.5rem;
+    display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted-2);font-size:.85rem}
 
-      /* Titre hero plus petit */
-      .hero-bg__headline { font-size: 2rem !important; }
-      .hero-bg__subtitle  { font-size: 0.95rem !important; }
+  /* Float bar */
+  .floatbar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:40;display:flex;gap:.6rem}
+  .floatbar a{display:flex;align-items:center;gap:.4rem;height:46px;padding:0 1rem;border-radius:23px;
+    font-family:var(--display);font-weight:700;font-size:.82rem;box-shadow:0 8px 24px -6px rgba(0,0,0,.5);
+    transition:transform .25s var(--ease),box-shadow .25s}
+  .floatbar a:hover{transform:translateY(-3px)}
+  .fb-audit{background:var(--grad);color:#04150c}
+  .fb-wa{background:#25d366;color:#fff;width:46px;padding:0;justify-content:center}
 
-      /* Sections */
-      .section { padding: 3.5rem 0 !important; }
-      .section__title { font-size: 1.7rem !important; }
+  /* Démos — showcase navigateur + téléphone (style nextiwebstudio) */
+  .showcase__tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;margin-bottom:2.4rem}
+  .stab{font-family:var(--display);font-weight:600;font-size:.88rem;padding:.5rem 1.05rem;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;transition:color .2s,background .2s,border-color .2s}
+  .stab:hover{color:var(--text);border-color:var(--border-strong)}
+  .stab.is-active{background:var(--grad);color:#04150c;border-color:transparent;font-weight:700}
+  .showcase{position:relative;display:block;max-width:900px;margin:0 auto;cursor:pointer;padding-bottom:26px}
+  .browser{border-radius:14px;overflow:hidden;border:1px solid var(--border-strong);background:#0d0f12;box-shadow:0 50px 90px -40px rgba(0,0,0,.9);transition:transform .4s var(--ease),box-shadow .4s}
+  .showcase:hover .browser{transform:translateY(-5px);box-shadow:0 62px 110px -42px rgba(0,230,118,.32)}
+  .browser__bar{display:flex;align-items:center;gap:.5rem;padding:.7rem 1rem;background:#15181d;border-bottom:1px solid var(--border)}
+  .bdot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+  .bdot:nth-child(1){background:#ff5f57}
+  .bdot:nth-child(2){background:#febc2e}
+  .bdot:nth-child(3){background:#28c840}
+  .browser__url{margin:0 auto;font-family:var(--display);font-size:.8rem;color:var(--muted);background:#0d0f12;padding:.32rem 1.4rem;border-radius:999px;border:1px solid var(--border);max-width:72%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .browser__img{display:block;width:100%;height:auto;background:#0d0f12}
+  .phone{position:absolute;right:-6px;bottom:0;width:clamp(116px,17vw,160px);border:7px solid #16191e;border-radius:26px;overflow:hidden;background:#0b0d10;box-shadow:0 30px 55px -18px rgba(0,0,0,.9);z-index:2;transition:transform .4s var(--ease)}
+  .showcase:hover .phone{transform:translateY(-5px)}
+  .phone__notch{position:absolute;top:7px;left:50%;transform:translateX(-50%);width:38px;height:5px;border-radius:3px;background:rgba(255,255,255,.25);z-index:3}
+  .phone__img{display:block;width:100%;height:auto;background:#0b0d10}
+  .showcase__cta{position:absolute;top:4rem;right:1.1rem;display:inline-flex;align-items:center;gap:.4rem;background:var(--grad);color:#04150c;font-family:var(--display);font-weight:700;font-size:.82rem;padding:.5rem 1rem;border-radius:999px;box-shadow:0 8px 20px -6px rgba(0,230,118,.6);opacity:0;transform:translateY(-6px);transition:opacity .3s,transform .3s var(--ease);z-index:4;pointer-events:none}
+  .showcase:hover .showcase__cta{opacity:1;transform:none}
+  .showcase__name{text-align:center;color:var(--muted);font-size:.96rem;margin-top:1.5rem}
+  .showcase__name strong{color:var(--text);font-family:var(--display)}
+  .demos__note{text-align:center;color:var(--muted-2);font-size:.85rem;margin-top:1.1rem}
+  @media(max-width:560px){.phone{width:102px;right:2px;border-width:5px}.showcase__cta{display:none}.browser__url{max-width:60%;font-size:.7rem}}
 
-      /* Grille assurance 2 colonnes */
-      .assurance-grid { grid-template-columns: repeat(2,1fr) !important; gap: 1rem !important; }
+  /* Section nuancée — respiration SOMBRE subtile (relief + halo vert discret, pas de blanc) */
+  .section--alt{
+    background:radial-gradient(115% 85% at 50% 0%,rgba(0,230,118,.055),transparent 56%),#0b0e11;
+    border-top:1px solid rgba(255,255,255,.045);
+    border-bottom:1px solid rgba(255,255,255,.045);
+  }
 
-      /* Services : 1 colonne */
-      .services { grid-template-columns: 1fr !important; }
+  /* Bandeau consentement (Loi 25) */
+  .consent{position:fixed;bottom:1rem;left:1rem;right:1rem;max-width:540px;margin:0 auto;z-index:120;background:rgba(11,14,17,.97);backdrop-filter:blur(14px);border:1px solid var(--border-strong);border-radius:18px;padding:1.3rem 1.4rem;box-shadow:0 30px 70px -20px rgba(0,0,0,.85)}
+  .consent[hidden]{display:none}
+  .consent h2{font-family:var(--display);font-weight:600;font-size:1.02rem;margin-bottom:.4rem}
+  .consent p{color:var(--muted);font-size:.85rem;margin-bottom:.9rem}
+  .consent p a{color:var(--green);text-decoration:underline}
+  .consent__row{display:flex;gap:.5rem;flex-wrap:wrap}
+  .consent__row .btn{padding:.55rem 1rem;font-size:.82rem}
+  .consent__opts{margin:.85rem 0 .2rem;display:none;flex-direction:column;gap:.5rem;font-size:.85rem;color:var(--muted)}
+  .consent__opts.show{display:flex}
+  .consent__opts label{display:flex;align-items:center;gap:.55rem}
+  .footer__legal{margin-top:.6rem;font-size:.82rem;color:var(--muted-2)}
+  .footer__legal a{color:var(--muted-2);text-decoration:underline}
+  .footer__legal-btn{background:none;border:0;color:var(--green);text-decoration:underline;cursor:pointer;font:inherit;font-size:.82rem;padding:0}
 
-      /* Features : 1 colonne */
-      .features { grid-template-columns: 1fr !important; }
+  /* Reveal */
+  .reveal.in{opacity:1!important;transform:none!important}
+  html.has-js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 
-      /* Split 3 colonnes → 1 */
-      .split--3col { grid-template-columns: 1fr !important; }
-
-      /* Projects : 1 colonne */
-      .projects { grid-template-columns: 1fr !important; }
-
-      /* IA compare : 1 colonne */
-      .ia-compare { grid-template-columns: 1fr !important; }
-
-      /* Footer : 2 colonnes */
-      .footer__inner { grid-template-columns: repeat(2,1fr) !important; }
-
-      /* Audiences : 2 colonnes */
-      .audiences--grid { grid-template-columns: repeat(2,1fr) !important; }
-    }
-
-    @media (max-width: 480px) {
-      /* Hero headline encore plus petit */
-      .hero-bg__headline { font-size: 1.75rem !important; }
-
-      /* Boutons pleine largeur */
-      .hero-bg__actions { flex-direction: column !important; }
-      .hero-bg__actions .btn { width: 100% !important; text-align: center !important; }
-
-      /* Audiences : 1 colonne */
-      .audiences--grid { grid-template-columns: 1fr !important; }
-
-      /* Footer : 1 colonne */
-      .footer__inner { grid-template-columns: 1fr !important; }
-    }
-
-    /* Masquer la barre flottante sur mobile */
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-
-    /* Mode clair */
-    body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
+  /* ---------- Responsive ---------- */
+  @media(max-width:980px){
+    .hero__inner{grid-template-columns:1fr;gap:2.4rem}
+    .chips{flex-direction:row;flex-wrap:wrap}.chip{flex:1 1 260px}
+    .footer__grid{grid-template-columns:1fr 1fr}
+    .grid-4{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}
+    .steps::before{display:none}
+  }
+  @media(max-width:860px){
+    .nav{display:none}.nav-toggle{display:flex}
+  }
+  @media(max-width:680px){
+    .grid-2,.grid-3,.grid-4,.qual,.compare,.steps{grid-template-columns:1fr}
+    .founder{flex-direction:column;text-align:center}
+    .footer__grid{grid-template-columns:1fr}
+    .hero__actions .btn{width:100%}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
   </style>
-  <meta name="theme-color" content="#00e676">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- Schema.org : LocalBusiness + FAQPage -->
+  <!-- Schema.org : LocalBusiness + FAQPage + WebSite (PAS d'AggregateRating — jeune agence, aucun faux avis) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -359,29 +425,15 @@
         "@id": "https://nextiweb.ca/#organization",
         "name": "NEXTIWEB",
         "url": "https://nextiweb.ca/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-dark.webp"
-        },
+        "logo": { "@type": "ImageObject", "url": "https://nextiweb.ca/assets/img/logo/logo-nextiweb-dark.webp" },
+        "image": "https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png",
         "description": "Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME et entreprises de services.",
         "email": "contact@nextiweb.ca",
         "telephone": "+15147910591",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "5707 de Carignan",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "postalCode": "H1M 2H6",
-          "addressCountry": "CA"
-        },
-        "areaServed": [
-          { "@type": "City", "name": "Montréal" },
-          { "@type": "City", "name": "Québec" },
-          { "@type": "Country", "name": "Canada" }
-        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA" },
+        "areaServed": [ { "@type": "City", "name": "Montréal" }, { "@type": "City", "name": "Québec" }, { "@type": "Country", "name": "Canada" } ],
         "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Services web",
+          "@type": "OfferCatalog", "name": "Services web",
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Création de sites web" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Référencement SEO" } },
@@ -391,921 +443,530 @@
         },
         "inLanguage": ["fr", "en"],
         "legalName": "NEXTIWEB",
-        "identifier": [
-          { "@type": "PropertyValue", "name": "NEQ", "value": "2272348204" },
-          { "@type": "PropertyValue", "name": "TPS", "value": "739866291 RT0001" },
-          { "@type": "PropertyValue", "name": "TVQ", "value": "1209278738 TQ0001" }
-        ],
-        "sameAs": ["https://www.linkedin.com/company/25819184/", "https://www.facebook.com/profile.php?id=61590548880715", "https://maps.app.goo.gl/Je7xs3azw2cvbChB8"],
-        "founder": {
-          "@type": "Person",
-          "name": "Khadija AitLassri",
-          "jobTitle": "Fondatrice",
-          "sameAs": ["https://www.linkedin.com/in/khadija-ait-lassri/"],
-          "url": "https://nextiweb.ca/a-propos.html"
-        }
+        "identifier": [ { "@type": "PropertyValue", "name": "NEQ", "value": "2272348204" } ],
+        "sameAs": ["https://www.linkedin.com/company/25819184/", "https://www.facebook.com/profile.php?id=61590548880715"],
+        "founder": { "@type": "Person", "name": "Khadija AitLassri", "jobTitle": "Fondatrice", "url": "https://nextiweb.ca/a-propos.html" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nextiweb.ca/#website",
+        "url": "https://nextiweb.ca/",
+        "name": "NEXTIWEB – Agence web Montréal",
+        "inLanguage": ["fr-CA", "en-CA"],
+        "publisher": { "@id": "https://nextiweb.ca/#organization" }
       },
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "C'est quoi exactement l'audit gratuit — et c'est vraiment sans engagement ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "L'audit gratuit, c'est un appel de 30 minutes où on analyse votre situation réelle : votre site, votre visibilité sur Google, et ce qui bloque vos conversions. À la fin, vous repartez avec un diagnostic clair — et zéro obligation. Si on travaille ensemble, tant mieux. Sinon, vous gardez les informations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Quel budget prévoir pour un site web ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "À partir de 1 500 $ pour un site vitrine efficace. Le prix dépend de la taille du projet, des fonctionnalités et du niveau d'accompagnement. On vous présente une proposition claire avant tout engagement — pas de surprises en cours de route."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "J'ai déjà un site qui ne génère rien — vous pouvez m'aider ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "C'est souvent notre point de départ. Un site qui existe mais ne convertit pas, c'est une perte silencieuse chaque mois. On commence par identifier pourquoi : chargement lent, message flou, mauvais positionnement Google. Ensuite, on corrige ce qui freine — parfois sans tout reconstruire."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Comment savoir si mon site freine mes ventes ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Quelques signaux clairs : personne ne vous contacte via votre site, vous n'apparaissez pas sur Google quand on cherche ce que vous faites, ou vous avez honte de donner votre URL. L'audit gratuit répond à cette question précisément — avec des données, pas des suppositions."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "En combien de temps voit-on des résultats ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Un nouveau site commence à générer des contacts dès les premières semaines si le SEO de base est bien fait. Pour le référencement naturel, comptez 3 à 6 mois pour des positions stables. On vous donne un horizon réaliste dès le départ — pas de promesses impossibles."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Est-ce que l'IA comme ChatGPT peut m'envoyer des clients ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Oui — et c'est déjà le cas pour certains. Quand quelqu'un demande à ChatGPT ou Perplexity « meilleure agence web à Montréal », une liste de recommandations apparaît. Si votre contenu est bien structuré et votre autorité en ligne bien établie, vous pouvez y figurer. C'est ce qu'on appelle l'AEO (Answer Engine Optimization) — et on peut vous y positionner."
-            }
-          }
+          { "@type": "Question", "name": "C'est quoi exactement l'audit gratuit — et c'est vraiment sans engagement ?", "acceptedAnswer": { "@type": "Answer", "text": "L'audit gratuit, c'est un appel de 30 minutes où on analyse votre situation réelle : votre site, votre visibilité sur Google, et ce qui bloque vos conversions. À la fin, vous repartez avec un diagnostic clair — et zéro obligation." } },
+          { "@type": "Question", "name": "Quel budget prévoir pour un site web ?", "acceptedAnswer": { "@type": "Answer", "text": "À partir de 1 500 $ pour un site vitrine efficace. Le prix dépend de la taille du projet, des fonctionnalités et du niveau d'accompagnement. On vous présente une proposition claire avant tout engagement — pas de surprises." } },
+          { "@type": "Question", "name": "J'ai déjà un site qui ne génère rien — vous pouvez m'aider ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est souvent notre point de départ. On commence par identifier pourquoi : chargement lent, message flou, mauvais positionnement Google. Ensuite, on corrige ce qui freine — parfois sans tout reconstruire." } },
+          { "@type": "Question", "name": "En combien de temps voit-on des résultats ?", "acceptedAnswer": { "@type": "Answer", "text": "Un nouveau site commence à générer des contacts dès les premières semaines si le SEO de base est bien fait. Pour le référencement naturel, comptez 3 à 6 mois pour des positions stables. Pas de promesses impossibles." } },
+          { "@type": "Question", "name": "Est-ce que l'IA comme ChatGPT peut m'envoyer des clients ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui — et c'est déjà le cas pour certains. Si votre contenu est bien structuré et votre autorité en ligne bien établie, vous pouvez figurer dans les recommandations. C'est l'AEO (Answer Engine Optimization) — et on peut vous y positionner." } }
         ]
       }
     ]
   }
   </script>
 </head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Aller au contenu</a>
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <!-- =======================
-       BANDE ENGAGEMENT (TOP BAR)
-       ======================= -->
-  <div class="top-bar">
-    <div class="container top-bar__inner">
-      <p class="top-bar__message" id="top-bar-message"></p>
-    </div>
-  </div>
 
-  <!-- =======================
-       HEADER GLOBAL
-       ======================= -->
-  <header class="site-header">
+  <!-- HEADER -->
+  <header class="header" id="header">
     <div class="container header__inner">
-      <!-- Logo -->
-      <a href="/" class="logo">
-        
-          
-          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
-        
+      <a href="/" class="brand" aria-label="NEXTIWEB accueil">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Agence web à Montréal" width="84" height="48">
+        NEXTIWEB
       </a>
-
-      <!-- Navigation principale -->
-      <nav class="main-nav" aria-label="Navigation principale">
-        <div class="nav__item">
-          <a href="/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
-            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
-            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <div class="nav__group">
+          <a href="/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/creation-site.html">Création de sites web</a>
+            <a href="/seo.html">Référencement SEO</a>
+            <a href="/marketing-digital.html">Marketing digital</a>
+            <a href="/visibilite-ia.html">Visibilité IA</a>
           </div>
         </div>
-        <a href="/secteurs.html" class="nav__link">Secteurs</a>
-        <a href="/ressources.html" class="nav__link">Ressources</a>
-        <a href="/blog/" class="nav__link">Blog</a>
-        <a href="/a-propos.html" class="nav__link">À propos</a>
-        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+        <a href="/secteurs.html">Secteurs</a>
+        <a href="/ressources.html">Ressources</a>
+        <a href="/blog/">Blog</a>
+        <a href="/a-propos.html">À propos</a>
+        <a href="/contact.html" class="btn btn--primary nav__cta">Je veux mon audit gratuit</a>
       </nav>
-
-      <!-- Bouton thème -->
-      <button class="theme-toggle" type="button" aria-label="Changer de thème">
-        <!-- Icône soleil/lune -->
-      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- =======================
-       CONTENU PRINCIPAL
-       ======================= -->
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Menu mobile">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Fermer">×</button>
+    </div>
+    <a href="/services.html">Services</a>
+    <a href="/creation-site.html">— Création de sites web</a>
+    <a href="/seo.html">— Référencement SEO</a>
+    <a href="/marketing-digital.html">— Marketing digital</a>
+    <a href="/secteurs.html">Secteurs</a>
+    <a href="/ressources.html">Ressources</a>
+    <a href="/blog/">Blog</a>
+    <a href="/a-propos.html">À propos</a>
+    <a href="/contact.html" class="btn btn--primary" style="margin-top:1rem">Je veux mon audit gratuit</a>
+  </aside>
+
   <main id="main">
-
-    <!-- ① HERO IMMERSIF -->
-    <section class="hero-bg">
-      <canvas id="hero-stars" aria-hidden="true"></canvas>
-      <div class="hero-bg__overlay"></div>
-
-      <div class="container hero-bg__inner">
-
-        <!-- Colonne gauche : texte -->
-        <div class="hero-bg__content">
-
-          <span class="hero-bg__kicker">
-            <span class="hero-bg__kicker-dot"></span>
-            Agence web à Montréal
-          </span>
-
-          <h1 class="hero-bg__headline">
-            Votre site web devrait<br>
-            <span class="hero-bg__highlight-word">vendre</span>,<br>
-            pas juste exister.
-          </h1>
-
-          <p class="hero-bg__subtitle">Nous concevons des sites rapides, optimisés pour le SEO et pensés pour convertir vos visiteurs en clients.</p>
-
-          <div class="hero-bg__actions">
-            <a href="/contact.html" class="btn btn--primary hero-bg__cta-main hero-bg__cta--glow">
-              Je veux mon audit gratuit
-            </a>
-            <a href="/services.html" class="btn btn--ghost hero-bg__cta-secondary">Comment ça fonctionne</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__spot" id="spot" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div>
+          <span class="kicker"><span class="dot"></span>Agence web · Montréal</span>
+          <h1>Votre site web devrait <span class="accent">vendre</span>, pas juste exister.</h1>
+          <p class="hero__sub">Nous concevons des sites rapides, optimisés pour le SEO et pensés pour convertir vos visiteurs en clients.</p>
+          <div class="hero__actions">
+            <a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a>
+            <a href="/services.html" class="btn btn--ghost btn--lg">Comment ça fonctionne</a>
           </div>
-          <p class="hero-bg__founder-badge">
-            <span class="hero-bg__founder-dot"></span>
-            On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.
-          </p>
-
+          <p class="hero__note"><span class="dot"></span>On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
         </div>
 
-        <!-- Colonne droite : cartes métriques -->
-        <div class="hero-bg__metrics">
-          <div class="hero-metric hero-metric--1">
-            <div class="hero-metric__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </div>
-            <span class="hero-metric__number hero-metric__number--concept">1<span class="hero-metric__on">-on-</span>1</span>
-            <span class="hero-metric__label">Accompagnement personnel</span>
-            <div class="hero-metric__check">✓</div>
-          </div>
-          <div class="hero-metric hero-metric--2">
-            <div class="hero-metric__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <span class="hero-metric__number">24<span class="hero-metric__unit">h</span></span>
-            <span class="hero-metric__label">Réponse garantie</span>
-            <div class="hero-metric__check">✓</div>
-          </div>
-          <div class="hero-metric hero-metric--3">
-            <div class="hero-metric__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <span class="hero-metric__number">100<span class="hero-metric__unit">%</span></span>
-            <span class="hero-metric__label">Mobile-first</span>
-            <div class="hero-metric__check">✓</div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Indicateur scroll -->
-      <div class="hero-bg__scroll-indicator" aria-hidden="true">
-        <span class="hero-bg__scroll-line"></span>
-      </div>
-
-    </section>
-
-    <!-- ② BARRE DE RASSURANCE -->
-    <section class="assurance-bar section section--alt-bg">
-      <div class="container assurance-grid">
-        <div class="assurance-item">
-          <span class="assurance-icon">1</span>
-          <strong>Audit complet offert</strong>
-        </div>
-        <div class="assurance-item">
-          <span class="assurance-icon">2</span>
-          <strong>Réponse sous 24&nbsp;h</strong>
-        </div>
-        <div class="assurance-item">
-          <span class="assurance-icon">3</span>
-          <strong>Sans engagement</strong>
-        </div>
-        <div class="assurance-item">
-          <span class="assurance-icon">4</span>
-          <strong>Optimisé pour Google &amp; l’IA</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- ③ QUALIFICATION — Ce site est fait pour vous si… -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Ce site est fait pour vous si&hellip;</h2>
-          <p class="section__subtitle">
-            Vous n’avez peut-être pas un grand budget ni une équipe marketing — vous avez juste besoin d’un site qui reflète vraiment vos valeurs et qui travaille pour vous.
-          </p>
-        </header>
-        <ul class="audiences audiences--grid">
-          <li class="audiences__item">Vous avez un service à vendre et votre site ne le reflète pas</li>
-          <li class="audiences__item">Vous êtes bon dans votre métier, mais invisible sur Google</li>
-          <li class="audiences__item">Vous voulez des leads qualifiés sans tout dépenser en pub</li>
-          <li class="audiences__item">Votre site génère peu — ou pas — de prises de contact</li>
-        </ul>
-        <div class="section__actions section__actions--center">
-          <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ④ AMPLIFICATION — FOMO / Problème + Solution -->
-    <section class="section problem-solution">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Votre site existe. Mais est-ce qu’il travaille pour vous&nbsp;?</h2>
-          <p class="section__subtitle">Il est peut-être lent, flou sur votre offre, ou tout simplement introuvable sur Google.</p>
-        </header>
-
-        <!-- Bloc jalousie / FOMO -->
-        <div class="fomo-block">
-          <p class="fomo-block__text">
-            Pendant ce temps, votre concurrent — peut-être moins expérimenté que vous — a refait son site.
-            Il reçoit des demandes. Il ferme des contrats. <strong>Pas vous.</strong>
-          </p>
-          <p class="fomo-block__punch">
-            Pas parce qu’il est meilleur.<br>Parce que son site, lui, travaille.
-          </p>
-        </div>
-
-        <!-- Pivot -->
-        <p class="fomo-pivot">Alors pourquoi pas vous&nbsp;?</p>
-
-        <!-- 4 cartes solution -->
-        <div class="solution-cards">
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        <div class="chips">
+          <div class="chip float-anim">
+            <span class="chip__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </span>
-            <h3 class="solution-card__title">Site clair qui convainc</h3>
-            <p class="solution-card__text">Votre client idéal comprend ce que vous faites dès la 1re page — et passe à l’action.</p>
+            <div><div class="chip__num">1<small>-on-</small>1</div><div class="chip__label">Accompagnement personnel</div></div>
+            <span class="chip__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
           </div>
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <div class="chip float-anim">
+            <span class="chip__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </span>
-            <h3 class="solution-card__title">Référencement ciblé</h3>
-            <p class="solution-card__text">Positionné sur les bons mots-clés pour attirer des visiteurs qui cherchent exactement ce que vous offrez.</p>
+            <div><div class="chip__num" data-count="24">0<small>h</small></div><div class="chip__label">Réponse garantie</div></div>
+            <span class="chip__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
           </div>
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div class="chip float-anim">
+            <span class="chip__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
             </span>
-            <h3 class="solution-card__title">Design qui déclenche</h3>
-            <p class="solution-card__text">Un parcours rassurant qui transforme un visiteur hésitant en prise de contact réelle.</p>
+            <div><div class="chip__num" data-count="100">0<small>%</small></div><div class="chip__label">Mobile-first</div></div>
+            <span class="chip__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
           </div>
-          <div class="solution-card">
-            <span class="split__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-            </span>
-            <h3 class="solution-card__title">Suivi continu</h3>
-            <p class="solution-card__text">Pas un livrable qu’on abandonne. On reste avec vous pour mesurer, ajuster et progresser.</p>
-          </div>
-        </div>
-
-        <div class="section__actions section__actions--center">
-          <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
         </div>
       </div>
     </section>
 
-    <!-- ⑤ BÉNÉFICES — Ce que votre site peut changer -->
-    <section class="section section--dark">
-      <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Ce que votre site peut changer — concrètement</h2>
-        </header>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title">
-              <span class="feature__icon">✓</span>
-              Vos prospects demandent un devis — sans relance
-            </h3>
-            <p class="feature__text">Des appels à l’action clairs, positionnés au bon endroit, qui déclenchent la prise de contact sans friction.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title">
-              <span class="feature__icon">✓</span>
-              Votre nom s’affiche quand ça compte
-            </h3>
-            <p class="feature__text">Quand un client idéal cherche votre secteur à Montréal ou au Québec, c’est votre site qui apparaît — pas celui d’un concurrent.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title">
-              <span class="feature__icon">✓</span>
-              Vos prospects vous font confiance avant de vous parler
-            </h3>
-            <p class="feature__text">Un site professionnel filtre les mauvais leads et attire les clients sérieux — ceux qui sont déjà prêts à acheter.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title">
-              <span class="feature__icon">✓</span>
-              Vous récupérez des heures chaque semaine
-            </h3>
-            <p class="feature__text">Votre site répond aux questions fréquentes, qualifie les leads et réduit le temps perdu avec des prospects non ciblés.</p>
-          </article>
-        </div>
-        <div class="expertise-intro__cta" style="margin-top:2.5rem">
-          <a href="/contact.html" class="expertise-intro__link">
-            Voir comment on peut y arriver
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <span class="expertise-intro__hint">Audit gratuit · sans engagement</span>
-        </div>
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Création de sites web</span><span>SEO local</span><span>Marketing digital</span><span>Visibilité IA · AEO / GEO</span><span>Mobile-first</span><span>Conversion</span><span>Montréal · Québec</span>
+        <span>Création de sites web</span><span>SEO local</span><span>Marketing digital</span><span>Visibilité IA · AEO / GEO</span><span>Mobile-first</span><span>Conversion</span><span>Montréal · Québec</span>
       </div>
-    </section>
+    </div>
 
-    <!-- ⑥ SERVICES PRINCIPAUX -->
+    <!-- QUALIFICATION -->
     <section class="section">
       <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Quatre leviers pour trouver des clients en ligne</h2>
-        </header>
-        <div class="services">
-          <article class="service-card">
-            <h3 class="service-card__title">Un site qui vend pendant que vous travaillez</h3>
-            <p class="service-card__text">
-              Chaque page conçue avec un objectif&nbsp;: transformer un visiteur en appel, en soumission, en client — même la nuit.
-            </p>
-            <a href="/creation-site.html" class="service-card__link">
-              Obtenir un site qui génère des clients
-            </a>
-          </article>
+        <div class="sec-head reveal">
+          <p class="eyebrow">Pour qui ?</p>
+          <h2>Ce site est fait pour vous si&hellip;</h2>
+          <p>Vous n'avez peut-être pas un grand budget ni une équipe marketing — vous avez juste besoin d'un site qui reflète vraiment vos valeurs et qui travaille pour vous.</p>
+        </div>
+        <ul class="qual reveal">
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Vous avez un service à vendre et votre site ne le reflète pas</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Vous êtes bon dans votre métier, mais invisible sur Google</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Vous voulez des leads qualifiés sans tout dépenser en pub</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Votre site génère peu — ou pas — de prises de contact</li>
+        </ul>
+      </div>
+    </section>
 
-          <article class="service-card">
-            <h3 class="service-card__title">Votre nom en tête de Google pour les bons mots-clés</h3>
-            <p class="service-card__text">
-              Des prospects qui cherchent exactement ce que vous offrez — et qui arrivent sur votre site, pas sur celui d’un concurrent.
-            </p>
-            <a href="/seo.html" class="service-card__link">
-              Améliorer mon classement sur Google
-            </a>
-          </article>
+    <!-- FOMO -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Le vrai problème</p>
+          <h2>Votre site existe. Mais est-ce qu'il travaille pour vous&nbsp;?</h2>
+          <p>Il est peut-être lent, flou sur votre offre, ou tout simplement introuvable sur Google.</p>
+        </div>
+        <div class="fomo reveal">
+          <p>Pendant ce temps, votre concurrent — peut-être moins expérimenté que vous — a refait son site. Il reçoit des demandes. Il ferme des contrats. <strong>Pas vous.</strong></p>
+          <p class="fomo__punch">Pas parce qu'il est meilleur. Parce que son site, lui, travaille.</p>
+        </div>
+        <p class="pivot reveal accent">Alors pourquoi pas vous&nbsp;?</p>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+      </div>
+    </section>
 
-          <article class="service-card">
-            <h3 class="service-card__title">Une stratégie complète pour des clients réguliers</h3>
-            <p class="service-card__text">
-              SEO, contenu et conversion coordonnés pour alimenter votre pipeline client chaque mois — sans dépendre du bouche-à-oreille.
-            </p>
-            <a href="/marketing-digital.html" class="service-card__link">
-              Développer mon acquisition client
-            </a>
-          </article>
-
-          <article class="service-card">
-            <h3 class="service-card__title">Votre nom cité par ChatGPT, Perplexity et Google IA</h3>
-            <p class="service-card__text">
-              En 2026, vos clients cherchent aussi sur l’IA — pas seulement sur Google. On structure votre contenu pour que vous soyez recommandé par ces nouveaux moteurs.
-            </p>
-            <a href="/services.html#visibilite-ia" class="service-card__link">
-              Être visible sur les moteurs IA
-            </a>
-          </article>
+    <!-- SERVICES -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Nos leviers</p>
+          <h2>Quatre leviers pour trouver des clients en ligne</h2>
+        </div>
+        <div class="grid grid-2 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h3>Un site qui vend pendant que vous travaillez</h3>
+            <p>Chaque page conçue avec un objectif&nbsp;: transformer un visiteur en appel, en soumission, en client — même la nuit.</p>
+            <a href="/creation-site.html" class="card__link">Obtenir un site qui génère des clients <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>Votre nom en tête de Google pour les bons mots-clés</h3>
+            <p>Des prospects qui cherchent exactement ce que vous offrez — et qui arrivent sur votre site, pas sur celui d'un concurrent.</p>
+            <a href="/seo.html" class="card__link">Améliorer mon classement sur Google <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3>Une stratégie complète pour des clients réguliers</h3>
+            <p>SEO, contenu et conversion coordonnés pour alimenter votre pipeline client chaque mois — sans dépendre du bouche-à-oreille.</p>
+            <a href="/marketing-digital.html" class="card__link">Développer mon acquisition client <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg></div>
+            <h3>Votre nom cité par ChatGPT, Perplexity et Google IA</h3>
+            <p>En 2026, vos clients cherchent aussi sur l'IA — pas seulement sur Google. On structure votre contenu pour que vous soyez recommandé par ces nouveaux moteurs.</p>
+            <a href="/services.html#visibilite-ia" class="card__link">Être visible sur les moteurs IA <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
         </div>
       </div>
     </section>
 
-    <!-- ⑦ DIFFÉRENCIATEUR IA -->
-    <section class="section section--alt-bg">
+    <!-- IA COMPARE -->
+    <section class="section">
       <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Le web de 2026&nbsp;: vos clients vous cherchent aussi sur l’IA</h2>
-          <p class="section__subtitle">
-            ChatGPT, Perplexity et Google IA recommandent directement des entreprises. Êtes-vous dans leurs réponses&nbsp;?
-          </p>
-        </header>
-        <div class="ia-compare">
-          <div class="ia-compare__card ia-compare__card--danger">
-            <div class="ia-compare__head">
-              <span class="ia-compare__icon ia-compare__icon--danger">✗</span>
-              <h3 class="ia-compare__title">Sans visibilité IA</h3>
-            </div>
-            <ul class="ia-compare__list">
-              <li>Votre concurrent est nommé par ChatGPT — pas vous</li>
-              <li>Google IA affiche une réponse directe sans citer votre site</li>
-              <li>Perplexity recommande un fournisseur — vous êtes absent</li>
-            </ul>
+        <div class="sec-head reveal">
+          <p class="eyebrow">Le web de 2026</p>
+          <h2>Vos clients vous cherchent aussi sur l'IA</h2>
+          <p>ChatGPT, Perplexity et Google IA recommandent directement des entreprises. Êtes-vous dans leurs réponses&nbsp;?</p>
+        </div>
+        <div class="compare reveal">
+          <div class="compare__card compare__card--no">
+            <div class="compare__head"><span class="compare__badge">✕</span>Sans visibilité IA</div>
+            <ul><li>Votre concurrent est nommé par ChatGPT — pas vous</li><li>Google IA affiche une réponse directe sans citer votre site</li><li>Perplexity recommande un fournisseur — vous êtes absent</li></ul>
           </div>
-          <div class="ia-compare__card ia-compare__card--success">
-            <div class="ia-compare__head">
-              <span class="ia-compare__icon ia-compare__icon--success">✓</span>
-              <h3 class="ia-compare__title">Avec NEXTIWEB</h3>
-            </div>
-            <ul class="ia-compare__list">
-              <li>Contenu structuré pour les vraies questions de vos clients</li>
-              <li>Autorité renforcée pour être cité comme référence</li>
-              <li>Site adapté aux critères AEO&nbsp;/ GEO des moteurs IA</li>
-            </ul>
+          <div class="compare__card compare__card--yes">
+            <div class="compare__head"><span class="compare__badge">✓</span>Avec NEXTIWEB</div>
+            <ul><li>Contenu structuré pour les vraies questions de vos clients</li><li>Autorité renforcée pour être cité comme référence</li><li>Site adapté aux critères AEO / GEO des moteurs IA</li></ul>
           </div>
         </div>
-        <div class="expertise-intro__cta">
-          <a href="/contact.html" class="expertise-intro__link">
-            Vérifier ma visibilité IA
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <span class="expertise-intro__hint">Audit gratuit · sans engagement</span>
-        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--ghost btn--lg">Vérifier ma visibilité IA</a></div>
       </div>
     </section>
 
-    <!-- ⑧ PROCESSUS — Votre résultat en 4 étapes -->
-    <section class="section section--dark">
+    <!-- STEPS -->
+    <section class="section">
       <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Votre résultat en 4 étapes</h2>
-        </header>
-        <ol class="steps steps--visual">
-          <li class="steps__item">
-            <div class="steps__number">1</div>
-            <h3 class="steps__title">Vous nous parlez de votre business</h3>
-            <p class="steps__text">On comprend vos clients cibles, vos objectifs et ce qui vous bloque réellement en ligne.</p>
-          </li>
-          <li class="steps__item">
-            <div class="steps__number">2</div>
-            <h3 class="steps__title">Vous recevez une stratégie claire</h3>
-            <p class="steps__text">Plan du site, mots-clés cibles et parcours de conversion — rien de flou, tout est justifié.</p>
-          </li>
-          <li class="steps__item">
-            <div class="steps__number">3</div>
-            <h3 class="steps__title">Votre site prend vie</h3>
-            <p class="steps__text">Design, code et SEO livrés proprement. Vous validez à chaque étape, on ajuste sans friction.</p>
-          </li>
-          <li class="steps__item">
-            <div class="steps__number">4</div>
-            <h3 class="steps__title">Vos clients vous trouvent</h3>
-            <p class="steps__text">Suivi post-lancement, positions et améliorations continues — votre site progresse dans le temps.</p>
-          </li>
-        </ol>
-        <div class="section__actions section__actions--center">
-          <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+        <div class="sec-head reveal">
+          <p class="eyebrow">La méthode</p>
+          <h2>Votre résultat en 4 étapes</h2>
         </div>
+        <div class="steps reveal">
+          <div class="step"><div class="step__n">1</div><h3>Vous nous parlez de votre business</h3><p>On comprend vos clients cibles, vos objectifs et ce qui vous bloque réellement en ligne.</p></div>
+          <div class="step"><div class="step__n">2</div><h3>Vous recevez une stratégie claire</h3><p>Plan du site, mots-clés cibles et parcours de conversion — rien de flou, tout est justifié.</p></div>
+          <div class="step"><div class="step__n">3</div><h3>Votre site prend vie</h3><p>Design, code et SEO livrés proprement. Vous validez à chaque étape, on ajuste sans friction.</p></div>
+          <div class="step"><div class="step__n">4</div><h3>Vos clients vous trouvent</h3><p>Suivi post-lancement, positions et améliorations continues — votre site progresse dans le temps.</p></div>
+        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
       </div>
     </section>
 
-    <!-- ⑨ CONFIANCE — Fondatrice + Engagements -->
-    <section class="founder-teaser">
+    <!-- FOUNDER -->
+    <section class="section">
       <div class="container">
-        <div class="founder-teaser__inner">
-          <div class="founder-teaser__sig" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 62" width="148" height="62">
-              <text x="6" y="46" class="sig-text">Khadija</text>
-              <!-- Trait de soulignement avec courbe élégante -->
-              <path class="sig-flourish" d="M 4 54 C 30 59 80 57 144 51"/>
+        <div class="founder reveal">
+          <div class="founder__sig" aria-hidden="true">
+            <svg viewBox="0 0 148 62" xmlns="http://www.w3.org/2000/svg">
+              <text x="6" y="44" class="sig-text">Khadija</text>
+              <path class="sig-flourish" d="M 4 52 C 30 58 80 56 144 49"/>
             </svg>
           </div>
-          <div class="founder-teaser__content">
-            <p class="founder-teaser__text">
-              Je m’appelle Khadija. J’ai vécu exactement ce que vous vivez — un site techniquement solide, zéro trafic, zéro client.
-              Ce que j’ai appris en reconstruisant tout a donné naissance à NEXTIWEB.
-            </p>
-            <a href="/a-propos.html" class="expertise-intro__link">
-              Lire mon histoire
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
+          <div>
+            <p class="founder__text">Je m'appelle Khadija. J'ai vécu exactement ce que vous vivez — un site techniquement solide, zéro trafic, zéro client. Ce que j'ai appris en reconstruisant tout a donné naissance à NEXTIWEB.</p>
+            <a href="/a-propos.html" class="founder__link">Lire mon histoire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt-bg">
+    <!-- ENGAGEMENTS -->
+    <section class="section section--alt">
       <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Des engagements concrets.</h2>
-          <p class="section__subtitle">
-            Une transparence totale et des garanties que vous pouvez tenir pour acquises dès le premier jour.
-          </p>
-        </header>
-        <div class="split split--3col">
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> 3 cycles de révisions inclus</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Trois allers-retours complets inclus dans le cadre du brief initial. Chaque cycle = vous envoyez tous vos retours en une fois, on corrige. Au-delà, un tarif horaire s’applique.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Délai respecté, garanti</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Nous nous engageons sur une date de livraison dès le départ. Si nous la dépassons sans raison valable, vous êtes remboursé.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Réponse sous 24&nbsp;h</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Chaque question reçoit une réponse en moins de 24 heures ouvrables. Votre projet n’attend jamais dans un couloir de support.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Suivi 30 jours après lancement</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Une fois le site en ligne, on reste disponibles pour les ajustements pendant 30 jours. Vous n’êtes pas seul après la remise.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Zéro jargon</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Chaque décision vous est expliquée simplement. Vous comprenez ce que vous payez, pourquoi, et ce que ça vous rapporte.</p>
-          </div>
-          <div>
-            <h3 class="split__title"><span class="split__check">✓</span> Prix transparent dès le départ</h3>
-            <p style="font-size:0.95rem;color:var(--color-text-muted);line-height:1.65">Aucune surprise en cours de route. Le budget est fixé lors de l’audit gratuit — et il ne bouge pas sans votre accord.</p>
-          </div>
+        <div class="sec-head reveal">
+          <p class="eyebrow">Nos garanties</p>
+          <h2>Des engagements concrets.</h2>
+          <p>Une transparence totale et des garanties que vous pouvez tenir pour acquises dès le premier jour.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>3 cycles de révisions inclus</h3><p>Trois allers-retours complets inclus dans le cadre du brief initial. Au-delà, un tarif horaire s'applique.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Délai respecté, garanti</h3><p>Nous nous engageons sur une date de livraison dès le départ. Si nous la dépassons sans raison valable, vous êtes remboursé.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Réponse sous 24&nbsp;h</h3><p>Chaque question reçoit une réponse en moins de 24 heures ouvrables. Votre projet n'attend jamais.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Suivi 30 jours après lancement</h3><p>Une fois le site en ligne, on reste disponibles pour les ajustements pendant 30 jours.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Zéro jargon</h3><p>Chaque décision vous est expliquée simplement. Vous comprenez ce que vous payez, pourquoi, et ce que ça rapporte.</p></div></div>
+          <div class="pledge"><span class="tick"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><h3>Prix transparent dès le départ</h3><p>Aucune surprise en cours de route. Le budget est fixé lors de l'audit gratuit — et il ne bouge pas sans votre accord.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- ⑩ SECTEURS -->
-    <section class="section section--dark">
+    <!-- DÉMOS -->
+    <section class="section">
       <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Les projets qu’on transforme en machines à clients.</h2>
-          <p class="section__subtitle">
-            Peu importe votre secteur, la logique est la même&nbsp;: un site qui explique clairement ce que vous faites,
-            qui convainc votre visiteur idéal, et qui l’amène à vous contacter — sans que vous ayez à le relancer.
-          </p>
-        </header>
-        <div class="projects">
-          <article class="project-card">
-            <h3 class="project-card__title">🍽 Restaurant &amp; café</h3>
-            <p class="project-card__text">
-              Menu en ligne, réservations, avis clients intégrés. Un site conçu pour remplir vos tables et générer des commandes directes.
-            </p>
-            <p class="project-card__meta">Vous êtes dans la restauration&nbsp;? <a href="/secteurs.html">Voir ce secteur →</a></p>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-card__title">🔧 Entreprise de services</h3>
-            <p class="project-card__text">
-              Pages par service, formulaires de soumission et preuves de crédibilité. Pour générer des demandes qualifiées sans courir après les clients.
-            </p>
-            <p class="project-card__meta">Plombier, comptable, coach, consultant&nbsp;? <a href="/secteurs.html">Voir ce secteur →</a></p>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-card__title">🦷 Clinique dentaire</h3>
-            <p class="project-card__text">
-              Prise de rendez-vous en ligne, fiche Google optimisée et avis bien gérés. Un site pensé pour remplir votre agenda — dans le respect des règles de l’Ordre.
-            </p>
-            <p class="project-card__meta">Vous êtes dentiste&nbsp;? <a href="/cliniques-dentaires.html">Voir ce secteur →</a></p>
-          </article>
+        <div class="sec-head reveal">
+          <p class="eyebrow">Démos par secteur</p>
+          <h2>Pas de promesses. Regardez ce qu'on construit.</h2>
+          <p>Six sites de démonstration, entièrement cliquables, conçus par NEXTIWEB&nbsp;— un par secteur. Explorez-les comme un vrai client le ferait.</p>
         </div>
-        <div class="section__actions section__actions--center">
-          <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+
+        <div class="showcase__tabs reveal" role="tablist" aria-label="Choisir un secteur de démo">
+          <button class="stab is-active" type="button" role="tab" aria-selected="true" data-i="0">🦷 Dentaire</button>
+          <button class="stab" type="button" role="tab" aria-selected="false" data-i="1">Restaurant</button>
+          <button class="stab" type="button" role="tab" aria-selected="false" data-i="2">Construction</button>
+          <button class="stab" type="button" role="tab" aria-selected="false" data-i="3">Artisan</button>
+          <button class="stab" type="button" role="tab" aria-selected="false" data-i="4">E-commerce</button>
+          <button class="stab" type="button" role="tab" aria-selected="false" data-i="5">Services</button>
         </div>
+
+        <a class="showcase reveal" id="showcase" href="https://soins-services.nextiwebstudio.ca/" target="_blank" rel="noopener" aria-label="Ouvrir la démo Studio Dentaire Belmont dans une fenêtre">
+          <div class="browser">
+            <div class="browser__bar"><span class="bdot"></span><span class="bdot"></span><span class="bdot"></span><span class="browser__url" id="scUrl">soins-services.nextiwebstudio.ca</span></div>
+            <img class="browser__img" id="scDesktop" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-desktop.webp" width="1366" height="854" decoding="async" alt="Aperçu desktop de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
+          </div>
+          <div class="phone">
+            <span class="phone__notch"></span>
+            <img class="phone__img" id="scMobile" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-mobile.webp" width="390" height="844" decoding="async" alt="Aperçu mobile de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
+          </div>
+          <span class="showcase__cta" id="scCta">Ouvrir la démo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+
+        <p class="showcase__name reveal" id="scName"><strong>Studio Dentaire Belmont</strong> · démo de site pour clinique dentaire</p>
+
+        <p class="demos__note reveal">Démos et concepts conçus par NEXTIWEB — exemples de méthode, pas des sites livrés à des clients. Les démos s'ouvrent dans une fenêtre, sans quitter cette page.</p>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux la mienne — audit gratuit</a></div>
       </div>
     </section>
 
-    <!-- ⑪ FAQ -->
-    <section class="section section--alt-bg faq">
+    <!-- FAQ -->
+    <section class="section">
       <div class="container">
-        <header class="section__header section__header--center">
-          <h2 class="section__title">Questions fréquentes</h2>
-        </header>
-        <div class="faq__list">
-          <article class="faq__item">
-            <button class="faq__trigger" type="button" aria-expanded="false">
-              <span class="faq__question">C’est quoi exactement l’audit gratuit — et c’est vraiment sans engagement&nbsp;?</span>
-              <span class="faq__arrow" aria-hidden="true">▾</span>
-            </button>
-            <p class="faq__answer" hidden>
-              L’audit gratuit, c’est un appel de 30 minutes où on analyse votre situation réelle&nbsp;: votre site, votre visibilité sur Google, et ce qui bloque vos conversions. À la fin, vous repartez avec un diagnostic clair — et zéro obligation. Si on travaille ensemble, tant mieux. Sinon, vous gardez les informations.
-            </p>
-          </article>
-          <article class="faq__item">
-            <button class="faq__trigger" type="button" aria-expanded="false">
-              <span class="faq__question">Quel budget prévoir pour un site web&nbsp;?</span>
-              <span class="faq__arrow" aria-hidden="true">▾</span>
-            </button>
-            <p class="faq__answer" hidden>
-              À partir de 1&nbsp;500&nbsp;$ pour un site vitrine efficace. Le prix dépend de la taille du projet, des fonctionnalités et du niveau d’accompagnement. On vous présente une proposition claire avant tout engagement — pas de surprises en cours de route.
-            </p>
-          </article>
-          <article class="faq__item">
-            <button class="faq__trigger" type="button" aria-expanded="false">
-              <span class="faq__question">J’ai déjà un site qui ne génère rien — vous pouvez m’aider&nbsp;?</span>
-              <span class="faq__arrow" aria-hidden="true">▾</span>
-            </button>
-            <p class="faq__answer" hidden>
-              C’est souvent notre point de départ. Un site qui existe mais ne convertit pas, c’est une perte silencieuse chaque mois. On commence par identifier pourquoi&nbsp;: chargement lent, message flou, mauvais positionnement Google. Ensuite, on corrige ce qui freine — parfois sans tout reconstruire.
-            </p>
-          </article>
-          <article class="faq__item">
-            <button class="faq__trigger" type="button" aria-expanded="false">
-              <span class="faq__question">Comment savoir si mon site freine mes ventes&nbsp;?</span>
-              <span class="faq__arrow" aria-hidden="true">▾</span>
-            </button>
-            <p class="faq__answer" hidden>
-              Quelques signaux clairs&nbsp;: personne ne vous contacte via votre site, vous n’apparaissez pas sur Google quand on cherche ce que vous faites, ou vous avez honte de donner votre URL. L’audit gratuit répond à cette question précisément — avec des données, pas des suppositions.
-            </p>
-          </article>
-          <article class="faq__item">
-            <button class="faq__trigger" type="button" aria-expanded="false">
-              <span class="faq__question">En combien de temps voit-on des résultats&nbsp;?</span>
-              <span class="faq__arrow" aria-hidden="true">▾</span>
-            </button>
-            <p class="faq__answer" hidden>
-              Un nouveau site commence à générer des contacts dès les premières semaines si le SEO de base est bien fait. Pour le référencement naturel, comptez 3 à 6 mois pour des positions stables. On vous donne un horizon réaliste dès le départ — pas de promesses impossibles.
-            </p>
-          </article>
-          <article class="faq__item">
-            <button class="faq__trigger" type="button" aria-expanded="false">
-              <span class="faq__question">Est-ce que l’IA comme ChatGPT peut m’envoyer des clients&nbsp;?</span>
-              <span class="faq__arrow" aria-hidden="true">▾</span>
-            </button>
-            <p class="faq__answer" hidden>
-              Oui — et c’est déjà le cas pour certains. Quand quelqu’un demande à ChatGPT ou Perplexity «&nbsp;meilleure agence web à Montréal&nbsp;», une liste de recommandations apparaît. Si votre contenu est bien structuré et votre autorité en ligne bien établie, vous pouvez y figurer. C’est ce qu’on appelle l’AEO (Answer Engine Optimization) — et on peut vous y positionner.
-            </p>
-          </article>
+        <div class="sec-head reveal">
+          <p class="eyebrow">Vous vous demandez&hellip;</p>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq__item"><button class="faq__q">C'est quoi exactement l'audit gratuit — et c'est vraiment sans engagement ?<span class="arr">▾</span></button><div class="faq__a"><p>L'audit gratuit, c'est un appel de 30 minutes où on analyse votre situation réelle : votre site, votre visibilité sur Google, et ce qui bloque vos conversions. À la fin, vous repartez avec un diagnostic clair — et zéro obligation.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Quel budget prévoir pour un site web ?<span class="arr">▾</span></button><div class="faq__a"><p>À partir de 1 500 $ pour un site vitrine efficace. Le prix dépend de la taille du projet, des fonctionnalités et du niveau d'accompagnement. On vous présente une proposition claire avant tout engagement — pas de surprises.</p></div></div>
+          <div class="faq__item"><button class="faq__q">J'ai déjà un site qui ne génère rien — vous pouvez m'aider ?<span class="arr">▾</span></button><div class="faq__a"><p>C'est souvent notre point de départ. On commence par identifier pourquoi : chargement lent, message flou, mauvais positionnement Google. Ensuite, on corrige ce qui freine — parfois sans tout reconstruire.</p></div></div>
+          <div class="faq__item"><button class="faq__q">En combien de temps voit-on des résultats ?<span class="arr">▾</span></button><div class="faq__a"><p>Un nouveau site commence à générer des contacts dès les premières semaines si le SEO de base est bien fait. Pour le référencement naturel, comptez 3 à 6 mois pour des positions stables. Pas de promesses impossibles.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Est-ce que l'IA comme ChatGPT peut m'envoyer des clients ?<span class="arr">▾</span></button><div class="faq__a"><p>Oui — et c'est déjà le cas pour certains. Si votre contenu est bien structuré et votre autorité en ligne bien établie, vous pouvez figurer dans les recommandations. C'est l'AEO (Answer Engine Optimization) — et on peut vous y positionner.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- ⑬ CTA FINAL -->
-    <section class="section section--cta">
-      <div class="container section__header section__header--center">
-        <h2 class="section__title">Prêt à développer votre présence en ligne&nbsp;?</h2>
-        <p class="section__text">
-          Parlons de votre projet et voyons comment transformer votre site web en un véritable outil pour attirer des clients.
-        </p>
-        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2>Prêt à développer votre présence en ligne&nbsp;?</h2>
+          <p>Parlons de votre projet et voyons comment transformer votre site web en un véritable outil pour attirer des clients.</p>
+          <a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <!-- =======================
-       FOOTER GLOBAL
-       ======================= -->
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
-        <address class="footer__address">
-          Montréal, Québec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB sur LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montréal, Québec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/">Accueil</a></li><li><a href="/services.html">Services</a></li><li><a href="/secteurs.html">Secteurs</a></li><li><a href="/ressources.html">Ressources</a></li><li><a href="/blog/">Blog</a></li><li><a href="/a-propos.html">À propos</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/creation-site.html">Création de sites web</a></li><li><a href="/seo.html">Référencement SEO</a></li><li><a href="/marketing-digital.html">Marketing digital</a></li><li><a href="/visibilite-ia.html">Visibilité IA</a></li></ul></div>
+        <div><h4>Secteurs</h4><ul><li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li><li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li><li><a href="/avocats.html">Avocats</a></li><li><a href="/construction-renovation.html">Construction</a></li><li><a href="/secteurs.html">Autres secteurs</a></li></ul></div>
+        <div><h4>Zones</h4><ul><li><a href="/zones-desservies/montreal.html">Montréal</a></li><li><a href="/zones-desservies/quebec.html">Québec</a></li><li><a href="/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/secteurs.html">Secteurs</a></li>
-          <li><a href="/ressources.html">Ressources</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/a-propos.html">À propos</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/creation-site.html">Création de sites web</a></li>
-          <li><a href="/seo.html">Référencement SEO</a></li>
-          <li><a href="/marketing-digital.html">Marketing digital</a></li>
-          <li><a href="/visibilite-ia.html">Visibilité IA</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Secteurs</h3>
-        <ul class="footer__list">
-          <li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li>
-          <li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li>
-          <li><a href="/avocats.html">Avocats</a></li>
-          <li><a href="/construction-renovation.html">Construction et rénovation</a></li>
-          <li><a href="/secteurs.html">Autres secteurs</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Zones desservies</h3>
-        <ul class="footer__list">
-          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
-          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
-          <li><a href="/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curieux de voir notre méthode en action ? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explorez nos concepts sectoriels sur <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Consultez notre <a href="/politique-confidentialite.html">politique de confidentialité</a>, notre <a href="/politique-cookies.html">politique de cookies</a> et nos <a href="/mentions-legales.html">mentions légales</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Gérer mes cookies</button></p>
     </div>
   </footer>
 
-  <!-- JS global -->
-  <script src="/assets/js/main.min.js" defer></script>
-  <script>
-    (function(){
-      function nwLayout(){
-        var tb=document.querySelector('.top-bar'),h=document.querySelector('.site-header');
-        if(!tb||!h)return;
-        var tbH=tb.offsetHeight,hH=h.offsetHeight;
-        h.style.top=tbH+'px';
-        var s=document.getElementById('nw-layout-pad');
-        if(!s){s=document.createElement('style');s.id='nw-layout-pad';document.head.appendChild(s);}
-        s.textContent='body{padding-top:'+(tbH+hH)+'px!important}';
-      }
-      document.addEventListener('DOMContentLoaded',nwLayout);
-      window.addEventListener('load',nwLayout);
-    })();
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "HowTo",
-        "@id": "https://nextiweb.ca/#howto",
-        "name": "Comment obtenir un site web qui génère des clients à Montréal",
-        "description": "Processus en 4 étapes de NEXTIWEB pour créer un site web professionnel qui attire et convertit des clients.",
-        "totalTime": "P4W",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "Audit gratuit",
-            "text": "Nous analysons votre site actuel, vos concurrents et vos opportunités de croissance en ligne. Résultat : un rapport complet avec des recommandations concrètes.",
-            "url": "https://nextiweb.ca/contact.html"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "Stratégie personnalisée",
-            "text": "Nous définissons ensemble la stratégie web adaptée à vos objectifs : création de site, SEO, marketing digital ou combinaison des trois.",
-            "url": "https://nextiweb.ca/services.html"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "Exécution & lancement",
-            "text": "Notre équipe conçoit, développe et optimise votre présence en ligne. Chaque étape est validée avec vous avant mise en ligne.",
-            "url": "https://nextiweb.ca/creation-site.html"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 4,
-            "name": "Suivi & croissance",
-            "text": "Après le lancement, nous assurons le suivi des performances, le référencement continu et les ajustements pour maximiser votre retour sur investissement.",
-            "url": "https://nextiweb.ca/seo.html"
-          }
-        ]
-      },
-      {
-        "@type": "AggregateRating",
-        "@id": "https://nextiweb.ca/#rating",
-        "itemReviewed": {
-          "@type": "LocalBusiness",
-          "name": "NEXTIWEB",
-          "url": "https://nextiweb.ca"
-        },
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1",
-        "ratingCount": "12",
-        "reviewCount": "12"
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://nextiweb.ca/#website",
-        "url": "https://nextiweb.ca",
-        "name": "NEXTIWEB – Agence web Montréal",
-        "description": "Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME.",
-        "inLanguage": ["fr-CA", "en-CA"],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://nextiweb.ca/blog/?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Barre flottante bas droite : question + WhatsApp -->
-  <div class="float-bar">
-    <a href="/contact.html" class="audit-pill" aria-label="Demander mon audit gratuit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Audit gratuit
-    </a>
-    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-    </a>
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Audit gratuit</a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
   </div>
 
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Gestion du consentement aux cookies">
+    <h2>Préférences de cookies</h2>
+    <p>Nous utilisons des cookies essentiels au fonctionnement du site. Les cookies de mesure et de marketing ne sont activés qu'avec votre consentement, conformément à la Loi 25. <a href="/politique-confidentialite.html">Confidentialité</a> · <a href="/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Cookies essentiels (obligatoires)</label>
+      <label><input type="checkbox" id="cAnalytics"> Cookies de mesure d'audience</label>
+      <label><input type="checkbox" id="cMarketing"> Cookies marketing</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Enregistrer mes choix</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Tout accepter</button>
+      <button class="btn btn--ghost" data-consent="none">Tout refuser</button>
+      <button class="btn btn--ghost" data-consent="custom">Personnaliser</button>
+    </div>
+  </div>
+
+  <!-- Consentement Loi 25 : même clé/mécanisme que main.js (compatible GTM) -->
   <script>
-  /* ── HERO STARS CANVAS (optimisé perf) ── */
-  (function () {
-    if (window.innerWidth <= 768) return; // désactivé sur mobile
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const canvas = document.getElementById('hero-stars');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    const GREEN = '#00e676';
-    let stars = [], W, H, raf, lastT = 0;
-    const TARGET_MS = 50; // ~20 fps — 3× moins de tâches main-thread
+  (function(){
+    var KEY='nextiweb-cookie-consent-v1';
+    function apply(p){var ds=document.documentElement.dataset;ds.cookieEssential='granted';ds.cookieAnalytics=p.analytics?'granted':'denied';ds.cookieMarketing=p.marketing?'granted':'denied';try{window.dispatchEvent(new CustomEvent('nextiweb:cookie-consent-updated',{detail:p}));}catch(e){}}
+    function persist(p){try{localStorage.setItem(KEY,JSON.stringify({analytics:!!p.analytics,marketing:!!p.marketing}));}catch(e){}apply(p);}
+    var c=document.getElementById('consent');
+    var stored=null;try{stored=JSON.parse(localStorage.getItem(KEY));}catch(e){}
+    if(stored&&typeof stored.analytics==='boolean'){apply(stored);}
+    else if(c){c.hidden=false;}
+    if(c){
+      c.addEventListener('click',function(e){
+        var btn=e.target.closest&&e.target.closest('[data-consent]');if(!btn)return;
+        var a=btn.getAttribute('data-consent');
+        if(a==='custom'){document.getElementById('consentOpts').classList.toggle('show');return;}
+        var p;
+        if(a==='all')p={analytics:true,marketing:true};
+        else if(a==='none')p={analytics:false,marketing:false};
+        else if(a==='save')p={analytics:document.getElementById('cAnalytics').checked,marketing:document.getElementById('cMarketing').checked};
+        else return;
+        persist(p);c.hidden=true;
+      });
+    }
+    document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-open-cookie-settings]');if(b&&c){c.hidden=false;document.getElementById('consentOpts').classList.add('show');}});
+  })();
+  </script>
 
-    function resize() {
-      const section = canvas.parentElement;
-      W = canvas.width  = section.offsetWidth;
-      H = canvas.height = section.offsetHeight;
+  <script>
+  (function(){
+    var mq = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Header scroll state
+    var header = document.getElementById('header');
+    window.addEventListener('scroll', function(){
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, {passive:true});
+
+    // Mobile drawer
+    var t=document.getElementById('navToggle'),d=document.getElementById('drawer'),
+        s=document.getElementById('scrim'),c=document.getElementById('drawerClose');
+    function open(){d.classList.add('open');s.classList.add('open');t.classList.add('open')}
+    function close(){d.classList.remove('open');s.classList.remove('open');t.classList.remove('open')}
+    t.addEventListener('click',open);c.addEventListener('click',close);s.addEventListener('click',close);
+    d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+
+    // Reveal on scroll — FAIL-OPEN : si le JS plante, le contenu reste visible (pas de page blanche)
+    function nwRevealAll(){ document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
+    try{
+      if('IntersectionObserver' in window && !mq){
+        document.documentElement.classList.add('has-js'); // active le masquage seulement maintenant
+        var io=new IntersectionObserver(function(es){
+          es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+        },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+        document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+      } else { nwRevealAll(); }
+    }catch(err){ nwRevealAll(); }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq__item').forEach(function(item){
+      var q=item.querySelector('.faq__q'),a=item.querySelector('.faq__a');
+      q.addEventListener('click',function(){
+        var isOpen=item.classList.contains('open');
+        document.querySelectorAll('.faq__item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq__a').style.maxHeight=null});
+        if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+      });
+    });
+
+    // Counter animation
+    function animateCount(el){
+      var target=+el.getAttribute('data-count'),small=el.querySelector('small'),suffix=small?small.outerHTML:'';
+      if(mq){el.innerHTML=target+suffix;return;}
+      var start=null,dur=1100;
+      function tick(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);
+        var val=Math.floor((1-Math.pow(1-p,3))*target);el.innerHTML=val+suffix;
+        if(p<1)requestAnimationFrame(tick);}
+      requestAnimationFrame(tick);
+    }
+    if('IntersectionObserver' in window){
+      var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animateCount(e.target);co.unobserve(e.target)}})},{threshold:.6});
+      document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el)});
+    } else { document.querySelectorAll('[data-count]').forEach(animateCount); }
+
+    // Hero spotlight follows cursor
+    if(!mq){
+      var hero=document.querySelector('.hero'),spot=document.getElementById('spot');
+      hero.addEventListener('mousemove',function(e){
+        var r=hero.getBoundingClientRect();
+        spot.style.left=(e.clientX-r.left)+'px';spot.style.top=(e.clientY-r.top)+'px';
+      },{passive:true});
     }
 
-    function rand(a, b) { return a + Math.random() * (b - a); }
-
-    function createStars() {
-      stars = [];
-      const count = Math.floor((W * H) / 8000); // densité réduite
-      for (let i = 0; i < count; i++) {
-        const g = Math.random() < 0.08;
-        stars.push({
-          x: rand(0, W), y: rand(0, H),
-          r: g ? rand(1.2, 2.2) : rand(0.4, 1.5),
-          alpha: rand(0.3, 1),
-          speed: rand(0.003, 0.012),
-          phase: rand(0, Math.PI * 2),
-          green: g,
-          glow: g ? rand(4, 10) : 0,
-        });
+    // Halo discret qui suit la souris sur TOUTE la page (souris fine uniquement)
+    if(!mq && window.matchMedia('(pointer:fine)').matches){
+      var glow=document.getElementById('cursorGlow');
+      if(glow){
+        var gx=0,gy=0,gRaf=0;
+        window.addEventListener('mousemove',function(e){
+          gx=e.clientX;gy=e.clientY;
+          if(glow.style.opacity!=='1')glow.style.opacity='1';
+          if(!gRaf)gRaf=requestAnimationFrame(function(){glow.style.transform='translate('+gx+'px,'+gy+'px) translate(-50%,-50%)';gRaf=0;});
+        },{passive:true});
+        window.addEventListener('mouseleave',function(){glow.style.opacity='0';},{passive:true});
       }
     }
 
-    function draw(t) {
-      // Limite à ~20 fps pour libérer le main-thread
-      if (t - lastT < TARGET_MS) { raf = requestAnimationFrame(draw); return; }
-      lastT = t;
-
-      ctx.clearRect(0, 0, W, H);
-
-      // 1) Étoiles blanches — pas de save/restore, un fill par étoile
-      ctx.fillStyle = '#ffffff';
-      ctx.shadowBlur = 0;
-      for (const s of stars) {
-        if (s.green) continue;
-        ctx.globalAlpha = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 60 + s.phase));
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fill();
+    // Showcase démos : onglets qui changent la démo affichée (navigateur + téléphone)
+    var DEMOS=[
+      {n:'Studio Dentaire Belmont',t:'démo de site pour clinique dentaire',u:'soins-services.nextiwebstudio.ca',h:'https://soins-services.nextiwebstudio.ca/',d:'demo-site-clinique-dentaire-montreal-desktop',m:'demo-site-clinique-dentaire-montreal-mobile'},
+      {n:'Kintsugi Sushi',t:'démo de site pour restaurant & café',u:'restaurant-cafe.nextiwebstudio.ca',h:'https://restaurant-cafe.nextiwebstudio.ca/',d:'demo-site-restaurant-cafe-desktop',m:'demo-site-restaurant-cafe-mobile'},
+      {n:'Aqua Élite',t:'démo de site pour construction & rénovation',u:'construction-renovation.nextiwebstudio.ca',h:'https://construction-renovation.nextiwebstudio.ca/',d:'demo-site-construction-renovation-desktop',m:'demo-site-construction-renovation-mobile'},
+      {n:'Maison Cacao',t:'démo de site pour artisan & boutique',u:'art-artisanat.nextiwebstudio.ca',h:'https://art-artisanat.nextiwebstudio.ca/',d:'demo-site-artisan-chocolaterie-desktop',m:'demo-site-artisan-chocolaterie-mobile'},
+      {n:'Maison Aurélia',t:'démo de site e-commerce / bijouterie',u:'e-commerce.nextiwebstudio.ca',h:'https://e-commerce.nextiwebstudio.ca/',d:'demo-site-ecommerce-marque-locale-desktop',m:'demo-site-ecommerce-marque-locale-mobile'},
+      {n:'Phénix',t:'démo de site pour services à domicile',u:'service-domicile.nextiwebstudio.ca',h:'https://service-domicile.nextiwebstudio.ca/',d:'demo-site-services-domicile-desktop',m:'demo-site-services-domicile-mobile'}
+    ];
+    var sc=document.getElementById('showcase');
+    if(sc){
+      var scD=document.getElementById('scDesktop'),scM=document.getElementById('scMobile'),
+          scU=document.getElementById('scUrl'),scN=document.getElementById('scName'),
+          tabs=document.querySelectorAll('.stab');
+      function setDemo(i){
+        var x=DEMOS[i];
+        scD.src='/assets/img/demos/'+x.d+'.webp';
+        scM.src='/assets/img/demos/'+x.m+'.webp';
+        scD.alt='Aperçu desktop de la démo de site web '+x.n+' conçue par NEXTIWEB';
+        scM.alt='Aperçu mobile de la démo de site web '+x.n+' conçue par NEXTIWEB';
+        scU.textContent=x.u;
+        scN.innerHTML='<strong>'+x.n+'</strong> · '+x.t;
+        sc.setAttribute('href',x.h);
+        sc.setAttribute('aria-label','Ouvrir la démo '+x.n+' dans une fenêtre');
+        tabs.forEach(function(t,j){ t.classList.toggle('is-active',j===i); t.setAttribute('aria-selected',j===i?'true':'false'); });
       }
-
-      // 2) Étoiles vertes — glow activé une seule fois pour le groupe
-      ctx.fillStyle = GREEN;
-      ctx.shadowColor = GREEN;
-      for (const s of stars) {
-        if (!s.green) continue;
-        ctx.globalAlpha = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 60 + s.phase));
-        ctx.shadowBlur = s.glow;
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      // Reset état canvas
-      ctx.shadowBlur = 0;
-      ctx.globalAlpha = 1;
-
-      raf = requestAnimationFrame(draw);
-    }
-
-    function init() {
-      resize();
-      createStars();
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(draw);
-    }
-
-    window.addEventListener('resize', () => { resize(); createStars(); }, { passive: true });
-
-    // Démarrer APRÈS le LCP — laisse le navigateur peindre le contenu d'abord
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(init, { timeout: 2000 });
-    } else {
-      setTimeout(init, 400);
+      tabs.forEach(function(t){ t.addEventListener('click',function(){ setDemo(+t.getAttribute('data-i')); }); });
+      // Ouvre la démo dans une fenêtre popup — la page reste derrière (pas de fuite)
+      sc.addEventListener('click',function(e){
+        e.preventDefault();
+        var url=this.getAttribute('href');
+        var w=Math.min(1320,(screen.availWidth||1320)-60);
+        var h=Math.min(880,(screen.availHeight||880)-60);
+        var left=Math.max(0,((screen.availWidth||1320)-w)/2);
+        var top=Math.max(0,((screen.availHeight||880)-h)/2);
+        var win=window.open(url,'nw-demo','noopener,width='+w+',height='+h+',left='+left+',top='+top);
+        if(!win){ window.open(url,'_blank','noopener'); }
+      });
     }
   })();
   </script>

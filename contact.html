@@ -255,26 +255,14 @@
     .tunnel-footer a { color: rgba(255,255,255,.4); text-decoration: none; }
     .tunnel-footer a:hover { color: var(--color-text-muted); }
 
-    /* Light theme */
-    body.theme-light .tunnel-card {
-      background: #fff;
-      border-color: rgba(0,0,0,.08);
-      box-shadow: 0 8px 40px rgba(0,0,0,.1);
-    }
-    body.theme-light .tform__input,
-    body.theme-light .tform__select,
-    body.theme-light .tform__textarea {
-      background: #f8f8f8;
-      border-color: rgba(0,0,0,.12);
-      color: #111;
-    }
-    body.theme-light .tform__radio-label {
-      background: #f5f5f5;
-      border-color: rgba(0,0,0,.12);
-      color: #555;
-    }
-    body.theme-light .tform__input::placeholder,
-    body.theme-light .tform__textarea::placeholder { color: rgba(0,0,0,.3); }
+    /* --- Harmonisation 2026 : fond aurora + accents degrade --- */
+    .bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+    .bg-fx::before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 50% at 12% 8%,rgba(0,230,118,.18),transparent 60%),radial-gradient(40% 45% at 88% 20%,rgba(39,224,255,.12),transparent 60%),radial-gradient(50% 50% at 70% 95%,rgba(139,108,255,.10),transparent 60%);filter:blur(20px);animation:auroraDrift 22s cubic-bezier(.22,1,.36,1) infinite alternate}
+    .bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(circle at 50% 0%,#000,transparent 75%);mask-image:radial-gradient(circle at 50% 0%,#000,transparent 75%)}
+    @keyframes auroraDrift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-4%,3%,0) scale(1.12)}}
+    .tunnel-intro__title{background:linear-gradient(115deg,#00e676 0%,#5dffb0 40%,#27e0ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .tform__submit{background:linear-gradient(115deg,#00e676 0%,#5dffb0 40%,#27e0ff 100%)!important;background-size:160% auto!important;color:#04150c!important}
+    .tform__submit:hover{background-position:right center!important}
   </style>
 </head>
 <body class="theme-dark">
@@ -283,6 +271,8 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
 
   <!-- ── Tunnel header : logo only ── -->
   <header class="tunnel-header">

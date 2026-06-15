@@ -63,6 +63,19 @@
     });
   });
 
+  // Accordéon FAQ des articles de blog (.article-faq) — un seul ouvert à la fois
+  document.querySelectorAll('.article-faq__btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.article-faq__item');if(!item)return;
+      var isOpen=item.classList.contains('is-open');
+      document.querySelectorAll('.article-faq__item').forEach(function(el){
+        el.classList.remove('is-open');
+        var b=el.querySelector('.article-faq__btn');if(b)b.setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+    });
+  });
+
   // Compteurs animés (data-count)
   function animateCount(el){var target=+el.getAttribute('data-count'),small=el.querySelector('small'),suffix=small?small.outerHTML:'';if(mq){el.innerHTML=target+suffix;return;}var start=null,dur=1100;function tick(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);el.innerHTML=Math.floor((1-Math.pow(1-p,3))*target)+suffix;if(p<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);}
   if('IntersectionObserver' in window){var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animateCount(e.target);co.unobserve(e.target);}});},{threshold:.6});document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el);});}

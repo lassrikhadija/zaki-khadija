@@ -2,17 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
-  <!-- End Google Tag Manager -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEO Montréal — Référencement naturel PME Québec | NEXTIWEB</title>
   <meta name="description" content="Agence SEO à Montréal spécialisée PME : audit gratuit, référencement local, technique et contenu. Passez en page 1 Google. Budget dès 500 $ CA.">
+
+  <link rel="canonical" href="https://nextiweb.ca/seo.html">
+  <link rel="alternate" hreflang="fr-CA" href="https://nextiweb.ca/seo.html">
+  <link rel="alternate" hreflang="en-CA" href="https://nextiweb.ca/en/seo.html">
+  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/seo.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -22,512 +19,27 @@
   <meta property="og:description" content="Services SEO à Montréal : SEO local, technique et contenu pour augmenter votre visibilité sur Google et générer plus de trafic qualifié.">
   <meta property="og:url" content="https://nextiweb.ca/seo.html">
   <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-  <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Référencement SEO à Montréal | Agence NEXTIWEB">
-  <meta name="twitter:description" content="Services SEO à Montréal : SEO local, technique et contenu pour augmenter votre visibilité sur Google et générer plus de trafic qualifié.">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TS5WZHQ6');</script>
+  <!-- End Google Tag Manager -->
 
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="canonical" href="https://nextiweb.ca/seo.html">
-  <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/seo.html">
-  <link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/seo.html">
-  <link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/seo.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
-  <style>
-    /* Fil d'Ariane */
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
-    .section__header{text-align:center}
-    .section__header .section__title,.section__header .section__subtitle{max-width:760px;margin-left:auto;margin-right:auto}
-    .steps{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1.25rem!important;list-style:none!important;padding:0!important;counter-reset:step-counter}
-    .steps__item{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:28px 24px;counter-increment:step-counter;position:relative;transition:border-color .2s,background .2s}
-    .steps__item:hover{border-color:var(--color-primary);background:rgba(0,230,118,.05)}
-    .steps__item::before{content:counter(step-counter,decimal-leading-zero);display:block;font-size:2.2rem;font-weight:900;color:var(--color-primary);line-height:1;margin-bottom:14px;letter-spacing:-.02em}
-    .steps__title{font-size:1rem!important;font-weight:700!important;color:var(--color-text)!important;margin:0 0 8px!important}
-    .steps__item>p{font-size:.875rem!important;color:var(--color-text-muted)!important;line-height:1.65!important;margin:0!important}
-    @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)!important}}
-    @media(max-width:560px){.steps{grid-template-columns:1fr!important}}
+  <link rel="stylesheet" href="/assets/css/v2026.css">
 
-    /* Barre flottante telephone + WhatsApp */
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-    body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-  </style>
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#00e676">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-</head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Aller au contenu</a>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <div class="top-bar">
-    <div class="container top-bar__inner">
-      <p class="top-bar__message" id="top-bar-message"></p>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="/" class="logo">
-        
-          
-          <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
-        
-      </a>
-
-      <nav class="main-nav" aria-label="Navigation principale">
-        <div class="nav__item">
-          <a href="/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
-            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
-            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
-          </div>
-        </div>
-        <a href="/secteurs.html" class="nav__link">Secteurs</a>
-        <a href="/ressources.html" class="nav__link">Ressources</a>
-        <a href="/blog/" class="nav__link">Blog</a>
-        <a href="/a-propos.html" class="nav__link">À propos</a>
-        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
-      </nav>
-
-      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- FIL D'ARIANE -->
-    <div class="breadcrumb-bar">
-      <div class="container">
-        <nav aria-label="Fil d'Ariane">
-          <ol class="breadcrumb">
-          <li class="breadcrumb__item">
-            <a href="/" class="breadcrumb__link breadcrumb__link--home">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              NEXTIWEB
-            </a>
-          </li>
-          <li class="breadcrumb__item">
-            <a href="/services.html" class="breadcrumb__link">Services</a>
-          </li>
-          <li class="breadcrumb__item">
-            <span class="breadcrumb__current">Référencement SEO</span>
-          </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-<section class="section section--dark">
-      <div class="container section__header section__header--center">
-        <h1 class="section__title" id="seo-montreal">Vos clients cherchent sur Google. C'est vous qui apparaissez ?</h1>
-        <p class="section__text">
-          Si votre site n'est pas en page 1, vous offrez vos prospects à vos concurrents — chaque jour.
-          NEXTIWEB accompagne les PME et entreprises de services à Montréal pour monter sur Google
-          et attirer un trafic qui se convertit vraiment.
-        </p>
-      </div>
-        <div style="width:44px;height:3px;background:var(--color-primary);margin:1.25rem auto 0;border-radius:2px"></div>
-    </section>
-
-    <!-- ============================
-         INTRO — SEO Montréal PME
-         ============================ -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="agence-seo-montreal">Agence SEO à Montréal — référencement naturel pour PME québécoises</h2>
-          <p class="section__subtitle">Une stratégie SEO locale, mesurable et adaptée à votre secteur — pas un gabarit générique.</p>
-        </header>
-        <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;color:var(--color-text-muted);line-height:1.8;font-size:.975rem">
-          <p>NEXTIWEB est une agence de <strong>référencement naturel à Montréal</strong> spécialisée dans les PME et entreprises de services québécoises. Notre mission : vous faire apparaître en page 1 de Google sur les requêtes que vos vrais clients utilisent — et transformer ce trafic en contacts qualifiés.</p>
-          <p>Le SEO pour PME, c'est différent du SEO pour les grandes entreprises. Vous n'avez pas 5 000 $/mois à consacrer aux publicités. Vous avez besoin d'un <strong>référencement local à Montréal</strong> efficace, d'un budget réaliste et de résultats mesurables chaque mois. C'est exactement ce que nous livrons.</p>
-          <p>Nos clients PME au Québec opèrent dans des secteurs variés : services professionnels, construction, santé, commerce de détail, B2B industriel. Chaque stratégie SEO est construite autour de vos mots-clés spécifiques, de votre zone de service et de votre cycle de vente.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ============================
-         A — AMPLIFIER
-         ============================ -->
-    <section class="section">
-      <div class="container">
-        <div class="split">
-          <div class="split__column">
-            <h2 class="split__title">Ce que vous perdez sans le savoir</h2>
-            <ul class="split__list">
-              <li>Hors page 1 de Google, vous êtes invisible pour vos prospects</li>
-              <li>Chaque clic en page 1 que vous ratez va à un concurrent</li>
-              <li>Vous payez des pubs pour compenser une invisibilité évitable</li>
-              <li>Sans SEO, chaque nouveau client dépend du hasard</li>
-            </ul>
-          </div>
-          <div class="split__column">
-            <h2 class="split__title">Ce que ça coûte concrètement</h2>
-            <ul class="split__list">
-              <li>Des mois de travail en ligne... que personne ne trouve</li>
-              <li>Budget pub récurrent pour masquer un problème de fond</li>
-              <li>Vos prospects qualifiés appellent un concurrent mieux classé</li>
-              <li>Impossible de savoir d'où viennent vos clients — ni où investir</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         S — HISTOIRE
-         ============================ -->
-    <section class="section section--dark">
-      <div class="container section__header section__header--center" style="max-width:680px">
-<div aria-hidden="true" style="font-size:5rem;line-height:1;color:var(--color-primary);opacity:.15;font-family:Georgia,serif;font-weight:700;margin-bottom:-.5rem;text-align:center">&ldquo;</div>
-                <p style="font-size:1.05rem;color:var(--color-text-muted);line-height:1.8;font-style:italic;margin-bottom:1.25rem">&laquo;&nbsp;Quand j'ai lancé mon premier site, il était techniquement irréprochable. Mais invisible sur Google. J'ai compris que le SEO ne s'improvise pas &mdash; il se construit avec les bons mots-clés, la bonne structure et de la régularité. C'est la méthode que j'applique pour chaque client NEXTIWEB.&nbsp;&raquo;</p>
-        <p style="color:var(--color-primary);font-weight:700;font-size:.95rem">&mdash;&nbsp;Khadija AitLassri, fondatrice NEXTIWEB</p>
-        <p style="color:var(--color-text-muted);font-size:.875rem;margin-top:.5rem">Informaticienne et ancienne entrepreneur &mdash; <a href="/a-propos.html" style="color:var(--color-primary)">lire mon histoire&nbsp;&rarr;</a></p>
-      </div>
-    </section>
-
-    <!-- ============================
-         T — TRANSFORMATION
-         ============================ -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="pourquoi-seo-montreal">Ce que le SEO change concrètement pour votre business</h2>
-          <p class="section__subtitle">Pas de théorie — voici les résultats que vos concurrents bien classés obtiennent déjà.</p>
-        </header>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Plus de leads sans budget pub</h3>
-            <p class="feature__text">Le trafic SEO ne se paie pas au clic. Une fois bien positionné, votre site génère des leads pour des mois — voire des années.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Vos clients idéaux vous trouvent</h3>
-            <p class="feature__text">Quelqu'un tape « plombier Montréal » ou « consultant RH Laval » — et c'est votre site qui s'affiche. Pas un concurrent généraliste.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Crédibilité établie avant le premier appel</h3>
-            <p class="feature__text">Être en page 1 de Google, c'est aussi un signal de crédibilité. Vos prospects vous percoivent comme sérieux avant même de lire votre contenu.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Vous mesurez exactement d'où viennent vos clients</h3>
-            <p class="feature__text">Positions, trafic et leads — vous savez exactement quels mots-clés vous apportent des prospects et ce qui peut encore progresser.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         O — OFFRE
-         ============================ -->
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="piliers-seo">Les trois piliers du SEO pour PME à Montréal</h2>
-          <p class="section__subtitle">Une stratégie SEO complète combine technique, contenu et localisation.</p>
-        </header>
-        <div class="projects">
-          <article class="project-card">
-            <h3 class="project-card__title">1. SEO technique</h3>
-            <p class="project-card__text">Vitesse de chargement, Core Web Vitals, structure HTML, balisage sémantique et indexabilité optimisée pour Google.</p>
-            <p class="project-card__meta">Impact : améliore le crawl et le classement de votre site.</p>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-card__title">2. SEO contenu</h3>
-            <p class="project-card__text">Contenu riche, mots-clés pertinents, intention de recherche et pages optimisées pour vos prospects.</p>
-            <p class="project-card__meta">Impact : attire un trafic qualifié et génère des contacts.</p>
-          </article>
-
-          <article class="project-card">
-            <h3 class="project-card__title">3. SEO local</h3>
-            <p class="project-card__text">Optimisation pour Montréal, Québec et Canada, mailles techniques, citations locales et présence Google Business.</p>
-            <p class="project-card__meta">Impact : domine votre marché local.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         BUDGET SEO MONTRÉAL
-         ============================ -->
-    <section class="section section--dark">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="budget-seo-montreal">Quel budget prévoir pour le SEO à Montréal ?</h2>
-          <p class="section__subtitle">Le SEO est l'investissement marketing le plus rentable à 12 mois — à condition d'avoir des attentes réalistes sur les délais.</p>
-        </header>
-        <div class="projects">
-          <article class="project-card">
-            <h3 class="project-card__title">Audit SEO ponctuel</h3>
-            <p class="project-card__text">Analyse complète de votre site : technique, contenu, mots-clés, backlinks et concurrence. Vous repartez avec un plan d'action priorisé.</p>
-            <p class="project-card__meta">À partir de 500 $ CA — livraison en 5 jours ouvrables.</p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">Accompagnement mensuel</h3>
-            <p class="project-card__text">Stratégie SEO continue : optimisations techniques, production de contenu, suivi de positions et rapport mensuel. Idéal pour les PME qui veulent déléguer leur référencement.</p>
-            <p class="project-card__meta">Entre 800 $ et 2 000 $ CA/mois selon la taille du site et la compétitivité.</p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">SEO vs Google Ads</h3>
-            <p class="project-card__text">Un budget SEO de 1 200 $/mois sur 12 mois coûte moins qu'une campagne Google Ads équivalente — et le trafic SEO continue après l'arrêt du contrat, contrairement aux pubs.</p>
-            <p class="project-card__meta">ROI typique : le SEO devient plus rentable que les Ads après 9 à 12 mois.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         O — OFFRE (processus)
-         ============================ -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="notre-approche-seo">Ce qui se passe après votre audit SEO gratuit</h2>
-          <p class="section__subtitle">Une stratégie adaptée à votre secteur, votre zone et vos vrais objectifs commerciaux — pas un plan générique.</p>
-        </header>
-        <ol class="steps">
-          <li class="steps__item">
-            <h3 class="steps__title">Vous connaissez l'état réel de votre site</h3>
-            <p>Analyse des positions, mots-clés, concurrence et opportunités cachées — un portrait complet et sans langue de bois.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Vous recevez une liste de mots-clés payants</h3>
-            <p>Les requêtes utilisées par vos vrais clients à Montréal et au Québec — ceux qui ont l'intention d'acheter.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Votre site arrête de perdre des positions</h3>
-            <p>Correction des problèmes techniques qui bloquent votre classement — souvent invisibles, toujours coûteux.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Votre contenu commence à attirer vos prospects</h3>
-            <p>Pages optimisées et ressources qui répondent aux vraies questions de vos prospects — et les poussent à vous contacter.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Votre autorité en ligne se renforce</h3>
-            <p>Liens qualitatifs pour consolider la crédibilité de votre site aux yeux de Google.</p>
-          </li>
-          <li class="steps__item">
-            <h3 class="steps__title">Vous suivez votre progression chaque mois</h3>
-            <p>Rapport mensuel clair : positions, trafic, leads et actions prioritaires — vous savez où vous en êtes.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============================
-         P — PROBLÈME
-         ============================ -->
-    <!-- ============================
-         T — TRANSFORMATION (résultats)
-         ============================ -->
-    <section class="section section--dark">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="resultats-seo">Les résultats que vous obtenez — mesurables, durables</h2>
-          <p class="section__subtitle">Le SEO prend du temps — mais chaque amélioration se cumule et travaille pour vous sans coût supplémentaire.</p>
-        </header>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Classement amélioré</h3>
-            <p class="feature__text">Montée progressive de vos positions sur les mots-clés cibles à Montréal et au Québec.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Trafic organique croissant</h3>
-            <p class="feature__text">Plus de visiteurs de qualité qui arrivent via Google sans coût par clic.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Leads et conversions</h3>
-            <p class="feature__text">Augmentation des demandes de soumission et des contacts qualifiés.</p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title"><span class="feature__icon">✓</span>Rapports transparents</h3>
-            <p class="feature__text">Suivi mensuel clair avec KPIs, positions keywords et recommandations d'action.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         FAQ VISIBLE — SEO Montréal
-         ============================ -->
-    <section class="section section--alt-bg">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="faq-seo-montreal">Questions fréquentes sur le SEO à Montréal</h2>
-        </header>
-        <div style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:.75rem">
-          <details style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer" open>
-            <summary style="font-weight:700;font-size:1rem;color:var(--color-text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">Combien de temps faut-il pour voir des résultats SEO ?<span style="color:var(--color-primary);font-size:1.25rem;flex-shrink:0">+</span></summary>
-            <p style="margin-top:.875rem;color:var(--color-text-muted);line-height:1.75;font-size:.95rem">Les premiers résultats SEO sont généralement visibles en 3 à 6 mois. Une stratégie complète avec audit, optimisation technique et production de contenu peut positionner votre site en première page Google en 6 à 12 mois selon la compétitivité de votre secteur. Les PME en niche locale voient souvent des résultats plus rapidement.</p>
-          </details>
-          <details style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer">
-            <summary style="font-weight:700;font-size:1rem;color:var(--color-text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">Quel est le coût d'un service SEO à Montréal ?<span style="color:var(--color-primary);font-size:1.25rem;flex-shrink:0">+</span></summary>
-            <p style="margin-top:.875rem;color:var(--color-text-muted);line-height:1.75;font-size:.95rem">Le coût d'un service SEO à Montréal varie selon les besoins : audit ponctuel à partir de 500 $ CA, accompagnement mensuel entre 800 $ et 2 000 $ CA selon la taille du site et la compétitivité des mots-clés. NEXTIWEB offre un audit diagnostic gratuit pour évaluer votre situation avant tout engagement.</p>
-          </details>
-          <details style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer">
-            <summary style="font-weight:700;font-size:1rem;color:var(--color-text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">Le SEO local est-il différent du SEO classique ?<span style="color:var(--color-primary);font-size:1.25rem;flex-shrink:0">+</span></summary>
-            <p style="margin-top:.875rem;color:var(--color-text-muted);line-height:1.75;font-size:.95rem">Oui. Le référencement local cible des requêtes géographiques (ex. : « agence web Montréal »). Il inclut l'optimisation de la fiche Google Business Profile, des citations locales cohérentes (NAP : Nom, Adresse, Téléphone) et du contenu spécifique aux zones desservies. C'est essentiel pour les PME qui servent une clientèle à Montréal, Laval, Longueuil ou Québec.</p>
-          </details>
-          <details style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer">
-            <summary style="font-weight:700;font-size:1rem;color:var(--color-text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">Qu'est-ce qu'un audit SEO et qu'est-ce qu'il couvre ?<span style="color:var(--color-primary);font-size:1.25rem;flex-shrink:0">+</span></summary>
-            <p style="margin-top:.875rem;color:var(--color-text-muted);line-height:1.75;font-size:.95rem">Un audit SEO est une analyse complète de votre site web qui identifie les problèmes techniques, les lacunes de contenu et les opportunités de croissance organique. Il couvre : la vitesse de chargement (Core Web Vitals), la structure des URLs, les balises méta, l'indexation, les backlinks, la pertinence du contenu et la comparaison avec vos 3 principaux concurrents locaux.</p>
-          </details>
-          <details style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:12px;padding:1.25rem 1.5rem;cursor:pointer">
-            <summary style="font-weight:700;font-size:1rem;color:var(--color-text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">Quelle est la différence entre SEO et Google Ads ?<span style="color:var(--color-primary);font-size:1.25rem;flex-shrink:0">+</span></summary>
-            <p style="margin-top:.875rem;color:var(--color-text-muted);line-height:1.75;font-size:.95rem">Le SEO génère du trafic organique gratuit à long terme, tandis que Google Ads génère du trafic payant immédiat qui s'arrête dès que vous cessez de payer. Le SEO prend plus de temps à démarrer (3-6 mois) mais offre un meilleur retour sur investissement à partir de 9-12 mois. Les deux stratégies sont complémentaires : les Ads peuvent couvrir la période de démarrage SEO.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         RESSOURCES BLOG SEO
-         ============================ -->
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title" id="ressources-seo">Guides SEO gratuits pour dirigeants PME</h2>
-          <p class="section__subtitle">Comprendre le SEO vous permet de superviser votre stratégie, de poser les bonnes questions et d'éviter les agences qui vendent du vent.</p>
-        </header>
-        <div class="projects">
-          <article class="project-card">
-            <h3 class="project-card__title">Comprendre le SEO en 2026</h3>
-            <p class="project-card__text">Les 3 piliers du SEO, la différence SEO/SEA, les moteurs IA et un budget réaliste — tout ce qu'un dirigeant PME québécois doit savoir.</p>
-            <p class="project-card__meta"><a href="/blog/seo/comprendre-seo-pme.html">Lire le guide →</a></p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">Recherche de mots-clés SEO</h3>
-            <p class="project-card__text">Méthode en 6 étapes pour trouver les mots-clés que vos vrais clients tapent — avec outils gratuits.</p>
-            <p class="project-card__meta"><a href="/blog/seo/recherche-mots-cles-strategiques.html">Lire le guide →</a></p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">SEO local : Google Business Profile</h3>
-            <p class="project-card__text">Les 7 étapes pour entrer dans le Local Pack Google et dominer les recherches locales à Montréal.</p>
-            <p class="project-card__meta"><a href="/blog/seo/seo-local-google-business-profile.html">Lire le guide →</a></p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">Votre site est invisible sur Google ?</h3>
-            <p class="project-card__text">5 vérifications à faire en 30 minutes pour diagnostiquer pourquoi votre site n'apparaît pas dans les résultats.</p>
-            <p class="project-card__meta"><a href="/blog/seo/diagnostic-site-invisible.html">Lire le guide →</a></p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">Checklist SEO on-page PME</h3>
-            <p class="project-card__text">H1, meta title, URL, images WebP, liens internes — la checklist en 7 points testable en 30 minutes, sans toucher au code.</p>
-            <p class="project-card__meta"><a href="/blog/seo/seo-onpage-contenu-structure.html">Lire le guide →</a></p>
-          </article>
-          <article class="project-card">
-            <h3 class="project-card__title">E-E-A-T : crédibilité Google</h3>
-            <p class="project-card__text">7 actions concrètes pour que Google vous perçoive comme la référence de votre secteur en 2026.</p>
-            <p class="project-card__meta"><a href="/blog/seo/eeat-expertise-autorite-confiance.html">Lire le guide →</a></p>
-          </article>
-        </div>
-        <div style="text-align:center;margin-top:1.75rem">
-          <a href="/blog/seo/" class="btn btn--ghost">Voir tous les guides SEO →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================
-         R — RÉPONSE (CTA)
-         ============================ -->
-    <section class="section section--cta">
-      <div class="container section__header section__header--center">
-        <h2 class="section__title">Découvrez pourquoi vous n'apparaissez pas sur Google — et comment y remédier.</h2>
-        <p class="section__text">Un audit SEO gratuit pour identifier vos vraies opportunités de croissance. Pas d'engagement, pas de jargon. Juste un diagnostic honnête.</p>
-        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
-        <address class="footer__address">
-          Montréal, Québec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB sur LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/secteurs.html">Secteurs</a></li>
-          <li><a href="/ressources.html">Ressources</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/a-propos.html">À propos</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/creation-site.html">Création de sites web</a></li>
-          <li><a href="/seo.html">Référencement SEO</a></li>
-          <li><a href="/marketing-digital.html">Marketing digital</a></li>
-          <li><a href="/visibilite-ia.html">Visibilité IA</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Secteurs</h3>
-        <ul class="footer__list">
-          <li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li>
-          <li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li>
-          <li><a href="/avocats.html">Avocats</a></li>
-          <li><a href="/construction-renovation.html">Construction et rénovation</a></li>
-          <li><a href="/secteurs.html">Autres secteurs</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Zones desservies</h3>
-        <ul class="footer__list">
-          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
-          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
-          <li><a href="/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curieux de voir notre méthode en action ? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explorez nos concepts sectoriels sur <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.min.js" defer></script>
+  <!-- Schema.org : Service + FAQPage + BreadcrumbList (PAS d'AggregateRating — jeune agence, aucun faux avis) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -618,18 +130,436 @@
     ]
   }
   </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <!-- Barre flottante bas droite : telephone + WhatsApp -->
-  <div class="float-bar">
-    <a href="/contact.html" class="audit-pill" aria-label="Demander mon audit gratuit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Audit gratuit
-    </a>
-    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-    </a>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+      </a>
+      <p class="topbar__msg">S'arrêter pour mieux repartir&nbsp;: <strong>on audite votre site gratuitement.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
+    </div>
   </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="brand" aria-label="NEXTIWEB accueil">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Agence web à Montréal" width="84" height="48">
+        NEXTIWEB
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <div class="nav__group">
+          <a href="/services.html" aria-current="page">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/creation-site.html">Création de sites web</a>
+            <a href="/seo.html">Référencement SEO</a>
+            <a href="/marketing-digital.html">Marketing digital</a>
+            <a href="/visibilite-ia.html">Visibilité IA</a>
+          </div>
+        </div>
+        <a href="/secteurs.html">Secteurs</a>
+        <a href="/ressources.html">Ressources</a>
+        <a href="/blog/">Blog</a>
+        <a href="/a-propos.html">À propos</a>
+        <a href="/contact.html" class="btn btn--primary nav__cta">Je veux mon audit gratuit</a>
+      </nav>
+      <div class="lang" aria-label="Choix de langue">
+        <a href="/seo.html" class="is-active" aria-current="page">FR</a>
+        <a href="/en/seo.html" hreflang="en">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Menu mobile">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Fermer">×</button>
+    </div>
+    <a href="/services.html" aria-current="page">Services</a>
+    <a href="/creation-site.html">— Création de sites web</a>
+    <a href="/seo.html">— Référencement SEO</a>
+    <a href="/marketing-digital.html">— Marketing digital</a>
+    <a href="/secteurs.html">Secteurs</a>
+    <a href="/ressources.html">Ressources</a>
+    <a href="/blog/">Blog</a>
+    <a href="/a-propos.html">À propos</a>
+    <a href="/contact.html" class="btn btn--primary" style="margin-top:1rem">Je veux mon audit gratuit</a>
+  </aside>
+
+  <main id="main">
+
+    <!-- FIL D'ARIANE -->
+    <nav class="container" aria-label="Fil d'Ariane" style="padding-top:1.2rem;padding-bottom:.2rem">
+      <p style="font-family:'Space Grotesk',sans-serif;font-size:.82rem;color:var(--muted-2);margin:0">
+        <a href="/" style="color:var(--muted-2)">NEXTIWEB</a>
+        <span aria-hidden="true" style="opacity:.6">&nbsp;›&nbsp;</span>
+        <a href="/services.html" style="color:var(--muted-2)">Services</a>
+        <span aria-hidden="true" style="opacity:.6">&nbsp;›&nbsp;</span>
+        <span style="color:var(--green)">Référencement SEO</span>
+      </p>
+    </nav>
+
+    <!-- HERO -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Référencement SEO</p>
+          <h1 id="seo-montreal">Vos clients cherchent sur Google. C'est vous qui apparaissez&nbsp;?</h1>
+          <p>Si votre site n'est pas en page 1, vous offrez vos prospects à vos concurrents — chaque jour. NEXTIWEB accompagne les PME et entreprises de services à Montréal pour monter sur Google et attirer un trafic qui se convertit vraiment.</p>
+        </div>
+        <div class="center-cta reveal"><a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a></div>
+      </div>
+    </section>
+
+    <!-- INTRO — SEO Montréal PME -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Agence SEO Montréal</p>
+          <h2 id="agence-seo-montreal">Agence SEO à Montréal — référencement naturel pour PME québécoises</h2>
+          <p>Une stratégie SEO locale, mesurable et adaptée à votre secteur — pas un gabarit générique.</p>
+        </div>
+        <div class="prose reveal" style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;color:var(--muted-2);line-height:1.8">
+          <p>NEXTIWEB est une agence de <strong>référencement naturel à Montréal</strong> spécialisée dans les PME et entreprises de services québécoises. Notre mission&nbsp;: vous faire apparaître en page 1 de Google sur les requêtes que vos vrais clients utilisent — et transformer ce trafic en contacts qualifiés.</p>
+          <p>Le SEO pour PME, c'est différent du SEO pour les grandes entreprises. Vous n'avez pas 5 000 $/mois à consacrer aux publicités. Vous avez besoin d'un <strong>référencement local à Montréal</strong> efficace, d'un budget réaliste et de résultats mesurables chaque mois. C'est exactement ce que nous livrons.</p>
+          <p>Nos clients PME au Québec opèrent dans des secteurs variés&nbsp;: services professionnels, construction, santé, commerce de détail, B2B industriel. Chaque stratégie SEO est construite autour de vos mots-clés spécifiques, de votre zone de service et de votre cycle de vente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CE QUE VOUS PERDEZ -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Le vrai coût de l'invisibilité</p>
+          <h2>Ce que vous perdez sans le savoir</h2>
+        </div>
+        <div class="grid grid-2 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <h3>Hors page 1, vous êtes invisible</h3>
+            <ul style="color:var(--muted-2);line-height:1.8;margin:.5rem 0 0;padding-left:1.1rem">
+              <li>Hors page 1 de Google, vous êtes invisible pour vos prospects</li>
+              <li>Chaque clic en page 1 que vous ratez va à un concurrent</li>
+              <li>Vous payez des pubs pour compenser une invisibilité évitable</li>
+              <li>Sans SEO, chaque nouveau client dépend du hasard</li>
+            </ul>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Ce que ça coûte concrètement</h3>
+            <ul style="color:var(--muted-2);line-height:1.8;margin:.5rem 0 0;padding-left:1.1rem">
+              <li>Des mois de travail en ligne... que personne ne trouve</li>
+              <li>Budget pub récurrent pour masquer un problème de fond</li>
+              <li>Vos prospects qualifiés appellent un concurrent mieux classé</li>
+              <li>Impossible de savoir d'où viennent vos clients — ni où investir</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTOIRE -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal" style="max-width:680px">
+          <p style="font-size:1.05rem;color:var(--muted-2);line-height:1.8;font-style:italic;margin-bottom:1.25rem">«&nbsp;Quand j'ai lancé mon premier site, il était techniquement irréprochable. Mais invisible sur Google. J'ai compris que le SEO ne s'improvise pas — il se construit avec les bons mots-clés, la bonne structure et de la régularité. C'est la méthode que j'applique pour chaque client NEXTIWEB.&nbsp;»</p>
+          <p style="color:var(--green);font-weight:700;font-size:.95rem">— Khadija AitLassri, fondatrice NEXTIWEB</p>
+          <p style="color:var(--muted-2);font-size:.875rem;margin-top:.5rem">Informaticienne et ancienne entrepreneur — <a href="/a-propos.html" style="color:var(--green)">lire mon histoire&nbsp;→</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSFORMATION -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Pourquoi le SEO</p>
+          <h2 id="pourquoi-seo-montreal">Ce que le SEO change concrètement pour votre business</h2>
+          <p>Pas de théorie — voici les résultats que vos concurrents bien classés obtiennent déjà.</p>
+        </div>
+        <div class="grid grid-2 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Plus de leads sans budget pub</h3>
+            <p>Le trafic SEO ne se paie pas au clic. Une fois bien positionné, votre site génère des leads pour des mois — voire des années.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>Vos clients idéaux vous trouvent</h3>
+            <p>Quelqu'un tape «&nbsp;plombier Montréal&nbsp;» ou «&nbsp;consultant RH Laval&nbsp;» — et c'est votre site qui s'affiche. Pas un concurrent généraliste.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3>Crédibilité établie avant le premier appel</h3>
+            <p>Être en page 1 de Google, c'est aussi un signal de crédibilité. Vos prospects vous perçoivent comme sérieux avant même de lire votre contenu.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+            <h3>Vous mesurez exactement d'où viennent vos clients</h3>
+            <p>Positions, trafic et leads — vous savez exactement quels mots-clés vous apportent des prospects et ce qui peut encore progresser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LES TROIS PILIERS -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Notre méthode</p>
+          <h2 id="piliers-seo">Les trois piliers du SEO pour PME à Montréal</h2>
+          <p>Une stratégie SEO complète combine technique, contenu et localisation.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <h3>1. SEO technique</h3>
+            <p>Vitesse de chargement, Core Web Vitals, structure HTML, balisage sémantique et indexabilité optimisée pour Google.</p>
+            <p class="card__link" style="color:var(--muted-2)">Impact&nbsp;: améliore le crawl et le classement de votre site.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <h3>2. SEO contenu</h3>
+            <p>Contenu riche, mots-clés pertinents, intention de recherche et pages optimisées pour vos prospects.</p>
+            <p class="card__link" style="color:var(--muted-2)">Impact&nbsp;: attire un trafic qualifié et génère des contacts.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>3. SEO local</h3>
+            <p>Optimisation pour Montréal, Québec et Canada, mailles techniques, citations locales et présence Google Business.</p>
+            <p class="card__link" style="color:var(--muted-2)">Impact&nbsp;: domine votre marché local.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUDGET SEO MONTRÉAL -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Budget</p>
+          <h2 id="budget-seo-montreal">Quel budget prévoir pour le SEO à Montréal&nbsp;?</h2>
+          <p>Le SEO est l'investissement marketing le plus rentable à 12 mois — à condition d'avoir des attentes réalistes sur les délais.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <h3>Audit SEO ponctuel</h3>
+            <p>Analyse complète de votre site&nbsp;: technique, contenu, mots-clés, backlinks et concurrence. Vous repartez avec un plan d'action priorisé.</p>
+            <p class="card__link" style="color:var(--muted-2)">À partir de 500 $ CA — livraison en 5 jours ouvrables.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Accompagnement mensuel</h3>
+            <p>Stratégie SEO continue&nbsp;: optimisations techniques, production de contenu, suivi de positions et rapport mensuel. Idéal pour les PME qui veulent déléguer leur référencement.</p>
+            <p class="card__link" style="color:var(--muted-2)">Entre 800 $ et 2 000 $ CA/mois selon la taille du site et la compétitivité.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>SEO vs Google Ads</h3>
+            <p>Un budget SEO de 1 200 $/mois sur 12 mois coûte moins qu'une campagne Google Ads équivalente — et le trafic SEO continue après l'arrêt du contrat, contrairement aux pubs.</p>
+            <p class="card__link" style="color:var(--muted-2)">ROI typique&nbsp;: le SEO devient plus rentable que les Ads après 9 à 12 mois.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRÈS L'AUDIT (PROCESSUS) -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Le processus</p>
+          <h2 id="notre-approche-seo">Ce qui se passe après votre audit SEO gratuit</h2>
+          <p>Une stratégie adaptée à votre secteur, votre zone et vos vrais objectifs commerciaux — pas un plan générique.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <h3>Vous connaissez l'état réel de votre site</h3>
+            <p>Analyse des positions, mots-clés, concurrence et opportunités cachées — un portrait complet et sans langue de bois.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Vous recevez une liste de mots-clés payants</h3>
+            <p>Les requêtes utilisées par vos vrais clients à Montréal et au Québec — ceux qui ont l'intention d'acheter.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Votre site arrête de perdre des positions</h3>
+            <p>Correction des problèmes techniques qui bloquent votre classement — souvent invisibles, toujours coûteux.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Votre contenu commence à attirer vos prospects</h3>
+            <p>Pages optimisées et ressources qui répondent aux vraies questions de vos prospects — et les poussent à vous contacter.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Votre autorité en ligne se renforce</h3>
+            <p>Liens qualitatifs pour consolider la crédibilité de votre site aux yeux de Google.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Vous suivez votre progression chaque mois</h3>
+            <p>Rapport mensuel clair&nbsp;: positions, trafic, leads et actions prioritaires — vous savez où vous en êtes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉSULTATS -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Résultats</p>
+          <h2 id="resultats-seo">Les résultats que vous obtenez — mesurables, durables</h2>
+          <p>Le SEO prend du temps — mais chaque amélioration se cumule et travaille pour vous sans coût supplémentaire.</p>
+        </div>
+        <div class="grid grid-2 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3>Classement amélioré</h3>
+            <p>Montée progressive de vos positions sur les mots-clés cibles à Montréal et au Québec.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+            <h3>Trafic organique croissant</h3>
+            <p>Plus de visiteurs de qualité qui arrivent via Google sans coût par clic.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3>Leads et conversions</h3>
+            <p>Augmentation des demandes de soumission et des contacts qualifiés.</p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <h3>Rapports transparents</h3>
+            <p>Suivi mensuel clair avec KPIs, positions keywords et recommandations d'action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-seo-montreal">Questions fréquentes sur le SEO à Montréal</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq__item"><button class="faq__q">Combien de temps faut-il pour voir des résultats SEO&nbsp;?<span class="arr">▾</span></button><div class="faq__a"><p>Les premiers résultats SEO sont généralement visibles en 3 à 6 mois. Une stratégie complète avec audit, optimisation technique et production de contenu peut positionner votre site en première page Google en 6 à 12 mois selon la compétitivité de votre secteur. Les PME en niche locale voient souvent des résultats plus rapidement.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Quel est le coût d'un service SEO à Montréal&nbsp;?<span class="arr">▾</span></button><div class="faq__a"><p>Le coût d'un service SEO à Montréal varie selon les besoins&nbsp;: audit ponctuel à partir de 500 $ CA, accompagnement mensuel entre 800 $ et 2 000 $ CA selon la taille du site et la compétitivité des mots-clés. NEXTIWEB offre un audit diagnostic gratuit pour évaluer votre situation avant tout engagement.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Le SEO local est-il différent du SEO classique&nbsp;?<span class="arr">▾</span></button><div class="faq__a"><p>Oui. Le référencement local cible des requêtes géographiques (ex.&nbsp;: «&nbsp;agence web Montréal&nbsp;»). Il inclut l'optimisation de la fiche Google Business Profile, des citations locales cohérentes (NAP&nbsp;: Nom, Adresse, Téléphone) et du contenu spécifique aux zones desservies. C'est essentiel pour les PME qui servent une clientèle à Montréal, Laval, Longueuil ou Québec.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Qu'est-ce qu'un audit SEO et qu'est-ce qu'il couvre&nbsp;?<span class="arr">▾</span></button><div class="faq__a"><p>Un audit SEO est une analyse complète de votre site web qui identifie les problèmes techniques, les lacunes de contenu et les opportunités de croissance organique. Il couvre&nbsp;: la vitesse de chargement (Core Web Vitals), la structure des URLs, les balises méta, l'indexation, les backlinks, la pertinence du contenu et la comparaison avec vos 3 principaux concurrents locaux.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Quelle est la différence entre SEO et Google Ads&nbsp;?<span class="arr">▾</span></button><div class="faq__a"><p>Le SEO génère du trafic organique gratuit à long terme, tandis que Google Ads génère du trafic payant immédiat qui s'arrête dès que vous cessez de payer. Le SEO prend plus de temps à démarrer (3-6 mois) mais offre un meilleur retour sur investissement à partir de 9-12 mois. Les deux stratégies sont complémentaires&nbsp;: les Ads peuvent couvrir la période de démarrage SEO.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESSOURCES BLOG SEO -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Ressources</p>
+          <h2 id="ressources-seo">Guides SEO gratuits pour dirigeants PME</h2>
+          <p>Comprendre le SEO vous permet de superviser votre stratégie, de poser les bonnes questions et d'éviter les agences qui vendent du vent.</p>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="card"><div class="card__glow"></div>
+            <h3>Comprendre le SEO en 2026</h3>
+            <p>Les 3 piliers du SEO, la différence SEO/SEA, les moteurs IA et un budget réaliste — tout ce qu'un dirigeant PME québécois doit savoir.</p>
+            <p class="card__link"><a href="/blog/seo/comprendre-seo-pme.html" style="color:var(--green)">Lire le guide →</a></p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Recherche de mots-clés SEO</h3>
+            <p>Méthode en 6 étapes pour trouver les mots-clés que vos vrais clients tapent — avec outils gratuits.</p>
+            <p class="card__link"><a href="/blog/seo/recherche-mots-cles-strategiques.html" style="color:var(--green)">Lire le guide →</a></p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>SEO local&nbsp;: Google Business Profile</h3>
+            <p>Les 7 étapes pour entrer dans le Local Pack Google et dominer les recherches locales à Montréal.</p>
+            <p class="card__link"><a href="/blog/seo/seo-local-google-business-profile.html" style="color:var(--green)">Lire le guide →</a></p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Votre site est invisible sur Google&nbsp;?</h3>
+            <p>5 vérifications à faire en 30 minutes pour diagnostiquer pourquoi votre site n'apparaît pas dans les résultats.</p>
+            <p class="card__link"><a href="/blog/seo/diagnostic-site-invisible.html" style="color:var(--green)">Lire le guide →</a></p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>Checklist SEO on-page PME</h3>
+            <p>H1, meta title, URL, images WebP, liens internes — la checklist en 7 points testable en 30 minutes, sans toucher au code.</p>
+            <p class="card__link"><a href="/blog/seo/seo-onpage-contenu-structure.html" style="color:var(--green)">Lire le guide →</a></p>
+          </div>
+          <div class="card"><div class="card__glow"></div>
+            <h3>E-E-A-T&nbsp;: crédibilité Google</h3>
+            <p>7 actions concrètes pour que Google vous perçoive comme la référence de votre secteur en 2026.</p>
+            <p class="card__link"><a href="/blog/seo/eeat-expertise-autorite-confiance.html" style="color:var(--green)">Lire le guide →</a></p>
+          </div>
+        </div>
+        <div class="center-cta reveal"><a href="/blog/seo/" class="btn btn--ghost btn--lg">Voir tous les guides SEO →</a></div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2>Découvrez pourquoi vous n'apparaissez pas sur Google — et comment y remédier.</h2>
+          <p>Un audit SEO gratuit pour identifier vos vraies opportunités de croissance. Pas d'engagement, pas de jargon. Juste un diagnostic honnête.</p>
+          <a href="/contact.html" class="btn btn--primary btn--lg">Je veux mon audit gratuit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montréal, Québec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/">Accueil</a></li><li><a href="/services.html">Services</a></li><li><a href="/secteurs.html">Secteurs</a></li><li><a href="/ressources.html">Ressources</a></li><li><a href="/blog/">Blog</a></li><li><a href="/a-propos.html">À propos</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/creation-site.html">Création de sites web</a></li><li><a href="/seo.html">Référencement SEO</a></li><li><a href="/marketing-digital.html">Marketing digital</a></li><li><a href="/visibilite-ia.html">Visibilité IA</a></li></ul></div>
+        <div><h4>Secteurs</h4><ul><li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li><li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li><li><a href="/avocats.html">Avocats</a></li><li><a href="/construction-renovation.html">Construction</a></li><li><a href="/secteurs.html">Autres secteurs</a></li></ul></div>
+        <div><h4>Zones</h4><ul><li><a href="/zones-desservies/montreal.html">Montréal</a></li><li><a href="/zones-desservies/quebec.html">Québec</a></li><li><a href="/zones-desservies/canada.html">Canada</a></li></ul></div>
+      </div>
+      <p class="footer__studio">Curieux de voir notre méthode en action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explorez nos concepts sectoriels sur <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Consultez notre <a href="/politique-confidentialite.html">politique de confidentialité</a>, notre <a href="/politique-cookies.html">politique de cookies</a> et nos <a href="/mentions-legales.html">mentions légales</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Gérer mes cookies</button></p>
+    </div>
+  </footer>
+
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Audit gratuit</a>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
+  </div>
+
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Gestion du consentement aux cookies">
+    <h2>Préférences de cookies</h2>
+    <p>Nous utilisons des cookies essentiels au fonctionnement du site. Les cookies de mesure et de marketing ne sont activés qu'avec votre consentement, conformément à la Loi 25. <a href="/politique-confidentialite.html">Confidentialité</a> · <a href="/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Cookies essentiels (obligatoires)</label>
+      <label><input type="checkbox" id="cAnalytics"> Cookies de mesure d'audience</label>
+      <label><input type="checkbox" id="cMarketing"> Cookies marketing</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Enregistrer mes choix</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Tout accepter</button>
+      <button class="btn btn--ghost" data-consent="none">Tout refuser</button>
+      <button class="btn btn--ghost" data-consent="custom">Personnaliser</button>
+    </div>
+  </div>
+
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

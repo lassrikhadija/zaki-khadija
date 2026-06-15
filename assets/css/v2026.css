@@ -214,6 +214,14 @@
   .sectors .card{display:flex;flex-direction:column;flex:0 1 calc((100% - 3rem) / 3);min-width:260px}
   .sectors .card .card__tags{margin-top:auto;padding-top:.5rem}
 
+  /* Démo contextuelle : mockup navigateur (pages secteur) */
+  .demo-frame{display:block;max-width:980px;margin:0 auto;border-radius:16px;overflow:hidden;border:1px solid var(--border-strong);background:var(--bg-2);box-shadow:0 30px 80px -30px rgba(0,0,0,.7);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+  .demo-frame:hover{transform:translateY(-6px);box-shadow:0 36px 90px -28px rgba(0,230,118,.28)}
+  .demo-frame__bar{display:flex;align-items:center;gap:.45rem;padding:.7rem 1rem;background:rgba(255,255,255,.04);border-bottom:1px solid var(--border)}
+  .demo-frame__dot{width:11px;height:11px;border-radius:50%;background:var(--border-strong)}
+  .demo-frame__url{margin-left:.7rem;font-family:var(--display);font-size:.78rem;color:var(--muted);background:rgba(0,0,0,.3);padding:.25rem .85rem;border-radius:999px}
+  .demo-frame__img{width:100%;height:auto;display:block}
+
   .grid{display:grid;gap:1.4rem}
   .grid-2{grid-template-columns:repeat(2,1fr)}
   .grid-3{grid-template-columns:repeat(3,1fr)}

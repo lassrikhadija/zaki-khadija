@@ -42,145 +42,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <style>
-    /* Breadcrumb */
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    /* Float bar */
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-    body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-
-    /* Article layout */
-    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
-    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
-    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
-    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
-    .article-meta__author{font-weight:600;color:var(--color-text)}
-    .article-meta span{display:flex;align-items:center;gap:.35rem}
-
-    /* Summary box */
-    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
-    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
-    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
-    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
-
-    /* Article body */
-    .article-body{max-width:780px}
-    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
-    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
-    .article-body h4{font-size:1rem;font-weight:700;margin:1rem 0 .4rem;color:var(--color-text)}
-    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
-    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
-    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
-    .article-body strong{color:var(--color-text);font-weight:700}
-    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
-    .article-body a:hover{opacity:.8}
-    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
-
-    /* Callout box */
-    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
-    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
-
-    /* CTA inline */
-    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
-    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
-    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
-
-    /* Table */
-    .article-table-wrap{overflow-x:auto;margin:1.5rem 0}
-    .article-table{width:100%;border-collapse:collapse;font-size:.9rem}
-    .article-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;text-align:left;padding:.75rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
-    .article-table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top}
-    .article-table tr:hover td{background:rgba(255,255,255,.02)}
-
-    /* Sign list */
-    .sign-list{list-style:none;padding:0;margin:1.5rem 0;counter-reset:sign-counter;display:flex;flex-direction:column;gap:0}
-    .sign-list li{counter-increment:sign-counter;display:flex;gap:1rem;align-items:flex-start;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
-    .sign-list li:last-child{border-bottom:none}
-    .sign-list li::before{content:counter(sign-counter);background:var(--color-primary);color:#000;width:34px;height:34px;border-radius:50%;font-weight:800;font-size:.95rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-    .sign-list .sign-content h4{font-size:1rem;font-weight:700;color:var(--color-text);margin:0 0 4px}
-    .sign-list .sign-content p{font-size:.95rem;color:var(--color-text-muted);margin:0}
-
-    /* Phase grid */
-    .phase-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin:1.5rem 0}
-    .phase-card{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.4rem;text-align:center}
-    .phase-card .phase-icon{font-size:2rem;margin-bottom:.6rem;display:block}
-    .phase-card .phase-num{font-size:.75rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem}
-    .phase-card h4{font-size:.95rem;font-weight:700;color:var(--color-text);margin:0 0 .4rem}
-    .phase-card p{font-size:.85rem;color:var(--color-text-muted);margin:0}
-
-    /* Info / Warning box */
-    .info-box{background:rgba(0,230,118,.05);border-left:4px solid var(--color-primary);border-radius:0 .5rem .5rem 0;padding:1.25rem 1.5rem;margin:1.5rem 0}
-    .info-box p{margin:0;color:var(--color-text)}
-    .warning-box{background:rgba(245,158,11,.07);border-left:4px solid #f59e0b;border-radius:0 .5rem .5rem 0;padding:1.25rem 1.5rem;margin:1.5rem 0}
-    .warning-box p{margin:0;color:var(--color-text)}
-
-    /* Mistake block */
-    .mistake-block{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.4rem 1.6rem;margin:1rem 0}
-    .mistake-block .mistake-icon{font-size:1.6rem;margin-bottom:.5rem;display:block}
-    .mistake-block h4{font-size:1rem;font-weight:700;color:var(--color-primary);margin:0 0 .4rem}
-    .mistake-block p{font-size:.95rem;color:var(--color-text-muted);margin:0}
-
-    /* Checklist block */
-    .checklist-block{background:var(--color-bg-alt);border-radius:.75rem;padding:1.75rem 2rem;margin:2rem 0}
-    .checklist-block h3{margin-top:0;color:var(--color-text)}
-    .checklist-block ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}
-    .checklist-block li{display:flex;align-items:flex-start;gap:.75rem;padding:.625rem 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:1rem;color:var(--color-text)}
-    .checklist-block li:last-child{border-bottom:none}
-    .checklist-block li::before{content:"✅";flex-shrink:0;margin-top:2px}
-
-    /* Stat box */
-    .stat-box{background:rgba(0,230,118,.08);border:1px solid rgba(0,230,118,.2);border-radius:1rem;padding:1.75rem 2rem;margin:2rem 0;text-align:center}
-    .stat-box .stat-number{font-size:3rem;font-weight:900;display:block;line-height:1;color:var(--color-primary)}
-    .stat-box .stat-label{font-size:1rem;color:var(--color-text);margin-top:.5rem}
-    .stat-box .stat-source{font-size:.75rem;color:var(--color-text-muted);margin-top:.25rem}
-
-    /* FAQ */
-    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
-    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
-    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
-    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
-    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
-    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
-    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
-    .article-faq__item.is-open .article-faq__a{display:block}
-    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
-
-    /* Sidebar layout */
-    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
-    .article-sidebar{position:sticky;top:100px}
-    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
-    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
-    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
-    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
-    .article-sidebar__toc a:hover{color:var(--color-primary)}
-
-    @media(max-width:900px){
-      .article-layout{grid-template-columns:1fr}
-      .article-sidebar{display:none}
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/v2026.css">
+  <link rel="stylesheet" href="/assets/css/v2026-article.css">
 
   <script type="application/ld+json">
   {
@@ -219,38 +92,74 @@
   ]}
   </script>
 </head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Skip to content</a>
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
-
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="/en/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Web Agency in Montreal" width="84" height="48" loading="eager">
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav__item">
-          <a href="/en/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
-            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
-            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+      <p class="topbar__msg">Stop to restart stronger&nbsp;: <strong>we audit your website for free.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        NEXTIWEB
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__group">
+          <a href="/en/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/en/creation-site.html">Website Design</a>
+            <a href="/en/seo.html">SEO</a>
+            <a href="/en/marketing-digital.html">Digital Marketing</a>
+            <a href="/en/visibilite-ia.html">AI Visibility</a>
           </div>
         </div>
-        <a href="/en/secteurs.html" class="nav__link">Industries</a>
-        <a href="/en/ressources.html" class="nav__link">Resources</a>
-        <a href="/en/blog/" class="nav__link">Blog</a>
-        <a href="/en/a-propos.html" class="nav__link">About</a>
-        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+        <a href="/en/secteurs.html">Industries</a>
+        <a href="/en/ressources.html">Resources</a>
+        <a href="/en/blog/" aria-current="page">Blog</a>
+        <a href="/en/a-propos.html">About</a>
+        <a href="/en/contact.html" class="btn btn--primary nav__cta">Get My Free Audit</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+      <div class="lang" aria-label="Language">
+        <a href="/blog/creation-site/7-signaux-refonte-site-web.html" hreflang="fr">FR</a>
+        <a href="/en/blog/website-design/website-redesign-guide.html" class="is-active" aria-current="page">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close">×</button>
+    </div>
+    <a href="/en/services.html">Services</a>
+    <a href="/en/creation-site.html">— Website Design</a>
+    <a href="/en/seo.html">— SEO</a>
+    <a href="/en/marketing-digital.html">— Digital Marketing</a>
+    <a href="/en/secteurs.html">Industries</a>
+    <a href="/en/ressources.html">Resources</a>
+    <a href="/en/blog/" aria-current="page">Blog</a>
+    <a href="/en/a-propos.html">About</a>
+    <a href="/en/contact.html" class="btn btn--primary" style="margin-top:1rem">Get My Free Audit</a>
+  </aside>
 
   <main id="main">
 
@@ -274,7 +183,7 @@
     </div>
 
     <!-- ARTICLE HERO -->
-    <div class="section section--dark">
+    <section class="section">
       <div class="container">
         <div class="article-hero">
           <p class="article-hero__kicker">
@@ -293,116 +202,95 @@
               11 min read
             </span>
           </div>
-
-          <!-- SUMMARY -->
-          <div class="article-summary">
-            <p class="article-summary__title">⚡ 30-Second Summary</p>
-            <ul>
-              <li><strong>7 measurable warning signs</strong> — bounce rate, mobile performance, Core Web Vitals, branding gaps, and more.</li>
-              <li><strong>4 phases of a redesign</strong> — Discovery, Design, Development, Launch: what each involves and how long it takes.</li>
-              <li><strong>Cost in Canada</strong> — from $3,000 for an SMB site to $60,000+ for e-commerce, with realistic timelines.</li>
-              <li><strong>3 mistakes that destroy ROI</strong> — missing 301 redirects, no conversion goals, wrong CMS choice.</li>
-            </ul>
-          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ARTICLE BODY -->
-    <div class="section">
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
       <div class="container">
         <div class="article-layout">
 
-          <!-- MAIN CONTENT -->
-          <article class="article-body">
+          <!-- BODY -->
+          <div class="article-body">
+
+            <!-- SUMMARY -->
+            <div class="article-summary">
+              <p class="article-summary__title">⚡ 30-Second Summary</p>
+              <ul>
+                <li><strong>7 measurable warning signs</strong> — bounce rate, mobile performance, Core Web Vitals, branding gaps, and more.</li>
+                <li><strong>4 phases of a redesign</strong> — Discovery, Design, Development, Launch: what each involves and how long it takes.</li>
+                <li><strong>Cost in Canada</strong> — from $3,000 for an SMB site to $60,000+ for e-commerce, with realistic timelines.</li>
+                <li><strong>3 mistakes that destroy ROI</strong> — missing 301 redirects, no conversion goals, wrong CMS choice.</li>
+              </ul>
+            </div>
+
+            <hr>
 
             <p>Your website was built 4 years ago. It looked great at launch. But since then, your competitors have rebuilt theirs twice, Google's standards for page speed have tightened, and 60% of your visitors are now on mobile. Is your site still working for you — or is it quietly losing you clients every month?</p>
 
-            <div class="stat-box">
-              <span class="stat-number">88%</span>
-              <div class="stat-label">of online consumers won't return to a site after a bad experience</div>
-              <div class="stat-source">Sweor UX Research, 2024</div>
+            <div class="callout">
+              <strong>By the numbers</strong>
+              88% of online consumers won't return to a site after a bad experience (Sweor UX Research, 2024).
             </div>
+
+            <hr>
 
             <h2 id="seven-signs">7 Warning Signs Your Website Needs a Redesign</h2>
 
-            <ul class="sign-list">
+            <ol>
               <li>
-                <div class="sign-content">
-                  <h4>Your bounce rate is above 65%</h4>
-                  <p>Visitors arrive and immediately leave. This signals a mismatch between what they expected and what they found — or a page that loads too slowly. Check your GA4 bounce rate by landing page. If your homepage is consistently above 65%, the design or content hierarchy is failing.</p>
-                </div>
+                <strong>Your bounce rate is above 65%</strong><br>
+                Visitors arrive and immediately leave. This signals a mismatch between what they expected and what they found — or a page that loads too slowly. Check your GA4 bounce rate by landing page. If your homepage is consistently above 65%, the design or content hierarchy is failing.
               </li>
               <li>
-                <div class="sign-content">
-                  <h4>Your conversion rate is below 1%</h4>
-                  <p>The industry average for a professional services or B2B website is 2–5%. E-commerce averages 1–3%. If your site receives 500 visitors/month and generates fewer than 5 inquiries, your calls to action, page structure, or trust signals are broken.</p>
-                </div>
+                <strong>Your conversion rate is below 1%</strong><br>
+                The industry average for a professional services or B2B website is 2–5%. E-commerce averages 1–3%. If your site receives 500 visitors/month and generates fewer than 5 inquiries, your calls to action, page structure, or trust signals are broken.
               </li>
               <li>
-                <div class="sign-content">
-                  <h4>It looks bad on mobile</h4>
-                  <p>Google's mobile-first indexing means your mobile experience is your primary SEO experience. If your site requires zooming, has touch targets too close together, or loads slowly on 4G, you are penalized in rankings and losing visitors before they read a single word.</p>
-                </div>
+                <strong>It looks bad on mobile</strong><br>
+                Google's mobile-first indexing means your mobile experience is your primary SEO experience. If your site requires zooming, has touch targets too close together, or loads slowly on 4G, you are penalized in rankings and losing visitors before they read a single word.
               </li>
               <li>
-                <div class="sign-content">
-                  <h4>It fails Core Web Vitals</h4>
-                  <p>Test your site at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>. If your LCP is above 2.5 seconds, your INP above 200ms, or your CLS above 0.1, Google is actively ranking you below faster competitors. These thresholds became hard ranking signals in 2024.</p>
-                </div>
+                <strong>It fails Core Web Vitals</strong><br>
+                Test your site at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>. If your LCP is above 2.5 seconds, your INP above 200ms, or your CLS above 0.1, Google is actively ranking you below faster competitors. These thresholds became hard ranking signals in 2024.
               </li>
               <li>
-                <div class="sign-content">
-                  <h4>Your branding no longer matches your business</h4>
-                  <p>You've updated your logo, changed your target market, expanded your services, or pivoted your positioning — but your website still shows the old version of your company. This creates a trust gap between what clients expect from your brand and what they see online.</p>
-                </div>
+                <strong>Your branding no longer matches your business</strong><br>
+                You've updated your logo, changed your target market, expanded your services, or pivoted your positioning — but your website still shows the old version of your company. This creates a trust gap between what clients expect from your brand and what they see online.
               </li>
               <li>
-                <div class="sign-content">
-                  <h4>You can't update it yourself</h4>
-                  <p>If adding a new service, updating a price, or posting a blog article requires calling your developer, your CMS is working against you. A modern website should allow non-technical staff to make routine updates in minutes, not days.</p>
-                </div>
+                <strong>You can't update it yourself</strong><br>
+                If adding a new service, updating a price, or posting a blog article requires calling your developer, your CMS is working against you. A modern website should allow non-technical staff to make routine updates in minutes, not days.
               </li>
               <li>
-                <div class="sign-content">
-                  <h4>It was last built more than 4 years ago</h4>
-                  <p>Web standards evolve rapidly. A site built in 2020 predates Core Web Vitals as a ranking factor, the shift to mobile-first indexing, Google's Helpful Content updates, and modern accessibility standards. Age alone is not a reason to redesign — but combined with any of the above signals, it's decisive.</p>
-                </div>
+                <strong>It was last built more than 4 years ago</strong><br>
+                Web standards evolve rapidly. A site built in 2020 predates Core Web Vitals as a ranking factor, the shift to mobile-first indexing, Google's Helpful Content updates, and modern accessibility standards. Age alone is not a reason to redesign — but combined with any of the above signals, it's decisive.
               </li>
-            </ul>
+            </ol>
+
+            <hr>
 
             <h2 id="what-redesign-involves">What a Redesign Actually Involves: 4 Phases</h2>
 
-            <div class="phase-grid">
-              <div class="phase-card">
-                <span class="phase-icon">🎯</span>
-                <div class="phase-num">Phase 1</div>
-                <h4>Discovery &amp; Strategy</h4>
-                <p>Audit of current site analytics, competitor analysis, user persona definition, sitemap and conversion goal mapping.</p>
-              </div>
-              <div class="phase-card">
-                <span class="phase-icon">🎨</span>
-                <div class="phase-num">Phase 2</div>
-                <h4>Design &amp; Wireframes</h4>
-                <p>Wireframes for key pages, visual design with brand guidelines, mobile-first responsive layouts, client approval rounds.</p>
-              </div>
-              <div class="phase-card">
-                <span class="phase-icon">⚙️</span>
-                <div class="phase-num">Phase 3</div>
-                <h4>Development &amp; Migration</h4>
-                <p>CMS build, content migration, 301 redirects for all old URLs, SEO metadata transfer, speed optimization.</p>
-              </div>
-              <div class="phase-card">
-                <span class="phase-icon">🚀</span>
-                <div class="phase-num">Phase 4</div>
-                <h4>Testing &amp; Launch</h4>
-                <p>Cross-browser and mobile testing, Search Console validation, GA4 conversion tracking setup, staged launch.</p>
-              </div>
+            <h3>🎯 Phase 1 — Discovery &amp; Strategy</h3>
+            <p>Audit of current site analytics, competitor analysis, user persona definition, sitemap and conversion goal mapping.</p>
+
+            <h3>🎨 Phase 2 — Design &amp; Wireframes</h3>
+            <p>Wireframes for key pages, visual design with brand guidelines, mobile-first responsive layouts, client approval rounds.</p>
+
+            <h3>⚙️ Phase 3 — Development &amp; Migration</h3>
+            <p>CMS build, content migration, 301 redirects for all old URLs, SEO metadata transfer, speed optimization.</p>
+
+            <h3>🚀 Phase 4 — Testing &amp; Launch</h3>
+            <p>Cross-browser and mobile testing, Search Console validation, GA4 conversion tracking setup, staged launch.</p>
+
+            <div class="callout">
+              <strong>Timeline reality check</strong>
+              A professional SMB website redesign typically takes 6 to 10 weeks from kickoff to launch. Rush timelines under 4 weeks almost always result in quality compromises — especially in the SEO migration phase, which is the most technically sensitive.
             </div>
 
-            <div class="info-box">
-              <p><strong>Timeline reality check:</strong> A professional SMB website redesign typically takes 6 to 10 weeks from kickoff to launch. Rush timelines under 4 weeks almost always result in quality compromises — especially in the SEO migration phase, which is the most technically sensitive.</p>
-            </div>
+            <hr>
 
             <h2 id="cost">How Much Does a Website Redesign Cost in Canada?</h2>
 
@@ -445,9 +333,12 @@
               </table>
             </div>
 
-            <div class="warning-box">
-              <p><strong>Cheap isn't cheap:</strong> A $1,500 redesign from a freelancer on Fiverr typically delivers a template with your logo swapped in, zero SEO migration, no conversion strategy, and code you can't maintain. The cost of fixing poor execution — and the revenue lost during that time — always exceeds the savings.</p>
+            <div class="callout">
+              <strong>Cheap isn't cheap</strong>
+              A $1,500 redesign from a freelancer on Fiverr typically delivers a template with your logo swapped in, zero SEO migration, no conversion strategy, and code you can't maintain. The cost of fixing poor execution — and the revenue lost during that time — always exceeds the savings.
             </div>
+
+            <hr>
 
             <!-- CTA inline -->
             <div class="article-cta-inline">
@@ -455,25 +346,20 @@
               <a href="/en/creation-site.html" class="btn btn--primary">See Our Website Design Services →</a>
             </div>
 
+            <hr>
+
             <h2 id="mistakes">The 3 Most Costly Redesign Mistakes</h2>
 
-            <div class="mistake-block">
-              <span class="mistake-icon">❌</span>
-              <h4>Mistake 1 — Forgetting 301 redirects</h4>
-              <p>Every time you change a URL (e.g., /services to /our-services), you must set up a 301 redirect from the old URL to the new one. Without redirects, every external link, bookmark, and Google index entry for your old URLs returns a 404 error. This can erase 30–50% of your organic traffic overnight. Audit all existing URLs before launch and map every one to its new destination.</p>
-            </div>
+            <h3>❌ Mistake 1 — Forgetting 301 redirects</h3>
+            <p>Every time you change a URL (e.g., /services to /our-services), you must set up a 301 redirect from the old URL to the new one. Without redirects, every external link, bookmark, and Google index entry for your old URLs returns a 404 error. This can erase 30–50% of your organic traffic overnight. Audit all existing URLs before launch and map every one to its new destination.</p>
 
-            <div class="mistake-block">
-              <span class="mistake-icon">❌</span>
-              <h4>Mistake 2 — Redesigning without conversion goals</h4>
-              <p>Most redesigns focus on aesthetics ("it needs to look more modern") without defining what success means. Before you approve a single wireframe, answer: What do you want visitors to do on each page? What is your target conversion rate? Where in the current funnel are visitors dropping off? Design follows strategy — not the reverse.</p>
-            </div>
+            <h3>❌ Mistake 2 — Redesigning without conversion goals</h3>
+            <p>Most redesigns focus on aesthetics ("it needs to look more modern") without defining what success means. Before you approve a single wireframe, answer: What do you want visitors to do on each page? What is your target conversion rate? Where in the current funnel are visitors dropping off? Design follows strategy — not the reverse.</p>
 
-            <div class="mistake-block">
-              <span class="mistake-icon">❌</span>
-              <h4>Mistake 3 — Choosing the wrong CMS</h4>
-              <p>Your CMS choice locks in your editorial workflow, plugin ecosystem, and developer options for the next 4–5 years. Choosing Wix because it was easy to set up, then discovering 2 years later that it can't support the landing pages, integrations, or SEO schema you need, means another redesign ahead of schedule.</p>
-            </div>
+            <h3>❌ Mistake 3 — Choosing the wrong CMS</h3>
+            <p>Your CMS choice locks in your editorial workflow, plugin ecosystem, and developer options for the next 4–5 years. Choosing Wix because it was easy to set up, then discovering 2 years later that it can't support the landing pages, integrations, or SEO schema you need, means another redesign ahead of schedule.</p>
+
+            <hr>
 
             <h2 id="cms">Choosing the Right CMS for Your Redesign</h2>
 
@@ -522,42 +408,34 @@
               </table>
             </div>
 
+            <hr>
+
             <h2 id="checklist">5 Questions to Answer Before You Start</h2>
 
-            <div class="checklist-block">
-              <ul>
-                <li>
-                  <div>
-                    <strong>What is the #1 action I want a new visitor to take on my homepage?</strong><br>
-                    <span style="font-size:.9rem;color:var(--color-text-muted)">Book a call, request a quote, view a portfolio, subscribe — be specific. This drives every design decision.</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>Do I have all the content ready, or will I be writing during the build?</strong><br>
-                    <span style="font-size:.9rem;color:var(--color-text-muted)">Content delays are the #1 cause of redesign overruns. Have all copy, photos, and videos ready before week 3.</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>Have I exported a list of all current URLs to plan 301 redirects?</strong><br>
-                    <span style="font-size:.9rem;color:var(--color-text-muted)">Use Screaming Frog (free up to 500 URLs) to crawl your current site and export the full URL list.</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>Do I have my GA4 and Search Console data benchmarked?</strong><br>
-                    <span style="font-size:.9rem;color:var(--color-text-muted)">Screenshot your current organic traffic, bounce rate, and top keywords so you can measure post-launch performance accurately.</span>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <strong>Who will maintain the site after launch?</strong><br>
-                    <span style="font-size:.9rem;color:var(--color-text-muted)">Choose a CMS your team can use without a developer for routine updates. Factor in ongoing maintenance costs (hosting, plugin updates, content).</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                <strong>What is the #1 action I want a new visitor to take on my homepage?</strong><br>
+                Book a call, request a quote, view a portfolio, subscribe — be specific. This drives every design decision.
+              </li>
+              <li>
+                <strong>Do I have all the content ready, or will I be writing during the build?</strong><br>
+                Content delays are the #1 cause of redesign overruns. Have all copy, photos, and videos ready before week 3.
+              </li>
+              <li>
+                <strong>Have I exported a list of all current URLs to plan 301 redirects?</strong><br>
+                Use Screaming Frog (free up to 500 URLs) to crawl your current site and export the full URL list.
+              </li>
+              <li>
+                <strong>Do I have my GA4 and Search Console data benchmarked?</strong><br>
+                Screenshot your current organic traffic, bounce rate, and top keywords so you can measure post-launch performance accurately.
+              </li>
+              <li>
+                <strong>Who will maintain the site after launch?</strong><br>
+                Choose a CMS your team can use without a developer for routine updates. Factor in ongoing maintenance costs (hosting, plugin updates, content).
+              </li>
+            </ul>
+
+            <hr>
 
             <!-- Final CTA -->
             <div class="article-cta-inline">
@@ -565,75 +443,79 @@
               <a href="/en/contact.html?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=website-redesign-guide&amp;utm_content=cta-final" class="btn btn--primary">Get My Free Audit →</a>
             </div>
 
+            <hr>
+
             <!-- FAQ -->
             <h2 id="faq">FAQ — Website Redesign</h2>
-            <div class="article-faq" role="list">
+            <div class="article-faq">
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">How often should a business website be redesigned?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">How often should a business website be redesigned?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">The general rule is every 3 to 5 years. However, a redesign is triggered by performance signals, not a calendar: if your bounce rate exceeds 70%, your conversion rate is below 1%, your site isn't mobile-friendly, or your branding has changed significantly, don't wait — redesign now.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">How much does a website redesign cost in Canada?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">How much does a website redesign cost in Canada?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">A professional website redesign in Canada costs between $3,000 and $6,000 for a local SMB (5–10 pages), $6,000–$15,000 for a service business with complex pages, and $15,000–$60,000+ for a full e-commerce redesign. Prices include design, development, content migration, SEO setup, and launch.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">What is the difference between a website refresh and a redesign?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">What is the difference between a website refresh and a redesign?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">A refresh updates surface-level elements: colors, fonts, photos, and copy (2–4 weeks, $1,000–$3,000). A redesign rebuilds the information architecture, page structure, and technical foundation (6–12 weeks, significantly more) — but produces far greater gains in conversion and SEO.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">Will a redesign hurt my SEO rankings?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">Will a redesign hurt my SEO rankings?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">A poorly managed redesign can devastate rankings — broken URLs without redirects, missing meta tags, or changed site architecture can erase years of SEO work. A well-managed redesign actually improves rankings: better Core Web Vitals, improved site structure, and updated content signal freshness to Google.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">How long does a website redesign take?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">How long does a website redesign take?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">A typical SMB website redesign takes 6 to 12 weeks: 2 weeks for discovery and strategy, 2–4 weeks for design, 2–4 weeks for development and content migration, 1–2 weeks for testing and launch. Complex e-commerce redesigns can take 3–6 months.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">Should I keep my existing domain during a redesign?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">Should I keep my existing domain during a redesign?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Yes — always keep your existing domain. Your domain has SEO authority built up over months or years. A domain change is treated by Google as a completely new site, requiring a fresh indexing process. The redesign goes on the same domain, with 301 redirects mapping all old URLs to new ones.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">What CMS is best for a Canadian SMB website in 2026?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">What CMS is best for a Canadian SMB website in 2026?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">WordPress powers 43% of the web and offers the most flexibility, plugins, and SEO tools for SMBs. Webflow is excellent for design-heavy sites. Shopify is the standard for e-commerce. Squarespace and Wix work for very simple brochure sites but limit SEO and customization at scale.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
-                <button class="article-faq__btn" aria-expanded="false" type="button">
-                  <span class="article-faq__q">How do I measure the ROI of a website redesign?</span>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">How do I measure the ROI of a website redesign?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Track these metrics before and after in GA4 and Search Console: conversion rate, bounce rate, average session duration, organic search traffic, and cost-per-lead. A successful redesign typically improves conversion rate by 20–50% within 90 days of launch.</p>
               </div>
 
             </div>
+
+            <hr>
 
             <!-- Related articles -->
             <h2 id="related-articles">Related Articles</h2>
@@ -644,15 +526,15 @@
               <li><a href="/en/blog/seo/website-speed-technical-sme.html">Core Web Vitals 2026: The Complete Guide for Small Businesses</a></li>
             </ul>
 
-          
-          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07);text-align:center">
-            <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:.75rem">Found this article helpful? Share it:</p>
-            <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank','width=600,height=600');return false;" style="display:inline-flex;align-items:center;gap:.5rem;background:#0A66C2;color:#fff;font-size:.875rem;font-weight:600;padding:.5rem 1.25rem;border-radius:2rem;text-decoration:none;transition:opacity .2s" aria-label="Share this article on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> Share on LinkedIn</a>
-          </div>
-        </article>
+            <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07);text-align:center">
+              <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:.75rem">Found this article helpful? Share it:</p>
+              <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank','width=600,height=600');return false;" style="display:inline-flex;align-items:center;gap:.5rem;background:#0A66C2;color:#fff;font-size:.875rem;font-weight:600;padding:.5rem 1.25rem;border-radius:2rem;text-decoration:none;transition:opacity .2s" aria-label="Share this article on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> Share on LinkedIn</a>
+            </div>
+
+          </div><!-- /article-body -->
 
           <!-- SIDEBAR -->
-          <aside class="article-sidebar" aria-label="Table of Contents">
+          <aside class="article-sidebar">
             <div class="article-sidebar__box">
               <p class="article-sidebar__title">In This Article</p>
               <ul class="article-sidebar__toc">
@@ -665,7 +547,6 @@
                 <li><a href="#faq">FAQ</a></li>
               </ul>
             </div>
-
             <div class="article-sidebar__box">
               <p class="article-sidebar__title">Free Website Audit</p>
               <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.6">We analyze your current site and give you a clear roadmap for your redesign.</p>
@@ -673,9 +554,9 @@
             </div>
           </aside>
 
-        </div>
+        </div><!-- /article-layout -->
       </div>
-    </div>
+    </section>
 
     <!-- CTA SECTION -->
         <section style="background:var(--color-bg-alt);padding:2rem 0;margin-top:2rem">
@@ -710,94 +591,49 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
-        <address class="footer__address">
-          Montreal, Quebec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB on LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li><li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/en/creation-site.html">Website Design</a></li><li><a href="/en/seo.html">SEO</a></li><li><a href="/en/marketing-digital.html">Digital Marketing</a></li><li><a href="/en/visibilite-ia.html">AI Visibility</a></li></ul></div>
+        <div><h4>Industries</h4><ul><li><a href="/en/dental-clinics.html">Dental clinics</a></li><li><a href="/en/real-estate-brokers.html">Real estate brokers</a></li><li><a href="/en/lawyers.html">Lawyers</a></li><li><a href="/en/construction-renovation.html">Construction</a></li><li><a href="/en/secteurs.html">Other industries</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="/en/zones-desservies/montreal.html">Montreal</a></li><li><a href="/en/zones-desservies/quebec.html">Quebec</a></li><li><a href="/en/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/en/index.html">Home</a></li>
-          <li><a href="/en/services.html">Services</a></li>
-          <li><a href="/en/secteurs.html">Industries</a></li>
-          <li><a href="/en/ressources.html">Resources</a></li>
-          <li><a href="/en/blog/">Blog</a></li>
-          <li><a href="/en/a-propos.html">About</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/en/creation-site.html">Website Design</a></li>
-          <li><a href="/en/seo.html">SEO</a></li>
-          <li><a href="/en/marketing-digital.html">Digital Marketing</a></li>
-          <li><a href="/en/visibilite-ia.html">AI Visibility</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Industries</h3>
-        <ul class="footer__list">
-          <li><a href="/en/dental-clinics.html">Dental Clinics</a></li>
-          <li><a href="/en/real-estate-brokers.html">Real Estate Brokers</a></li>
-          <li><a href="/en/lawyers.html">Lawyers</a></li>
-          <li><a href="/en/construction-renovation.html">Construction &amp; Renovation</a></li>
-          <li><a href="/en/secteurs.html">Other Industries</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Areas Served</h3>
-        <ul class="footer__list">
-          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
-          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
-          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curious to see our method in action? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <p class="footer__studio">Curious to see our method in action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Read our <a href="/en/politique-confidentialite.html">Privacy Policy</a>, <a href="/en/politique-cookies.html">Cookie Policy</a> and <a href="/en/mentions-legales.html">Legal Notice</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Manage cookies</button></p>
     </div>
   </footer>
 
-  <script src="/assets/js/main.min.js" defer></script>
-
-  <!-- FAQ Accordion -->
-  <script>
-    document.querySelectorAll('.article-faq__btn').forEach(function(btn){
-      btn.addEventListener('click',function(){
-        var item = this.closest('.article-faq__item');
-        var isOpen = item.classList.contains('is-open');
-        document.querySelectorAll('.article-faq__item').forEach(function(el){
-          el.classList.remove('is-open');
-          el.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');
-        });
-        if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
-      });
-    });
-  </script>
-
-  <!-- Floating bar: question + WhatsApp -->
-  <div class="float-bar">
-    <a href="/en/contact.html" class="audit-pill" aria-label="Get My Free Audit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Free audit
-    </a>
-    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-    </a>
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/en/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free audit</a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
   </div>
+
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Cookie consent management">
+    <h2>Cookie preferences</h2>
+    <p>We use essential cookies to keep this site running. Analytics and marketing cookies are enabled only with your consent (Law 25). <a href="/en/politique-confidentialite.html">Privacy</a> · <a href="/en/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Essential cookies (required)</label>
+      <label><input type="checkbox" id="cAnalytics"> Analytics cookies</label>
+      <label><input type="checkbox" id="cMarketing"> Marketing cookies</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Save my choices</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Accept all</button>
+      <button class="btn btn--ghost" data-consent="none">Reject all</button>
+      <button class="btn btn--ghost" data-consent="custom">Customize</button>
+    </div>
+  </div>
+
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

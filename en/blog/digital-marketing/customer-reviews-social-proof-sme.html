@@ -35,123 +35,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
-  <style>
-    /* Breadcrumb */
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
 
-    /* Article layout */
-    .article-wrapper{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start;max-width:1100px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
-    @media(max-width:900px){.article-wrapper{grid-template-columns:1fr;padding:1.5rem 1rem 3rem}}
-    .article-body{max-width:780px}
-    .article-body h2{font-size:1.45rem;margin:2.5rem 0 1rem;color:var(--color-text)}
-    .article-body h3{font-size:1.15rem;margin:2rem 0 .75rem;color:var(--color-text)}
-    .article-body p{line-height:1.8;margin-bottom:1.1rem;color:var(--color-text-muted)}
-    .article-body ul,
-    .article-body ol{padding-left:1.4rem;margin-bottom:1.2rem;color:var(--color-text-muted);line-height:1.9}
-    .article-body a{color:var(--color-primary);text-decoration:underline}
-
-    /* Article meta */
-    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem 1.5rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:1px solid rgba(255,255,255,.07)}
-    .article-meta__badge{display:inline-block;background:rgba(0,230,118,.12);color:var(--color-primary);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .65rem;border-radius:20px}
-
-    /* Stat hero */
-    .stat-hero{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.18);border-radius:12px;padding:1.5rem 1.75rem;margin:2rem 0;text-align:center}
-    .stat-hero__number{font-size:2.8rem;font-weight:800;color:var(--color-primary);line-height:1}
-    .stat-hero__label{font-size:.95rem;color:var(--color-text-muted);margin-top:.4rem}
-    .stat-hero__source{font-size:.75rem;color:var(--color-text-muted);opacity:.6;margin-top:.3rem}
-
-    /* Cards grid */
-    .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin:1.75rem 0}
-    .card-item{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.25rem 1.1rem}
-    .card-item__icon{font-size:1.6rem;margin-bottom:.6rem}
-    .card-item__title{font-size:.95rem;font-weight:700;color:var(--color-text);margin-bottom:.4rem}
-    .card-item__text{font-size:.85rem;color:var(--color-text-muted);line-height:1.6}
-
-    /* Table */
-    .data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}
-    .data-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;padding:.75rem 1rem;text-align:left;border-bottom:2px solid rgba(0,230,118,.2)}
-    .data-table td{padding:.7rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text-muted);vertical-align:top}
-    .data-table tr:last-child td{border-bottom:none}
-    .data-table tr:hover td{background:rgba(255,255,255,.03)}
-    @media(max-width:600px){.data-table{font-size:.8rem}.data-table th,.data-table td{padding:.5rem .6rem}}
-
-    /* Numbered list */
-    .numbered-list{list-style:none;padding:0;margin:1.5rem 0;counter-reset:nl}
-    .numbered-list li{counter-increment:nl;display:flex;gap:1rem;align-items:flex-start;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
-    .numbered-list li:last-child{border-bottom:none}
-    .numbered-list li::before{content:counter(nl);min-width:32px;height:32px;background:rgba(0,230,118,.12);color:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0;margin-top:.1rem}
-    .numbered-list li span{color:var(--color-text-muted);line-height:1.7}
-    .numbered-list li strong{color:var(--color-text)}
-
-    /* Checklist */
-    .checklist{list-style:none;padding:0;margin:1.25rem 0}
-    .checklist li{display:flex;align-items:flex-start;gap:.75rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.92rem;color:var(--color-text-muted);line-height:1.6}
-    .checklist li:last-child{border-bottom:none}
-    .checklist li::before{content:"✓";color:var(--color-primary);font-weight:800;flex-shrink:0;margin-top:.05rem}
-
-    /* Pause CTA */
-    .pause-cta{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-radius:14px;padding:1.75rem 2rem;margin:2.5rem 0;text-align:center}
-    .pause-cta h3{color:var(--color-text);font-size:1.15rem;margin-bottom:.5rem}
-    .pause-cta p{color:var(--color-text-muted);font-size:.9rem;margin-bottom:1.1rem}
-    .pause-cta .btn{display:inline-block;background:var(--color-primary);color:#0a0a0a;font-weight:700;padding:.75rem 1.75rem;border-radius:8px;text-decoration:none;font-size:.95rem;transition:opacity .2s}
-    .pause-cta .btn:hover{opacity:.85}
-
-    /* CTA final */
-    .cta-final{background:linear-gradient(135deg,rgba(0,230,118,.1) 0%,rgba(0,180,90,.05) 100%);border:1px solid rgba(0,230,118,.2);border-radius:16px;padding:2.25rem 2rem;margin:3rem 0;text-align:center}
-    .cta-final h2{color:var(--color-text);font-size:1.45rem;margin-bottom:.6rem}
-    .cta-final p{color:var(--color-text-muted);margin-bottom:1.4rem;font-size:.95rem}
-    .cta-final .btn{display:inline-block;background:var(--color-primary);color:#0a0a0a;font-weight:700;padding:.85rem 2.1rem;border-radius:8px;text-decoration:none;font-size:1rem;transition:opacity .2s}
-    .cta-final .btn:hover{opacity:.85}
-
-    /* FAQ */
-    .faq-list{margin:1.5rem 0}
-    .faq-item{border-bottom:1px solid rgba(255,255,255,.07)}
-    .faq-item:last-child{border-bottom:none}
-    .faq-question{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:none;padding:1.1rem 0;cursor:pointer;text-align:left;color:var(--color-text);font-size:1rem;font-weight:600;gap:1rem;transition:color .2s}
-    .faq-question:hover{color:var(--color-primary)}
-    .faq-question .faq-icon{min-width:22px;height:22px;border-radius:50%;background:rgba(0,230,118,.12);color:var(--color-primary);display:flex;align-items:center;justify-content:center;font-size:.85rem;transition:transform .3s;flex-shrink:0}
-    .faq-question[aria-expanded="true"] .faq-icon{transform:rotate(45deg)}
-    .faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease}
-    .faq-item.open .faq-answer{max-height:400px}
-    .faq-answer p{padding:.25rem 0 1rem;color:var(--color-text-muted);line-height:1.8;font-size:.94rem}
-
-    /* Sidebar */
-    .article-sidebar{position:sticky;top:7rem}
-    .sidebar-card{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:1.4rem}
-    .sidebar-card + .sidebar-card{margin-top:1.25rem}
-    .sidebar-card__title{font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--color-primary);font-weight:700;margin-bottom:1rem}
-    .sidebar-toc a{display:block;font-size:.85rem;color:var(--color-text-muted);text-decoration:none;padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,.04);transition:color .2s}
-    .sidebar-toc a:last-child{border-bottom:none}
-    .sidebar-toc a:hover{color:var(--color-primary)}
-    .sidebar-cta{background:rgba(0,230,118,.08);border:1px solid rgba(0,230,118,.18);border-radius:12px;padding:1.4rem;text-align:center}
-    .sidebar-cta p{font-size:.87rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.6}
-    .sidebar-cta .btn{display:inline-block;background:var(--color-primary);color:#0a0a0a;font-weight:700;padding:.65rem 1.25rem;border-radius:8px;text-decoration:none;font-size:.875rem;transition:opacity .2s;width:100%}
-    .sidebar-cta .btn:hover{opacity:.85}
-
-    /* Float bar */
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-    body.theme-light .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-  </style>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/v2026.css">
+  <link rel="stylesheet" href="/assets/css/v2026-article.css">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -182,37 +79,77 @@
   }
   </script>
 </head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Skip to content</a>
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="/en/index.html" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav__item">
-          <a href="/en/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
-            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
-            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+      <p class="topbar__msg">Stop to restart stronger&nbsp;: <strong>we audit your website for free.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        NEXTIWEB
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__group">
+          <a href="/en/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/en/creation-site.html">Website Design</a>
+            <a href="/en/seo.html">SEO</a>
+            <a href="/en/marketing-digital.html">Digital Marketing</a>
+            <a href="/en/visibilite-ia.html">AI Visibility</a>
           </div>
         </div>
-        <a href="/en/secteurs.html" class="nav__link">Industries</a>
-        <a href="/en/ressources.html" class="nav__link">Resources</a>
-        <a href="/en/blog/" class="nav__link">Blog</a>
-        <a href="/en/a-propos.html" class="nav__link">About</a>
-        <a href="/en/contact.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+        <a href="/en/secteurs.html">Industries</a>
+        <a href="/en/ressources.html">Resources</a>
+        <a href="/en/blog/" aria-current="page">Blog</a>
+        <a href="/en/a-propos.html">About</a>
+        <a href="/en/contact.html" class="btn btn--primary nav__cta">Get My Free Audit</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+      <div class="lang" aria-label="Language">
+        <a href="/blog/marketing-digital/avis-clients-preuve-sociale-pme.html" hreflang="fr">FR</a>
+        <a href="/en/blog/digital-marketing/customer-reviews-social-proof-sme.html" class="is-active" aria-current="page">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close">×</button>
+    </div>
+    <a href="/en/services.html">Services</a>
+    <a href="/en/creation-site.html">— Website Design</a>
+    <a href="/en/seo.html">— SEO</a>
+    <a href="/en/marketing-digital.html">— Digital Marketing</a>
+    <a href="/en/secteurs.html">Industries</a>
+    <a href="/en/ressources.html">Resources</a>
+    <a href="/en/blog/" aria-current="page">Blog</a>
+    <a href="/en/a-propos.html">About</a>
+    <a href="/en/contact.html" class="btn btn--primary" style="margin-top:1rem">Get My Free Audit</a>
+  </aside>
+
   <main id="main">
+
     <!-- BREADCRUMB -->
     <div class="breadcrumb-bar">
       <div class="container">
@@ -232,275 +169,258 @@
       </div>
     </div>
 
-    <!-- ARTICLE -->
-    <div class="article-wrapper">
-      <article class="article-body">
-        <span class="article-meta__badge">Digital Marketing</span>
-        <h1 style="font-size:clamp(1.6rem,3.5vw,2.2rem);line-height:1.25;margin:1rem 0 1.25rem;color:var(--color-text);">Customer Reviews: How to Turn Your 5 Stars Into an Automatic Sales Lever in 2026</h1>
-        <div class="article-meta">
-          <span>May 4, 2026</span>
-          <span>12 min read</span>
-          <span>By NEXTIWEB</span>
-        </div>
-
-        <p>Imagine: you're looking for a roofing contractor. You find two. The first has a beautiful website, but 3 reviews and a 3.5 rating. The second has a more modest site, but 120 reviews and a 4.8 rating. Which one do you call?</p>
-
-        <p>In 2026, social proof is the currency of trust. Clients no longer believe what you say about yourself (advertising) — they believe what your clients say about you. <strong>A Google rating below 4.2 is an invisible tax on your marketing</strong>: you pay more for each lead because you have to work twice as hard to convince.</p>
-
-        <div class="stat-hero">
-          <div class="stat-hero__number">+35%</div>
-          <div class="stat-hero__label">Increase in revenue for businesses that respond to at least 20% of their reviews</div>
-          <div class="stat-hero__source">Source: BrightLocal — Local Consumer Review Survey</div>
-        </div>
-
-        <h2 id="psychology">The Psychology of Social Proof</h2>
-        <p>Social proof rests on a simple cognitive bias: "If so many people have trusted this business, it must be reliable." For an SME, there are 4 levels of social proof to integrate on your website:</p>
-
-        <div class="cards-grid">
-          <div class="card-item">
-            <div class="card-item__icon">🔢</div>
-            <div class="card-item__title">The Number</div>
-            <div class="card-item__text">"Already 500 satisfied clients." Quantity reassures about longevity and reduces perceived risk.</div>
-          </div>
-          <div class="card-item">
-            <div class="card-item__icon">🎯</div>
-            <div class="card-item__title">Specificity</div>
-            <div class="card-item__text">A review that says "The technician arrived at 8:01 for an 8am appointment" is worth much more than ten generic reviews saying "It was good."</div>
-          </div>
-          <div class="card-item">
-            <div class="card-item__icon">🏆</div>
-            <div class="card-item__title">Authority</div>
-            <div class="card-item__text">Logos of known clients or professional certifications. They transfer their credibility to your brand.</div>
-          </div>
-          <div class="card-item">
-            <div class="card-item__icon">📍</div>
-            <div class="card-item__title">Proximity</div>
-            <div class="card-item__text">"Jean from Laval saved 15%." The prospect identifies with Jean — and projects himself into a similar result.</div>
+    <!-- ARTICLE HERO -->
+    <section class="section">
+      <div class="container">
+        <div class="article-hero">
+          <p class="article-hero__kicker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Digital Marketing
+          </p>
+          <h1 class="article-hero__title">Customer Reviews: How to Turn Your 5 Stars Into an Automatic Sales Lever in 2026</h1>
+          <div class="article-meta">
+            <span>By NEXTIWEB</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              May 4, 2026
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              12 min read
+            </span>
           </div>
         </div>
+      </div>
+    </section>
 
-        <h2 id="automate">How to Automate Your Review Collection?</h2>
-        <p>The fatal mistake is waiting for the client to think of leaving you a review. Unhappy clients are much more motivated to write than satisfied ones. To balance the scales, you need to systematize the request.</p>
+    <!-- ARTICLE CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
 
-        <ol class="numbered-list">
-          <li><span><strong>Identify the euphoria moment</strong> — This is the exact moment when the client receives their product or sees the result of your service. That is when their satisfaction is at its peak.</span></li>
-          <li><span><strong>Automated sending (SMS or email)</strong> — Use a tool that sends a direct link to your Google Business Profile within 24 hours after the end of the contract. Less friction = more responses.</span></li>
-          <li><span><strong>The triage question</strong> — "On a scale of 1 to 10, how likely are you to recommend us?" If the answer is 9 or 10, send them to Google. If it's lower, send them to an internal form to resolve the issue privately.</span></li>
-        </ol>
+          <!-- BODY -->
+          <div class="article-body">
 
-        <div class="pause-cta">
-          <h3>Is your online reputation helping you or hurting you?</h3>
-          <p>Our experts analyze your online reputation and set up an automated review collection system — so your best clients speak for you.</p>
-          <a href="/en/marketing-digital.html?utm_source=blog&utm_medium=article&utm_campaign=customer-reviews-social-proof-sme&utm_content=pause-cta" class="btn">See our marketing service →</a>
-        </div>
+            <p>Imagine: you're looking for a roofing contractor. You find two. The first has a beautiful website, but 3 reviews and a 3.5 rating. The second has a more modest site, but 120 reviews and a 4.8 rating. Which one do you call?</p>
 
-        <h2 id="negative-reviews">Managing the Negative Review: The Art of Marketing Judo</h2>
-        <p>A negative review is not a catastrophe, it's a theatrical scene. You're not responding only for the unhappy client — you're responding for the next people who will read your reply.</p>
+            <p>In 2026, social proof is the currency of trust. Clients no longer believe what you say about yourself (advertising) — they believe what your clients say about you. <strong>A Google rating below 4.2 is an invisible tax on your marketing</strong>: you pay more for each lead because you have to work twice as hard to convince.</p>
 
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Do</th>
-              <th>Don't</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Respond calmly and with respect</td>
-              <td>Be aggressive or defensive</td>
-            </tr>
-            <tr>
-              <td>State the facts without emotion</td>
-              <td>Deny the problem or blame the client</td>
-            </tr>
-            <tr>
-              <td>Offer to resolve privately ("Contact us at…")</td>
-              <td>Debate publicly at length</td>
-            </tr>
-            <tr>
-              <td>Thank them for the feedback, even if negative</td>
-              <td>Ignore the review or respond weeks later</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>An elegant response to a negative review can turn a skeptic into a loyal client. It demonstrates your professionalism to everyone who reads it.</p>
-
-        <h2 id="where-to-display">Where to Display Your Reviews on Your Website?</h2>
-        <p>Don't make the mistake of creating a "Testimonials Page" that nobody visits. Place your social proof where it creates the most impact:</p>
-
-        <ul class="checklist">
-          <li>Under your main call-to-action buttons (where doubt is strongest)</li>
-          <li>On your homepage, in a dedicated section with names and photos</li>
-          <li>On each service page, with reviews specific to that service</li>
-          <li>On your contact page, just before the form</li>
-        </ul>
-
-        <h2 id="faq">Frequently Asked Questions About Reviews and Reputation</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              How do I get more Google reviews for my SME?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>The most effective method is to automate the request by SMS or email immediately after delivering the service. Providing a direct link to your Google Business Profile reduces friction and significantly increases the response rate.</p>
+            <div class="callout">
+              <strong>+35% revenue</strong>
+              Increase in revenue for businesses that respond to at least 20% of their reviews. Source: BrightLocal — Local Consumer Review Survey.
             </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              How do I respond to a negative Google review?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Respond calmly, stay factual and offer to resolve the issue privately (phone or email). Never be aggressive. Your response is addressed as much to future clients as to the unhappy client.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Do customer reviews influence SEO?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes, reviews are a major ranking factor for local SEO. The number of reviews, the average rating and the presence of keywords in comments help Google determine your relevance and authority in your geographic area.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Can you remove an unfair Google review?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Rarely. Google only removes reviews that violate its policies (insults, spam). The best defense against a bad review is to reduce its impact with many new 5-star reviews obtained legitimately from your satisfied clients.</p>
-            </div>
-          </div>
-        </div>
 
-        <!-- FINAL CTA -->
-        <div class="cta-final">
-          <h2>Ready to Turn Your Reputation Into a Client-Generating Machine?</h2>
-          <p>NEXTIWEB sets up your automated review collection system and optimizes your local presence so your stars work for you — 24/7.</p>
-          <a href="/en/contact.html?utm_source=blog&utm_medium=article&utm_campaign=customer-reviews-social-proof-sme&utm_content=cta-final" class="btn">Get My Free Audit →</a>
-        </div>
-      
+            <hr>
+
+            <h2 id="psychology">The Psychology of Social Proof</h2>
+            <p>Social proof rests on a simple cognitive bias: "If so many people have trusted this business, it must be reliable." For an SME, there are 4 levels of social proof to integrate on your website:</p>
+
+            <ul>
+              <li><strong>The Number</strong> — "Already 500 satisfied clients." Quantity reassures about longevity and reduces perceived risk.</li>
+              <li><strong>Specificity</strong> — A review that says "The technician arrived at 8:01 for an 8am appointment" is worth much more than ten generic reviews saying "It was good."</li>
+              <li><strong>Authority</strong> — Logos of known clients or professional certifications. They transfer their credibility to your brand.</li>
+              <li><strong>Proximity</strong> — "Jean from Laval saved 15%." The prospect identifies with Jean — and projects himself into a similar result.</li>
+            </ul>
+
+            <hr>
+
+            <h2 id="automate">How to Automate Your Review Collection?</h2>
+            <p>The fatal mistake is waiting for the client to think of leaving you a review. Unhappy clients are much more motivated to write than satisfied ones. To balance the scales, you need to systematize the request.</p>
+
+            <ol>
+              <li><strong>Identify the euphoria moment</strong> — This is the exact moment when the client receives their product or sees the result of your service. That is when their satisfaction is at its peak.</li>
+              <li><strong>Automated sending (SMS or email)</strong> — Use a tool that sends a direct link to your Google Business Profile within 24 hours after the end of the contract. Less friction = more responses.</li>
+              <li><strong>The triage question</strong> — "On a scale of 1 to 10, how likely are you to recommend us?" If the answer is 9 or 10, send them to Google. If it's lower, send them to an internal form to resolve the issue privately.</li>
+            </ol>
+
+            <hr>
+
+            <!-- CTA inline -->
+            <div class="article-cta-inline">
+              <p>Is your online reputation helping you or hurting you? Our experts analyze your online reputation and set up an automated review collection system — so your best clients speak for you.</p>
+              <a href="/en/marketing-digital.html?utm_source=blog&utm_medium=article&utm_campaign=customer-reviews-social-proof-sme&utm_content=pause-cta" class="btn btn--primary">See our digital marketing service →</a>
+            </div>
+
+            <hr>
+
+            <h2 id="negative-reviews">Managing the Negative Review: The Art of Marketing Judo</h2>
+            <p>A negative review is not a catastrophe, it's a theatrical scene. You're not responding only for the unhappy client — you're responding for the next people who will read your reply.</p>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Do</th>
+                    <th>Don't</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Respond calmly and with respect</td>
+                    <td>Be aggressive or defensive</td>
+                  </tr>
+                  <tr>
+                    <td>State the facts without emotion</td>
+                    <td>Deny the problem or blame the client</td>
+                  </tr>
+                  <tr>
+                    <td>Offer to resolve privately ("Contact us at…")</td>
+                    <td>Debate publicly at length</td>
+                  </tr>
+                  <tr>
+                    <td>Thank them for the feedback, even if negative</td>
+                    <td>Ignore the review or respond weeks later</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>An elegant response to a negative review can turn a skeptic into a loyal client. It demonstrates your professionalism to everyone who reads it.</p>
+
+            <hr>
+
+            <h2 id="where-to-display">Where to Display Your Reviews on Your Website?</h2>
+            <p>Don't make the mistake of creating a "Testimonials Page" that nobody visits. Place your social proof where it creates the most impact:</p>
+
+            <ul>
+              <li>Under your main call-to-action buttons (where doubt is strongest)</li>
+              <li>On your homepage, in a dedicated section with names and photos</li>
+              <li>On each service page, with reviews specific to that service</li>
+              <li>On your contact page, just before the form</li>
+            </ul>
+
+            <hr>
+
+            <h2 id="faq">Frequently Asked Questions About Reviews and Reputation</h2>
+            <div class="article-faq">
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">How do I get more Google reviews for my SME?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">The most effective method is to automate the request by SMS or email immediately after delivering the service. Providing a direct link to your Google Business Profile reduces friction and significantly increases the response rate.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">How do I respond to a negative Google review?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Respond calmly, stay factual and offer to resolve the issue privately (phone or email). Never be aggressive. Your response is addressed as much to future clients as to the unhappy client.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">Do customer reviews influence SEO?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Yes, reviews are a major ranking factor for local SEO. The number of reviews, the average rating and the presence of keywords in comments help Google determine your relevance and authority in your geographic area.</p>
+              </div>
+              <div class="article-faq__item">
+                <button class="article-faq__btn" aria-expanded="false">
+                  <p class="article-faq__q">Can you remove an unfair Google review?</p>
+                  <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <p class="article-faq__a">Rarely. Google only removes reviews that violate its policies (insults, spam). The best defense against a bad review is to reduce its impact with many new 5-star reviews obtained legitimately from your satisfied clients.</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2 id="next-step">Ready to Turn Your Reputation Into a Client-Generating Machine?</h2>
+            <p>NEXTIWEB sets up your automated review collection system and optimizes your local presence so your stars work for you — 24/7.</p>
+
+            <div class="article-cta-inline">
+              <p>Honest audit of your reputation and local presence — 30 min, clear report, zero obligation.</p>
+              <a href="/en/contact.html?utm_source=blog&utm_medium=article&utm_campaign=customer-reviews-social-proof-sme&utm_content=cta-final" class="btn btn--primary">Get My Free Audit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">We don't sell anything on the call — we start by helping you see clearly.</p>
+            </div>
+
+
           <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07);text-align:center">
             <p style="font-size:.85rem;color:var(--color-text-muted);margin-bottom:.75rem">Found this article helpful? Share it:</p>
             <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank','width=600,height=600');return false;" style="display:inline-flex;align-items:center;gap:.5rem;background:#0A66C2;color:#fff;font-size:.875rem;font-weight:600;padding:.5rem 1.25rem;border-radius:2rem;text-decoration:none;transition:opacity .2s" aria-label="Share this article on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> Share on LinkedIn</a>
           </div>
-        </article>
+          </div><!-- /article-body -->
 
-      <!-- SIDEBAR -->
-      <aside class="article-sidebar">
-        <div class="sidebar-card">
-          <div class="sidebar-card__title">In this article</div>
-          <nav class="sidebar-toc">
-            <a href="#psychology">The psychology of social proof</a>
-            <a href="#automate">Automating review collection</a>
-            <a href="#negative-reviews">Managing negative reviews</a>
-            <a href="#where-to-display">Where to display your reviews</a>
-            <a href="#faq">FAQ</a>
-          </nav>
-        </div>
-        <div class="sidebar-cta">
-          <p>Turn your Google reputation into a growth lever.</p>
-          <a href="/en/marketing-digital.html" class="btn">See the service →</a>
-        </div>
-        <div class="sidebar-card" style="margin-top:1.25rem">
-          <div class="sidebar-card__title">Related articles</div>
-          <nav class="sidebar-toc">
-            <a href="/en/blog/digital-marketing/measure-marketing-roi-analytics-sme.html">Measuring Marketing ROI</a>
-            <a href="/en/blog/digital-marketing/social-media-roi-strategy-sme.html">Social Media ROI Strategy</a>
-            <a href="/en/blog/digital-marketing/digital-marketing-basics-sme.html">The 5 Foundations of Digital Marketing</a>
-          </nav>
-        </div>
-      </aside>
-    </div>
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar">
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">In This Article</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="#psychology">The psychology of social proof</a></li>
+                <li><a href="#automate">Automating review collection</a></li>
+                <li><a href="#negative-reviews">Managing negative reviews</a></li>
+                <li><a href="#where-to-display">Where to display your reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="article-sidebar__box">
+              <p class="article-sidebar__title">Related Articles</p>
+              <ul class="article-sidebar__toc">
+                <li><a href="/en/blog/digital-marketing/measure-marketing-roi-analytics-sme.html">Measuring Marketing ROI →</a></li>
+                <li><a href="/en/blog/digital-marketing/social-media-roi-strategy-sme.html">Social Media ROI Strategy →</a></li>
+                <li><a href="/en/blog/digital-marketing/digital-marketing-basics-sme.html">The 5 Foundations of Digital Marketing →</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Your next client is searching for you. Can they find you?</h2>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
-        <address class="footer__address">
-          Montreal, Quebec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB on LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li><li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/en/creation-site.html">Website Design</a></li><li><a href="/en/seo.html">SEO</a></li><li><a href="/en/marketing-digital.html">Digital Marketing</a></li><li><a href="/en/visibilite-ia.html">AI Visibility</a></li></ul></div>
+        <div><h4>Industries</h4><ul><li><a href="/en/dental-clinics.html">Dental clinics</a></li><li><a href="/en/real-estate-brokers.html">Real estate brokers</a></li><li><a href="/en/lawyers.html">Lawyers</a></li><li><a href="/en/construction-renovation.html">Construction</a></li><li><a href="/en/secteurs.html">Other industries</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="/en/zones-desservies/montreal.html">Montreal</a></li><li><a href="/en/zones-desservies/quebec.html">Quebec</a></li><li><a href="/en/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/en/index.html">Home</a></li>
-          <li><a href="/en/services.html">Services</a></li>
-          <li><a href="/en/secteurs.html">Industries</a></li>
-          <li><a href="/en/ressources.html">Resources</a></li>
-          <li><a href="/en/blog/">Blog</a></li>
-          <li><a href="/en/a-propos.html">About</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/en/creation-site.html">Website Design</a></li>
-          <li><a href="/en/seo.html">SEO</a></li>
-          <li><a href="/en/marketing-digital.html">Digital Marketing</a></li>
-          <li><a href="/en/visibilite-ia.html">AI Visibility</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Industries</h3>
-        <ul class="footer__list">
-          <li><a href="/en/dental-clinics.html">Dental Clinics</a></li>
-          <li><a href="/en/real-estate-brokers.html">Real Estate Brokers</a></li>
-          <li><a href="/en/lawyers.html">Lawyers</a></li>
-          <li><a href="/en/construction-renovation.html">Construction &amp; Renovation</a></li>
-          <li><a href="/en/secteurs.html">Other Industries</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Areas Served</h3>
-        <ul class="footer__list">
-          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
-          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
-          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curious to see our method in action? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <p class="footer__studio">Curious to see our method in action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Read our <a href="/en/politique-confidentialite.html">Privacy Policy</a>, <a href="/en/politique-cookies.html">Cookie Policy</a> and <a href="/en/mentions-legales.html">Legal Notice</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Manage cookies</button></p>
     </div>
   </footer>
-  <script src="/assets/js/main.min.js" defer></script>
 
-  <!-- FAQ Accordion -->
-  <script>
-    document.querySelectorAll('.faq-question').forEach(function(btn){
-      btn.addEventListener('click',function(){
-        var item=this.closest('.faq-item');
-        var isOpen=item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-question').setAttribute('aria-expanded','false');});
-        if(!isOpen){item.classList.add('open');this.setAttribute('aria-expanded','true');}
-      });
-    });
-  </script>
-
-  <!-- Float bar bottom right -->
-  <div class="float-bar">
-    <a href="/en/contact.html" class="audit-pill" aria-label="Get My Free Audit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Free audit
-    </a>
-    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-    </a>
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/en/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free audit</a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
   </div>
+
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Cookie consent management">
+    <h2>Cookie preferences</h2>
+    <p>We use essential cookies to keep this site running. Analytics and marketing cookies are enabled only with your consent (Law 25). <a href="/en/politique-confidentialite.html">Privacy</a> · <a href="/en/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Essential cookies (required)</label>
+      <label><input type="checkbox" id="cAnalytics"> Analytics cookies</label>
+      <label><input type="checkbox" id="cMarketing"> Marketing cookies</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Save my choices</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Accept all</button>
+      <button class="btn btn--ghost" data-consent="none">Reject all</button>
+      <button class="btn btn--ghost" data-consent="custom">Customize</button>
+    </div>
+  </div>
+
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

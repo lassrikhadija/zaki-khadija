@@ -117,11 +117,13 @@
 @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
 
 /* ====== Pages de LISTE du blog (hub + index de catégories) ====== */
+/* NB : sur les index de catégorie le wrapper .blog-hero est absent (section>.container) ;
+   on centre donc directement via les classes enfants pour couvrir hub + index de catégorie. */
 .blog-hero{padding:3.5rem 0 2rem;text-align:center}
-.blog-hero__kicker{display:inline-block;font-family:var(--display);font-size:.74rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1rem}
-.blog-hero__title{font-family:var(--display);font-size:clamp(2rem,5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
+.blog-hero__kicker{display:block;text-align:center;font-family:var(--display);font-size:.74rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1rem}
+.blog-hero__title{text-align:center;font-family:var(--display);font-size:clamp(2rem,5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap}
 .blog-hero__brand{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.blog-hero__subtitle{max-width:660px;margin:0 auto;color:var(--muted);font-size:1.05rem;line-height:1.6}
+.blog-hero__subtitle{max-width:660px;margin:0 auto;text-align:center;color:var(--muted);font-size:1.05rem;line-height:1.6}
 .blog-search{display:flex;gap:.6rem;max-width:560px;margin:2rem auto 0}
 .blog-search__input{flex:1;min-width:0;background:var(--surface);border:1px solid var(--border-strong);border-radius:999px;padding:.85rem 1.4rem;color:var(--text);font-family:var(--body);font-size:.95rem;outline:none;transition:border-color .2s,box-shadow .2s}
 .blog-search__input::placeholder{color:var(--muted-2)}

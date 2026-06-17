@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-CA">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
@@ -40,101 +40,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <style>
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-
-    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
-    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
-    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
-    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
-    .article-meta__author{font-weight:600;color:var(--color-text)}
-    .article-meta span{display:flex;align-items:center;gap:.35rem}
-
-    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
-    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
-    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
-    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
-
-    .article-body{max-width:780px}
-    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
-    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
-    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
-    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
-    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
-    .article-body strong{color:var(--color-text);font-weight:700}
-    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
-    .article-body a:hover{opacity:.8}
-    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
-    .article-body code{background:rgba(255,255,255,.07);border-radius:.3rem;padding:.1rem .4rem;font-size:.88em;font-family:monospace;color:var(--color-primary)}
-
-    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
-    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
-
-    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
-    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
-    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
-
-    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
-    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
-    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
-    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
-    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
-    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
-    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
-    .article-faq__item.is-open .article-faq__a{display:block}
-    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
-
-    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
-    .article-sidebar{position:sticky;top:100px}
-    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
-    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
-    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
-    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
-    .article-sidebar__toc a:hover{color:var(--color-primary)}
-
-    .code-block{background:#0d1117;border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:1.5rem;margin:1.75rem 0;overflow-x:auto;position:relative}
-    .code-block__label{font-size:.72rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;display:block}
-    .code-block pre{margin:0;font-family:'Courier New',monospace;font-size:.82rem;line-height:1.7;color:#e6edf3;white-space:pre;overflow-x:auto}
-    .code-block .kw{color:#ff7b72}
-    .code-block .str{color:#a5d6ff}
-    .code-block .prop{color:#79c0ff}
-    .code-block .val{color:#a5d6ff}
-    .code-block .cmt{color:#8b949e;font-style:italic}
-
-    .prop-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.88rem}
-    .prop-table th{background:rgba(0,230,118,.08);color:var(--color-primary);font-weight:700;text-align:left;padding:.65rem 1rem;border-bottom:1px solid rgba(0,230,118,.2)}
-    .prop-table td{padding:.6rem 1rem;border-bottom:1px solid rgba(255,255,255,.05);color:var(--color-text);vertical-align:top;line-height:1.5}
-    .prop-table tr:last-child td{border-bottom:none}
-    .prop-table .badge{display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em}
-    .badge--required{background:rgba(255,82,82,.15);color:#ff5252}
-    .badge--recommended{background:rgba(0,230,118,.12);color:var(--color-primary)}
-    .badge--advanced{background:rgba(121,192,255,.12);color:#79c0ff}
-
-    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}.prop-table{font-size:.78rem}.prop-table th,.prop-table td{padding:.5rem .6rem}}
-  </style>
+  <link rel="stylesheet" href="/assets/css/v2026.css">
+  <link rel="stylesheet" href="/assets/css/v2026-article.css">
 
   <script type="application/ld+json">
   {
@@ -171,37 +88,74 @@
   ]}
   </script>
 </head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Aller au contenu</a>
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
-
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Agence web à Montréal" width="84" height="48" loading="eager">
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
       </a>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <div class="nav__item">
-          <a href="/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/creation-site.html" class="nav__submenu-link">Création de sites web</a>
-            <a href="/seo.html" class="nav__submenu-link">Référencement SEO</a>
-            <a href="/marketing-digital.html" class="nav__submenu-link">Marketing digital</a>
+      <p class="topbar__msg">S'arrêter pour mieux repartir&nbsp;: <strong>on audite votre site gratuitement.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="brand" aria-label="NEXTIWEB accueil">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Agence web à Montréal" width="84" height="48">
+        NEXTIWEB
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <div class="nav__group">
+          <a href="/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/creation-site.html">Création de sites web</a>
+            <a href="/seo.html">Référencement SEO</a>
+            <a href="/marketing-digital.html">Marketing digital</a>
+            <a href="/visibilite-ia.html">Visibilité IA</a>
           </div>
         </div>
-        <a href="/secteurs.html" class="nav__link">Secteurs</a>
-        <a href="/ressources.html" class="nav__link">Ressources</a>
-        <a href="/blog/" class="nav__link">Blog</a>
-        <a href="/a-propos.html" class="nav__link">À propos</a>
-        <a href="/contact.html" class="nav__link nav__link--cta">Demander mon audit gratuit</a>
+        <a href="/secteurs.html">Secteurs</a>
+        <a href="/ressources.html">Ressources</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+        <a href="/a-propos.html">À propos</a>
+        <a href="/contact.html" class="btn btn--primary nav__cta">Je veux mon audit gratuit</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Changer de thème"></button>
+      <div class="lang" aria-label="Choix de langue">
+        <a href="/blog/dentistes/schema-dentist-balisage-ia.html" class="is-active" aria-current="page">FR</a>
+        <a href="/en/blog/dentists/schema-dentist-ai-visibility.html" hreflang="en">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Menu mobile">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Fermer">×</button>
+    </div>
+    <a href="/services.html">Services</a>
+    <a href="/creation-site.html">— Création de sites web</a>
+    <a href="/seo.html">— Référencement SEO</a>
+    <a href="/marketing-digital.html">— Marketing digital</a>
+    <a href="/secteurs.html">Secteurs</a>
+    <a href="/ressources.html">Ressources</a>
+    <a href="/blog/" aria-current="page">Blog</a>
+    <a href="/a-propos.html">À propos</a>
+    <a href="/contact.html" class="btn btn--primary" style="margin-top:1rem">Je veux mon audit gratuit</a>
+  </aside>
 
   <main id="main">
 
@@ -225,7 +179,7 @@
     </div>
 
     <!-- HERO ARTICLE -->
-    <div class="section section--dark">
+    <section class="section">
       <div class="container">
         <div class="article-hero">
           <p class="article-hero__kicker">
@@ -246,7 +200,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ARTICLE CONTENT -->
     <section class="section">
@@ -301,60 +255,62 @@
             <h2 id="proprietes-obligatoires">Les propriétés obligatoires — ce que Google exige</h2>
             <p>Un Schema Dentist minimal doit comporter les propriétés suivantes pour être valide aux yeux de Google et pour déclencher des améliorations dans les résultats de recherche :</p>
 
-            <table class="prop-table">
-              <thead>
-                <tr>
-                  <th>Propriété</th>
-                  <th>Type</th>
-                  <th>Description</th>
-                  <th>Statut</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>@type</code></td>
-                  <td>Text</td>
-                  <td>Toujours <code>"Dentist"</code></td>
-                  <td><span class="badge badge--required">Requis</span></td>
-                </tr>
-                <tr>
-                  <td><code>name</code></td>
-                  <td>Text</td>
-                  <td>Nom exact de la clinique tel qu'il apparaît sur Google Maps et GBP</td>
-                  <td><span class="badge badge--required">Requis</span></td>
-                </tr>
-                <tr>
-                  <td><code>address</code></td>
-                  <td>PostalAddress</td>
-                  <td>Adresse complète — numéro, rue, ville, province, code postal, pays</td>
-                  <td><span class="badge badge--required">Requis</span></td>
-                </tr>
-                <tr>
-                  <td><code>telephone</code></td>
-                  <td>Text</td>
-                  <td>Numéro avec indicatif régional, format E.164 recommandé</td>
-                  <td><span class="badge badge--required">Requis</span></td>
-                </tr>
-                <tr>
-                  <td><code>url</code></td>
-                  <td>URL</td>
-                  <td>URL canonique de votre site</td>
-                  <td><span class="badge badge--required">Requis</span></td>
-                </tr>
-                <tr>
-                  <td><code>openingHours</code></td>
-                  <td>Text</td>
-                  <td>Horaires au format standard Schema (ex. <code>Mo-Fr 08:00-17:00</code>)</td>
-                  <td><span class="badge badge--required">Requis</span></td>
-                </tr>
-                <tr>
-                  <td><code>geo</code></td>
-                  <td>GeoCoordinates</td>
-                  <td>Latitude et longitude exactes (depuis Google Maps)</td>
-                  <td><span class="badge badge--recommended">Recommandé</span></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Propriété</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Statut</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>@type</code></td>
+                    <td>Text</td>
+                    <td>Toujours <code>"Dentist"</code></td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,82,82,.15);color:#ff5252">Requis</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>name</code></td>
+                    <td>Text</td>
+                    <td>Nom exact de la clinique tel qu'il apparaît sur Google Maps et GBP</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,82,82,.15);color:#ff5252">Requis</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>address</code></td>
+                    <td>PostalAddress</td>
+                    <td>Adresse complète — numéro, rue, ville, province, code postal, pays</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,82,82,.15);color:#ff5252">Requis</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>telephone</code></td>
+                    <td>Text</td>
+                    <td>Numéro avec indicatif régional, format E.164 recommandé</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,82,82,.15);color:#ff5252">Requis</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>url</code></td>
+                    <td>URL</td>
+                    <td>URL canonique de votre site</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,82,82,.15);color:#ff5252">Requis</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>openingHours</code></td>
+                    <td>Text</td>
+                    <td>Horaires au format standard Schema (ex. <code>Mo-Fr 08:00-17:00</code>)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,82,82,.15);color:#ff5252">Requis</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>geo</code></td>
+                    <td>GeoCoordinates</td>
+                    <td>Latitude et longitude exactes (depuis Google Maps)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(0,230,118,.12);color:var(--green)">Recommandé</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <div class="callout">
               <strong>Cohérence NAP absolue</strong>
@@ -366,62 +322,64 @@
             <h2 id="proprietes-avancees">Les propriétés avancées pour maximiser la citabilité IA</h2>
             <p>C'est ici que la majorité des cabinets dentaires laissent de la visibilité sur la table. Les propriétés avancées ne sont pas techniquement requises par Google pour valider le Schema — mais elles sont <strong>déterminantes pour être cité par les IA génératives</strong>, qui s'en servent pour répondre aux requêtes précises des patients.</p>
 
-            <table class="prop-table">
-              <thead>
-                <tr>
-                  <th>Propriété</th>
-                  <th>Description</th>
-                  <th>Impact IA</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>medicalSpecialty</code></td>
-                  <td>Spécialité dentaire (ex. Orthodontie, Endodontie, Pédiatrie)</td>
-                  <td><span class="badge badge--advanced">Très élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>availableService</code></td>
-                  <td>Liste des services — détartrage, blanchiment, implant, urgence dentaire, etc.</td>
-                  <td><span class="badge badge--advanced">Très élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>knowsLanguage</code></td>
-                  <td>Langues parlées par l'équipe (français, anglais, espagnol, arabe…)</td>
-                  <td><span class="badge badge--advanced">Très élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>priceRange</code></td>
-                  <td>Fourchette de prix ($, $$, $$$) — information attendue par les IA</td>
-                  <td><span class="badge badge--recommended">Élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>paymentAccepted</code></td>
-                  <td>Modes de paiement (carte de crédit, débit, assurances)</td>
-                  <td><span class="badge badge--recommended">Élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>hasMap</code></td>
-                  <td>URL Google Maps de votre fiche</td>
-                  <td><span class="badge badge--recommended">Moyen</span></td>
-                </tr>
-                <tr>
-                  <td><code>sameAs</code></td>
-                  <td>URLs de vos profils GBP, Facebook, Instagram, Pages Jaunes</td>
-                  <td><span class="badge badge--recommended">Élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>potentialAction</code></td>
-                  <td>Lien direct de prise de rendez-vous (ReserveAction)</td>
-                  <td><span class="badge badge--advanced">Très élevé</span></td>
-                </tr>
-                <tr>
-                  <td><code>aggregateRating</code></td>
-                  <td>Note moyenne et nombre d'avis (source externe requise)</td>
-                  <td><span class="badge badge--advanced">Très élevé</span></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr>
+                    <th>Propriété</th>
+                    <th>Description</th>
+                    <th>Impact IA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>medicalSpecialty</code></td>
+                    <td>Spécialité dentaire (ex. Orthodontie, Endodontie, Pédiatrie)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(121,192,255,.12);color:#79c0ff">Très élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>availableService</code></td>
+                    <td>Liste des services — détartrage, blanchiment, implant, urgence dentaire, etc.</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(121,192,255,.12);color:#79c0ff">Très élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>knowsLanguage</code></td>
+                    <td>Langues parlées par l'équipe (français, anglais, espagnol, arabe…)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(121,192,255,.12);color:#79c0ff">Très élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>priceRange</code></td>
+                    <td>Fourchette de prix ($, $$, $$$) — information attendue par les IA</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(0,230,118,.12);color:var(--green)">Élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>paymentAccepted</code></td>
+                    <td>Modes de paiement (carte de crédit, débit, assurances)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(0,230,118,.12);color:var(--green)">Élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>hasMap</code></td>
+                    <td>URL Google Maps de votre fiche</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(0,230,118,.12);color:var(--green)">Moyen</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>sameAs</code></td>
+                    <td>URLs de vos profils GBP, Facebook, Instagram, Pages Jaunes</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(0,230,118,.12);color:var(--green)">Élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>potentialAction</code></td>
+                    <td>Lien direct de prise de rendez-vous (ReserveAction)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(121,192,255,.12);color:#79c0ff">Très élevé</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>aggregateRating</code></td>
+                    <td>Note moyenne et nombre d'avis (source externe requise)</td>
+                    <td><span style="display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .45rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.05em;background:rgba(121,192,255,.12);color:#79c0ff">Très élevé</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <p>La propriété <code>availableService</code> mérite une attention particulière. Chaque service que vous listez est un terme sur lequel une IA peut vous citer. Si un patient demande à ChatGPT « Qui fait des implants dentaires à Villeray ? », seuls les cabinets ayant explicitement déclaré <code>"name": "Implants dentaires"</code> dans leur Schema seront identifiés avec certitude.</p>
 
@@ -430,9 +388,8 @@
             <h2 id="code-json-ld">Code JSON-LD complet — exemple clinique montréalaise bilingue</h2>
             <p>Voici un exemple réaliste et complet pour une clinique dentaire bilingue (français/anglais) à Montréal. Remplacez les valeurs par celles de votre clinique. Ce code se place dans la balise <code>&lt;head&gt;</code> de chaque page de votre site.</p>
 
-            <div class="code-block">
-              <span class="code-block__label">JSON-LD — Schema Dentist complet (copier-coller prêt)</span>
-              <pre>&lt;script type="application/ld+json"&gt;
+            <p style="font-size:.74rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem">JSON-LD — Schema Dentist complet (copier-coller prêt)</p>
+            <pre style="background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-radius:.7rem;padding:1.25rem 1.5rem;overflow-x:auto;font-size:.82rem;line-height:1.7;color:var(--color-text);margin-bottom:1.75rem;"><code>&lt;script type="application/ld+json"&gt;
 {
   "@context": "https://schema.org",
   "@type": "Dentist",
@@ -596,8 +553,7 @@
     }
   ]
 }
-&lt;/script&gt;</pre>
-            </div>
+&lt;/script&gt;</code></pre>
 
             <div class="callout">
               <strong>Comment trouver votre CID Google Maps</strong>
@@ -637,9 +593,8 @@
             <p>Le Schema <code>FAQPage</code> est le complément idéal du Schema Dentist. Il permet de déclarer formellement les questions fréquentes de vos patients — avec leurs réponses — dans un format que les IA lisent directement. C'est le mécanisme le plus efficace pour apparaître dans les réponses aux questions conversationnelles IA.</p>
             <p>Quand ChatGPT ou Google AI Overviews reçoit une question comme « Est-ce que les implants dentaires font mal ? », il cherche des sources structurées qui ont répondu explicitement à cette question. Un cabinet avec un Schema FAQPage couvrant 10 questions de ce type est nettement mieux positionné pour être cité — et cité précisément — qu'un cabinet dont le contenu FAQ n'est présent qu'en HTML.</p>
 
-            <div class="code-block">
-              <span class="code-block__label">JSON-LD — Schema FAQPage (ajouter après le Schema Dentist)</span>
-              <pre>&lt;script type="application/ld+json"&gt;
+            <p style="font-size:.74rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem">JSON-LD — Schema FAQPage (ajouter après le Schema Dentist)</p>
+            <pre style="background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-radius:.7rem;padding:1.25rem 1.5rem;overflow-x:auto;font-size:.82rem;line-height:1.7;color:var(--color-text);margin-bottom:1.75rem;"><code>&lt;script type="application/ld+json"&gt;
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -670,14 +625,14 @@
     }
   ]
 }
-&lt;/script&gt;</pre>
-            </div>
+&lt;/script&gt;</code></pre>
 
             <p>Adaptez les questions à votre réalité clinique. Les meilleures questions pour la citabilité IA sont celles qui correspondent aux requêtes conversationnelles réelles de vos patients&nbsp;: langues parlées, assurances acceptées, disponibilité urgences, fourchette de prix, spécialités.</p>
 
+            <!-- CTA inline -->
             <div class="article-cta-inline">
-              <p>Votre Schema Dentist est-il complet et correctement indexé ? Obtenez un audit technique de vos données structurées — rapport PDF personnalisé sous 24&nbsp;h.</p>
-              <a href="/cliniques-dentaires.html" class="btn btn--primary">Découvrir nos services pour dentistes →</a>
+              <p>Votre Schema Dentist est-il complet et correctement indexé ? On regarde vos données structurées avec vous.</p>
+              <a href="/cliniques-dentaires.html" class="btn btn--primary">Voir nos services pour cliniques dentaires →</a>
             </div>
 
             <hr>
@@ -723,68 +678,58 @@
 
             <!-- FAQ -->
             <h2 id="faq">Questions fréquentes</h2>
-            <div class="article-faq" role="list">
-
-              <div class="article-faq__item" role="listitem">
+            <div class="article-faq">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Combien de temps faut-il pour qu'une IA cite ma clinique après l'installation du Schema Dentist ?</span>
+                  <p class="article-faq__q">Combien de temps faut-il pour qu'une IA cite ma clinique après l'installation du Schema Dentist ?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Le délai varie selon les IA. Google AI Overviews peut intégrer le Schema dès la prochaine exploration de votre site, soit entre quelques jours et 4 semaines. Pour ChatGPT et Perplexity, le délai est généralement de 4 à 12 semaines. L'élément déterminant n'est pas uniquement le Schema&nbsp;: la clinique doit aussi avoir une présence web cohérente (GBP, citations NAP, avis) pour que les IA la jugent crédible. Le Schema Dentist est le signal formel qui rend la citation possible&nbsp;; la crédibilité globale du site est ce qui la rend probable.</p>
               </div>
-
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">ChatGPT peut-il vraiment recommander un dentiste en particulier à un patient ?</span>
+                  <p class="article-faq__q">ChatGPT peut-il vraiment recommander un dentiste en particulier à un patient ?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Oui. Quand un utilisateur demande « Quel est un bon dentiste parlant français et espagnol à Rosemont qui accepte les assurances ? », ChatGPT et d'autres IA génératives répondent en citant des cabinets spécifiques — en priorité ceux dont le site fournit des données structurées claires avec <code>knowsLanguage</code>, <code>paymentAccepted</code> et <code>addressLocality</code>. Les cabinets sans Schema sont soit absents de la réponse, soit cités vaguement. En 2026, cette recommandation IA est en forte croissance comme point d'entrée dans le parcours patient.</p>
               </div>
-
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Le Schema Dentist remplace-t-il le SEO classique ?</span>
+                  <p class="article-faq__q">Le Schema Dentist remplace-t-il le SEO classique ?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Non, le Schema Dentist complète le SEO — il ne le remplace pas. Le SEO classique reste indispensable pour le classement dans les résultats organiques Google. Le Schema est une couche additionnelle qui améliore la compréhension de votre cabinet par les moteurs et les IA. Il peut contribuer à déclencher des rich results dans Google et rendre votre clinique citable par les IA génératives — un canal que le SEO seul ne couvre pas. Les cabinets les plus visibles en 2026 combinent les deux.</p>
               </div>
-
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Combien coûte l'installation du Schema Dentist ?</span>
+                  <p class="article-faq__q">Combien coûte l'installation du Schema Dentist ?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">L'installation du Schema Dentist est une intervention technique ponctuelle — en général 1 à 2 heures de travail pour un développeur, sur WordPress ou site custom. C'est un investissement unique&nbsp;: une fois le code en place, il fonctionne indéfiniment. Seules les mises à jour (horaires, nouveaux services, nouvelles langues) nécessitent des ajustements ponctuels. C'est l'un des meilleurs retours sur investissement en visibilité digitale pour un cabinet dentaire.</p>
               </div>
-
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Le Schema Dentist s'installe-t-il différemment sur WordPress vs un site custom ?</span>
+                  <p class="article-faq__q">Le Schema Dentist s'installe-t-il différemment sur WordPress vs un site custom ?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">La logique est identique — c'est un bloc JSON-LD à injecter dans le <code>&lt;head&gt;</code> — mais la méthode diffère. Sur WordPress, utilisez RankMath (Local Business &gt; Dentist), Yoast avec l'extension locale, ou ajoutez le code dans <code>functions.php</code>. Sur un site HTML statique, collez le JSON-LD directement dans le <code>&lt;head&gt;</code>. Sur React ou Next.js, injectez-le via <code>next/head</code> ou react-helmet. Le code fourni dans cet article est universel — seules les valeurs changent selon votre clinique.</p>
               </div>
-
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Comment vérifier que mon Schema Dentist est correctement reconnu par Google ?</span>
+                  <p class="article-faq__q">Comment vérifier que mon Schema Dentist est correctement reconnu par Google ?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Deux outils officiels gratuits&nbsp;: le <strong>Google Rich Results Test</strong> (search.google.com/test/rich-results) pour un test immédiat de votre URL, et le <strong>Schema Markup Validator</strong> (validator.schema.org) pour la conformité technique. Une fois en ligne, <strong>Google Search Console</strong> (section Améliorations) affichera dans les jours suivants si Google a détecté et validé vos données structurées, avec les éventuelles erreurs à corriger.</p>
               </div>
-
             </div>
 
-            <!-- CTA agence -->
-            <div class="callout" style="border-left-color:#00e676;background:rgba(0,230,118,.05);margin-top:2.5rem;">
-              <strong>Vous préférez qu'on s'en charge ?</strong>
-              C'est exactement ce que fait NEXTIWEB. Pendant que vous soignez vos patients, nous optimisons votre visibilité locale — GBP, avis, Schema, citations NAP. <a href="/cliniques-dentaires.html" style="color:#00e676;">Découvrir nos services pour cliniques dentaires →</a>
-            </div>
+            <hr>
 
-            <!-- CTA finale -->
-            <div class="article-cta-inline" style="margin-top:3rem">
+            <!-- CTA final -->
+            <div class="article-cta-inline">
               <p><strong>Votre clinique est-elle prête pour l'ère des IA&nbsp;?</strong> Obtenez un audit complet de votre visibilité dentaire — Schema Dentist, GBP, avis, pages-quartier, citations NAP — rapport PDF personnalisé sous 24&nbsp;h, offert au JDIQ 2026.</p>
-              <a href="/cliniques-dentaires.html" class="btn btn--primary">Découvrir nos services pour dentistes →</a>
+              <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit →</a>
+              <p style="margin-top:.75rem;font-size:.8rem;color:rgba(255,255,255,.45);">On ne vous vend rien au téléphone — on commence par vous aider à y voir clair.</p>
             </div>
 
           </div><!-- /article-body -->
@@ -808,11 +753,6 @@
               </ul>
             </div>
             <div class="article-sidebar__box">
-              <p class="article-sidebar__title">Audit gratuit</p>
-              <p style="font-size:.85rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1rem">Schema, GBP, avis, citations NAP — rapport PDF personnalisé sous 24&nbsp;h.</p>
-              <a href="/cliniques-dentaires.html" class="btn btn--primary" style="display:block;text-align:center;color:#000!important;font-weight:700">Demander l'audit →</a>
-            </div>
-            <div class="article-sidebar__box">
               <p class="article-sidebar__title">Article pilier</p>
               <ul class="article-sidebar__toc">
                 <li><a href="/blog/dentistes/local-pack-google-cabinets-dentaires.html">Local Pack Google — les 5 leviers SEO</a></li>
@@ -833,93 +773,67 @@
       </div>
     </section>
 
+    <!-- CTA FINAL -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
+      </div>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
-        <address class="footer__address">
-          Montréal, Québec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB sur LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Agence web spécialisée en création de sites web, SEO, marketing digital et visibilité IA à Montréal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montréal, Québec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/">Accueil</a></li><li><a href="/services.html">Services</a></li><li><a href="/secteurs.html">Secteurs</a></li><li><a href="/ressources.html">Ressources</a></li><li><a href="/blog/">Blog</a></li><li><a href="/a-propos.html">À propos</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/creation-site.html">Création de sites web</a></li><li><a href="/seo.html">Référencement SEO</a></li><li><a href="/marketing-digital.html">Marketing digital</a></li><li><a href="/visibilite-ia.html">Visibilité IA</a></li></ul></div>
+        <div><h4>Secteurs</h4><ul><li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li><li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li><li><a href="/avocats.html">Avocats</a></li><li><a href="/construction-renovation.html">Construction</a></li><li><a href="/secteurs.html">Autres secteurs</a></li></ul></div>
+        <div><h4>Zones</h4><ul><li><a href="/zones-desservies/montreal.html">Montréal</a></li><li><a href="/zones-desservies/quebec.html">Québec</a></li><li><a href="/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/secteurs.html">Secteurs</a></li>
-          <li><a href="/ressources.html">Ressources</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/a-propos.html">À propos</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/creation-site.html">Création de sites web</a></li>
-          <li><a href="/seo.html">Référencement SEO</a></li>
-          <li><a href="/marketing-digital.html">Marketing digital</a></li>
-          <li><a href="/visibilite-ia.html">Visibilité IA</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Secteurs</h3>
-        <ul class="footer__list">
-          <li><a href="/cliniques-dentaires.html">Cliniques dentaires</a></li>
-          <li><a href="/courtiers-immobiliers.html">Courtiers immobiliers</a></li>
-          <li><a href="/avocats.html">Avocats</a></li>
-          <li><a href="/construction-renovation.html">Construction et rénovation</a></li>
-          <li><a href="/secteurs.html">Autres secteurs</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Zones desservies</h3>
-        <ul class="footer__list">
-          <li><a href="/zones-desservies/montreal.html">Montréal</a></li>
-          <li><a href="/zones-desservies/quebec.html">Québec</a></li>
-          <li><a href="/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curieux de voir notre méthode en action ? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explorez nos concepts sectoriels sur <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <p class="footer__studio">Curieux de voir notre méthode en action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explorez nos concepts sectoriels sur <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Consultez notre <a href="/politique-confidentialite.html">politique de confidentialité</a>, notre <a href="/politique-cookies.html">politique de cookies</a> et nos <a href="/mentions-legales.html">mentions légales</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Gérer mes cookies</button></p>
     </div>
   </footer>
 
-  <!-- Barre flottante -->
+  <!-- FLOAT BAR -->
   <div class="float-bar">
-    <a href="/cliniques-dentaires.html" class="audit-pill" aria-label="Demander un audit gratuit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+    <a href="/contact.html" class="audit-pill" aria-label="Demander mon audit gratuit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
       Audit gratuit
     </a>
-    <a href="https://wa.me/15147910591" class="whatsapp-pill" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <a href="https://wa.me/15147910591?text=Bonjour%2C%20je%20voudrais%20plus%20d%27informations%20sur%20vos%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
     </a>
   </div>
 
-  <!-- FAQ JS -->
-  <script>
-  document.querySelectorAll('.article-faq__btn').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var item=this.closest('.article-faq__item');
-      var isOpen=item.classList.contains('is-open');
-      document.querySelectorAll('.article-faq__item').forEach(function(i){i.classList.remove('is-open');i.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
-      if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
-    });
-  });
-  </script>
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Gestion du consentement aux cookies">
+    <h2>Préférences de cookies</h2>
+    <p>Nous utilisons des cookies essentiels au fonctionnement du site. Les cookies de mesure et de marketing ne sont activés qu'avec votre consentement, conformément à la Loi 25. <a href="/politique-confidentialite.html">Confidentialité</a> · <a href="/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Cookies essentiels (obligatoires)</label>
+      <label><input type="checkbox" id="cAnalytics"> Cookies de mesure d'audience</label>
+      <label><input type="checkbox" id="cMarketing"> Cookies marketing</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Enregistrer mes choix</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Tout accepter</button>
+      <button class="btn btn--ghost" data-consent="none">Tout refuser</button>
+      <button class="btn btn--ghost" data-consent="custom">Personnaliser</button>
+    </div>
+  </div>
 
-  <script src="/assets/js/main.min.js" defer></script>
-
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

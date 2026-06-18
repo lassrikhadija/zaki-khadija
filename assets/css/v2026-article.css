@@ -63,6 +63,9 @@
 .article-body a:hover{text-decoration-color:var(--green)}
 .article-body hr{border:none;border-top:1px solid var(--border);margin:2.75rem 0}
 .article-body blockquote{margin:1.75rem 0;padding:.4rem 0 .4rem 1.3rem;border-left:3px solid var(--green);color:var(--muted);font-style:italic}
+.article-body code{background:var(--surface-2);border:1px solid var(--border);border-radius:.35rem;padding:.1rem .42rem;font-size:.86em;font-family:'JetBrains Mono','Courier New',monospace;color:var(--green-soft)}
+.article-body pre{background:rgba(0,0,0,.45);border:1px solid rgba(0,230,118,.2);border-radius:.75rem;padding:1.3rem 1.4rem;overflow-x:auto;margin:1.7rem 0}
+.article-body pre code{background:none;border:none;padding:0;font-size:.82rem;color:var(--green-soft);font-family:'JetBrains Mono','Courier New',monospace;line-height:1.65}
 
 /* ---------- Encadré « Le saviez-vous » ---------- */
 .callout{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:.7rem;padding:1.15rem 1.45rem;margin:1.85rem 0;font-size:.95rem;line-height:1.7;color:var(--muted)}

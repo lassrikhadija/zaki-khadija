@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
@@ -39,54 +39,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
-
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/v2026.css">
+  <link rel="stylesheet" href="/assets/css/v2026-article.css">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <style>
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
-
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-
-    .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:2.5rem;align-items:start}
-    @media(max-width:960px){.blog-layout{grid-template-columns:1fr}}
-    .blog-sidebar{position:sticky;top:2rem}
-    .sidebar-widget{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem}
-    .sidebar-widget__title{font-size:.9rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.07em;margin-bottom:1rem}
-    .toc-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}
-    .toc-list a{color:var(--color-text-muted);text-decoration:none;font-size:.85rem;line-height:1.45;transition:color .2s;display:block}
-    .toc-list a:hover{color:var(--color-primary)}
-    .sidebar-cta{background:linear-gradient(135deg,rgba(0,230,118,.12),rgba(0,230,118,.04));border:1.5px solid rgba(0,230,118,.25);border-radius:16px;padding:1.5rem;text-align:center}
-    .sidebar-cta__title{font-size:1rem;font-weight:700;color:var(--color-text);margin-bottom:.75rem;line-height:1.4}
-    .sidebar-cta__text{font-size:.85rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.6}
-    .sidebar-cta .btn{width:100%;text-align:center;display:block}
-
-    .agency-callout{background:rgba(0,230,118,.06);border-left:4px solid var(--color-primary);border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin:2.5rem 0;font-size:.95rem;color:var(--color-text-muted);line-height:1.65}
-    .agency-callout strong{color:var(--color-text)}
-
-    .faq-list{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem}
-    .faq-item{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:12px;padding:1.25rem 1.5rem}
-    .faq-item__question{font-size:.97rem;font-weight:700;color:var(--color-text);margin-bottom:.6rem}
-    .faq-item__answer{font-size:.875rem;color:var(--color-text-muted);line-height:1.7;margin:0}
-  </style>
 
   <!-- Schema.org: BreadcrumbList -->
   <script type="application/ld+json">
@@ -188,61 +150,94 @@
   }
   </script>
 </head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Skip to content</a>
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <div class="top-bar">
-    <div class="container top-bar__inner">
-      <p class="top-bar__message" id="top-bar-message"></p>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+      </a>
+      <p class="topbar__msg">Stop to restart stronger&nbsp;: <strong>we audit your website for free.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
     </div>
   </div>
 
-  <header class="site-header">
+  <!-- HEADER -->
+  <header class="header" id="header">
     <div class="container header__inner">
-      <a href="/en/index.html" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+      <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        NEXTIWEB
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav__item">
-          <a href="/en/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/en/creation-site.html" class="nav__submenu-link">Website Design</a>
-            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
-            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital Marketing</a>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__group">
+          <a href="/en/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/en/creation-site.html">Website Design</a>
+            <a href="/en/seo.html">SEO</a>
+            <a href="/en/marketing-digital.html">Digital Marketing</a>
+            <a href="/en/visibilite-ia.html">AI Visibility</a>
           </div>
         </div>
-        <a href="/en/secteurs.html" class="nav__link">Industries</a>
-        <a href="/en/ressources.html" class="nav__link">Resources</a>
-        <a href="/en/blog/" class="nav__link">Blog</a>
-        <a href="/en/a-propos.html" class="nav__link">About</a>
-        <a href="/en/lawyers.html" class="nav__link nav__link--cta">Get My Free Audit</a>
+        <a href="/en/secteurs.html">Industries</a>
+        <a href="/en/ressources.html">Resources</a>
+        <a href="/en/blog/" aria-current="page">Blog</a>
+        <a href="/en/a-propos.html">About</a>
+        <a href="/en/contact.html" class="btn btn--primary nav__cta">Get My Free Audit</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+      <div class="lang" aria-label="Language">
+        <a href="/blog/avocats/" hreflang="fr">FR</a>
+        <a href="/en/blog/lawyers/" class="is-active" aria-current="page">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close">×</button>
+    </div>
+    <a href="/en/services.html">Services</a>
+    <a href="/en/creation-site.html">— Website Design</a>
+    <a href="/en/seo.html">— SEO</a>
+    <a href="/en/marketing-digital.html">— Digital Marketing</a>
+    <a href="/en/secteurs.html">Industries</a>
+    <a href="/en/ressources.html">Resources</a>
+    <a href="/en/blog/" aria-current="page">Blog</a>
+    <a href="/en/a-propos.html">About</a>
+    <a href="/en/contact.html" class="btn btn--primary" style="margin-top:1rem">Get My Free Audit</a>
+  </aside>
+
   <main id="main">
 
-    <!-- BREADCRUMB -->
+    <!-- FIL D'ARIANE -->
     <div class="breadcrumb-bar">
       <div class="container">
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb__item">
-              <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                Home
-              </a>
-            </li>
-            <li class="breadcrumb__item">
-              <a href="/en/blog/" class="breadcrumb__link">Blog</a>
-            </li>
-            <li class="breadcrumb__item">
-              <span class="breadcrumb__current">Law Firms</span>
-            </li>
+          <li class="breadcrumb__item">
+            <a href="/en/" class="breadcrumb__link breadcrumb__link--home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              NEXTIWEB
+            </a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="/en/blog/" class="breadcrumb__link">Blog</a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current">Law Firms</span>
+          </li>
           </ol>
         </nav>
       </div>
@@ -251,257 +246,167 @@
     <!-- HERO -->
     <section class="blog-hero section">
       <div class="container">
-        <span class="blog-hero__kicker">Category &middot; Law Firms</span>
+        <span class="blog-hero__kicker">Category · Law Firms</span>
         <h1 class="blog-hero__title">
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#5cd8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
           Online Visibility Guides for Quebec Law Firms
         </h1>
-        <p class="blog-hero__subtitle">Six practical guides to help your law firm rank higher on Google, collect more client reviews, and dominate local legal searches &mdash; without guesswork.</p>
-        <p style="font-size:.85rem;color:var(--color-text-muted);margin-top:.75rem;">Published June 2, 2026 &middot; By <strong style="color:var(--color-text);">Khadija AitLassri</strong>, NEXTIWEB</p>
+        <p class="blog-hero__subtitle">Six practical guides to help your law firm rank higher on Google, collect more client reviews, and dominate local legal searches — without guesswork.</p>
+        <p style="font-size:.85rem;color:var(--color-text-muted);margin-top:.75rem;">Published June 2, 2026 · By <strong style="color:var(--color-text);">Khadija AitLassri</strong>, NEXTIWEB</p>
       </div>
     </section>
 
-    <!-- MAIN CONTENT + SIDEBAR -->
-    <section class="section">
+    <!-- ARTICLES LIST -->
+    <section class="blog-posts section">
       <div class="container">
-        <div class="blog-layout">
+        <div class="projects">
 
-          <!-- ARTICLES LIST -->
-          <div class="blog-main">
-            <p style="font-size:.95rem;color:var(--color-text-muted);line-height:1.75;margin-bottom:2rem;">
-              Quebec law firms operate in a highly competitive local search landscape. Prospective clients consistently turn to Google before contacting a lawyer, making online visibility one of the most decisive factors in client acquisition. This series of guides covers the essential pillars: Local Pack rankings, Google Business Profile optimization, review management under Bar ethics rules, specialty and neighbourhood-level SEO, structured data for AI search, and legal directory citation consistency.
-            </p>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 · Local SEO</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Google Local Pack for Law Firms: How to Appear When Clients Search for Legal Help</h2>
+            <p class="project-card__text">Understand the three signals that drive Local Pack rankings — proximity, relevance, and prominence — and apply a step-by-step approach to move your firm into the top three Google results for "lawyer near me" searches in your area.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/google-local-pack-lawyers.html">Read the guide →</a></p>
+          </article>
 
-            <div class="projects">
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 7, 2026 · Authority &amp; E-E-A-T</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">E-E-A-T for Lawyers: The Signals That Make People Trust You Online</h2>
+            <p class="project-card__text">Law is a sensitive (YMYL) topic: Google and AI demand proof of credibility. Bar-credentialed bios, authorship, verifiable recognition, transparency — the signals we build.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/eeat-authority-expertise-law-firm.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 &middot; Local SEO</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Google Local Pack for Law Firms: How to Appear When Clients Search for Legal Help</h2>
-                <p class="project-card__text">Understand the three signals that drive Local Pack rankings &mdash; proximity, relevance, and prominence &mdash; and apply a step-by-step approach to move your firm into the top three Google results for "lawyer near me" searches in your area.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/google-local-pack-lawyers.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 7, 2026 · Compliance</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">A Law Firm Website That Attracts Clients — Without Crossing the Bar's Line</h2>
+            <p class="project-card__text">No guaranteed results, no unverifiable superlatives: how we build a law firm site that is persuasive AND compliant with the Code of Professional Conduct, Law 25 included.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 7, 2026 &middot; Authority &amp; E-E-A-T</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">E-E-A-T for Lawyers: The Signals That Make People Trust You Online</h2>
-                <p class="project-card__text">Law is a sensitive (YMYL) topic: Google and AI demand proof of credibility. Bar-credentialed bios, authorship, verifiable recognition, transparency — the signals we build.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/eeat-authority-expertise-law-firm.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 6, 2026 · Content &amp; SEO</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Your Law Firm's Website Is About You — Your Clients Want Answers</h2>
+            <p class="project-card__text">Why answering real legal questions ("how much does a divorce cost", "what to do if dismissed") attracts cases, builds your credibility and gets you cited by AI.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/educational-content-client-questions-law-firm.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 7, 2026 &middot; Compliance</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">A Law Firm Website That Attracts Clients — Without Crossing the Bar's Line</h2>
-                <p class="project-card__text">No guaranteed results, no unverifiable superlatives: how we build a law firm site that is persuasive AND compliant with the Code of Professional Conduct, Law 25 included.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 3, 2026 · Practice Management</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Reduce No-Shows (Missed Consultations) in Your Law Firm</h2>
+            <p class="project-card__text">Online booking, reminders, confirmation, consultation deposit and an intake form — the 5 web levers to fill your consultation schedule, within the Barreau's rules.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/reduce-no-shows-law-firm.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 6, 2026 &middot; Content &amp; SEO</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Your Law Firm's Website Is About You — Your Clients Want Answers</h2>
-                <p class="project-card__text">Why answering real legal questions ("how much does a divorce cost", "what to do if dismissed") attracts cases, builds your credibility and gets you cited by AI.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/educational-content-client-questions-law-firm.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 3, 2026 · Conversion</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Turn Your Website Visitors into Consultations</h2>
+            <p class="project-card__text">The 7 elements that make a client book a consultation: visible action, area of law, clear fees, confidentiality, speed, mobile first.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/convert-website-visitors-legal-consultations.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 3, 2026 &middot; Practice Management</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Reduce No-Shows (Missed Consultations) in Your Law Firm</h2>
-                <p class="project-card__text">Online booking, reminders, confirmation, consultation deposit and an intake form — the 5 web levers to fill your consultation schedule, within the Barreau's rules.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/reduce-no-shows-law-firm.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 · Google Business Profile</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Google Business Profile for Lawyers: The Profile That Generates Client Consultations</h2>
+            <p class="project-card__text">Claim and fully optimize your Google Business Profile: choose the right legal categories, write a compelling description, add practice areas and photos, post regular updates, and set up consultation links to convert profile views into booked appointments.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/google-business-profile-lawyers.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 3, 2026 &middot; Conversion</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Turn Your Website Visitors into Consultations</h2>
-                <p class="project-card__text">The 7 elements that make a client book a consultation: visible action, area of law, clear fees, confidentiality, speed, mobile first.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/convert-website-visitors-legal-consultations.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 · Reputation Management</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Google Reviews for Law Firms: Building Trust Online Ethically</h2>
+            <p class="project-card__text">According to BrightLocal, 87% of consumers read online reviews for local businesses. Learn a compliant, repeatable system for requesting reviews from clients while respecting Barreau du Québec ethics rules, handling negative feedback professionally, and using your review volume to strengthen both local rankings and client trust.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/google-reviews-law-firms.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 &middot; Google Business Profile</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Google Business Profile for Lawyers: The Profile That Generates Client Consultations</h2>
-                <p class="project-card__text">Claim and fully optimize your Google Business Profile: choose the right legal categories, write a compelling description, add practice areas and photos, post regular updates, and set up consultation links to convert profile views into booked appointments.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/google-business-profile-lawyers.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 · Local SEO</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Specialty Pages for Lawyers: Dominate "Divorce Lawyer Montreal", "Immigration Lawyer Rosemont"</h2>
+            <p class="project-card__text">One firm homepage cannot rank for every practice area and neighbourhood. Discover how to create dedicated specialty and neighbourhood pages that capture hyper-local, high-intent queries and considerably expand your geographic and practice-area reach.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 &middot; Reputation Management</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Google Reviews for Law Firms: Building Trust Online Ethically</h2>
-                <p class="project-card__text">According to BrightLocal, 87% of consumers read online reviews for local businesses. Learn a compliant, repeatable system for requesting reviews from clients while respecting Barreau du Québec ethics rules, handling negative feedback professionally, and using your review volume to strengthen both local rankings and client trust.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/google-reviews-law-firms.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 · Structured Data &amp; AI</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">Schema LegalService: How ChatGPT and Google AI Recommend Your Law Firm</h2>
+            <p class="project-card__text">Schema.org's LegalService type helps search engines and AI tools (Google AI Overviews, ChatGPT, Perplexity) accurately understand your firm's practice areas, hours, location, and credentials. This guide walks through the exact JSON-LD implementation that significantly improves rich result eligibility and AI citation rates.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/schema-legal-service-ai-visibility.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 &middot; Local SEO</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Specialty Pages for Lawyers: Dominate "Divorce Lawyer Montreal", "Immigration Lawyer Rosemont"</h2>
-                <p class="project-card__text">One firm homepage cannot rank for every practice area and neighbourhood. Discover how to create dedicated specialty and neighbourhood pages that capture hyper-local, high-intent queries and considerably expand your geographic and practice-area reach.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html">Read the guide &rarr;</a></p>
-              </article>
+          <article class="project-card">
+            <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 · Citations &amp; Directories</p>
+            <h2 class="project-card__title" style="font-size:1.15rem;">NAP Citations for Law Firms: Key Quebec Legal Directories</h2>
+            <p class="project-card__text">Inconsistent name, address, and phone data across directories is one of the most common — and most damaging — local SEO errors for law firms. Learn which Quebec legal directories carry the most weight, how to audit your existing citations, and a practical process for maintaining consistency as your practice grows.</p>
+            <p class="project-card__meta"><a href="/en/blog/lawyers/nap-citations-legal-directories-quebec.html">Read the guide →</a></p>
+          </article>
 
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 &middot; Structured Data &amp; AI</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">Schema LegalService: How ChatGPT and Google AI Recommend Your Law Firm</h2>
-                <p class="project-card__text">Schema.org's LegalService type helps search engines and AI tools (Google AI Overviews, ChatGPT, Perplexity) accurately understand your firm's practice areas, hours, location, and credentials. This guide walks through the exact JSON-LD implementation that significantly improves rich result eligibility and AI citation rates.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/schema-legal-service-ai-visibility.html">Read the guide &rarr;</a></p>
-              </article>
-
-              <article class="project-card">
-                <p style="font-size:.75rem;color:var(--color-primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem;">June 2, 2026 &middot; Citations &amp; Directories</p>
-                <h2 class="project-card__title" style="font-size:1.15rem;">NAP Citations for Law Firms: Key Quebec Legal Directories</h2>
-                <p class="project-card__text">Inconsistent name, address, and phone data across directories is one of the most common &mdash; and most damaging &mdash; local SEO errors for law firms. Learn which Quebec legal directories carry the most weight, how to audit your existing citations, and a practical process for maintaining consistency as your practice grows.</p>
-                <p class="project-card__meta"><a href="/en/blog/lawyers/nap-citations-legal-directories-quebec.html">Read the guide &rarr;</a></p>
-              </article>
-
-            </div>
-
-            <!-- Agency callout -->
-            <div class="agency-callout">
-              <strong>Prefer we handle it?</strong> That's exactly what NEXTIWEB does. We manage local SEO, Google Business Profile optimization, review strategy, and structured data implementation for law firms across Quebec &mdash; so you can focus on your clients. <a href="/en/lawyers.html" style="color:var(--color-primary);font-weight:700;">See our law firm service &rarr;</a>
-            </div>
-
-            <!-- FAQ -->
-            <section aria-labelledby="faq-heading" style="margin-top:3rem;">
-              <h2 id="faq-heading" class="section__title" style="font-size:1.4rem;margin-bottom:.5rem;">Frequently Asked Questions</h2>
-              <p style="font-size:.9rem;color:var(--color-text-muted);margin-bottom:1.5rem;">Common questions from Quebec lawyers about online visibility and local SEO.</p>
-
-              <div class="faq-list">
-                <div class="faq-item">
-                  <p class="faq-item__question">Why is local SEO especially important for law firms in Quebec?</p>
-                  <p class="faq-item__answer">The majority of prospective clients search for legal help online before contacting a firm. According to BrightLocal, 98% of consumers used the internet to find a local business in the past year. A law firm that does not appear in Google's local pack loses a considerable share of new client inquiries to competing firms that are better positioned.</p>
-                </div>
-                <div class="faq-item">
-                  <p class="faq-item__question">What is the Google Local Pack and how can a law firm appear in it?</p>
-                  <p class="faq-item__answer">The Google Local Pack is the block of three local results that appears at the top of search results for queries like "lawyer near me" or "divorce lawyer Montreal." To appear in it, a law firm must optimize its Google Business Profile, collect regular client reviews, and maintain consistent NAP citations across legal directories.</p>
-                </div>
-                <div class="faq-item">
-                  <p class="faq-item__question">How do Google reviews affect a law firm's visibility while respecting Bar rules?</p>
-                  <p class="faq-item__answer">According to BrightLocal, 87% of consumers read online reviews for local businesses. Reviews significantly influence local rankings and client trust. Law firms can collect reviews ethically and in compliance with Barreau du Québec rules by requesting feedback without disclosing case details and by responding professionally without confirming any lawyer-client relationship.</p>
-                </div>
-                <div class="faq-item">
-                  <p class="faq-item__question">What is a specialty or neighbourhood page for lawyer SEO?</p>
-                  <p class="faq-item__answer">A specialty or neighbourhood page is a dedicated page targeting a specific practice area and geography (for example, "divorce lawyer Rosemont" or "immigration lawyer Montreal"). These pages allow a firm to rank for hyper-local, high-intent searches and considerably expand their geographic and practice-area reach without launching a new site.</p>
-                </div>
-                <div class="faq-item">
-                  <p class="faq-item__question">What is LegalService schema markup and how does it help with AI search visibility?</p>
-                  <p class="faq-item__answer">LegalService schema markup is structured data added to a law firm's website that helps search engines and AI systems (ChatGPT, Perplexity, Google AI Overviews) understand the firm's practice areas, hours, location, and credentials. Proper schema implementation significantly improves a firm's chances of appearing in AI-generated answers and rich results.</p>
-                </div>
-                <div class="faq-item">
-                  <p class="faq-item__question">What are NAP citations and which Quebec legal directories matter most?</p>
-                  <p class="faq-item__answer">NAP citations are consistent mentions of a firm's Name, Address, and Phone number across online directories. For Quebec law firms, the most important directories include Google Business Profile, the Barreau du Québec directory, Yelp, Yellow Pages Canada, Justia, and local chamber of commerce listings. Inconsistent NAP data can negatively affect local rankings.</p>
-                </div>
-              </div>
-            </section>
-
-            <div class="section__actions" style="margin-top:2.5rem;">
-              <a href="/en/blog/" class="btn btn--ghost">&larr; Back to blog</a>
-            </div>
-          </div>
-
-          <!-- SIDEBAR -->
-          <aside class="blog-sidebar" aria-label="Article navigation">
-            <div class="sidebar-widget">
-              <p class="sidebar-widget__title">In This Category</p>
-              <ul class="toc-list">
-                <li><a href="/en/blog/lawyers/google-local-pack-lawyers.html">Google Local Pack for Law Firms</a></li>
-                <li><a href="/en/blog/lawyers/google-business-profile-lawyers.html">Google Business Profile Optimization</a></li>
-                <li><a href="/en/blog/lawyers/google-reviews-law-firms.html">Google Reviews: Ethics &amp; Strategy</a></li>
-                <li><a href="/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html">Specialty &amp; Neighbourhood Pages</a></li>
-                <li><a href="/en/blog/lawyers/schema-legal-service-ai-visibility.html">Schema LegalService &amp; AI Visibility</a></li>
-                <li><a href="/en/blog/lawyers/nap-citations-legal-directories-quebec.html">NAP Citations &amp; Legal Directories</a></li>
-              </ul>
-            </div>
-            <div class="sidebar-cta">
-              <p class="sidebar-cta__title">Is your law firm visible on Google?</p>
-              <p class="sidebar-cta__text">Get a free personalized audit of your local SEO, Google Business Profile, and online reviews &mdash; with concrete action steps.</p>
-              <a href="/en/lawyers.html" class="btn btn--primary">Get my free audit</a>
-            </div>
-          </aside>
-
+        </div>
+        <div class="section__actions" style="margin-top:2rem;">
+          <a href="/en/blog/" class="btn btn--ghost">← Back to blog</a>
         </div>
       </div>
     </section>
 
-    <!-- BOTTOM CTA -->
-    <section class="section section--cta">
-      <div class="container section__header section__header--center">
-        <h2 class="section__title">Ready to attract more clients from Google?</h2>
-        <p class="section__text">NEXTIWEB helps Quebec law firms build a strong local presence &mdash; from Google Business Profile to specialty SEO pages and structured data. Let's talk about your firm.</p>
-        <a href="/en/lawyers.html" class="btn btn--primary">Get My Free Law Firm Audit</a>
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-final reveal">
+          <h2>Ready to attract more clients from Google?</h2>
+          <p>NEXTIWEB helps Quebec law firms build a strong local presence — from Google Business Profile to specialty SEO pages and structured data. Let's talk about your firm.</p>
+          <a href="/en/contact.html" class="btn btn--primary btn--lg">Get My Free Audit</a>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
-        <address class="footer__address">
-          Montreal, Quebec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB on LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li><li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/en/creation-site.html">Website Design</a></li><li><a href="/en/seo.html">SEO</a></li><li><a href="/en/marketing-digital.html">Digital Marketing</a></li><li><a href="/en/visibilite-ia.html">AI Visibility</a></li></ul></div>
+        <div><h4>Industries</h4><ul><li><a href="/en/dental-clinics.html">Dental clinics</a></li><li><a href="/en/real-estate-brokers.html">Real estate brokers</a></li><li><a href="/en/lawyers.html">Lawyers</a></li><li><a href="/en/construction-renovation.html">Construction</a></li><li><a href="/en/secteurs.html">Other industries</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="/en/zones-desservies/montreal.html">Montreal</a></li><li><a href="/en/zones-desservies/quebec.html">Quebec</a></li><li><a href="/en/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/en/index.html">Home</a></li>
-          <li><a href="/en/services.html">Services</a></li>
-          <li><a href="/en/secteurs.html">Industries</a></li>
-          <li><a href="/en/ressources.html">Resources</a></li>
-          <li><a href="/en/blog/">Blog</a></li>
-          <li><a href="/en/a-propos.html">About</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/en/creation-site.html">Website Design</a></li>
-          <li><a href="/en/seo.html">SEO</a></li>
-          <li><a href="/en/marketing-digital.html">Digital Marketing</a></li>
-          <li><a href="/en/visibilite-ia.html">AI Visibility</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Industries</h3>
-        <ul class="footer__list">
-          <li><a href="/en/dental-clinics.html">Dental Clinics</a></li>
-          <li><a href="/en/real-estate-brokers.html">Real Estate Brokers</a></li>
-          <li><a href="/en/lawyers.html">Lawyers</a></li>
-          <li><a href="/en/construction-renovation.html">Construction &amp; Renovation</a></li>
-          <li><a href="/en/secteurs.html">Other Industries</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Areas Served</h3>
-        <ul class="footer__list">
-          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
-          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
-          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curious to see our method in action? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <p class="footer__studio">Curious to see our method in action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Read our <a href="/en/politique-confidentialite.html">Privacy Policy</a>, <a href="/en/politique-cookies.html">Cookie Policy</a> and <a href="/en/mentions-legales.html">Legal Notice</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Manage cookies</button></p>
     </div>
   </footer>
 
-  <!-- Float bar -->
+  <!-- FLOAT BAR -->
   <div class="float-bar">
-    <a href="/en/lawyers.html" class="audit-pill" aria-label="Get My Free Law Firm Audit">
+    <a href="/en/contact.html" class="audit-pill" aria-label="Get My Free Audit">
       <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Free law firm audit
+      Free audit
     </a>
-    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services%20for%20law%20firms." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="whatsapp-pill" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
     </a>
   </div>
 
-  <script src="/assets/js/main.min.js" defer></script>
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Cookie consent management">
+    <h2>Cookie preferences</h2>
+    <p>We use essential cookies to keep this site running. Analytics and marketing cookies are enabled only with your consent (Law 25). <a href="/en/politique-confidentialite.html">Privacy</a> · <a href="/en/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Essential cookies (required)</label>
+      <label><input type="checkbox" id="cAnalytics"> Analytics cookies</label>
+      <label><input type="checkbox" id="cMarketing"> Marketing cookies</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Save my choices</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Accept all</button>
+      <button class="btn btn--ghost" data-consent="none">Reject all</button>
+      <button class="btn btn--ghost" data-consent="custom">Customize</button>
+    </div>
+  </div>
+
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

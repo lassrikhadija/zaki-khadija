@@ -171,7 +171,7 @@
     padding:1rem 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
             mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
   .marquee__track{display:flex;gap:3rem;width:max-content;animation:scrollX 28s linear infinite}
-  .marquee__track span{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--muted-2);
+  .marquee__track span{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--muted);
     display:flex;align-items:center;gap:3rem;white-space:nowrap}
   .marquee__track span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}
   @keyframes scrollX{to{transform:translateX(-50%)}}
@@ -323,7 +323,7 @@
   /* Footer */
   .footer{border-top:1px solid var(--border);padding:3.5rem 0 2rem;margin-top:2rem;background:rgba(0,0,0,.3)}
   .footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:2rem}
-  .footer h4{font-family:var(--display);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-bottom:1rem}
+  .footer h2{font-family:var(--display);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
   .footer ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
   .footer a{color:var(--muted);font-size:.92rem;transition:color .2s}
   .footer a:hover{color:var(--green)}

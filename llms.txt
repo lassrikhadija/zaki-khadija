@@ -120,6 +120,12 @@ Série complète d'articles pratiques pour dentistes québécois (site web, SEO,
 - [Citations NAP : les principaux répertoires québécois pour dentistes](https://nextiweb.ca/blog/dentistes/citations-nap-repertoires-quebecois.html)
 - [Réduire les rendez-vous manqués (no-shows) au cabinet dentaire](https://nextiweb.ca/blog/dentistes/reduire-rendez-vous-manques-cabinet-dentaire.html)
 - [Transformer les visiteurs du site en rendez-vous dentaires](https://nextiweb.ca/blog/dentistes/convertir-visiteurs-site-rendez-vous-dentaire.html)
+- [Logiciel de prise de rendez-vous en ligne pour dentiste : critères de choix, intégration au site et à la fiche Google, Loi 25 (données de santé)](https://nextiweb.ca/blog/dentistes/logiciel-prise-rendez-vous-dentiste.html)
+- [Site web ou réseaux sociaux : où un dentiste doit investir en premier (arbitrage honnête, le site qu'on possède vs le terrain loué des réseaux)](https://nextiweb.ca/blog/dentistes/site-web-ou-reseaux-sociaux-dentiste.html)
+- [Attirer une clientèle anglophone et bilingue à Montréal : version anglaise du site, hreflang FR↔EN, fiche Google bilingue, avis — sans contenu dupliqué](https://nextiweb.ca/blog/dentistes/clientele-bilingue-anglophone-dentiste-montreal.html)
+- [Fidéliser et réactiver ses patients dentaires : rappels d'hygiène (recall), réactivation des inactifs, infolettre, suivi des plans de traitement (Loi 25)](https://nextiweb.ca/blog/dentistes/fideliser-reactiver-patients-dentaires.html)
+- [Photos et vidéo de clinique dentaire : avant/après et images de patients encadrés (règles de l'Ordre + consentement Loi 25), quoi montrer, SEO des images](https://nextiweb.ca/blog/dentistes/photos-video-clinique-dentaire-avant-apres.html)
+- [Blog et contenu éducatif pour une clinique dentaire : quoi publier par intention, cadence réaliste, autorité E-E-A-T, conformité à l'Ordre](https://nextiweb.ca/blog/dentistes/blog-contenu-educatif-clinique-dentaire.html)
 - [Index guides dentaires](https://nextiweb.ca/blog/dentistes/)
 
 ## SEO local pour ostéopathes — Page secteur
@@ -440,6 +446,12 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [NAP citations: key Quebec directories for dental clinics](https://nextiweb.ca/en/blog/dentists/nap-citations-quebec-directories.html)
 - [Reduce no-shows (missed appointments) in a dental practice](https://nextiweb.ca/en/blog/dentists/reduce-no-shows-dental-practice.html)
 - [Turn website visitors into dental appointments](https://nextiweb.ca/en/blog/dentists/convert-website-visitors-dental-appointments.html)
+- [Online booking software for dentists: selection criteria, integration with the site and Google profile, Law 25 (health data)](https://nextiweb.ca/en/blog/dentists/online-booking-software-dentist.html)
+- [Website or social media: where a dentist should invest first (honest trade-off — the site you own vs the rented ground of social)](https://nextiweb.ca/en/blog/dentists/website-vs-social-media-dental-clinic.html)
+- [Attracting English-speaking and bilingual patients in Montreal: English site version, FR↔EN hreflang, bilingual Google profile, reviews — without duplicate content](https://nextiweb.ca/en/blog/dentists/attract-bilingual-english-patients-dentist-montreal.html)
+- [Retaining and reactivating dental patients: hygiene recalls, reactivating inactive patients, newsletter, treatment-plan follow-up (Law 25)](https://nextiweb.ca/en/blog/dentists/retain-reactivate-dental-patients.html)
+- [Dental clinic photos and video: before/after and patient images are regulated (Order rules + Law 25 consent), what to show, image SEO](https://nextiweb.ca/en/blog/dentists/dental-clinic-photos-video-before-after.html)
+- [Blog and educational content for a dental clinic: what to publish by intent, realistic cadence, E-E-A-T authority, compliance with the Order](https://nextiweb.ca/en/blog/dentists/educational-blog-content-dental-clinic.html)
 - [All dental clinic guides](https://nextiweb.ca/en/blog/dentists/)
 
 ## English version — Services & global guides

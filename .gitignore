@@ -1,0 +1,2 @@
+# Secret SMTP — créé une seule fois sur le serveur, jamais versionné (sinon git pull écrase le mot de passe)
+smtp-pass.php

@@ -99,10 +99,8 @@ $hs_resp = curl_exec($ch);
 $hs_code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-$ok  = $sent || ($hs_code >= 200 && $hs_code < 300);
-$msg = $ok
-    ? "Votre demande d'audit gratuit a bien été transmise à NEXTIWEB. L'équipe répond sous 24 h."
-    : "L'envoi a échoué. Contactez NEXTIWEB directement : contact@nextiweb.ca / +1 514-791-0591.";
-http_response_code(200);
-echo json_encode(['success' => $ok, 'message' => $msg, '_diag' => ['mail' => $sent, 'hubspot' => $hs_code]], JSON_UNESCAPED_UNICODE);
-exit;
+$ok = $sent || ($hs_code >= 200 && $hs_code < 300);
+if ($ok) {
+    nw_out(true, "Votre demande d'audit gratuit a bien été transmise à NEXTIWEB. L'équipe répond sous 24 h.");
+}
+nw_out(false, "L'envoi a échoué. Contactez NEXTIWEB directement : contact@nextiweb.ca / +1 514-791-0591.");

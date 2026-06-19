@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <link rel="preload" href="/assets/img/logo/logo-nextiweb-dark.webp" as="image" type="image/webp" fetchpriority="high">
@@ -40,89 +40,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
 
-  <link rel="stylesheet" href="/assets/css/styles.min.css?v=8">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#00e676">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <style>
-    .breadcrumb-bar{background:var(--color-bg-alt);border-bottom:1px solid rgba(255,255,255,.06)}
-    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.35rem;font-size:.82rem;color:var(--color-text-muted);padding:.75rem 0 .5rem;list-style:none;margin:0}
-    .breadcrumb__item{display:flex;align-items:center;gap:.35rem}
-    .breadcrumb__item:not(:last-child)::after{content:"\203A";color:var(--color-text-muted);font-size:1rem;line-height:1;opacity:.6}
-    .breadcrumb__link{color:var(--color-text-muted);text-decoration:none;transition:color .2s}
-    .breadcrumb__link:hover{color:var(--color-primary)}
-    .breadcrumb__current{color:var(--color-primary);font-weight:500}
-    .breadcrumb__link--home{display:inline-flex;align-items:center;gap:.3rem}
-    .breadcrumb__link--home svg{color:var(--color-primary);flex-shrink:0;position:relative;top:-1px}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    .whatsapp-float{display:none!important}
-    .float-bar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:.5rem}
-    .audit-pill{display:flex;align-items:center;gap:.35rem;padding:0 .875rem;height:44px;background:var(--color-primary);border-radius:22px;color:#000;font-weight:700;font-size:.78rem;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,230,118,.45);transition:transform .2s ease,box-shadow .2s ease;flex-shrink:0}
-    .audit-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,230,118,.65)}
-    .whatsapp-pill{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;text-decoration:none;flex-shrink:0}
-    .whatsapp-pill:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,.6)}
-    @media(max-width:768px){.float-bar{flex-direction:column;gap:.4rem;bottom:1rem;right:.875rem}}
-
-    .article-hero{padding:3rem 0 2rem;border-bottom:1px solid rgba(255,255,255,.07)}
-    .article-hero__kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
-    .article-hero__title{font-size:clamp(1.75rem,4vw,2.6rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;max-width:780px}
-    .article-meta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--color-text-muted);margin-bottom:2rem}
-    .article-meta__author{font-weight:600;color:var(--color-text)}
-    .article-meta span{display:flex;align-items:center;gap:.35rem}
-
-    .article-summary{background:rgba(0,230,118,.07);border:1px solid rgba(0,230,118,.2);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:2.5rem}
-    .article-summary__title{font-size:.78rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
-    .article-summary ul{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.4rem}
-    .article-summary li{font-size:.9rem;line-height:1.5;color:var(--color-text)}
-
-    .article-body{max-width:780px}
-    .article-body h2{font-size:1.5rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--color-text);line-height:1.3}
-    .article-body h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--color-primary)}
-    .article-body p{font-size:1rem;line-height:1.8;color:var(--color-text);margin-bottom:1.25rem}
-    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.25rem;display:flex;flex-direction:column;gap:.5rem}
-    .article-body li{font-size:1rem;line-height:1.7;color:var(--color-text)}
-    .article-body strong{color:var(--color-text);font-weight:700}
-    .article-body a{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
-    .article-body a:hover{opacity:.8}
-    .article-body hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:2.5rem 0}
-    .article-body code{background:rgba(255,255,255,.07);border-radius:.3rem;padding:.1rem .4rem;font-size:.88em;font-family:monospace;color:var(--color-primary)}
-
-    .callout{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--color-primary);border-radius:.5rem;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.9rem;line-height:1.7;color:var(--color-text-muted)}
-    .callout strong{color:var(--color-primary);display:block;margin-bottom:.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
-
-    .article-cta-inline{background:rgba(0,230,118,.06);border:1px solid rgba(0,230,118,.18);border-radius:.75rem;padding:1.5rem;margin:2.5rem 0;text-align:center}
-    .article-cta-inline p{font-size:.95rem;color:var(--color-text-muted);margin-bottom:1rem}
-    .article-cta-inline .btn--primary{color:#000!important;font-weight:700}
-
-    .article-faq{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
-    .article-faq__item{border:1px solid rgba(255,255,255,.07);border-radius:.6rem;overflow:hidden}
-    .article-faq__btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.3rem;cursor:pointer;text-align:left}
-    .article-faq__q{font-weight:700;font-size:.95rem;color:var(--color-text);margin:0;line-height:1.4}
-    .article-faq__chevron{flex-shrink:0;width:18px;height:18px;color:var(--color-primary);transition:transform .25s ease}
-    .article-faq__item.is-open .article-faq__chevron{transform:rotate(180deg)}
-    .article-faq__a{font-size:.9rem;color:var(--color-text-muted);line-height:1.7;margin:0;padding:0 1.3rem 1rem;display:none}
-    .article-faq__item.is-open .article-faq__a{display:block}
-    .article-faq__btn:hover .article-faq__q{color:var(--color-primary)}
-
-    .article-layout{display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:start}
-    .article-sidebar{position:sticky;top:100px}
-    .article-sidebar__box{background:var(--color-bg-alt);border:1px solid rgba(255,255,255,.07);border-radius:.75rem;padding:1.5rem;margin-bottom:1.5rem}
-    .article-sidebar__title{font-size:.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
-    .article-sidebar__toc{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
-    .article-sidebar__toc a{font-size:.85rem;color:var(--color-text-muted);text-decoration:none;line-height:1.4;transition:color .2s}
-    .article-sidebar__toc a:hover{color:var(--color-primary)}
-
-    .plan-table{width:100%;border-collapse:collapse;margin:1.5rem 0 2rem;font-size:.9rem}
-    .plan-table th{background:rgba(0,230,118,.1);color:var(--color-primary);font-weight:700;padding:.75rem 1rem;text-align:left;border-bottom:2px solid rgba(0,230,118,.2)}
-    .plan-table td{padding:.7rem 1rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--color-text);vertical-align:top;line-height:1.6}
-    .plan-table tr:last-child td{border-bottom:none}
-    .plan-table td:first-child{font-weight:700;color:var(--color-primary);white-space:nowrap}
-
-    @media(max-width:900px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}.plan-table{font-size:.82rem}}
-  </style>
+  <link rel="stylesheet" href="/assets/css/v2026.css">
+  <link rel="stylesheet" href="/assets/css/v2026-article.css">
 
   <script type="application/ld+json">
   {
@@ -158,37 +87,74 @@
   ]}
   </script>
 </head>
-<body class="theme-dark">
-  <a href="#main" class="skip-link">Skip to content</a>
+<body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS5WZHQ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <div class="top-bar"><div class="container top-bar__inner"><p class="top-bar__message" id="top-bar-message"></p></div></div>
-
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="/en/" class="logo">
-        <img src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB - Web agency in Montreal" width="84" height="48" loading="eager">
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="topbar__wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav__item">
-          <a href="/en/services.html" class="nav__link">Services</a>
-          <div class="nav__submenu">
-            <a href="/en/creation-site.html" class="nav__submenu-link">Website creation</a>
-            <a href="/en/seo.html" class="nav__submenu-link">SEO</a>
-            <a href="/en/marketing-digital.html" class="nav__submenu-link">Digital marketing</a>
+      <p class="topbar__msg">Stop to restart stronger&nbsp;: <strong>we audit your website for free.</strong></p>
+      <a href="tel:+15147910591" class="topbar__phone">514-791-0591</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        NEXTIWEB
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__group">
+          <a href="/en/services.html">Services ▾</a>
+          <div class="nav__panel">
+            <a href="/en/creation-site.html">Website Design</a>
+            <a href="/en/seo.html">SEO</a>
+            <a href="/en/marketing-digital.html">Digital Marketing</a>
+            <a href="/en/visibilite-ia.html">AI Visibility</a>
           </div>
         </div>
-        <a href="/en/secteurs.html" class="nav__link">Industries</a>
-        <a href="/en/ressources.html" class="nav__link">Resources</a>
-        <a href="/en/blog/" class="nav__link">Blog</a>
-        <a href="/en/a-propos.html" class="nav__link">About</a>
-        <a href="/en/contact.html" class="nav__link nav__link--cta">Get my free audit</a>
+        <a href="/en/secteurs.html">Industries</a>
+        <a href="/en/ressources.html">Resources</a>
+        <a href="/en/blog/" aria-current="page">Blog</a>
+        <a href="/en/a-propos.html">About</a>
+        <a href="/en/contact.html" class="btn btn--primary nav__cta">Get My Free Audit</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+      <div class="lang" aria-label="Language">
+        <a href="/blog/fleuriste/reduire-commandes-abandonnees-consultations-fleuriste.html" hreflang="fr">FR</a>
+        <a href="/en/blog/florist/reduce-abandoned-orders-consultations-florist.html" class="is-active" aria-current="page">EN</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <div class="drawer__head">
+      <span class="brand">NEXTIWEB</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close">×</button>
+    </div>
+    <a href="/en/services.html">Services</a>
+    <a href="/en/creation-site.html">— Website Design</a>
+    <a href="/en/seo.html">— SEO</a>
+    <a href="/en/marketing-digital.html">— Digital Marketing</a>
+    <a href="/en/secteurs.html">Industries</a>
+    <a href="/en/ressources.html">Resources</a>
+    <a href="/en/blog/" aria-current="page">Blog</a>
+    <a href="/en/a-propos.html">About</a>
+    <a href="/en/contact.html" class="btn btn--primary" style="margin-top:1rem">Get My Free Audit</a>
+  </aside>
 
   <main id="main">
 
@@ -211,8 +177,8 @@
       </div>
     </div>
 
-    <!-- HERO -->
-    <div class="section section--dark">
+    <!-- ARTICLE HERO -->
+    <section class="section">
       <div class="container">
         <div class="article-hero">
           <p class="article-hero__kicker">
@@ -233,13 +199,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CONTENT -->
+    <!-- ARTICLE CONTENT -->
     <section class="section">
       <div class="container">
         <div class="article-layout">
 
+          <!-- BODY -->
           <div class="article-body">
 
             <div class="article-summary">
@@ -333,18 +300,20 @@
 
             <h2 id="plan">Implementation plan</h2>
             <p>No need to roll everything out at once. Here's a realistic sequence:</p>
-            <table class="plan-table">
-              <thead>
-                <tr><th>Step</th><th>Action</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Step 1</td><td>Simplify online ordering: guest checkout, short payment, clear product pages with real photos.</td></tr>
-                <tr><td>Step 2</td><td>Show areas, fees, timing and the cut-off time right on the product page and cart.</td></tr>
-                <tr><td>Step 3</td><td>Turn on online booking for weddings/events, with SMS and email reminders.</td></tr>
-                <tr><td>Step 4</td><td>Introduce a deposit on big contracts, with secure online payment.</td></tr>
-                <tr><td>Step 5</td><td>Add a short, secure event form before the consultation.</td></tr>
-              </tbody>
-            </table>
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr><th>Step</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Step 1</td><td>Simplify online ordering: guest checkout, short payment, clear product pages with real photos.</td></tr>
+                  <tr><td>Step 2</td><td>Show areas, fees, timing and the cut-off time right on the product page and cart.</td></tr>
+                  <tr><td>Step 3</td><td>Turn on online booking for weddings/events, with SMS and email reminders.</td></tr>
+                  <tr><td>Step 4</td><td>Introduce a deposit on big contracts, with secure online payment.</td></tr>
+                  <tr><td>Step 5</td><td>Add a short, secure event form before the consultation.</td></tr>
+                </tbody>
+              </table>
+            </div>
 
             <div class="callout">
               <strong>Law 25 compliance</strong>
@@ -353,50 +322,50 @@
 
             <div class="article-cta-inline">
               <p><strong>How many abandoned orders and missed appointments this season?</strong> Get a free audit of your site and client journey, delivered as a PDF report within 24&nbsp;hours.</p>
-              <a href="/en/florist.html" class="btn btn--primary">Explore our services for florists →</a>
+              <a href="/en/florist.html" class="btn btn--primary">See our services for florists →</a>
             </div>
 
             <hr>
 
             <!-- FAQ -->
             <h2 id="faq">Frequently asked questions — Reducing lost sales</h2>
-            <div class="article-faq" role="list">
+            <div class="article-faq">
 
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Why do customers abandon their order on a florist's website?</span>
+                  <p class="article-faq__q">Why do customers abandon their order on a florist's website?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Most often because of uncertainty at checkout: unclear delivery area, no stated order cut-off time, delivery fees appearing too late, or a complicated payment. The customer is buying flowers for a specific occasion (birthday, bereavement, Valentine's Day) and needs reassurance: 'Will it be delivered on time, to the right place?' When the answer isn't immediate, they abandon and order elsewhere. Clarifying delivery, timing and fees right on the product page strongly reduces abandonment.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">How can a florist reduce missed wedding or event consultations?</span>
+                  <p class="article-faq__q">How can a florist reduce missed wedding or event consultations?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">As with any high-value appointment: online booking that captures the right contact, automated SMS and email reminders, active confirmation the day before, and a deposit on important contracts (wedding, large event) deducted from the final amount. A form filled out in advance (date, venue, style, budget) increases commitment and screens out requests outside your area or dates. These levers comply with Law 25.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Should you charge a deposit for a wedding flower contract?</span>
+                  <p class="article-faq__q">Should you charge a deposit for a wedding flower contract?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">For important contracts, it's strongly recommended. A wedding or large event ties up flowers ordered in advance, sometimes perishable and non-reusable. A deposit, deducted from the final amount, secures the commitment, filters serious requests and reduces last-minute cancellations. The policy must be clearly announced and payment handled in compliance with Law 25.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Is the order cut-off time really important for a florist?</span>
+                  <p class="article-faq__q">Is the order cut-off time really important for a florist?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">It's decisive. Flowers are ordered for a specific date, often same-day or next-day. If the cut-off time for same-day delivery isn't clearly shown, the customer hesitates, doubts they can be delivered in time and abandons. Showing the cut-off time, delivery areas and timing directly on the product page removes that uncertainty and turns hesitation into an order.</p>
               </div>
 
-              <div class="article-faq__item" role="listitem">
+              <div class="article-faq__item">
                 <button class="article-faq__btn" aria-expanded="false">
-                  <span class="article-faq__q">Is an automated reminder compliant with Quebec's Law 25?</span>
+                  <p class="article-faq__q">Is an automated reminder compliant with Quebec's Law 25?</p>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
                 <p class="article-faq__a">Yes, provided the rules are met: the customer consents to communications (SMS, email) at order or booking, the consent is documented, and every message allows unsubscribing. Personal information (name, delivery address, occasion) is handled securely and kept only as long as necessary. A well-configured system builds these requirements in natively.</p>
@@ -425,7 +394,7 @@
             <!-- Final CTA -->
             <div class="article-cta-inline" style="margin-top:3rem">
               <p><strong>How many sales fly away at checkout?</strong> Get a free audit of your online presence and client journey — ordering, delivery, booking — delivered as a personalized PDF report within 24&nbsp;hours.</p>
-              <a href="/en/florist.html" class="btn btn--primary">Explore our services for florists →</a>
+              <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
             </div>
 
           </div><!-- /article-body -->
@@ -468,93 +437,60 @@
       </div>
     </section>
 
+    <!-- CTA FINAL -->
+    <section class="section section--cta">
+      <div class="container section__header section__header--center">
+        <h2 class="section__title">Your next client is searching for you. Can they find you?</h2>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
+      </div>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <p class="footer__logo">NEXTIWEB</p>
-        <p class="footer__text">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
-        <address class="footer__address">
-          Montreal, Quebec, Canada<br>
-          <a href="tel:+15147910591">514-791-0591</a><br>
-          <a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a>
-        </address>
-        <p style="margin-top:.75rem"><a href="https://www.linkedin.com/company/25819184/" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB on LinkedIn" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a> <a href="https://www.facebook.com/profile.php?id=61590548880715" target="_blank" rel="noopener noreferrer" aria-label="NEXTIWEB Facebook" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--color-text-muted);font-size:.875rem;text-decoration:none;transition:color .2s;margin-left:1rem"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">NEXTIWEB</p>
+          <p class="footer__desc">Web agency specialized in website design, SEO, digital marketing and AI visibility in Montreal.</p>
+          <p style="color:var(--muted);font-size:.9rem">Montreal, Quebec, Canada<br><a href="tel:+15147910591">514-791-0591</a><br><a href="mailto:contact@nextiweb.ca">contact@nextiweb.ca</a></p>
+        </div>
+        <div><h4>Navigation</h4><ul><li><a href="/en/index.html">Home</a></li><li><a href="/en/services.html">Services</a></li><li><a href="/en/secteurs.html">Industries</a></li><li><a href="/en/ressources.html">Resources</a></li><li><a href="/en/blog/">Blog</a></li><li><a href="/en/a-propos.html">About</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="/en/creation-site.html">Website Design</a></li><li><a href="/en/seo.html">SEO</a></li><li><a href="/en/marketing-digital.html">Digital Marketing</a></li><li><a href="/en/visibilite-ia.html">AI Visibility</a></li></ul></div>
+        <div><h4>Industries</h4><ul><li><a href="/en/dental-clinics.html">Dental clinics</a></li><li><a href="/en/real-estate-brokers.html">Real estate brokers</a></li><li><a href="/en/lawyers.html">Lawyers</a></li><li><a href="/en/construction-renovation.html">Construction</a></li><li><a href="/en/secteurs.html">Other industries</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="/en/zones-desservies/montreal.html">Montreal</a></li><li><a href="/en/zones-desservies/quebec.html">Quebec</a></li><li><a href="/en/zones-desservies/canada.html">Canada</a></li></ul></div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Navigation</h3>
-        <ul class="footer__list">
-          <li><a href="/en/index.html">Home</a></li>
-          <li><a href="/en/services.html">Services</a></li>
-          <li><a href="/en/secteurs.html">Industries</a></li>
-          <li><a href="/en/ressources.html">Resources</a></li>
-          <li><a href="/en/blog/">Blog</a></li>
-          <li><a href="/en/a-propos.html">About</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__list">
-          <li><a href="/en/creation-site.html">Website Design</a></li>
-          <li><a href="/en/seo.html">SEO</a></li>
-          <li><a href="/en/marketing-digital.html">Digital Marketing</a></li>
-          <li><a href="/en/visibilite-ia.html">AI Visibility</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Industries</h3>
-        <ul class="footer__list">
-          <li><a href="/en/dental-clinics.html">Dental Clinics</a></li>
-          <li><a href="/en/real-estate-brokers.html">Real Estate Brokers</a></li>
-          <li><a href="/en/lawyers.html">Lawyers</a></li>
-          <li><a href="/en/construction-renovation.html">Construction &amp; Renovation</a></li>
-          <li><a href="/en/secteurs.html">Other Industries</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Areas Served</h3>
-        <ul class="footer__list">
-          <li><a href="/en/zones-desservies/montreal.html">Montreal</a></li>
-          <li><a href="/en/zones-desservies/quebec.html">Quebec City</a></li>
-          <li><a href="/en/zones-desservies/canada.html">Canada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__studio">
-      <p>Curious to see our method in action? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
-    </div>
-    <div class="container footer__bottom">
-      <p>© 2026 NEXTIWEB · NEQ 2272348204</p>
+      <p class="footer__studio">Curious to see our method in action&nbsp;? <a href="https://nextiwebstudio.ca" target="_blank" rel="noopener noreferrer">Explore our sector concepts on <strong>Nextiweb Studio</strong> →</a></p>
+      <div class="footer__bottom"><span>© 2026 NEXTIWEB · NEQ 2272348204</span></div>
+      <p class="footer__legal">Read our <a href="/en/politique-confidentialite.html">Privacy Policy</a>, <a href="/en/politique-cookies.html">Cookie Policy</a> and <a href="/en/mentions-legales.html">Legal Notice</a>. <button type="button" class="footer__legal-btn" data-open-cookie-settings>Manage cookies</button></p>
     </div>
   </footer>
 
-  <!-- Floating bar -->
-  <div class="float-bar">
-    <a href="/en/florist.html" class="audit-pill" aria-label="Get a free audit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-      Free audit
-    </a>
-    <a href="https://wa.me/15147910591" class="whatsapp-pill" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-    </a>
+  <!-- FLOAT BAR -->
+  <div class="floatbar">
+    <a href="/en/contact.html" class="fb-audit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free audit</a>
+    <a href="https://wa.me/15147910591?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services." class="fb-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg></a>
   </div>
 
-  <!-- FAQ JS -->
-  <script>
-  document.querySelectorAll('.article-faq__btn').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var item=this.closest('.article-faq__item');
-      var isOpen=item.classList.contains('is-open');
-      document.querySelectorAll('.article-faq__item').forEach(function(i){i.classList.remove('is-open');i.querySelector('.article-faq__btn').setAttribute('aria-expanded','false');});
-      if(!isOpen){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
-    });
-  });
-  </script>
+  <!-- Bandeau consentement (Loi 25) -->
+  <div class="consent" id="consent" hidden role="dialog" aria-label="Cookie consent management">
+    <h2>Cookie preferences</h2>
+    <p>We use essential cookies to keep this site running. Analytics and marketing cookies are enabled only with your consent (Law 25). <a href="/en/politique-confidentialite.html">Privacy</a> · <a href="/en/politique-cookies.html">Cookies</a></p>
+    <div class="consent__opts" id="consentOpts">
+      <label><input type="checkbox" checked disabled> Essential cookies (required)</label>
+      <label><input type="checkbox" id="cAnalytics"> Analytics cookies</label>
+      <label><input type="checkbox" id="cMarketing"> Marketing cookies</label>
+      <button class="btn btn--primary" data-consent="save" style="margin-top:.5rem">Save my choices</button>
+    </div>
+    <div class="consent__row">
+      <button class="btn btn--primary" data-consent="all">Accept all</button>
+      <button class="btn btn--ghost" data-consent="none">Reject all</button>
+      <button class="btn btn--ghost" data-consent="custom">Customize</button>
+    </div>
+  </div>
 
-  <script src="/assets/js/main.min.js" defer></script>
-
+  <script src="/assets/js/v2026.js" defer></script>
 </body>
 </html>

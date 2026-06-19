@@ -2,14 +2,17 @@
      NEXTIWEB — Design system 2026 (autonome, ne dépend pas de styles.min.css)
      ========================================================= */
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  /* Polices de repli aux métriques ajustées : évitent le décalage (CLS) au chargement des polices web */
+  @font-face{font-family:'Inter Fallback';src:local('Arial');ascent-override:90.44%;descent-override:22.52%;line-gap-override:0%;size-adjust:107.12%}
+  @font-face{font-family:'Space Grotesk Fallback';src:local('Arial');ascent-override:95.79%;descent-override:28.74%;line-gap-override:0%;size-adjust:99.92%}
   :root{
     --bg:#070809; --bg-2:#0b0d10; --surface:rgba(255,255,255,.035);
     --surface-2:rgba(255,255,255,.06); --border:rgba(255,255,255,.09);
     --border-strong:rgba(255,255,255,.16);
     --green:#00e676; --green-soft:#5dffb0; --cyan:#27e0ff; --violet:#8b6cff;
     --text:#f3f5f4; --muted:#9aa4a1; --muted-2:#6f7976;
-    --display:'Space Grotesk',system-ui,sans-serif;
-    --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --display:'Space Grotesk','Space Grotesk Fallback',system-ui,sans-serif;
+    --body:'Inter','Inter Fallback',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     --maxw:1160px;
     --grad:linear-gradient(115deg,var(--green) 0%,var(--green-soft) 40%,var(--cyan) 100%);
     --grad-soft:linear-gradient(135deg,rgba(0,230,118,.16),rgba(39,224,255,.10));

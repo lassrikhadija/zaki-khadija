@@ -15,6 +15,34 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 - LinkedIn entreprise : https://www.linkedin.com/company/25819184/
 - LinkedIn fondatrice : https://www.linkedin.com/in/khadija-ait-lassri/
 
+## Ce qui distingue NEXTIWEB
+
+- Accompagnement personnel (1-on-1) avec la fondatrice — pas de sous-traitance anonyme.
+- Bilingue français / anglais : sites et SEO en FR et EN, avec balisage hreflang correct.
+- Conforme à la Loi 25 (protection des renseignements personnels au Québec).
+- Approche honnête : jeune agence, fourchettes de prix réelles et sourcées, aucun chiffre gonflé.
+- Sites rapides (Core Web Vitals), optimisés SEO et pensés pour convertir les visiteurs en clients.
+
+## Zones desservies
+
+Montréal, Rive-Sud, Rive-Nord, Laval, Québec — et partout au Canada à distance.
+
+## Secteurs desservis
+
+Cliniques dentaires, ostéopathes, avocats, courtiers immobiliers, restaurants et cafés, traiteurs, fleuristes, construction et rénovation, services à domicile.
+
+## Questions fréquentes
+
+**Combien coûte un site web ?** Le prix dépend du type (vitrine, landing page, e-commerce) et de l'ampleur du projet. Nous publions des fourchettes réelles et sourcées dans notre guide « Combien coûte un site web au Québec en 2026 » et fournissons un devis gratuit sur mesure.
+
+**Faites-vous du SEO local ?** Oui — référencement local (Google Business Profile, recherche par quartier) à Montréal, sur la Rive-Sud, la Rive-Nord, à Laval et à Québec.
+
+**Travaillez-vous en anglais ?** Oui, l'agence est bilingue : sites et contenus en français et en anglais.
+
+**Êtes-vous conformes à la Loi 25 ?** Oui — sites et formulaires respectent la Loi 25 (consentement aux cookies, protection des renseignements personnels).
+
+**Offrez-vous un audit gratuit ?** Oui, un audit web gratuit pour les PME québécoises, avec réponse sous 24 h.
+
 ## Services
 
 - [Création de sites web](https://nextiweb.ca/creation-site.html) — Sites vitrines, landing pages, e-commerce, refonte
@@ -25,37 +53,37 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 
 ## Pages locales — grande région de Montréal
 
-- [Création de site web Montréal](https://nextiweb.ca/local/creation-site-web-montreal.html)
-- [SEO Montréal](https://nextiweb.ca/local/seo-montreal.html)
+- [Création de site web Montréal](https://nextiweb.ca/local/creation-site-web-montreal.html) — Conception de sites pour entreprises et commerces de la région de Montréal.
+- [SEO Montréal](https://nextiweb.ca/local/seo-montreal.html) — Référencement naturel local pour être trouvé par les clients à Montréal.
 - [SEO Laval — PME et commerces de proximité (recherche par quartier de l'Île Jésus, marché moins saturé que Montréal)](https://nextiweb.ca/local/seo-laval.html)
 
 ## Blog — Guides pour PME
 
 ### SEO
-- [Comprendre le SEO pour PME](https://nextiweb.ca/blog/seo/comprendre-seo-pme.html)
-- [Recherche de mots-clés en 6 étapes](https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html)
-- [SEO local et Google Business Profile](https://nextiweb.ca/blog/seo/seo-local-google-business-profile.html)
-- [E-E-A-T : Expertise, Autorité, Confiance](https://nextiweb.ca/blog/seo/eeat-expertise-autorite-confiance.html)
-- [SEO IA générative et GEO](https://nextiweb.ca/blog/seo/seo-ia-generative-optimization-pme.html)
+- [Comprendre le SEO pour PME](https://nextiweb.ca/blog/seo/comprendre-seo-pme.html) — Ce qu'est le SEO, pourquoi il compte pour une PME, et par où commencer.
+- [Recherche de mots-clés en 6 étapes](https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html) — Méthode pour trouver les mots-clés que vos clients tapent réellement.
+- [SEO local et Google Business Profile](https://nextiweb.ca/blog/seo/seo-local-google-business-profile.html) — Apparaître dans le pack local Google et optimiser sa fiche d'établissement.
+- [E-E-A-T : Expertise, Autorité, Confiance](https://nextiweb.ca/blog/seo/eeat-expertise-autorite-confiance.html) — Les signaux de crédibilité que Google valorise et comment les démontrer.
+- [SEO IA générative et GEO](https://nextiweb.ca/blog/seo/seo-ia-generative-optimization-pme.html) — Être cité par les moteurs de réponse IA (ChatGPT, Perplexity, Google AI).
 - [Tous les guides SEO](https://nextiweb.ca/blog/seo/)
 
 ### Création de site web
-- [Comment fonctionne un site web](https://nextiweb.ca/blog/creation-site/comment-fonctionne-site-web.html)
-- [WordPress vs site sur mesure](https://nextiweb.ca/blog/creation-site/wordpress-vs-site-code-pme.html)
+- [Comment fonctionne un site web](https://nextiweb.ca/blog/creation-site/comment-fonctionne-site-web.html) — Domaine, hébergement, pages, du clic au site affiché — expliqué simplement.
+- [WordPress vs site sur mesure](https://nextiweb.ca/blog/creation-site/wordpress-vs-site-code-pme.html) — Avantages, limites et coûts réels de chaque approche pour une PME.
 - [Combien coûte un site web au Québec en 2026 (prix réels sourcés)](https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html)
 - [Tous les guides création de site](https://nextiweb.ca/blog/creation-site/)
 
 ### Marketing digital
-- [Bases du marketing digital pour PME](https://nextiweb.ca/blog/marketing-digital/bases-marketing-digital-pme.html)
-- [Google Ads vs Meta Ads Québec](https://nextiweb.ca/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html)
+- [Bases du marketing digital pour PME](https://nextiweb.ca/blog/marketing-digital/bases-marketing-digital-pme.html) — Les canaux essentiels et comment les prioriser avec un budget limité.
+- [Google Ads vs Meta Ads Québec](https://nextiweb.ca/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html) — Quand choisir la recherche (intention) ou les réseaux sociaux (découverte).
 - [Tous les guides marketing](https://nextiweb.ca/blog/marketing-digital/)
 
 ### IA et automatisation
-- [ChatGPT et outils IA pour PME](https://nextiweb.ca/blog/ia-automatisation/chatgpt-outils-ia-pme.html)
-- [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html)
-- [Bien écrire ses prompts IA : le guide du dirigeant](https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html)
-- [L'IA change la façon dont vos clients vous cherchent](https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html)
-- [Chatbot et agent IA sur votre site : capter vos leads 24/7](https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html)
+- [ChatGPT et outils IA pour PME](https://nextiweb.ca/blog/ia-automatisation/chatgpt-outils-ia-pme.html) — Cas d'usage concrets et choix d'outils pour une petite équipe.
+- [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html) — Utiliser l'IA sans enfreindre la protection des renseignements personnels.
+- [Bien écrire ses prompts IA : le guide du dirigeant](https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html) — Obtenir des réponses utiles de l'IA grâce à des consignes claires.
+- [L'IA change la façon dont vos clients vous cherchent](https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html) — Pourquoi la recherche par IA bouleverse la visibilité des PME.
+- [Chatbot et agent IA sur votre site : capter vos leads 24/7](https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html) — Répondre aux visiteurs et qualifier les leads en continu.
 - [Tous les guides IA](https://nextiweb.ca/blog/ia-automatisation/)
 
 ## Audit gratuit
@@ -465,25 +493,25 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [AI visibility](https://nextiweb.ca/en/visibilite-ia.html) — Get cited by AI answers (AEO / GEO)
 
 ### Website design (EN)
-- [How does a website work](https://nextiweb.ca/en/blog/website-design/how-does-a-website-work.html)
-- [WordPress vs custom website](https://nextiweb.ca/en/blog/website-design/wordpress-vs-custom-website-sme.html)
+- [How does a website work](https://nextiweb.ca/en/blog/website-design/how-does-a-website-work.html) — Domain, hosting, pages — from click to rendered site, explained simply.
+- [WordPress vs custom website](https://nextiweb.ca/en/blog/website-design/wordpress-vs-custom-website-sme.html) — Pros, limits and real costs of each approach for an SME.
 - [How much does a website cost in Quebec 2026 (real, sourced prices)](https://nextiweb.ca/en/blog/website-design/website-cost.html)
 - [All website design guides](https://nextiweb.ca/en/blog/website-design/)
 
 ### SEO (EN)
-- [Understanding SEO for SMEs](https://nextiweb.ca/en/blog/seo/understanding-seo-guide.html)
-- [Local SEO & Google Business Profile](https://nextiweb.ca/en/blog/seo/local-seo-google-business-profile.html)
+- [Understanding SEO for SMEs](https://nextiweb.ca/en/blog/seo/understanding-seo-guide.html) — What SEO is, why it matters for a small business, and where to start.
+- [Local SEO & Google Business Profile](https://nextiweb.ca/en/blog/seo/local-seo-google-business-profile.html) — Show up in the Google local pack and optimize your business listing.
 - [All SEO guides](https://nextiweb.ca/en/blog/seo/)
 
 ### Digital marketing (EN)
-- [Digital marketing basics](https://nextiweb.ca/en/blog/digital-marketing/digital-marketing-basics-sme.html)
-- [Sales funnels & conversion](https://nextiweb.ca/en/blog/digital-marketing/sales-funnels-conversion-sme.html)
+- [Digital marketing basics](https://nextiweb.ca/en/blog/digital-marketing/digital-marketing-basics-sme.html) — The essential channels and how to prioritize them on a small budget.
+- [Sales funnels & conversion](https://nextiweb.ca/en/blog/digital-marketing/sales-funnels-conversion-sme.html) — Turn website visitors into leads and customers, step by step.
 - [All digital marketing guides](https://nextiweb.ca/en/blog/digital-marketing/)
 
 ### AI & automation (EN)
-- [ChatGPT & AI tools for SMEs](https://nextiweb.ca/en/blog/ai-automation/chatgpt-ai-tools-sme-guide.html)
-- [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html)
-- [How to write good AI prompts: the business owner's guide](https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html)
-- [AI is changing how your customers search for you](https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html)
-- [AI chatbot on your website: capture leads 24/7](https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html)
+- [ChatGPT & AI tools for SMEs](https://nextiweb.ca/en/blog/ai-automation/chatgpt-ai-tools-sme-guide.html) — Concrete use cases and tool choices for a small team.
+- [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html) — Use AI without breaching Quebec's personal-information rules.
+- [How to write good AI prompts: the business owner's guide](https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html) — Get useful AI answers with clear instructions.
+- [AI is changing how your customers search for you](https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html) — Why AI search is reshaping SME visibility.
+- [AI chatbot on your website: capture leads 24/7](https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html) — Answer visitors and qualify leads around the clock.
 - [All AI & automation guides](https://nextiweb.ca/en/blog/ai-automation/)

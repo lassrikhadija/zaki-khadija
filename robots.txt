@@ -52,3 +52,6 @@ Allow: /
 
 # ── Sitemaps ───────────────────────────────────────────────────────────
 Sitemap: https://nextiweb.ca/sitemap.xml
+
+# ── Guide IA / agents (llms.txt) ───────────────────────────────────────
+# Résumé structuré du site pour les LLM et agents IA : https://nextiweb.ca/llms.txt

@@ -35,7 +35,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap"></noscript>
 
   <style>
   /* =========================================================
@@ -762,11 +764,11 @@
         <a class="showcase reveal" id="showcase" href="https://soins-services.nextiwebstudio.ca/" target="_blank" rel="noopener" aria-label="Ouvrir la démo Studio Dentaire Belmont dans une fenêtre">
           <div class="browser">
             <div class="browser__bar"><span class="bdot"></span><span class="bdot"></span><span class="bdot"></span><span class="browser__url" id="scUrl">soins-services.nextiwebstudio.ca</span></div>
-            <img class="browser__img" id="scDesktop" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-desktop.webp" width="1366" height="854" decoding="async" alt="Aperçu desktop de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
+            <img class="browser__img" id="scDesktop" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-desktop.webp" width="1366" height="854" loading="lazy" decoding="async" alt="Aperçu desktop de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
           </div>
           <div class="phone">
             <span class="phone__notch"></span>
-            <img class="phone__img" id="scMobile" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-mobile.webp" width="390" height="844" decoding="async" alt="Aperçu mobile de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
+            <img class="phone__img" id="scMobile" src="/assets/img/demos/demo-site-clinique-dentaire-montreal-mobile.webp" width="390" height="844" loading="lazy" decoding="async" alt="Aperçu mobile de la démo de site web Studio Dentaire Belmont conçue par NEXTIWEB">
           </div>
           <span class="showcase__cta" id="scCta">Ouvrir la démo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
         </a>

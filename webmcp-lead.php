@@ -73,17 +73,21 @@ $body    = "Source     : WebMCP (agent IA)\n"
 $sent = false;
 try { $sent = smtp_send(MAIL_TO, $subject, $body, $email); } catch (Exception $e) { $sent = false; }
 
-// HubSpot CRM — réutilise l'intégration du formulaire (consentement marketing = false : pas de case cochée par l'agent)
+// HubSpot CRM — réutilise l'intégration du formulaire.
+// On évite le champ enum "type_de_projet" (rejet si valeur hors liste) : le secteur va dans "message".
+// pageUri doit être une URL valide (un espace/parenthèses font rejeter la soumission).
+$hs_message = $details;
+if ($secteur !== '') { $hs_message = ($hs_message !== '' ? $hs_message . "\n" : '') . "Secteur : $secteur"; }
+$hs_message = ($hs_message !== '' ? $hs_message . "\n" : '') . "Source : agent IA (WebMCP)";
 $hs = json_encode([
     'fields' => [
         ['name' => 'firstname',          'value' => $prenom],
         ['name' => 'company',            'value' => $entreprise],
         ['name' => 'email',              'value' => $email],
-        ['name' => 'type_de_projet',     'value' => $projet],
-        ['name' => 'message',            'value' => $details],
+        ['name' => 'message',            'value' => $hs_message],
         ['name' => 'consentement_loi25', 'value' => 'false'],
     ],
-    'context' => ['pageUri' => 'https://nextiweb.ca/ (WebMCP agent)'],
+    'context' => ['pageUri' => 'https://nextiweb.ca/', 'pageName' => 'Demande via agent IA (WebMCP)'],
 ]);
 $ch = curl_init('https://api.hsforms.com/submissions/v3/integration/submit/342806224/d115bad7-bd97-43c0-8845-fcdd16c47e56');
 curl_setopt($ch, CURLOPT_POST,           true);
@@ -91,10 +95,14 @@ curl_setopt($ch, CURLOPT_POSTFIELDS,     $hs);
 curl_setopt($ch, CURLOPT_HTTPHEADER,     ['Content-Type: application/json']);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_TIMEOUT,        5);
-curl_exec($ch);
+$hs_resp = curl_exec($ch);
+$hs_code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-if ($sent) {
-    nw_out(true, "Votre demande d'audit gratuit a bien été transmise à NEXTIWEB. L'équipe répond sous 24 h.");
-}
-nw_out(false, "L'envoi a échoué. Contactez NEXTIWEB directement : contact@nextiweb.ca / +1 514-791-0591.");
+$ok  = $sent || ($hs_code >= 200 && $hs_code < 300);
+$msg = $ok
+    ? "Votre demande d'audit gratuit a bien été transmise à NEXTIWEB. L'équipe répond sous 24 h."
+    : "L'envoi a échoué. Contactez NEXTIWEB directement : contact@nextiweb.ca / +1 514-791-0591.";
+http_response_code(200);
+echo json_encode(['success' => $ok, 'message' => $msg, '_diag' => ['mail' => $sent, 'hubspot' => $hs_code]], JSON_UNESCAPED_UNICODE);
+exit;

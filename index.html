@@ -1023,12 +1023,21 @@
     try{
       mc.registerTool({
         name:'demander_audit_gratuit_nextiweb',
-        description:"Expliquer comment demander un audit web gratuit à NEXTIWEB (agence web à Montréal : sites web, SEO, marketing digital pour PME québécoises). Retourne les coordonnées et le lien du formulaire.",
-        inputSchema:{type:'object',properties:{secteur:{type:'string',description:"Secteur d'activité du demandeur (optionnel), ex. clinique dentaire, restaurant, avocat"}}},
-        annotations:{readOnlyHint:true},
+        description:"Envoyer une demande d'audit web gratuit à NEXTIWEB (agence web à Montréal : sites web, SEO, marketing digital pour PME québécoises). Soumet directement le lead à l'agence.",
+        inputSchema:{type:'object',properties:{
+          prenom:{type:'string',description:'Prénom ou nom du demandeur'},
+          email:{type:'string',description:'Adresse courriel de contact'},
+          entreprise:{type:'string',description:"Nom de l'entreprise ou de la clinique"},
+          secteur:{type:'string',description:"Secteur d'activité (optionnel), ex. clinique dentaire, restaurant, avocat"},
+          details:{type:'string',description:'Besoin ou message (optionnel)'}
+        },required:['prenom','email','entreprise']},
+        annotations:{readOnlyHint:false},
         execute:async function(args){
-          var s=(args&&args.secteur)?(" Mentionnez votre secteur ("+args.secteur+") dans le message.") : "";
-          return "Pour un audit web gratuit avec NEXTIWEB (réponse sous 24 h) : formulaire sur https://nextiweb.ca/contact.html, ou contact@nextiweb.ca / +1 514-791-0591."+s;
+          try{
+            var r=await fetch('/webmcp-lead.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prenom:args.prenom,email:args.email,entreprise:args.entreprise,secteur:args.secteur,details:args.details})});
+            var j=await r.json();
+            return (j&&j.message)?j.message:(j&&j.success?"Demande envoyée à NEXTIWEB (réponse sous 24 h).":"Échec de l'envoi. Écrivez à contact@nextiweb.ca.");
+          }catch(e){ return "Échec de l'envoi. Contactez NEXTIWEB : contact@nextiweb.ca / +1 514-791-0591."; }
         }
       });
       mc.registerTool({

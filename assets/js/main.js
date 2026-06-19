@@ -12,9 +12,6 @@ if (window.innerWidth <= 768) {
 // TOP BAR MESSAGE ROTATION
 // =============================
 
-const themeToggleButtons = document.querySelectorAll('.theme-toggle');
-const themeStorageKey = 'nextiweb-theme';
-const themeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 const cookieConsentStorageKey = 'nextiweb-cookie-consent-v1';
 const currentPathname = window.location.pathname;
 const isEnglishLocale = currentPathname === '/en' || currentPathname.startsWith('/en/');
@@ -175,12 +172,7 @@ function initializeLanguageSwitcher() {
   switcher.appendChild(frButton);
   switcher.appendChild(enButton);
 
-  const themeButton = headerInner.querySelector('.theme-toggle');
-  if (themeButton) {
-    headerInner.insertBefore(switcher, themeButton);
-  } else {
-    headerInner.appendChild(switcher);
-  }
+  headerInner.appendChild(switcher);
 }
 
 if (isEnglishLocale) {
@@ -189,80 +181,6 @@ if (isEnglishLocale) {
 }
 
 initializeLanguageSwitcher();
-
-function getStoredTheme() {
-  try {
-    const storedTheme = window.localStorage.getItem(themeStorageKey);
-    return storedTheme === 'theme-light' || storedTheme === 'theme-dark' ? storedTheme : null;
-  } catch {
-    return null;
-  }
-}
-
-function storeTheme(theme) {
-  try {
-    window.localStorage.setItem(themeStorageKey, theme);
-  } catch {
-    // Ignore storage failures and keep the in-memory theme only.
-  }
-}
-
-function getPreferredTheme() {
-  return getStoredTheme() || (themeMediaQuery.matches ? 'theme-light' : 'theme-dark');
-}
-
-function updateThemeButtons(theme) {
-  const isLightTheme = theme === 'theme-light';
-  const nextThemeLabel = isEnglishLocale
-    ? (isLightTheme ? 'Enable dark mode' : 'Enable light mode')
-    : (isLightTheme ? 'Activer le mode sombre' : 'Activer le mode clair');
-  const currentThemeLabel = isEnglishLocale
-    ? (isLightTheme ? 'Light mode' : 'Dark mode')
-    : (isLightTheme ? 'Mode clair' : 'Mode sombre');
-  const themeIcon = isLightTheme ? '☀' : '☾';
-
-  themeToggleButtons.forEach((button) => {
-    button.setAttribute('aria-label', nextThemeLabel);
-    button.setAttribute('aria-pressed', String(isLightTheme));
-    button.setAttribute('title', nextThemeLabel);
-    button.innerHTML = '<span class="theme-toggle__icon" aria-hidden="true">' + themeIcon + '</span><span class="theme-toggle__text">' + currentThemeLabel + '</span>';
-  });
-}
-
-function applyTheme(theme, shouldStoreTheme = true) {
-  document.body.classList.remove('theme-dark', 'theme-light');
-  document.body.classList.add(theme);
-  document.documentElement.style.colorScheme = theme === 'theme-light' ? 'light' : 'dark';
-  updateThemeButtons(theme);
-
-  const isLight = theme === 'theme-light';
-  document.querySelectorAll('.logo img').forEach(img => {
-    const base = img.src.substring(0, img.src.lastIndexOf('/') + 1);
-    img.src = base + (isLight ? 'logo-nextiweb-light.webp' : 'logo-nextiweb-dark.webp');
-    img.style.filter = '';
-  });
-
-  if (shouldStoreTheme) {
-    storeTheme(theme);
-  }
-}
-
-if (themeToggleButtons.length) {
-  applyTheme(getPreferredTheme(), false);
-
-  themeToggleButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const nextTheme = document.body.classList.contains('theme-light') ? 'theme-dark' : 'theme-light';
-      applyTheme(nextTheme);
-    });
-  });
-
-  themeMediaQuery.addEventListener('change', (event) => {
-    if (!getStoredTheme()) {
-      applyTheme(event.matches ? 'theme-light' : 'theme-dark', false);
-    }
-  });
-}
 
 function sanitizeCookiePreferences(rawPreferences) {
   const hasValidShape = rawPreferences && typeof rawPreferences === 'object';

@@ -81,34 +81,7 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-body.theme-light {
-  --color-bg: #f5efe6;
-  --color-bg-alt: #fffdf9;
-  --color-bg-alt-2: #eee4d6;
-  --color-surface: #fffdf9;
-  --color-surface-alt: #f8efe3;
-  --color-surface-soft: #fff8ef;
-  --color-text: #171717;
-  --color-text-muted: #4f4f4f;
-  --color-text-light: #5e5e5e;
-  --color-border: #ded1c0;
-  --color-border-strong: #cdbda9;
-  --color-border-soft: #baa892;
-  --color-header-bg: rgba(239, 225, 207, 0.97);
-  --color-topbar-bg: #efe1cf;
-  --color-menu-bg: rgba(255, 250, 244, 0.98);
-  --color-footer-bg: #ead9c5;
-  --color-card-hover: #fbf3e8;
-  --color-shadow-soft: rgba(82, 55, 24, 0.12);
-  --color-shadow-strong: rgba(82, 55, 24, 0.18);
-  --theme-toggle-bg: #ffffff;
-}
-
 /* Correctifs de contraste WCAG en mode light — liens uniquement, pas les boutons */
-body.theme-light a:not(.btn) {
-  color: #006837;
-}
-
 /* WCAG 1.4.1 — liens dans le contenu texte distinguables autrement que par la couleur */
 .article-body a,
 .article-faq__a a,
@@ -135,44 +108,8 @@ li a:not(.btn):not(.nav__link):not(.nav__submenu-link):not(.breadcrumb__link):no
   text-decoration: none;
 }
 
-body.theme-light a:not(.btn):hover {
-  color: #004d27;
-}
-
 /* Hero toujours sombre — boutons sur fond foncé */
-body.theme-light .hero-bg .btn--ghost {
-  color: #ffffff;
-  border-color: #ffffff;
-}
-body.theme-light .hero-bg .btn--ghost:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-
-body.theme-light .section--cta {
-  background: linear-gradient(135deg, #003d1f, #006837);
-}
-
-body.theme-light .top-bar__highlight {
-  color: #006837;
-}
-
-body.theme-light .top-bar__phone {
-  color: #006837;
-}
-
-body.theme-light .top-bar__phone:hover {
-  color: #004d27;
-}
-
 /* Logo: swap géré par JS selon le thème */
-
-body.theme-light .assurance-icon {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #000000;
-}
 
 a {
   color: var(--color-primary);
@@ -379,10 +316,6 @@ body {
   max-height: 52px;
   filter: saturate(2.2) brightness(1.55);
 }
-body.theme-light .logo img {
-  filter: saturate(2.2) brightness(1.55);
-}
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -635,14 +568,6 @@ body.theme-light .logo img {
     radial-gradient(circle at 8% 20%, rgba(0, 230, 118, 0.32), rgba(0, 230, 118, 0) 48%),
     radial-gradient(circle at 80% 70%, rgba(92, 216, 255, 0.14), rgba(92, 216, 255, 0) 42%);
   z-index: 0;
-}
-
-body.theme-light .hero-bg,
-body.theme-light .hero-bg__kicker,
-body.theme-light .hero-bg__headline,
-body.theme-light .hero-bg__subtitle,
-body.theme-light .hero-bg__microcopy {
-  color: #f7f7f7;
 }
 
 .hero-bg__overlay {
@@ -2461,15 +2386,6 @@ body.mobile-nav-active {
 /* =========================
    MODE LIGHT — BLOG
    ========================= */
-body.theme-light .blog-search__input {
-  background: #ffffff;
-  border-color: var(--color-border);
-}
-
-body.theme-light .blog-cat-card {
-  background: #ffffff;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -2638,13 +2554,6 @@ body.theme-light .blog-cat-card {
 .phone-float svg {
   color: var(--color-primary);
   flex-shrink: 0;
-}
-
-body.theme-light .phone-float {
-  background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.1);
-  color: #1a1a1a;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .whatsapp-float:hover {

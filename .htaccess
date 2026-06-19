@@ -84,6 +84,8 @@ ErrorDocument 404 /404.html
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   # Permissions-Policy — désactive caméra / micro / géolocalisation par défaut
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # WebMCP — jeton origin trial (active document.modelContext / WebMCP sur Chrome 150+) site-wide
+  Header always set Origin-Trial "AmeaFUQ2GiDGFCgqoQ1c8LHh6YkfRUA42jjSPi1NGwwTBTDHWvRfBERXRcm0Agdu2RaqsKwzL5xypVV4+QNIsw8AAABLeyJvcmlnaW4iOiJodHRwczovL25leHRpd2ViLmNhOjQ0MyIsImZlYXR1cmUiOiJXZWJNQ1AiLCJleHBpcnkiOjE3OTQ4NzM2MDB9"
   # Supprime la signature serveur
   Header unset Server
   Header unset X-Powered-By

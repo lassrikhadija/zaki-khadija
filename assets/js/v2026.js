@@ -94,3 +94,30 @@
     }
   }
 })();
+
+/* ---- WebMCP — outils pour agents IA (lecture seule, progressive enhancement) ---- */
+(function(){
+  var mc = document.modelContext;
+  if(!mc || typeof mc.registerTool !== 'function') return;
+  try{
+    mc.registerTool({
+      name:'demander_audit_gratuit_nextiweb',
+      description:"Expliquer comment demander un audit web gratuit a NEXTIWEB (agence web a Montreal : sites web, SEO, marketing digital pour PME quebecoises). Retourne les coordonnees et le lien du formulaire.",
+      inputSchema:{type:'object',properties:{secteur:{type:'string',description:"Secteur d'activite du demandeur (optionnel), ex. clinique dentaire, restaurant, avocat"}}},
+      annotations:{readOnlyHint:true},
+      execute:async function(args){
+        var s=(args&&args.secteur)?(" Mentionnez votre secteur ("+args.secteur+") dans le message.") : "";
+        return "Pour un audit web gratuit avec NEXTIWEB (reponse sous 24 h) : formulaire sur https://nextiweb.ca/contact.html, ou contact@nextiweb.ca / +1 514-791-0591."+s;
+      }
+    });
+    mc.registerTool({
+      name:'services_nextiweb',
+      description:"Lister les services de NEXTIWEB (agence web a Montreal) avec leurs liens : creation de sites web, referencement SEO, marketing digital, visibilite IA.",
+      inputSchema:{type:'object',properties:{}},
+      annotations:{readOnlyHint:true},
+      execute:async function(){
+        return "Services NEXTIWEB — Creation de sites web: https://nextiweb.ca/creation-site.html | Referencement SEO: https://nextiweb.ca/seo.html | Marketing digital: https://nextiweb.ca/marketing-digital.html | Visibilite IA (GEO/AEO): https://nextiweb.ca/visibilite-ia.html | Audit gratuit: https://nextiweb.ca/contact.html";
+      }
+    });
+  }catch(e){}
+})();

@@ -228,6 +228,9 @@ NEXTIWEB accompagne les cabinets d'avocats québécois sur la visibilité numér
 - [Création de site web pour avocat à Montréal, Rive-Sud et Rive-Nord : structure, domaines de pratique, prise de RDV, SEO local et bilingue, déontologie](https://nextiweb.ca/blog/avocats/creation-site-web-avocat-montreal.html)
 - [Référencement SEO pour avocat à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par spécialité, contenu — sans position garantie](https://nextiweb.ca/blog/avocats/referencement-seo-avocat-montreal.html)
 - [Marketing et publicité pour avocat à Montréal, Rive-Sud et Rive-Nord : Google Ads, LinkedIn, contenu, partenariats — budget réaliste, publicité encadrée par le Barreau](https://nextiweb.ca/blog/avocats/marketing-publicite-avocat-montreal.html)
+- [Référencement et visibilité pour avocat à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…, palais de justice de Laval), fiche Google, Local Pack, avis — sans position garantie](https://nextiweb.ca/blog/avocats/avocat-laval-referencement-local.html)
+- [Référencement et visibilité pour avocat à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-longueuil-referencement-local.html)
+- [Référencement et visibilité pour avocat à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-terrebonne-referencement-local.html)
 - [Index guides avocats](https://nextiweb.ca/blog/avocats/)
 
 ## SEO local pour courtiers immobiliers — Page secteur
@@ -466,6 +469,9 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 - [Law firm website design in Montreal, South Shore and North Shore: structure, practice areas, appointment booking, local and bilingual SEO, ethics](https://nextiweb.ca/en/blog/lawyers/law-firm-website-design-montreal.html)
 - [Law firm SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, practice-area pages, content — no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/law-firm-seo-montreal.html)
 - [Law firm marketing and advertising in Montreal, South Shore and North Shore: Google Ads, LinkedIn, content, partnerships — realistic budget, advertising regulated by the Barreau](https://nextiweb.ca/en/blog/lawyers/law-firm-marketing-advertising-montreal.html)
+- [Local SEO and visibility for a lawyer in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…, Laval courthouse), Google profile, Local Pack, reviews — no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/lawyer-laval-local-seo.html)
+- [Local SEO and visibility for a lawyer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-longueuil-local-seo.html)
+- [Local SEO and visibility for a lawyer in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-terrebonne-local-seo.html)
 - [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
 
 ## Dental Clinic Guides — English

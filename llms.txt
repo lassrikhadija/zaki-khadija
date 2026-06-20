@@ -347,6 +347,13 @@ Guides SEO local, web et conversion pour les traiteurs québécois, couvrant deu
 - [Pages par type d'événement et par quartier (traiteur)](https://nextiweb.ca/blog/traiteur/pages-evenement-quartier-seo-traiteur.html)
 - [Transformer les visiteurs du site en demandes de soumission](https://nextiweb.ca/blog/traiteur/convertir-visiteurs-site-soumission-traiteur.html)
 - [Réduire les rendez-vous et dégustations manqués chez un traiteur](https://nextiweb.ca/blog/traiteur/reduire-rendez-vous-degustations-manques-traiteur.html)
+- [Combien coûte un site web pour traiteur au Québec : ce qui fait le prix (galerie d'événements, formulaire de soumission, forfaits, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/traiteur/combien-coute-site-web-traiteur.html)
+- [Création de site web pour traiteur à Montréal, Rive-Sud et Rive-Nord : galerie par type d'événement, forfaits, formulaire de soumission, SEO local zone desservie et bilingue](https://nextiweb.ca/blog/traiteur/creation-site-web-traiteur-montreal.html)
+- [Référencement SEO pour traiteur à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis d'organisateurs, pages par type d'événement et quartier — sans position garantie](https://nextiweb.ca/blog/traiteur/referencement-seo-traiteur-montreal.html)
+- [Marketing et publicité pour traiteur à Montréal, Rive-Sud et Rive-Nord : Instagram, Google Ads, partenariats (salles, planificateurs), infolettre — budget réaliste pour générer des soumissions](https://nextiweb.ca/blog/traiteur/marketing-publicite-traiteur-montreal.html)
+- [Référencement et visibilité pour traiteur à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche zone desservie, Local Pack, pages par type d'événement × quartier](https://nextiweb.ca/blog/traiteur/traiteur-laval-referencement-local.html)
+- [Référencement et visibilité pour traiteur à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche zone desservie, Local Pack, pages par événement × secteur](https://nextiweb.ca/blog/traiteur/traiteur-longueuil-referencement-local.html)
+- [Référencement et visibilité pour traiteur à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche zone desservie, Local Pack, pages par événement × secteur](https://nextiweb.ca/blog/traiteur/traiteur-terrebonne-referencement-local.html)
 - [Index guides traiteurs](https://nextiweb.ca/blog/traiteur/)
 
 ## Caterer Guides — English
@@ -361,6 +368,13 @@ Local SEO, website and conversion guides for Quebec caterers, covering two inten
 - [Pages by event type and by neighbourhood (caterer)](https://nextiweb.ca/en/blog/caterer/event-neighbourhood-pages-caterer.html)
 - [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/caterer/convert-website-visitors-caterer.html)
 - [Reducing missed tastings and appointments for caterers](https://nextiweb.ca/en/blog/caterer/reduce-no-shows-caterer.html)
+- [How much does a caterer website cost in Quebec: what drives the price (event gallery, quote-request form, packages, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/caterer/caterer-website-cost.html)
+- [Caterer website design in Montreal, South Shore and North Shore: event-type gallery, packages, quote-request form, service-area and bilingual local SEO](https://nextiweb.ca/en/blog/caterer/caterer-website-design-montreal.html)
+- [Caterer SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, planner reviews, pages by event type and neighbourhood — no guaranteed ranking](https://nextiweb.ca/en/blog/caterer/caterer-seo-montreal.html)
+- [Caterer marketing and advertising in Montreal, South Shore and North Shore: Instagram, Google Ads, partnerships (venues, planners), newsletter — realistic budget to generate quote requests](https://nextiweb.ca/en/blog/caterer/caterer-marketing-advertising-montreal.html)
+- [Local SEO and visibility for a caterer in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), service-area listing, Local Pack, pages by event type × neighbourhood](https://nextiweb.ca/en/blog/caterer/caterer-laval-local-seo.html)
+- [Local SEO and visibility for a caterer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — service-area listing, Local Pack, pages by event type × area](https://nextiweb.ca/en/blog/caterer/caterer-longueuil-local-seo.html)
+- [Local SEO and visibility for a caterer in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — service-area listing, Local Pack, pages by event type × area](https://nextiweb.ca/en/blog/caterer/caterer-terrebonne-local-seo.html)
 - [All caterer guides](https://nextiweb.ca/en/blog/caterer/)
 
 ## Guides spécialisés — Blog Fleuristes

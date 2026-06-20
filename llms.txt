@@ -224,6 +224,10 @@ NEXTIWEB accompagne les cabinets d'avocats québécois sur la visibilité numér
 - [Contenu éducatif : répondre aux vraies questions des clients](https://nextiweb.ca/blog/avocats/contenu-educatif-questions-clients-avocat.html)
 - [Site d'avocat conforme aux règles de publicité du Barreau](https://nextiweb.ca/blog/avocats/site-conforme-deontologie-publicite-avocat.html)
 - [E-E-A-T et autorité pour avocats (sujet YMYL)](https://nextiweb.ca/blog/avocats/eeat-autorite-expertise-avocat.html)
+- [Combien coûte un site web pour avocat au Québec : ce qui fait le prix (pages, design, prise de RDV, SEO, maintenance), sans prix inventé ; conformité au Code de déontologie du Barreau](https://nextiweb.ca/blog/avocats/combien-coute-site-web-avocat.html)
+- [Création de site web pour avocat à Montréal, Rive-Sud et Rive-Nord : structure, domaines de pratique, prise de RDV, SEO local et bilingue, déontologie](https://nextiweb.ca/blog/avocats/creation-site-web-avocat-montreal.html)
+- [Référencement SEO pour avocat à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par spécialité, contenu — sans position garantie](https://nextiweb.ca/blog/avocats/referencement-seo-avocat-montreal.html)
+- [Marketing et publicité pour avocat à Montréal, Rive-Sud et Rive-Nord : Google Ads, LinkedIn, contenu, partenariats — budget réaliste, publicité encadrée par le Barreau](https://nextiweb.ca/blog/avocats/marketing-publicite-avocat-montreal.html)
 - [Index guides avocats](https://nextiweb.ca/blog/avocats/)
 
 ## SEO local pour courtiers immobiliers — Page secteur
@@ -458,6 +462,10 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 - [Educational content: answering real client questions](https://nextiweb.ca/en/blog/lawyers/educational-content-client-questions-law-firm.html)
 - [A compliant law firm website (Bar advertising rules)](https://nextiweb.ca/en/blog/lawyers/compliant-law-firm-website-advertising-rules.html)
 - [E-E-A-T and authority for law firms (YMYL topic)](https://nextiweb.ca/en/blog/lawyers/eeat-authority-expertise-law-firm.html)
+- [How much does a law firm website cost in Quebec: what drives the price (pages, design, appointment booking, SEO, maintenance), no invented price; compliant with the Barreau's code of ethics](https://nextiweb.ca/en/blog/lawyers/law-firm-website-cost.html)
+- [Law firm website design in Montreal, South Shore and North Shore: structure, practice areas, appointment booking, local and bilingual SEO, ethics](https://nextiweb.ca/en/blog/lawyers/law-firm-website-design-montreal.html)
+- [Law firm SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, practice-area pages, content — no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/law-firm-seo-montreal.html)
+- [Law firm marketing and advertising in Montreal, South Shore and North Shore: Google Ads, LinkedIn, content, partnerships — realistic budget, advertising regulated by the Barreau](https://nextiweb.ca/en/blog/lawyers/law-firm-marketing-advertising-montreal.html)
 - [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
 
 ## Dental Clinic Guides — English

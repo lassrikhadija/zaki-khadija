@@ -259,6 +259,9 @@ Guides web, SEO, site et marketing pour courtiers immobiliers du Québec : réf�
 - [Site de courtier conforme aux règles de publicité de l'OACIQ (+ Loi 25)](https://nextiweb.ca/blog/courtiers-immobiliers/site-conforme-oaciq-courtier-immobilier.html)
 - [Contenu éducatif et rapports de marché de quartier pour courtier (données sourcées)](https://nextiweb.ca/blog/courtiers-immobiliers/contenu-educatif-rapports-marche-courtier-immobilier.html)
 - [Visibilité IA et Schema RealEstateAgent pour courtier (recommandé par ChatGPT)](https://nextiweb.ca/blog/courtiers-immobiliers/visibilite-ia-schema-courtier-immobilier.html)
+- [Référencement et visibilité pour courtier immobilier à Laval : guide SEO local hyper-ciblé (Chomedey, Sainte-Dorothée, Vimont…), devenir l'expert d'un secteur — fiche Google, Local Pack, avis, conforme OACIQ, sans position garantie](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-laval-referencement-local.html)
+- [Référencement et visibilité pour courtier immobilier à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par secteur d'expertise](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-longueuil-referencement-local.html)
+- [Référencement et visibilité pour courtier immobilier à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par secteur d'expertise](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-terrebonne-referencement-local.html)
 - [Index guides courtiers immobiliers](https://nextiweb.ca/blog/courtiers-immobiliers/)
 
 ## Real Estate Broker Guides — English
@@ -279,6 +282,9 @@ Website, SEO, site and marketing guides for Quebec real estate brokers: local SE
 - [OACIQ-compliant real estate broker website (+ Law 25)](https://nextiweb.ca/en/blog/real-estate-brokers/oaciq-compliant-website-real-estate-broker.html)
 - [Educational content and neighbourhood market reports for brokers (sourced data)](https://nextiweb.ca/en/blog/real-estate-brokers/educational-content-market-reports-real-estate-broker.html)
 - [AI visibility and RealEstateAgent Schema for brokers (recommended by ChatGPT)](https://nextiweb.ca/en/blog/real-estate-brokers/ai-visibility-schema-real-estate-broker.html)
+- [Local SEO and visibility for a real estate broker in Laval: hyper-targeted local guide (Chomedey, Sainte-Dorothée, Vimont…), becoming a sector expert — Google profile, Local Pack, reviews, OACIQ-compliant, no guaranteed ranking](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-laval-local-seo.html)
+- [Local SEO and visibility for a real estate broker in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, sector-expertise area pages](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-longueuil-local-seo.html)
+- [Local SEO and visibility for a real estate broker in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, sector-expertise area pages](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-terrebonne-local-seo.html)
 - [All real estate broker guides](https://nextiweb.ca/en/blog/real-estate-brokers/)
 
 ## SEO local pour restaurants et cafés — Page secteur

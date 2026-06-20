@@ -305,6 +305,10 @@ Guides SEO local, web et conversion pour restaurants et cafés du Québec, couvr
 - [Pages par quartier : être trouvé secteur par secteur](https://nextiweb.ca/blog/restaurants/pages-quartier-seo-restaurant.html)
 - [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/restaurants/convertir-visiteurs-site-reservation-restaurant.html)
 - [Réduire les réservations manquées (no-shows) dans un restaurant](https://nextiweb.ca/blog/restaurants/reduire-reservations-manquees-restaurant.html)
+- [Combien coûte un site web pour restaurant au Québec : ce qui fait le prix (menu en ligne, réservation, photos, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/restaurants/combien-coute-site-web-restaurant.html)
+- [Création de site web pour restaurant à Montréal, Rive-Sud et Rive-Nord : menu, réservation en ligne, photos, SEO local et bilingue](https://nextiweb.ca/blog/restaurants/creation-site-web-restaurant-montreal.html)
+- [Référencement SEO pour restaurant à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par quartier/cuisine, menu indexable — sans position garantie](https://nextiweb.ca/blog/restaurants/referencement-seo-restaurant-montreal.html)
+- [Marketing et publicité pour restaurant à Montréal, Rive-Sud et Rive-Nord : Instagram, Google Ads, infolettre, plateformes de livraison (commissions) — budget réaliste](https://nextiweb.ca/blog/restaurants/marketing-publicite-restaurant-montreal.html)
 - [Index guides restaurants](https://nextiweb.ca/blog/restaurants/)
 
 ## Restaurant Guides — English
@@ -319,6 +323,10 @@ Local SEO, website and conversion guides for Quebec restaurants and cafés, cove
 - [Neighbourhood pages: get found area by area](https://nextiweb.ca/en/blog/restaurants/neighbourhood-pages-restaurant.html)
 - [Turn website visitors into reservations](https://nextiweb.ca/en/blog/restaurants/convert-website-visitors-restaurant.html)
 - [Reduce no-shows (missed reservations) in a restaurant](https://nextiweb.ca/en/blog/restaurants/reduce-no-shows-restaurant.html)
+- [How much does a restaurant website cost in Quebec: what drives the price (online menu, reservations, photos, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/restaurants/restaurant-website-cost.html)
+- [Restaurant website design in Montreal, South Shore and North Shore: menu, online reservations, photos, local and bilingual SEO](https://nextiweb.ca/en/blog/restaurants/restaurant-website-design-montreal.html)
+- [Restaurant SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, neighbourhood/cuisine pages, indexable menu — no guaranteed ranking](https://nextiweb.ca/en/blog/restaurants/restaurant-seo-montreal.html)
+- [Restaurant marketing and advertising in Montreal, South Shore and North Shore: Instagram, Google Ads, newsletter, delivery platforms (commissions) — realistic budget](https://nextiweb.ca/en/blog/restaurants/restaurant-marketing-advertising-montreal.html)
 - [All restaurant guides](https://nextiweb.ca/en/blog/restaurants/)
 
 ## Guides spécialisés — Blog Traiteurs

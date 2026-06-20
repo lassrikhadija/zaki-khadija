@@ -176,6 +176,10 @@ NEXTIWEB accompagne les cliniques d'ostéopathie québécoises sur 6 dimensions 
 - [Référencement et visibilité pour ostéopathe à Laval : guide SEO local (quartiers Chomedey, Sainte-Dorothée, Vimont…), fiche Google, Local Pack, avis — sans position garantie](https://nextiweb.ca/blog/osteopathes/osteopathe-laval-referencement-local.html)
 - [Référencement et visibilité pour ostéopathe à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par secteur](https://nextiweb.ca/blog/osteopathes/osteopathe-longueuil-referencement-local.html)
 - [Référencement et visibilité pour ostéopathe à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par secteur](https://nextiweb.ca/blog/osteopathes/osteopathe-terrebonne-referencement-local.html)
+- [Comment apparaître sur Google quand on est ostéopathe : vue d'ensemble débutant (fiche Google, site, avis, NAP, contenu local) qui renvoie aux guides détaillés — sans position garantie](https://nextiweb.ca/blog/osteopathes/apparaitre-google-osteopathe.html)
+- [Comment attirer de nouveaux patients dans une clinique d'ostéopathie : les 5 leviers (être trouvé, confiance, prise de RDV, publicité, fidélisation)](https://nextiweb.ca/blog/osteopathes/attirer-nouveaux-patients-clinique-osteopathie.html)
+- [Loi 25 et conformité pour le site d'un ostéopathe : données patients, consentement, confidentialité, reçus d'assurance — principes + renvoi à la CAI, pas un avis juridique ; l'ostéopathie n'a pas d'ordre professionnel au Québec](https://nextiweb.ca/blog/osteopathes/loi-25-conformite-site-osteopathe.html)
+- [Fidéliser et réactiver ses patients en ostéopathie : rappels de suivi, réactivation des inactifs, infolettre utile, avis au bon moment — Loi 25 (distinct des rappels de RDV à venir)](https://nextiweb.ca/blog/osteopathes/fideliser-reactiver-patients-osteopathie.html)
 - [Index guides ostéopathes](https://nextiweb.ca/blog/osteopathes/)
 
 ## Osteopath Guides — English
@@ -198,6 +202,10 @@ NEXTIWEB helps Quebec osteopathy clinics improve their online visibility through
 - [Local SEO and visibility for an osteopath in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), Google profile, Local Pack, reviews — no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/osteopath-laval-local-seo.html)
 - [Local SEO and visibility for an osteopath in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, area pages](https://nextiweb.ca/en/blog/osteopaths/osteopath-longueuil-local-seo.html)
 - [Local SEO and visibility for an osteopath in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, area pages](https://nextiweb.ca/en/blog/osteopaths/osteopath-terrebonne-local-seo.html)
+- [How to appear on Google as an osteopath: beginner overview (Google profile, website, reviews, NAP, local content) routing to the deep guides — no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/appear-on-google-osteopath.html)
+- [How to attract new patients to an osteopathy clinic: the 5 levers (get found, trust, booking, advertising, retention)](https://nextiweb.ca/en/blog/osteopaths/attract-new-patients-osteopathy-clinic.html)
+- [Law 25 and compliance for an osteopath's website: patient data, consent, privacy, insurance receipts — principles + refer to the CAI, not legal advice; osteopathy has no professional order in Quebec](https://nextiweb.ca/en/blog/osteopaths/law-25-compliance-osteopath-website.html)
+- [Retaining and reactivating osteopathy patients: follow-up reminders, reactivating inactive patients, useful newsletter, reviews at the right moment — Law 25 (distinct from upcoming-appointment reminders)](https://nextiweb.ca/en/blog/osteopaths/retain-reactivate-osteopathy-patients.html)
 - [All osteopath guides](https://nextiweb.ca/en/blog/osteopaths/)
 
 ## SEO local pour avocats — Page secteur

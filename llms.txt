@@ -231,6 +231,8 @@ NEXTIWEB accompagne les cabinets d'avocats québécois sur la visibilité numér
 - [Référencement et visibilité pour avocat à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…, palais de justice de Laval), fiche Google, Local Pack, avis — sans position garantie](https://nextiweb.ca/blog/avocats/avocat-laval-referencement-local.html)
 - [Référencement et visibilité pour avocat à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-longueuil-referencement-local.html)
 - [Référencement et visibilité pour avocat à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-terrebonne-referencement-local.html)
+- [Comment attirer de nouveaux clients dans un cabinet d'avocats : les 5 leviers (être trouvé, confiance/E-E-A-T, prise de RDV, publicité encadrée par le Barreau, suivi/références)](https://nextiweb.ca/blog/avocats/attirer-nouveaux-clients-cabinet-avocat.html)
+- [Loi 25, confidentialité et secret professionnel sur le site d'un avocat : données du formulaire, consentement, sécurité, articulation Loi 25 (CAI) / secret professionnel (Barreau) — principes, pas un avis juridique](https://nextiweb.ca/blog/avocats/loi-25-confidentialite-site-avocat.html)
 - [Index guides avocats](https://nextiweb.ca/blog/avocats/)
 
 ## SEO local pour courtiers immobiliers — Page secteur
@@ -472,6 +474,8 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 - [Local SEO and visibility for a lawyer in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…, Laval courthouse), Google profile, Local Pack, reviews — no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/lawyer-laval-local-seo.html)
 - [Local SEO and visibility for a lawyer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-longueuil-local-seo.html)
 - [Local SEO and visibility for a lawyer in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-terrebonne-local-seo.html)
+- [How to attract new clients to a law firm: the 5 levers (get found, trust/E-E-A-T, booking, advertising regulated by the Barreau, follow-up/referrals)](https://nextiweb.ca/en/blog/lawyers/attract-new-clients-law-firm.html)
+- [Law 25, confidentiality and professional secrecy on a lawyer's website: form data, consent, security, the Law 25 (CAI) vs professional secrecy (Barreau) interplay — principles, not legal advice](https://nextiweb.ca/en/blog/lawyers/law-25-confidentiality-lawyer-website.html)
 - [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
 
 ## Dental Clinic Guides — English

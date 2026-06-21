@@ -449,6 +449,13 @@ Guides SEO local, web et conversion pour les entrepreneurs québécois. Visibili
 - [Pages par métier et par quartier pour un entrepreneur](https://nextiweb.ca/blog/construction-renovation/pages-metier-quartier-seo-construction.html)
 - [Réduire les rendez-vous d'estimation manqués en construction et rénovation](https://nextiweb.ca/blog/construction-renovation/reduire-rendez-vous-estimation-manques-construction.html)
 - [Transformer les visiteurs du site en demandes de soumission](https://nextiweb.ca/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html)
+- [Combien coûte un site web pour entrepreneur en construction au Québec : ce qui fait le prix (galerie avant/après, formulaire de soumission, licence RBQ visible, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/construction-renovation/combien-coute-site-web-construction.html)
+- [Création de site web pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : galerie de réalisations avant/après, licence RBQ visible, formulaire de projet, SEO local et bilingue](https://nextiweb.ca/blog/construction-renovation/creation-site-web-construction-montreal.html)
+- [Référencement SEO pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis, pages par métier × quartier, NAP avec RBQ cohérent — sans position garantie](https://nextiweb.ca/blog/construction-renovation/referencement-seo-construction-montreal.html)
+- [Marketing et publicité pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : Google Ads, Google Local Services, photos de réalisations, partenariats (architectes, designers) — budget réaliste](https://nextiweb.ca/blog/construction-renovation/marketing-publicite-construction-montreal.html)
+- [Référencement et visibilité pour entrepreneur en construction à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche zone desservie, Local Pack, pages par métier × quartier](https://nextiweb.ca/blog/construction-renovation/construction-laval-referencement-local.html)
+- [Référencement et visibilité pour entrepreneur en construction à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche zone desservie, Local Pack, pages par métier × secteur](https://nextiweb.ca/blog/construction-renovation/construction-longueuil-referencement-local.html)
+- [Référencement et visibilité pour entrepreneur en construction à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche zone desservie, Local Pack, pages par métier × secteur](https://nextiweb.ca/blog/construction-renovation/construction-terrebonne-referencement-local.html)
 - [Index guides construction et rénovation](https://nextiweb.ca/blog/construction-renovation/)
 
 ## Construction & Renovation Guides — English
@@ -463,6 +470,13 @@ Local SEO, web and conversion guides for Quebec contractors. Visibility: rank in
 - [Pages by trade and by neighbourhood for contractors](https://nextiweb.ca/en/blog/construction-renovation/trade-neighbourhood-pages-construction.html)
 - [Reducing missed estimate appointments in construction and renovation](https://nextiweb.ca/en/blog/construction-renovation/reduce-missed-estimate-appointments-construction.html)
 - [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/construction-renovation/convert-website-visitors-construction.html)
+- [How much does a construction contractor website cost in Quebec: what drives the price (before/after gallery, quote-request form, visible RBQ licence, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/construction-renovation/construction-website-cost.html)
+- [Construction contractor website design in Montreal, South Shore and North Shore: before/after project gallery, visible RBQ licence, project form, local and bilingual SEO](https://nextiweb.ca/en/blog/construction-renovation/construction-website-design-montreal.html)
+- [Construction contractor SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, reviews, pages by trade × neighbourhood, NAP with consistent RBQ number — no guaranteed ranking](https://nextiweb.ca/en/blog/construction-renovation/construction-seo-montreal.html)
+- [Construction contractor marketing and advertising in Montreal, South Shore and North Shore: Google Ads, Google Local Services, project photos, partnerships (architects, designers) — realistic budget](https://nextiweb.ca/en/blog/construction-renovation/construction-marketing-advertising-montreal.html)
+- [Local SEO and visibility for a construction contractor in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), service-area listing, Local Pack, pages by trade × neighbourhood](https://nextiweb.ca/en/blog/construction-renovation/construction-laval-local-seo.html)
+- [Local SEO and visibility for a construction contractor in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — service-area listing, Local Pack, pages by trade × area](https://nextiweb.ca/en/blog/construction-renovation/construction-longueuil-local-seo.html)
+- [Local SEO and visibility for a construction contractor in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — service-area listing, Local Pack, pages by trade × area](https://nextiweb.ca/en/blog/construction-renovation/construction-terrebonne-local-seo.html)
 - [All construction and renovation guides](https://nextiweb.ca/en/blog/construction-renovation/)
 
 ## SEO local pour services à domicile — Page secteur

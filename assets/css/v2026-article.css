@@ -162,6 +162,8 @@
 
 /* ---------- Responsive ---------- */
 @media(max-width:900px){
-  .article-layout{grid-template-columns:1fr}
+  .article-layout{grid-template-columns:minmax(0,1fr)}
   .article-sidebar{display:none}
+  .article-body{min-width:0}
+  .article-cta-inline .btn{white-space:normal;max-width:100%}
 }

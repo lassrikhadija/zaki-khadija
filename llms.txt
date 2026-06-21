@@ -497,6 +497,13 @@ Guides SEO local, web et conversion pour les entreprises de services à domicile
 - [Pages par service et par quartier pour un service à domicile](https://nextiweb.ca/blog/services-domicile/pages-service-quartier-seo-services-domicile.html)
 - [Réduire les rendez-vous manqués en services à domicile](https://nextiweb.ca/blog/services-domicile/reduire-rendez-vous-manques-services-domicile.html)
 - [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/services-domicile/convertir-visiteurs-site-reservation-services-domicile.html)
+- [Combien coûte un site web pour une entreprise de services à domicile au Québec : ce qui fait le prix (réservation en ligne, pages par service, signaux de confiance, zones desservies, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/services-domicile/combien-coute-site-web-services-domicile.html)
+- [Création de site web pour services à domicile à Montréal, Rive-Sud et Rive-Nord : réservation en ligne, pages par service, signaux de confiance (assurance, personnel vérifié), zones desservies, SEO local et bilingue](https://nextiweb.ca/blog/services-domicile/creation-site-web-services-domicile-montreal.html)
+- [Référencement SEO pour services à domicile à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis, intentions d'urgence, pages par service × quartier — sans position garantie](https://nextiweb.ca/blog/services-domicile/referencement-seo-services-domicile-montreal.html)
+- [Marketing et publicité pour services à domicile à Montréal, Rive-Sud et Rive-Nord : Google Ads, Google Local Services, avis, infolettre/SMS pour services récurrents, dépliants ciblés — budget réaliste](https://nextiweb.ca/blog/services-domicile/marketing-publicite-services-domicile-montreal.html)
+- [Référencement et visibilité pour services à domicile à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche zone desservie, Local Pack, urgence, pages par service × quartier](https://nextiweb.ca/blog/services-domicile/services-domicile-laval-referencement-local.html)
+- [Référencement et visibilité pour services à domicile à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche zone desservie, Local Pack, urgence, pages par service × secteur](https://nextiweb.ca/blog/services-domicile/services-domicile-longueuil-referencement-local.html)
+- [Référencement et visibilité pour services à domicile à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche zone desservie, Local Pack, urgence, pages par service × secteur](https://nextiweb.ca/blog/services-domicile/services-domicile-terrebonne-referencement-local.html)
 - [Index guides services à domicile](https://nextiweb.ca/blog/services-domicile/)
 
 ## Home Services Guides — English
@@ -511,6 +518,13 @@ Local SEO, web and conversion guides for Quebec home-services businesses (plumbe
 - [Pages by service and by neighbourhood for home services](https://nextiweb.ca/en/blog/home-services/service-neighbourhood-pages-home-services.html)
 - [Reducing missed appointments in home services](https://nextiweb.ca/en/blog/home-services/reduce-missed-appointments-home-services.html)
 - [Turning website visitors into bookings](https://nextiweb.ca/en/blog/home-services/convert-website-visitors-home-services.html)
+- [How much does a home-services website cost in Quebec: what drives the price (online booking, pages by service, trust signals, service areas, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/home-services/home-services-website-cost.html)
+- [Home-services website design in Montreal, South Shore and North Shore: online booking, pages by service, trust signals (insurance, vetted staff), service areas, local and bilingual SEO](https://nextiweb.ca/en/blog/home-services/home-services-website-design-montreal.html)
+- [Home-services SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, reviews, emergency intents, pages by service × neighbourhood — no guaranteed ranking](https://nextiweb.ca/en/blog/home-services/home-services-seo-montreal.html)
+- [Home-services marketing and advertising in Montreal, South Shore and North Shore: Google Ads, Google Local Services, reviews, newsletter/SMS for recurring services, targeted flyers — realistic budget](https://nextiweb.ca/en/blog/home-services/home-services-marketing-advertising-montreal.html)
+- [Local SEO and visibility for a home-services business in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), service-area listing, Local Pack, emergency intents, pages by service × neighbourhood](https://nextiweb.ca/en/blog/home-services/home-services-laval-local-seo.html)
+- [Local SEO and visibility for a home-services business in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — service-area listing, Local Pack, emergency intents, pages by service × area](https://nextiweb.ca/en/blog/home-services/home-services-longueuil-local-seo.html)
+- [Local SEO and visibility for a home-services business in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — service-area listing, Local Pack, emergency intents, pages by service × area](https://nextiweb.ca/en/blog/home-services/home-services-terrebonne-local-seo.html)
 - [All home services guides](https://nextiweb.ca/en/blog/home-services/)
 
 ## Law Firm Guides — English

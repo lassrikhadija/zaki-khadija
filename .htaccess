@@ -84,6 +84,11 @@ ErrorDocument 404 /404.html
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   # Permissions-Policy — désactive caméra / micro / géolocalisation par défaut
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # Content-Security-Policy — EN MODE REPORT-ONLY (ne bloque RIEN, rapporte seulement dans la console
+  # du navigateur). Surveiller les violations sur les pages clés (accueil, contact, un article), puis,
+  # si aucune ressource légitime n'est signalée, renommer l'en-tête en "Content-Security-Policy" pour activer.
+  # 'unsafe-inline' nécessaire : scripts (GTM, showcase) et styles inline présents sur tout le site.
+  Header always set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://stats.g.doubleclick.net; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://api.hsforms.com https://*.hsforms.com https://*.hubspot.com; frame-src 'self' https://www.googletagmanager.com https://td.doubleclick.net; base-uri 'self'; form-action 'self' https://*.hsforms.com; object-src 'none'"
   # WebMCP — jeton origin trial (active document.modelContext / WebMCP sur Chrome 150+) site-wide
   Header always set Origin-Trial "AmeaFUQ2GiDGFCgqoQ1c8LHh6YkfRUA42jjSPi1NGwwTBTDHWvRfBERXRcm0Agdu2RaqsKwzL5xypVV4+QNIsw8AAABLeyJvcmlnaW4iOiJodHRwczovL25leHRpd2ViLmNhOjQ0MyIsImZlYXR1cmUiOiJXZWJNQ1AiLCJleHBpcnkiOjE3OTQ4NzM2MDB9"
   # Supprime la signature serveur

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>ÉCLOSION — Atelier floral augmenté · Montréal (démo)</title>
+<meta name="description" content="Démo fictive d'un site de fleuriste nouvelle génération à Montréal — bouquets sur mesure, configurateur d'ambiance et livraison géolocalisée. Réalisée par NEXTIWEB Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --bg:#ffffff;
+  --bg-2:#f7f6f3;
+  --ink:#0d0d0f;
+  --muted:#6c6c72;
+  --line:rgba(0,0,0,.1);
+  --glass:rgba(255,255,255,.72);
+  --lime:#ff1f3d;          /* accent rouge vif (nom conservé pour héritage) */
+  --red:#ff1f3d;
+  --red-soft:#ff4f63;
+  --gold:#c9a23a;
+  --radius:22px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Outfit',system-ui,sans-serif;
+  font-weight:300;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{ /* grain */
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+h1,h2,h3,.brand,.eyebrow{font-family:'Syne',sans-serif;font-weight:700;line-height:1.05;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px;position:relative;z-index:2}
+.eyebrow{
+  font-size:.72rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--lime);display:inline-flex;align-items:center;gap:.6em;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--lime);opacity:.6}
+
+/* cursor glow */
+.glow{
+  position:fixed;top:0;left:0;width:520px;height:520px;border-radius:50%;
+  pointer-events:none;z-index:1;transform:translate(-50%,-50%);
+  background:radial-gradient(circle, rgba(255,31,61,.10), transparent 60%);
+  transition:opacity .4s;opacity:0;mix-blend-mode:multiply;
+}
+.js .glow.on{opacity:1}
+
+/* ---- skip + consent ---- */
+.skip{position:absolute;left:-999px;top:0;background:var(--lime);color:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:120;font-weight:600}
+.skip:focus{left:0}
+.consent{
+  position:fixed;left:18px;right:18px;bottom:18px;z-index:110;
+  background:var(--glass);backdrop-filter:blur(14px);border:1px solid var(--line);
+  border-radius:18px;padding:18px 20px;display:flex;gap:18px;align-items:center;
+  flex-wrap:wrap;justify-content:space-between;max-width:760px;margin:0 auto;
+  box-shadow:0 24px 60px rgba(0,0,0,.18);
+}
+.consent p{font-size:.85rem;color:var(--muted);flex:1 1 320px;margin:0}
+.consent strong{color:var(--ink);font-weight:500}
+.consent__btns{display:flex;gap:10px;flex-wrap:wrap}
+.consent.hide{display:none}
+
+/* ---- buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;gap:.55em;font-family:'Outfit';font-weight:600;
+  font-size:.92rem;padding:.85em 1.5em;border-radius:100px;cursor:pointer;border:1px solid transparent;
+  transition:transform .25s ease, box-shadow .25s ease, background .25s, color .25s;white-space:nowrap;
+}
+.btn--primary{background:var(--lime);color:#fff;box-shadow:0 0 0 rgba(255,31,61,0)}
+.btn--primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(255,31,61,.28)}
+.btn--ghost{border-color:var(--line);color:var(--ink);background:rgba(0,0,0,.02)}
+.btn--ghost:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-3px)}
+.btn--sm{padding:.6em 1.1em;font-size:.82rem}
+
+/* ---- header ---- */
+.site-header{position:sticky;top:0;z-index:90;backdrop-filter:blur(12px);
+  background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.62));border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-size:1.35rem;letter-spacing:.16em;display:flex;align-items:center;gap:.5em}
+.brand b{font-weight:800}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px var(--lime);animation:pulse 2.6s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.78)}}
+.nav__links{display:flex;gap:30px;align-items:center}
+.nav__links a{font-size:.92rem;color:var(--muted);transition:color .2s;position:relative}
+.nav__links a:hover{color:var(--ink)}
+.nav__links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--lime);transition:width .25s}
+.nav__links a:hover::after{width:100%}
+.nav__cta{display:flex;align-items:center;gap:14px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{width:26px;height:2px;background:var(--ink);transition:.3s}
+.nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---- hero ---- */
+.hero{position:relative;padding:clamp(70px,12vw,140px) 0 90px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;z-index:0;animation:float 16s ease-in-out infinite}
+.blob.b1{width:520px;height:520px;background:#ffd9de;top:-160px;right:-120px}
+.blob.b2{width:420px;height:420px;background:#ffe7df;bottom:-160px;left:-120px;animation-delay:-6s}
+.blob.b3{width:300px;height:300px;background:#ff1f3d;top:40%;left:45%;opacity:.08;animation-delay:-3s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-40px) scale(1.08)}66%{transform:translate(-25px,25px) scale(.95)}}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:.5em 0 .35em}
+.hero h1 em{font-style:normal;color:transparent;background:linear-gradient(120deg,var(--red),#ff6a3d);-webkit-background-clip:text;background-clip:text}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:30ch;margin-bottom:2em}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:2.4em}
+.hero__stats{display:flex;gap:30px;flex-wrap:wrap}
+.stat b{font-family:'Syne';font-size:1.7rem;color:var(--ink);display:block;line-height:1}
+.stat span{font-size:.78rem;color:var(--muted);letter-spacing:.04em}
+
+/* hero visual : capsule en verre + bouquet svg vivant */
+.hero__card{
+  position:relative;border-radius:28px;padding:30px;background:var(--glass);
+  border:1px solid var(--line);backdrop-filter:blur(16px);
+  box-shadow:0 30px 70px rgba(0,0,0,.1), inset 0 1px 0 rgba(255,255,255,.6);
+}
+.hero__card .tagchip{position:absolute;top:18px;left:18px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:#fff;background:var(--red);border:1px solid var(--red);padding:6px 12px;border-radius:100px;z-index:3}
+.hero__card .live{position:absolute;top:18px;right:18px;font-size:.68rem;color:var(--muted);display:flex;align-items:center;gap:6px}
+.hero__card .live i{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime);animation:pulse 1.8s infinite}
+.hero__photo{margin-top:14px;border-radius:18px;overflow:hidden;position:relative;aspect-ratio:4/5;border:1px solid var(--line)}
+.hero__photo img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .6s ease, transform 9s ease}
+.hero__photo:hover img{transform:scale(1.06)}
+.hero__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(7,11,9,.55));pointer-events:none}
+
+/* ---- section base ---- */
+section{position:relative;padding:clamp(70px,9vw,120px) 0}
+.sec-head{max-width:680px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.1rem);margin:.45em 0 .4em}
+.sec-head p{color:var(--muted);font-size:1.06rem}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---- configurateur (piece maitresse) ---- */
+#config{background:linear-gradient(180deg,var(--bg),var(--bg-2))}
+.config-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:stretch}
+.mood-list{display:flex;flex-direction:column;gap:12px}
+.mood{
+  text-align:left;width:100%;cursor:pointer;border:1px solid var(--line);background:#fff;
+  border-radius:16px;padding:16px 18px;display:flex;align-items:center;gap:16px;
+  transition:border-color .25s, background .25s, transform .2s;color:var(--ink);
+}
+.mood:hover{transform:translateX(5px);border-color:rgba(255,31,61,.4)}
+.mood.active{border-color:var(--lime);background:rgba(255,31,61,.07);box-shadow:0 0 30px rgba(255,31,61,.08)}
+.mood .swatch{width:54px;height:54px;border-radius:12px;flex:none;position:relative;overflow:hidden;border:1px solid rgba(0,0,0,.12);background-size:cover;background-position:center}
+.mood h4{font-family:'Syne';font-size:1.02rem;font-weight:600;margin-bottom:2px}
+.mood small{color:var(--muted);font-size:.82rem;font-weight:300}
+.mood .arrow{margin-left:auto;color:var(--muted);opacity:0;transition:.25s}
+.mood.active .arrow{opacity:1;color:var(--lime)}
+
+.config-preview{
+  border:1px solid var(--line);border-radius:24px;background:#fff;backdrop-filter:blur(16px);
+  padding:32px;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(0,0,0,.09);
+}
+.config-preview .pv-top{display:flex;gap:26px;align-items:center}
+.pv-photo{width:180px;height:210px;flex:none;border-radius:16px;overflow:hidden;border:1px solid var(--line);position:relative;background:#efeded}
+.pv-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .45s ease}
+.pv-meta{flex:1}
+.pv-meta .eyebrow{margin-bottom:.6em}
+.pv-meta h3{font-size:1.7rem;margin-bottom:.3em;transition:.3s}
+.pv-meta p{color:var(--muted);font-size:.96rem}
+.pv-palette{display:flex;gap:8px;margin:18px 0 8px}
+.pv-palette span{width:26px;height:26px;border-radius:8px;border:1px solid rgba(0,0,0,.12)}
+.pv-comp{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.pv-comp li{font-size:.82rem;color:var(--ink);background:rgba(0,0,0,.04);border:1px solid var(--line);
+  padding:6px 12px;border-radius:100px}
+.pv-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding-top:22px;border-top:1px solid var(--line);flex-wrap:wrap}
+.pv-price b{font-family:'Syne';font-size:2rem;color:var(--lime)}
+.pv-price small{display:block;color:var(--muted);font-size:.76rem;letter-spacing:.05em}
+
+/* ---- creations grid ---- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg-2);
+  transition:transform .3s, border-color .3s;position:relative;
+}
+.card:hover{transform:translateY(-8px);border-color:rgba(255,31,61,.35)}
+.card__art{height:230px;position:relative;overflow:hidden}
+.card__art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
+.card:hover .card__art img{transform:scale(1.07)}
+.card__body{padding:22px}
+.card__body h3{font-size:1.2rem;margin-bottom:.3em}
+.card__body p{color:var(--muted);font-size:.9rem;margin-bottom:1em}
+.card__price{font-family:'Syne';color:var(--lime);font-weight:600}
+.card__tag{position:absolute;top:14px;left:14px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  background:rgba(255,255,255,.92);color:var(--ink);border:1px solid var(--line);padding:5px 10px;border-radius:100px;z-index:2}
+
+/* ---- tech features ---- */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat__item{border:1px solid var(--line);border-radius:18px;padding:28px;background:var(--bg-2);
+  transition:border-color .3s,transform .3s}
+.feat__item:hover{border-color:rgba(255,31,61,.35);transform:translateY(-5px)}
+.feat__ic{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,31,61,.1);border:1px solid var(--line);margin-bottom:18px;color:var(--lime)}
+.feat__item h3{font-size:1.15rem;margin-bottom:.4em}
+.feat__item p{color:var(--muted);font-size:.92rem}
+
+/* ---- avis ---- */
+.avis{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.avis__c{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--bg-2)}
+.avis__stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.avis__c p{font-size:.96rem;margin-bottom:18px}
+.avis__who{display:flex;align-items:center;gap:12px}
+.avis__av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--red),#111);
+  display:flex;align-items:center;justify-content:center;font-family:'Syne';font-weight:700;color:#fff;font-size:.9rem}
+.avis__who b{display:block;font-weight:500;font-size:.92rem}
+.avis__who span{color:var(--muted);font-size:.8rem}
+
+/* ---- FAQ ---- */
+.faq{max-width:780px;margin:0 auto}
+.faq__item{border-bottom:1px solid var(--line)}
+.faq__btn{width:100%;text-align:left;background:none;border:0;color:var(--ink);cursor:pointer;
+  font-family:'Syne';font-weight:600;font-size:1.1rem;padding:22px 40px 22px 0;position:relative;display:flex}
+.faq__btn::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);color:var(--lime);
+  font-size:1.5rem;font-family:'Outfit';transition:transform .3s}
+.faq__item.is-open .faq__btn::after{content:"−"}
+.faq__a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq__a p{color:var(--muted);padding:0 0 22px;font-size:.96rem}
+.faq__item.is-open .faq__a{max-height:240px}
+
+/* ---- CTA final ---- */
+#contact{text-align:center}
+.cta-box{border:1px solid var(--line);border-radius:30px;padding:clamp(40px,7vw,80px);
+  background:radial-gradient(120% 140% at 50% 0%, rgba(255,31,61,.1), transparent 55%), var(--glass);
+  backdrop-filter:blur(14px);position:relative;overflow:hidden}
+.cta-box h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:.4em}
+.cta-box p{color:var(--muted);max-width:46ch;margin:0 auto 2em;font-size:1.06rem}
+
+/* ---- footer ---- */
+.site-footer{border-top:1px solid var(--line);padding:60px 0 30px;background:var(--bg-2);position:relative;z-index:2}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px;margin-bottom:44px}
+.foot-grid h5{font-family:'Syne';font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.foot-grid a{display:block;color:var(--ink);font-size:.92rem;margin-bottom:10px;opacity:.8;transition:.2s}
+.foot-grid a:hover{opacity:1;color:var(--lime)}
+.foot-grid p{color:var(--muted);font-size:.9rem}
+.foot-brand .brand{font-size:1.3rem;margin-bottom:14px}
+.foot-bottom{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.82rem}
+
+/* ---- demo ribbon ---- */
+.demo-ribbon{position:fixed;bottom:18px;left:18px;z-index:80;background:#0d0d0f;border-radius:100px;
+  padding:11px 20px;display:inline-flex;align-items:center;gap:10px;white-space:nowrap;
+  font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#fff;
+  box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.demo-ribbon .rdot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 2.6s infinite}
+.demo-ribbon b{color:var(--red);font-weight:700}
+.demo-ribbon a{color:inherit;text-decoration:none}
+.demo-ribbon a:hover{text-decoration:underline}
+body{padding-bottom:64px}
+@media(max-width:540px){.demo-ribbon{font-size:.66rem;padding:9px 16px;left:12px;bottom:12px}}
+
+/* ---- responsive ---- */
+@media(max-width:920px){
+  .nav__links{position:fixed;inset:74px 0 auto 0;flex-direction:column;background:var(--bg-2);
+    border-bottom:1px solid var(--line);padding:24px;gap:18px;transform:translateY(-130%);transition:transform .35s;z-index:80}
+  .nav.open .nav__links{transform:none}
+  .burger{display:flex}
+  .nav__cta .btn--ghost{display:none}
+  .hero__grid,.config-grid{grid-template-columns:1fr}
+  .cards,.feat,.avis{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .cards,.feat,.avis,.foot-grid{grid-template-columns:1fr}
+  .config-preview .pv-top{flex-direction:column;text-align:center}
+  .pv-meta .eyebrow{justify-content:center}
+  .hero__stats{gap:20px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a class="brand" href="#"><span class="dot"></span><b>ÉCLOSION</b></a>
+      <div class="nav__links" id="navlinks">
+        <a href="#atelier">L'atelier</a>
+        <a href="#config">Configurateur</a>
+        <a href="#creations">Créations</a>
+        <a href="#tech">Technologie</a>
+        <a href="#avis">Avis</a>
+      </div>
+      <div class="nav__cta">
+        <a href="#contact" class="btn btn--primary btn--sm">Composer mon bouquet</a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__copy reveal">
+        <span class="eyebrow">Atelier floral augmenté · Montréal</span>
+        <h1>Des fleurs qui <em>vous ressemblent</em>, conçues par algorithme et main d'artiste.</h1>
+        <p class="lead">Choisissez une émotion, notre configurateur compose le bouquet. Livraison géolocalisée en 90&nbsp;minutes sur l'île.</p>
+        <div class="hero__cta">
+          <a href="#config" class="btn btn--primary">Lancer le configurateur</a>
+          <a href="#creations" class="btn btn--ghost">Voir les créations</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><b>90 min</b><span>livraison express</span></div>
+          <div class="stat"><b>100 %</b><span>fleurs locales*</span></div>
+          <div class="stat"><b>4,9 ★</b><span>312 avis*</span></div>
+        </div>
+      </div>
+
+      <div class="hero__card reveal">
+        <span class="tagchip">Aperçu en direct</span>
+        <span class="live"><i></i> ambiance sélectionnée</span>
+        <div class="hero__photo">
+          <img id="heroImg" src="img/mood-sympathie.jpg" alt="Bouquet blanc — composition signature de l'atelier" loading="eager" width="640" height="800">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATELIER -->
+<section id="atelier">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Notre approche</span>
+      <h2>L'artisanat floral, version 2026.</h2>
+      <p>ÉCLOSION marie le savoir-faire d'un atelier traditionnel à une couche technologique : profil émotionnel, palette générée, suivi de fraîcheur. Chaque bouquet reste fait main — la machine ne fait que mieux écouter.</p>
+    </div>
+    <div class="feat reveal">
+      <div class="feat__item">
+        <div class="feat__ic">✺</div>
+        <h3>Composition par émotion</h3>
+        <p>On part du message, pas du catalogue. Romance, gratitude, condoléances : la palette s'aligne sur l'intention.</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">⟁</div>
+        <h3>Fraîcheur tracée</h3>
+        <p>Chaque tige porte une date de coupe. Garantie fraîcheur 7 jours ou recomposition offerte.*</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">◎</div>
+        <h3>Fleurs d'ici d'abord</h3>
+        <p>Producteurs québécois en priorité, import responsable en complément hors saison.*</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFIGURATEUR (piece maitresse) -->
+<section id="config">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Pièce maîtresse interactive</span>
+      <h2>Configurez votre bouquet par émotion.</h2>
+      <p>Sélectionnez une intention à gauche — la composition, la palette et le prix s'ajustent en direct.</p>
+    </div>
+    <div class="config-grid reveal">
+      <div class="mood-list" id="moodList" role="tablist" aria-label="Choisir une émotion">
+        <!-- injecté par JS -->
+      </div>
+
+      <div class="config-preview">
+        <div class="pv-top">
+          <div class="pv-photo">
+            <img id="pvImg" src="img/mood-romance.jpg" alt="Aperçu du bouquet selon l'ambiance choisie">
+          </div>
+          <div class="pv-meta">
+            <span class="eyebrow" id="pvEyebrow">Émotion</span>
+            <h3 id="pvTitle">—</h3>
+            <p id="pvDesc">—</p>
+          </div>
+        </div>
+        <div class="pv-palette" id="pvPalette" aria-hidden="true"></div>
+        <ul class="pv-comp" id="pvComp"></ul>
+        <div class="pv-foot">
+          <div class="pv-price">
+            <small>À partir de</small>
+            <b id="pvPrice">—</b>
+          </div>
+          <a href="#contact" class="btn btn--primary">Commander cette ambiance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREATIONS -->
+<section id="creations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Collection signature</span>
+      <h2>Quelques créations de l'atelier.</h2>
+      <p>Des compositions prêtes à offrir, chacune déclinable selon votre configurateur.</p>
+    </div>
+    <div class="cards reveal"></div>
+  </div>
+</section>
+
+<!-- TECH -->
+<section id="tech">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">La couche technologique</span>
+      <h2>Ce qui rend ÉCLOSION différent.</h2>
+    </div>
+    <div class="feat reveal">
+      <div class="feat__item">
+        <div class="feat__ic">⚲</div>
+        <h3>Livraison géolocalisée</h3>
+        <p>Suivez le coursier en direct sur une carte, comme un repas livré. Créneau de 30&nbsp;min annoncé par SMS.</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">⤿</div>
+        <h3>Abonnement intelligent</h3>
+        <p>Un bouquet récurrent qui apprend vos goûts : il évite les fleurs déjà reçues et suit la saison.</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">⌖</div>
+        <h3>Aperçu avant achat</h3>
+        <p>Visualisez la composition à l'écran avant de valider. Aucune surprise à la réception.</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">✉</div>
+        <h3>Carte vocale</h3>
+        <p>Ajoutez un message audio par QR code glissé dans le bouquet — l'émotion en plus du parfum.</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">♻</div>
+        <h3>Zéro mousse florale</h3>
+        <p>Techniques de maintien sans plastique ni mousse phénolique. Emballage 100&nbsp;% compostable.*</p>
+      </div>
+      <div class="feat__item">
+        <div class="feat__ic">⧉</div>
+        <h3>Espace entreprises</h3>
+        <p>Tableau de bord B2B : accueils, événements, abonnements bureaux et facturation centralisée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section id="avis">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Ils nous font confiance*</span>
+      <h2>4,9 / 5 sur 312 avis vérifiés.*</h2>
+    </div>
+    <div class="avis reveal">
+      <div class="avis__c">
+        <div class="avis__stars">★★★★★</div>
+        <p>« J'ai choisi “gratitude” pour ma grand-mère et le bouquet était exactement le ton juste. L'aperçu à l'écran était fidèle au réel. »</p>
+        <div class="avis__who"><div class="avis__av">CM</div><div><b>Camille M.</b><span>Rosemont</span></div></div>
+      </div>
+      <div class="avis__c">
+        <div class="avis__stars">★★★★★</div>
+        <p>« Commandé à 14 h, reçu à 15 h 20 avec le suivi en direct du coursier. Pour un anniversaire oublié, ça sauve une journée. »</p>
+        <div class="avis__who"><div class="avis__av">JL</div><div><b>Jonathan L.</b><span>Ville-Marie</span></div></div>
+      </div>
+      <div class="avis__c">
+        <div class="avis__stars">★★★★★</div>
+        <p>« On a pris l'abonnement bureau. Chaque lundi un nouveau bouquet, jamais deux fois le même. L'équipe adore. »</p>
+        <div class="avis__who"><div class="avis__av">ST</div><div><b>Sophie T.</b><span>Studio Tournesol inc.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin:0 auto 54px;text-align:center">
+      <span class="eyebrow" style="justify-content:center">Questions fréquentes</span>
+      <h2>Tout savoir avant de commander.</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq__item">
+        <button class="faq__btn" aria-expanded="false">Quels secteurs livrez-vous ?</button>
+        <div class="faq__a"><p>L'île de Montréal et Laval en express 90&nbsp;minutes ; la couronne nord et sud le jour même avant 11&nbsp;h. (Démo : zones fictives.)</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__btn" aria-expanded="false">Le bouquet reçu correspond-il à l'aperçu ?</button>
+        <div class="faq__a"><p>Oui à 95&nbsp;%. La nature reste vivante : si une fleur manque, elle est remplacée par une équivalente de même palette et même valeur.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__btn" aria-expanded="false">Puis-je offrir sans connaître l'adresse exacte ?</button>
+        <div class="faq__a"><p>Oui — envoyez un lien de confirmation au destinataire, il choisit son créneau et précise l'adresse lui-même.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__btn" aria-expanded="false">Comment fonctionne l'abonnement ?</button>
+        <div class="faq__a"><p>Hebdomadaire, bimensuel ou mensuel, sans engagement. Vous pouvez sauter une livraison ou changer l'ambiance à tout moment.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CTA -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow" style="justify-content:center">Prêt à fleurir ?</span>
+      <h2>Composez le bouquet de votre prochaine émotion.</h2>
+      <p>Lancez le configurateur ou parlez à un fleuriste. On répond en moins de 2&nbsp;heures, du mardi au dimanche.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="#config" class="btn btn--primary">Composer mon bouquet</a>
+        <a href="tel:+15140000000" class="btn btn--ghost">514 000-0000*</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#"><span class="dot"></span><b>ÉCLOSION</b></a>
+        <p>Atelier floral augmenté.<br>1234, rue des Lilas, Montréal QC*<br>Mar–Dim · 9 h – 19 h</p>
+      </div>
+      <div>
+        <h5>Explorer</h5>
+        <a href="#atelier">L'atelier</a>
+        <a href="#config">Configurateur</a>
+        <a href="#creations">Créations</a>
+        <a href="#tech">Technologie</a>
+      </div>
+      <div>
+        <h5>Occasions</h5>
+        <a href="#config">Romance</a>
+        <a href="#config">Sympathie</a>
+        <a href="#config">Célébration</a>
+        <a href="#config">Mariage</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:+15140000000">514 000-0000*</a>
+        <a href="#">bonjour@eclosion.demo*</a>
+        <a href="#contact">Espace entreprises</a>
+        <a href="#contact">Devenir partenaire</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ÉCLOSION (marque fictive) — Démo réalisée par NEXTIWEB Studio.</span>
+      <span>*Contenu et chiffres entièrement fictifs.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- consentement Loi 25 -->
+<div class="consent" id="consent">
+  <p><strong>Cookies.</strong> Cette démo n'utilise que des cookies essentiels. Conforme à la <strong>Loi 25</strong> du Québec sur la protection des renseignements personnels.</p>
+  <div class="consent__btns">
+    <button class="btn btn--ghost btn--sm" id="consentRefuse">Refuser</button>
+    <button class="btn btn--primary btn--sm" id="consentOk">J'accepte</button>
+  </div>
+</div>
+
+<!-- ruban demo -->
+<div class="demo-ribbon"><span class="rdot"></span><b>Démo</b> · Créé par <a href="https://nextiweb.ca">nextiweb.ca</a></div>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  root.classList.remove('no-js'); root.classList.add('js');
+
+  /* ---------- données configurateur ---------- */
+  var MOODS=[
+    {key:'romance',name:'Romance',tag:'Déclaration & amour',
+     img:'img/mood-romance.jpg',f:['#ff8fc7','#ff5fa2','#ffd0e6'],
+     title:'Velours & Pivoines',price:'95 $',
+     desc:'Pivoines, roses garden et eucalyptus pour un aveu tout en douceur.',
+     comp:['Pivoines','Roses garden','Renoncules','Eucalyptus']},
+    {key:'sympathie',name:'Sympathie',tag:'Condoléances & réconfort',
+     img:'img/mood-sympathie.jpg',f:['#f4fff4','#d8f0dd','#bfe6c8'],
+     title:'Blanc Lumière',price:'120 $',
+     desc:'Blancs purs et verts apaisants pour dire ce que les mots peinent à formuler.',
+     comp:['Lys','Roses blanches','Lisianthus','Feuillage argenté']},
+    {key:'celebration',name:'Célébration',tag:'Anniversaire & joie',
+     img:'img/mood-celebration.jpg',f:['#b6ff5a','#ffb14a','#ff6f61'],
+     title:'Néon Tropical',price:'85 $',
+     desc:'Palette vive et solaire pour faire éclater la bonne nouvelle.',
+     comp:['Gerberas','Strelitzias','Craspedia','Monstera']},
+    {key:'mariage',name:'Mariage',tag:'Cérémonie & élégance',
+     img:'img/mood-mariage.jpg',f:['#ffe9f1','#ffd5c2','#f7f3e8'],
+     title:'Nuage Poudré',price:'240 $',
+     desc:'Tons poudrés et texture aérienne pour les grands jours.',
+     comp:['Roses David Austin','Hortensias','Gypsophile','Ruscus']},
+    {key:'corporatif',name:'Corporatif',tag:'Bureau & événement',
+     img:'img/mood-corporatif.jpg',f:['#cfe8d2','#9fd6c0','#e7f4ec'],
+     title:'Ligne Minimale',price:'150 $',
+     desc:'Composition graphique et durable, pensée pour les espaces de travail.',
+     comp:['Anthuriums','Protéas','Graminées','Eucalyptus parvifolia']}
+  ];
+
+  /* ---------- configurateur interactif ---------- */
+  var moodList=d.getElementById('moodList');
+  var pvTitle=d.getElementById('pvTitle'),pvDesc=d.getElementById('pvDesc'),
+      pvPrice=d.getElementById('pvPrice'),pvEyebrow=d.getElementById('pvEyebrow'),
+      pvComp=d.getElementById('pvComp'),pvPalette=d.getElementById('pvPalette'),
+      pvImg=d.getElementById('pvImg'),heroImg=d.getElementById('heroImg');
+
+  MOODS.forEach(function(m,idx){
+    var b=d.createElement('button');
+    b.className='mood'+(idx===0?' active':'');
+    b.setAttribute('role','tab');
+    b.setAttribute('aria-selected',idx===0?'true':'false');
+    b.innerHTML='<span class="swatch" style="background-image:url('+m.img+')"></span>'+
+      '<span><h4>'+m.name+'</h4><small>'+m.tag+'</small></span>'+
+      '<span class="arrow">→</span>';
+    b.addEventListener('click',function(){ select(idx); });
+    moodList.appendChild(b);
+  });
+
+  function swapImg(el,src){
+    if(!el)return;
+    el.style.opacity='0';
+    var tmp=new Image();
+    tmp.onload=function(){el.src=src;el.style.opacity='1';};
+    tmp.onerror=function(){el.src=src;el.style.opacity='1';};
+    tmp.src=src;
+  }
+
+  function select(idx,skipHero){
+    var m=MOODS[idx];
+    swapImg(pvImg,m.img);
+    if(!skipHero) swapImg(heroImg,m.img);
+    pvEyebrow.textContent=m.tag;
+    pvTitle.textContent=m.title;
+    pvDesc.textContent=m.desc;
+    pvPrice.textContent=m.price;
+    pvComp.innerHTML=m.comp.map(function(c){return '<li>'+c+'</li>';}).join('');
+    pvPalette.innerHTML=m.f.map(function(c){return '<span style="background:'+c+'"></span>';}).join('');
+    var btns=moodList.querySelectorAll('.mood');
+    btns.forEach(function(el,i){el.classList.toggle('active',i===idx);el.setAttribute('aria-selected',i===idx?'true':'false');});
+  }
+  select(0,true); // init : garde hero.jpg jusqu'à la 1re interaction
+
+  /* ---------- créations (cartes générées) ---------- */
+  var CREATIONS=[
+    {tag:'Best-seller',name:'Aurore',desc:'Roses corail et pêche, le réveil en douceur.',price:'69 $',img:'img/crea-aurore.jpg'},
+    {tag:'Signature',name:'Jardin Vif',desc:'Mélange coloré et texturé — audacieux et lumineux.',price:'78 $',img:'img/crea-foret.jpg'},
+    {tag:'Nouveauté',name:'Améthyste',desc:'Lisianthus et tons mauves, élégance minérale.',price:'92 $',img:'img/crea-amethyste.jpg'},
+    {tag:'Mariage',name:'Première Neige',desc:'Roses blanches et feuillage, texture nuage.',price:'135 $',img:'img/crea-neige.jpg'},
+    {tag:'Express 90 min',name:'Soleil de 16 h',desc:'Tournesols éclatants, l’urgence joyeuse.',price:'59 $',img:'img/crea-soleil.jpg'},
+    {tag:'Durable',name:'Sécheresse',desc:'Composition séchée, des mois sans une goutte d’eau.',price:'48 $',img:'img/crea-seche.jpg'}
+  ];
+  var cardsWrap=d.querySelector('.cards');
+  if(cardsWrap){
+    cardsWrap.innerHTML=CREATIONS.map(function(c){
+      return '<article class="card">'+
+        '<span class="card__tag">'+c.tag+'</span>'+
+        '<div class="card__art"><img src="'+c.img+'" alt="'+c.name+'" loading="lazy"></div>'+
+        '<div class="card__body"><h3>'+c.name+'</h3><p>'+c.desc+'</p>'+
+        '<span class="card__price">'+c.price+'</span></div></article>';
+    }).join('');
+  }
+
+  /* ---------- menu mobile ---------- */
+  var nav=d.getElementById('nav'),burger=d.getElementById('burger');
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  d.querySelectorAll('#navlinks a').forEach(function(a){
+    a.addEventListener('click',function(){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');});
+  });
+
+  /* ---------- FAQ ---------- */
+  d.querySelectorAll('.faq__btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.faq__item');
+      var open=item.classList.contains('is-open');
+      d.querySelectorAll('.faq__item').forEach(function(el){
+        el.classList.remove('is-open');
+        el.querySelector('.faq__btn').setAttribute('aria-expanded','false');
+      });
+      if(!open){item.classList.add('is-open');this.setAttribute('aria-expanded','true');}
+    });
+  });
+
+  /* ---------- reveal on scroll (fail-open) ---------- */
+  var reveals=d.querySelectorAll('.reveal');
+  function showAll(){reveals.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.12});
+    reveals.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2500); // failsafe
+  }else{showAll();}
+
+  /* ---------- glow curseur ---------- */
+  var glow=d.getElementById('glow');
+  if(window.matchMedia('(pointer:fine)').matches){
+    window.addEventListener('mousemove',function(e){
+      glow.classList.add('on');
+      glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';
+    },{passive:true});
+  }
+
+  /* ---------- consentement ---------- */
+  var consent=d.getElementById('consent');
+  function closeConsent(){consent.classList.add('hide');}
+  d.getElementById('consentOk').addEventListener('click',closeConsent);
+  d.getElementById('consentRefuse').addEventListener('click',closeConsent);
+})();
+</script>
+</body>
+</html>

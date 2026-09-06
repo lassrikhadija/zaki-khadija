@@ -118,10 +118,17 @@ footer{margin-top:3.2rem;border-top:1px solid var(--rule);padding:1.6rem 0 3rem;
 footer p{margin:0 0 .6rem}
 footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
 
+/* faq */
+.faq{margin:2.4rem 0 0}
+.faq .q{border-top:1px solid var(--rule);padding-top:.15rem}
+.faq .q h3{margin:1.15rem 0 .45rem;font-size:1rem;color:var(--ink)}
+.faq .q p{font-size:.94rem;line-height:1.6;margin:0 0 .8rem;color:var(--ink-2)}
+.faq .q p:last-child{margin-bottom:1.35rem}
+
 @media (max-width:32rem){ body{font-size:16px} .box{padding:.85rem .95rem} .hero{padding-bottom:2.1rem} }
 @media print{ .hero{background:#fff;color:#000;border-bottom:1px solid #ccc;padding-bottom:1rem}
   .hero h1,.mark{color:#000} .kick{color:#555} .epi{color:#333;border-left-color:#999}
-  .meta,.home{color:#555} .dl,.home{display:none} body{font-size:11pt} .box,.crit{break-inside:avoid} }
+  .meta,.home{color:#555} .dl,.home{display:none} body{font-size:11pt} .box,.crit,.faq .q{break-inside:avoid} }
 
 </style>
 </head>
@@ -159,7 +166,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>il faut chercher, ou la page n’existe pas.</dd>
     <dt>Pourquoi ça compte</dt><dd>C’est une obligation de la loi 25 depuis 2023.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>74 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>74 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">2.</span> Le responsable de la protection des renseignements personnels est-il nommé ?</h3>
@@ -169,7 +176,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>aucun nom, aucun courriel. Une adresse générique de la clinique ne suffit pas à identifier un responsable.</dd>
     <dt>Pourquoi ça compte</dt><dd>La loi 25 exige que cette personne soit identifiable de l’extérieur.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>63 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>63 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">3.</span> Votre bannière de témoins offre-t-elle un vrai refus ?</h3>
@@ -179,7 +186,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>pas de bannière, ou un « Refuser » caché derrière « Personnaliser », en petit, ou en gris pâle à côté d’un bouton coloré.</dd>
     <dt>Pourquoi ça compte</dt><dd>Un refus plus difficile que l’acceptation n’est pas un consentement libre.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>24 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>24 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">4.</span> Prévenez-vous le patient au moment où il saisit ses renseignements ?</h3>
@@ -189,7 +196,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>il n’y a que les étiquettes des champs, ou un simple lien vers la politique en pied de page. La loi exige d’informer au moment de la collecte, pas ailleurs sur le site.</dd>
     <dt>Pourquoi ça compte</dt><dd>C’est le constat le plus sévère de l’étude, et celui qui touche des données de santé.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>8 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>8 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">5.</span> Votre site s’affiche-t-il en moins de trois secondes sur un téléphone ?</h3>
@@ -199,7 +206,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>elle dépasse 3,0 secondes. Attention : ne prenez pas le gros chiffre coloré du haut, c’est un score sur 100, pas un temps. Et ne prenez pas non plus le bloc du haut sur vos visiteurs réels : ce n’est pas la même mesure.</dd>
     <dt>Pourquoi ça compte</dt><dd>Au-delà de trois secondes, une part des visiteurs est déjà repartie.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>4 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>4 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">6.</span> Peut-on demander un rendez-vous en trois clics ou moins ?</h3>
@@ -209,7 +216,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>plus de trois clics, ou aucun parcours de rendez-vous.</dd>
     <dt>Pourquoi ça compte</dt><dd>C’est le critère que les cliniques réussissent le mieux.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>94 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>94 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">7.</span> Le patient voit-il de vraies disponibilités ?</h3>
@@ -219,7 +226,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>le parcours se termine par un formulaire de demande, un courriel ou un numéro de téléphone. Le patient propose, la clinique rappelle.</dd>
     <dt>Pourquoi ça compte</dt><dd>Le bouton existe presque partout, le calendrier presque nulle part.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>6 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>6 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">8.</span> Une machine comprend-elle que votre site est celui d’une clinique dentaire ?</h3>
@@ -229,7 +236,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>aucun balisage, ou seulement du balisage technique (WebPage, WebSite, BreadcrumbList) posé automatiquement par la plateforme : celui-là ne décrit pas votre clinique. Un balisage incomplet ne compte pas non plus.</dd>
     <dt>Pourquoi ça compte</dt><dd>C’est ce que lisent Google et les assistants comme ChatGPT. Le manque le plus fréquent est l’oubli des heures d’ouverture.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>14 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>14 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">9.</span> Avez-vous répondu à un avis Google dans les six derniers mois ?</h3>
@@ -239,7 +246,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>aucune réponse, ou la dernière remonte à plus de six mois.</dd>
     <dt>Pourquoi ça compte</dt><dd>C’est gratuit et ça prend deux minutes. La moitié des cliniques ne parle pas à ceux qui les recommandent.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>52 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>52 % conformes</b></p>
  </section>
 <section class="crit">
   <h3><span class="num">10.</span> Vos horaires Google sont-ils identiques à ceux de votre site ?</h3>
@@ -249,7 +256,7 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
     <dt class="non">C’est Non si</dt><dd>au moins un jour diffère. Une clinique du panel était annoncée fermée quatre jours sur cinq alors qu’elle était ouverte.</dd>
     <dt>Pourquoi ça compte</dt><dd>C’est l’horaire de Google que le patient voit en premier, pas celui de votre site.</dd>
   </dl>
-  <p class="pan">Sur les 100 cliniques auditées : <b>39 % conformes</b></p>
+  <p class="pan">Sur les 100 cliniques auditées : <b>39 % conformes</b></p>
  </section>
 
 <h2>Votre résultat</h2>
@@ -258,6 +265,51 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
 <p>Les quatre premiers critères portent sur la loi 25 et ne demandent ni budget ni compétence technique. Si vous ne deviez en traiter qu’un, le quatrième est celui qui touche des renseignements de santé.</p>
 <p>Les critères 5 et 8 dépendent souvent de la plateforme sur laquelle votre site a été construit, parfois il y a des années. Ils ne se corrigent pas en un après-midi, et ce n’est pas de la négligence.</p>
 <p>Les critères 9 et 10 sont gratuits, ne dépendent de personne d’autre que vous, et se règlent en une demi-heure.</p>
+
+<h2>Les questions qu’on nous pose</h2>
+<p class="note">Les réponses ci-dessous décrivent ce qui a été mesuré sur les 100 cliniques auditées. Elles ne constituent pas un avis juridique.</p>
+<div class="faq">
+<section class="q">
+  <h3>Est-ce que la loi 25 s’applique à ma clinique dentaire ?</h3>
+  <p>La loi 25 vise toute entreprise privée qui exerce au Québec et qui recueille des renseignements personnels. Une clinique dentaire en recueille dès qu’un patient remplit un formulaire de rendez-vous en ligne — nom, téléphone, courriel, et souvent le motif de la visite.</p>
+  <p>Les quatre premiers critères de cette grille portent sur ce que la loi demande de rendre visible sur un site. Sur les 100 cliniques auditées en août 2026, aucune ne satisfaisait les quatre.</p>
+</section>
+<section class="q">
+  <h3>Qu’est-ce que je dois avoir sur mon site pour être en règle ?</h3>
+  <p>Quatre éléments ont été vérifiés : une politique de confidentialité accessible en un clic (74 % des cliniques auditées), le nom d’une personne responsable de la protection des renseignements personnels (63 %), une bannière de témoins qui offre un vrai refus (24 %), et une mention au moment où le patient saisit ses renseignements (8 %).</p>
+  <p>Les trois premiers ne demandent ni budget ni compétence technique. Le quatrième est celui qui touche des renseignements de santé, et c’est le moins souvent présent.</p>
+</section>
+<section class="q">
+  <h3>Est-ce que je dois nommer un responsable de la protection des renseignements personnels ?</h3>
+  <p>La fonction existe dans toute entreprise depuis septembre 2022, et elle revient par défaut à la personne qui exerce la plus haute autorité — dans une clinique, le ou la dentiste propriétaire, sauf délégation écrite. Ce qui se vérifie de l’extérieur, c’est que son titre et ses coordonnées soient publiés sur le site.</p>
+  <p>Sur les 100 cliniques auditées, 63 % publiaient un nom ou un courriel identifiable. Une adresse générale de clinique n’a pas été comptée : elle ne désigne personne.</p>
+</section>
+<section class="q">
+  <h3>Pourquoi ma clinique n’apparaît pas quand on demande un dentiste à ChatGPT ou à Google ?</h3>
+  <p>Un site peut être parfaitement lisible pour un humain et rester muet pour une machine. Ce qui permet à un moteur ou à un assistant de comprendre qu’il a devant lui une clinique dentaire — son nom, son adresse, son téléphone, ses heures — c’est un balisage posé dans le code de la page, invisible à l’écran.</p>
+  <p>Sur les 100 cliniques auditées, 14 % en avaient un complet. Beaucoup d’autres portaient un balisage posé automatiquement par leur plateforme, qui décrit une page web mais pas une clinique.</p>
+</section>
+<section class="q">
+  <h3>Comment savoir si mon site est trop lent sur un téléphone ?</h3>
+  <p>Passez votre adresse dans PageSpeed Insights, onglet Mobile, et lisez la valeur en face de « Largest Contentful Paint » dans la section Statistiques. C’est le temps qu’il faut avant que la partie principale de la page s’affiche. Le seuil retenu dans l’étude était de trois secondes.</p>
+  <p>Ne prenez pas le gros chiffre coloré du haut : c’est un score sur 100, pas un temps. Sur les 100 cliniques auditées, 4 % passaient sous trois secondes.</p>
+</section>
+<section class="q">
+  <h3>Est-ce que ça change quelque chose de répondre aux avis Google ?</h3>
+  <p>Une réponse du propriétaire est visible par tous les patients qui liront l’avis ensuite, y compris ceux qui liront un avis négatif. C’est gratuit et ça ne dépend de personne d’autre que vous.</p>
+  <p>Sur les 100 cliniques auditées, 52 % avaient répondu à au moins un avis dans les six mois précédents.</p>
+</section>
+<section class="q">
+  <h3>Mes heures d’ouverture sur Google sont-elles les bonnes ?</h3>
+  <p>Ouvrez votre fiche Google et votre site côte à côte et comparez jour par jour. C’est la vérification la plus rapide des dix, et l’écart le plus coûteux : un patient qui vous croit fermé appelle ailleurs.</p>
+  <p>Sur les 100 cliniques auditées, 39 % affichaient exactement les mêmes heures aux deux endroits. Une clinique du panel était annoncée fermée quatre jours sur cinq alors qu’elle était ouverte.</p>
+</section>
+<section class="q">
+  <h3>Est-ce que c’est coûteux à corriger ?</h3>
+  <p>Six des dix critères — les quatre de la loi 25, la réponse aux avis et la concordance des heures — ne demandent que du temps et l’accès à votre propre site. Les critères 9 et 10 se règlent en une demi-heure, sans personne.</p>
+  <p>Les critères 5 et 8, la vitesse et le balisage, dépendent souvent de la plateforme sur laquelle le site a été construit, parfois il y a des années. Ceux-là ne se corrigent pas en un après-midi, et ce n’est pas de la négligence.</p>
+</section>
+</div>
 
 <div class="dl">
   <p>La grille en version imprimable, pour cocher à la main.</p>
@@ -381,7 +433,95 @@ footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
    "text": "Ouvrez votre fiche Google et votre site côte à côte, et comparez jour par jour."
   }
  ],
- "isBasedOn": "https://nextiweb.ca/barometre-dentaire-2026"
+ "isBasedOn": "https://nextiweb.ca/barometre-dentaire-2026/"
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "inLanguage": "fr-CA",
+ "url": "https://nextiweb.ca/grille-dentaire/",
+ "isPartOf": {
+  "@type": "WebPage",
+  "@id": "https://nextiweb.ca/grille-dentaire/"
+ },
+ "about": {
+  "@type": "Thing",
+  "name": "Conformité numérique des cliniques dentaires au Québec"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "NEXTIWEB",
+  "url": "https://nextiweb.ca/"
+ },
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Est-ce que la loi 25 s’applique à ma clinique dentaire ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La loi 25 vise toute entreprise privée qui exerce au Québec et qui recueille des renseignements personnels. Une clinique dentaire en recueille dès qu’un patient remplit un formulaire de rendez-vous en ligne — nom, téléphone, courriel, et souvent le motif de la visite. Les quatre premiers critères de cette grille portent sur ce que la loi demande de rendre visible sur un site. Sur les 100 cliniques auditées en août 2026, aucune ne satisfaisait les quatre."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Qu’est-ce que je dois avoir sur mon site pour être en règle ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Quatre éléments ont été vérifiés : une politique de confidentialité accessible en un clic (74 % des cliniques auditées), le nom d’une personne responsable de la protection des renseignements personnels (63 %), une bannière de témoins qui offre un vrai refus (24 %), et une mention au moment où le patient saisit ses renseignements (8 %). Les trois premiers ne demandent ni budget ni compétence technique. Le quatrième est celui qui touche des renseignements de santé, et c’est le moins souvent présent."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Est-ce que je dois nommer un responsable de la protection des renseignements personnels ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La fonction existe dans toute entreprise depuis septembre 2022, et elle revient par défaut à la personne qui exerce la plus haute autorité — dans une clinique, le ou la dentiste propriétaire, sauf délégation écrite. Ce qui se vérifie de l’extérieur, c’est que son titre et ses coordonnées soient publiés sur le site. Sur les 100 cliniques auditées, 63 % publiaient un nom ou un courriel identifiable. Une adresse générale de clinique n’a pas été comptée : elle ne désigne personne."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Pourquoi ma clinique n’apparaît pas quand on demande un dentiste à ChatGPT ou à Google ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un site peut être parfaitement lisible pour un humain et rester muet pour une machine. Ce qui permet à un moteur ou à un assistant de comprendre qu’il a devant lui une clinique dentaire — son nom, son adresse, son téléphone, ses heures — c’est un balisage posé dans le code de la page, invisible à l’écran. Sur les 100 cliniques auditées, 14 % en avaient un complet. Beaucoup d’autres portaient un balisage posé automatiquement par leur plateforme, qui décrit une page web mais pas une clinique."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Comment savoir si mon site est trop lent sur un téléphone ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Passez votre adresse dans PageSpeed Insights, onglet Mobile, et lisez la valeur en face de « Largest Contentful Paint » dans la section Statistiques. C’est le temps qu’il faut avant que la partie principale de la page s’affiche. Le seuil retenu dans l’étude était de trois secondes. Ne prenez pas le gros chiffre coloré du haut : c’est un score sur 100, pas un temps. Sur les 100 cliniques auditées, 4 % passaient sous trois secondes."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Est-ce que ça change quelque chose de répondre aux avis Google ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Une réponse du propriétaire est visible par tous les patients qui liront l’avis ensuite, y compris ceux qui liront un avis négatif. C’est gratuit et ça ne dépend de personne d’autre que vous. Sur les 100 cliniques auditées, 52 % avaient répondu à au moins un avis dans les six mois précédents."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Mes heures d’ouverture sur Google sont-elles les bonnes ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ouvrez votre fiche Google et votre site côte à côte et comparez jour par jour. C’est la vérification la plus rapide des dix, et l’écart le plus coûteux : un patient qui vous croit fermé appelle ailleurs. Sur les 100 cliniques auditées, 39 % affichaient exactement les mêmes heures aux deux endroits. Une clinique du panel était annoncée fermée quatre jours sur cinq alors qu’elle était ouverte."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Est-ce que c’est coûteux à corriger ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Six des dix critères — les quatre de la loi 25, la réponse aux avis et la concordance des heures — ne demandent que du temps et l’accès à votre propre site. Les critères 9 et 10 se règlent en une demi-heure, sans personne. Les critères 5 et 8, la vitesse et le balisage, dépendent souvent de la plateforme sur laquelle le site a été construit, parfois il y a des années. Ceux-là ne se corrigent pas en un après-midi, et ce n’est pas de la négligence."
+   }
+  }
+ ]
 }
 </script>
 

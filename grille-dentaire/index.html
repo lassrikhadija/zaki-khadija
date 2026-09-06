@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070809">
+<title>La grille — vérifiez le site de votre clinique dentaire en dix minutes | NEXTIWEB</title>
+<meta name="description" content="Les dix critères du Baromètre numérique dentaire, expliqués pour qu'un dentiste vérifie lui-même son site : loi 25, vitesse mobile, rendez-vous en ligne, données structurées, fiche Google.">
+<link rel="canonical" href="https://nextiweb.ca/grille-dentaire/">
+<meta name="robots" content="index,follow,max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:site_name" content="NEXTIWEB">
+<meta property="og:title" content="La grille — vérifiez le site de votre clinique dentaire en dix minutes">
+<meta property="og:description" content="Dix critères, dix minutes, des outils gratuits. Ce document ne vend rien.">
+<meta property="og:url" content="https://nextiweb.ca/grille-dentaire/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --noir:#070809; --noir-2:#0b0d10; --vert:#00e676; --vert-fonce:#00875a;
+  --bg:#ffffff; --paper:#fafbfb; --ink:#15191b; --ink-2:#3d474b; --muted:#69757a;
+  --inv:#f3f5f4; --inv-muted:#9aa4a1; --rule:#e2e7e9;
+  --bleu:#37474f; --rouge:#b71c1c; --rouge-bg:#fdecea;
+  --gris-bg:#f0f4f7; --gris-bd:#90a4ae;
+  --maxw:44rem;
+  --disp:'Space Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;text-rendering:optimizeLegibility}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+
+/* bandeau sombre */
+.hero{background:var(--noir);color:var(--inv);padding:1.05rem 0 2.7rem;
+  border-bottom:2px solid var(--vert)}
+.bar{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
+  padding-bottom:2.4rem}
+.mark{font-family:var(--disp);font-weight:700;letter-spacing:.14em;font-size:.95rem;
+  color:var(--inv);text-decoration:none}
+.mark b{color:var(--vert);font-weight:700}
+.home{font-size:.8rem;color:var(--inv-muted);text-decoration:none}
+.home:hover,.home:focus{color:var(--vert)}
+.kick{font-family:var(--disp);font-size:.7rem;letter-spacing:.2em;font-weight:700;
+  text-transform:uppercase;color:var(--vert);margin:0 0 .85rem}
+.hero h1{font-family:var(--disp);font-size:clamp(1.6rem,4.7vw,2.4rem);line-height:1.18;
+  font-weight:700;letter-spacing:-.02em;margin:0 0 1rem;color:var(--inv);max-width:32ch}
+.epi{font-size:1rem;color:var(--inv-muted);font-style:italic;margin:0 0 1.4rem;
+  padding-left:.9rem;border-left:2px solid var(--vert);max-width:44ch}
+.meta{font-size:.83rem;color:var(--inv-muted);margin:0}
+
+/* corps */
+main{padding-top:2.2rem}
+h2{font-family:var(--disp);font-size:1.3rem;line-height:1.3;font-weight:700;
+  color:var(--bleu);margin:2.6rem 0 .8rem}
+h3{font-family:var(--disp);font-size:1.02rem;font-weight:700;margin:1.9rem 0 .5rem}
+p{margin:0 0 1.05rem}
+strong{font-weight:650}
+.note{font-size:.86rem;color:var(--muted);margin:.35rem 0 1.1rem;line-height:1.55}
+.lead{font-size:1.05rem}
+
+.box{border-left:4px solid var(--gris-bd);background:var(--gris-bg);
+  padding:1rem 1.1rem;margin:1.6rem 0;border-radius:0 3px 3px 0}
+.box p{margin:.55rem 0}
+.box p:first-child{margin-top:0}.box p:last-child{margin-bottom:0}
+.box .lab{font-family:var(--disp);font-weight:700;font-size:.74rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--bleu);margin-bottom:.5rem}
+.box.alert{border-left-color:var(--rouge);background:var(--rouge-bg)}
+.box.alert .lab{color:var(--rouge)}
+
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.3rem 0 .5rem;
+  border:1px solid var(--rule);border-radius:4px}
+table{border-collapse:collapse;width:100%;min-width:33rem;font-size:.88rem}
+caption{text-align:left;font-size:.8rem;color:var(--muted);padding:.6rem .8rem;caption-side:top}
+th,td{padding:.6rem .75rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+thead th{background:var(--bleu);color:#fff;font-family:var(--disp);font-weight:600;
+  font-size:.78rem;border-bottom:none}
+tbody tr:nth-child(even){background:var(--paper)}
+tbody tr:last-child td{border-bottom:none}
+td.n,th.n{text-align:center;white-space:nowrap}
+td.bad{color:var(--rouge);font-weight:700}
+td.iv{color:var(--muted);font-size:.83rem}
+
+.dl{margin:2.6rem 0;padding:1.15rem 1.2rem;border:1px solid var(--rule);
+  border-radius:5px;background:var(--paper)}
+.dl p{margin:0 0 .7rem;font-size:.92rem;color:var(--ink-2)}
+.dl a{display:inline-block;font-family:var(--disp);font-weight:600;font-size:.9rem;
+  color:var(--ink);text-decoration:none;border:1px solid var(--ink);
+  padding:.55rem 1.1rem;border-radius:4px}
+.dl a:hover,.dl a:focus{background:var(--ink);color:#fff}
+.dl .meta2{font-size:.8rem;color:var(--muted);margin:.6rem 0 0}
+
+/* grille */
+.crit{margin:2.2rem 0;padding-top:.2rem;border-top:1px solid var(--rule)}
+.crit h3{display:flex;gap:.6rem;align-items:baseline;margin:1.1rem 0 .7rem;font-size:1.06rem}
+.crit h3 .num{font-family:var(--disp);color:var(--vert-fonce);font-weight:700}
+.crit dl{margin:0}
+.crit dt{font-family:var(--disp);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+  font-weight:700;color:var(--bleu);margin-top:.75rem}
+.crit dt.oui{color:var(--vert-fonce)} .crit dt.non{color:var(--rouge)}
+.crit dd{margin:.15rem 0 0;font-size:.94rem;line-height:1.55}
+.crit .pan{margin-top:.85rem;font-size:.83rem;color:var(--muted)}
+.crit .pan b{color:var(--ink-2)}
+
+footer{margin-top:3.2rem;border-top:1px solid var(--rule);padding:1.6rem 0 3rem;
+  font-size:.85rem;color:var(--muted)}
+footer p{margin:0 0 .6rem}
+footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
+
+@media (max-width:32rem){ body{font-size:16px} .box{padding:.85rem .95rem} .hero{padding-bottom:2.1rem} }
+@media print{ .hero{background:#fff;color:#000;border-bottom:1px solid #ccc;padding-bottom:1rem}
+  .hero h1,.mark{color:#000} .kick{color:#555} .epi{color:#333;border-left-color:#999}
+  .meta,.home{color:#555} .dl,.home{display:none} body{font-size:11pt} .box,.crit{break-inside:avoid} }
+
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <a class="mark" href="/">NEXTI<b>WEB</b></a>
+      <a class="home" href="/">nextiweb.ca</a>
+    </div>
+    <p class="kick">Baromètre numérique dentaire</p>
+    <h1>La grille — vérifiez votre site en dix minutes</h1>
+    <p class="epi">Les dix critères de l’étude, tels qu’ils ont été mesurés.</p>
+    <p class="meta">NEXTIWEB · Montréal · septembre 2026</p>
+  </div>
+</div>
+
+<main class="wrap">
+
+<div class="box alert">
+  <p class="lab">Ce document ne vend rien</p>
+  <p>Il est produit par NEXTIWEB, une agence web de Montréal qui vend les services que ces constats rendent nécessaires. Nous le déclarons d’entrée. Chaque critère se vérifie sans nous, avec des outils gratuits, et cette page ne demande rien en retour.</p>
+</div>
+
+<p>Ouvrez votre site dans une fenêtre de navigation privée — sinon votre navigateur vous montre une version personnalisée, et vous ne verrez pas ce que voit un nouveau patient.</p>
+<p>Répondez Oui ou Non à chaque question. La règle est simple : si vous devez réfléchir longuement pour trancher, c’est Non. Un patient, lui, ne réfléchit pas.</p>
+<p class="note">Les pourcentages indiqués sont ceux des 100 cliniques auditées en août 2026, tirées au sort dans le bottin de l’Ordre. Ils ne décrivent pas l’ensemble du Québec, et chacun porte une marge d’erreur indiquée dans <a href="/barometre-dentaire-2026/">l’étude</a>.</p>
+
+<section class="crit">
+  <h3><span class="num">1.</span> Votre politique de confidentialité est-elle publiée ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Ouvrez votre page d’accueil et regardez le pied de page.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>un lien mène à une politique de confidentialité en un seul clic.</dd>
+    <dt class="non">C’est Non si</dt><dd>il faut chercher, ou la page n’existe pas.</dd>
+    <dt>Pourquoi ça compte</dt><dd>C’est une obligation de la loi 25 depuis 2023.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>74 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">2.</span> Le responsable de la protection des renseignements personnels est-il nommé ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Sur la page de politique, cherchez « responsable », « protection » ou « renseignements personnels » (Ctrl+F).</dd>
+    <dt class="oui">C’est Oui si</dt><dd>le nom ou le courriel d’une personne responsable apparaît.</dd>
+    <dt class="non">C’est Non si</dt><dd>aucun nom, aucun courriel. Une adresse générique de la clinique ne suffit pas à identifier un responsable.</dd>
+    <dt>Pourquoi ça compte</dt><dd>La loi 25 exige que cette personne soit identifiable de l’extérieur.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>63 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">3.</span> Votre bannière de témoins offre-t-elle un vrai refus ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Ouvrez votre site dans une fenêtre de navigation privée, pour voir ce que voit un nouveau visiteur.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>une bannière apparaît, avec un bouton « Refuser » aussi visible que « Accepter ».</dd>
+    <dt class="non">C’est Non si</dt><dd>pas de bannière, ou un « Refuser » caché derrière « Personnaliser », en petit, ou en gris pâle à côté d’un bouton coloré.</dd>
+    <dt>Pourquoi ça compte</dt><dd>Un refus plus difficile que l’acceptation n’est pas un consentement libre.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>24 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">4.</span> Prévenez-vous le patient au moment où il saisit ses renseignements ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Ouvrez la page qui porte votre formulaire de rendez-vous ou de contact. Lisez ce qui entoure les champs.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>une mention, même brève, indique à quoi serviront les renseignements, qui en est responsable et quels sont les droits de la personne. Elle est visible sans cliquer ailleurs.</dd>
+    <dt class="non">C’est Non si</dt><dd>il n’y a que les étiquettes des champs, ou un simple lien vers la politique en pied de page. La loi exige d’informer au moment de la collecte, pas ailleurs sur le site.</dd>
+    <dt>Pourquoi ça compte</dt><dd>C’est le constat le plus sévère de l’étude, et celui qui touche des données de santé.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>8 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">5.</span> Votre site s’affiche-t-il en moins de trois secondes sur un téléphone ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Allez sur pagespeed.web.dev, entrez votre adresse, onglet Mobile.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>la valeur en face de « Largest Contentful Paint », dans la section Statistiques, est sous 3,0 secondes.</dd>
+    <dt class="non">C’est Non si</dt><dd>elle dépasse 3,0 secondes. Attention : ne prenez pas le gros chiffre coloré du haut, c’est un score sur 100, pas un temps. Et ne prenez pas non plus le bloc du haut sur vos visiteurs réels : ce n’est pas la même mesure.</dd>
+    <dt>Pourquoi ça compte</dt><dd>Au-delà de trois secondes, une part des visiteurs est déjà repartie.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>4 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">6.</span> Peut-on demander un rendez-vous en trois clics ou moins ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Partez de votre page d’accueil et comptez les clics jusqu’au formulaire ou au calendrier.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>trois clics ou moins.</dd>
+    <dt class="non">C’est Non si</dt><dd>plus de trois clics, ou aucun parcours de rendez-vous.</dd>
+    <dt>Pourquoi ça compte</dt><dd>C’est le critère que les cliniques réussissent le mieux.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>94 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">7.</span> Le patient voit-il de vraies disponibilités ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Suivez votre propre lien de rendez-vous jusqu’à l’écran des disponibilités — sans réserver.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>des plages horaires réelles s’affichent et le patient peut confirmer sans qu’une personne intervienne.</dd>
+    <dt class="non">C’est Non si</dt><dd>le parcours se termine par un formulaire de demande, un courriel ou un numéro de téléphone. Le patient propose, la clinique rappelle.</dd>
+    <dt>Pourquoi ça compte</dt><dd>Le bouton existe presque partout, le calendrier presque nulle part.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>6 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">8.</span> Une machine comprend-elle que votre site est celui d’une clinique dentaire ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Passez votre adresse dans le test de résultats enrichis de Google, ou cherchez « application/ld+json » dans le code source de votre page.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>un balisage de type Dentist, LocalBusiness, MedicalBusiness ou MedicalClinic est présent, avec au minimum le nom, l’adresse, le téléphone ET les heures d’ouverture.</dd>
+    <dt class="non">C’est Non si</dt><dd>aucun balisage, ou seulement du balisage technique (WebPage, WebSite, BreadcrumbList) posé automatiquement par la plateforme : celui-là ne décrit pas votre clinique. Un balisage incomplet ne compte pas non plus.</dd>
+    <dt>Pourquoi ça compte</dt><dd>C’est ce que lisent Google et les assistants comme ChatGPT. Le manque le plus fréquent est l’oubli des heures d’ouverture.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>14 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">9.</span> Avez-vous répondu à un avis Google dans les six derniers mois ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Ouvrez votre fiche dans Google Maps, onglet Avis, et regardez les plus récents.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>au moins un avis porte une « Réponse du propriétaire » datée de moins de six mois.</dd>
+    <dt class="non">C’est Non si</dt><dd>aucune réponse, ou la dernière remonte à plus de six mois.</dd>
+    <dt>Pourquoi ça compte</dt><dd>C’est gratuit et ça prend deux minutes. La moitié des cliniques ne parle pas à ceux qui les recommandent.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>52 % conformes</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">10.</span> Vos horaires Google sont-ils identiques à ceux de votre site ?</h3>
+  <dl>
+    <dt>Comment vérifier</dt><dd>Ouvrez votre fiche Google et votre site côte à côte, et comparez jour par jour.</dd>
+    <dt class="oui">C’est Oui si</dt><dd>les deux concordent exactement.</dd>
+    <dt class="non">C’est Non si</dt><dd>au moins un jour diffère. Une clinique du panel était annoncée fermée quatre jours sur cinq alors qu’elle était ouverte.</dd>
+    <dt>Pourquoi ça compte</dt><dd>C’est l’horaire de Google que le patient voit en premier, pas celui de votre site.</dd>
+  </dl>
+  <p class="pan">Sur les 100 cliniques auditées : <b>39 % conformes</b></p>
+ </section>
+
+<h2>Votre résultat</h2>
+<p>Comptez vos Oui. C’est votre score sur 10, calculé exactement comme celui des cent cliniques de l’étude.</p>
+<div class="box"><p><strong>Aucune des 100 cliniques auditées n’atteint 8 sur 10. La meilleure plafonne à 7, et la moyenne s’établit à 3,8.</strong></p></div>
+<p>Les quatre premiers critères portent sur la loi 25 et ne demandent ni budget ni compétence technique. Si vous ne deviez en traiter qu’un, le quatrième est celui qui touche des renseignements de santé.</p>
+<p>Les critères 5 et 8 dépendent souvent de la plateforme sur laquelle votre site a été construit, parfois il y a des années. Ils ne se corrigent pas en un après-midi, et ce n’est pas de la négligence.</p>
+<p>Les critères 9 et 10 sont gratuits, ne dépendent de personne d’autre que vous, et se règlent en une demi-heure.</p>
+
+<div class="dl">
+  <p>La grille en version imprimable, pour cocher à la main.</p>
+  <p><a href="/grille-dix-criteres.pdf" download>Télécharger la grille (PDF)</a></p>
+  <p class="meta2">Accès libre, sans formulaire.</p>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Les résultats complets, la méthode et les marges d’erreur : <a href="/barometre-dentaire-2026/">Baromètre numérique dentaire 2026</a>.</p>
+    <p><strong>Aucune clinique n’est nommée dans cette étude, ni ici ni ailleurs.</strong></p>
+    <p>Cette page ne dépose aucun témoin, ne mesure pas votre navigation et ne recueille aucun renseignement.</p>
+    <p>NEXTIWEB · Montréal · septembre 2026 · <a href="/politique-confidentialite.html">Politique de confidentialité</a> · <a href="/contact.html">Nous joindre</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Vérifiez le site de votre clinique dentaire en dix minutes",
+ "description": "Les dix critères du Baromètre numérique dentaire, expliqués pour qu'un dentiste vérifie lui-même son propre site : loi 25, vitesse mobile, prise de rendez-vous, données structurées, fiche Google.",
+ "inLanguage": "fr-CA",
+ "totalTime": "PT10M",
+ "url": "https://nextiweb.ca/grille-dentaire/",
+ "isAccessibleForFree": true,
+ "author": {
+  "@type": "Person",
+  "name": "Khadija Ait Lassri",
+  "affiliation": {
+   "@type": "Organization",
+   "name": "NEXTIWEB"
+  }
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "NEXTIWEB",
+  "url": "https://nextiweb.ca/"
+ },
+ "supply": [
+  {
+   "@type": "HowToSupply",
+   "name": "Une fenêtre de navigation privée"
+  }
+ ],
+ "tool": [
+  {
+   "@type": "HowToTool",
+   "name": "PageSpeed Insights"
+  },
+  {
+   "@type": "HowToTool",
+   "name": "Test de résultats enrichis de Google"
+  },
+  {
+   "@type": "HowToTool",
+   "name": "Google Maps"
+  }
+ ],
+ "step": [
+  {
+   "@type": "HowToStep",
+   "position": 1,
+   "name": "Votre politique de confidentialité est-elle publiée ?",
+   "text": "Ouvrez votre page d’accueil et regardez le pied de page."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 2,
+   "name": "Le responsable de la protection des renseignements personnels est-il nommé ?",
+   "text": "Sur la page de politique, cherchez « responsable », « protection » ou « renseignements personnels » (Ctrl+F)."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 3,
+   "name": "Votre bannière de témoins offre-t-elle un vrai refus ?",
+   "text": "Ouvrez votre site dans une fenêtre de navigation privée, pour voir ce que voit un nouveau visiteur."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 4,
+   "name": "Prévenez-vous le patient au moment où il saisit ses renseignements ?",
+   "text": "Ouvrez la page qui porte votre formulaire de rendez-vous ou de contact. Lisez ce qui entoure les champs."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 5,
+   "name": "Votre site s’affiche-t-il en moins de trois secondes sur un téléphone ?",
+   "text": "Allez sur pagespeed.web.dev, entrez votre adresse, onglet Mobile."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 6,
+   "name": "Peut-on demander un rendez-vous en trois clics ou moins ?",
+   "text": "Partez de votre page d’accueil et comptez les clics jusqu’au formulaire ou au calendrier."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 7,
+   "name": "Le patient voit-il de vraies disponibilités ?",
+   "text": "Suivez votre propre lien de rendez-vous jusqu’à l’écran des disponibilités — sans réserver."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 8,
+   "name": "Une machine comprend-elle que votre site est celui d’une clinique dentaire ?",
+   "text": "Passez votre adresse dans le test de résultats enrichis de Google, ou cherchez « application/ld+json » dans le code source de votre page."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 9,
+   "name": "Avez-vous répondu à un avis Google dans les six derniers mois ?",
+   "text": "Ouvrez votre fiche dans Google Maps, onglet Avis, et regardez les plus récents."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 10,
+   "name": "Vos horaires Google sont-ils identiques à ceux de votre site ?",
+   "text": "Ouvrez votre fiche Google et votre site côte à côte, et comparez jour par jour."
+  }
+ ],
+ "isBasedOn": "https://nextiweb.ca/barometre-dentaire-2026"
+}
+</script>
+
+</body>
+</html>

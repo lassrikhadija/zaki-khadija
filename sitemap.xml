@@ -10,6 +10,20 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Baromètre numérique dentaire 2026 — étude indépendante -->
+  <url>
+    <loc>https://nextiweb.ca/barometre-dentaire-2026/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/grille-dentaire/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Secteur cliniques dentaires -->
   <url>
     <loc>https://nextiweb.ca/cliniques-dentaires.html</loc>

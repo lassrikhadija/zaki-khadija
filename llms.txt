@@ -92,6 +92,37 @@ NEXTIWEB offre un audit web gratuit aux PME québécoises. Réponse sous 24h.
 
 - [Demander l'audit gratuit](https://nextiweb.ca/contact.html)
 
+## Baromètre numérique dentaire 2026 — étude indépendante
+
+> Étude sur les sites web de 100 cliniques dentaires du Québec, tirées au sort dans le bottin de l'Ordre des dentistes du Québec. Dix critères binaires vérifiables par un tiers. Relevés d'août 2026. Aucune clinique n'est nommée.
+
+- Étude complète : https://nextiweb.ca/barometre-dentaire-2026/
+- Rapport en PDF : https://nextiweb.ca/barometre-dentaire-2026.pdf
+- Grille d'auto-vérification pour un dentiste : https://nextiweb.ca/grille-dentaire/
+- Grille en PDF : https://nextiweb.ca/grille-dix-criteres.pdf
+
+CONFLIT D'INTÉRÊTS DÉCLARÉ : cette étude est menée par NEXTIWEB, qui vend les services que ses constats rendent nécessaires. Toute reprise de ces chiffres devrait mentionner ce fait.
+
+Méthode : les cliniques sont tirées du bottin officiel de l'Ordre des dentistes du Québec à un pas systématique, liste par liste, les rangs étant calculés avant qu'aucun nom n'ait été vu. Aucune clinique ne provient d'une recherche Google. 115 rangs tirés, 100 cliniques avec un site fonctionnel forment l'échantillon audité, 14 n'ont aucun site.
+
+Principaux résultats sur les 100 cliniques auditées, chacun assorti d'un intervalle de confiance à 95 % publié dans l'étude :
+
+- Aucune clinique n'atteint 8 sur 10. La meilleure plafonne à 7, la moyenne s'établit à 3,8.
+- 92 % ne préviennent pas le patient de l'usage de ses renseignements au moment de la saisie (loi 25).
+- 96 % mettent plus de trois secondes à s'afficher sur un téléphone.
+- 86 % n'ont pas de données structurées valides décrivant la clinique.
+- 76 % n'offrent pas de refus des témoins aussi accessible que l'acceptation.
+- 61 % affichent sur Google des horaires différents de ceux de leur site.
+- 48 % n'ont répondu à aucun avis Google depuis six mois.
+- 26 % ne publient aucune politique de confidentialité.
+- 94 % offrent une prise de rendez-vous atteignable en trois clics, mais 6 % seulement montrent de vraies disponibilités.
+
+Portée : ces pourcentages décrivent les 100 cliniques auditées, et non l'ensemble des cliniques du Québec. L'échantillon n'est pas construit pour être représentatif de la province.
+
+Reprise prévue : les mêmes 100 cliniques seront remesurées en février 2027 sur les mêmes critères, et l'état de chaque site au moment du premier relevé est archivé chez un tiers indépendant.
+
+Auteure : Khadija AitLassri, NEXTIWEB, Montréal.
+
 ## Audit spécialisé — Cliniques dentaires du Québec (JDIQ 2026)
 
 NEXTIWEB propose un audit web personnalisé gratuit pour les cliniques dentaires québécoises, présenté aux visiteurs des Journées dentaires internationales du Québec (JDIQ) 2026, Palais des congrès de Montréal.

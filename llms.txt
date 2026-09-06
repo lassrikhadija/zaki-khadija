@@ -100,6 +100,10 @@ NEXTIWEB offre un audit web gratuit aux PME québécoises. Réponse sous 24h.
 - Rapport en PDF : https://nextiweb.ca/barometre-dentaire-2026.pdf
 - Grille d'auto-vérification pour un dentiste : https://nextiweb.ca/grille-dentaire/
 - Grille en PDF : https://nextiweb.ca/grille-dix-criteres.pdf
+- English study (same figures) : https://nextiweb.ca/en/dental-digital-barometer-2026/
+- English report in PDF : https://nextiweb.ca/en/dental-digital-barometer-2026.pdf
+- English checklist for a dentist : https://nextiweb.ca/en/dental-website-checklist/
+- English checklist in PDF : https://nextiweb.ca/en/dental-checklist.pdf
 
 CONFLIT D'INTÉRÊTS DÉCLARÉ : cette étude est menée par NEXTIWEB, qui vend les services que ses constats rendent nécessaires. Toute reprise de ces chiffres devrait mentionner ce fait.
 

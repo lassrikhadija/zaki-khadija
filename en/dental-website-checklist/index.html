@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070809">
+<link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon-180.png">
+<title>The checklist — audit your dental clinic's website in ten minutes | NEXTIWEB</title>
+<meta name="description" content="The ten criteria of the Dental Digital Barometer, explained so a dentist can check their own website: Law 25, mobile speed, online booking, structured data, Google listing.">
+<link rel="canonical" href="https://nextiweb.ca/en/dental-website-checklist/">
+<link rel="alternate" hreflang="fr-CA" href="https://nextiweb.ca/grille-dentaire/">
+<link rel="alternate" hreflang="en-CA" href="https://nextiweb.ca/en/dental-website-checklist/">
+<link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/grille-dentaire/">
+<meta name="robots" content="index,follow,max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_CA">
+<meta property="og:locale:alternate" content="fr_CA">
+<meta property="og:site_name" content="NEXTIWEB">
+<meta property="og:title" content="The checklist — audit your dental clinic's website in ten minutes">
+<meta property="og:description" content="Ten criteria, ten minutes, free tools. This document sells nothing.">
+<meta property="og:url" content="https://nextiweb.ca/en/dental-website-checklist/">
+<meta property="og:image" content="https://nextiweb.ca/assets/img/og-dental-barometer-2026-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Dental Digital Barometer 2026: not one clinic in 100 reaches 8 out of 10, average 3.8/10.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nextiweb.ca/assets/img/og-dental-barometer-2026-en.png">
+<style>
+:root{
+  --noir:#070809; --noir-2:#0b0d10; --vert:#00e676; --vert-fonce:#00875a;
+  --bg:#ffffff; --paper:#fafbfb; --ink:#15191b; --ink-2:#3d474b; --muted:#69757a;
+  --inv:#f3f5f4; --inv-muted:#9aa4a1; --rule:#e2e7e9;
+  --bleu:#37474f; --rouge:#b71c1c; --rouge-bg:#fdecea;
+  --gris-bg:#f0f4f7; --gris-bd:#90a4ae;
+  --maxw:44rem;
+  --disp:'Space Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;text-rendering:optimizeLegibility}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+
+/* bandeau sombre */
+.hero{background:var(--noir);color:var(--inv);padding:1.05rem 0 2.7rem;
+  border-bottom:2px solid var(--vert)}
+.bar{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
+  padding-bottom:2.4rem}
+.mark{font-family:var(--disp);font-weight:700;letter-spacing:.14em;font-size:.95rem;
+  color:var(--inv);text-decoration:none}
+.mark b{color:var(--vert);font-weight:700}
+.home{font-size:.8rem;color:var(--inv-muted);text-decoration:none}
+.home:hover,.home:focus{color:var(--vert)}
+.kick{font-family:var(--disp);font-size:.7rem;letter-spacing:.2em;font-weight:700;
+  text-transform:uppercase;color:var(--vert);margin:0 0 .85rem}
+.hero h1{font-family:var(--disp);font-size:clamp(1.6rem,4.7vw,2.4rem);line-height:1.18;
+  font-weight:700;letter-spacing:-.02em;margin:0 0 1rem;color:var(--inv);max-width:32ch}
+.epi{font-size:1rem;color:var(--inv-muted);font-style:italic;margin:0 0 1.4rem;
+  padding-left:.9rem;border-left:2px solid var(--vert);max-width:44ch}
+.meta{font-size:.83rem;color:var(--inv-muted);margin:0}
+
+/* corps */
+main{padding-top:2.2rem}
+h2{font-family:var(--disp);font-size:1.3rem;line-height:1.3;font-weight:700;
+  color:var(--bleu);margin:2.6rem 0 .8rem}
+h3{font-family:var(--disp);font-size:1.02rem;font-weight:700;margin:1.9rem 0 .5rem}
+p{margin:0 0 1.05rem}
+strong{font-weight:650}
+.note{font-size:.86rem;color:var(--muted);margin:.35rem 0 1.1rem;line-height:1.55}
+.lead{font-size:1.05rem}
+
+.box{border-left:4px solid var(--gris-bd);background:var(--gris-bg);
+  padding:1rem 1.1rem;margin:1.6rem 0;border-radius:0 3px 3px 0}
+.box p{margin:.55rem 0}
+.box p:first-child{margin-top:0}.box p:last-child{margin-bottom:0}
+.box .lab{font-family:var(--disp);font-weight:700;font-size:.74rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--bleu);margin-bottom:.5rem}
+.box.alert{border-left-color:var(--rouge);background:var(--rouge-bg)}
+.box.alert .lab{color:var(--rouge)}
+
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.3rem 0 .5rem;
+  border:1px solid var(--rule);border-radius:4px}
+table{border-collapse:collapse;width:100%;min-width:33rem;font-size:.88rem}
+caption{text-align:left;font-size:.8rem;color:var(--muted);padding:.6rem .8rem;caption-side:top}
+th,td{padding:.6rem .75rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+thead th{background:var(--bleu);color:#fff;font-family:var(--disp);font-weight:600;
+  font-size:.78rem;border-bottom:none}
+tbody tr:nth-child(even){background:var(--paper)}
+tbody tr:last-child td{border-bottom:none}
+td.n,th.n{text-align:center;white-space:nowrap}
+td.bad{color:var(--rouge);font-weight:700}
+td.iv{color:var(--muted);font-size:.83rem}
+
+.dl{margin:2.6rem 0;padding:1.15rem 1.2rem;border:1px solid var(--rule);
+  border-radius:5px;background:var(--paper)}
+.dl p{margin:0 0 .7rem;font-size:.92rem;color:var(--ink-2)}
+.dl a{display:inline-block;font-family:var(--disp);font-weight:600;font-size:.9rem;
+  color:var(--ink);text-decoration:none;border:1px solid var(--ink);
+  padding:.55rem 1.1rem;border-radius:4px}
+.dl a:hover,.dl a:focus{background:var(--ink);color:#fff}
+.dl .meta2{font-size:.8rem;color:var(--muted);margin:.6rem 0 0}
+
+/* grille */
+.crit{margin:2.2rem 0;padding-top:.2rem;border-top:1px solid var(--rule)}
+.crit h3{display:flex;gap:.6rem;align-items:baseline;margin:1.1rem 0 .7rem;font-size:1.06rem}
+.crit h3 .num{font-family:var(--disp);color:var(--vert-fonce);font-weight:700}
+.crit dl{margin:0}
+.crit dt{font-family:var(--disp);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+  font-weight:700;color:var(--bleu);margin-top:.75rem}
+.crit dt.oui{color:var(--vert-fonce)} .crit dt.non{color:var(--rouge)}
+.crit dd{margin:.15rem 0 0;font-size:.94rem;line-height:1.55}
+.crit .pan{margin-top:.85rem;font-size:.83rem;color:var(--muted)}
+.crit .pan b{color:var(--ink-2)}
+
+footer{margin-top:3.2rem;border-top:1px solid var(--rule);padding:1.6rem 0 3rem;
+  font-size:.85rem;color:var(--muted)}
+footer p{margin:0 0 .6rem}
+footer a{color:var(--ink-2)} footer a:hover{color:var(--ink)}
+
+/* faq */
+.faq{margin:2.4rem 0 0}
+.faq .q{border-top:1px solid var(--rule);padding-top:.15rem}
+.faq .q h3{margin:1.15rem 0 .45rem;font-size:1rem;color:var(--ink)}
+.faq .q p{font-size:.94rem;line-height:1.6;margin:0 0 .8rem;color:var(--ink-2)}
+.faq .q p:last-child{margin-bottom:1.35rem}
+
+@media (max-width:32rem){ body{font-size:16px} .box{padding:.85rem .95rem} .hero{padding-bottom:2.1rem} }
+@media print{ .hero{background:#fff;color:#000;border-bottom:1px solid #ccc;padding-bottom:1rem}
+  .hero h1,.mark{color:#000} .kick{color:#555} .epi{color:#333;border-left-color:#999}
+  .meta,.home{color:#555} .dl,.home{display:none} body{font-size:11pt} .box,.crit,.faq .q{break-inside:avoid} }
+
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <a class="mark" href="/en/">NEXTI<b>WEB</b></a>
+      <span><a class="home" href="/grille-dentaire/">Français</a> · <a class="home" href="/en/">nextiweb.ca</a></span>
+    </div>
+    <p class="kick">Dental Digital Barometer</p>
+    <h1>The checklist — audit your website in ten minutes</h1>
+    <p class="epi">The study's ten criteria, exactly as they were measured.</p>
+    <p class="meta">NEXTIWEB · Montreal · September 2026</p>
+  </div>
+</div>
+
+<main class="wrap">
+
+<div class="box alert">
+  <p class="lab">This document sells nothing</p>
+  <p>It is produced by NEXTIWEB, a Montreal web agency that sells the services these findings make necessary. We state it upfront. Each criterion can be checked without us, with free tools, and this page asks for nothing in return.</p>
+</div>
+
+<p>Open your website in a private browsing window — otherwise your browser shows you a personalized version, and you will not see what a new patient sees.</p>
+<p>Answer Yes or No to each question. The rule is simple: if you have to think long and hard to decide, it is No. A patient does not stop to think.</p>
+<p class="note">The percentages shown are those of the clinics audited in August 2026, drawn at random from the Ordre's directory. They do not describe all of Quebec, and each carries a margin of error given in <a href="/en/dental-digital-barometer-2026/">the study</a>. The number of clinics is repeated under each criterion: it is 100 everywhere, except for criteria 5 and 7, where an impossible measurement is better than an invented one.</p>
+
+<section class="crit">
+  <h3><span class="num">1.</span> Is your privacy policy published?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Open your home page and look at the footer.</dd>
+    <dt class="oui">It's Yes if</dt><dd>a link leads to a privacy policy in a single click.</dd>
+    <dt class="non">It's No if</dt><dd>you have to search, or the page does not exist.</dd>
+    <dt>Why it matters</dt><dd>It has been a Law 25 obligation since 2023.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>74% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">2.</span> Is the person responsible for the protection of personal information named?</h3>
+  <dl>
+    <dt>How to check</dt><dd>On the policy page, search for "responsible", "protection" or "personal information" (Ctrl+F).</dd>
+    <dt class="oui">It's Yes if</dt><dd>the name or email of a responsible person appears.</dd>
+    <dt class="non">It's No if</dt><dd>no name, no email. A generic clinic address is not enough to identify a responsible person.</dd>
+    <dt>Why it matters</dt><dd>Law 25 requires that this person be identifiable from the outside.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>63% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">3.</span> Does your cookie banner offer a genuine refusal?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Open your site in a private browsing window, to see what a new visitor sees.</dd>
+    <dt class="oui">It's Yes if</dt><dd>a banner appears, with a "Refuse" button as visible as "Accept".</dd>
+    <dt class="non">It's No if</dt><dd>no banner, or a "Refuse" hidden behind "Customize", in small print, or in pale grey next to a coloured button.</dd>
+    <dt>Why it matters</dt><dd>A refusal harder than acceptance is not free consent.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>24% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">4.</span> Do you inform the patient at the moment they enter their information?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Open the page that carries your appointment or contact form. Read what surrounds the fields.</dd>
+    <dt class="oui">It's Yes if</dt><dd>a mention, however brief, states what the information will be used for, who is responsible for it and what the person's rights are. It is visible without clicking elsewhere.</dd>
+    <dt class="non">It's No if</dt><dd>there are only the field labels, or a simple link to the policy in the footer. The law requires informing at the moment of collection, not elsewhere on the site.</dd>
+    <dt>Why it matters</dt><dd>It is the most severe finding of the study, and the one that touches health data.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>8% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">5.</span> Does your site load in under three seconds on a phone?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Go to pagespeed.web.dev, enter your address, Mobile tab.</dd>
+    <dt class="oui">It's Yes if</dt><dd>the value next to "Largest Contentful Paint", in the Metrics section, is under 3.0 seconds.</dd>
+    <dt class="non">It's No if</dt><dd>it is over 3.0 seconds. Careful: do not take the big coloured number at the top — that is a score out of 100, not a time. And do not take the block at the top about your real visitors either: it is not the same measurement.</dd>
+    <dt>Why it matters</dt><dd>Beyond three seconds, some visitors have already left.</dd>
+  </dl>
+  <p class="pan">Across the <b>99</b> clinics whose speed could be measured: <b>4% compliant</b><br><em>One site returned a measurement error: it counts in no percentage.</em></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">6.</span> Can someone request an appointment in three clicks or fewer?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Start from your home page and count the clicks to the form or the calendar.</dd>
+    <dt class="oui">It's Yes if</dt><dd>three clicks or fewer.</dd>
+    <dt class="non">It's No if</dt><dd>more than three clicks, or no appointment path at all.</dd>
+    <dt>Why it matters</dt><dd>It is the criterion the clinics do best on.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>94% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">7.</span> Does the patient see real availabilities?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Follow your own appointment link all the way to the availability screen — without booking.</dd>
+    <dt class="oui">It's Yes if</dt><dd>real time slots appear and the patient can confirm without a person stepping in.</dd>
+    <dt class="non">It's No if</dt><dd>the path ends in a request form, an email or a phone number. The patient proposes, the clinic calls back.</dd>
+    <dt>Why it matters</dt><dd>The button exists almost everywhere, the calendar almost nowhere.</dd>
+  </dl>
+  <p class="pan">Across the <b>98</b> clinics whose path could be followed: <b>6% compliant</b><br><em>Two paths require an identity before showing any availability: they count in no percentage.</em></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">8.</span> Can a machine understand that your site is a dental clinic's?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Run your address through Google's Rich Results Test, or search for "application/ld+json" in your page's source code.</dd>
+    <dt class="oui">It's Yes if</dt><dd>markup of type Dentist, LocalBusiness, MedicalBusiness or MedicalClinic is present, with at minimum the name, address, phone number AND opening hours.</dd>
+    <dt class="non">It's No if</dt><dd>no markup, or only technical markup (WebPage, WebSite, BreadcrumbList) placed automatically by the platform: that does not describe your clinic. Incomplete markup does not count either.</dd>
+    <dt>Why it matters</dt><dd>This is what Google and assistants like ChatGPT read. The most common gap is forgetting the opening hours.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>14% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">9.</span> Have you answered a Google review in the last six months?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Open your listing in Google Maps, Reviews tab, and look at the most recent ones.</dd>
+    <dt class="oui">It's Yes if</dt><dd>at least one review carries an "Owner response" dated less than six months ago.</dd>
+    <dt class="non">It's No if</dt><dd>no response, or the last one is more than six months old.</dd>
+    <dt>Why it matters</dt><dd>It is free and takes two minutes. Half of the clinics do not speak to those who recommend them.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>52% compliant</b></p>
+ </section>
+<section class="crit">
+  <h3><span class="num">10.</span> Are your Google hours identical to those on your site?</h3>
+  <dl>
+    <dt>How to check</dt><dd>Open your Google listing and your site side by side, and compare day by day.</dd>
+    <dt class="oui">It's Yes if</dt><dd>the two match exactly.</dd>
+    <dt class="non">It's No if</dt><dd>at least one day differs. One clinic in the panel was shown closed four days out of five when it was open.</dd>
+    <dt>Why it matters</dt><dd>It is Google's hours the patient sees first, not your site's.</dd>
+  </dl>
+  <p class="pan">Across the 100 audited clinics: <b>39% compliant</b></p>
+ </section>
+
+<h2>Your result</h2>
+<p>Count your Yeses. That is your score out of 10, calculated exactly like that of the hundred clinics in the study.</p>
+<div class="box"><p><strong>None of the 100 audited clinics reaches 8 out of 10. The best tops out at 7, and the average stands at 3.8.</strong></p></div>
+<p>The first four criteria concern Law 25 and require neither budget nor technical skill. If you were to tackle only one, the fourth is the one that touches health data.</p>
+<p>Criteria 5 and 8 often depend on the platform your site was built on, sometimes years ago. They are not fixed in an afternoon, and that is not negligence.</p>
+<p>Criteria 9 and 10 are free, depend on no one but you, and are settled in half an hour.</p>
+
+<h2>The questions we get asked</h2>
+<p class="note">The answers below describe what was measured on the 100 audited clinics. They do not constitute legal advice.</p>
+<div class="faq">
+<section class="q">
+  <h3>Does Law 25 apply to my dental clinic?</h3>
+  <p>Law 25 applies to any private enterprise operating in Quebec that collects personal information. A dental clinic collects it the moment a patient fills in an online appointment form — name, phone number, email, and often the reason for the visit.</p>
+  <p>The first four criteria of this checklist concern what the law requires to be made visible on a site. Across the 100 clinics audited in August 2026, four met all four criteria at once, and twenty-four met none.</p>
+</section>
+<section class="q">
+  <h3>What do I need on my site to be compliant?</h3>
+  <p>Four elements were checked: a privacy policy accessible in one click (74% of audited clinics), the name of a person responsible for the protection of personal information (63%), a cookie banner that offers a genuine refusal (24%), and a notice at the moment the patient enters their information (8%).</p>
+  <p>The first three require neither budget nor technical skill. The fourth is the one that touches health data, and it is the least often present.</p>
+</section>
+<section class="q">
+  <h3>Do I have to name a person responsible for the protection of personal information?</h3>
+  <p>The role has existed in every enterprise since September 2022, and it falls by default to the person with the highest authority — in a clinic, the owner-dentist, unless delegated in writing. What can be checked from the outside is that their title and contact details are published on the site.</p>
+  <p>Across the 100 audited clinics, 63% published an identifiable name or email. A general clinic address was not counted: it designates no one.</p>
+</section>
+<section class="q">
+  <h3>Why doesn't my clinic show up when someone asks ChatGPT or Google for a dentist?</h3>
+  <p>A site can be perfectly readable to a human and stay mute to a machine. What lets an engine or an assistant understand it is looking at a dental clinic — its name, address, phone number, hours — is markup placed in the page's code, invisible on screen.</p>
+  <p>Across the 100 audited clinics, 14% had a complete one. Many others carried markup placed automatically by their platform, which describes a web page but not a clinic.</p>
+</section>
+<section class="q">
+  <h3>How do I know if my site is too slow on a phone?</h3>
+  <p>Run your address through PageSpeed Insights, Mobile tab, and read the value next to "Largest Contentful Paint" in the Metrics section. It is the time it takes before the main part of the page appears. The threshold used in the study was three seconds.</p>
+  <p>Do not take the big coloured number at the top: that is a score out of 100, not a time. Across the 99 clinics whose speed could be measured, 4% came in under three seconds.</p>
+</section>
+<section class="q">
+  <h3>Does answering Google reviews actually change anything?</h3>
+  <p>An owner response is visible to every patient who reads the review afterward, including those who read a negative one. It is free and depends on no one but you.</p>
+  <p>Across the 100 audited clinics, 52% had answered at least one review in the previous six months.</p>
+</section>
+<section class="q">
+  <h3>Are my opening hours on Google the right ones?</h3>
+  <p>Open your Google listing and your site side by side and compare day by day. It is the fastest of the ten checks, and the most costly gap: a patient who thinks you are closed calls elsewhere.</p>
+  <p>Across the 100 audited clinics, 39% showed exactly the same hours in both places. One clinic in the panel was shown closed four days out of five when it was open.</p>
+</section>
+<section class="q">
+  <h3>What do I risk if my site is not compliant with Law 25?</h3>
+  <p>The law provides two penalty regimes for an enterprise. First, <strong>administrative monetary penalties</strong>, imposed by the Commission d'accès à l'information, of up to <strong>10 million dollars or 2% of worldwide turnover</strong>, whichever is higher. Then <strong>penal fines</strong>, by prosecution, from <strong>15,000 dollars up to 25 million dollars or 4% of worldwide turnover</strong>, whichever is higher, and doubled for a repeat offence.</p>
+  <p>These are the maximums provided by law, not automatic fines: their application rests with the Commission and the courts. This is not legal advice — the official reference is the <a href="https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/sanctions-entreprises-poursuites">Commission d'accès à l'information du Québec</a>. Across the 100 audited clinics, four met all four Law 25 criteria checked in this checklist, and twenty-four met none.</p>
+</section>
+<section class="q">
+  <h3>Is it expensive to fix?</h3>
+  <p>Six of the ten criteria — the four Law 25 ones, answering reviews and matching the hours — require only time and access to your own site. Criteria 9 and 10 are settled in half an hour, with no one.</p>
+  <p>Criteria 5 and 8, speed and markup, often depend on the platform the site was built on, sometimes years ago. Those are not fixed in an afternoon, and that is not negligence.</p>
+</section>
+</div>
+
+<div class="dl">
+  <p>The checklist in a printable version, to tick by hand.</p>
+  <p><a href="/en/dental-checklist.pdf" download>Download the checklist (PDF)</a></p>
+  <p class="meta2">Free access, no form.</p>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>The full results, method and margins of error: <a href="/en/dental-digital-barometer-2026/">Dental Digital Barometer 2026</a>.</p>
+    <p><strong>No clinic is named in this study, here or anywhere else.</strong></p>
+    <p>This page sets no cookies, does not track your browsing and collects no information.</p>
+    <p>NEXTIWEB · Montreal · September 2026 · <a href="/en/politique-confidentialite.html">Privacy policy</a> · <a href="/en/contact.html">Contact us</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HowTo",
+ "name": "Audit your dental clinic's website in ten minutes",
+ "description": "The ten criteria of the Dental Digital Barometer, explained so a dentist can check their own website: Law 25, mobile speed, appointment booking, structured data, Google listing.",
+ "inLanguage": "en-CA",
+ "totalTime": "PT10M",
+ "url": "https://nextiweb.ca/en/dental-website-checklist/",
+ "isAccessibleForFree": true,
+ "author": {
+  "@type": "Person",
+  "name": "Khadija Ait Lassri",
+  "affiliation": {
+   "@type": "Organization",
+   "name": "NEXTIWEB"
+  }
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "NEXTIWEB",
+  "url": "https://nextiweb.ca/"
+ },
+ "supply": [
+  {
+   "@type": "HowToSupply",
+   "name": "A private browsing window"
+  }
+ ],
+ "tool": [
+  {
+   "@type": "HowToTool",
+   "name": "PageSpeed Insights"
+  },
+  {
+   "@type": "HowToTool",
+   "name": "Google Rich Results Test"
+  },
+  {
+   "@type": "HowToTool",
+   "name": "Google Maps"
+  }
+ ],
+ "step": [
+  {
+   "@type": "HowToStep",
+   "position": 1,
+   "name": "Is your privacy policy published?",
+   "text": "Open your home page and look at the footer."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 2,
+   "name": "Is the person responsible for the protection of personal information named?",
+   "text": "On the policy page, search for \"responsible\", \"protection\" or \"personal information\" (Ctrl+F)."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 3,
+   "name": "Does your cookie banner offer a genuine refusal?",
+   "text": "Open your site in a private browsing window, to see what a new visitor sees."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 4,
+   "name": "Do you inform the patient at the moment they enter their information?",
+   "text": "Open the page that carries your appointment or contact form. Read what surrounds the fields."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 5,
+   "name": "Does your site load in under three seconds on a phone?",
+   "text": "Go to pagespeed.web.dev, enter your address, Mobile tab."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 6,
+   "name": "Can someone request an appointment in three clicks or fewer?",
+   "text": "Start from your home page and count the clicks to the form or the calendar."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 7,
+   "name": "Does the patient see real availabilities?",
+   "text": "Follow your own appointment link all the way to the availability screen — without booking."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 8,
+   "name": "Can a machine understand that your site is a dental clinic's?",
+   "text": "Run your address through Google's Rich Results Test, or search for \"application/ld+json\" in your page's source code."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 9,
+   "name": "Have you answered a Google review in the last six months?",
+   "text": "Open your listing in Google Maps, Reviews tab, and look at the most recent ones."
+  },
+  {
+   "@type": "HowToStep",
+   "position": 10,
+   "name": "Are your Google hours identical to those on your site?",
+   "text": "Open your Google listing and your site side by side, and compare day by day."
+  }
+ ],
+ "isBasedOn": "https://nextiweb.ca/en/dental-digital-barometer-2026/"
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "inLanguage": "en-CA",
+ "url": "https://nextiweb.ca/en/dental-website-checklist/",
+ "isPartOf": {
+  "@type": "WebPage",
+  "@id": "https://nextiweb.ca/en/dental-website-checklist/"
+ },
+ "about": {
+  "@type": "Thing",
+  "name": "Digital compliance of Quebec dental clinics"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "NEXTIWEB",
+  "url": "https://nextiweb.ca/"
+ },
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Does Law 25 apply to my dental clinic?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Law 25 applies to any private enterprise operating in Quebec that collects personal information. A dental clinic collects it the moment a patient fills in an online appointment form — name, phone number, email, and often the reason for the visit. The first four criteria of this checklist concern what the law requires to be made visible on a site. Across the 100 clinics audited in August 2026, four met all four criteria at once, and twenty-four met none."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What do I need on my site to be compliant?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Four elements were checked: a privacy policy accessible in one click (74% of audited clinics), the name of a person responsible for the protection of personal information (63%), a cookie banner that offers a genuine refusal (24%), and a notice at the moment the patient enters their information (8%). The first three require neither budget nor technical skill. The fourth is the one that touches health data, and it is the least often present."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do I have to name a person responsible for the protection of personal information?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The role has existed in every enterprise since September 2022, and it falls by default to the person with the highest authority — in a clinic, the owner-dentist, unless delegated in writing. What can be checked from the outside is that their title and contact details are published on the site. Across the 100 audited clinics, 63% published an identifiable name or email. A general clinic address was not counted: it designates no one."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why doesn't my clinic show up when someone asks ChatGPT or Google for a dentist?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A site can be perfectly readable to a human and stay mute to a machine. What lets an engine or an assistant understand it is looking at a dental clinic — its name, address, phone number, hours — is markup placed in the page's code, invisible on screen. Across the 100 audited clinics, 14% had a complete one. Many others carried markup placed automatically by their platform, which describes a web page but not a clinic."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How do I know if my site is too slow on a phone?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Run your address through PageSpeed Insights, Mobile tab, and read the value next to \"Largest Contentful Paint\" in the Metrics section. It is the time it takes before the main part of the page appears. The threshold used in the study was three seconds. Do not take the big coloured number at the top: that is a score out of 100, not a time. Across the 99 clinics whose speed could be measured, 4% came in under three seconds."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does answering Google reviews actually change anything?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "An owner response is visible to every patient who reads the review afterward, including those who read a negative one. It is free and depends on no one but you. Across the 100 audited clinics, 52% had answered at least one review in the previous six months."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are my opening hours on Google the right ones?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Open your Google listing and your site side by side and compare day by day. It is the fastest of the ten checks, and the most costly gap: a patient who thinks you are closed calls elsewhere. Across the 100 audited clinics, 39% showed exactly the same hours in both places. One clinic in the panel was shown closed four days out of five when it was open."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What do I risk if my site is not compliant with Law 25?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The law provides two penalty regimes for an enterprise. Administrative monetary penalties, imposed by the Commission d'accès à l'information, can reach 10 million dollars or 2% of worldwide turnover, whichever is higher. Penal fines, by prosecution, run from 15,000 dollars up to 25 million dollars or 4% of worldwide turnover, whichever is higher, and are doubled for a repeat offence. These are the maximums provided by law, not automatic fines: their application rests with the Commission and the courts. This is not legal advice; the official reference is the Commission d'accès à l'information du Québec. Across the 100 audited clinics, four met all four Law 25 criteria checked in this checklist, and twenty-four met none."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is it expensive to fix?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Six of the ten criteria — the four Law 25 ones, answering reviews and matching the hours — require only time and access to your own site. Criteria 9 and 10 are settled in half an hour, with no one. Criteria 5 and 8, speed and markup, often depend on the platform the site was built on, sometimes years ago. Those are not fixed in an afternoon, and that is not negligence."
+   }
+  }
+ ]
+}
+</script>
+
+</body>
+</html>

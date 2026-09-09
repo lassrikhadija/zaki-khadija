@@ -6,6 +6,7 @@ User-agent: *
 Allow: /
 Disallow: /contact-handler.php
 Disallow: /en/contact-handler.php
+Disallow: /webmcp-lead.php
 
 # ── Bots IA — explicitement autorisés ─────────────────────────────────
 

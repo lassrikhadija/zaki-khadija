@@ -37,6 +37,24 @@ RewriteRule ^en/blog/seo/performance-core-web-vitals\.html$ /en/blog/seo/website
 # ---- 3d. URLs mortes (410 Gone) ----
 RewriteRule ^feed/?$ - [R=410,L]
 
+# ---- 3e. Anciens slugs blog secteur renommes -> nouveaux (301) ----
+# Corrige les 404 Search Console : ces articles existent sous un slug corrige
+# (orthographe CA, suffixes nettoyes, mots reordonnes). Aucune page ne les lie
+# encore ; ces regles preservent le capital de liens et vident le rapport 404.
+RewriteRule ^blog/osteopathes/schema-medical-visibilite-ia-osteopathes\.html$ /blog/osteopathes/schema-medical-visibilite-ia.html [R=301,L]
+RewriteRule ^blog/osteopathes/pages-quartier-seo-osteopathes\.html$ /blog/osteopathes/pages-quartier-seo-osteopathe.html [R=301,L]
+RewriteRule ^blog/osteopathes/local-pack-google-cliniques-osteopathie\.html$ /blog/osteopathes/local-pack-google-osteopathes.html [R=301,L]
+RewriteRule ^blog/osteopathes/citations-nap-repertoires-sante-quebec\.html$ /blog/osteopathes/citations-nap-repertoires-osteopathie.html [R=301,L]
+RewriteRule ^en/blog/osteopaths/neighborhood-pages-seo-osteopath\.html$ /en/blog/osteopaths/neighbourhood-pages-osteopath-seo.html [R=301,L]
+RewriteRule ^en/blog/osteopaths/schema-medical-ai-visibility-osteopath\.html$ /en/blog/osteopaths/schema-medical-ai-visibility-osteopaths.html [R=301,L]
+RewriteRule ^en/blog/osteopaths/nap-citations-quebec-directories-osteopathy\.html$ /en/blog/osteopaths/nap-citations-osteopathy-quebec.html [R=301,L]
+RewriteRule ^en/blog/lawyers/practice-area-pages-lawyers\.html$ /en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html [R=301,L]
+
+# ---- 3f. Favicon racine -> fichier reel (301) ----
+# Les navigateurs/robots demandent /favicon.ico par convention ; le site le sert
+# sous /assets/icons/. Evite un 404 recurrent.
+RewriteRule ^favicon\.ico$ /assets/icons/favicon.ico [R=301,L]
+
 # ---- 4. Page 404 personnalisée ----
 ErrorDocument 404 /404.html
 

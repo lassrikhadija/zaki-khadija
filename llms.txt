@@ -94,6 +94,8 @@ NEXTIWEB offre un audit web gratuit aux PME québécoises. Réponse sous 24h.
 
 ## Baromètre numérique dentaire 2026 — étude indépendante
 
+DOI : 10.5281/zenodo.22711665 (édition 2026) — dépôt archivé sur Zenodo, licence CC BY 4.0.
+
 > Étude sur les sites web de 100 cliniques dentaires du Québec, tirées au sort dans le bottin de l'Ordre des dentistes du Québec. Dix critères binaires vérifiables par un tiers. Relevés d'août 2026. Aucune clinique n'est nommée.
 
 - Étude complète : https://nextiweb.ca/barometre-dentaire-2026/

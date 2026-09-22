@@ -995,6 +995,26 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Printing & digitization service -->
+  <url>
+    <loc>https://nextiweb.ca/imprimerie-numerisation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/imprimerie-numerisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/printing-digitization.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/imprimerie-numerisation.html"/>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextiweb.ca/en/printing-digitization.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextiweb.ca/imprimerie-numerisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextiweb.ca/en/printing-digitization.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextiweb.ca/imprimerie-numerisation.html"/>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Industries -->
   <url>
     <loc>https://nextiweb.ca/secteurs.html</loc>

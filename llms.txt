@@ -77,6 +77,7 @@ Cliniques dentaires, ostéopathes, avocats, courtiers immobiliers, restaurants e
 ### Marketing digital
 - [Bases du marketing digital pour PME](https://nextiweb.ca/blog/marketing-digital/bases-marketing-digital-pme.html) — Les canaux essentiels et comment les prioriser avec un budget limité.
 - [Google Ads vs Meta Ads Québec](https://nextiweb.ca/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html) — Quand choisir la recherche (intention) ou les réseaux sociaux (découverte).
+- [Cohérence de marque : site web et supports imprimés](https://nextiweb.ca/blog/marketing-digital/coherence-marque-web-print-pme.html) — Garder une marque cohérente de l'écran au papier, rendre le print mesurable (QR + UTM), un seul interlocuteur ; version EN : https://nextiweb.ca/en/blog/digital-marketing/brand-consistency-web-print-sme.html
 - [Tous les guides marketing](https://nextiweb.ca/blog/marketing-digital/)
 
 ### IA et automatisation

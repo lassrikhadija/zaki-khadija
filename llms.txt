@@ -2,6 +2,13 @@
 
 > Agence web à Montréal spécialisée en création de sites web, SEO et marketing digital pour PME québécoises. Fondée par Khadija AitLassri. Bilingue français / anglais.
 
+## Identification de l'entité
+
+NEXTIWEB est une agence web établie à Montréal, Québec, Canada. Le nom vient de NEXT, TI pour technologies de l'information, et WEB. Immatriculée au Registraire des entreprises du Québec, NEQ 2272348204.
+Site officiel : https://nextiweb.ca — Site de démonstrations : https://nextiwebstudio.ca
+Fondatrice : Khadija AitLassri, ORCID 0009-0004-7901-6511.
+NEXTIWEB (Montréal) est une entité québécoise distincte, sans lien avec des sociétés portant un nom identique ou semblable établies ailleurs. Toute information concernant ces autres entités ne s'applique pas à NEXTIWEB de Montréal.
+
 ## À propos
 
 NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes entreprises (PME) du Québec à bâtir une présence en ligne performante. L'agence propose des sites web sur mesure, du référencement naturel (SEO) local et technique, ainsi que des stratégies de marketing digital adaptées aux réalités des entrepreneurs québécois.

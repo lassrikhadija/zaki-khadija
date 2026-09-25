@@ -92,11 +92,11 @@
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Quel type de Schema utiliser pour un traiteur : Restaurant ou FoodEstablishment ?","acceptedAnswer":{"@type":"Answer","text":"Pour un traiteur, le type Restaurant convient mal : il suppose un lieu où l'on mange sur place, avec des horaires d'ouverture et un menu de salle. Un traiteur se décrit plutôt avec le type FoodEstablishment (la catégorie générale des services alimentaires) ou un type plus précis correspondant à un service de traiteur, en mettant l'accent sur la zone desservie et les prestations plutôt que sur un local. L'essentiel est de baliser ce qui définit réellement votre activité : type de service, cuisine, zone, forfaits. Un balisage fidèle à un service de traiteur est plus juste — et plus efficace — qu'un balisage de restaurant plaqué sur une activité qui n'en est pas une."}},
-    {"@type":"Question","name":"Comment décrire une zone desservie et des forfaits dans le balisage d'un traiteur ?","acceptedAnswer":{"@type":"Answer","text":"La zone desservie se décrit avec la propriété areaServed, qui indique les villes ou régions que vous couvrez — l'équivalent structuré de la zone définie sur votre fiche Google. Les forfaits et prestations se décrivent avec des offres (makesOffer), qui permettent de présenter vos formules d'événement de façon compréhensible par les machines. L'important est que ces données correspondent exactement à ce qui est affiché sur la page : les mêmes zones, les mêmes forfaits. Le balisage ne fait qu'exprimer dans un langage normalisé ce que le visiteur lit déjà ; il ne doit jamais inventer une zone ou une offre absente de la page."}},
+    {"@type":"Question","name":"Quel type de Schema utiliser pour un traiteur : Restaurant ou FoodEstablishment ?","acceptedAnswer":{"@type":"Answer","text":"Pour un traiteur, le type Restaurant convient mal : il suppose un lieu où l'on mange sur place, avec des horaires d'ouverture et un menu de salle. Un traiteur se décrit plutôt avec le type FoodEstablishment (la catégorie générale des services alimentaires) ou un type plus précis correspondant à un service de traiteur, en mettant l'accent sur la zone desservie et les prestations plutôt que sur un local. L'essentiel est de baliser ce qui définit réellement votre activité : type de service, cuisine, zone, forfaits. Un balisage fidèle à un service de traiteur est plus juste, et plus efficace, qu'un balisage de restaurant plaqué sur une activité qui n'en est pas une."}},
+    {"@type":"Question","name":"Comment décrire une zone desservie et des forfaits dans le balisage d'un traiteur ?","acceptedAnswer":{"@type":"Answer","text":"La zone desservie se décrit avec la propriété areaServed, qui indique les villes ou régions que vous couvrez, l'équivalent structuré de la zone définie sur votre fiche Google. Les forfaits et prestations se décrivent avec des offres (makesOffer), qui permettent de présenter vos formules d'événement de façon compréhensible par les machines. L'important est que ces données correspondent exactement à ce qui est affiché sur la page : les mêmes zones, les mêmes forfaits. Le balisage ne fait qu'exprimer dans un langage normalisé ce que le visiteur lit déjà ; il ne doit jamais inventer une zone ou une offre absente de la page."}},
     {"@type":"Question","name":"Le Schema garantit-il d'apparaître en résultat enrichi sur Google ?","acceptedAnswer":{"@type":"Answer","text":"Non, et il faut se méfier de toute promesse de garantie. Le balisage rend vos informations admissibles aux résultats enrichis, mais Google décide seul de les afficher, selon la qualité de la page, la cohérence des données et bien d'autres facteurs. Un balisage propre et fidèle au contenu visible met toutes les chances de votre côté, sans rien garantir. À l'inverse, un balisage qui décrit des informations absentes de la page peut être ignoré, voire considéré comme trompeur. Le principe est identique pour tous les commerces ; nous le détaillons côté restaurant."}},
-    {"@type":"Question","name":"Comment le Schema aide-t-il un traiteur à être cité par ChatGPT ?","acceptedAnswer":{"@type":"Answer","text":"Les assistants IA construisent leurs recommandations à partir d'informations claires et structurées. Quand un client demande « un traiteur pour un party de bureau à Montréal », l'IA s'appuie sur des sources qui décrivent sans ambiguïté le type de service, la zone et les prestations. Un traiteur dont le site expose un Schema cohérent fournit exactement ces données, ce qui le rend interprétable et, le cas échéant, citable. Ce n'est pas une garantie d'être nommé, mais une absence totale de structure rend un service de traiteur beaucoup plus difficile à comprendre pour une IA. C'est un terrain encore peu occupé par les traiteurs — un avantage à prendre tôt."}},
-    {"@type":"Question","name":"Faut-il mettre les avis dans le balisage d'un traiteur ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mais uniquement s'ils sont réels et affichés sur la page. Le balisage d'avis ne doit jamais inventer une note ni reprendre des avis absents du site. Google interdit explicitement le balisage de faux avis, et cela peut entraîner une pénalité. Pour un traiteur dont les avis sont rares mais précieux, la tentation de « gonfler » est d'autant plus risquée : la règle reste que ce qui est balisé doit correspondre exactement à ce que voit le visiteur. Honnêteté et cohérence avant tout — c'est aussi ce qui protège durablement votre réputation."}}
+    {"@type":"Question","name":"Comment le Schema aide-t-il un traiteur à être cité par ChatGPT ?","acceptedAnswer":{"@type":"Answer","text":"Les assistants IA construisent leurs recommandations à partir d'informations claires et structurées. Quand un client demande « un traiteur pour un party de bureau à Montréal », l'IA s'appuie sur des sources qui décrivent sans ambiguïté le type de service, la zone et les prestations. Un traiteur dont le site expose un Schema cohérent fournit exactement ces données, ce qui le rend interprétable et, le cas échéant, citable. Ce n'est pas une garantie d'être nommé, mais une absence totale de structure rend un service de traiteur beaucoup plus difficile à comprendre pour une IA. C'est un terrain encore peu occupé par les traiteurs, un avantage à prendre tôt."}},
+    {"@type":"Question","name":"Faut-il mettre les avis dans le balisage d'un traiteur ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mais uniquement s'ils sont réels et affichés sur la page. Le balisage d'avis ne doit jamais inventer une note ni reprendre des avis absents du site. Google interdit explicitement le balisage de faux avis, et cela peut entraîner une pénalité. Pour un traiteur dont les avis sont rares mais précieux, la tentation de « gonfler » est d'autant plus risquée : la règle reste que ce qui est balisé doit correspondre exactement à ce que voit le visiteur. Honnêteté et cohérence avant tout, c'est aussi ce qui protège durablement votre réputation."}}
   ]}
   </script>
 </head>
@@ -124,7 +124,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="/" class="brand" aria-label="NEXTIWEB accueil">
-        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Agence web à Montréal" width="84" height="48">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB, Agence web à Montréal" width="84" height="48">
         NEXTIWEB
       </a>
       <nav class="nav" aria-label="Navigation principale">
@@ -198,7 +198,7 @@
         <div class="article-hero">
           <p class="article-hero__kicker">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            Visibilité IA — Traiteurs
+            Visibilité IA, Traiteurs
           </p>
           <h1 class="article-hero__title">Schema FoodEstablishment et visibilité dans les IA pour un traiteur</h1>
           <div class="article-meta">
@@ -237,16 +237,16 @@
 
             <div class="callout">
               <strong>L'idée clé</strong>
-              Le principe des données structurées est le même que pour un restaurant — nous l'expliquons dans <a href="/blog/restaurants/schema-restaurant-visibilite-ia.html">ce guide</a>. La différence pour un traiteur : on ne décrit pas une salle avec des horaires, mais un <strong>service qui se déplace</strong> sur une zone, avec des forfaits d'événement. D'où un type et des propriétés adaptés.
+              Le principe des données structurées est le même que pour un restaurant, nous l'expliquons dans <a href="/blog/restaurants/schema-restaurant-visibilite-ia.html">ce guide</a>. La différence pour un traiteur : on ne décrit pas une salle avec des horaires, mais un <strong>service qui se déplace</strong> sur une zone, avec des forfaits d'événement. D'où un type et des propriétés adaptés.
             </div>
 
-            <p>Ce guide approfondit le <strong>quatrième levier</strong> de notre article pilier sur le <a href="/blog/traiteur/local-pack-google-traiteur.html">Local Pack</a>. C'est le plus technique, mais aussi celui qui prépare l'avenir : à mesure que la recherche se déplace vers les réponses IA, les traiteurs dont les données sont structurées prennent une longueur d'avance — d'autant qu'ils sont aujourd'hui très peu nombreux à l'avoir fait.</p>
+            <p>Ce guide approfondit le <strong>quatrième levier</strong> de notre article pilier sur le <a href="/blog/traiteur/local-pack-google-traiteur.html">Local Pack</a>. C'est le plus technique, mais aussi celui qui prépare l'avenir : à mesure que la recherche se déplace vers les réponses IA, les traiteurs dont les données sont structurées prennent une longueur d'avance, d'autant qu'ils sont aujourd'hui très peu nombreux à l'avoir fait.</p>
 
             <hr>
 
             <h2 id="type">Le bon type : FoodEstablishment, pas Restaurant</h2>
-            <p>Le réflexe serait d'utiliser le type <code>Restaurant</code>. Mauvaise idée pour un traiteur : ce type suppose un lieu où l'on mange sur place, avec des horaires d'ouverture et un menu de salle — autant de notions qui ne correspondent pas à votre activité. Un traiteur se décrit plutôt avec <strong><code>FoodEstablishment</code></strong>, la catégorie générale des services alimentaires, en mettant l'accent sur ce qui vous définit réellement : le <strong>type de service traiteur</strong>, la <strong>cuisine</strong>, la <strong>zone desservie</strong> et les <strong>forfaits</strong>.</p>
-            <p>Baliser fidèlement un service de traiteur est plus juste — et plus efficace — qu'un balisage de restaurant plaqué sur une activité qui n'en est pas une.</p>
+            <p>Le réflexe serait d'utiliser le type <code>Restaurant</code>. Mauvaise idée pour un traiteur : ce type suppose un lieu où l'on mange sur place, avec des horaires d'ouverture et un menu de salle, autant de notions qui ne correspondent pas à votre activité. Un traiteur se décrit plutôt avec <strong><code>FoodEstablishment</code></strong>, la catégorie générale des services alimentaires, en mettant l'accent sur ce qui vous définit réellement : le <strong>type de service traiteur</strong>, la <strong>cuisine</strong>, la <strong>zone desservie</strong> et les <strong>forfaits</strong>.</p>
+            <p>Baliser fidèlement un service de traiteur est plus juste, et plus efficace, qu'un balisage de restaurant plaqué sur une activité qui n'en est pas une.</p>
 
             <hr>
 
@@ -259,10 +259,10 @@
                 <tbody>
                   <tr><td>name</td><td>Le nom exact du service (cohérent avec votre <a href="/blog/traiteur/citations-nap-traiteur.html">NAP</a>).</td></tr>
                   <tr><td>servesCuisine</td><td>Le ou les types de cuisine proposés.</td></tr>
-                  <tr><td>areaServed</td><td>La zone desservie (villes, régions) — l'équivalent structuré de votre fiche.</td></tr>
+                  <tr><td>areaServed</td><td>La zone desservie (villes, régions), l'équivalent structuré de votre fiche.</td></tr>
                   <tr><td>makesOffer</td><td>Les forfaits et prestations d'événement.</td></tr>
                   <tr><td>telephone / url</td><td>Le téléphone et l'adresse du site.</td></tr>
-                  <tr><td>aggregateRating</td><td>La note moyenne — uniquement si elle est réelle et affichée sur la page.</td></tr>
+                  <tr><td>aggregateRating</td><td>La note moyenne, uniquement si elle est réelle et affichée sur la page.</td></tr>
                 </tbody>
               </table>
             </div>
@@ -290,19 +290,19 @@
             <hr>
 
             <h2 id="resultats-enrichis">Résultats enrichis : un atout, pas une garantie</h2>
-            <p>Un balisage propre rend vos informations <strong>admissibles</strong> aux affichages enrichis dans Google. Mais admissible ne veut pas dire garanti : Google décide seul, selon la qualité de la page et la cohérence des données. Méfiez-vous de quiconque promet « des étoiles garanties ». Ce principe est identique pour tous les commerces — nous le détaillons côté <a href="/blog/restaurants/schema-restaurant-visibilite-ia.html">restaurant</a>.</p>
+            <p>Un balisage propre rend vos informations <strong>admissibles</strong> aux affichages enrichis dans Google. Mais admissible ne veut pas dire garanti : Google décide seul, selon la qualité de la page et la cohérence des données. Méfiez-vous de quiconque promet « des étoiles garanties ». Ce principe est identique pour tous les commerces, nous le détaillons côté <a href="/blog/restaurants/schema-restaurant-visibilite-ia.html">restaurant</a>.</p>
 
             <!-- CTA inline -->
             <div class="article-cta-inline">
-              <p><strong>Votre service traiteur parle-t-il la langue de Google et des IA ?</strong> Obtenez un audit gratuit de votre balisage et de votre visibilité — livré en rapport PDF sous 24&nbsp;h.</p>
+              <p><strong>Votre service traiteur parle-t-il la langue de Google et des IA ?</strong> Obtenez un audit gratuit de votre balisage et de votre visibilité, livré en rapport PDF sous 24&nbsp;h.</p>
               <a href="/traiteur.html" class="btn btn--primary">Voir nos services pour traiteurs →</a>
             </div>
 
             <hr>
 
             <h2 id="ia">Être cité par les IA : la visibilité de demain</h2>
-            <p>De plus en plus de clients ne tapent plus de mots-clés : ils <strong>demandent</strong>. « Un traiteur pour un mariage de 100 personnes sur la Rive-Sud », « un service de buffet corporatif végane à Montréal » — à ChatGPT, à Gemini, ou dans les réponses générées par Google. Ces systèmes s'appuient sur des informations claires et structurées pour recommander.</p>
-            <p>Un traiteur dont le site expose un Schema cohérent (type de service, cuisine, zone, forfaits) fournit exactement les données dont ces IA ont besoin pour le comprendre et, le cas échéant, le citer. Ce n'est pas une garantie — personne ne peut l'assurer —, mais une absence totale de structure rend un service de traiteur beaucoup plus difficile à interpréter. C'est le <strong>GEO</strong> (optimisation pour les moteurs génératifs) : un terrain quasiment vierge chez les traiteurs, donc une occasion rare de prendre de l'avance.</p>
+            <p>De plus en plus de clients ne tapent plus de mots-clés : ils <strong>demandent</strong>. « Un traiteur pour un mariage de 100 personnes sur la Rive-Sud », « un service de buffet corporatif végane à Montréal », à ChatGPT, à Gemini, ou dans les réponses générées par Google. Ces systèmes s'appuient sur des informations claires et structurées pour recommander.</p>
+            <p>Un traiteur dont le site expose un Schema cohérent (type de service, cuisine, zone, forfaits) fournit exactement les données dont ces IA ont besoin pour le comprendre et, le cas échéant, le citer. Ce n'est pas une garantie, personne ne peut l'assurer, , mais une absence totale de structure rend un service de traiteur beaucoup plus difficile à interpréter. C'est le <strong>GEO</strong> (optimisation pour les moteurs génératifs) : un terrain quasiment vierge chez les traiteurs, donc une occasion rare de prendre de l'avance.</p>
 
             <hr>
 
@@ -310,19 +310,19 @@
             <ul>
               <li><strong>Utiliser le type Restaurant</strong> pour un service qui n'a ni salle ni horaires d'ouverture.</li>
               <li><strong>Baliser une zone que vous ne desservez pas</strong> ou des forfaits absents de la page.</li>
-              <li><strong>Inventer des avis ou une note.</strong> Interdit par Google, risqué pour votre réputation — d'autant que vos avis sont rares et précieux.</li>
+              <li><strong>Inventer des avis ou une note.</strong> Interdit par Google, risqué pour votre réputation, d'autant que vos avis sont rares et précieux.</li>
               <li><strong>Oublier de mettre à jour</strong> : si votre zone ou vos forfaits changent, le balisage doit suivre.</li>
             </ul>
 
             <div class="callout">
               <strong>La règle d'or du Schema</strong>
-              Ne balisez que ce qui est <strong>vrai</strong> et <strong>visible</strong> sur la page. La structure amplifie votre réalité — elle ne doit jamais la maquiller. Pour un traiteur dont la réputation se bâtit sur la confiance, c'est aussi la meilleure protection à long terme.
+              Ne balisez que ce qui est <strong>vrai</strong> et <strong>visible</strong> sur la page. La structure amplifie votre réalité, elle ne doit jamais la maquiller. Pour un traiteur dont la réputation se bâtit sur la confiance, c'est aussi la meilleure protection à long terme.
             </div>
 
             <hr>
 
             <!-- FAQ -->
-            <h2 id="faq">Questions fréquentes — Schema FoodEstablishment et IA</h2>
+            <h2 id="faq">Questions fréquentes, Schema FoodEstablishment et IA</h2>
             <div class="article-faq" role="list">
 
               <div class="article-faq__item" role="listitem">
@@ -330,7 +330,7 @@
                   <span class="article-faq__q">Quel type de Schema utiliser pour un traiteur : Restaurant ou FoodEstablishment ?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Pour un traiteur, le type Restaurant convient mal : il suppose un lieu où l'on mange sur place, avec des horaires d'ouverture et un menu de salle. Un traiteur se décrit plutôt avec le type FoodEstablishment (la catégorie générale des services alimentaires) ou un type plus précis correspondant à un service de traiteur, en mettant l'accent sur la zone desservie et les prestations plutôt que sur un local. L'essentiel est de baliser ce qui définit réellement votre activité : type de service, cuisine, zone, forfaits. Un balisage fidèle à un service de traiteur est plus juste — et plus efficace — qu'un balisage de restaurant plaqué sur une activité qui n'en est pas une.</p>
+                <p class="article-faq__a">Pour un traiteur, le type Restaurant convient mal : il suppose un lieu où l'on mange sur place, avec des horaires d'ouverture et un menu de salle. Un traiteur se décrit plutôt avec le type FoodEstablishment (la catégorie générale des services alimentaires) ou un type plus précis correspondant à un service de traiteur, en mettant l'accent sur la zone desservie et les prestations plutôt que sur un local. L'essentiel est de baliser ce qui définit réellement votre activité : type de service, cuisine, zone, forfaits. Un balisage fidèle à un service de traiteur est plus juste, et plus efficace, qu'un balisage de restaurant plaqué sur une activité qui n'en est pas une.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -338,7 +338,7 @@
                   <span class="article-faq__q">Comment décrire une zone desservie et des forfaits dans le balisage d'un traiteur ?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">La zone desservie se décrit avec la propriété areaServed, qui indique les villes ou régions que vous couvrez — l'équivalent structuré de la zone définie sur votre fiche Google. Les forfaits et prestations se décrivent avec des offres (makesOffer), qui permettent de présenter vos formules d'événement de façon compréhensible par les machines. L'important est que ces données correspondent exactement à ce qui est affiché sur la page : les mêmes zones, les mêmes forfaits. Le balisage ne fait qu'exprimer dans un langage normalisé ce que le visiteur lit déjà ; il ne doit jamais inventer une zone ou une offre absente de la page.</p>
+                <p class="article-faq__a">La zone desservie se décrit avec la propriété areaServed, qui indique les villes ou régions que vous couvrez, l'équivalent structuré de la zone définie sur votre fiche Google. Les forfaits et prestations se décrivent avec des offres (makesOffer), qui permettent de présenter vos formules d'événement de façon compréhensible par les machines. L'important est que ces données correspondent exactement à ce qui est affiché sur la page : les mêmes zones, les mêmes forfaits. Le balisage ne fait qu'exprimer dans un langage normalisé ce que le visiteur lit déjà ; il ne doit jamais inventer une zone ou une offre absente de la page.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -354,7 +354,7 @@
                   <span class="article-faq__q">Comment le Schema aide-t-il un traiteur à être cité par ChatGPT ?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Les assistants IA construisent leurs recommandations à partir d'informations claires et structurées. Quand un client demande « un traiteur pour un party de bureau à Montréal », l'IA s'appuie sur des sources qui décrivent sans ambiguïté le type de service, la zone et les prestations. Un traiteur dont le site expose un Schema cohérent fournit exactement ces données, ce qui le rend interprétable et, le cas échéant, citable. Ce n'est pas une garantie d'être nommé, mais une absence totale de structure rend un service de traiteur beaucoup plus difficile à comprendre pour une IA. C'est un terrain encore peu occupé par les traiteurs — un avantage à prendre tôt.</p>
+                <p class="article-faq__a">Les assistants IA construisent leurs recommandations à partir d'informations claires et structurées. Quand un client demande « un traiteur pour un party de bureau à Montréal », l'IA s'appuie sur des sources qui décrivent sans ambiguïté le type de service, la zone et les prestations. Un traiteur dont le site expose un Schema cohérent fournit exactement ces données, ce qui le rend interprétable et, le cas échéant, citable. Ce n'est pas une garantie d'être nommé, mais une absence totale de structure rend un service de traiteur beaucoup plus difficile à comprendre pour une IA. C'est un terrain encore peu occupé par les traiteurs, un avantage à prendre tôt.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -362,7 +362,7 @@
                   <span class="article-faq__q">Faut-il mettre les avis dans le balisage d'un traiteur ?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Oui, mais uniquement s'ils sont réels et affichés sur la page. Le balisage d'avis ne doit jamais inventer une note ni reprendre des avis absents du site. Google interdit explicitement le balisage de faux avis, et cela peut entraîner une pénalité. Pour un traiteur dont les avis sont rares mais précieux, la tentation de « gonfler » est d'autant plus risquée : la règle reste que ce qui est balisé doit correspondre exactement à ce que voit le visiteur. Honnêteté et cohérence avant tout — c'est aussi ce qui protège durablement votre réputation.</p>
+                <p class="article-faq__a">Oui, mais uniquement s'ils sont réels et affichés sur la page. Le balisage d'avis ne doit jamais inventer une note ni reprendre des avis absents du site. Google interdit explicitement le balisage de faux avis, et cela peut entraîner une pénalité. Pour un traiteur dont les avis sont rares mais précieux, la tentation de « gonfler » est d'autant plus risquée : la règle reste que ce qui est balisé doit correspondre exactement à ce que voit le visiteur. Honnêteté et cohérence avant tout, c'est aussi ce qui protège durablement votre réputation.</p>
               </div>
 
             </div>
@@ -373,7 +373,7 @@
             <h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
             <p>Le Schema complète les leviers plus « humains » de la visibilité locale :</p>
             <ul>
-              <li><a href="/blog/traiteur/local-pack-google-traiteur.html">Apparaître dans le top 3 Google (Local Pack)</a> — le guide pilier</li>
+              <li><a href="/blog/traiteur/local-pack-google-traiteur.html">Apparaître dans le top 3 Google (Local Pack)</a>, le guide pilier</li>
               <li><a href="/blog/traiteur/google-business-profile-traiteur.html">Optimiser sa fiche Google Business Profile</a></li>
               <li><a href="/blog/traiteur/avis-google-traiteur.html">Obtenir plus d'avis Google et répondre</a></li>
               <li><a href="/blog/traiteur/citations-nap-traiteur.html">Citations et cohérence NAP</a></li>
@@ -389,7 +389,7 @@
 
             <!-- CTA finale -->
             <div class="article-cta-inline" style="margin-top:3rem">
-              <p><strong>Votre service traiteur est-il compréhensible par Google et les IA ?</strong> Obtenez un audit gratuit de votre balisage et de votre visibilité locale — livré en rapport PDF personnalisé sous 24&nbsp;h.</p>
+              <p><strong>Votre service traiteur est-il compréhensible par Google et les IA ?</strong> Obtenez un audit gratuit de votre balisage et de votre visibilité locale, livré en rapport PDF personnalisé sous 24&nbsp;h.</p>
               <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit →</a>
             </div>
 
@@ -435,7 +435,7 @@
     <section class="section section--cta">
       <div class="container section__header section__header--center">
         <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
-        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair, et zéro obligation.</p>
         <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
       </div>
     </section>

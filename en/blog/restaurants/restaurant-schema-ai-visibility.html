@@ -94,8 +94,8 @@
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"What is Restaurant Schema and what is it for?","acceptedAnswer":{"@type":"Answer","text":"Restaurant Schema is technical markup (structured data) added to your site's code to describe your establishment in a standardized language that search engines and AI understand without ambiguity: cuisine type, menu, price range, hours, address, area served, whether you take reservations, average rating. Without this markup, Google has to guess from the text; with it, it reads the information directly. This favours rich results (a fuller display in Google) and helps your restaurant be correctly interpreted by AI assistants. It is invisible to the visitor, but highly readable for machines."}},
     {"@type":"Question","name":"Does Restaurant Schema guarantee rich results on Google?","acceptedAnswer":{"@type":"Answer","text":"No, and you should be wary of any guarantee. The markup is necessary but not sufficient: it makes your information eligible for rich results, but Google alone decides whether to display them, based on page quality, data consistency and many other factors. Clean, compliant markup that faithfully matches the visible page content gives you the best chance, without guaranteeing anything. Conversely, markup describing information absent from the page may be ignored, or even considered misleading."}},
-    {"@type":"Question","name":"How does Schema help a restaurant get cited by ChatGPT or Google AI?","acceptedAnswer":{"@type":"Answer","text":"AI assistants and generative answers rely on clear, structured information to describe and recommend establishments. When your site exposes consistent Restaurant Schema — cuisine, neighbourhood, hours, price range, dishes — you give these systems exactly the data they need to understand you and, where relevant, mention you when a user asks for 'a good Italian restaurant in such-and-such neighbourhood'. It is not a guarantee of being cited, but a total lack of structure makes your restaurant much harder to interpret. It is an evolving area where restaurants that structure their data gain an edge."}},
-    {"@type":"Question","name":"Should reviews and ratings go in the markup?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only if they are real and present on your page. Review markup (aggregateRating) must never invent a rating or reuse reviews that do not appear on the site. Google explicitly forbids markup of fake or self-generated reviews, and such a practice can lead to a penalty. The rule is simple and applies to all Schema: what you mark up must match exactly what the visitor sees on the page. Honesty and consistency above all — it is also what protects your reputation."}},
+    {"@type":"Question","name":"How does Schema help a restaurant get cited by ChatGPT or Google AI?","acceptedAnswer":{"@type":"Answer","text":"AI assistants and generative answers rely on clear, structured information to describe and recommend establishments. When your site exposes consistent Restaurant Schema, cuisine, neighbourhood, hours, price range, dishes, you give these systems exactly the data they need to understand you and, where relevant, mention you when a user asks for 'a good Italian restaurant in such-and-such neighbourhood'. It is not a guarantee of being cited, but a total lack of structure makes your restaurant much harder to interpret. It is an evolving area where restaurants that structure their data gain an edge."}},
+    {"@type":"Question","name":"Should reviews and ratings go in the markup?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only if they are real and present on your page. Review markup (aggregateRating) must never invent a rating or reuse reviews that do not appear on the site. Google explicitly forbids markup of fake or self-generated reviews, and such a practice can lead to a penalty. The rule is simple and applies to all Schema: what you mark up must match exactly what the visitor sees on the page. Honesty and consistency above all, it is also what protects your reputation."}},
     {"@type":"Question","name":"Is Restaurant Schema complicated to set up?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily, but it demands rigour. The markup takes the form of a JSON-LD code block added to the page, restating your real information. The difficulty is not writing the code, but keeping it accurate and up to date: if your hours, menu or prices change, the markup must follow, otherwise it becomes misleading. Testing tools let you verify it is valid before publishing. For a busy restaurateur, it is often the kind of technical task worth entrusting to a professional, to make sure it is done correctly and maintained."}}
   ]}
   </script>
@@ -124,7 +124,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
-        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB, Montreal web agency" width="84" height="48">
         NEXTIWEB
       </a>
       <nav class="nav" aria-label="Main navigation">
@@ -198,7 +198,7 @@
         <div class="article-hero">
           <p class="article-hero__kicker">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            AI Visibility — Restaurants &amp; Cafés
+            AI Visibility, Restaurants &amp; Cafés
           </p>
           <h1 class="article-hero__title">Restaurant Schema and AI Visibility</h1>
           <div class="article-meta">
@@ -229,7 +229,7 @@
               <p class="article-summary__title">30-second summary</p>
               <ul>
                 <li><strong>Restaurant Schema</strong> describes your establishment (cuisine, menu, prices, hours, reviews) in a language Google and AI read without guessing.</li>
-                <li>It favours <strong>rich results</strong> in Google — without ever guaranteeing them.</li>
+                <li>It favours <strong>rich results</strong> in Google, without ever guaranteeing them.</li>
                 <li>It helps your restaurant be <strong>understood and cited</strong> when a guest asks ChatGPT or Google AI: "a good Italian restaurant near here".</li>
                 <li>The absolute rule: <strong>mark up only what is true and visible</strong> on the page. No fake rating, no fake reviews.</li>
               </ul>
@@ -237,7 +237,7 @@
 
             <div class="callout">
               <strong>The key idea</strong>
-              Your guests read your menu; Google and AI read your <strong>code</strong>. Schema is the translation of your restaurant into the language of machines — the ones that increasingly decide which tables to recommend.
+              Your guests read your menu; Google and AI read your <strong>code</strong>. Schema is the translation of your restaurant into the language of machines, the ones that increasingly decide which tables to recommend.
             </div>
 
             <p>This guide expands on the <strong>fourth lever</strong> of our pillar article on the <a href="/en/blog/restaurants/google-local-pack-restaurant.html">Local Pack</a>. It is the most technical of the five, but also the one that prepares for the future: as search shifts towards AI-generated answers, restaurants whose data is structured gain a head start.</p>
@@ -245,7 +245,7 @@
             <hr>
 
             <h2 id="what">Structured data, in plain terms</h2>
-            <p>When a human reads your page, they instantly understand that "open Tuesday to Sunday, 5 to 11 p.m." is an opening time, that "$25–40" is a price range and that "Italian cuisine" describes your style. A machine, however, sees text without labels. <strong>Structured data</strong> (Schema) adds those labels in the code, to say explicitly: <em>this is an opening time, this is a price, this is the cuisine type.</em></p>
+            <p>When a human reads your page, they instantly understand that "open Tuesday to Sunday, 5 to 11 p.m." is an opening time, that "$25-40" is a price range and that "Italian cuisine" describes your style. A machine, however, sees text without labels. <strong>Structured data</strong> (Schema) adds those labels in the code, to say explicitly: <em>this is an opening time, this is a price, this is the cuisine type.</em></p>
             <p>The vocabulary used is that of schema.org, and the type we care about is called <code>Restaurant</code>. Filled in well, it turns your page into a record that Google and AI can interpret word for word, rather than guessing.</p>
 
             <hr>
@@ -266,7 +266,7 @@
                   <tr><td>menu</td><td>The link to your online menu.</td></tr>
                   <tr><td>acceptsReservations</td><td>Whether booking is possible.</td></tr>
                   <tr><td>telephone / url</td><td>The phone and the website address.</td></tr>
-                  <tr><td>aggregateRating</td><td>The average rating — only if it is real and shown on the page.</td></tr>
+                  <tr><td>aggregateRating</td><td>The average rating, only if it is real and shown on the page.</td></tr>
                 </tbody>
               </table>
             </div>
@@ -274,7 +274,7 @@
             <h3>What it looks like in code</h3>
             <p>The markup takes the form of a <code>JSON-LD</code> block placed in the page. Simplified example (adapt it to your real information):</p>
             <div style="background:#0d1117;border:1px solid var(--border);border-radius:.75rem;padding:1.5rem;margin:1.85rem 0;overflow-x:auto">
-              <span style="font-family:var(--display);font-size:.72rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;display:block">JSON-LD — Restaurant Schema (simplified example)</span>
+              <span style="font-family:var(--display);font-size:.72rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;display:block">JSON-LD, Restaurant Schema (simplified example)</span>
               <pre style="margin:0;font-family:'Courier New',monospace;font-size:.82rem;line-height:1.7;color:#e6edf3;white-space:pre;overflow-x:auto">&lt;script type="application/ld+json"&gt;
 {
   "@context": "https://schema.org",
@@ -303,18 +303,18 @@
             <hr>
 
             <h2 id="rich-results">Rich results on Google: an asset, not a guarantee</h2>
-            <p>Clean markup makes your information <strong>eligible</strong> for rich results — the fuller, more attractive display of your restaurant in Google. But eligible does not mean guaranteed: Google alone decides whether to show these enhancements, based on page quality and data consistency. Be wary of anyone promising "guaranteed stars in Google": that is not how it works. What you control is putting all the odds on your side with faithful markup.</p>
+            <p>Clean markup makes your information <strong>eligible</strong> for rich results, the fuller, more attractive display of your restaurant in Google. But eligible does not mean guaranteed: Google alone decides whether to show these enhancements, based on page quality and data consistency. Be wary of anyone promising "guaranteed stars in Google": that is not how it works. What you control is putting all the odds on your side with faithful markup.</p>
 
             <div class="article-cta-inline">
-              <p><strong>Does your site speak the language of Google and AI?</strong> Get a free audit of your markup and visibility — delivered as a PDF report within 24&nbsp;hours.</p>
+              <p><strong>Does your site speak the language of Google and AI?</strong> Get a free audit of your markup and visibility, delivered as a PDF report within 24&nbsp;hours.</p>
               <a href="/en/restaurants.html" class="btn btn--primary">See our services for restaurants →</a>
             </div>
 
             <hr>
 
             <h2 id="ai">Being cited by AI: tomorrow's visibility</h2>
-            <p>More and more guests no longer type keywords: they <strong>ask</strong>. "A good restaurant for a date night in such-and-such neighbourhood", "where to brunch gluten-free near here" — to ChatGPT, to Gemini, or in Google's generated answers. These systems build their reply from clear, structured information.</p>
-            <p>A restaurant whose site exposes consistent Schema (cuisine, neighbourhood, hours, prices, dishes) gives these AI exactly the data they need to understand it and, where relevant, recommend it. It is not a guarantee of being cited — no one can promise that — but a total lack of structure makes a restaurant much harder to interpret. This is called <strong>GEO</strong> (generative engine optimization): new ground where few restaurants are present yet, hence a chance to get ahead.</p>
+            <p>More and more guests no longer type keywords: they <strong>ask</strong>. "A good restaurant for a date night in such-and-such neighbourhood", "where to brunch gluten-free near here", to ChatGPT, to Gemini, or in Google's generated answers. These systems build their reply from clear, structured information.</p>
+            <p>A restaurant whose site exposes consistent Schema (cuisine, neighbourhood, hours, prices, dishes) gives these AI exactly the data they need to understand it and, where relevant, recommend it. It is not a guarantee of being cited, no one can promise that, but a total lack of structure makes a restaurant much harder to interpret. This is called <strong>GEO</strong> (generative engine optimization): new ground where few restaurants are present yet, hence a chance to get ahead.</p>
 
             <hr>
 
@@ -328,13 +328,13 @@
 
             <div class="callout">
               <strong>The golden rule of Schema</strong>
-              Mark up only what is <strong>true</strong> and <strong>visible</strong> on the page. Structure amplifies your reality — it must never disguise it. It is also the best long-term protection.
+              Mark up only what is <strong>true</strong> and <strong>visible</strong> on the page. Structure amplifies your reality, it must never disguise it. It is also the best long-term protection.
             </div>
 
             <hr>
 
             <!-- FAQ -->
-            <h2 id="faq">Frequently asked questions — Restaurant Schema and AI</h2>
+            <h2 id="faq">Frequently asked questions, Restaurant Schema and AI</h2>
             <div class="article-faq" role="list">
 
               <div class="article-faq__item" role="listitem">
@@ -358,7 +358,7 @@
                   <span class="article-faq__q">How does Schema help a restaurant get cited by ChatGPT or Google AI?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">AI assistants and generative answers rely on clear, structured information to describe and recommend establishments. When your site exposes consistent Restaurant Schema — cuisine, neighbourhood, hours, price range, dishes — you give these systems exactly the data they need to understand you and, where relevant, mention you when a user asks for 'a good Italian restaurant in such-and-such neighbourhood'. It is not a guarantee of being cited, but a total lack of structure makes your restaurant much harder to interpret. It is an evolving area where restaurants that structure their data gain an edge.</p>
+                <p class="article-faq__a">AI assistants and generative answers rely on clear, structured information to describe and recommend establishments. When your site exposes consistent Restaurant Schema, cuisine, neighbourhood, hours, price range, dishes, you give these systems exactly the data they need to understand you and, where relevant, mention you when a user asks for 'a good Italian restaurant in such-and-such neighbourhood'. It is not a guarantee of being cited, but a total lack of structure makes your restaurant much harder to interpret. It is an evolving area where restaurants that structure their data gain an edge.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -366,7 +366,7 @@
                   <span class="article-faq__q">Should reviews and ratings go in the markup?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Yes, but only if they are real and present on your page. Review markup (aggregateRating) must never invent a rating or reuse reviews that do not appear on the site. Google explicitly forbids markup of fake or self-generated reviews, and such a practice can lead to a penalty. The rule is simple and applies to all Schema: what you mark up must match exactly what the visitor sees on the page. Honesty and consistency above all — it is also what protects your reputation.</p>
+                <p class="article-faq__a">Yes, but only if they are real and present on your page. Review markup (aggregateRating) must never invent a rating or reuse reviews that do not appear on the site. Google explicitly forbids markup of fake or self-generated reviews, and such a practice can lead to a penalty. The rule is simple and applies to all Schema: what you mark up must match exactly what the visitor sees on the page. Honesty and consistency above all, it is also what protects your reputation.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -385,7 +385,7 @@
             <h2 id="go-further">Go further</h2>
             <p>Schema complements the more "human" levers of local visibility:</p>
             <ul>
-              <li><a href="/en/blog/restaurants/google-local-pack-restaurant.html">Rank in Google's top 3 (Local Pack)</a> — the pillar guide</li>
+              <li><a href="/en/blog/restaurants/google-local-pack-restaurant.html">Rank in Google's top 3 (Local Pack)</a>, the pillar guide</li>
               <li><a href="/en/blog/restaurants/google-business-profile-restaurant.html">Optimize your Google Business Profile</a></li>
               <li><a href="/en/blog/restaurants/google-reviews-restaurant.html">Get more Google reviews and reply to negative ones</a></li>
               <li><a href="/en/blog/restaurants/nap-citations-restaurant.html">Citations and NAP consistency</a></li>
@@ -401,7 +401,7 @@
 
             <!-- Final CTA -->
             <div class="article-cta-inline" style="margin-top:3rem">
-              <p><strong>Is your restaurant understandable to Google and AI?</strong> Get a free audit of your markup and local visibility — delivered as a personalized PDF report within 24&nbsp;hours.</p>
+              <p><strong>Is your restaurant understandable to Google and AI?</strong> Get a free audit of your markup and local visibility, delivered as a personalized PDF report within 24&nbsp;hours.</p>
               <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
             </div>
 
@@ -447,7 +447,7 @@
     <section class="section section--cta">
       <div class="container section__header section__header--center">
         <h2 class="section__title">Your next client is searching for you. Can they find you?</h2>
-        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis, and zero obligation.</p>
         <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
       </div>
     </section>

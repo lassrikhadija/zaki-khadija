@@ -135,7 +135,7 @@ function breadcrumb(items) {
 }
 
 // ============================================================
-// 1. blog/index.html — FR
+// 1. blog/index.html, FR
 // ============================================================
 const blogIndexFR = `<!DOCTYPE html>
 <html lang="fr">
@@ -167,7 +167,7 @@ ${frHeader(true)}
       <div class="container">
         <span class="blog-hero__kicker">Ressources &amp; conseils</span>
         <h1 class="blog-hero__title">Le Blog <span class="blog-hero__brand">NEXTIWEB</span></h1>
-        <p class="blog-hero__subtitle">Conseils experts pour propulser votre présence en ligne — création de sites, SEO, marketing digital et IA.</p>
+        <p class="blog-hero__subtitle">Conseils experts pour propulser votre présence en ligne, création de sites, SEO, marketing digital et IA.</p>
         <div class="blog-search" role="search">
           <input type="search" class="blog-search__input" placeholder="Rechercher un article..." aria-label="Rechercher un article">
           <button class="blog-search__btn" type="button">Rechercher</button>
@@ -210,16 +210,16 @@ function buildFRCategory({ slug, title, icon, desc, subtitle, hreflangEN, canoni
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title} — Blog | NEXTIWEB Montréal</title>
+  <title>${title} : Blog | NEXTIWEB Montréal</title>
   <meta name="description" content="${desc}">
   <meta property="og:type" content="website"><meta property="og:site_name" content="NEXTIWEB">
   <meta property="og:locale" content="fr_CA">
-  <meta property="og:title" content="${title} — Blog | NEXTIWEB">
+  <meta property="og:title" content="${title} : Blog | NEXTIWEB">
   <meta property="og:description" content="${desc}">
   <meta property="og:url" content="https://nextiweb.ca/blog/${slug}/">
   <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${title} — Blog NEXTIWEB">
+  <meta name="twitter:title" content="${title} : Blog NEXTIWEB">
   <meta name="twitter:description" content="${desc}">
   <link rel="canonical" href="https://nextiweb.ca/blog/${slug}/">
   <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/${slug}/">
@@ -291,7 +291,7 @@ ${enHeader(true)}
       <div class="container">
         <span class="blog-hero__kicker">Resources &amp; tips</span>
         <h1 class="blog-hero__title">The <span class="blog-hero__brand">NEXTIWEB</span> Blog</h1>
-        <p class="blog-hero__subtitle">Expert tips to boost your online presence — website design, SEO, digital marketing and AI.</p>
+        <p class="blog-hero__subtitle">Expert tips to boost your online presence, website design, SEO, digital marketing and AI.</p>
         <div class="blog-search" role="search">
           <input type="search" class="blog-search__input" placeholder="Search articles..." aria-label="Search articles">
           <button class="blog-search__btn" type="button">Search</button>
@@ -334,16 +334,16 @@ function buildENCategory({ slug, title, icon, desc, subtitle, hreflangFR, canoni
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title} — Blog | NEXTIWEB Montreal</title>
+  <title>${title} : Blog | NEXTIWEB Montreal</title>
   <meta name="description" content="${desc}">
   <meta property="og:type" content="website"><meta property="og:site_name" content="NEXTIWEB">
   <meta property="og:locale" content="en_CA">
-  <meta property="og:title" content="${title} — Blog | NEXTIWEB">
+  <meta property="og:title" content="${title} : Blog | NEXTIWEB">
   <meta property="og:description" content="${desc}">
   <meta property="og:url" content="https://nextiweb.ca/en/blog/${slug}/">
   <meta property="og:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${title} — NEXTIWEB Blog">
+  <meta name="twitter:title" content="${title} : NEXTIWEB Blog">
   <meta name="twitter:description" content="${desc}">
   <link rel="canonical" href="https://nextiweb.ca/en/blog/${slug}/">
   <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/${hreflangFR}/">

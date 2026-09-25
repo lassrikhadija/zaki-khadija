@@ -1,4 +1,4 @@
-# NEXTIWEB — Site vitrine agence web Montréal
+# NEXTIWEB, Site vitrine agence web Montréal
 
 Site statique HTML/CSS de l'agence **NEXTIWEB**, optimisé pour le SEO local (Montréal / Québec / Canada), la conversion et la performance. Entièrement bilingue **français / anglais**.
 
@@ -20,7 +20,7 @@ Site statique HTML/CSS de l'agence **NEXTIWEB**, optimisé pour le SEO local (Mo
 nextiweb-site/                              # Racine du projet
 │
 │ ── Pages principales (FR)
-├── index.html                              # Accueil FR — hero WOW, métriques, FAQ, CTA
+├── index.html                              # Accueil FR, hero WOW, métriques, FAQ, CTA
 ├── services.html                           # Page Pilier Services (vue d'ensemble)
 ├── creation-site.html                      # Enfant Services : Création de sites web
 ├── seo.html                                # Enfant Services : Référencement SEO
@@ -146,7 +146,7 @@ nextiweb-site/                              # Racine du projet
 
 ---
 
-## Stratégie SEO — Architecture pilier/enfants/local
+## Stratégie SEO, Architecture pilier/enfants/local
 
 ### Pages Services (Pilier → Enfants)
 
@@ -169,7 +169,7 @@ Chaque page enfant vise une requête cible précise, renvoie vers le pilier et l
 
 À développer : `/local/seo-quebec.html`, `/local/creation-site-laval.html`, etc.
 
-### Blog (SEO long terme — autorité thématique)
+### Blog (SEO long terme, autorité thématique)
 
 ```
 /blog/                        ← Hub blog avec barre de recherche
@@ -201,7 +201,7 @@ Chaque page enfant vise une requête cible précise, renvoie vers le pilier et l
 | Fonctionnalité | Détail |
 |---|---|
 | **Dark / Light mode** | Basculement via JS + localStorage, icône ☀/☾ |
-| **Bilingue FR/EN** | `/` = FR, `/en/` = EN — switcher dans le header |
+| **Bilingue FR/EN** | `/` = FR, `/en/` = EN, switcher dans le header |
 | **Menu hamburger** | Drawer slide-in mobile (< 768px), overlay, fermeture Échap |
 | **Cookie consent** | Banner RGPD/Loi 25 avec préférences granulaires |
 | **Hero WOW** | Layout split 60/40, cartes glassmorphism, point lumineux animé |
@@ -266,4 +266,4 @@ python -m http.server 8080
 
 ---
 
-*Site développé avec Claude Code — Architecture SEO, Design & Développement.*
+*Site développé avec Claude Code, Architecture SEO, Design & Développement.*

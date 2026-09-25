@@ -1,9 +1,9 @@
 /* =========================================================
-     NEXTIWEB — Design 2026 : feuille de LECTURE (blog/articles)
+     NEXTIWEB, Design 2026 : feuille de LECTURE (blog/articles)
      À charger APRÈS v2026.css. Reprend les classes existantes des
      articles (.breadcrumb, .article-hero, .article-body, .callout,
      .article-cta-inline, .article-table, .article-faq, .article-layout,
-     .float-bar…) mais portées aux tokens 2026 — le corps des articles
+     .float-bar…) mais portées aux tokens 2026, le corps des articles
      ne change pas, seuls le chrome + les feuilles de style changent.
      ========================================================= */
 

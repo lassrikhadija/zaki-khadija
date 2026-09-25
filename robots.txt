@@ -1,4 +1,4 @@
-# robots.txt — nextiweb.ca
+# robots.txt, nextiweb.ca
 # Agence web Montréal | SEO & Marketing digital pour PME québécoises
 
 # ── Crawlers généraux ──────────────────────────────────────────────────
@@ -8,7 +8,7 @@ Disallow: /contact-handler.php
 Disallow: /en/contact-handler.php
 Disallow: /webmcp-lead.php
 
-# ── Bots IA — explicitement autorisés ─────────────────────────────────
+# ── Bots IA, explicitement autorisés ─────────────────────────────────
 
 # OpenAI / ChatGPT
 User-agent: GPTBot

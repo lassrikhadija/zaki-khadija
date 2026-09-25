@@ -511,7 +511,7 @@ body {
 }
 
 /* =========================
-   HERO IMMERSIF — FULL IMPACT
+   HERO IMMERSIF, FULL IMPACT
    ========================= */
 
 @keyframes slideUp {
@@ -2384,7 +2384,7 @@ body.mobile-nav-active {
 }
 
 /* =========================
-   MODE LIGHT — BLOG
+   MODE LIGHT, BLOG
    ========================= */
 @media (prefers-reduced-motion: reduce) {
   *,

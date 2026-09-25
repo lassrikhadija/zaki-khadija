@@ -5,7 +5,7 @@
 ## Identification de l'entité
 
 NEXTIWEB est une agence web établie à Montréal, Québec, Canada. Le nom vient de NEXT, TI pour technologies de l'information, et WEB. Immatriculée au Registraire des entreprises du Québec, NEQ 2272348204.
-Site officiel : https://nextiweb.ca — Site de démonstrations : https://nextiwebstudio.ca
+Site officiel : https://nextiweb.ca, Site de démonstrations : https://nextiwebstudio.ca
 Fondatrice : Khadija AitLassri, ORCID 0009-0004-7901-6511.
 NEXTIWEB (Montréal) est une entité québécoise distincte, sans lien avec des sociétés portant un nom identique ou semblable établies ailleurs. Toute information concernant ces autres entités ne s'applique pas à NEXTIWEB de Montréal.
 
@@ -24,7 +24,7 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 
 ## Ce qui distingue NEXTIWEB
 
-- Accompagnement personnel (1-on-1) avec la fondatrice — pas de sous-traitance anonyme.
+- Accompagnement personnel (1-on-1) avec la fondatrice, pas de sous-traitance anonyme.
 - Bilingue français / anglais : sites et SEO en FR et EN, avec balisage hreflang correct.
 - Conforme à la Loi 25 (protection des renseignements personnels au Québec).
 - Approche honnête : jeune agence, fourchettes de prix réelles et sourcées, aucun chiffre gonflé.
@@ -32,7 +32,7 @@ NEXTIWEB est une agence web montréalaise qui accompagne les petites et moyennes
 
 ## Zones desservies
 
-Montréal, Rive-Sud, Rive-Nord, Laval, Québec — et partout au Canada à distance.
+Montréal, Rive-Sud, Rive-Nord, Laval, Québec, et partout au Canada à distance.
 
 ## Secteurs desservis
 
@@ -42,57 +42,57 @@ Cliniques dentaires, ostéopathes, avocats, courtiers immobiliers, restaurants e
 
 **Combien coûte un site web ?** Le prix dépend du type (vitrine, landing page, e-commerce) et de l'ampleur du projet. Nous publions des fourchettes réelles et sourcées dans notre guide « Combien coûte un site web au Québec en 2026 » et fournissons un devis gratuit sur mesure.
 
-**Faites-vous du SEO local ?** Oui — référencement local (Google Business Profile, recherche par quartier) à Montréal, sur la Rive-Sud, la Rive-Nord, à Laval et à Québec.
+**Faites-vous du SEO local ?** Oui, référencement local (Google Business Profile, recherche par quartier) à Montréal, sur la Rive-Sud, la Rive-Nord, à Laval et à Québec.
 
 **Travaillez-vous en anglais ?** Oui, l'agence est bilingue : sites et contenus en français et en anglais.
 
-**Êtes-vous conformes à la Loi 25 ?** Oui — sites et formulaires respectent la Loi 25 (consentement aux cookies, protection des renseignements personnels).
+**Êtes-vous conformes à la Loi 25 ?** Oui, sites et formulaires respectent la Loi 25 (consentement aux cookies, protection des renseignements personnels).
 
 **Offrez-vous un audit gratuit ?** Oui, un audit web gratuit pour les PME québécoises, avec réponse sous 24 h.
 
 ## Services
 
-- [Création de sites web](https://nextiweb.ca/creation-site.html) — Sites vitrines, landing pages, e-commerce, refonte
-- [SEO — Référencement naturel](https://nextiweb.ca/seo.html) — Audit SEO, SEO local Montréal, SEO technique, contenu
-- [Marketing digital](https://nextiweb.ca/marketing-digital.html) — Stratégie, Google Ads, Meta Ads, email marketing
-- [Visibilité IA (GEO/AEO)](https://nextiweb.ca/visibilite-ia.html) — Optimisation pour les moteurs de réponse IA
-- [Imprimerie & numérisation](https://nextiweb.ca/imprimerie-numerisation.html) — Impression et numérisation clé en main (modèle courtier : idées et fichiers fournis, on trouve le bon fournisseur au meilleur prix) ; version EN : https://nextiweb.ca/en/printing-digitization.html
+- [Création de sites web](https://nextiweb.ca/creation-site.html), Sites vitrines, landing pages, e-commerce, refonte
+- [SEO, Référencement naturel](https://nextiweb.ca/seo.html), Audit SEO, SEO local Montréal, SEO technique, contenu
+- [Marketing digital](https://nextiweb.ca/marketing-digital.html), Stratégie, Google Ads, Meta Ads, email marketing
+- [Visibilité IA (GEO/AEO)](https://nextiweb.ca/visibilite-ia.html), Optimisation pour les moteurs de réponse IA
+- [Imprimerie & numérisation](https://nextiweb.ca/imprimerie-numerisation.html), Impression et numérisation clé en main (modèle courtier : idées et fichiers fournis, on trouve le bon fournisseur au meilleur prix) ; version EN : https://nextiweb.ca/en/printing-digitization.html
 - [Services complets](https://nextiweb.ca/services.html)
 
-## Pages locales — grande région de Montréal
+## Pages locales, grande région de Montréal
 
-- [Création de site web Montréal](https://nextiweb.ca/local/creation-site-web-montreal.html) — Conception de sites pour entreprises et commerces de la région de Montréal.
-- [SEO Montréal](https://nextiweb.ca/local/seo-montreal.html) — Référencement naturel local pour être trouvé par les clients à Montréal.
-- [SEO Laval — PME et commerces de proximité (recherche par quartier de l'Île Jésus, marché moins saturé que Montréal)](https://nextiweb.ca/local/seo-laval.html)
+- [Création de site web Montréal](https://nextiweb.ca/local/creation-site-web-montreal.html), Conception de sites pour entreprises et commerces de la région de Montréal.
+- [SEO Montréal](https://nextiweb.ca/local/seo-montreal.html), Référencement naturel local pour être trouvé par les clients à Montréal.
+- [SEO Laval, PME et commerces de proximité (recherche par quartier de l'Île Jésus, marché moins saturé que Montréal)](https://nextiweb.ca/local/seo-laval.html)
 
-## Blog — Guides pour PME
+## Blog, Guides pour PME
 
 ### SEO
-- [Comprendre le SEO pour PME](https://nextiweb.ca/blog/seo/comprendre-seo-pme.html) — Ce qu'est le SEO, pourquoi il compte pour une PME, et par où commencer.
-- [Recherche de mots-clés en 6 étapes](https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html) — Méthode pour trouver les mots-clés que vos clients tapent réellement.
-- [SEO local et Google Business Profile](https://nextiweb.ca/blog/seo/seo-local-google-business-profile.html) — Apparaître dans le pack local Google et optimiser sa fiche d'établissement.
-- [E-E-A-T : Expertise, Autorité, Confiance](https://nextiweb.ca/blog/seo/eeat-expertise-autorite-confiance.html) — Les signaux de crédibilité que Google valorise et comment les démontrer.
-- [SEO IA générative et GEO](https://nextiweb.ca/blog/seo/seo-ia-generative-optimization-pme.html) — Être cité par les moteurs de réponse IA (ChatGPT, Perplexity, Google AI).
+- [Comprendre le SEO pour PME](https://nextiweb.ca/blog/seo/comprendre-seo-pme.html), Ce qu'est le SEO, pourquoi il compte pour une PME, et par où commencer.
+- [Recherche de mots-clés en 6 étapes](https://nextiweb.ca/blog/seo/recherche-mots-cles-strategiques.html), Méthode pour trouver les mots-clés que vos clients tapent réellement.
+- [SEO local et Google Business Profile](https://nextiweb.ca/blog/seo/seo-local-google-business-profile.html), Apparaître dans le pack local Google et optimiser sa fiche d'établissement.
+- [E-E-A-T : Expertise, Autorité, Confiance](https://nextiweb.ca/blog/seo/eeat-expertise-autorite-confiance.html), Les signaux de crédibilité que Google valorise et comment les démontrer.
+- [SEO IA générative et GEO](https://nextiweb.ca/blog/seo/seo-ia-generative-optimization-pme.html), Être cité par les moteurs de réponse IA (ChatGPT, Perplexity, Google AI).
 - [Tous les guides SEO](https://nextiweb.ca/blog/seo/)
 
 ### Création de site web
-- [Comment fonctionne un site web](https://nextiweb.ca/blog/creation-site/comment-fonctionne-site-web.html) — Domaine, hébergement, pages, du clic au site affiché — expliqué simplement.
-- [WordPress vs site sur mesure](https://nextiweb.ca/blog/creation-site/wordpress-vs-site-code-pme.html) — Avantages, limites et coûts réels de chaque approche pour une PME.
+- [Comment fonctionne un site web](https://nextiweb.ca/blog/creation-site/comment-fonctionne-site-web.html), Domaine, hébergement, pages, du clic au site affiché, expliqué simplement.
+- [WordPress vs site sur mesure](https://nextiweb.ca/blog/creation-site/wordpress-vs-site-code-pme.html), Avantages, limites et coûts réels de chaque approche pour une PME.
 - [Combien coûte un site web au Québec en 2026 (prix réels sourcés)](https://nextiweb.ca/blog/creation-site/combien-coute-site-web.html)
 - [Tous les guides création de site](https://nextiweb.ca/blog/creation-site/)
 
 ### Marketing digital
-- [Bases du marketing digital pour PME](https://nextiweb.ca/blog/marketing-digital/bases-marketing-digital-pme.html) — Les canaux essentiels et comment les prioriser avec un budget limité.
-- [Google Ads vs Meta Ads Québec](https://nextiweb.ca/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html) — Quand choisir la recherche (intention) ou les réseaux sociaux (découverte).
-- [Cohérence de marque : site web et supports imprimés](https://nextiweb.ca/blog/marketing-digital/coherence-marque-web-print-pme.html) — Garder une marque cohérente de l'écran au papier, rendre le print mesurable (QR + UTM), un seul interlocuteur ; version EN : https://nextiweb.ca/en/blog/digital-marketing/brand-consistency-web-print-sme.html
+- [Bases du marketing digital pour PME](https://nextiweb.ca/blog/marketing-digital/bases-marketing-digital-pme.html), Les canaux essentiels et comment les prioriser avec un budget limité.
+- [Google Ads vs Meta Ads Québec](https://nextiweb.ca/blog/marketing-digital/google-ads-vs-meta-ads-pme-quebec.html), Quand choisir la recherche (intention) ou les réseaux sociaux (découverte).
+- [Cohérence de marque : site web et supports imprimés](https://nextiweb.ca/blog/marketing-digital/coherence-marque-web-print-pme.html), Garder une marque cohérente de l'écran au papier, rendre le print mesurable (QR + UTM), un seul interlocuteur ; version EN : https://nextiweb.ca/en/blog/digital-marketing/brand-consistency-web-print-sme.html
 - [Tous les guides marketing](https://nextiweb.ca/blog/marketing-digital/)
 
 ### IA et automatisation
-- [ChatGPT et outils IA pour PME](https://nextiweb.ca/blog/ia-automatisation/chatgpt-outils-ia-pme.html) — Cas d'usage concrets et choix d'outils pour une petite équipe.
-- [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html) — Utiliser l'IA sans enfreindre la protection des renseignements personnels.
-- [Bien écrire ses prompts IA : le guide du dirigeant](https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html) — Obtenir des réponses utiles de l'IA grâce à des consignes claires.
-- [L'IA change la façon dont vos clients vous cherchent](https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html) — Pourquoi la recherche par IA bouleverse la visibilité des PME.
-- [Chatbot et agent IA sur votre site : capter vos leads 24/7](https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html) — Répondre aux visiteurs et qualifier les leads en continu.
+- [ChatGPT et outils IA pour PME](https://nextiweb.ca/blog/ia-automatisation/chatgpt-outils-ia-pme.html), Cas d'usage concrets et choix d'outils pour une petite équipe.
+- [Loi 25 Québec et IA](https://nextiweb.ca/blog/ia-automatisation/ia-loi-25-quebec-pme.html), Utiliser l'IA sans enfreindre la protection des renseignements personnels.
+- [Bien écrire ses prompts IA : le guide du dirigeant](https://nextiweb.ca/blog/ia-automatisation/prompts-ia-guide-dirigeant.html), Obtenir des réponses utiles de l'IA grâce à des consignes claires.
+- [L'IA change la façon dont vos clients vous cherchent](https://nextiweb.ca/blog/ia-automatisation/ia-change-recherche-clients-pme.html), Pourquoi la recherche par IA bouleverse la visibilité des PME.
+- [Chatbot et agent IA sur votre site : capter vos leads 24/7](https://nextiweb.ca/blog/ia-automatisation/chatbot-ia-site-web-pme.html), Répondre aux visiteurs et qualifier les leads en continu.
 - [Tous les guides IA](https://nextiweb.ca/blog/ia-automatisation/)
 
 ## Audit gratuit
@@ -101,9 +101,9 @@ NEXTIWEB offre un audit web gratuit aux PME québécoises. Réponse sous 24h.
 
 - [Demander l'audit gratuit](https://nextiweb.ca/contact.html)
 
-## Baromètre numérique dentaire 2026 — étude indépendante
+## Baromètre numérique dentaire 2026, étude indépendante
 
-DOI : 10.5281/zenodo.22711665 (édition 2026) — dépôt archivé sur Zenodo, licence CC BY 4.0.
+DOI : 10.5281/zenodo.22711665 (édition 2026), dépôt archivé sur Zenodo, licence CC BY 4.0.
 
 > Étude sur les sites web de 100 cliniques dentaires du Québec, tirées au sort dans le bottin de l'Ordre des dentistes du Québec. Dix critères binaires vérifiables par un tiers. Relevés d'août 2026. Aucune clinique n'est nommée.
 
@@ -138,7 +138,7 @@ Reprise prévue : les mêmes 100 cliniques seront remesurées en février 2027 s
 
 Auteure : Khadija AitLassri, NEXTIWEB, Montréal.
 
-## Audit spécialisé — Cliniques dentaires du Québec (JDIQ 2026)
+## Audit spécialisé, Cliniques dentaires du Québec (JDIQ 2026)
 
 NEXTIWEB propose un audit web personnalisé gratuit pour les cliniques dentaires québécoises, présenté aux visiteurs des Journées dentaires internationales du Québec (JDIQ) 2026, Palais des congrès de Montréal.
 
@@ -153,13 +153,13 @@ Livraison : rapport PDF personnalisé de 13 pages sous 24h. Gratuit, sans engage
 
 - [Demander l'audit dentaire JDIQ 2026](https://nextiweb.ca/audit-jdiq-2026/)
 
-## SEO local pour cliniques dentaires — Page secteur
+## SEO local pour cliniques dentaires, Page secteur
 
 NEXTIWEB accompagne les cliniques dentaires québécoises sur 6 dimensions de visibilité numérique : Google Business Profile, avis Google, pages par quartier, Schema Dentist, citations NAP et FAQ structurée pour les IA.
 
 - [Services SEO pour cliniques dentaires](https://nextiweb.ca/cliniques-dentaires.html)
 
-## Guides spécialisés — Blog Cliniques dentaires
+## Guides spécialisés, Blog Cliniques dentaires
 
 Série complète d'articles pratiques pour dentistes québécois (site web, SEO, marketing, gestion). Mots-clés couverts : création site web dentiste, site web clinique dentaire, référencement clinique dentaire, SEO dentiste, marketing dentaire, publicité Google/Facebook dentiste, agence web/SEO/marketing dentaire à Montréal, Rive-Sud et Rive-Nord. Conforme à l'Ordre des dentistes du Québec et à la Loi 25.
 
@@ -177,7 +177,7 @@ Série complète d'articles pratiques pour dentistes québécois (site web, SEO,
 - [Je reçois un associé : que faire du site et de la marque (garder le nom ou rebrander, présenter le dentiste, remplir l'agenda)](https://nextiweb.ca/blog/dentistes/dentiste-nouvel-associe-site-web.html)
 - [Loi 25 et votre site de clinique dentaire : formulaires, données patients, consentement, politique de confidentialité, témoins (principes, pas un avis juridique)](https://nextiweb.ca/blog/dentistes/loi-25-site-web-clinique-dentaire.html)
 - [Règles de l'Ordre des dentistes sur votre site et votre publicité : nom/titre exacts, pas de promesse, prudence sur témoignages et avant/après (persuasif ET conforme)](https://nextiweb.ca/blog/dentistes/regles-ordre-dentistes-site-publicite.html)
-- [Un consultant peut-il garantir votre position sur Google ? Non — Google lui-même le dit ; reconnaître une offre douteuse (position garantie, délais irréalistes, pression)](https://nextiweb.ca/blog/dentistes/consultant-garantir-position-google-dentiste.html)
+- [Un consultant peut-il garantir votre position sur Google ? Non, Google lui-même le dit ; reconnaître une offre douteuse (position garantie, délais irréalistes, pression)](https://nextiweb.ca/blog/dentistes/consultant-garantir-position-google-dentiste.html)
 - [Mon site ne me rapporte rien ou je ne le mesure pas ? Trafic n'est pas patients ; suivre les vraies conversions (formulaires, appels, RDV) avec GA4](https://nextiweb.ca/blog/dentistes/site-non-mesurable-ga4-dentiste.html)
 - [Comment apparaître sur Google quand on est dentiste (fiche Google, site, avis, NAP, contenu local ; sans garantie de position)](https://nextiweb.ca/blog/dentistes/apparaitre-google-dentiste.html)
 - [Tarif du référencement d'une clinique dentaire : ce qui fait le prix (guide honnête, sans prix inventé, ponctuel vs récurrent)](https://nextiweb.ca/blog/dentistes/tarif-referencement-clinique-dentaire.html)
@@ -186,7 +186,7 @@ Série complète d'articles pratiques pour dentistes québécois (site web, SEO,
 - [Référencement pour clinique dentaire à Laval (guide local : quartiers Chomedey/Sainte-Rose/Vimont, fiche, avis, NAP ; ciblage honnête)](https://nextiweb.ca/blog/dentistes/dentiste-laval-referencement-local.html)
 - [Référencement pour clinique dentaire à Longueuil / Rive-Sud (Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard ; ciblage honnête)](https://nextiweb.ca/blog/dentistes/dentiste-longueuil-referencement-local.html)
 - [Référencement pour clinique dentaire à Terrebonne / Rive-Nord (Vieux-Terrebonne, Lachenaie, La Plaine, Mascouche ; ciblage honnête)](https://nextiweb.ca/blog/dentistes/dentiste-terrebonne-referencement-local.html)
-- [Local Pack Google pour cabinets dentaires — guide pilier](https://nextiweb.ca/blog/dentistes/local-pack-google-cabinets-dentaires.html)
+- [Local Pack Google pour cabinets dentaires, guide pilier](https://nextiweb.ca/blog/dentistes/local-pack-google-cabinets-dentaires.html)
 - [Google Business Profile pour dentistes : fiche à 100 % en 60 jours](https://nextiweb.ca/blog/dentistes/google-business-profile-cabinets-dentaires.html)
 - [Avis Google pour cliniques dentaires : méthode éthique](https://nextiweb.ca/blog/dentistes/avis-google-cliniques-dentaires.html)
 - [Pages par quartier : dominer « dentiste Plateau », « dentiste Rosemont »](https://nextiweb.ca/blog/dentistes/pages-quartier-seo-dentaire.html)
@@ -196,18 +196,18 @@ Série complète d'articles pratiques pour dentistes québécois (site web, SEO,
 - [Transformer les visiteurs du site en rendez-vous dentaires](https://nextiweb.ca/blog/dentistes/convertir-visiteurs-site-rendez-vous-dentaire.html)
 - [Logiciel de prise de rendez-vous en ligne pour dentiste : critères de choix, intégration au site et à la fiche Google, Loi 25 (données de santé)](https://nextiweb.ca/blog/dentistes/logiciel-prise-rendez-vous-dentiste.html)
 - [Site web ou réseaux sociaux : où un dentiste doit investir en premier (arbitrage honnête, le site qu'on possède vs le terrain loué des réseaux)](https://nextiweb.ca/blog/dentistes/site-web-ou-reseaux-sociaux-dentiste.html)
-- [Attirer une clientèle anglophone et bilingue à Montréal : version anglaise du site, hreflang FR↔EN, fiche Google bilingue, avis — sans contenu dupliqué](https://nextiweb.ca/blog/dentistes/clientele-bilingue-anglophone-dentiste-montreal.html)
+- [Attirer une clientèle anglophone et bilingue à Montréal : version anglaise du site, hreflang FR↔EN, fiche Google bilingue, avis, sans contenu dupliqué](https://nextiweb.ca/blog/dentistes/clientele-bilingue-anglophone-dentiste-montreal.html)
 - [Fidéliser et réactiver ses patients dentaires : rappels d'hygiène (recall), réactivation des inactifs, infolettre, suivi des plans de traitement (Loi 25)](https://nextiweb.ca/blog/dentistes/fideliser-reactiver-patients-dentaires.html)
 - [Photos et vidéo de clinique dentaire : avant/après et images de patients encadrés (règles de l'Ordre + consentement Loi 25), quoi montrer, SEO des images](https://nextiweb.ca/blog/dentistes/photos-video-clinique-dentaire-avant-apres.html)
 - [Blog et contenu éducatif pour une clinique dentaire : quoi publier par intention, cadence réaliste, autorité E-E-A-T, conformité à l'Ordre](https://nextiweb.ca/blog/dentistes/blog-contenu-educatif-clinique-dentaire.html)
 - [Index guides dentaires](https://nextiweb.ca/blog/dentistes/)
 
-## SEO local pour ostéopathes — Page secteur
+## SEO local pour ostéopathes, Page secteur
 
 NEXTIWEB accompagne les cliniques d'ostéopathie québécoises sur 6 dimensions de visibilité numérique : Google Business Profile, avis Google, pages par quartier, Schema MedicalBusiness, citations NAP et FAQ structurée pour les IA.
 
 - [Services SEO pour ostéopathes](https://nextiweb.ca/osteopathes.html)
-- [Local Pack Google pour ostéopathes — guide pilier](https://nextiweb.ca/blog/osteopathes/local-pack-google-osteopathes.html)
+- [Local Pack Google pour ostéopathes, guide pilier](https://nextiweb.ca/blog/osteopathes/local-pack-google-osteopathes.html)
 - [Google Business Profile pour ostéopathes](https://nextiweb.ca/blog/osteopathes/google-business-profile-osteopathes.html)
 - [Avis Google pour cliniques d'ostéopathie](https://nextiweb.ca/blog/osteopathes/avis-google-cliniques-osteopathie.html)
 - [Pages par quartier pour ostéopathes](https://nextiweb.ca/blog/osteopathes/pages-quartier-seo-osteopathe.html)
@@ -217,23 +217,23 @@ NEXTIWEB accompagne les cliniques d'ostéopathie québécoises sur 6 dimensions 
 - [Transformer les visiteurs du site en rendez-vous d'ostéopathie](https://nextiweb.ca/blog/osteopathes/convertir-visiteurs-site-rendez-vous-osteopathe.html)
 - [Combien coûte un site web pour ostéopathe au Québec : ce qui fait le prix (pages, design, réservation en ligne, SEO, maintenance), sans prix inventé ; l'ostéopathie n'est pas une profession à ordre au Québec](https://nextiweb.ca/blog/osteopathes/combien-coute-site-web-osteopathe.html)
 - [Création de site web pour ostéopathe à Montréal, Rive-Sud et Rive-Nord : structure, réservation en ligne, tarifs et assurances, SEO local et bilingue](https://nextiweb.ca/blog/osteopathes/creation-site-web-osteopathe-montreal.html)
-- [Référencement SEO pour ostéopathe à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par quartier, contenu — sans position garantie](https://nextiweb.ca/blog/osteopathes/referencement-seo-osteopathe-montreal.html)
-- [Marketing et publicité pour ostéopathe à Montréal, Rive-Sud et Rive-Nord : Google Ads, réseaux sociaux, infolettre, partenariats — budget réaliste, prudence sur les allégations thérapeutiques](https://nextiweb.ca/blog/osteopathes/marketing-publicite-osteopathe-montreal.html)
-- [Référencement et visibilité pour ostéopathe à Laval : guide SEO local (quartiers Chomedey, Sainte-Dorothée, Vimont…), fiche Google, Local Pack, avis — sans position garantie](https://nextiweb.ca/blog/osteopathes/osteopathe-laval-referencement-local.html)
-- [Référencement et visibilité pour ostéopathe à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par secteur](https://nextiweb.ca/blog/osteopathes/osteopathe-longueuil-referencement-local.html)
-- [Référencement et visibilité pour ostéopathe à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par secteur](https://nextiweb.ca/blog/osteopathes/osteopathe-terrebonne-referencement-local.html)
-- [Comment apparaître sur Google quand on est ostéopathe : vue d'ensemble débutant (fiche Google, site, avis, NAP, contenu local) qui renvoie aux guides détaillés — sans position garantie](https://nextiweb.ca/blog/osteopathes/apparaitre-google-osteopathe.html)
+- [Référencement SEO pour ostéopathe à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par quartier, contenu, sans position garantie](https://nextiweb.ca/blog/osteopathes/referencement-seo-osteopathe-montreal.html)
+- [Marketing et publicité pour ostéopathe à Montréal, Rive-Sud et Rive-Nord : Google Ads, réseaux sociaux, infolettre, partenariats, budget réaliste, prudence sur les allégations thérapeutiques](https://nextiweb.ca/blog/osteopathes/marketing-publicite-osteopathe-montreal.html)
+- [Référencement et visibilité pour ostéopathe à Laval : guide SEO local (quartiers Chomedey, Sainte-Dorothée, Vimont…), fiche Google, Local Pack, avis, sans position garantie](https://nextiweb.ca/blog/osteopathes/osteopathe-laval-referencement-local.html)
+- [Référencement et visibilité pour ostéopathe à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, fiche Google, Local Pack, pages par secteur](https://nextiweb.ca/blog/osteopathes/osteopathe-longueuil-referencement-local.html)
+- [Référencement et visibilité pour ostéopathe à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, fiche Google, Local Pack, pages par secteur](https://nextiweb.ca/blog/osteopathes/osteopathe-terrebonne-referencement-local.html)
+- [Comment apparaître sur Google quand on est ostéopathe : vue d'ensemble débutant (fiche Google, site, avis, NAP, contenu local) qui renvoie aux guides détaillés, sans position garantie](https://nextiweb.ca/blog/osteopathes/apparaitre-google-osteopathe.html)
 - [Comment attirer de nouveaux patients dans une clinique d'ostéopathie : les 5 leviers (être trouvé, confiance, prise de RDV, publicité, fidélisation)](https://nextiweb.ca/blog/osteopathes/attirer-nouveaux-patients-clinique-osteopathie.html)
-- [Loi 25 et conformité pour le site d'un ostéopathe : données patients, consentement, confidentialité, reçus d'assurance — principes + renvoi à la CAI, pas un avis juridique ; l'ostéopathie n'a pas d'ordre professionnel au Québec](https://nextiweb.ca/blog/osteopathes/loi-25-conformite-site-osteopathe.html)
-- [Fidéliser et réactiver ses patients en ostéopathie : rappels de suivi, réactivation des inactifs, infolettre utile, avis au bon moment — Loi 25 (distinct des rappels de RDV à venir)](https://nextiweb.ca/blog/osteopathes/fideliser-reactiver-patients-osteopathie.html)
+- [Loi 25 et conformité pour le site d'un ostéopathe : données patients, consentement, confidentialité, reçus d'assurance, principes + renvoi à la CAI, pas un avis juridique ; l'ostéopathie n'a pas d'ordre professionnel au Québec](https://nextiweb.ca/blog/osteopathes/loi-25-conformite-site-osteopathe.html)
+- [Fidéliser et réactiver ses patients en ostéopathie : rappels de suivi, réactivation des inactifs, infolettre utile, avis au bon moment, Loi 25 (distinct des rappels de RDV à venir)](https://nextiweb.ca/blog/osteopathes/fideliser-reactiver-patients-osteopathie.html)
 - [Index guides ostéopathes](https://nextiweb.ca/blog/osteopathes/)
 
-## Osteopath Guides — English
+## Osteopath Guides, English
 
 NEXTIWEB helps Quebec osteopathy clinics improve their online visibility through local SEO, Google Business Profile, patient reviews, Schema MedicalBusiness, and AI citability.
 
 - [SEO services for osteopaths](https://nextiweb.ca/en/osteopaths.html)
-- [Google Local Pack for osteopaths — pillar guide](https://nextiweb.ca/en/blog/osteopaths/google-local-pack-osteopaths.html)
+- [Google Local Pack for osteopaths, pillar guide](https://nextiweb.ca/en/blog/osteopaths/google-local-pack-osteopaths.html)
 - [Google Business Profile for osteopaths](https://nextiweb.ca/en/blog/osteopaths/google-business-profile-osteopaths.html)
 - [Google Reviews for osteopathy clinics](https://nextiweb.ca/en/blog/osteopaths/google-reviews-osteopathy-clinics.html)
 - [Neighbourhood pages for osteopath SEO](https://nextiweb.ca/en/blog/osteopaths/neighbourhood-pages-osteopath-seo.html)
@@ -243,23 +243,23 @@ NEXTIWEB helps Quebec osteopathy clinics improve their online visibility through
 - [Turn website visitors into osteopathy appointments](https://nextiweb.ca/en/blog/osteopaths/convert-website-visitors-osteopathy-appointments.html)
 - [How much does an osteopathy website cost in Quebec: what drives the price (pages, design, online booking, SEO, maintenance), no invented price; osteopathy is not a regulated profession with an order in Quebec](https://nextiweb.ca/en/blog/osteopaths/osteopath-website-cost.html)
 - [Osteopathy website design in Montreal, South Shore and North Shore: structure, online booking, fees and insurance, local and bilingual SEO](https://nextiweb.ca/en/blog/osteopaths/osteopath-website-design-montreal.html)
-- [Osteopathy SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, neighbourhood pages, content — no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/osteopath-seo-montreal.html)
-- [Osteopathy marketing and advertising in Montreal, South Shore and North Shore: Google Ads, social media, newsletter, partnerships — realistic budget, caution on therapeutic claims](https://nextiweb.ca/en/blog/osteopaths/osteopath-marketing-advertising-montreal.html)
-- [Local SEO and visibility for an osteopath in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), Google profile, Local Pack, reviews — no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/osteopath-laval-local-seo.html)
-- [Local SEO and visibility for an osteopath in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, area pages](https://nextiweb.ca/en/blog/osteopaths/osteopath-longueuil-local-seo.html)
-- [Local SEO and visibility for an osteopath in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, area pages](https://nextiweb.ca/en/blog/osteopaths/osteopath-terrebonne-local-seo.html)
-- [How to appear on Google as an osteopath: beginner overview (Google profile, website, reviews, NAP, local content) routing to the deep guides — no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/appear-on-google-osteopath.html)
+- [Osteopathy SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, neighbourhood pages, content, no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/osteopath-seo-montreal.html)
+- [Osteopathy marketing and advertising in Montreal, South Shore and North Shore: Google Ads, social media, newsletter, partnerships, realistic budget, caution on therapeutic claims](https://nextiweb.ca/en/blog/osteopaths/osteopath-marketing-advertising-montreal.html)
+- [Local SEO and visibility for an osteopath in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), Google profile, Local Pack, reviews, no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/osteopath-laval-local-seo.html)
+- [Local SEO and visibility for an osteopath in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, Google profile, Local Pack, area pages](https://nextiweb.ca/en/blog/osteopaths/osteopath-longueuil-local-seo.html)
+- [Local SEO and visibility for an osteopath in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, Google profile, Local Pack, area pages](https://nextiweb.ca/en/blog/osteopaths/osteopath-terrebonne-local-seo.html)
+- [How to appear on Google as an osteopath: beginner overview (Google profile, website, reviews, NAP, local content) routing to the deep guides, no guaranteed ranking](https://nextiweb.ca/en/blog/osteopaths/appear-on-google-osteopath.html)
 - [How to attract new patients to an osteopathy clinic: the 5 levers (get found, trust, booking, advertising, retention)](https://nextiweb.ca/en/blog/osteopaths/attract-new-patients-osteopathy-clinic.html)
-- [Law 25 and compliance for an osteopath's website: patient data, consent, privacy, insurance receipts — principles + refer to the CAI, not legal advice; osteopathy has no professional order in Quebec](https://nextiweb.ca/en/blog/osteopaths/law-25-compliance-osteopath-website.html)
-- [Retaining and reactivating osteopathy patients: follow-up reminders, reactivating inactive patients, useful newsletter, reviews at the right moment — Law 25 (distinct from upcoming-appointment reminders)](https://nextiweb.ca/en/blog/osteopaths/retain-reactivate-osteopathy-patients.html)
+- [Law 25 and compliance for an osteopath's website: patient data, consent, privacy, insurance receipts, principles + refer to the CAI, not legal advice; osteopathy has no professional order in Quebec](https://nextiweb.ca/en/blog/osteopaths/law-25-compliance-osteopath-website.html)
+- [Retaining and reactivating osteopathy patients: follow-up reminders, reactivating inactive patients, useful newsletter, reviews at the right moment, Law 25 (distinct from upcoming-appointment reminders)](https://nextiweb.ca/en/blog/osteopaths/retain-reactivate-osteopathy-patients.html)
 - [All osteopath guides](https://nextiweb.ca/en/blog/osteopaths/)
 
-## SEO local pour avocats — Page secteur
+## SEO local pour avocats, Page secteur
 
 NEXTIWEB accompagne les cabinets d'avocats québécois sur la visibilité numérique : Google Business Profile, avis Google, pages par spécialité et quartier, Schema LegalService, citations NAP, contenu éducatif, conformité déontologique (Barreau du Québec) et signaux d'autorité E-E-A-T pour Google et les IA.
 
 - [Services SEO pour avocats](https://nextiweb.ca/avocats.html)
-- [Local Pack Google pour avocats — guide pilier](https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html)
+- [Local Pack Google pour avocats, guide pilier](https://nextiweb.ca/blog/avocats/local-pack-google-avocats.html)
 - [Google Business Profile pour avocats](https://nextiweb.ca/blog/avocats/google-business-profile-avocats.html)
 - [Avis Google pour cabinets d'avocats](https://nextiweb.ca/blog/avocats/avis-google-cabinets-avocats.html)
 - [Pages par spécialité et quartier pour avocats](https://nextiweb.ca/blog/avocats/pages-specialite-quartier-avocat.html)
@@ -272,22 +272,22 @@ NEXTIWEB accompagne les cabinets d'avocats québécois sur la visibilité numér
 - [E-E-A-T et autorité pour avocats (sujet YMYL)](https://nextiweb.ca/blog/avocats/eeat-autorite-expertise-avocat.html)
 - [Combien coûte un site web pour avocat au Québec : ce qui fait le prix (pages, design, prise de RDV, SEO, maintenance), sans prix inventé ; conformité au Code de déontologie du Barreau](https://nextiweb.ca/blog/avocats/combien-coute-site-web-avocat.html)
 - [Création de site web pour avocat à Montréal, Rive-Sud et Rive-Nord : structure, domaines de pratique, prise de RDV, SEO local et bilingue, déontologie](https://nextiweb.ca/blog/avocats/creation-site-web-avocat-montreal.html)
-- [Référencement SEO pour avocat à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par spécialité, contenu — sans position garantie](https://nextiweb.ca/blog/avocats/referencement-seo-avocat-montreal.html)
-- [Marketing et publicité pour avocat à Montréal, Rive-Sud et Rive-Nord : Google Ads, LinkedIn, contenu, partenariats — budget réaliste, publicité encadrée par le Barreau](https://nextiweb.ca/blog/avocats/marketing-publicite-avocat-montreal.html)
-- [Référencement et visibilité pour avocat à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…, palais de justice de Laval), fiche Google, Local Pack, avis — sans position garantie](https://nextiweb.ca/blog/avocats/avocat-laval-referencement-local.html)
-- [Référencement et visibilité pour avocat à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-longueuil-referencement-local.html)
-- [Référencement et visibilité pour avocat à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-terrebonne-referencement-local.html)
+- [Référencement SEO pour avocat à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par spécialité, contenu, sans position garantie](https://nextiweb.ca/blog/avocats/referencement-seo-avocat-montreal.html)
+- [Marketing et publicité pour avocat à Montréal, Rive-Sud et Rive-Nord : Google Ads, LinkedIn, contenu, partenariats, budget réaliste, publicité encadrée par le Barreau](https://nextiweb.ca/blog/avocats/marketing-publicite-avocat-montreal.html)
+- [Référencement et visibilité pour avocat à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…, palais de justice de Laval), fiche Google, Local Pack, avis, sans position garantie](https://nextiweb.ca/blog/avocats/avocat-laval-referencement-local.html)
+- [Référencement et visibilité pour avocat à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-longueuil-referencement-local.html)
+- [Référencement et visibilité pour avocat à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, fiche Google, Local Pack, pages par spécialité et secteur](https://nextiweb.ca/blog/avocats/avocat-terrebonne-referencement-local.html)
 - [Comment attirer de nouveaux clients dans un cabinet d'avocats : les 5 leviers (être trouvé, confiance/E-E-A-T, prise de RDV, publicité encadrée par le Barreau, suivi/références)](https://nextiweb.ca/blog/avocats/attirer-nouveaux-clients-cabinet-avocat.html)
-- [Loi 25, confidentialité et secret professionnel sur le site d'un avocat : données du formulaire, consentement, sécurité, articulation Loi 25 (CAI) / secret professionnel (Barreau) — principes, pas un avis juridique](https://nextiweb.ca/blog/avocats/loi-25-confidentialite-site-avocat.html)
+- [Loi 25, confidentialité et secret professionnel sur le site d'un avocat : données du formulaire, consentement, sécurité, articulation Loi 25 (CAI) / secret professionnel (Barreau), principes, pas un avis juridique](https://nextiweb.ca/blog/avocats/loi-25-confidentialite-site-avocat.html)
 - [Index guides avocats](https://nextiweb.ca/blog/avocats/)
 
-## SEO local pour courtiers immobiliers — Page secteur
+## SEO local pour courtiers immobiliers, Page secteur
 
 NEXTIWEB accompagne les courtiers immobiliers québécois sur 6 leviers de visibilité numérique : Google Business Profile, avis Google conformes à l'OACIQ, pages par secteur et quartier, Schema RealEstateAgent, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : courtage immobilier, inscription, promesse d'achat, condo, plex, unifamiliale, prestige, vendeur, acheteur.
 
 - [Services SEO pour courtiers immobiliers](https://nextiweb.ca/courtiers-immobiliers.html)
 
-## Guides spécialisés — Blog Courtiers immobiliers
+## Guides spécialisés, Blog Courtiers immobiliers
 
 Guides web, SEO, site et marketing pour courtiers immobiliers du Québec : référencement local pour apparaître sur Google (fiche Google Business Profile, pages de quartier, avis, site vs Centris), site web de courtier (propriété de la marque/leads/SEO vs page de bannière), publicité Google Ads et Facebook/Meta (intention vs notoriété, estimation, retargeting, budgets), relancer et suivre ses leads sur le cycle long, et convertir vendeurs et acheteurs (double appel à l'action « Estimer ma propriété » / « Réserver une visite », estimation gratuite). Mots-clés couverts : site web courtier immobilier, référencement courtier immobilier, SEO courtier, marketing courtier immobilier, publicité Facebook immobilier, Google Ads courtier, création site courtier. Conforme aux règles de l'OACIQ et à la Loi 25.
 
@@ -305,12 +305,12 @@ Guides web, SEO, site et marketing pour courtiers immobiliers du Québec : réf�
 - [Site de courtier conforme aux règles de publicité de l'OACIQ (+ Loi 25)](https://nextiweb.ca/blog/courtiers-immobiliers/site-conforme-oaciq-courtier-immobilier.html)
 - [Contenu éducatif et rapports de marché de quartier pour courtier (données sourcées)](https://nextiweb.ca/blog/courtiers-immobiliers/contenu-educatif-rapports-marche-courtier-immobilier.html)
 - [Visibilité IA et Schema RealEstateAgent pour courtier (recommandé par ChatGPT)](https://nextiweb.ca/blog/courtiers-immobiliers/visibilite-ia-schema-courtier-immobilier.html)
-- [Référencement et visibilité pour courtier immobilier à Laval : guide SEO local hyper-ciblé (Chomedey, Sainte-Dorothée, Vimont…), devenir l'expert d'un secteur — fiche Google, Local Pack, avis, conforme OACIQ, sans position garantie](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-laval-referencement-local.html)
-- [Référencement et visibilité pour courtier immobilier à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par secteur d'expertise](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-longueuil-referencement-local.html)
-- [Référencement et visibilité pour courtier immobilier à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par secteur d'expertise](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-terrebonne-referencement-local.html)
+- [Référencement et visibilité pour courtier immobilier à Laval : guide SEO local hyper-ciblé (Chomedey, Sainte-Dorothée, Vimont…), devenir l'expert d'un secteur, fiche Google, Local Pack, avis, conforme OACIQ, sans position garantie](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-laval-referencement-local.html)
+- [Référencement et visibilité pour courtier immobilier à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, fiche Google, Local Pack, pages par secteur d'expertise](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-longueuil-referencement-local.html)
+- [Référencement et visibilité pour courtier immobilier à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, fiche Google, Local Pack, pages par secteur d'expertise](https://nextiweb.ca/blog/courtiers-immobiliers/courtier-immobilier-terrebonne-referencement-local.html)
 - [Index guides courtiers immobiliers](https://nextiweb.ca/blog/courtiers-immobiliers/)
 
-## Real Estate Broker Guides — English
+## Real Estate Broker Guides, English
 
 Website, SEO, site and marketing guides for Quebec real estate brokers: local SEO to get found on Google (Google Business Profile, neighbourhood pages, reviews, site vs Centris), broker website (ownership of brand/leads/SEO vs brokerage page), Google Ads and Facebook/Meta advertising (intent vs awareness, valuation, retargeting, budgets), following up and nurturing leads across the long cycle, and converting sellers and buyers (dual call to action, free valuation). Keywords covered: real estate broker website, real estate broker SEO, realtor SEO, real estate marketing, Facebook ads real estate, Google Ads real estate agent, realtor website design. Compliant with OACIQ rules and Law 25.
 
@@ -328,22 +328,22 @@ Website, SEO, site and marketing guides for Quebec real estate brokers: local SE
 - [OACIQ-compliant real estate broker website (+ Law 25)](https://nextiweb.ca/en/blog/real-estate-brokers/oaciq-compliant-website-real-estate-broker.html)
 - [Educational content and neighbourhood market reports for brokers (sourced data)](https://nextiweb.ca/en/blog/real-estate-brokers/educational-content-market-reports-real-estate-broker.html)
 - [AI visibility and RealEstateAgent Schema for brokers (recommended by ChatGPT)](https://nextiweb.ca/en/blog/real-estate-brokers/ai-visibility-schema-real-estate-broker.html)
-- [Local SEO and visibility for a real estate broker in Laval: hyper-targeted local guide (Chomedey, Sainte-Dorothée, Vimont…), becoming a sector expert — Google profile, Local Pack, reviews, OACIQ-compliant, no guaranteed ranking](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-laval-local-seo.html)
-- [Local SEO and visibility for a real estate broker in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, sector-expertise area pages](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-longueuil-local-seo.html)
-- [Local SEO and visibility for a real estate broker in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, sector-expertise area pages](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-terrebonne-local-seo.html)
+- [Local SEO and visibility for a real estate broker in Laval: hyper-targeted local guide (Chomedey, Sainte-Dorothée, Vimont…), becoming a sector expert, Google profile, Local Pack, reviews, OACIQ-compliant, no guaranteed ranking](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-laval-local-seo.html)
+- [Local SEO and visibility for a real estate broker in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, Google profile, Local Pack, sector-expertise area pages](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-longueuil-local-seo.html)
+- [Local SEO and visibility for a real estate broker in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, Google profile, Local Pack, sector-expertise area pages](https://nextiweb.ca/en/blog/real-estate-brokers/real-estate-broker-terrebonne-local-seo.html)
 - [All real estate broker guides](https://nextiweb.ca/en/blog/real-estate-brokers/)
 
-## SEO local pour restaurants et cafés — Page secteur
+## SEO local pour restaurants et cafés, Page secteur
 
 NEXTIWEB accompagne les restaurants et cafés québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos et menu, avis clients (sollicitation libre conforme à la politique Google), pages par quartier et par type de cuisine, Schema Restaurant, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : restaurant, café, bistro, traiteur, boulangerie-pâtisserie, menu, réservation, brunch, terrasse, type de cuisine, photos de plats.
 
 - [Services SEO pour restaurants et cafés](https://nextiweb.ca/restaurants.html)
 
-## Guides spécialisés — Blog Restaurants
+## Guides spécialisés, Blog Restaurants
 
 Guides SEO local, web et conversion pour restaurants et cafés du Québec, couvrant deux intentions. Visibilité (être trouvé) : apparaître dans le top 3 Google / Local Pack, optimiser la fiche Google Business Profile, obtenir et gérer les avis Google, cohérence NAP, Schema Restaurant et visibilité IA, pages par quartier. Conversion (faire réserver et tenir la table) : convertir les visiteurs en réservations et réduire les réservations manquées (réservation en ligne, rappels SMS/courriel, confirmation, empreinte de carte, liste d'attente). Conforme à la Loi 25.
 
-- [Apparaître dans le top 3 Google (Local Pack) — guide pilier](https://nextiweb.ca/blog/restaurants/local-pack-google-restaurant.html)
+- [Apparaître dans le top 3 Google (Local Pack), guide pilier](https://nextiweb.ca/blog/restaurants/local-pack-google-restaurant.html)
 - [Optimiser sa fiche Google Business Profile de restaurant](https://nextiweb.ca/blog/restaurants/google-business-profile-restaurant.html)
 - [Avis Google : en obtenir plus et répondre aux négatifs](https://nextiweb.ca/blog/restaurants/avis-google-restaurant.html)
 - [Citations et cohérence NAP pour un restaurant](https://nextiweb.ca/blog/restaurants/citations-nap-restaurant.html)
@@ -353,18 +353,18 @@ Guides SEO local, web et conversion pour restaurants et cafés du Québec, couvr
 - [Réduire les réservations manquées (no-shows) dans un restaurant](https://nextiweb.ca/blog/restaurants/reduire-reservations-manquees-restaurant.html)
 - [Combien coûte un site web pour restaurant au Québec : ce qui fait le prix (menu en ligne, réservation, photos, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/restaurants/combien-coute-site-web-restaurant.html)
 - [Création de site web pour restaurant à Montréal, Rive-Sud et Rive-Nord : menu, réservation en ligne, photos, SEO local et bilingue](https://nextiweb.ca/blog/restaurants/creation-site-web-restaurant-montreal.html)
-- [Référencement SEO pour restaurant à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par quartier/cuisine, menu indexable — sans position garantie](https://nextiweb.ca/blog/restaurants/referencement-seo-restaurant-montreal.html)
-- [Marketing et publicité pour restaurant à Montréal, Rive-Sud et Rive-Nord : Instagram, Google Ads, infolettre, plateformes de livraison (commissions) — budget réaliste](https://nextiweb.ca/blog/restaurants/marketing-publicite-restaurant-montreal.html)
-- [Référencement et visibilité pour restaurant à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), Local Pack « où manger à Laval », avis, pages par quartier/cuisine, menu indexable — sans position garantie](https://nextiweb.ca/blog/restaurants/restaurant-laval-referencement-local.html)
-- [Référencement et visibilité pour restaurant à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — fiche Google, Local Pack, pages par secteur/cuisine](https://nextiweb.ca/blog/restaurants/restaurant-longueuil-referencement-local.html)
-- [Référencement et visibilité pour restaurant à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — fiche Google, Local Pack, pages par secteur/cuisine](https://nextiweb.ca/blog/restaurants/restaurant-terrebonne-referencement-local.html)
+- [Référencement SEO pour restaurant à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, avis, pages par quartier/cuisine, menu indexable, sans position garantie](https://nextiweb.ca/blog/restaurants/referencement-seo-restaurant-montreal.html)
+- [Marketing et publicité pour restaurant à Montréal, Rive-Sud et Rive-Nord : Instagram, Google Ads, infolettre, plateformes de livraison (commissions), budget réaliste](https://nextiweb.ca/blog/restaurants/marketing-publicite-restaurant-montreal.html)
+- [Référencement et visibilité pour restaurant à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), Local Pack « où manger à Laval », avis, pages par quartier/cuisine, menu indexable, sans position garantie](https://nextiweb.ca/blog/restaurants/restaurant-laval-referencement-local.html)
+- [Référencement et visibilité pour restaurant à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, fiche Google, Local Pack, pages par secteur/cuisine](https://nextiweb.ca/blog/restaurants/restaurant-longueuil-referencement-local.html)
+- [Référencement et visibilité pour restaurant à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, fiche Google, Local Pack, pages par secteur/cuisine](https://nextiweb.ca/blog/restaurants/restaurant-terrebonne-referencement-local.html)
 - [Index guides restaurants](https://nextiweb.ca/blog/restaurants/)
 
-## Restaurant Guides — English
+## Restaurant Guides, English
 
 Local SEO, website and conversion guides for Quebec restaurants and cafés, covering two intents. Visibility (get found): rank in Google's top 3 / Local Pack, optimize the Google Business Profile, earn and manage Google reviews, NAP consistency, Restaurant Schema and AI visibility, neighbourhood pages. Conversion (get booked and keep the table): convert visitors into reservations and reduce no-shows (online booking, SMS/email reminders, confirmation, card hold, waitlist). Law 25 compliant.
 
-- [Rank in Google's top 3 (Local Pack) — pillar guide](https://nextiweb.ca/en/blog/restaurants/google-local-pack-restaurant.html)
+- [Rank in Google's top 3 (Local Pack), pillar guide](https://nextiweb.ca/en/blog/restaurants/google-local-pack-restaurant.html)
 - [Optimize your restaurant's Google Business Profile](https://nextiweb.ca/en/blog/restaurants/google-business-profile-restaurant.html)
 - [Google reviews: get more and reply to negative ones](https://nextiweb.ca/en/blog/restaurants/google-reviews-restaurant.html)
 - [Citations and NAP consistency for a restaurant](https://nextiweb.ca/en/blog/restaurants/nap-citations-restaurant.html)
@@ -374,18 +374,18 @@ Local SEO, website and conversion guides for Quebec restaurants and cafés, cove
 - [Reduce no-shows (missed reservations) in a restaurant](https://nextiweb.ca/en/blog/restaurants/reduce-no-shows-restaurant.html)
 - [How much does a restaurant website cost in Quebec: what drives the price (online menu, reservations, photos, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/restaurants/restaurant-website-cost.html)
 - [Restaurant website design in Montreal, South Shore and North Shore: menu, online reservations, photos, local and bilingual SEO](https://nextiweb.ca/en/blog/restaurants/restaurant-website-design-montreal.html)
-- [Restaurant SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, neighbourhood/cuisine pages, indexable menu — no guaranteed ranking](https://nextiweb.ca/en/blog/restaurants/restaurant-seo-montreal.html)
-- [Restaurant marketing and advertising in Montreal, South Shore and North Shore: Instagram, Google Ads, newsletter, delivery platforms (commissions) — realistic budget](https://nextiweb.ca/en/blog/restaurants/restaurant-marketing-advertising-montreal.html)
-- [Local SEO and visibility for a restaurant in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), "where to eat in Laval" Local Pack, reviews, neighbourhood/cuisine pages, indexable menu — no guaranteed ranking](https://nextiweb.ca/en/blog/restaurants/restaurant-laval-local-seo.html)
-- [Local SEO and visibility for a restaurant in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, area/cuisine pages](https://nextiweb.ca/en/blog/restaurants/restaurant-longueuil-local-seo.html)
-- [Local SEO and visibility for a restaurant in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, area/cuisine pages](https://nextiweb.ca/en/blog/restaurants/restaurant-terrebonne-local-seo.html)
+- [Restaurant SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, neighbourhood/cuisine pages, indexable menu, no guaranteed ranking](https://nextiweb.ca/en/blog/restaurants/restaurant-seo-montreal.html)
+- [Restaurant marketing and advertising in Montreal, South Shore and North Shore: Instagram, Google Ads, newsletter, delivery platforms (commissions), realistic budget](https://nextiweb.ca/en/blog/restaurants/restaurant-marketing-advertising-montreal.html)
+- [Local SEO and visibility for a restaurant in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), "where to eat in Laval" Local Pack, reviews, neighbourhood/cuisine pages, indexable menu, no guaranteed ranking](https://nextiweb.ca/en/blog/restaurants/restaurant-laval-local-seo.html)
+- [Local SEO and visibility for a restaurant in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, Google profile, Local Pack, area/cuisine pages](https://nextiweb.ca/en/blog/restaurants/restaurant-longueuil-local-seo.html)
+- [Local SEO and visibility for a restaurant in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, Google profile, Local Pack, area/cuisine pages](https://nextiweb.ca/en/blog/restaurants/restaurant-terrebonne-local-seo.html)
 - [All restaurant guides](https://nextiweb.ca/en/blog/restaurants/)
 
-## Guides spécialisés — Blog Traiteurs
+## Guides spécialisés, Blog Traiteurs
 
 Guides SEO local, web et conversion pour les traiteurs québécois, couvrant deux intentions. Visibilité (être trouvé) : apparaître dans le top 3 Google / Local Pack et la shortlist de soumissions, fiche Google « zone desservie » (sans local public), avis Google d'organisateurs (peu nombreux mais décisifs), cohérence NAP, Schema FoodEstablishment et visibilité IA, pages par type d'événement (mariage, corporatif, funérailles) croisées avec les quartiers. Conversion : transformer les visiteurs en demandes de soumission et réduire les rendez-vous et dégustations manqués (réservation en ligne, rappels, confirmation, acompte de dégustation, formulaire d'événement). Conforme Loi 25.
 
-- [Apparaître dans le top 3 Google (Local Pack) pour un traiteur — guide pilier](https://nextiweb.ca/blog/traiteur/local-pack-google-traiteur.html)
+- [Apparaître dans le top 3 Google (Local Pack) pour un traiteur, guide pilier](https://nextiweb.ca/blog/traiteur/local-pack-google-traiteur.html)
 - [Optimiser sa fiche Google Business Profile de traiteur (zone desservie)](https://nextiweb.ca/blog/traiteur/google-business-profile-traiteur.html)
 - [Avis Google pour traiteur : en obtenir plus et répondre](https://nextiweb.ca/blog/traiteur/avis-google-traiteur.html)
 - [Citations et cohérence NAP pour un traiteur](https://nextiweb.ca/blog/traiteur/citations-nap-traiteur.html)
@@ -395,18 +395,18 @@ Guides SEO local, web et conversion pour les traiteurs québécois, couvrant deu
 - [Réduire les rendez-vous et dégustations manqués chez un traiteur](https://nextiweb.ca/blog/traiteur/reduire-rendez-vous-degustations-manques-traiteur.html)
 - [Combien coûte un site web pour traiteur au Québec : ce qui fait le prix (galerie d'événements, formulaire de soumission, forfaits, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/traiteur/combien-coute-site-web-traiteur.html)
 - [Création de site web pour traiteur à Montréal, Rive-Sud et Rive-Nord : galerie par type d'événement, forfaits, formulaire de soumission, SEO local zone desservie et bilingue](https://nextiweb.ca/blog/traiteur/creation-site-web-traiteur-montreal.html)
-- [Référencement SEO pour traiteur à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis d'organisateurs, pages par type d'événement et quartier — sans position garantie](https://nextiweb.ca/blog/traiteur/referencement-seo-traiteur-montreal.html)
-- [Marketing et publicité pour traiteur à Montréal, Rive-Sud et Rive-Nord : Instagram, Google Ads, partenariats (salles, planificateurs), infolettre — budget réaliste pour générer des soumissions](https://nextiweb.ca/blog/traiteur/marketing-publicite-traiteur-montreal.html)
+- [Référencement SEO pour traiteur à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis d'organisateurs, pages par type d'événement et quartier, sans position garantie](https://nextiweb.ca/blog/traiteur/referencement-seo-traiteur-montreal.html)
+- [Marketing et publicité pour traiteur à Montréal, Rive-Sud et Rive-Nord : Instagram, Google Ads, partenariats (salles, planificateurs), infolettre, budget réaliste pour générer des soumissions](https://nextiweb.ca/blog/traiteur/marketing-publicite-traiteur-montreal.html)
 - [Référencement et visibilité pour traiteur à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche zone desservie, Local Pack, pages par type d'événement × quartier](https://nextiweb.ca/blog/traiteur/traiteur-laval-referencement-local.html)
-- [Référencement et visibilité pour traiteur à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche zone desservie, Local Pack, pages par événement × secteur](https://nextiweb.ca/blog/traiteur/traiteur-longueuil-referencement-local.html)
-- [Référencement et visibilité pour traiteur à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche zone desservie, Local Pack, pages par événement × secteur](https://nextiweb.ca/blog/traiteur/traiteur-terrebonne-referencement-local.html)
+- [Référencement et visibilité pour traiteur à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard, fiche zone desservie, Local Pack, pages par événement × secteur](https://nextiweb.ca/blog/traiteur/traiteur-longueuil-referencement-local.html)
+- [Référencement et visibilité pour traiteur à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny, fiche zone desservie, Local Pack, pages par événement × secteur](https://nextiweb.ca/blog/traiteur/traiteur-terrebonne-referencement-local.html)
 - [Index guides traiteurs](https://nextiweb.ca/blog/traiteur/)
 
-## Caterer Guides — English
+## Caterer Guides, English
 
 Local SEO, website and conversion guides for Quebec caterers, covering two intents. Visibility (get found): rank in Google's top 3 / Local Pack and the quote shortlist, "service area" Google listing (no public premises), planner Google reviews (few but decisive), NAP consistency, FoodEstablishment Schema and AI visibility, pages by event type (wedding, corporate, funeral) crossed with neighbourhoods. Conversion: turn visitors into quote requests and reduce missed tastings and appointments (online booking, reminders, confirmation, tasting deposit, event form). Law 25 compliant.
 
-- [Rank in Google's top 3 (Local Pack) for a caterer — pillar guide](https://nextiweb.ca/en/blog/caterer/google-local-pack-caterer.html)
+- [Rank in Google's top 3 (Local Pack) for a caterer, pillar guide](https://nextiweb.ca/en/blog/caterer/google-local-pack-caterer.html)
 - [Optimize your caterer's Google Business Profile (service area)](https://nextiweb.ca/en/blog/caterer/google-business-profile-caterer.html)
 - [Google reviews for caterers: get more and reply](https://nextiweb.ca/en/blog/caterer/google-reviews-caterer.html)
 - [Citations and NAP consistency for a caterer](https://nextiweb.ca/en/blog/caterer/nap-citations-caterer.html)
@@ -416,18 +416,18 @@ Local SEO, website and conversion guides for Quebec caterers, covering two inten
 - [Reducing missed tastings and appointments for caterers](https://nextiweb.ca/en/blog/caterer/reduce-no-shows-caterer.html)
 - [How much does a caterer website cost in Quebec: what drives the price (event gallery, quote-request form, packages, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/caterer/caterer-website-cost.html)
 - [Caterer website design in Montreal, South Shore and North Shore: event-type gallery, packages, quote-request form, service-area and bilingual local SEO](https://nextiweb.ca/en/blog/caterer/caterer-website-design-montreal.html)
-- [Caterer SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, planner reviews, pages by event type and neighbourhood — no guaranteed ranking](https://nextiweb.ca/en/blog/caterer/caterer-seo-montreal.html)
-- [Caterer marketing and advertising in Montreal, South Shore and North Shore: Instagram, Google Ads, partnerships (venues, planners), newsletter — realistic budget to generate quote requests](https://nextiweb.ca/en/blog/caterer/caterer-marketing-advertising-montreal.html)
+- [Caterer SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, planner reviews, pages by event type and neighbourhood, no guaranteed ranking](https://nextiweb.ca/en/blog/caterer/caterer-seo-montreal.html)
+- [Caterer marketing and advertising in Montreal, South Shore and North Shore: Instagram, Google Ads, partnerships (venues, planners), newsletter, realistic budget to generate quote requests](https://nextiweb.ca/en/blog/caterer/caterer-marketing-advertising-montreal.html)
 - [Local SEO and visibility for a caterer in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), service-area listing, Local Pack, pages by event type × neighbourhood](https://nextiweb.ca/en/blog/caterer/caterer-laval-local-seo.html)
-- [Local SEO and visibility for a caterer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — service-area listing, Local Pack, pages by event type × area](https://nextiweb.ca/en/blog/caterer/caterer-longueuil-local-seo.html)
-- [Local SEO and visibility for a caterer in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — service-area listing, Local Pack, pages by event type × area](https://nextiweb.ca/en/blog/caterer/caterer-terrebonne-local-seo.html)
+- [Local SEO and visibility for a caterer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard, service-area listing, Local Pack, pages by event type × area](https://nextiweb.ca/en/blog/caterer/caterer-longueuil-local-seo.html)
+- [Local SEO and visibility for a caterer in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny, service-area listing, Local Pack, pages by event type × area](https://nextiweb.ca/en/blog/caterer/caterer-terrebonne-local-seo.html)
 - [All caterer guides](https://nextiweb.ca/en/blog/caterer/)
 
-## Guides spécialisés — Blog Fleuristes
+## Guides spécialisés, Blog Fleuristes
 
-Guides SEO local, web et conversion pour les fleuristes québécois. Visibilité : apparaître dans le top 3 Google (Local Pack) — le fleuriste est hybride, boutique ET zone de livraison ; optimiser la fiche Google Business Profile (adresse visible + livraison, catégorie, occasions, photos de compositions, Google Posts) ; obtenir et répondre aux avis (fraîcheur, beauté du bouquet, fiabilité de la livraison, double collecte boutique + après-livraison, Loi 25) ; cohérence NAP, y compris les réseaux de livraison de fleurs ; Schema Florist + Product (être cité par les IA « un fleuriste qui livre ce soir ») ; pages par occasion × quartier sans contenu dupliqué ni fausse boutique. Conversion : réduire les commandes abandonnées et consultations manquées (commande en ligne simple, livraison claire, heure limite, rappels, acompte) et transformer les visiteurs en commandes (vraies photos de bouquets, catalogue par occasion, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
+Guides SEO local, web et conversion pour les fleuristes québécois. Visibilité : apparaître dans le top 3 Google (Local Pack), le fleuriste est hybride, boutique ET zone de livraison ; optimiser la fiche Google Business Profile (adresse visible + livraison, catégorie, occasions, photos de compositions, Google Posts) ; obtenir et répondre aux avis (fraîcheur, beauté du bouquet, fiabilité de la livraison, double collecte boutique + après-livraison, Loi 25) ; cohérence NAP, y compris les réseaux de livraison de fleurs ; Schema Florist + Product (être cité par les IA « un fleuriste qui livre ce soir ») ; pages par occasion × quartier sans contenu dupliqué ni fausse boutique. Conversion : réduire les commandes abandonnées et consultations manquées (commande en ligne simple, livraison claire, heure limite, rappels, acompte) et transformer les visiteurs en commandes (vraies photos de bouquets, catalogue par occasion, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
 
-- [Apparaître dans le top 3 Google (Local Pack) pour un fleuriste — guide pilier](https://nextiweb.ca/blog/fleuriste/local-pack-google-fleuriste.html)
+- [Apparaître dans le top 3 Google (Local Pack) pour un fleuriste, guide pilier](https://nextiweb.ca/blog/fleuriste/local-pack-google-fleuriste.html)
 - [Optimiser sa fiche Google Business Profile de fleuriste](https://nextiweb.ca/blog/fleuriste/google-business-profile-fleuriste.html)
 - [Avis Google : en obtenir plus et répondre (fleuriste)](https://nextiweb.ca/blog/fleuriste/avis-google-fleuriste.html)
 - [Citations et cohérence NAP pour un fleuriste](https://nextiweb.ca/blog/fleuriste/citations-nap-fleuriste.html)
@@ -437,18 +437,18 @@ Guides SEO local, web et conversion pour les fleuristes québécois. Visibilité
 - [Transformer les visiteurs du site en commandes](https://nextiweb.ca/blog/fleuriste/convertir-visiteurs-site-commande-fleuriste.html)
 - [Combien coûte un site web pour fleuriste au Québec : ce qui fait le prix (catalogue/boutique en ligne, commande et livraison, photos, occasions, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/fleuriste/combien-coute-site-web-fleuriste.html)
 - [Création de site web pour fleuriste à Montréal, Rive-Sud et Rive-Nord : catalogue par occasion, commande et livraison en ligne, photos de bouquets, SEO local et bilingue](https://nextiweb.ca/blog/fleuriste/creation-site-web-fleuriste-montreal.html)
-- [Référencement SEO pour fleuriste à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, intentions de livraison, avis, pages par occasion et quartier, catalogue indexable — sans position garantie](https://nextiweb.ca/blog/fleuriste/referencement-seo-fleuriste-montreal.html)
-- [Marketing et publicité pour fleuriste à Montréal, Rive-Sud et Rive-Nord : Instagram/Pinterest, Google Ads saisonniers, infolettre, partenariats (salons funéraires, planificateurs de mariage) — budget réaliste](https://nextiweb.ca/blog/fleuriste/marketing-publicite-fleuriste-montreal.html)
+- [Référencement SEO pour fleuriste à Montréal, Rive-Sud et Rive-Nord : fiche Google, Local Pack, intentions de livraison, avis, pages par occasion et quartier, catalogue indexable, sans position garantie](https://nextiweb.ca/blog/fleuriste/referencement-seo-fleuriste-montreal.html)
+- [Marketing et publicité pour fleuriste à Montréal, Rive-Sud et Rive-Nord : Instagram/Pinterest, Google Ads saisonniers, infolettre, partenariats (salons funéraires, planificateurs de mariage), budget réaliste](https://nextiweb.ca/blog/fleuriste/marketing-publicite-fleuriste-montreal.html)
 - [Référencement et visibilité pour fleuriste à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche Google, intentions de livraison, pages par occasion × quartier](https://nextiweb.ca/blog/fleuriste/fleuriste-laval-referencement-local.html)
-- [Référencement et visibilité pour fleuriste à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche Google, livraison, pages par occasion × secteur](https://nextiweb.ca/blog/fleuriste/fleuriste-longueuil-referencement-local.html)
-- [Référencement et visibilité pour fleuriste à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche Google, livraison, pages par occasion × secteur](https://nextiweb.ca/blog/fleuriste/fleuriste-terrebonne-referencement-local.html)
+- [Référencement et visibilité pour fleuriste à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard, fiche Google, livraison, pages par occasion × secteur](https://nextiweb.ca/blog/fleuriste/fleuriste-longueuil-referencement-local.html)
+- [Référencement et visibilité pour fleuriste à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny, fiche Google, livraison, pages par occasion × secteur](https://nextiweb.ca/blog/fleuriste/fleuriste-terrebonne-referencement-local.html)
 - [Index guides fleuristes](https://nextiweb.ca/blog/fleuriste/)
 
-## Florist Guides — English
+## Florist Guides, English
 
-Local SEO, web and conversion guides for Quebec florists. Visibility: rank in Google's top 3 (Local Pack) — the florist is hybrid, shop AND delivery area; optimize the Google Business Profile (visible address + delivery, category, occasions, arrangement photos, Google Posts); get and reply to reviews (freshness, beauty of the bouquet, delivery reliability, dual collection in-store + after delivery, Law 25); NAP consistency including flower delivery networks; Florist + Product Schema (get cited by AI for 'a florist that delivers tonight'); occasion × neighbourhood pages without duplicate content or a fake shop. Conversion: reduce abandoned orders and missed consultations (simple online ordering, clear delivery, cut-off time, reminders, deposit) and turn visitors into orders (real bouquet photos, catalogue by occasion, mobile-first). No invented figures and no ranking guarantee.
+Local SEO, web and conversion guides for Quebec florists. Visibility: rank in Google's top 3 (Local Pack), the florist is hybrid, shop AND delivery area; optimize the Google Business Profile (visible address + delivery, category, occasions, arrangement photos, Google Posts); get and reply to reviews (freshness, beauty of the bouquet, delivery reliability, dual collection in-store + after delivery, Law 25); NAP consistency including flower delivery networks; Florist + Product Schema (get cited by AI for 'a florist that delivers tonight'); occasion × neighbourhood pages without duplicate content or a fake shop. Conversion: reduce abandoned orders and missed consultations (simple online ordering, clear delivery, cut-off time, reminders, deposit) and turn visitors into orders (real bouquet photos, catalogue by occasion, mobile-first). No invented figures and no ranking guarantee.
 
-- [Rank in Google's top 3 (Local Pack) when people look for a florist — pillar guide](https://nextiweb.ca/en/blog/florist/google-local-pack-florist.html)
+- [Rank in Google's top 3 (Local Pack) when people look for a florist, pillar guide](https://nextiweb.ca/en/blog/florist/google-local-pack-florist.html)
 - [Optimize your florist's Google Business Profile](https://nextiweb.ca/en/blog/florist/google-business-profile-florist.html)
 - [Google reviews: get more and reply (florist)](https://nextiweb.ca/en/blog/florist/google-reviews-florist.html)
 - [Citations and NAP consistency for a florist](https://nextiweb.ca/en/blog/florist/nap-citations-florist.html)
@@ -458,36 +458,36 @@ Local SEO, web and conversion guides for Quebec florists. Visibility: rank in Go
 - [Turning website visitors into orders](https://nextiweb.ca/en/blog/florist/convert-website-visitors-florist.html)
 - [How much does a florist website cost in Quebec: what drives the price (online shop/catalogue, ordering and delivery, photos, occasions, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/florist/florist-website-cost.html)
 - [Florist website design in Montreal, South Shore and North Shore: catalogue by occasion, online ordering and delivery, bouquet photos, local and bilingual SEO](https://nextiweb.ca/en/blog/florist/florist-website-design-montreal.html)
-- [Florist SEO in Montreal, South Shore and North Shore: Google listing, Local Pack, delivery intents, reviews, pages by occasion and neighbourhood, indexable catalogue — no guaranteed ranking](https://nextiweb.ca/en/blog/florist/florist-seo-montreal.html)
-- [Florist marketing and advertising in Montreal, South Shore and North Shore: Instagram/Pinterest, seasonal Google Ads, newsletter, partnerships (funeral homes, wedding planners) — realistic budget](https://nextiweb.ca/en/blog/florist/florist-marketing-advertising-montreal.html)
+- [Florist SEO in Montreal, South Shore and North Shore: Google listing, Local Pack, delivery intents, reviews, pages by occasion and neighbourhood, indexable catalogue, no guaranteed ranking](https://nextiweb.ca/en/blog/florist/florist-seo-montreal.html)
+- [Florist marketing and advertising in Montreal, South Shore and North Shore: Instagram/Pinterest, seasonal Google Ads, newsletter, partnerships (funeral homes, wedding planners), realistic budget](https://nextiweb.ca/en/blog/florist/florist-marketing-advertising-montreal.html)
 - [Local SEO and visibility for a florist in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), Google listing, delivery intents, pages by occasion × neighbourhood](https://nextiweb.ca/en/blog/florist/florist-laval-local-seo.html)
-- [Local SEO and visibility for a florist in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — Google listing, delivery, pages by occasion × area](https://nextiweb.ca/en/blog/florist/florist-longueuil-local-seo.html)
-- [Local SEO and visibility for a florist in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — Google listing, delivery, pages by occasion × area](https://nextiweb.ca/en/blog/florist/florist-terrebonne-local-seo.html)
+- [Local SEO and visibility for a florist in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard, Google listing, delivery, pages by occasion × area](https://nextiweb.ca/en/blog/florist/florist-longueuil-local-seo.html)
+- [Local SEO and visibility for a florist in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny, Google listing, delivery, pages by occasion × area](https://nextiweb.ca/en/blog/florist/florist-terrebonne-local-seo.html)
 - [All florist guides](https://nextiweb.ca/en/blog/florist/)
 
-## SEO local pour traiteurs — Page métier (créneau Restaurant)
+## SEO local pour traiteurs, Page métier (créneau Restaurant)
 
 NEXTIWEB accompagne les traiteurs québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos de buffets et forfaits, avis clients (sollicitation après l'événement, conforme à la politique Google), pages par type d'événement et par quartier, Schema FoodEstablishment, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : traiteur, service traiteur, événementiel, mariage, corporatif, réception, party de bureau, buffet, forfait, soumission, devis, zone de service.
 
 - [Services SEO pour traiteurs](https://nextiweb.ca/traiteur.html)
 
-## SEO local pour fleuristes — Page métier (créneau Restaurant)
+## SEO local pour fleuristes, Page métier (créneau Restaurant)
 
 NEXTIWEB accompagne les fleuristes québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos de bouquets et infos de livraison, avis clients (sollicitation au retrait ou après livraison, conforme à la politique Google), pages par occasion et par quartier, Schema Florist, citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : fleuriste, boutique de fleurs, bouquet, composition florale, livraison de fleurs, mariage, deuil, anniversaire, occasion, arrangement, catalogue.
 
 - [Services SEO pour fleuristes](https://nextiweb.ca/fleuriste.html)
 
-## SEO local pour entrepreneurs en construction et rénovation — Page secteur
+## SEO local pour entrepreneurs en construction et rénovation, Page secteur
 
 NEXTIWEB accompagne les entrepreneurs en construction et rénovation québécois sur 6 leviers de visibilité numérique : Google Business Profile avec photos de réalisations et numéro RBQ, avis clients (sollicitation libre conforme à la politique Google), pages par métier et par quartier, Schema entrepreneur (HomeAndConstructionBusiness), citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : entrepreneur général, plombier, couvreur, électricien, ébéniste, paysagiste, rénovateur, architecte, soumission, devis, chantier, réalisation, avant/après, RBQ, urgence.
 
 - [Services SEO pour entrepreneurs en construction et rénovation](https://nextiweb.ca/construction-renovation.html)
 
-## Guides spécialisés — Blog Construction et rénovation
+## Guides spécialisés, Blog Construction et rénovation
 
-Guides SEO local, web et conversion pour les entrepreneurs québécois. Visibilité : apparaître dans le top 3 Google (Local Pack) — l'entrepreneur est un commerce de zone desservie (pas de vitrine) et l'achat est réfléchi (le client vérifie réalisations, licence RBQ, avis avant la soumission) ; optimiser la fiche Google Business Profile (zone desservie, bonne catégorie de métier, photos de réalisations avant/après, licence RBQ, Google Posts) ; obtenir et répondre aux avis (qualité, respect du budget et de l'échéancier, peu de chantiers donc chaque avis compte double, routine de fin de chantier, Loi 25) ; cohérence NAP incluant le numéro de licence RBQ exact partout ; Schema entrepreneur GeneralContractor / HomeAndConstructionBusiness (être cité par les IA « un entrepreneur fiable pour rénover une salle de bain ») ; pages par métier × quartier sans explosion combinatoire, contenu dupliqué ni fausse adresse. Conversion : réduire les rendez-vous d'estimation manqués (réservation en ligne, rappels, confirmation, formulaire de projet, pré-qualification) et transformer les visiteurs en demandes de soumission (licence RBQ et assurances visibles, réalisations avant/après, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
+Guides SEO local, web et conversion pour les entrepreneurs québécois. Visibilité : apparaître dans le top 3 Google (Local Pack), l'entrepreneur est un commerce de zone desservie (pas de vitrine) et l'achat est réfléchi (le client vérifie réalisations, licence RBQ, avis avant la soumission) ; optimiser la fiche Google Business Profile (zone desservie, bonne catégorie de métier, photos de réalisations avant/après, licence RBQ, Google Posts) ; obtenir et répondre aux avis (qualité, respect du budget et de l'échéancier, peu de chantiers donc chaque avis compte double, routine de fin de chantier, Loi 25) ; cohérence NAP incluant le numéro de licence RBQ exact partout ; Schema entrepreneur GeneralContractor / HomeAndConstructionBusiness (être cité par les IA « un entrepreneur fiable pour rénover une salle de bain ») ; pages par métier × quartier sans explosion combinatoire, contenu dupliqué ni fausse adresse. Conversion : réduire les rendez-vous d'estimation manqués (réservation en ligne, rappels, confirmation, formulaire de projet, pré-qualification) et transformer les visiteurs en demandes de soumission (licence RBQ et assurances visibles, réalisations avant/après, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
 
-- [Apparaître dans le top 3 Google (Local Pack) pour un entrepreneur — guide pilier](https://nextiweb.ca/blog/construction-renovation/local-pack-google-construction.html)
+- [Apparaître dans le top 3 Google (Local Pack) pour un entrepreneur, guide pilier](https://nextiweb.ca/blog/construction-renovation/local-pack-google-construction.html)
 - [Optimiser sa fiche Google Business Profile d'entrepreneur](https://nextiweb.ca/blog/construction-renovation/google-business-profile-construction.html)
 - [Obtenir plus d'avis Google et répondre (entrepreneur)](https://nextiweb.ca/blog/construction-renovation/avis-google-construction.html)
 - [Citations et cohérence NAP pour un entrepreneur](https://nextiweb.ca/blog/construction-renovation/citations-nap-construction.html)
@@ -497,18 +497,18 @@ Guides SEO local, web et conversion pour les entrepreneurs québécois. Visibili
 - [Transformer les visiteurs du site en demandes de soumission](https://nextiweb.ca/blog/construction-renovation/convertir-visiteurs-site-soumission-construction.html)
 - [Combien coûte un site web pour entrepreneur en construction au Québec : ce qui fait le prix (galerie avant/après, formulaire de soumission, licence RBQ visible, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/construction-renovation/combien-coute-site-web-construction.html)
 - [Création de site web pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : galerie de réalisations avant/après, licence RBQ visible, formulaire de projet, SEO local et bilingue](https://nextiweb.ca/blog/construction-renovation/creation-site-web-construction-montreal.html)
-- [Référencement SEO pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis, pages par métier × quartier, NAP avec RBQ cohérent — sans position garantie](https://nextiweb.ca/blog/construction-renovation/referencement-seo-construction-montreal.html)
-- [Marketing et publicité pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : Google Ads, Google Local Services, photos de réalisations, partenariats (architectes, designers) — budget réaliste](https://nextiweb.ca/blog/construction-renovation/marketing-publicite-construction-montreal.html)
+- [Référencement SEO pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis, pages par métier × quartier, NAP avec RBQ cohérent, sans position garantie](https://nextiweb.ca/blog/construction-renovation/referencement-seo-construction-montreal.html)
+- [Marketing et publicité pour entrepreneur en construction à Montréal, Rive-Sud et Rive-Nord : Google Ads, Google Local Services, photos de réalisations, partenariats (architectes, designers), budget réaliste](https://nextiweb.ca/blog/construction-renovation/marketing-publicite-construction-montreal.html)
 - [Référencement et visibilité pour entrepreneur en construction à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche zone desservie, Local Pack, pages par métier × quartier](https://nextiweb.ca/blog/construction-renovation/construction-laval-referencement-local.html)
-- [Référencement et visibilité pour entrepreneur en construction à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche zone desservie, Local Pack, pages par métier × secteur](https://nextiweb.ca/blog/construction-renovation/construction-longueuil-referencement-local.html)
-- [Référencement et visibilité pour entrepreneur en construction à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche zone desservie, Local Pack, pages par métier × secteur](https://nextiweb.ca/blog/construction-renovation/construction-terrebonne-referencement-local.html)
+- [Référencement et visibilité pour entrepreneur en construction à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard, fiche zone desservie, Local Pack, pages par métier × secteur](https://nextiweb.ca/blog/construction-renovation/construction-longueuil-referencement-local.html)
+- [Référencement et visibilité pour entrepreneur en construction à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny, fiche zone desservie, Local Pack, pages par métier × secteur](https://nextiweb.ca/blog/construction-renovation/construction-terrebonne-referencement-local.html)
 - [Index guides construction et rénovation](https://nextiweb.ca/blog/construction-renovation/)
 
-## Construction & Renovation Guides — English
+## Construction & Renovation Guides, English
 
-Local SEO, web and conversion guides for Quebec contractors. Visibility: rank in Google's top 3 (Local Pack) — the contractor is a service-area business (no storefront) and the purchase is considered (the client checks projects, RBQ licence, reviews before the quote); optimize the Google Business Profile (service area, right trade category, before/after project photos, RBQ licence, Google Posts); get and reply to reviews (quality, respect of budget and schedule, few jobs so each review counts double, end-of-job routine, Law 25); NAP consistency including the accurate RBQ licence number everywhere; GeneralContractor / HomeAndConstructionBusiness Schema (get cited by AI for 'a reliable contractor to renovate a bathroom'); trade × neighbourhood pages without combinatorial explosion, duplicate content or a fake address. Conversion: reduce missed estimate appointments (online booking, reminders, confirmation, project form, pre-qualification) and turn visitors into quote requests (visible RBQ licence and insurance, before/after projects, mobile-first). No invented figures and no ranking guarantee.
+Local SEO, web and conversion guides for Quebec contractors. Visibility: rank in Google's top 3 (Local Pack), the contractor is a service-area business (no storefront) and the purchase is considered (the client checks projects, RBQ licence, reviews before the quote); optimize the Google Business Profile (service area, right trade category, before/after project photos, RBQ licence, Google Posts); get and reply to reviews (quality, respect of budget and schedule, few jobs so each review counts double, end-of-job routine, Law 25); NAP consistency including the accurate RBQ licence number everywhere; GeneralContractor / HomeAndConstructionBusiness Schema (get cited by AI for 'a reliable contractor to renovate a bathroom'); trade × neighbourhood pages without combinatorial explosion, duplicate content or a fake address. Conversion: reduce missed estimate appointments (online booking, reminders, confirmation, project form, pre-qualification) and turn visitors into quote requests (visible RBQ licence and insurance, before/after projects, mobile-first). No invented figures and no ranking guarantee.
 
-- [Rank in Google's top 3 (Local Pack) when people look for a contractor — pillar guide](https://nextiweb.ca/en/blog/construction-renovation/google-local-pack-construction.html)
+- [Rank in Google's top 3 (Local Pack) when people look for a contractor, pillar guide](https://nextiweb.ca/en/blog/construction-renovation/google-local-pack-construction.html)
 - [Optimize your contractor's Google Business Profile](https://nextiweb.ca/en/blog/construction-renovation/google-business-profile-construction.html)
 - [Google reviews: get more and reply (contractor)](https://nextiweb.ca/en/blog/construction-renovation/google-reviews-construction.html)
 - [Citations and NAP consistency for a contractor](https://nextiweb.ca/en/blog/construction-renovation/nap-citations-construction.html)
@@ -518,24 +518,24 @@ Local SEO, web and conversion guides for Quebec contractors. Visibility: rank in
 - [Turning website visitors into quote requests](https://nextiweb.ca/en/blog/construction-renovation/convert-website-visitors-construction.html)
 - [How much does a construction contractor website cost in Quebec: what drives the price (before/after gallery, quote-request form, visible RBQ licence, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/construction-renovation/construction-website-cost.html)
 - [Construction contractor website design in Montreal, South Shore and North Shore: before/after project gallery, visible RBQ licence, project form, local and bilingual SEO](https://nextiweb.ca/en/blog/construction-renovation/construction-website-design-montreal.html)
-- [Construction contractor SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, reviews, pages by trade × neighbourhood, NAP with consistent RBQ number — no guaranteed ranking](https://nextiweb.ca/en/blog/construction-renovation/construction-seo-montreal.html)
-- [Construction contractor marketing and advertising in Montreal, South Shore and North Shore: Google Ads, Google Local Services, project photos, partnerships (architects, designers) — realistic budget](https://nextiweb.ca/en/blog/construction-renovation/construction-marketing-advertising-montreal.html)
+- [Construction contractor SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, reviews, pages by trade × neighbourhood, NAP with consistent RBQ number, no guaranteed ranking](https://nextiweb.ca/en/blog/construction-renovation/construction-seo-montreal.html)
+- [Construction contractor marketing and advertising in Montreal, South Shore and North Shore: Google Ads, Google Local Services, project photos, partnerships (architects, designers), realistic budget](https://nextiweb.ca/en/blog/construction-renovation/construction-marketing-advertising-montreal.html)
 - [Local SEO and visibility for a construction contractor in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), service-area listing, Local Pack, pages by trade × neighbourhood](https://nextiweb.ca/en/blog/construction-renovation/construction-laval-local-seo.html)
-- [Local SEO and visibility for a construction contractor in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — service-area listing, Local Pack, pages by trade × area](https://nextiweb.ca/en/blog/construction-renovation/construction-longueuil-local-seo.html)
-- [Local SEO and visibility for a construction contractor in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — service-area listing, Local Pack, pages by trade × area](https://nextiweb.ca/en/blog/construction-renovation/construction-terrebonne-local-seo.html)
+- [Local SEO and visibility for a construction contractor in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard, service-area listing, Local Pack, pages by trade × area](https://nextiweb.ca/en/blog/construction-renovation/construction-longueuil-local-seo.html)
+- [Local SEO and visibility for a construction contractor in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny, service-area listing, Local Pack, pages by trade × area](https://nextiweb.ca/en/blog/construction-renovation/construction-terrebonne-local-seo.html)
 - [All construction and renovation guides](https://nextiweb.ca/en/blog/construction-renovation/)
 
-## SEO local pour services à domicile — Page secteur
+## SEO local pour services à domicile, Page secteur
 
 NEXTIWEB accompagne les entreprises de services à domicile québécoises sur 6 leviers de visibilité numérique : Google Business Profile avec zones desservies et mentions d'assurance, avis clients (sollicitation libre conforme à la politique Google), pages par service et par quartier, Schema LocalBusiness (MovingCompany pour déménageurs), citations NAP et FAQ structurée pour les IA. Vocabulaire métier couvert : entretien ménager, déménagement, paysagiste d'entretien, aide aux aînés, lavage de tapis, femme de ménage, zones desservies, réservation, fiabilité, confiance.
 
 - [Services SEO pour services à domicile](https://nextiweb.ca/services-domicile.html)
 
-## Guides spécialisés — Blog Services à domicile
+## Guides spécialisés, Blog Services à domicile
 
-Guides SEO local, web et conversion pour les entreprises de services à domicile québécoises (plombier, électricien, ménage, serrurier, déneigement, réparation…). Visibilité : apparaître dans le top 3 Google (Local Pack) — le prestataire est un commerce de zone desservie (pas de vitrine) et la décision est rapide (urgence) et fondée sur la confiance (on laisse entrer un inconnu chez soi) ; optimiser la fiche Google Business Profile (zone desservie, catégorie, liste de services, disponibilité d'urgence, mention « assuré », Google Posts) ; obtenir et répondre aux avis (ponctualité, sérieux, propreté, respect du domicile, interventions fréquentes donc flux d'avis facile, Loi 25) ; cohérence NAP incluant les plateformes de mise en relation ; Schema par métier (Plumber, Electrician…) ou LocalBusiness (être cité par les IA « un plombier fiable et disponible ce soir ») ; pages par service × quartier sans explosion combinatoire, contenu dupliqué ni fausse adresse. Conversion : réduire les rendez-vous manqués (réservation en ligne, rappels, confirmation, détails d'accès, services récurrents) et transformer les visiteurs en réservations (signaux de confiance assurance/cautionnement/personnel vérifié, zones desservies, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
+Guides SEO local, web et conversion pour les entreprises de services à domicile québécoises (plombier, électricien, ménage, serrurier, déneigement, réparation…). Visibilité : apparaître dans le top 3 Google (Local Pack), le prestataire est un commerce de zone desservie (pas de vitrine) et la décision est rapide (urgence) et fondée sur la confiance (on laisse entrer un inconnu chez soi) ; optimiser la fiche Google Business Profile (zone desservie, catégorie, liste de services, disponibilité d'urgence, mention « assuré », Google Posts) ; obtenir et répondre aux avis (ponctualité, sérieux, propreté, respect du domicile, interventions fréquentes donc flux d'avis facile, Loi 25) ; cohérence NAP incluant les plateformes de mise en relation ; Schema par métier (Plumber, Electrician…) ou LocalBusiness (être cité par les IA « un plombier fiable et disponible ce soir ») ; pages par service × quartier sans explosion combinatoire, contenu dupliqué ni fausse adresse. Conversion : réduire les rendez-vous manqués (réservation en ligne, rappels, confirmation, détails d'accès, services récurrents) et transformer les visiteurs en réservations (signaux de confiance assurance/cautionnement/personnel vérifié, zones desservies, mobile d'abord). Aucun chiffre inventé ni garantie de classement.
 
-- [Apparaître dans le top 3 Google (Local Pack) pour un service à domicile — guide pilier](https://nextiweb.ca/blog/services-domicile/local-pack-google-services-domicile.html)
+- [Apparaître dans le top 3 Google (Local Pack) pour un service à domicile, guide pilier](https://nextiweb.ca/blog/services-domicile/local-pack-google-services-domicile.html)
 - [Optimiser sa fiche Google Business Profile de service à domicile](https://nextiweb.ca/blog/services-domicile/google-business-profile-services-domicile.html)
 - [Obtenir plus d'avis Google et répondre (service à domicile)](https://nextiweb.ca/blog/services-domicile/avis-google-services-domicile.html)
 - [Citations et cohérence NAP pour un service à domicile](https://nextiweb.ca/blog/services-domicile/citations-nap-services-domicile.html)
@@ -545,18 +545,18 @@ Guides SEO local, web et conversion pour les entreprises de services à domicile
 - [Transformer les visiteurs du site en réservations](https://nextiweb.ca/blog/services-domicile/convertir-visiteurs-site-reservation-services-domicile.html)
 - [Combien coûte un site web pour une entreprise de services à domicile au Québec : ce qui fait le prix (réservation en ligne, pages par service, signaux de confiance, zones desservies, SEO, maintenance), sans prix inventé](https://nextiweb.ca/blog/services-domicile/combien-coute-site-web-services-domicile.html)
 - [Création de site web pour services à domicile à Montréal, Rive-Sud et Rive-Nord : réservation en ligne, pages par service, signaux de confiance (assurance, personnel vérifié), zones desservies, SEO local et bilingue](https://nextiweb.ca/blog/services-domicile/creation-site-web-services-domicile-montreal.html)
-- [Référencement SEO pour services à domicile à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis, intentions d'urgence, pages par service × quartier — sans position garantie](https://nextiweb.ca/blog/services-domicile/referencement-seo-services-domicile-montreal.html)
-- [Marketing et publicité pour services à domicile à Montréal, Rive-Sud et Rive-Nord : Google Ads, Google Local Services, avis, infolettre/SMS pour services récurrents, dépliants ciblés — budget réaliste](https://nextiweb.ca/blog/services-domicile/marketing-publicite-services-domicile-montreal.html)
+- [Référencement SEO pour services à domicile à Montréal, Rive-Sud et Rive-Nord : fiche Google zone desservie, Local Pack, avis, intentions d'urgence, pages par service × quartier, sans position garantie](https://nextiweb.ca/blog/services-domicile/referencement-seo-services-domicile-montreal.html)
+- [Marketing et publicité pour services à domicile à Montréal, Rive-Sud et Rive-Nord : Google Ads, Google Local Services, avis, infolettre/SMS pour services récurrents, dépliants ciblés, budget réaliste](https://nextiweb.ca/blog/services-domicile/marketing-publicite-services-domicile-montreal.html)
 - [Référencement et visibilité pour services à domicile à Laval : guide SEO local (Chomedey, Sainte-Dorothée, Vimont…), fiche zone desservie, Local Pack, urgence, pages par service × quartier](https://nextiweb.ca/blog/services-domicile/services-domicile-laval-referencement-local.html)
-- [Référencement et visibilité pour services à domicile à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard — fiche zone desservie, Local Pack, urgence, pages par service × secteur](https://nextiweb.ca/blog/services-domicile/services-domicile-longueuil-referencement-local.html)
-- [Référencement et visibilité pour services à domicile à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny — fiche zone desservie, Local Pack, urgence, pages par service × secteur](https://nextiweb.ca/blog/services-domicile/services-domicile-terrebonne-referencement-local.html)
+- [Référencement et visibilité pour services à domicile à Longueuil et sur la Rive-Sud : Vieux-Longueuil, Saint-Hubert, Brossard, fiche zone desservie, Local Pack, urgence, pages par service × secteur](https://nextiweb.ca/blog/services-domicile/services-domicile-longueuil-referencement-local.html)
+- [Référencement et visibilité pour services à domicile à Terrebonne et sur la Rive-Nord : Lachenaie, La Plaine, Mascouche, Repentigny, fiche zone desservie, Local Pack, urgence, pages par service × secteur](https://nextiweb.ca/blog/services-domicile/services-domicile-terrebonne-referencement-local.html)
 - [Index guides services à domicile](https://nextiweb.ca/blog/services-domicile/)
 
-## Home Services Guides — English
+## Home Services Guides, English
 
-Local SEO, web and conversion guides for Quebec home-services businesses (plumber, electrician, cleaning, locksmith, snow removal, repair…). Visibility: rank in Google's top 3 (Local Pack) — the provider is a service-area business (no storefront) and the decision is fast (urgency) and trust-based (you let a stranger into your home); optimize the Google Business Profile (service area, category, list of services, emergency availability, 'insured' mention, Google Posts); get and reply to reviews (punctuality, seriousness, cleanliness, respect for the home, frequent interventions so an easy review flow, Law 25); NAP consistency including matchmaking platforms; trade Schema (Plumber, Electrician…) or LocalBusiness (get cited by AI for 'a reliable plumber available tonight'); service × neighbourhood pages without combinatorial explosion, duplicate content or a fake address. Conversion: reduce missed appointments (online booking, reminders, confirmation, access details, recurring services) and turn visitors into bookings (trust signals insurance/bonding/vetted staff, service areas, mobile-first). No invented figures and no ranking guarantee.
+Local SEO, web and conversion guides for Quebec home-services businesses (plumber, electrician, cleaning, locksmith, snow removal, repair…). Visibility: rank in Google's top 3 (Local Pack), the provider is a service-area business (no storefront) and the decision is fast (urgency) and trust-based (you let a stranger into your home); optimize the Google Business Profile (service area, category, list of services, emergency availability, 'insured' mention, Google Posts); get and reply to reviews (punctuality, seriousness, cleanliness, respect for the home, frequent interventions so an easy review flow, Law 25); NAP consistency including matchmaking platforms; trade Schema (Plumber, Electrician…) or LocalBusiness (get cited by AI for 'a reliable plumber available tonight'); service × neighbourhood pages without combinatorial explosion, duplicate content or a fake address. Conversion: reduce missed appointments (online booking, reminders, confirmation, access details, recurring services) and turn visitors into bookings (trust signals insurance/bonding/vetted staff, service areas, mobile-first). No invented figures and no ranking guarantee.
 
-- [Rank in Google's top 3 (Local Pack) when people look for a home service — pillar guide](https://nextiweb.ca/en/blog/home-services/google-local-pack-home-services.html)
+- [Rank in Google's top 3 (Local Pack) when people look for a home service, pillar guide](https://nextiweb.ca/en/blog/home-services/google-local-pack-home-services.html)
 - [Optimize your home-services Google Business Profile](https://nextiweb.ca/en/blog/home-services/google-business-profile-home-services.html)
 - [Google reviews: get more and reply (home service)](https://nextiweb.ca/en/blog/home-services/google-reviews-home-services.html)
 - [Citations and NAP consistency for a home service](https://nextiweb.ca/en/blog/home-services/nap-citations-home-services.html)
@@ -566,19 +566,19 @@ Local SEO, web and conversion guides for Quebec home-services businesses (plumbe
 - [Turning website visitors into bookings](https://nextiweb.ca/en/blog/home-services/convert-website-visitors-home-services.html)
 - [How much does a home-services website cost in Quebec: what drives the price (online booking, pages by service, trust signals, service areas, SEO, maintenance), no invented price](https://nextiweb.ca/en/blog/home-services/home-services-website-cost.html)
 - [Home-services website design in Montreal, South Shore and North Shore: online booking, pages by service, trust signals (insurance, vetted staff), service areas, local and bilingual SEO](https://nextiweb.ca/en/blog/home-services/home-services-website-design-montreal.html)
-- [Home-services SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, reviews, emergency intents, pages by service × neighbourhood — no guaranteed ranking](https://nextiweb.ca/en/blog/home-services/home-services-seo-montreal.html)
-- [Home-services marketing and advertising in Montreal, South Shore and North Shore: Google Ads, Google Local Services, reviews, newsletter/SMS for recurring services, targeted flyers — realistic budget](https://nextiweb.ca/en/blog/home-services/home-services-marketing-advertising-montreal.html)
+- [Home-services SEO in Montreal, South Shore and North Shore: service-area Google listing, Local Pack, reviews, emergency intents, pages by service × neighbourhood, no guaranteed ranking](https://nextiweb.ca/en/blog/home-services/home-services-seo-montreal.html)
+- [Home-services marketing and advertising in Montreal, South Shore and North Shore: Google Ads, Google Local Services, reviews, newsletter/SMS for recurring services, targeted flyers, realistic budget](https://nextiweb.ca/en/blog/home-services/home-services-marketing-advertising-montreal.html)
 - [Local SEO and visibility for a home-services business in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…), service-area listing, Local Pack, emergency intents, pages by service × neighbourhood](https://nextiweb.ca/en/blog/home-services/home-services-laval-local-seo.html)
-- [Local SEO and visibility for a home-services business in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard — service-area listing, Local Pack, emergency intents, pages by service × area](https://nextiweb.ca/en/blog/home-services/home-services-longueuil-local-seo.html)
-- [Local SEO and visibility for a home-services business in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny — service-area listing, Local Pack, emergency intents, pages by service × area](https://nextiweb.ca/en/blog/home-services/home-services-terrebonne-local-seo.html)
+- [Local SEO and visibility for a home-services business in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Brossard, service-area listing, Local Pack, emergency intents, pages by service × area](https://nextiweb.ca/en/blog/home-services/home-services-longueuil-local-seo.html)
+- [Local SEO and visibility for a home-services business in Terrebonne and the North Shore: Lachenaie, La Plaine, Mascouche, Repentigny, service-area listing, Local Pack, emergency intents, pages by service × area](https://nextiweb.ca/en/blog/home-services/home-services-terrebonne-local-seo.html)
 - [All home services guides](https://nextiweb.ca/en/blog/home-services/)
 
-## Law Firm Guides — English
+## Law Firm Guides, English
 
 NEXTIWEB helps Quebec law firms improve their online visibility through local SEO, Google Business Profile, client reviews, Schema LegalService, educational content, professional-conduct compliance (Barreau du Québec) and E-E-A-T authority signals for Google and AI citability.
 
 - [SEO services for law firms](https://nextiweb.ca/en/lawyers.html)
-- [Google Local Pack for lawyers — pillar guide](https://nextiweb.ca/en/blog/lawyers/google-local-pack-lawyers.html)
+- [Google Local Pack for lawyers, pillar guide](https://nextiweb.ca/en/blog/lawyers/google-local-pack-lawyers.html)
 - [Google Business Profile for lawyers](https://nextiweb.ca/en/blog/lawyers/google-business-profile-lawyers.html)
 - [Google Reviews for law firms](https://nextiweb.ca/en/blog/lawyers/google-reviews-law-firms.html)
 - [Specialty pages for lawyer SEO](https://nextiweb.ca/en/blog/lawyers/specialty-neighbourhood-pages-lawyer-seo.html)
@@ -591,16 +591,16 @@ NEXTIWEB helps Quebec law firms improve their online visibility through local SE
 - [E-E-A-T and authority for law firms (YMYL topic)](https://nextiweb.ca/en/blog/lawyers/eeat-authority-expertise-law-firm.html)
 - [How much does a law firm website cost in Quebec: what drives the price (pages, design, appointment booking, SEO, maintenance), no invented price; compliant with the Barreau's code of ethics](https://nextiweb.ca/en/blog/lawyers/law-firm-website-cost.html)
 - [Law firm website design in Montreal, South Shore and North Shore: structure, practice areas, appointment booking, local and bilingual SEO, ethics](https://nextiweb.ca/en/blog/lawyers/law-firm-website-design-montreal.html)
-- [Law firm SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, practice-area pages, content — no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/law-firm-seo-montreal.html)
-- [Law firm marketing and advertising in Montreal, South Shore and North Shore: Google Ads, LinkedIn, content, partnerships — realistic budget, advertising regulated by the Barreau](https://nextiweb.ca/en/blog/lawyers/law-firm-marketing-advertising-montreal.html)
-- [Local SEO and visibility for a lawyer in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…, Laval courthouse), Google profile, Local Pack, reviews — no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/lawyer-laval-local-seo.html)
-- [Local SEO and visibility for a lawyer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard — Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-longueuil-local-seo.html)
-- [Local SEO and visibility for a lawyer in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny — Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-terrebonne-local-seo.html)
+- [Law firm SEO in Montreal, South Shore and North Shore: Google profile, Local Pack, reviews, practice-area pages, content, no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/law-firm-seo-montreal.html)
+- [Law firm marketing and advertising in Montreal, South Shore and North Shore: Google Ads, LinkedIn, content, partnerships, realistic budget, advertising regulated by the Barreau](https://nextiweb.ca/en/blog/lawyers/law-firm-marketing-advertising-montreal.html)
+- [Local SEO and visibility for a lawyer in Laval: local guide (Chomedey, Sainte-Dorothée, Vimont…, Laval courthouse), Google profile, Local Pack, reviews, no guaranteed ranking](https://nextiweb.ca/en/blog/lawyers/lawyer-laval-local-seo.html)
+- [Local SEO and visibility for a lawyer in Longueuil and the South Shore: Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard, Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-longueuil-local-seo.html)
+- [Local SEO and visibility for a lawyer in Terrebonne and the North Shore: Lachenaie, La Plaine, Vieux-Terrebonne, Mascouche, Repentigny, Google profile, Local Pack, practice-area and area pages](https://nextiweb.ca/en/blog/lawyers/lawyer-terrebonne-local-seo.html)
 - [How to attract new clients to a law firm: the 5 levers (get found, trust/E-E-A-T, booking, advertising regulated by the Barreau, follow-up/referrals)](https://nextiweb.ca/en/blog/lawyers/attract-new-clients-law-firm.html)
-- [Law 25, confidentiality and professional secrecy on a lawyer's website: form data, consent, security, the Law 25 (CAI) vs professional secrecy (Barreau) interplay — principles, not legal advice](https://nextiweb.ca/en/blog/lawyers/law-25-confidentiality-lawyer-website.html)
+- [Law 25, confidentiality and professional secrecy on a lawyer's website: form data, consent, security, the Law 25 (CAI) vs professional secrecy (Barreau) interplay, principles, not legal advice](https://nextiweb.ca/en/blog/lawyers/law-25-confidentiality-lawyer-website.html)
 - [All law firm guides](https://nextiweb.ca/en/blog/lawyers/)
 
-## Dental Clinic Guides — English
+## Dental Clinic Guides, English
 
 NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and practice management. Keywords covered: dental website design, dental clinic website, dental SEO, dentist SEO, dental marketing, Google/Facebook ads for dentists, dental web/SEO/marketing agency in Montreal, South Shore and North Shore. Compliant with the Ordre des dentistes du Québec and Law 25.
 
@@ -619,7 +619,7 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [I'm taking on an associate: what to do with the site and brand (keep the name or rebrand, present the dentist, fill the schedule)](https://nextiweb.ca/en/blog/dentists/dentist-new-associate-website.html)
 - [Law 25 and your dental clinic website: forms, patient data, consent, privacy policy, cookies (principles, not legal advice)](https://nextiweb.ca/en/blog/dentists/law-25-dental-clinic-website.html)
 - [Ordre des dentistes rules on your website and advertising: accurate name/title, no promises, caution with testimonials and before/after (persuasive AND compliant)](https://nextiweb.ca/en/blog/dentists/ordre-dentistes-advertising-website-rules.html)
-- [Can a consultant guarantee your Google ranking? No — Google itself says so; spotting a shady offer (guaranteed position, unrealistic timelines, pressure)](https://nextiweb.ca/en/blog/dentists/consultant-guarantee-google-ranking-dentist.html)
+- [Can a consultant guarantee your Google ranking? No, Google itself says so; spotting a shady offer (guaranteed position, unrealistic timelines, pressure)](https://nextiweb.ca/en/blog/dentists/consultant-guarantee-google-ranking-dentist.html)
 - [My site brings me nothing or am I not measuring it? Traffic isn't patients; track the real conversions (forms, calls, appointments) with GA4](https://nextiweb.ca/en/blog/dentists/unmeasurable-website-ga4-dentist.html)
 - [How to show up on Google as a dentist (Google profile, site, reviews, NAP, local content; no position guarantee)](https://nextiweb.ca/en/blog/dentists/appear-on-google-dentist.html)
 - [How much does dental SEO cost? What drives the price (honest guide, no invented price, one-time vs recurring)](https://nextiweb.ca/en/blog/dentists/dental-seo-cost.html)
@@ -628,7 +628,7 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [SEO for a dental clinic in Laval (local guide: Chomedey/Sainte-Rose/Vimont neighbourhoods, profile, reviews, NAP; honest targeting)](https://nextiweb.ca/en/blog/dentists/dentist-laval-local-seo.html)
 - [SEO for a dental clinic in Longueuil / South Shore (Vieux-Longueuil, Saint-Hubert, Greenfield Park, Brossard; honest targeting)](https://nextiweb.ca/en/blog/dentists/dentist-longueuil-local-seo.html)
 - [SEO for a dental clinic in Terrebonne / North Shore (Vieux-Terrebonne, Lachenaie, La Plaine, Mascouche; honest targeting)](https://nextiweb.ca/en/blog/dentists/dentist-terrebonne-local-seo.html)
-- [Google Local Pack for dental practices — pillar guide](https://nextiweb.ca/en/blog/dentists/google-local-pack-dental-practices.html)
+- [Google Local Pack for dental practices, pillar guide](https://nextiweb.ca/en/blog/dentists/google-local-pack-dental-practices.html)
 - [Google Business Profile for dental practices](https://nextiweb.ca/en/blog/dentists/google-business-profile-dental-practices.html)
 - [Google Reviews for dental clinics: ethical method](https://nextiweb.ca/en/blog/dentists/google-reviews-dental-clinics.html)
 - [Neighbourhood pages for dental SEO](https://nextiweb.ca/en/blog/dentists/neighbourhood-pages-dental-seo.html)
@@ -637,43 +637,43 @@ NEXTIWEB helps Quebec dental clinics with website design, SEO, marketing and pra
 - [Reduce no-shows (missed appointments) in a dental practice](https://nextiweb.ca/en/blog/dentists/reduce-no-shows-dental-practice.html)
 - [Turn website visitors into dental appointments](https://nextiweb.ca/en/blog/dentists/convert-website-visitors-dental-appointments.html)
 - [Online booking software for dentists: selection criteria, integration with the site and Google profile, Law 25 (health data)](https://nextiweb.ca/en/blog/dentists/online-booking-software-dentist.html)
-- [Website or social media: where a dentist should invest first (honest trade-off — the site you own vs the rented ground of social)](https://nextiweb.ca/en/blog/dentists/website-vs-social-media-dental-clinic.html)
-- [Attracting English-speaking and bilingual patients in Montreal: English site version, FR↔EN hreflang, bilingual Google profile, reviews — without duplicate content](https://nextiweb.ca/en/blog/dentists/attract-bilingual-english-patients-dentist-montreal.html)
+- [Website or social media: where a dentist should invest first (honest trade-off, the site you own vs the rented ground of social)](https://nextiweb.ca/en/blog/dentists/website-vs-social-media-dental-clinic.html)
+- [Attracting English-speaking and bilingual patients in Montreal: English site version, FR↔EN hreflang, bilingual Google profile, reviews, without duplicate content](https://nextiweb.ca/en/blog/dentists/attract-bilingual-english-patients-dentist-montreal.html)
 - [Retaining and reactivating dental patients: hygiene recalls, reactivating inactive patients, newsletter, treatment-plan follow-up (Law 25)](https://nextiweb.ca/en/blog/dentists/retain-reactivate-dental-patients.html)
 - [Dental clinic photos and video: before/after and patient images are regulated (Order rules + Law 25 consent), what to show, image SEO](https://nextiweb.ca/en/blog/dentists/dental-clinic-photos-video-before-after.html)
 - [Blog and educational content for a dental clinic: what to publish by intent, realistic cadence, E-E-A-T authority, compliance with the Order](https://nextiweb.ca/en/blog/dentists/educational-blog-content-dental-clinic.html)
 - [All dental clinic guides](https://nextiweb.ca/en/blog/dentists/)
 
-## English version — Services & global guides
+## English version, Services & global guides
 
 - [English homepage](https://nextiweb.ca/en/index.html)
 
 ### Services (EN)
-- [Website design](https://nextiweb.ca/en/creation-site.html) — Business sites, landing pages, e-commerce, redesign
-- [SEO](https://nextiweb.ca/en/seo.html) — Local and technical search engine optimization
-- [Digital marketing](https://nextiweb.ca/en/marketing-digital.html) — Ads, content, social, conversion
-- [AI visibility](https://nextiweb.ca/en/visibilite-ia.html) — Get cited by AI answers (AEO / GEO)
+- [Website design](https://nextiweb.ca/en/creation-site.html), Business sites, landing pages, e-commerce, redesign
+- [SEO](https://nextiweb.ca/en/seo.html), Local and technical search engine optimization
+- [Digital marketing](https://nextiweb.ca/en/marketing-digital.html), Ads, content, social, conversion
+- [AI visibility](https://nextiweb.ca/en/visibilite-ia.html), Get cited by AI answers (AEO / GEO)
 
 ### Website design (EN)
-- [How does a website work](https://nextiweb.ca/en/blog/website-design/how-does-a-website-work.html) — Domain, hosting, pages — from click to rendered site, explained simply.
-- [WordPress vs custom website](https://nextiweb.ca/en/blog/website-design/wordpress-vs-custom-website-sme.html) — Pros, limits and real costs of each approach for an SME.
+- [How does a website work](https://nextiweb.ca/en/blog/website-design/how-does-a-website-work.html), Domain, hosting, pages, from click to rendered site, explained simply.
+- [WordPress vs custom website](https://nextiweb.ca/en/blog/website-design/wordpress-vs-custom-website-sme.html), Pros, limits and real costs of each approach for an SME.
 - [How much does a website cost in Quebec 2026 (real, sourced prices)](https://nextiweb.ca/en/blog/website-design/website-cost.html)
 - [All website design guides](https://nextiweb.ca/en/blog/website-design/)
 
 ### SEO (EN)
-- [Understanding SEO for SMEs](https://nextiweb.ca/en/blog/seo/understanding-seo-guide.html) — What SEO is, why it matters for a small business, and where to start.
-- [Local SEO & Google Business Profile](https://nextiweb.ca/en/blog/seo/local-seo-google-business-profile.html) — Show up in the Google local pack and optimize your business listing.
+- [Understanding SEO for SMEs](https://nextiweb.ca/en/blog/seo/understanding-seo-guide.html), What SEO is, why it matters for a small business, and where to start.
+- [Local SEO & Google Business Profile](https://nextiweb.ca/en/blog/seo/local-seo-google-business-profile.html), Show up in the Google local pack and optimize your business listing.
 - [All SEO guides](https://nextiweb.ca/en/blog/seo/)
 
 ### Digital marketing (EN)
-- [Digital marketing basics](https://nextiweb.ca/en/blog/digital-marketing/digital-marketing-basics-sme.html) — The essential channels and how to prioritize them on a small budget.
-- [Sales funnels & conversion](https://nextiweb.ca/en/blog/digital-marketing/sales-funnels-conversion-sme.html) — Turn website visitors into leads and customers, step by step.
+- [Digital marketing basics](https://nextiweb.ca/en/blog/digital-marketing/digital-marketing-basics-sme.html), The essential channels and how to prioritize them on a small budget.
+- [Sales funnels & conversion](https://nextiweb.ca/en/blog/digital-marketing/sales-funnels-conversion-sme.html), Turn website visitors into leads and customers, step by step.
 - [All digital marketing guides](https://nextiweb.ca/en/blog/digital-marketing/)
 
 ### AI & automation (EN)
-- [ChatGPT & AI tools for SMEs](https://nextiweb.ca/en/blog/ai-automation/chatgpt-ai-tools-sme-guide.html) — Concrete use cases and tool choices for a small team.
-- [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html) — Use AI without breaching Quebec's personal-information rules.
-- [How to write good AI prompts: the business owner's guide](https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html) — Get useful AI answers with clear instructions.
-- [AI is changing how your customers search for you](https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html) — Why AI search is reshaping SME visibility.
-- [AI chatbot on your website: capture leads 24/7](https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html) — Answer visitors and qualify leads around the clock.
+- [ChatGPT & AI tools for SMEs](https://nextiweb.ca/en/blog/ai-automation/chatgpt-ai-tools-sme-guide.html), Concrete use cases and tool choices for a small team.
+- [Law 25 Quebec & AI](https://nextiweb.ca/en/blog/ai-automation/law-25-quebec-ai-privacy-sme.html), Use AI without breaching Quebec's personal-information rules.
+- [How to write good AI prompts: the business owner's guide](https://nextiweb.ca/en/blog/ai-automation/ai-prompts-business-owner-guide.html), Get useful AI answers with clear instructions.
+- [AI is changing how your customers search for you](https://nextiweb.ca/en/blog/ai-automation/ai-changing-how-customers-search.html), Why AI search is reshaping SME visibility.
+- [AI chatbot on your website: capture leads 24/7](https://nextiweb.ca/en/blog/ai-automation/ai-chatbot-website-leads-sme.html), Answer visitors and qualify leads around the clock.
 - [All AI & automation guides](https://nextiweb.ca/en/blog/ai-automation/)

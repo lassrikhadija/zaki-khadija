@@ -92,11 +92,11 @@
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Which Schema type should a caterer use: Restaurant or FoodEstablishment?","acceptedAnswer":{"@type":"Answer","text":"For a caterer, the Restaurant type fits poorly: it assumes a place where people eat on site, with opening hours and a dining-room menu. A caterer is better described with the FoodEstablishment type (the general category of food services) or a more precise type matching a catering service, emphasizing the area served and the offerings rather than premises. The key is to mark up what genuinely defines your activity: service type, cuisine, area, packages. Markup faithful to a catering service is more accurate — and more effective — than restaurant markup pasted onto something that isn't one."}},
-    {"@type":"Question","name":"How do I describe an area served and packages in a caterer's markup?","acceptedAnswer":{"@type":"Answer","text":"The area served is described with the areaServed property, which lists the cities or regions you cover — the structured equivalent of the area defined on your Google listing. Packages and offerings are described with offers (makesOffer), which let you present your event formats in a machine-readable way. The key is that this data matches exactly what is shown on the page: the same areas, the same packages. Markup only expresses, in a standardized language, what the visitor already reads; it must never invent an area or an offer absent from the page."}},
+    {"@type":"Question","name":"Which Schema type should a caterer use: Restaurant or FoodEstablishment?","acceptedAnswer":{"@type":"Answer","text":"For a caterer, the Restaurant type fits poorly: it assumes a place where people eat on site, with opening hours and a dining-room menu. A caterer is better described with the FoodEstablishment type (the general category of food services) or a more precise type matching a catering service, emphasizing the area served and the offerings rather than premises. The key is to mark up what genuinely defines your activity: service type, cuisine, area, packages. Markup faithful to a catering service is more accurate, and more effective, than restaurant markup pasted onto something that isn't one."}},
+    {"@type":"Question","name":"How do I describe an area served and packages in a caterer's markup?","acceptedAnswer":{"@type":"Answer","text":"The area served is described with the areaServed property, which lists the cities or regions you cover, the structured equivalent of the area defined on your Google listing. Packages and offerings are described with offers (makesOffer), which let you present your event formats in a machine-readable way. The key is that this data matches exactly what is shown on the page: the same areas, the same packages. Markup only expresses, in a standardized language, what the visitor already reads; it must never invent an area or an offer absent from the page."}},
     {"@type":"Question","name":"Does Schema guarantee rich results on Google?","acceptedAnswer":{"@type":"Answer","text":"No, and you should be wary of any guarantee. Markup makes your information eligible for rich results, but Google alone decides whether to display them, based on page quality, data consistency and many other factors. Clean markup faithful to the visible content gives you the best chance, without guaranteeing anything. Conversely, markup describing information absent from the page may be ignored, or even considered misleading. The principle is identical for every business; we detail it on the restaurant side."}},
-    {"@type":"Question","name":"How does Schema help a caterer get cited by ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"AI assistants build their recommendations from clear, structured information. When a client asks 'a caterer for an office party in Montreal', the AI relies on sources that unambiguously describe the service type, area and offerings. A caterer whose site exposes consistent Schema provides exactly that data, making it interpretable and, where relevant, citable. It is not a guarantee of being named, but a total lack of structure makes a catering service much harder for an AI to understand. It is ground still largely unoccupied by caterers — an edge to take early."}},
-    {"@type":"Question","name":"Should reviews go in a caterer's markup?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only if they are real and shown on the page. Review markup must never invent a rating or reuse reviews absent from the site. Google explicitly forbids markup of fake reviews, and it can lead to a penalty. For a caterer whose reviews are rare but precious, the temptation to 'inflate' is all the more risky: the rule stays that what you mark up must match exactly what the visitor sees. Honesty and consistency above all — it is also what protects your reputation in the long run."}}
+    {"@type":"Question","name":"How does Schema help a caterer get cited by ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"AI assistants build their recommendations from clear, structured information. When a client asks 'a caterer for an office party in Montreal', the AI relies on sources that unambiguously describe the service type, area and offerings. A caterer whose site exposes consistent Schema provides exactly that data, making it interpretable and, where relevant, citable. It is not a guarantee of being named, but a total lack of structure makes a catering service much harder for an AI to understand. It is ground still largely unoccupied by caterers, an edge to take early."}},
+    {"@type":"Question","name":"Should reviews go in a caterer's markup?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only if they are real and shown on the page. Review markup must never invent a rating or reuse reviews absent from the site. Google explicitly forbids markup of fake reviews, and it can lead to a penalty. For a caterer whose reviews are rare but precious, the temptation to 'inflate' is all the more risky: the rule stays that what you mark up must match exactly what the visitor sees. Honesty and consistency above all, it is also what protects your reputation in the long run."}}
   ]}
   </script>
 </head>
@@ -124,7 +124,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
-        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB, Montreal web agency" width="84" height="48">
         NEXTIWEB
       </a>
       <nav class="nav" aria-label="Main navigation">
@@ -198,7 +198,7 @@
         <div class="article-hero">
           <p class="article-hero__kicker">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            AI Visibility — Caterers
+            AI Visibility, Caterers
           </p>
           <h1 class="article-hero__title">FoodEstablishment Schema and AI Visibility for a Caterer</h1>
           <div class="article-meta">
@@ -237,16 +237,16 @@
 
             <div class="callout">
               <strong>The key idea</strong>
-              The structured-data principle is the same as for a restaurant — we explain it in <a href="/en/blog/restaurants/restaurant-schema-ai-visibility.html">this guide</a>. The difference for a caterer: you do not describe a dining room with hours, but a <strong>service that travels</strong> across an area, with event packages. Hence an adapted type and properties.
+              The structured-data principle is the same as for a restaurant, we explain it in <a href="/en/blog/restaurants/restaurant-schema-ai-visibility.html">this guide</a>. The difference for a caterer: you do not describe a dining room with hours, but a <strong>service that travels</strong> across an area, with event packages. Hence an adapted type and properties.
             </div>
 
-            <p>This guide expands on the <strong>fourth lever</strong> of our pillar article on the <a href="/en/blog/caterer/google-local-pack-caterer.html">Local Pack</a>. It is the most technical, but also the one that prepares for the future: as search shifts towards AI answers, caterers whose data is structured gain a head start — all the more so since very few have done it.</p>
+            <p>This guide expands on the <strong>fourth lever</strong> of our pillar article on the <a href="/en/blog/caterer/google-local-pack-caterer.html">Local Pack</a>. It is the most technical, but also the one that prepares for the future: as search shifts towards AI answers, caterers whose data is structured gain a head start, all the more so since very few have done it.</p>
 
             <hr>
 
             <h2 id="type">The right type: FoodEstablishment, not Restaurant</h2>
-            <p>The reflex would be to use the <code>Restaurant</code> type. Bad idea for a caterer: that type assumes a place where people eat on site, with opening hours and a dining-room menu — none of which match your activity. A caterer is better described with <strong><code>FoodEstablishment</code></strong>, the general category of food services, emphasizing what truly defines you: the <strong>catering service type</strong>, the <strong>cuisine</strong>, the <strong>area served</strong> and the <strong>packages</strong>.</p>
-            <p>Faithfully marking up a catering service is more accurate — and more effective — than restaurant markup pasted onto something that isn't one.</p>
+            <p>The reflex would be to use the <code>Restaurant</code> type. Bad idea for a caterer: that type assumes a place where people eat on site, with opening hours and a dining-room menu, none of which match your activity. A caterer is better described with <strong><code>FoodEstablishment</code></strong>, the general category of food services, emphasizing what truly defines you: the <strong>catering service type</strong>, the <strong>cuisine</strong>, the <strong>area served</strong> and the <strong>packages</strong>.</p>
+            <p>Faithfully marking up a catering service is more accurate, and more effective, than restaurant markup pasted onto something that isn't one.</p>
 
             <hr>
 
@@ -259,10 +259,10 @@
                 <tbody>
                   <tr><td>name</td><td>The exact service name (consistent with your <a href="/en/blog/caterer/nap-citations-caterer.html">NAP</a>).</td></tr>
                   <tr><td>servesCuisine</td><td>The cuisine type(s) offered.</td></tr>
-                  <tr><td>areaServed</td><td>The area served (cities, regions) — the structured equivalent of your listing.</td></tr>
+                  <tr><td>areaServed</td><td>The area served (cities, regions), the structured equivalent of your listing.</td></tr>
                   <tr><td>makesOffer</td><td>The event packages and offerings.</td></tr>
                   <tr><td>telephone / url</td><td>The phone and the website address.</td></tr>
-                  <tr><td>aggregateRating</td><td>The average rating — only if it is real and shown on the page.</td></tr>
+                  <tr><td>aggregateRating</td><td>The average rating, only if it is real and shown on the page.</td></tr>
                 </tbody>
               </table>
             </div>
@@ -290,18 +290,18 @@
             <hr>
 
             <h2 id="rich-results">Rich results: an asset, not a guarantee</h2>
-            <p>Clean markup makes your information <strong>eligible</strong> for richer displays in Google. But eligible does not mean guaranteed: Google alone decides, based on page quality and data consistency. Be wary of anyone promising "guaranteed stars". This principle is identical for every business — we detail it on the <a href="/en/blog/restaurants/restaurant-schema-ai-visibility.html">restaurant</a> side.</p>
+            <p>Clean markup makes your information <strong>eligible</strong> for richer displays in Google. But eligible does not mean guaranteed: Google alone decides, based on page quality and data consistency. Be wary of anyone promising "guaranteed stars". This principle is identical for every business, we detail it on the <a href="/en/blog/restaurants/restaurant-schema-ai-visibility.html">restaurant</a> side.</p>
 
             <div class="article-cta-inline">
-              <p><strong>Does your catering service speak the language of Google and AI?</strong> Get a free audit of your markup and visibility — delivered as a PDF report within 24&nbsp;hours.</p>
+              <p><strong>Does your catering service speak the language of Google and AI?</strong> Get a free audit of your markup and visibility, delivered as a PDF report within 24&nbsp;hours.</p>
               <a href="/en/caterer.html" class="btn btn--primary">See our services for caterers →</a>
             </div>
 
             <hr>
 
             <h2 id="ai">Being cited by AI: tomorrow's visibility</h2>
-            <p>More and more clients no longer type keywords: they <strong>ask</strong>. "A caterer for a 100-guest wedding on the South Shore", "a vegan corporate buffet service in Montreal" — to ChatGPT, Gemini, or in Google's generated answers. These systems rely on clear, structured information to recommend.</p>
-            <p>A caterer whose site exposes consistent Schema (service type, cuisine, area, packages) provides exactly the data these AI need to understand it and, where relevant, cite it. It is not a guarantee — no one can promise that — but a total lack of structure makes a catering service much harder to interpret. This is <strong>GEO</strong> (generative engine optimization): ground almost untouched by caterers, hence a rare chance to get ahead.</p>
+            <p>More and more clients no longer type keywords: they <strong>ask</strong>. "A caterer for a 100-guest wedding on the South Shore", "a vegan corporate buffet service in Montreal", to ChatGPT, Gemini, or in Google's generated answers. These systems rely on clear, structured information to recommend.</p>
+            <p>A caterer whose site exposes consistent Schema (service type, cuisine, area, packages) provides exactly the data these AI need to understand it and, where relevant, cite it. It is not a guarantee, no one can promise that, but a total lack of structure makes a catering service much harder to interpret. This is <strong>GEO</strong> (generative engine optimization): ground almost untouched by caterers, hence a rare chance to get ahead.</p>
 
             <hr>
 
@@ -309,19 +309,19 @@
             <ul>
               <li><strong>Using the Restaurant type</strong> for a service with no hall or opening hours.</li>
               <li><strong>Marking up an area you do not serve</strong> or packages absent from the page.</li>
-              <li><strong>Inventing reviews or a rating.</strong> Forbidden by Google, risky for your reputation — all the more so since your reviews are rare and precious.</li>
+              <li><strong>Inventing reviews or a rating.</strong> Forbidden by Google, risky for your reputation, all the more so since your reviews are rare and precious.</li>
               <li><strong>Forgetting to update</strong>: if your area or packages change, the markup must follow.</li>
             </ul>
 
             <div class="callout">
               <strong>The golden rule of Schema</strong>
-              Mark up only what is <strong>true</strong> and <strong>visible</strong> on the page. Structure amplifies your reality — it must never disguise it. For a caterer whose reputation is built on trust, it is also the best long-term protection.
+              Mark up only what is <strong>true</strong> and <strong>visible</strong> on the page. Structure amplifies your reality, it must never disguise it. For a caterer whose reputation is built on trust, it is also the best long-term protection.
             </div>
 
             <hr>
 
             <!-- FAQ -->
-            <h2 id="faq">Frequently asked questions — FoodEstablishment Schema and AI</h2>
+            <h2 id="faq">Frequently asked questions, FoodEstablishment Schema and AI</h2>
             <div class="article-faq" role="list">
 
               <div class="article-faq__item" role="listitem">
@@ -329,7 +329,7 @@
                   <span class="article-faq__q">Which Schema type should a caterer use: Restaurant or FoodEstablishment?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">For a caterer, the Restaurant type fits poorly: it assumes a place where people eat on site, with opening hours and a dining-room menu. A caterer is better described with the FoodEstablishment type (the general category of food services) or a more precise type matching a catering service, emphasizing the area served and the offerings rather than premises. The key is to mark up what genuinely defines your activity: service type, cuisine, area, packages. Markup faithful to a catering service is more accurate — and more effective — than restaurant markup pasted onto something that isn't one.</p>
+                <p class="article-faq__a">For a caterer, the Restaurant type fits poorly: it assumes a place where people eat on site, with opening hours and a dining-room menu. A caterer is better described with the FoodEstablishment type (the general category of food services) or a more precise type matching a catering service, emphasizing the area served and the offerings rather than premises. The key is to mark up what genuinely defines your activity: service type, cuisine, area, packages. Markup faithful to a catering service is more accurate, and more effective, than restaurant markup pasted onto something that isn't one.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -337,7 +337,7 @@
                   <span class="article-faq__q">How do I describe an area served and packages in a caterer's markup?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">The area served is described with the areaServed property, which lists the cities or regions you cover — the structured equivalent of the area defined on your Google listing. Packages and offerings are described with offers (makesOffer), which let you present your event formats in a machine-readable way. The key is that this data matches exactly what is shown on the page: the same areas, the same packages. Markup only expresses, in a standardized language, what the visitor already reads; it must never invent an area or an offer absent from the page.</p>
+                <p class="article-faq__a">The area served is described with the areaServed property, which lists the cities or regions you cover, the structured equivalent of the area defined on your Google listing. Packages and offerings are described with offers (makesOffer), which let you present your event formats in a machine-readable way. The key is that this data matches exactly what is shown on the page: the same areas, the same packages. Markup only expresses, in a standardized language, what the visitor already reads; it must never invent an area or an offer absent from the page.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -353,7 +353,7 @@
                   <span class="article-faq__q">How does Schema help a caterer get cited by ChatGPT?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">AI assistants build their recommendations from clear, structured information. When a client asks 'a caterer for an office party in Montreal', the AI relies on sources that unambiguously describe the service type, area and offerings. A caterer whose site exposes consistent Schema provides exactly that data, making it interpretable and, where relevant, citable. It is not a guarantee of being named, but a total lack of structure makes a catering service much harder for an AI to understand. It is ground still largely unoccupied by caterers — an edge to take early.</p>
+                <p class="article-faq__a">AI assistants build their recommendations from clear, structured information. When a client asks 'a caterer for an office party in Montreal', the AI relies on sources that unambiguously describe the service type, area and offerings. A caterer whose site exposes consistent Schema provides exactly that data, making it interpretable and, where relevant, citable. It is not a guarantee of being named, but a total lack of structure makes a catering service much harder for an AI to understand. It is ground still largely unoccupied by caterers, an edge to take early.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -361,7 +361,7 @@
                   <span class="article-faq__q">Should reviews go in a caterer's markup?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Yes, but only if they are real and shown on the page. Review markup must never invent a rating or reuse reviews absent from the site. Google explicitly forbids markup of fake reviews, and it can lead to a penalty. For a caterer whose reviews are rare but precious, the temptation to 'inflate' is all the more risky: the rule stays that what you mark up must match exactly what the visitor sees. Honesty and consistency above all — it is also what protects your reputation in the long run.</p>
+                <p class="article-faq__a">Yes, but only if they are real and shown on the page. Review markup must never invent a rating or reuse reviews absent from the site. Google explicitly forbids markup of fake reviews, and it can lead to a penalty. For a caterer whose reviews are rare but precious, the temptation to 'inflate' is all the more risky: the rule stays that what you mark up must match exactly what the visitor sees. Honesty and consistency above all, it is also what protects your reputation in the long run.</p>
               </div>
 
             </div>
@@ -372,7 +372,7 @@
             <h2 id="go-further">Go further</h2>
             <p>Schema complements the more "human" levers of local visibility:</p>
             <ul>
-              <li><a href="/en/blog/caterer/google-local-pack-caterer.html">Rank in Google's top 3 (Local Pack)</a> — the pillar guide</li>
+              <li><a href="/en/blog/caterer/google-local-pack-caterer.html">Rank in Google's top 3 (Local Pack)</a>, the pillar guide</li>
               <li><a href="/en/blog/caterer/google-business-profile-caterer.html">Optimize your Google Business Profile</a></li>
               <li><a href="/en/blog/caterer/google-reviews-caterer.html">Get more Google reviews and reply (caterer)</a></li>
               <li><a href="/en/blog/caterer/nap-citations-caterer.html">Citations and NAP consistency</a></li>
@@ -388,7 +388,7 @@
 
             <!-- Final CTA -->
             <div class="article-cta-inline" style="margin-top:3rem">
-              <p><strong>Is your catering service understandable to Google and AI?</strong> Get a free audit of your markup and local visibility — delivered as a personalized PDF report within 24&nbsp;hours.</p>
+              <p><strong>Is your catering service understandable to Google and AI?</strong> Get a free audit of your markup and local visibility, delivered as a personalized PDF report within 24&nbsp;hours.</p>
               <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit →</a>
             </div>
 
@@ -434,7 +434,7 @@
     <section class="section section--cta">
       <div class="container section__header section__header--center">
         <h2 class="section__title">Your next client is searching for you. Can they find you?</h2>
-        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis, and zero obligation.</p>
         <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
       </div>
     </section>

@@ -38,7 +38,7 @@ const FAQ_DATA = {
     },
     {
       q: "Can I combine website design, SEO and digital marketing?",
-      a: "Yes — and it's our recommended approach. A well-designed website without traffic generates nothing. SEO brings qualified visitors, and digital marketing amplifies results. We offer integrated packages for SMEs who want a complete strategy."
+      a: "Yes, and it's our recommended approach. A well-designed website without traffic generates nothing. SEO brings qualified visitors, and digital marketing amplifies results. We offer integrated packages for SMEs who want a complete strategy."
     },
     {
       q: "Where do I start: website, SEO or digital marketing?",
@@ -54,7 +54,7 @@ const FAQ_DATA = {
     }
   ],
 
-  // ── Local — Création de site web Montréal ────────────────────────────────────
+  // ── Local, Création de site web Montréal ────────────────────────────────────
   'local/creation-site-web-montreal.html': [
     {
       q: "Combien coûte la création d'un site web à Montréal en 2025 ?",
@@ -101,7 +101,7 @@ const FAQ_DATA = {
     }
   ],
 
-  // ── Local — SEO Montréal ─────────────────────────────────────────────────────
+  // ── Local, SEO Montréal ─────────────────────────────────────────────────────
   'local/seo-montreal.html': [
     {
       q: "Pourquoi faire appel à une agence SEO à Montréal ?",
@@ -148,7 +148,7 @@ const FAQ_DATA = {
     }
   ],
 
-  // ── Local — Marketing digital Montréal ──────────────────────────────────────
+  // ── Local, Marketing digital Montréal ──────────────────────────────────────
   'local/marketing-digital-montreal.html': [
     {
       q: "Qu'est-ce que le marketing digital pour une PME à Montréal ?",
@@ -245,7 +245,7 @@ const FAQ_DATA = {
     },
     {
       q: "Pourquoi choisir NEXTIWEB pour mon entreprise à Québec ?",
-      a: "NEXTIWEB comprend le marché québécois dans son ensemble, y compris les spécificités de la région de Québec. Nous créons des sites web et des stratégies SEO adaptés à votre clientèle locale, avec un suivi personnalisé et des résultats mesurables — sans les frais d'une grande agence."
+      a: "NEXTIWEB comprend le marché québécois dans son ensemble, y compris les spécificités de la région de Québec. Nous créons des sites web et des stratégies SEO adaptés à votre clientèle locale, avec un suivi personnalisé et des résultats mesurables, sans les frais d'une grande agence."
     }
   ],
 
@@ -260,7 +260,7 @@ const FAQ_DATA = {
     },
     {
       q: "Why choose NEXTIWEB for my Quebec City business?",
-      a: "NEXTIWEB understands the Quebec market as a whole, including the specifics of the Quebec City region. We create websites and SEO strategies tailored to your local clientele, with personalized support and measurable results — without the fees of a large agency."
+      a: "NEXTIWEB understands the Quebec market as a whole, including the specifics of the Quebec City region. We create websites and SEO strategies tailored to your local clientele, with personalized support and measurable results, without the fees of a large agency."
     }
   ],
 
@@ -275,7 +275,7 @@ const FAQ_DATA = {
     },
     {
       q: "Le SEO fonctionne-t-il différemment pour les entreprises canadiennes hors Québec ?",
-      a: "Les principes SEO sont universels, mais les mots-clés, la concurrence et les comportements varient par province et ville. NEXTIWEB adapte chaque stratégie SEO au marché cible — que ce soit Toronto, Vancouver ou Ottawa — pour maximiser la visibilité locale de votre entreprise."
+      a: "Les principes SEO sont universels, mais les mots-clés, la concurrence et les comportements varient par province et ville. NEXTIWEB adapte chaque stratégie SEO au marché cible, que ce soit Toronto, Vancouver ou Ottawa, pour maximiser la visibilité locale de votre entreprise."
     }
   ],
 
@@ -290,7 +290,7 @@ const FAQ_DATA = {
     },
     {
       q: "Does SEO work differently for Canadian businesses outside Quebec?",
-      a: "SEO principles are universal, but keywords, competition and behaviour vary by province and city. NEXTIWEB tailors each SEO strategy to the target market — whether Toronto, Vancouver or Ottawa — to maximize local visibility for your business."
+      a: "SEO principles are universal, but keywords, competition and behaviour vary by province and city. NEXTIWEB tailors each SEO strategy to the target market, whether Toronto, Vancouver or Ottawa, to maximize local visibility for your business."
     }
   ],
 
@@ -324,7 +324,7 @@ const FAQ_DATA = {
     },
     {
       q: "Pourquoi choisir NEXTIWEB plutôt qu'une grande agence web ?",
-      a: "Chez NEXTIWEB, vous travaillez directement avec la fondatrice — pas avec un compte-gestionnaire junior. Cela garantit une compréhension profonde de votre business, une communication directe et des décisions rapides. Nous n'avons pas les frais généraux d'une grande agence, ce qui se reflète dans nos prix."
+      a: "Chez NEXTIWEB, vous travaillez directement avec la fondatrice, pas avec un compte-gestionnaire junior. Cela garantit une compréhension profonde de votre business, une communication directe et des décisions rapides. Nous n'avons pas les frais généraux d'une grande agence, ce qui se reflète dans nos prix."
     },
     {
       q: "NEXTIWEB propose-t-il un suivi après le lancement du site ?",
@@ -343,7 +343,7 @@ const FAQ_DATA = {
     },
     {
       q: "Why choose NEXTIWEB over a large web agency?",
-      a: "At NEXTIWEB, you work directly with the founder — not a junior account manager. This ensures deep understanding of your business, direct communication and fast decisions. We don't carry the overhead of a large agency, which is reflected in our pricing."
+      a: "At NEXTIWEB, you work directly with the founder, not a junior account manager. This ensures deep understanding of your business, direct communication and fast decisions. We don't carry the overhead of a large agency, which is reflected in our pricing."
     },
     {
       q: "Does NEXTIWEB offer post-launch support?",
@@ -359,11 +359,11 @@ const FAQ_DATA = {
   'ressources.html': [
     {
       q: "Les ressources de NEXTIWEB sont-elles vraiment gratuites ?",
-      a: "Oui, toutes nos ressources (guides, articles, conseils) sont entièrement gratuites. Notre objectif est de vous donner les connaissances pour comprendre le web, le SEO et le marketing digital — et prendre des décisions éclairées pour votre entreprise, avec ou sans nous."
+      a: "Oui, toutes nos ressources (guides, articles, conseils) sont entièrement gratuites. Notre objectif est de vous donner les connaissances pour comprendre le web, le SEO et le marketing digital, et prendre des décisions éclairées pour votre entreprise, avec ou sans nous."
     },
     {
       q: "À qui s'adressent les guides de NEXTIWEB ?",
-      a: "Nos ressources sont conçues pour les propriétaires de PME, indépendants et entrepreneurs québécois qui veulent comprendre comment fonctionne le web sans jargon technique. Que vous ayez un site ou pas, que vous connaissiez le SEO ou pas — nos guides partent de zéro."
+      a: "Nos ressources sont conçues pour les propriétaires de PME, indépendants et entrepreneurs québécois qui veulent comprendre comment fonctionne le web sans jargon technique. Que vous ayez un site ou pas, que vous connaissiez le SEO ou pas, nos guides partent de zéro."
     },
     {
       q: "Comment améliorer mon référencement Google sans faire appel à une agence ?",
@@ -371,18 +371,18 @@ const FAQ_DATA = {
     },
     {
       q: "Qu'est-ce que la visibilité IA et pourquoi c'est important pour mon entreprise ?",
-      a: "La visibilité IA (AEO / GEO) c'est le fait d'être recommandé par des moteurs comme ChatGPT, Perplexity ou Google AI Overview quand quelqu'un pose une question liée à votre secteur. En 2026, de plus en plus de clients trouvent leurs fournisseurs via l'IA — être cité par ces moteurs génère du trafic qualifié gratuit."
+      a: "La visibilité IA (AEO / GEO) c'est le fait d'être recommandé par des moteurs comme ChatGPT, Perplexity ou Google AI Overview quand quelqu'un pose une question liée à votre secteur. En 2026, de plus en plus de clients trouvent leurs fournisseurs via l'IA, être cité par ces moteurs génère du trafic qualifié gratuit."
     }
   ],
 
   'en/ressources.html': [
     {
       q: "Are NEXTIWEB's resources really free?",
-      a: "Yes, all our resources (guides, articles, tips) are completely free. Our goal is to give you the knowledge to understand web, SEO and digital marketing — and make informed decisions for your business, with or without us."
+      a: "Yes, all our resources (guides, articles, tips) are completely free. Our goal is to give you the knowledge to understand web, SEO and digital marketing, and make informed decisions for your business, with or without us."
     },
     {
       q: "Who are NEXTIWEB's guides designed for?",
-      a: "Our resources are designed for SME owners, freelancers and Quebec entrepreneurs who want to understand how the web works without technical jargon. Whether you have a website or not, whether you know SEO or not — our guides start from scratch."
+      a: "Our resources are designed for SME owners, freelancers and Quebec entrepreneurs who want to understand how the web works without technical jargon. Whether you have a website or not, whether you know SEO or not, our guides start from scratch."
     },
     {
       q: "How can I improve my Google ranking without hiring an agency?",
@@ -390,7 +390,7 @@ const FAQ_DATA = {
     },
     {
       q: "What is AI visibility and why does it matter for my business?",
-      a: "AI visibility (AEO/GEO) means being recommended by engines like ChatGPT, Perplexity or Google AI Overview when someone asks a question related to your industry. In 2026, more and more clients find their suppliers via AI — being cited by these engines generates free, qualified traffic."
+      a: "AI visibility (AEO/GEO) means being recommended by engines like ChatGPT, Perplexity or Google AI Overview when someone asks a question related to your industry. In 2026, more and more clients find their suppliers via AI, being cited by these engines generates free, qualified traffic."
     }
   ],
 
@@ -406,11 +406,11 @@ const FAQ_DATA = {
     },
     {
       q: "How long does it take to see results from AI visibility optimization?",
-      a: "Generally 4 to 8 weeks after content optimization — faster than traditional SEO. AI engines index and process content more dynamically than Google. The key is structuring your content to directly answer the questions your potential clients are asking."
+      a: "Generally 4 to 8 weeks after content optimization, faster than traditional SEO. AI engines index and process content more dynamically than Google. The key is structuring your content to directly answer the questions your potential clients are asking."
     },
     {
       q: "Can I combine AI visibility with traditional SEO?",
-      a: "Yes — and it's our recommended approach. Good SEO content naturally improves AI visibility, and AI-optimized content reinforces your SEO authority. NEXTIWEB develops integrated strategies that position you on both Google and AI engines simultaneously."
+      a: "Yes, and it's our recommended approach. Good SEO content naturally improves AI visibility, and AI-optimized content reinforces your SEO authority. NEXTIWEB develops integrated strategies that position you on both Google and AI engines simultaneously."
     }
   ]
 };

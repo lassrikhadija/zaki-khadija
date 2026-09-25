@@ -1,4 +1,4 @@
-# NEXTIWEB — Brand Identity & Charte graphique
+# NEXTIWEB, Brand Identity & Charte graphique
 > Fichier de référence pour la création de visuels LinkedIn et tout autre support.  
 > Version : mai 2026 | Fondatrice : Khadija AitLassri
 
@@ -22,12 +22,12 @@
 
 ## 2. SERVICES
 
-1. **Création de sites web** — sites vitrines, landing pages, e-commerce
-2. **Référencement SEO** — SEO local, contenu, optimisation technique
-3. **Marketing digital** — stratégie de contenu, acquisition organique
-4. **Visibilité IA** — optimisation pour Google AI Overview, ChatGPT, Perplexity (AEO / GEO)
+1. **Création de sites web**, sites vitrines, landing pages, e-commerce
+2. **Référencement SEO**, SEO local, contenu, optimisation technique
+3. **Marketing digital**, stratégie de contenu, acquisition organique
+4. **Visibilité IA**, optimisation pour Google AI Overview, ChatGPT, Perplexity (AEO / GEO)
 
-**Différenciateur clé :** La fondatrice est à la fois informaticienne et ancienne entrepreneur (franchise 2015–2023). Elle comprend la réalité business des PME, pas seulement le code.
+**Différenciateur clé :** La fondatrice est à la fois informaticienne et ancienne entrepreneur (franchise 2015-2023). Elle comprend la réalité business des PME, pas seulement le code.
 
 ---
 
@@ -72,15 +72,15 @@
 | **Signature manuscrite** | Dancing Script 700 (Google Fonts) | Signature de Khadija uniquement |
 | **Graisse titres** | 800 (extra-bold) | H1, chiffres clés |
 | **Graisse sous-titres** | 700 | H2, H3 |
-| **Corps** | 400–500, line-height 1.6 | |
+| **Corps** | 400-500, line-height 1.6 | |
 
 ### Style visuel
 
-- **Ambiance générale :** Dark tech premium — fond noir profond, accent vert électrique, contraste élevé
-- **Esthétique :** Minimaliste, propre, professionnel — pas de gradients criards, pas de stock photos génériques
+- **Ambiance générale :** Dark tech premium, fond noir profond, accent vert électrique, contraste élevé
+- **Esthétique :** Minimaliste, propre, professionnel, pas de gradients criards, pas de stock photos génériques
 - **Forme :** Border-radius doux (`0.5rem`), ombres subtiles, bordures fines
-- **Animation :** Subtile, cubic-bezier(0.4, 0, 0.2, 1) — jamais distrayante
-- **Logo :** Texte "NEXTIWEB" en gras, 84×48px — fond transparent, version dark (texte blanc + vert)
+- **Animation :** Subtile, cubic-bezier(0.4, 0, 0.2, 1), jamais distrayante
+- **Logo :** Texte "NEXTIWEB" en gras, 84×48px, fond transparent, version dark (texte blanc + vert)
 - **Avatar fondatrice :** Cercle vert `#00e676`, initiales "KA" en noir, 56×56px
 
 ---
@@ -105,19 +105,19 @@
 Khadija AitLassri a commencé sa carrière en informatique (administration réseaux, développement web).
 En 2015, elle est devenue entrepreneur et a géré sa propre franchise jusqu'en 2023.
 Après le COVID, elle a vendu sa franchise et tout reconstruit.
-Elle a créé son premier site — techniquement solide — et a attendu les clients.
+Elle a créé son premier site, techniquement solide, et a attendu les clients.
 **Résultat : zéro trafic. Zéro contact.**
 C'est cette expérience qui a fondé NEXTIWEB : comprendre que maîtriser le code ne suffit pas.
 Il faut la structure, le SEO, la psychologie de l'acheteur et maintenant l'optimisation IA.
 
 ### Valeurs
-- **Honnêteté radicale** — pas de promesses de classement, des livrables concrets
-- **Résultats, pas des heures** — on s'engage sur ce que le client obtient
-- **Expérience réelle** — pas une formation en marketing, une vie d'entrepreneur
-- **Accessibilité** — disponible par téléphone, WhatsApp, formulaire — réponse sous 24h
+- **Honnêteté radicale**, pas de promesses de classement, des livrables concrets
+- **Résultats, pas des heures**, on s'engage sur ce que le client obtient
+- **Expérience réelle**, pas une formation en marketing, une vie d'entrepreneur
+- **Accessibilité**, disponible par téléphone, WhatsApp, formulaire, réponse sous 24h
 
 ### Positionnement LinkedIn
-- **Angle :** Entrepreneur qui parle à d'autres entrepreneurs — pas une agence froide
+- **Angle :** Entrepreneur qui parle à d'autres entrepreneurs, pas une agence froide
 - **Ton :** Direct, sans jargon, empathique, factuel
 - **Sujets à couvrir :** SEO local, IA & recherche, erreurs sites web PME, transformation digitale, parcours entrepreneur
 - **Ce qu'on ne dit pas :** "on est les meilleurs", "nos clients adorent", prix sans contexte
@@ -130,12 +130,12 @@ Il faut la structure, le SEO, la psychologie de l'acheteur et maintenant l'optim
 
 **Contexte à copier :**
 ```
-Brand: NEXTIWEB — digital agency based in Montreal, Canada
+Brand: NEXTIWEB, digital agency based in Montreal, Canada
 Founder: Khadija AitLassri
-Style: dark premium tech — deep black background (#0f0f0f), electric green accent (#00e676),
+Style: dark premium tech, deep black background (#0f0f0f), electric green accent (#00e676),
 white text, clean minimal layout, no gradients, no stock photo aesthetics
 Typography feel: bold, modern, sans-serif, high contrast
-Mood: professional, trustworthy, confident — not flashy or aggressive
+Mood: professional, trustworthy, confident, not flashy or aggressive
 ```
 
 ### Template LinkedIn post (visuel carré 1080×1080)
@@ -143,7 +143,7 @@ Mood: professional, trustworthy, confident — not flashy or aggressive
 Background: #0f0f0f (near black)
 Accent line or element: #00e676 (electric green)
 Text color: #ffffff (main), #c8c8c8 (secondary)
-Logo placement: bottom right or top left — "NEXTIWEB" wordmark
+Logo placement: bottom right or top left, "NEXTIWEB" wordmark
 Border: thin 1px line in #1a1a1a or green accent left-border on key element
 No: gradients, blur backgrounds, stock photos of handshakes or laptops
 Yes: clean white space, bold statement text, one strong visual hierarchy
@@ -151,9 +151,9 @@ Yes: clean white space, bold statement text, one strong visual hierarchy
 
 ### Template LinkedIn bannière profil (1584×396)
 ```
-Background: dark — #0f0f0f or très léger gradient #0f0f0f → #111111
+Background: dark, #0f0f0f or très léger gradient #0f0f0f → #111111
 Left side: name "Khadija AitLassri" + title "Fondatrice, NEXTIWEB"
-Right side or center: tagline court — "Sites web qui génèrent des clients | Montréal"
+Right side or center: tagline court, "Sites web qui génèrent des clients | Montréal"
 Accent: bande verte #00e676 en bas ou élément géométrique vert discret
 URL en bas: nextiweb.ca
 ```
@@ -183,8 +183,8 @@ no gradients, high contrast, editorial style --ar 1:1 --style raw
 - *"Votre prochain client vous cherche en ce moment sur Google. Est-ce qu'il vous trouve ?"*
 - *"3 erreurs que font 80% des PME québécoises avec leur site web."*
 - *"Ce que j'ai appris après avoir vendu ma franchise et tout reconstruit."*
-- *"SEO en 2026 : ce qui a changé avec l'IA — et ce que ça signifie pour votre PME."*
+- *"SEO en 2026 : ce qui a changé avec l'IA, et ce que ça signifie pour votre PME."*
 
 ---
 
-*Fichier maintenu dans le repo zaki-khadija — mise à jour si charte évolue.*
+*Fichier maintenu dans le repo zaki-khadija, mise à jour si charte évolue.*

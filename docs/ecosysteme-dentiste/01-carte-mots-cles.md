@@ -1,5 +1,5 @@
-# Écosystème SEO / AEO / AIO-GEO — Dentistes (NEXTIWEB)
-## Phase 1 — Carte de mots-clés filtrée
+# Écosystème SEO / AEO / AIO-GEO, Dentistes (NEXTIWEB)
+## Phase 1, Carte de mots-clés filtrée
 
 > **But du projet** : bâtir un « potager » de contenu qui positionne NEXTIWEB comme l'autorité
 > citée (Google + moteurs IA) pour « site web / SEO / marketing pour dentiste » au Québec.
@@ -18,7 +18,7 @@
 - **À valider avant de prioriser définitivement** : volumes réels via **Google Keyword Planner**,
   **Google Search Console** (requêtes déjà reçues), ou un outil (Ubersuggest, Semrush, Ahrefs…).
 - **Règle de contenu** : les seuls chiffres autorisés dans les articles sont des **stats sourcées
-  fiables** (ex. BrightLocal 87 % d'avis lus — déjà utilisé). Jamais de chiffre « au cas où ».
+  fiables** (ex. BrightLocal 87 % d'avis lus, déjà utilisé). Jamais de chiffre « au cas où ».
 
 ---
 
@@ -40,7 +40,7 @@
 | marketing dentaire Montréal | Commercial | 🟡 Moyen | Oui | Pilier |
 | agence SEO dentiste / dentaire | Commercial | 🟡 Moyen | Oui | Sous-pilier SEO |
 
-## 2. Pilier WEB — « création de site web »
+## 2. Pilier WEB, « création de site web »
 | Mot-clé | Intention | Difficulté | Géo | Page cible |
 |---|---|---|---|---|
 | création site web dentiste | Commercial | 🔴 Élevé | Oui → Montréal | Sous-pilier Web |
@@ -50,7 +50,7 @@
 | combien coûte un site web pour dentiste | Longue traîne | 🟢 Faible (question, fort taux conv.) | Non | Article cluster |
 | site internet dentiste Montréal | Commercial | 🟡 Moyen | Oui | Sous-pilier Web |
 
-## 3. Pilier SEO — « référencement »
+## 3. Pilier SEO, « référencement »
 | Mot-clé | Intention | Difficulté | Géo | Page cible |
 |---|---|---|---|---|
 | référencement clinique dentaire | Commercial | 🟡 Moyen | Oui | Sous-pilier SEO |
@@ -69,7 +69,7 @@
 | acquisition de patients clinique dentaire | Longue traîne | 🟢 Faible | Optionnel | Article cluster |
 | attirer des patients clinique dentaire | Longue traîne (mixte) | 🟢 Faible | Optionnel | Article cluster |
 
-## 5. INFORMATIONNEL (douleurs du dentiste) — soutient l'autorité thématique
+## 5. INFORMATIONNEL (douleurs du dentiste), soutient l'autorité thématique
 > Déjà largement couvert par les **8 articles existants** de `blog/dentistes/`. À garder et mailler vers les piliers commerciaux.
 
 | Thème | Statut |
@@ -81,7 +81,7 @@
 | Schema / visibilité IA dentaire | ✅ existe (à vérifier) |
 | (+ autres articles existants) | ✅ |
 
-## 6. GÉO — déclinaisons
+## 6. GÉO, déclinaisons
 - **À mettre dans titre + H1 + meta + URL des piliers** : **Montréal**, **Québec (province)**.
 - **NE PAS cibler « Canada »** comme mot-clé principal (trop large, faible intention locale).
 - **Pages géo dédiées (phase tardive)** si on veut dominer le local : Laval, Longueuil / Rive-Sud, Rive-Nord, + quartiers de Montréal (Plateau, Rosemont, Ahuntsic, Ouest-de-l'Île…). Une page par zone réellement desservie, contenu unique (pas de pages-clones).
@@ -90,15 +90,15 @@
 
 ## Synthèse de priorisation (où planter en premier)
 
-1. **Gains rapides (🟢 longue traîne + faible difficulté)** — à écrire en premier, ça pousse vite :
+1. **Gains rapides (🟢 longue traîne + faible difficulté)**, à écrire en premier, ça pousse vite :
    - « combien coûte un site web pour dentiste »
    - « comment apparaître sur Google clinique dentaire »
    - « référencement local dentiste »
    - « acquisition / attirer des patients clinique dentaire »
-2. **Fondations commerciales (🟡 piliers géolocalisés)** — le cœur de l'écosystème :
+2. **Fondations commerciales (🟡 piliers géolocalisés)**, le cœur de l'écosystème :
    - Sous-piliers **Web / SEO / Marketing pour dentiste à Montréal**
    - Pilier **agence web/marketing dentaire Montréal** (optimiser la landing existante)
-3. **Long terme (🔴 têtes de requête)** — viser via l'autorité accumulée + Google Ads pour la visibilité immédiate :
+3. **Long terme (🔴 têtes de requête)**, viser via l'autorité accumulée + Google Ads pour la visibilité immédiate :
    - « agence web pour dentiste », « marketing dentaire »
 
 ---

@@ -42,7 +42,7 @@
     d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeD);});
   }
 
-  // Reveal au scroll — FAIL-OPEN (si le JS plante, le contenu reste visible)
+  // Reveal au scroll, FAIL-OPEN (si le JS plante, le contenu reste visible)
   function nwRevealAll(){ document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');}); }
   try{
     if('IntersectionObserver' in window && !mq){
@@ -63,7 +63,7 @@
     });
   });
 
-  // Accordéon FAQ des articles de blog (.article-faq) — un seul ouvert à la fois
+  // Accordéon FAQ des articles de blog (.article-faq), un seul ouvert à la fois
   document.querySelectorAll('.article-faq__btn').forEach(function(btn){
     btn.addEventListener('click',function(){
       var item=this.closest('.article-faq__item');if(!item)return;
@@ -125,7 +125,7 @@
       inputSchema:{type:'object',properties:{}},
       annotations:{readOnlyHint:true},
       execute:async function(){
-        return "Services NEXTIWEB — Creation de sites web: https://nextiweb.ca/creation-site.html | Referencement SEO: https://nextiweb.ca/seo.html | Marketing digital: https://nextiweb.ca/marketing-digital.html | Visibilite IA (GEO/AEO): https://nextiweb.ca/visibilite-ia.html | Audit gratuit: https://nextiweb.ca/contact.html";
+        return "Services NEXTIWEB, Creation de sites web: https://nextiweb.ca/creation-site.html | Referencement SEO: https://nextiweb.ca/seo.html | Marketing digital: https://nextiweb.ca/marketing-digital.html | Visibilite IA (GEO/AEO): https://nextiweb.ca/visibilite-ia.html | Audit gratuit: https://nextiweb.ca/contact.html";
       }
     });
   }catch(e){}

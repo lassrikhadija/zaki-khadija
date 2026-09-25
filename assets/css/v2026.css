@@ -1,5 +1,5 @@
 /* =========================================================
-     NEXTIWEB — Design system 2026 (autonome, ne dépend pas de styles.min.css)
+     NEXTIWEB, Design system 2026 (autonome, ne dépend pas de styles.min.css)
      ========================================================= */
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   /* Polices de repli aux métriques ajustées : évitent le décalage (CLS) au chargement des polices web */

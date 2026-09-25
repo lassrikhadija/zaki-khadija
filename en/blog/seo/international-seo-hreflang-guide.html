@@ -95,12 +95,12 @@
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"What is hreflang?","acceptedAnswer":{"@type":"Answer","text":"Hreflang is an HTML attribute that tells Google which language and region a page is intended for, and what alternate versions exist in other languages or regions. It prevents duplicate content issues for multilingual sites and ensures Google serves the correct language version to each user."}},
     {"@type":"Question","name":"What is x-default in hreflang?","acceptedAnswer":{"@type":"Answer","text":"The x-default hreflang value designates the fallback page to show users whose language/region doesn't match any specific hreflang tag. It typically points to the homepage, a language selector page, or the most widely used language version of your content."}},
-    {"@type":"Question","name":"Does hreflang need to be reciprocal?","acceptedAnswer":{"@type":"Answer","text":"Yes — hreflang must be bidirectional. If your French page points to your English page with hreflang='en', then your English page must also point back to your French page with hreflang='fr'. Missing reciprocal tags cause Google to ignore the entire hreflang implementation."}},
-    {"@type":"Question","name":"What URL structure is best for international SEO?","acceptedAnswer":{"@type":"Answer","text":"Three common structures: (1) country-code top-level domains (example.fr, example.ca) — strongest geotargeting signal but most complex to manage, (2) subdirectories (example.com/fr/, example.com/en/) — recommended for most sites, easy to manage with unified domain authority, (3) subdomains (fr.example.com) — middle ground, less favored than subdirectories."}},
-    {"@type":"Question","name":"Should I use hreflang in the HTML head or the sitemap?","acceptedAnswer":{"@type":"Answer","text":"Both methods work. HTML head hreflang is easier to audit visually and is implemented directly on the page. Sitemap hreflang is more scalable for large sites with thousands of pages. For most SMBs, HTML head implementation is simpler and more reliable. Use one method consistently — mixing both can cause conflicts."}},
+    {"@type":"Question","name":"Does hreflang need to be reciprocal?","acceptedAnswer":{"@type":"Answer","text":"Yes, hreflang must be bidirectional. If your French page points to your English page with hreflang='en', then your English page must also point back to your French page with hreflang='fr'. Missing reciprocal tags cause Google to ignore the entire hreflang implementation."}},
+    {"@type":"Question","name":"What URL structure is best for international SEO?","acceptedAnswer":{"@type":"Answer","text":"Three common structures: (1) country-code top-level domains (example.fr, example.ca), strongest geotargeting signal but most complex to manage, (2) subdirectories (example.com/fr/, example.com/en/), recommended for most sites, easy to manage with unified domain authority, (3) subdomains (fr.example.com), middle ground, less favored than subdirectories."}},
+    {"@type":"Question","name":"Should I use hreflang in the HTML head or the sitemap?","acceptedAnswer":{"@type":"Answer","text":"Both methods work. HTML head hreflang is easier to audit visually and is implemented directly on the page. Sitemap hreflang is more scalable for large sites with thousands of pages. For most SMBs, HTML head implementation is simpler and more reliable. Use one method consistently, mixing both can cause conflicts."}},
     {"@type":"Question","name":"Can I use Google Translate to create multilingual pages?","acceptedAnswer":{"@type":"Answer","text":"Technically yes, but it's not recommended for SEO. Auto-translated content often contains errors that undermine your E-E-A-T signals and user experience. Google can detect machine-translated content. For SEO value, hire professional translators or at minimum have a native speaker review and edit the output before publishing."}},
     {"@type":"Question","name":"What happens if hreflang is implemented incorrectly?","acceptedAnswer":{"@type":"Answer","text":"Incorrect hreflang can cause: the wrong language version appearing in search results, duplicate content penalties between language versions, confusion for Google about which page to rank, and wasted crawl budget. Use Google Search Console's International Targeting report to identify hreflang errors after implementation."}},
-    {"@type":"Question","name":"Do I need separate content for fr-CA and fr-FR?","acceptedAnswer":{"@type":"Answer","text":"Only if your content or offering differs meaningfully between the two regions. If you're a Canadian business targeting Canadian French speakers, hreflang='fr-CA' is sufficient. Creating separate fr-CA and fr-FR versions requires genuinely distinct content — otherwise it creates duplicate content issues."}}
+    {"@type":"Question","name":"Do I need separate content for fr-CA and fr-FR?","acceptedAnswer":{"@type":"Answer","text":"Only if your content or offering differs meaningfully between the two regions. If you're a Canadian business targeting Canadian French speakers, hreflang='fr-CA' is sufficient. Creating separate fr-CA and fr-FR versions requires genuinely distinct content, otherwise it creates duplicate content issues."}}
   ]}
   </script>
 </head>
@@ -128,7 +128,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="/en/index.html" class="brand" aria-label="NEXTIWEB home">
-        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Montreal web agency" width="84" height="48">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB, Montreal web agency" width="84" height="48">
         NEXTIWEB
       </a>
       <nav class="nav" aria-label="Main navigation">
@@ -228,11 +228,11 @@
           <!-- BODY -->
           <div class="article-body">
 
-            <p>If your website serves users in multiple languages or countries, international SEO is what ensures Google shows the right version of your content to the right audience. Get it wrong, and your French pages compete with your English pages — or worse, users in France see your Canadian English content. Get it right, and you unlock parallel organic traffic streams in every market you serve.</p>
+            <p>If your website serves users in multiple languages or countries, international SEO is what ensures Google shows the right version of your content to the right audience. Get it wrong, and your French pages compete with your English pages, or worse, users in France see your Canadian English content. Get it right, and you unlock parallel organic traffic streams in every market you serve.</p>
 
             <div class="callout">
               <strong>Directly relevant to NEXTIWEB</strong>
-              Our site serves both French and English Canadian audiences. Every article you're reading has a corresponding French version, connected via hreflang tags — exactly the implementation described in this guide.
+              Our site serves both French and English Canadian audiences. Every article you're reading has a corresponding French version, connected via hreflang tags, exactly the implementation described in this guide.
             </div>
 
             <h2 id="what-is-international-seo">What Is International SEO?</h2>
@@ -278,7 +278,7 @@
 
             <h2 id="hreflang">Implementing Hreflang Correctly</h2>
 
-            <p>Hreflang tells Google: "This page has an alternate version in another language/region — here's where to find it." It goes in the <code>&lt;head&gt;</code> of each page.</p>
+            <p>Hreflang tells Google: "This page has an alternate version in another language/region, here's where to find it." It goes in the <code>&lt;head&gt;</code> of each page.</p>
 
             <h3>The Required 3-Tag Pattern (FR/EN with x-default)</h3>
 
@@ -329,8 +329,8 @@
             <ul>
               <li>❌ <strong>Missing reciprocal hreflang tags.</strong> Every page in a hreflang cluster must reference all other pages in the cluster. One-way references are ignored. Use a hreflang validation tool after implementation.</li>
               <li>❌ <strong>Hreflang points to pages with noindex or canonical conflicts.</strong> If a hreflang alternate URL is blocked by robots.txt, has a noindex tag, or has a canonical pointing elsewhere, the hreflang signal breaks. All URLs in the cluster must be indexable and self-canonical.</li>
-              <li>❌ <strong>Using wrong language codes.</strong> Use ISO 639-1 language codes (fr, en, es) not language names. Country codes must be ISO 3166-1 Alpha-2 (CA, US, FR). Common error: hreflang="fr-ca" (lowercase) — country code should be uppercase: hreflang="fr-CA".</li>
-              <li>❌ <strong>Auto-redirecting users based on browser language.</strong> Automatically redirecting users to their assumed language version prevents Google from crawling all versions. Googlebot crawls from the US — if you redirect all US visitors to English, Google may never see your French pages. Use a language preference banner instead.</li>
+              <li>❌ <strong>Using wrong language codes.</strong> Use ISO 639-1 language codes (fr, en, es) not language names. Country codes must be ISO 3166-1 Alpha-2 (CA, US, FR). Common error: hreflang="fr-ca" (lowercase), country code should be uppercase: hreflang="fr-CA".</li>
+              <li>❌ <strong>Auto-redirecting users based on browser language.</strong> Automatically redirecting users to their assumed language version prevents Google from crawling all versions. Googlebot crawls from the US, if you redirect all US visitors to English, Google may never see your French pages. Use a language preference banner instead.</li>
               <li>❌ <strong>Missing x-default tag.</strong> x-default is the fallback for users whose language/region doesn't match any specific tag. Without it, users in uncovered regions may be served an arbitrary language version. Always include x-default pointing to your primary language or a language selector page.</li>
             </ul>
 
@@ -338,15 +338,15 @@
 
             <div class="callout">
               <ul>
-                <li><strong>URL structure decided: subdirectory recommended (/en/, /fr/)</strong> — Consistent across all pages, never mix structures.</li>
-                <li><strong>Hreflang tags on every page (all language versions reference each other)</strong> — Use correct ISO codes: language (lowercase) + country (uppercase).</li>
-                <li><strong>x-default tag included on all pages in the cluster</strong> — Points to primary language or language selector.</li>
-                <li><strong>All hreflang URLs are indexable (no noindex, no canonical conflicts)</strong> — Validate with Ahrefs Site Audit or Screaming Frog.</li>
-                <li><strong>Google Search Console: separate properties for each language subdirectory</strong> — Set International Targeting (geotarget) per property.</li>
+                <li><strong>URL structure decided: subdirectory recommended (/en/, /fr/)</strong>, Consistent across all pages, never mix structures.</li>
+                <li><strong>Hreflang tags on every page (all language versions reference each other)</strong>, Use correct ISO codes: language (lowercase) + country (uppercase).</li>
+                <li><strong>x-default tag included on all pages in the cluster</strong>, Points to primary language or language selector.</li>
+                <li><strong>All hreflang URLs are indexable (no noindex, no canonical conflicts)</strong>, Validate with Ahrefs Site Audit or Screaming Frog.</li>
+                <li><strong>Google Search Console: separate properties for each language subdirectory</strong>, Set International Targeting (geotarget) per property.</li>
               </ul>
             </div>
 
-            <h2 id="faq">FAQ — International SEO &amp; Hreflang</h2>
+            <h2 id="faq">FAQ, International SEO &amp; Hreflang</h2>
 
             <div class="article-faq">
               <div class="article-faq__item">
@@ -368,21 +368,21 @@
                   <span class="article-faq__q">Does hreflang need to be reciprocal?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Yes — hreflang must be bidirectional. If your French page points to your English page with hreflang="en", then your English page must also point back to your French page with hreflang="fr". Missing reciprocal tags cause Google to ignore the entire hreflang implementation.</p>
+                <p class="article-faq__a">Yes, hreflang must be bidirectional. If your French page points to your English page with hreflang="en", then your English page must also point back to your French page with hreflang="fr". Missing reciprocal tags cause Google to ignore the entire hreflang implementation.</p>
               </div>
               <div class="article-faq__item">
                 <button type="button" class="article-faq__btn" aria-expanded="false">
                   <span class="article-faq__q">What URL structure is best for international SEO?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Three common structures: (1) country-code top-level domains (example.fr, example.ca) — strongest geotargeting but most complex, (2) subdirectories (example.com/fr/, example.com/en/) — recommended for most sites, unified domain authority, (3) subdomains (fr.example.com) — middle ground, less favored than subdirectories.</p>
+                <p class="article-faq__a">Three common structures: (1) country-code top-level domains (example.fr, example.ca), strongest geotargeting but most complex, (2) subdirectories (example.com/fr/, example.com/en/), recommended for most sites, unified domain authority, (3) subdomains (fr.example.com), middle ground, less favored than subdirectories.</p>
               </div>
               <div class="article-faq__item">
                 <button type="button" class="article-faq__btn" aria-expanded="false">
                   <span class="article-faq__q">Should I use hreflang in the HTML head or the sitemap?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Both methods work. HTML head hreflang is easier to audit visually and is implemented directly on the page. Sitemap hreflang is more scalable for large sites. For most SMBs, HTML head implementation is simpler and more reliable. Use one method consistently — mixing both can cause conflicts.</p>
+                <p class="article-faq__a">Both methods work. HTML head hreflang is easier to audit visually and is implemented directly on the page. Sitemap hreflang is more scalable for large sites. For most SMBs, HTML head implementation is simpler and more reliable. Use one method consistently, mixing both can cause conflicts.</p>
               </div>
               <div class="article-faq__item">
                 <button type="button" class="article-faq__btn" aria-expanded="false">
@@ -403,13 +403,13 @@
                   <span class="article-faq__q">Do I need separate content for fr-CA and fr-FR?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Only if your content or offering differs meaningfully between the two regions. If you're a Canadian business targeting Canadian French speakers, hreflang="fr-CA" is sufficient. Creating separate fr-CA and fr-FR versions requires genuinely distinct content — otherwise it creates duplicate content issues.</p>
+                <p class="article-faq__a">Only if your content or offering differs meaningfully between the two regions. If you're a Canadian business targeting Canadian French speakers, hreflang="fr-CA" is sufficient. Creating separate fr-CA and fr-FR versions requires genuinely distinct content, otherwise it creates duplicate content issues.</p>
               </div>
             </div>
 
             <!-- CTA FINAL -->
             <div class="article-cta-inline">
-              <p>Get a free international SEO audit — we verify your hreflang implementation and identify issues costing you rankings.</p>
+              <p>Get a free international SEO audit, we verify your hreflang implementation and identify issues costing you rankings.</p>
               <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit &rarr;</a>
             </div>
 
@@ -446,7 +446,7 @@
     <section class="section section--cta">
       <div class="container section__header section__header--center">
         <h2 class="section__title">Your next client is searching for you. Can they find you?</h2>
-        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis — and zero obligation.</p>
+        <p class="section__text">Request your free audit. In 30 minutes, we analyze your site, your Google visibility and your AI presence. You leave with a clear diagnosis, and zero obligation.</p>
         <a href="/en/contact.html" class="btn btn--primary">Get My Free Audit</a>
       </div>
     </section>

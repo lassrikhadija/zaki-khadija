@@ -23,7 +23,7 @@
   <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Schema LegalService : comment ChatGPT et Google IA recommandent votre cabinet | NEXTIWEB</title>
-  <meta name="description" content="Guide complet du balisage Schema.org LegalService pour cabinets d'avocats québécois. JSON-LD complet avec spécialités, langues et zones géographiques — pour être cité par les IA génératives.">
+  <meta name="description" content="Guide complet du balisage Schema.org LegalService pour cabinets d'avocats québécois. JSON-LD complet avec spécialités, langues et zones géographiques, pour être cité par les IA génératives.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
@@ -38,8 +38,8 @@
   <meta property="og:image:type" content="image/png">
   <meta name="twitter:image" content="https://nextiweb.ca/assets/img/logo/og-image-nextiweb.png?v=2">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Schema LegalService — être cité par ChatGPT et Google IA">
-  <meta name="twitter:description" content="JSON-LD LegalService complet pour avocats québécois — spécialités, langues, zones. NEXTIWEB.">
+  <meta name="twitter:title" content="Schema LegalService : être cité par ChatGPT et Google IA">
+  <meta name="twitter:description" content="JSON-LD LegalService complet pour avocats québécois, spécialités, langues, zones. NEXTIWEB.">
 
   <link rel="canonical" href="https://nextiweb.ca/blog/avocats/schema-legal-service-visibilite-ia.html">
   <link rel="alternate" hreflang="fr" href="https://nextiweb.ca/blog/avocats/schema-legal-service-visibilite-ia.html">
@@ -93,7 +93,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"Qu'est-ce que le Schema LegalService et pourquoi est-il important pour un avocat ?","acceptedAnswer":{"@type":"Answer","text":"LegalService est un type Schema.org spécifiquement conçu pour les prestataires de services juridiques. Il permet de communiquer à Google et aux IA génératives (ChatGPT, Perplexity, Google AI Overviews) des informations structurées sur votre cabinet : nom, adresse, domaines de pratique, langues, zones géographiques servies, horaires. Ce balisage est la fondation technique qui permet aux moteurs de recherche et aux IA de comprendre précisément ce que fait votre cabinet et de vous recommander pour les bonnes requêtes."}},
-    {"@type":"Question","name":"Comment les IA génératives utilisent-elles le Schema LegalService pour recommander un avocat ?","acceptedAnswer":{"@type":"Answer","text":"Les IA génératives (ChatGPT, Gemini, Perplexity, Google AI Overviews) indexent le contenu du web et utilisent les données structurées comme signal de confiance et de précision. Un cabinet dont le site web contient un balisage LegalService complet — avec des spécialités clairement définies, une zone géographique précise et des informations cohérentes — fournit aux IA exactement le format qu'elles préfèrent pour citer une source dans une réponse. Un cabinet sans balisage structuré est plus difficile à identifier et recommander avec précision."}},
+    {"@type":"Question","name":"Comment les IA génératives utilisent-elles le Schema LegalService pour recommander un avocat ?","acceptedAnswer":{"@type":"Answer","text":"Les IA génératives (ChatGPT, Gemini, Perplexity, Google AI Overviews) indexent le contenu du web et utilisent les données structurées comme signal de confiance et de précision. Un cabinet dont le site web contient un balisage LegalService complet, avec des spécialités clairement définies, une zone géographique précise et des informations cohérentes, fournit aux IA exactement le format qu'elles préfèrent pour citer une source dans une réponse. Un cabinet sans balisage structuré est plus difficile à identifier et recommander avec précision."}},
     {"@type":"Question","name":"Où placer le code JSON-LD LegalService sur le site d'un cabinet d'avocats ?","acceptedAnswer":{"@type":"Answer","text":"Le balisage LegalService principal doit être placé dans la balise <head> de la page d'accueil du cabinet. Un balisage secondaire, adapté au domaine de pratique spécifique, peut être ajouté sur chaque page de spécialité. Pour une présence maximum, incluez également le balisage dans les pages de quartier en adaptant la propriété areaServed. La méthode JSON-LD (script type='application/ld+json') est recommandée par Google pour sa facilité d'implémentation et de maintenance."}},
     {"@type":"Question","name":"Quelles propriétés Schema LegalService sont les plus importantes pour un cabinet québécois ?","acceptedAnswer":{"@type":"Answer","text":"Les propriétés critiques pour un cabinet d'avocats québécois : name (nom exact du cabinet), address (adresse complète avec PostalAddress), telephone, url, priceRange (fourchette d'honoraires indicative), areaServed (zones géographiques desservies), knowsAbout ou hasOfferCatalog (domaines de pratique), availableLanguage (langues de service), legalName (raison sociale officielle). Les propriétés avancées : memberOf (Barreau du Québec), sameAs (liens vers Google Business Profile, LinkedIn, répertoire du Barreau)."}},
     {"@type":"Question","name":"Faut-il un balisage différent pour chaque domaine de pratique ?","acceptedAnswer":{"@type":"Answer","text":"Oui, idéalement. Sur chaque page de spécialité, ajoutez un balisage LegalService avec un hasOfferCatalog ou knowsAbout ciblé sur ce domaine précis. Par exemple, la page 'droit de la famille' aura un LegalService avec knowsAbout incluant 'divorce', 'garde d'enfants', 'pension alimentaire'. Cela permet aux moteurs de recherche et aux IA de comprendre précisément quelle page traite de quelle spécialité, et d'améliorer le classement pour chaque requête ciblée."}},
@@ -125,7 +125,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="/" class="brand" aria-label="NEXTIWEB accueil">
-        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB — Agence web à Montréal" width="84" height="48">
+        <img class="brand__mark" src="/assets/img/logo/logo-nextiweb-dark.webp" alt="NEXTIWEB, Agence web à Montréal" width="84" height="48">
         NEXTIWEB
       </a>
       <nav class="nav" aria-label="Navigation principale">
@@ -187,7 +187,7 @@
             </li>
             <li class="breadcrumb__item"><a href="/blog/" class="breadcrumb__link">Blog</a></li>
             <li class="breadcrumb__item"><a href="/blog/avocats/" class="breadcrumb__link">Avocats</a></li>
-            <li class="breadcrumb__item"><span class="breadcrumb__current">Schema LegalService — Visibilité IA</span></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">Schema LegalService, Visibilité IA</span></li>
           </ol>
         </nav>
       </div>
@@ -199,7 +199,7 @@
         <div class="article-hero">
           <p class="article-hero__kicker">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Balisage structuré — Cabinets d'avocats
+            Balisage structuré, Cabinets d'avocats
           </p>
           <h1 class="article-hero__title">Schema LegalService&nbsp;: comment ChatGPT et Google IA recommandent votre cabinet</h1>
           <div class="article-meta">
@@ -228,24 +228,24 @@
             <div class="article-summary">
               <p class="article-summary__title">Résumé en 30 secondes</p>
               <ul>
-                <li><strong>Schema LegalService</strong> est le type Schema.org conçu spécifiquement pour les cabinets d'avocats — il communique à Google et aux IA qui vous êtes, ce que vous faites, où vous êtes et qui vous servez.</li>
+                <li><strong>Schema LegalService</strong> est le type Schema.org conçu spécifiquement pour les cabinets d'avocats, il communique à Google et aux IA qui vous êtes, ce que vous faites, où vous êtes et qui vous servez.</li>
                 <li>Les IA génératives (ChatGPT, Perplexity, Google AI Overviews) utilisent les données structurées comme signal de précision pour <strong>recommander un cabinet dans leurs réponses</strong>.</li>
                 <li>Un JSON-LD LegalService complet inclut : spécialités juridiques, langues de service, zones géographiques, coordonnées, appartenance au Barreau du Québec.</li>
-                <li>C'est l'un des leviers les plus sous-utilisés par les cabinets québécois — et donc l'une des opportunités de différenciation les plus accessibles.</li>
+                <li>C'est l'un des leviers les plus sous-utilisés par les cabinets québécois, et donc l'une des opportunités de différenciation les plus accessibles.</li>
               </ul>
             </div>
 
-            <p>Cet article est un guide satellite de la série SEO local pour cabinets d'avocats québécois. Pour la vue d'ensemble complète, consultez l'article pilier : <a href="/blog/avocats/local-pack-google-avocats.html">Local Pack Google pour avocats — les 5 leviers qui font la différence</a>.</p>
+            <p>Cet article est un guide satellite de la série SEO local pour cabinets d'avocats québécois. Pour la vue d'ensemble complète, consultez l'article pilier : <a href="/blog/avocats/local-pack-google-avocats.html">Local Pack Google pour avocats, les 5 leviers qui font la différence</a>.</p>
 
             <hr>
 
             <h2 id="pourquoi-schema">Pourquoi Schema LegalService change la donne en 2026</h2>
-            <p>En 2026, la recherche d'information ne passe plus uniquement par des clics sur des liens bleus. Les IA génératives — ChatGPT, Gemini, Perplexity, Google AI Overviews — répondent directement aux questions des utilisateurs, en citant des sources spécifiques. Pour un justiciable qui demande « Quel est le meilleur avocat en droit de la famille à Montréal ? », l'IA génère une réponse qui peut citer des cabinets précis.</p>
-            <p>La question est : comment une IA décide-t-elle quels cabinets citer ? Elle utilise les données structurées présentes sur les sites web — et notamment le balisage Schema.org — comme signaux de confiance et de précision. Un cabinet dont le site contient un balisage LegalService complet et cohérent est nettement plus susceptible d'être identifié, compris et recommandé qu'un cabinet sans balisage.</p>
+            <p>En 2026, la recherche d'information ne passe plus uniquement par des clics sur des liens bleus. Les IA génératives, ChatGPT, Gemini, Perplexity, Google AI Overviews, répondent directement aux questions des utilisateurs, en citant des sources spécifiques. Pour un justiciable qui demande « Quel est le meilleur avocat en droit de la famille à Montréal ? », l'IA génère une réponse qui peut citer des cabinets précis.</p>
+            <p>La question est : comment une IA décide-t-elle quels cabinets citer ? Elle utilise les données structurées présentes sur les sites web, et notamment le balisage Schema.org, comme signaux de confiance et de précision. Un cabinet dont le site contient un balisage LegalService complet et cohérent est nettement plus susceptible d'être identifié, compris et recommandé qu'un cabinet sans balisage.</p>
 
             <div class="callout">
               <strong>Données structurées vs contenu textuel</strong>
-              Le contenu textuel de votre site est interprété. Les données structurées JSON-LD sont lues directement. Un balisage LegalService est l'équivalent d'une fiche d'identité que vous remettez directement à Google et aux IA — sans ambiguïté, sans interprétation.
+              Le contenu textuel de votre site est interprété. Les données structurées JSON-LD sont lues directement. Un balisage LegalService est l'équivalent d'une fiche d'identité que vous remettez directement à Google et aux IA, sans ambiguïté, sans interprétation.
             </div>
 
             <hr>
@@ -257,7 +257,7 @@
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": "https://votre-cabinet.ca/#cabinet",
-  "name": "Cabinet Exemple — Avocats",
+  "name": "Cabinet Exemple, Avocats",
   "legalName": "Cabinet Exemple Inc.",
   "description": "Cabinet d'avocats à Montréal spécialisé en droit de la famille, droit de l'immigration et droit des successions. Services en français et en anglais.",
   "url": "https://votre-cabinet.ca",
@@ -325,16 +325,16 @@
 
             <h2 id="proprietes-cles">Propriétés clés et leur impact sur la visibilité IA</h2>
 
-            <h3>knowsAbout — la propriété qui définit vos spécialités pour les IA</h3>
+            <h3>knowsAbout, la propriété qui définit vos spécialités pour les IA</h3>
             <p><code>knowsAbout</code> est la propriété qui liste les domaines d'expertise de votre cabinet. C'est la propriété que les IA génératives lisent en priorité pour comprendre dans quelle(s) spécialité(s) vous exercez. Soyez précis et exhaustif : listez non seulement les domaines généraux (« droit de la famille »), mais aussi les sous-spécialités (« divorce », « garde d'enfants », « pension alimentaire »).</p>
 
-            <h3>areaServed — définir votre zone géographique de service</h3>
+            <h3>areaServed, définir votre zone géographique de service</h3>
             <p><code>areaServed</code> indique les zones géographiques que votre cabinet sert activement. Pour un cabinet montréalais qui accepte des clients de toute la province, incluez Montréal, sa région et les villes principales que vous servez. Cette propriété est directement utilisée par Google pour associer votre cabinet aux recherches géolocalisées.</p>
 
-            <h3>availableLanguage — un différenciateur fort au Québec</h3>
+            <h3>availableLanguage, un différenciateur fort au Québec</h3>
             <p>Au Québec, la capacité à offrir des services en plusieurs langues est un critère de sélection important pour une partie significative de la clientèle. Listez toutes les langues dans lesquelles vos avocats peuvent réellement communiquer et traiter des dossiers : français, anglais, espagnol, arabe, créole, mandarin, etc.</p>
 
-            <h3>memberOf Barreau du Québec — signal de légitimité</h3>
+            <h3>memberOf Barreau du Québec, signal de légitimité</h3>
             <p>La propriété <code>memberOf</code> avec une référence au Barreau du Québec est un signal de légitimité fort. Les IA génératives accordent plus de confiance aux informations vérifiables auprès d'organismes de réglementation reconnus.</p>
 
             <hr>
@@ -345,7 +345,7 @@
             <pre><code>{
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "name": "Cabinet Exemple — Avocat en droit de la famille",
+  "name": "Cabinet Exemple, Avocat en droit de la famille",
   "description": "Cabinet spécialisé en droit de la famille à Montréal : divorce, séparation, garde d'enfants, pension alimentaire, adoption.",
   "knowsAbout": [
     "Droit de la famille",
@@ -364,19 +364,19 @@
 }</code></pre>
 
             <div class="callout">
-              <strong>Cohérence des données — règle critique</strong>
+              <strong>Cohérence des données, règle critique</strong>
               Toutes les informations dans votre balisage Schema doivent être cohérentes avec votre fiche Google Business Profile, votre site web et les répertoires où vous figurez. Des incohérences (adresse différente, numéro de téléphone différent) affaiblissent le signal de confiance auprès de Google et des IA.
             </div>
 
             <div class="article-cta-inline">
-              <p><strong>Votre site est-il balisé correctement pour les IA génératives ?</strong> Obtenez un audit Schema complet — livré en rapport PDF sous 24&nbsp;h.</p>
+              <p><strong>Votre site est-il balisé correctement pour les IA génératives ?</strong> Obtenez un audit Schema complet, livré en rapport PDF sous 24&nbsp;h.</p>
               <a href="/avocats.html" class="btn btn--primary">Voir nos services pour avocats →</a>
             </div>
 
             <hr>
 
             <!-- FAQ -->
-            <h2 id="faq">Questions fréquentes — Schema LegalService pour avocats</h2>
+            <h2 id="faq">Questions fréquentes, Schema LegalService pour avocats</h2>
             <div class="article-faq" role="list">
 
               <div class="article-faq__item" role="listitem">
@@ -392,7 +392,7 @@
                   <span class="article-faq__q">Comment les IA génératives utilisent-elles le Schema LegalService pour recommander un avocat ?</span>
                   <svg class="article-faq__chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
-                <p class="article-faq__a">Les IA génératives indexent le contenu du web et utilisent les données structurées comme signal de confiance et de précision. Un cabinet avec un balisage LegalService complet — spécialités définies, zone géographique précise, informations cohérentes — fournit aux IA exactement le format qu'elles préfèrent pour citer une source dans une réponse. Un cabinet sans balisage structuré est plus difficile à identifier et recommander.</p>
+                <p class="article-faq__a">Les IA génératives indexent le contenu du web et utilisent les données structurées comme signal de confiance et de précision. Un cabinet avec un balisage LegalService complet, spécialités définies, zone géographique précise, informations cohérentes, fournit aux IA exactement le format qu'elles préfèrent pour citer une source dans une réponse. Un cabinet sans balisage structuré est plus difficile à identifier et recommander.</p>
               </div>
 
               <div class="article-faq__item" role="listitem">
@@ -436,7 +436,7 @@
 
             <div class="article-cta-inline">
               <p>Les 5 leviers SEO local pour dominer le Local Pack Google en tant que cabinet d'avocats québécois.</p>
-              <a href="/blog/avocats/local-pack-google-avocats.html" class="btn btn--primary">Lire l'article pilier — Local Pack Google →</a>
+              <a href="/blog/avocats/local-pack-google-avocats.html" class="btn btn--primary">Lire l'article pilier, Local Pack Google →</a>
             </div>
 
             <p>Les autres guides de la série :</p>
@@ -457,7 +457,7 @@
 
             <!-- CTA finale -->
             <div class="article-cta-inline" style="margin-top:3rem">
-              <p><strong>Votre site est-il balisé pour être recommandé par les IA ?</strong> Audit Schema complet — LegalService, FAQPage, BreadcrumbList — livré en rapport PDF personnalisé sous 24&nbsp;h.</p>
+              <p><strong>Votre site est-il balisé pour être recommandé par les IA ?</strong> Audit Schema complet, LegalService, FAQPage, BreadcrumbList, livré en rapport PDF personnalisé sous 24&nbsp;h.</p>
               <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit →</a>
             </div>
 
@@ -483,9 +483,9 @@
             <div class="article-sidebar__box">
               <p class="article-sidebar__title">Série SEO avocats</p>
               <ul class="article-sidebar__toc">
-                <li><a href="/blog/avocats/local-pack-google-avocats.html">Article pilier — Local Pack</a></li>
+                <li><a href="/blog/avocats/local-pack-google-avocats.html">Article pilier, Local Pack</a></li>
                 <li><a href="/blog/avocats/google-business-profile-avocats.html">Google Business Profile</a></li>
-                <li><a href="/blog/avocats/avis-google-cabinets-avocats.html">Avis Google — confiance éthique</a></li>
+                <li><a href="/blog/avocats/avis-google-cabinets-avocats.html">Avis Google, confiance éthique</a></li>
                 <li><a href="/blog/avocats/pages-specialite-quartier-avocat.html">Pages par spécialité</a></li>
                 <li><a href="/blog/avocats/citations-nap-repertoires-juridiques.html">Citations NAP Québec</a></li>
               </ul>
@@ -500,7 +500,7 @@
     <section class="section section--cta">
       <div class="container section__header section__header--center">
         <h2 class="section__title">Votre prochain client vous cherche. Est-ce qu'il vous trouve&nbsp;?</h2>
-        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair — et zéro obligation.</p>
+        <p class="section__text">Demandez votre audit gratuit. En 30 minutes, on analyse votre site, votre visibilité Google et votre présence IA. Vous repartez avec un diagnostic clair, et zéro obligation.</p>
         <a href="/contact.html" class="btn btn--primary">Je veux mon audit gratuit</a>
       </div>
     </section>
